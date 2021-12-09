@@ -1,0 +1,21 @@
+@startuml HospitalNotificationMessageHeader
+
+hide empty members
+
+
+class "MedComHospitalNotificationMessageHeader" as messageHeader <<MedComMessagingMessageHeader>>
+class "MedComMessagingOrganization" as organization <<MedComCoreOrganization>>
+class "MedComCorePatient" as patient
+class "MedComHospitalNotificationEncounter" as encounter <<MedComCoreEncounter>>
+class "MedComCoreOrganization" as serviceProvider
+
+
+messageHeader -- encounter : "focus"
+encounter -- patient : "subject"
+encounter -- serviceProvider : "service provider"
+
+
+messageHeader -- organization : "sender"
+messageHeader -- organization : "receiver"
+
+@enduml

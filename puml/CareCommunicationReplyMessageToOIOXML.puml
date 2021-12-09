@@ -1,0 +1,79 @@
+@startuml CCNewMessageOIOXML
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: New message (answer to OIOXML)
+
+'Message 1: New message
+package "Message 1: New message" as new <<Frame>>{
+    class "Bundle 1" as newB {
+        Bundle.id = BUN1
+        ...
+    }
+    class "MessageHeader 1" as newMH{
+        MessageHeader.id = MHID1
+        ...
+    }
+    class "Sender Organization 1" as newSOrg{
+        ...
+    }
+    class "Reciver Organization 1" as newROrg{
+        ...
+    }
+    class "Communication 1" as newCom{
+        Communication.status = "unknown"
+        Communication.class = "regaring-referal"
+        Communication.payload.contentString = "Question regarding a referal"
+        Communication.payload.payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload.payloadAuthorExtension = Practitioner/Prac1
+        ...
+    }
+    class "Encounter 1" as newENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 1" as newPT{
+        ...
+    }
+    class "Practitioner 1" as newPrac{
+        Practitioner.identifier = Prac1
+        ...
+    }
+    class "PractitionerRole 1" as newPracR{
+        ...
+    }
+    class "Provenance 1" as newPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "new-messsage"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.reference = "B300720181623#5790000121526"
+        ...
+    }
+
+newB -[hidden]- newMH
+newMH -[hidden]- newSOrg
+newSOrg-[hidden]-newROrg
+newROrg-[hidden]-newCom
+newCom -[hidden]- newENC
+newENC-[hidden]-newPT
+newPT-[hidden]-newPrac
+newPrac-[hidden]-newPracR
+newPracR-[hidden]-newPRO
+
+
+
+}
+@enduml

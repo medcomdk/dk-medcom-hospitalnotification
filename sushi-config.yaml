@@ -1,0 +1,30 @@
+id: dk.fhir.ig.medcom-core
+canonical: http://medcomfhir.dk/fhir/core/1.0
+name: MedComCore
+title: "DK MedCom Core"
+description: The DK MedCom Core IG
+status: active
+version: "1.0.3"
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: Build CI
+publisher:
+  name: MedCom
+  url: http://www.medcom.dk
+jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
+dependencies:
+  dk.fhir.ig.dk-core: current
+
+menu:
+  Table of Contents: toc.html
+  Home: index.html
+  Profiles: profiles.html
+  Extensions: extensions.html
+  Terminology: terminology.html
+  Artifacts: artifacts.html
+  Downloads: downloads.html
+
+parameters:
+  apply-contact: true
+  apply-juristiction: true
+  apply-publisher: true

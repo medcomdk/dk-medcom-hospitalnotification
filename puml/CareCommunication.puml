@@ -1,0 +1,30 @@
+@startuml CareCommunication
+
+hide empty members
+
+class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
+class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
+class "MedComMessaingProvenance" as provenance
+class "MedComMessagingOrganization" as messagingOrganization 
+class "MedComCareCommunication" as communication
+class "MedComCorePatient" as patient
+class "MedComCoreEncounter" as encounter
+class "Organization" as recipientOrganization <<MedComMessagingOrganization>>
+class "PractitionerRole" as recipientRole
+class "Practitioner" as author
+
+message -- messageheader : "entry"
+message -- provenance : "entry"
+messageheader -- messagingOrganization : "sender"
+messageheader -- messagingOrganization : "reciever"
+messageheader -- communication : "focus"
+communication -- encounter : "encounter"
+communication -- patient : "subject"
+communication -- recipientOrganization : "sender"
+communication -- recipientRole : "sender"
+communication -- recipientOrganization : "recipient"
+communication -- recipientRole : "recipient"
+communication -- author : "payload author"
+
+encounter -patient :"subject"
+@enduml

@@ -1,0 +1,123 @@
+@startuml HNAdmitEnteredInError
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Admit and cancel admission for inpatient
+
+'Message 1: Admit inpatient
+package "Message 1: Admit inpatient" as admit <<Frame>>{
+    class "Bundle 1" as admitB {
+        Bundle.id = BUN1
+        ...
+    }
+    class "MessageHeader 1" as admitMH{
+        MessageHeader.id = MHID1
+        ...
+    }
+    class "Sender Organization 1" as admitSOrg{
+        ...
+    }
+    class "Reciver Organization 1" as admitROrg{
+        ...
+    }
+    class "Encounter 1" as admitENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 1" as admitPT{
+        ...
+    }
+    class "ServiceProvider Organization 1" as admitSPOrg{
+        ...
+    }
+    class "Provenance 1" as admitPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA 
+        ...
+    }
+
+admitB -[hidden]- admitMH
+admitMH -[hidden]- admitSOrg
+admitSOrg-[hidden]-admitROrg
+admitROrg-[hidden]-admitENC
+admitENC-[hidden]-admitPT
+admitPT-[hidden]-admitSPOrg
+admitSPOrg-[hidden]-admitPRO
+
+}
+
+'Message 2: Entered in Error inpatient
+package "Message 2: Cancel admission" as error <<Frame>> {
+    class "Bundle 2" as errorB {
+        Bundle.id = BUN2
+        ...
+    }
+    class "MessageHeader 2" as errorMH{
+        MessageHeader.id = MHID2
+        ...
+    }
+    class "Sender Organization 2" as errorSOrg{
+        ...
+    }
+    class "Reciver Organization 2" as errorROrg{
+        ...
+    }
+    class "Encounter 2" as errorENC{
+        Encounter.status = "finished"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 2" as errorPT{
+        ...
+    }
+    class "ServiceProvider Organization 2" as errorSPOrg{
+        ...
+    }
+    class "Provenance 1" as admiterrorPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"        
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+    class "Provenance 2" as errorPRO{
+        Provenance.target = MessageHeader/MHID2
+        Provenance.activity = "cancel-admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "removal"
+        Provenance.entity.what = MessageHeader/MHID1
+        ...
+    }
+errorB-[hidden]-errorMH
+errorMH-[hidden]-errorSOrg
+errorSOrg-[hidden]-errorROrg
+errorROrg-[hidden]-errorENC
+errorENC-[hidden]-errorPT
+errorPT-[hidden]-errorSPOrg
+errorSPOrg-[hidden]-admiterrorPRO
+admiterrorPRO-[hidden]-errorPRO
+
+}
+
+' pile mellem de to beskeder
+' admit --> error
+
+
+@enduml
+

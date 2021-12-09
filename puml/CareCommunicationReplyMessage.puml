@@ -1,0 +1,173 @@
+@startuml CCReplyMessage
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Reply message
+
+'Message 1: New message
+package "Message 1: New message" as new <<Frame>>{
+    class "Bundle 1" as newB {
+        Bundle.id = BUN1
+        ...
+    }
+    class "MessageHeader 1" as newMH{
+        MessageHeader.id = MHID1
+        ...
+    }
+    class "Sender Organization 1" as newSOrg{
+        ...
+    }
+    class "Reciver Organization 1" as newROrg{
+        ...
+    }
+    class "Communication 1" as newCom{
+        Communication.status = "unknown"
+        Communication.class = "medicine"
+        Communication.payload.contentString = "Question regarding medicine"
+        Communication.payload.payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload.payloadAuthorExtension = Practitioner/Prac1
+        ...
+    }
+    class "Encounter 1" as newENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 1" as newPT{
+        ...
+    }
+    class "Practitioner 1" as newPrac{
+        Practitioner.identifier = Prac1
+        ...
+    }
+    class "PractitionerRole 1" as newPracR{
+        ...
+    }
+    class "Provenance 1" as newPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "new-messsage"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+
+newB -[hidden]- newMH
+newMH -[hidden]- newSOrg
+newSOrg-[hidden]-newROrg
+newROrg-[hidden]-newCom
+newCom -[hidden]- newENC
+newENC-[hidden]-newPT
+newPT-[hidden]-newPrac
+newPrac-[hidden]-newPracR
+newPracR-[hidden]-newPRO
+
+
+
+}
+
+'Message 2: reply inpatient
+package "Message 2: Reply message" as reply <<Frame>>{
+    class "Bundle 2" as replyB {
+        Bundle.id = BUN2
+        ...
+    }
+    class "MessageHeader 2" as replyMH{
+        MessageHeader.id = MHID2
+        ...
+    }
+    class "Sender Organization 2" as replySOrg{
+        ...
+    }
+    class "Reciver Organization 2" as replyROrg{
+        ...
+    }
+    class "Communication 2" as newreplyCom{
+        Communication.status = "unknown"
+        Communication.class = "medicine"
+        Communication.payload[0].contentString = "Question regarding medicine..."
+        Communication.payload[0].payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
+        Communication.payload[1].contentString = "Answer to medicine question..."
+        Communication.payload[1].payloadDateTimeExtension = 2021-12-02T10:10:01Z
+        Communication.payload[1].payloadAuthorExtension = Practitioner/Prac2
+        ...
+    }
+    class "Encounter 1" as newreplyENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 1" as newreplyPT{
+        ...
+    }
+    class "Practitioner 1" as newreplyPrac{
+        Practitioner.identifier = Prac1
+        ...
+    }
+    class "PractitionerRole 1" as newreplyPracR{
+        ...
+    }
+    class "Provenance 1" as newreplyPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "new-messsage"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+    class "Practitioner 2" as replyPrac{
+        Practitioner.identifier = Prac2
+        ...
+    }
+    class "PractitionerRole 2" as replyPracR{
+        ...
+    }    
+    class "Provenance 2" as replyPRO{
+        Provenance.target = MessageHeader/MHID2
+        Provenance.activity = "reply-messsage"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what.reference = MessageHeader/MHID1
+        ...
+    }
+
+replyB -[hidden]- replyMH
+replyMH -[hidden]- replySOrg
+replySOrg-[hidden]-replyROrg
+replyROrg-[hidden]-newreplyCom
+newreplyCom -[hidden]- newreplyENC
+newreplyENC-[hidden]-newreplyPT
+newreplyPT-[hidden]-newreplyPrac
+newreplyPrac-[hidden]-newreplyPracR
+newreplyPracR-[hidden]-newreplyPRO
+newreplyPRO-[hidden]-replyPrac
+replyPrac-[hidden]-replyPracR
+replyPracR-[hidden]-replyPRO
+
+
+
+}
+
+' pile mellem de to beskeder
+' admit --> finished
+
+
+@enduml
+
+
+
+
+
+

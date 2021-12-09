@@ -1,0 +1,262 @@
+@startuml HNAdmitOnleaveEndFinish
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Admit, onleave, end onleave and finish inpatient
+
+
+'Message 1: Admit inpatient
+package "Message 1: Admit inpatient" as admit <<Frame>>{
+    class "Bundle 1" as admitB {
+        Bundle.id = BUN1
+        ...
+    }
+    class "MessageHeader 1" as admitMH{
+        MessageHeader.id = MHID1
+        ...
+    }
+    class "Sender Organization 1" as admitSOrg{
+        ...
+    }
+    class "Reciver Organization 1" as admitROrg{
+        ...
+    }
+    class "Encounter 1" as admitENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 1" as admitPT{
+        ...
+    }
+    class "ServiceProvider Organization 1" as admitSPOrg{
+        ...
+    }
+    class "Provenance 1" as admitPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+
+admitB -[hidden]- admitMH
+admitMH -[hidden]- admitSOrg
+admitSOrg-[hidden]-admitROrg
+admitROrg-[hidden]-admitENC
+admitENC-[hidden]-admitPT
+admitPT-[hidden]-admitSPOrg
+admitSPOrg-[hidden]-admitPRO
+
+
+
+}
+
+'Message 2: Onleave inpatient
+package "Message 2: Onleave inpatient" as Onleave <<Frame>> {
+    class "Bundle 2" as onleaveB {
+        Bundle.id = BUN2
+        ...
+    }
+    class "MessageHeader 2" as onleaveMH{
+        MessageHeader.id = MHID2
+        ...
+    }
+    class "Sender Organization 2" as onleaveSOrg{
+        ...
+    }
+    class "Reciver Organization 2" as onleaveROrg{
+        ...
+    }
+    class "Encounter 2" as onleaveENC{
+        Encounter.status = "onleave"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 2" as onleavePT{
+        ...
+    }
+    class "ServiceProvider Organization 2" as onleaveSPOrg{
+        ...
+    }
+    class "Provenance 1" as admitonleavePRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"        
+        Provenance.entity.what = NA
+        ...
+    }
+    class "Provenance 2" as onleavePRO{
+        Provenance.target = MessageHeader/MHID2
+        Provenance.activity = "start-leave-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID1
+        ...
+    }
+onleaveB-[hidden]-onleaveMH
+onleaveMH-[hidden]-onleaveSOrg
+onleaveSOrg-[hidden]-onleaveROrg
+onleaveROrg-[hidden]-onleaveENC
+onleaveENC-[hidden]-onleavePT
+onleavePT-[hidden]-onleaveSPOrg
+onleaveSPOrg-[hidden]-admitonleavePRO
+admitonleavePRO-[hidden]-onleavePRO
+
+}
+
+'Message 3: End onleave inpatient
+package "Message 3: End onleave inpatient" as endOnleave <<Frame>> {
+    class "Bundle 3" as endOnleaveB {
+        Bundle.id = BUN3
+        ...
+    }
+    class "MessageHeader 3" as endOnleaveMH{
+        MessageHeader.id = MHID3
+        ...
+    }
+    class "Sender Organization 3" as endOnleaveSOrg{
+        ...
+    }
+    class "Reciver Organization 3" as endOnleaveROrg{
+        ...
+    }
+    class "Encounter 3" as endOnleaveENC{
+        Encounter.status = "in-progress"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 3" as endOnleavePT{
+        ...
+    }
+    class "ServiceProvider Organization 3" as endOnleaveSPOrg{
+        ...
+    }
+    class "Provenance 1" as admitendOnleavePRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+    class "Provenance 2" as onleaveendOnleavePRO{
+        Provenance.target = MessageHeader/MHID2
+        Provenance.activity = "start-leave-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID1
+        ...
+    }
+    class "Provenance 3" as endOnleavePRO{
+        Provenance.target = MessageHeader/MHID3
+        Provenance.activity = "end-leave-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID2
+        ...
+    }
+endOnleaveB-[hidden]-endOnleaveMH
+endOnleaveMH-[hidden]-endOnleaveSOrg
+endOnleaveSOrg-[hidden]-endOnleaveROrg
+endOnleaveROrg-[hidden]-endOnleaveENC
+endOnleaveENC-[hidden]-endOnleavePT
+endOnleavePT-[hidden]-endOnleaveSPOrg
+endOnleaveSPOrg-[hidden]-admitendOnleavePRO
+admitendOnleavePRO-[hidden]-onleaveendOnleavePRO
+onleaveendOnleavePRO-[hidden]-endOnleavePRO
+
+}
+
+
+'Message 4: Finished inpatient
+package "Message 4: Finished inpatient" as finished <<Frame>> {
+    class "Bundle 4" as finishedB {
+        Bundle.id = BUN4
+        ...
+    }
+    class "MessageHeader 4" as finishedMH{
+        MessageHeader.id = MHID4
+        ...
+    }
+    class "Sender Organization 4" as finishedSOrg{
+        ...
+    }
+    class "Reciver Organization 4" as finishedROrg{
+        ...
+    }
+    class "Encounter 4" as finishedENC{
+        Encounter.status = "finished"
+        Encounter.class = "IMP"
+        ...
+    }
+    class "Patient 4" as finishedPT{
+        ...
+    }
+    class "ServiceProvider Organization 4" as finishedSPOrg{
+        ...
+    }
+    class "Provenance 1" as admitfinishedPRO{
+        Provenance.target = MessageHeader/MHID1
+        Provenance.activity = "admit-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "source"
+        Provenance.entity.what = NA
+        ...
+    }
+    class "Provenance 2" as onleavefinishedPRO{
+        Provenance.target = MessageHeader/MHID2
+        Provenance.activity = "start-leave-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID1
+        ...
+    }
+    class "Provenance 3" as endOnleavefinishedPRO{
+        Provenance.target = MessageHeader/MHID3
+        Provenance.activity = "end-leave-inpatient"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID2
+        ...
+    }
+    class "Provenance 4" as finishedPRO{
+        Provenance.target = MessageHeader/MHID4
+        Provenance.activity = "discharge-imp-home"
+        Provenance.agent.who = "Regional Organization"
+        Provenance.entity.role = "derivation"
+        Provenance.entity.what = MessageHeader/MHID3
+        ...
+    }
+finishedB-[hidden]-finishedMH
+finishedMH-[hidden]-finishedSOrg
+finishedSOrg-[hidden]-finishedROrg
+finishedROrg-[hidden]-finishedENC
+finishedENC-[hidden]-finishedPT
+finishedPT-[hidden]-finishedSPOrg
+finishedSPOrg-[hidden]-admitfinishedPRO
+admitfinishedPRO-[hidden]-onleavefinishedPRO
+onleavefinishedPRO-[hidden]-endOnleavefinishedPRO
+endOnleavefinishedPRO-[hidden]-finishedPRO
+
+}
+
+' pile mellem de to beskeder
+' admit --> finished
+
+
+@enduml
+

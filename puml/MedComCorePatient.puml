@@ -1,0 +1,11 @@
+@startuml MedComCorePatient
+
+hide empty members
+
+class "MedComCorePatient" as patient
+class "MedComCoreOrganization" as managingOrganization
+
+patient -- managingOrganization : "managing organization"
+
+
+@enduml

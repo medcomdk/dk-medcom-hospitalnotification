@@ -1,21 +1,21 @@
 {
-  "package-id": "dk.fhir.ig.medcom-core",
-  "title": "DK MedCom Core",
-  "introduction": "Core MedCom FHIR profiles for Denmark",
-  "canonical": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-core",
+  "package-id": "dk.fhir.ig.dk-medcom-hospitalnotification",
+  "title": "DK MedCom HospitalNotification",
+  "introduction": "HospitalNotification MedCom FHIR profiles for Denmark",
+  "canonical": "http://medcomfhir.dk/fhir/ig/dk-medcom-hospitalnotification",
   "list": [
     {
       "version": "dev",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/hl7dk/medcom-core",
+      "path": "http://build.fhir.org/ig/hl7dk/dk-medcom-hospitalnotification",
       "status": "ci-build",
       "fhirVersion": "4.0.1"
     },
     {
-      "version": "1.0.3",
+      "version": "1.0.0",
       "date": "2021-03-23",
-      "desc": "MedCom Core",
-      "path": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-core",
+      "desc": "MedCom HospitalNotification",
+      "path": "http://medcomfhir.dk/fhir/ig/dk-medcom-hospitalnotification",
       "status": "trial-use",
       "sequence": "STU",
       "fhirVersion": "4.0.1",

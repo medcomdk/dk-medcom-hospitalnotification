@@ -4,7 +4,7 @@ hide empty members
 
 class "MedComHospitalNotificationMessage" as message <<MedComMessagingMessage>>
 class "MedComHospitalNotificationMessageHeader" as messageHeader <<MedComMessagingMessageHeader>>
-class "MedComMessagingOrganization" as organization
+class "MedComMessagingOrganization" as organization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
 class "MedComHospitalNotificationEncounter" as encounter <<MedComCoreEncounter>>
 class "MedComMessagingProvenance" as provenance

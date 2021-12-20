@@ -66,8 +66,8 @@ Description: "Example of MedCom Hospital Notification Start Leave"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Provenance/ccea231f-51c9-4eaa-a2f8-5a1e7d103574"
-* entry[=].resource = ccea231f-51c9-4eaa-a2f8-5a1e7d103574
+* entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa"
+* entry[=].resource = dc421d0a-cded-470f-9a53-2ddba7583baa
 * entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa"
 * entry[=].resource = dc421d0a-cded-470f-9a53-2ddba7583baa
 
@@ -91,10 +91,10 @@ Description: "Example of MedCom Hospital Notification End Leave"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/bf839e87-4e44-4977-b38e-92b5a6f187b5"
 * entry[=].resource = bf839e87-4e44-4977-b38e-92b5a6f187b5
-* entry[+].fullUrl = "Provenance/0ffb42f5-d172-4df0-92c1-012f55667879"
-* entry[=].resource = 0ffb42f5-d172-4df0-92c1-012f55667879
-* entry[+].fullUrl = "Provenance/1d70842e-1168-41a3-a409-45f63c10f4d2"
-* entry[=].resource = 1d70842e-1168-41a3-a409-45f63c10f4d2
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
+* entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa"
+* entry[=].resource = dc421d0a-cded-470f-9a53-2ddba7583baa
 * entry[+].fullUrl = "Provenance/04db4939-7c60-4ac6-aefc-523f809ccba6"
 * entry[=].resource = 04db4939-7c60-4ac6-aefc-523f809ccba6
 
@@ -116,12 +116,12 @@ Description: "Example of MedCom Hospital Notification Discharge"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Provenance/491827bf-337e-4083-9ef0-101b38966179"
-* entry[=].resource = 491827bf-337e-4083-9ef0-101b38966179
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "Provenance/2710698c-83eb-4c3e-81c8-fe8e40baf524"
 * entry[=].resource = 2710698c-83eb-4c3e-81c8-fe8e40baf524
 
-
+/* 
 //Example of patient admitted before deceased message
 Instance: bfe14780-3f38-4a82-b102-c198e3762b45
 InstanceOf: MedComHospitalNotificationMessage
@@ -131,10 +131,10 @@ Description: "Example of MedCom Hospital Notification admit when patient is late
 * timestamp = 2021-01-10T13:44:14Z
 * entry[+].fullUrl = "MessageHeader/29b4818e-02de-4cc4-b418-d20cbc7b5404"
 * entry[=].resource = 29b4818e-02de-4cc4-b418-d20cbc7b5404
-* entry[+].fullUrl = "Patient/5b72c625-0570-4111-b272-f0351344f8b6"
-* entry[=].resource = 5b72c625-0570-4111-b272-f0351344f8b6
-* entry[+].fullUrl = "Organization/bca68510-fe3b-4161-aba0-908a693eb54f"
-* entry[=].resource = bca68510-fe3b-4161-aba0-908a693eb54f
+* entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Encounter/d6145390-62ad-4cd0-8fe0-9679a34c44a9"
 * entry[=].resource = d6145390-62ad-4cd0-8fe0-9679a34c44a9
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
@@ -142,7 +142,7 @@ Description: "Example of MedCom Hospital Notification admit when patient is late
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/3302eb96-a10a-47c3-95b6-461cb053cbd7"
-* entry[=].resource = 3302eb96-a10a-47c3-95b6-461cb053cbd7
+* entry[=].resource = 3302eb96-a10a-47c3-95b6-461cb053cbd7 */
 
 
 //Example of patient deceased message
@@ -156,8 +156,8 @@ Description: "Example of MedCom Hospital Notification Discharge when patient is 
 * entry[=].resource = 8efc6d95-6161-4493-99c9-f359488dedb8
 * entry[+].fullUrl = "Patient/382fb8a3-6725-41e2-a615-2b1cfcfe9931"
 * entry[=].resource = 382fb8a3-6725-41e2-a615-2b1cfcfe9931
-* entry[+].fullUrl = "Organization/bca68510-fe3b-4161-aba0-908a693eb54f"
-* entry[=].resource = bca68510-fe3b-4161-aba0-908a693eb54f
+* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Encounter/8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased"
 * entry[=].resource = 8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"

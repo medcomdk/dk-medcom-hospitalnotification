@@ -44,10 +44,10 @@ Description: "Message header for a hospital notification start leave message. Va
 * focus = Reference(556e9c54-23d2-43a4-816e-951d2a6e3281)
 * extension[reportOfAdmissionFlag].valueBoolean = false
 
-Instance: e47254da-f170-46f0-b624-4778a9c92b1f
+ Instance: e47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)"
-Description: "Message header for a hospital notification start leave message. Valid only if used in a bundle (message)."
+Title: "Message header for a hospital notification end leave message. Valid only if used in a bundle (message)"
+Description: "Message header for a hospital notification end leave message. Valid only if used in a bundle (message)."
 * destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination.endpoint = "http://medcomfhir.dk/unknown"
@@ -55,7 +55,7 @@ Description: "Message header for a hospital notification start leave message. Va
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
-* extension[reportOfAdmissionFlag].valueBoolean = false
+* extension[reportOfAdmissionFlag].valueBoolean = false 
 
 Instance: 01affa53-c157-4080-abb0-8e681524f969
 InstanceOf: MedComHospitalNotificationMessageHeader

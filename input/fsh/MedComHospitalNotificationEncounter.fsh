@@ -81,11 +81,11 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter when p
 * identifier.value = "7b9f8497-3314-4535-8f86-20df7b5f4d55"
 * status = #in-progress
 * class = $ActCodes#IMP
-* subject = Reference(5b72c625-0570-4111-b272-f0351344f8b6)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
 * period.start = 2021-01-10T13:44:14Z
-* serviceProvider = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
+* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 //Embedded Encouner with admitted patient deceased
 Instance: 8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased
@@ -99,4 +99,4 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter finish
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
 * period.start = 2021-01-13T13:44:14Z
-* serviceProvider = Reference(bca68510-fe3b-4161-aba0-908a693eb54f)
+* serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)

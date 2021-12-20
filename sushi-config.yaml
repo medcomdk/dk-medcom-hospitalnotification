@@ -1,10 +1,10 @@
-id: dk.fhir.ig.medcom-core
-canonical: http://medcomfhir.dk/fhir/core/1.0
-name: MedComCore
-title: "DK MedCom Core"
-description: The DK MedCom Core IG
+id: dk.fhir.ig.dk-medcom-hospitalnotification
+canonical: http://medcomfhir.dk/fhir/hospitalnotification/
+name: MedComHospitalNotification
+title: "DK MedCom HospitalNotification"
+description: The DK MedCom HospitalNotification IG
 status: active
-version: "1.0.3"
+version: "1.0.0"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Build CI
@@ -13,7 +13,11 @@ publisher:
   url: http://www.medcom.dk
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
-  dk.fhir.ig.dk-core: current
+  dk.fhir.ig.dk-core: 
+    uri: https://hl7.dk/fhir/core/1.1.0/
+    version: current
+  dk.fhir.ig.dk-medcom-core: current
+  dk.fhir.ig.dk-medcom-messaging: current
 
 menu:
   Table of Contents: toc.html

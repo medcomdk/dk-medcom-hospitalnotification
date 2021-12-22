@@ -19,6 +19,7 @@ title Simplified example: Admit and cancel admission for inpatient
 package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Bundle 1" as admitB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-03T14:00:10Z
         ...
     }
     class "MessageHeader 1" as admitMH{
@@ -34,6 +35,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Encounter 1" as admitENC{
         Encounter.status = "in-progress"
         Encounter.class = "IMP"
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
     class "Patient 1" as admitPT{
@@ -46,8 +48,6 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA 
         ...
     }
 
@@ -65,6 +65,7 @@ admitSPOrg-[hidden]-admitPRO
 package "Message 2: Cancel admission" as error <<Frame>> {
     class "Bundle 2" as errorB {
         Bundle.id = BUN2
+        Bundle.timestamp = 2021-12-03T14:03:00Z
         ...
     }
     class "MessageHeader 2" as errorMH{
@@ -79,7 +80,8 @@ package "Message 2: Cancel admission" as error <<Frame>> {
     }
     class "Encounter 2" as errorENC{
         Encounter.status = "finished"
-        Encounter.class = "IMP"
+        Encounter.class = "IMP"        
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
     class "Patient 2" as errorPT{
@@ -92,8 +94,6 @@ package "Message 2: Cancel admission" as error <<Frame>> {
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"        
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
         ...
     }
     class "Provenance 2" as errorPRO{

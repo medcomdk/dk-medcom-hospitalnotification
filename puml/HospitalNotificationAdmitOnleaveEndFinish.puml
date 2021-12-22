@@ -20,6 +20,7 @@ title Simplified example: Admit, onleave, end onleave and finish inpatient
 package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Bundle 1" as admitB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-01T12:00:10Z
         ...
     }
     class "MessageHeader 1" as admitMH{
@@ -35,6 +36,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Encounter 1" as admitENC{
         Encounter.status = "in-progress"
         Encounter.class = "IMP"
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
     class "Patient 1" as admitPT{
@@ -47,8 +49,6 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
         ...
     }
 
@@ -68,6 +68,8 @@ admitSPOrg-[hidden]-admitPRO
 package "Message 2: Onleave inpatient" as Onleave <<Frame>> {
     class "Bundle 2" as onleaveB {
         Bundle.id = BUN2
+        Bundle.timestamp = 2021-12-02T08:00:10Z
+
         ...
     }
     class "MessageHeader 2" as onleaveMH{
@@ -83,9 +85,10 @@ package "Message 2: Onleave inpatient" as Onleave <<Frame>> {
     class "Encounter 2" as onleaveENC{
         Encounter.status = "onleave"
         Encounter.class = "IMP"
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
-    class "Patient 2" as onleavePT{
+    class "Patient 1" as onleavePT{
         ...
     }
     class "ServiceProvider Organization 2" as onleaveSPOrg{
@@ -95,8 +98,6 @@ package "Message 2: Onleave inpatient" as Onleave <<Frame>> {
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"        
-        Provenance.entity.what = NA
         ...
     }
     class "Provenance 2" as onleavePRO{
@@ -122,6 +123,7 @@ admitonleavePRO-[hidden]-onleavePRO
 package "Message 3: End onleave inpatient" as endOnleave <<Frame>> {
     class "Bundle 3" as endOnleaveB {
         Bundle.id = BUN3
+        Bundle.timestamp = 2021-12-02T18:00:10Z
         ...
     }
     class "MessageHeader 3" as endOnleaveMH{
@@ -137,9 +139,10 @@ package "Message 3: End onleave inpatient" as endOnleave <<Frame>> {
     class "Encounter 3" as endOnleaveENC{
         Encounter.status = "in-progress"
         Encounter.class = "IMP"
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
-    class "Patient 3" as endOnleavePT{
+    class "Patient 1" as endOnleavePT{
         ...
     }
     class "ServiceProvider Organization 3" as endOnleaveSPOrg{
@@ -149,8 +152,6 @@ package "Message 3: End onleave inpatient" as endOnleave <<Frame>> {
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
         ...
     }
     class "Provenance 2" as onleaveendOnleavePRO{
@@ -185,7 +186,8 @@ onleaveendOnleavePRO-[hidden]-endOnleavePRO
 'Message 4: Finished inpatient
 package "Message 4: Finished inpatient" as finished <<Frame>> {
     class "Bundle 4" as finishedB {
-        Bundle.id = BUN4
+        Bundle.id = BUN4        
+        Bundle.timestamp = 2021-12-04T14:00:10Z
         ...
     }
     class "MessageHeader 4" as finishedMH{
@@ -201,9 +203,10 @@ package "Message 4: Finished inpatient" as finished <<Frame>> {
     class "Encounter 4" as finishedENC{
         Encounter.status = "finished"
         Encounter.class = "IMP"
+        Encounter.period.start = 2021-12-01T12:00:00Z
         ...
     }
-    class "Patient 4" as finishedPT{
+    class "Patient 1" as finishedPT{
         ...
     }
     class "ServiceProvider Organization 4" as finishedSPOrg{
@@ -213,8 +216,6 @@ package "Message 4: Finished inpatient" as finished <<Frame>> {
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
         Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
         ...
     }
     class "Provenance 2" as onleavefinishedPRO{

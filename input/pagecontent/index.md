@@ -14,22 +14,22 @@ The HospitalNotification message follows the general MedCom FHIR messaging struc
 
 #### MedComHospitalNotificationMessage
 
-The HospitalNotificationMessage constrains the MedComMessagingMessage further to use the HospitalNotificationMesssageHeader and to require excactly one patient resource in the message. Furthermore, it constrains the MedComMessagingProvenance activity to contain only activities from the MedComHospitalNotificationMessageActivities ValueSet, which contains activities such as admit, start-leave, end-leave, discharge, and other events that triggers a HospitalNotification Message.
+The MedComHospitalNotificationMessage constrains the MedComMessagingMessage further to use the MedComHospitalNotificationMessageHeader and to require excactly one patient resource in the message. Furthermore, it constrains the MedComMessagingProvenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events that triggers a HospitalNotification Message.
 
 All referenced resources within the message are contained in the entry list in MedComHospitalNotificationMessage.
 
 #### MedComHospitalNotificationMessageHeader
 
-The HospitalNotificationMessageHeader constrains the MedComMessagingMessageHeader further to specify the fixed coding for this message and require a focus reference to a HospitalNotification encounter. Carbon-copy destination is not allowed.
+The MedComHospitalNotificationMessageHeader constrains the MedComMessagingMessageHeader further to specify the fixed coding for this message and require a focus reference to a MedComHospitalNotificationEncounter. Carbon-copy destination is not allowed.
 
 #### MedComHospitalNotificationEncounter
 
-The HospitalNotificationEncounter contains the main content of the message and constrain the MedComCoreEncounter further to require a unique identifier for the encounter and restrict the status and class to ValueSets of relevant values. The start time of the encounter and a reference to the service provider are made mandatory. Most other values are disallowed due to the legislation.
+The MedComHospitalNotificationEncounter contains the main content of the message and constrain the MedComCoreEncounter further to require a unique identifier for the encounter and restrict the status and class to value set of relevant values. The start time of the encounter and a reference to the service provider are made mandatory. Most other values are disallowed due to the legislation.
 
 ### Documentation
 
-#### Non-technical guide lines 
-Information regarding non-technical guide lines and use cases for HospitalNotification is found here:
+#### Non-technical guidelines 
+Information regarding non-technical guidelines and use cases for HospitalNotification is found here:
 
 English:
 * [HospitalNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
@@ -41,7 +41,7 @@ Danish:
 
 
 #### Change of state
-The change of state for an admission is dispicted in both the MedComHospitalNotificationEncounter elements *status* and *class*, the MedComCoreProvenance element *system*, and the MedComCorePatient element *deceased*.
+The change of state for an admission is dispicted in both the MedComHospitalNotificationEncounter elements *status* and *class*, the MedComMessagingProvenance element *system*, and the MedComCorePatient element *deceased*.
 Please refer to following maping documents for more details: 
 
 English: 

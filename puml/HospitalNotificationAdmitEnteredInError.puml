@@ -35,7 +35,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Encounter 1" as admitENC{
         Encounter.status = "in-progress"
         Encounter.class = "IMP"
-        Encounter.period.start = 2021-12-01T12:00:00Z
+        Encounter.period.start = 2021-12-03T14:00:00Z
         ...
     }
     class "Patient 1" as admitPT{
@@ -47,7 +47,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Provenance 1" as admitPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
 
@@ -72,16 +72,16 @@ package "Message 2: Cancel admission" as error <<Frame>> {
         MessageHeader.id = MHID2
         ...
     }
-    class "Sender Organization 2" as errorSOrg{
+    class "Sender Organization 1" as errorSOrg{
         ...
     }
-    class "Reciver Organization 2" as errorROrg{
+    class "Reciver Organization 1" as errorROrg{
         ...
     }
     class "Encounter 2" as errorENC{
         Encounter.status = "finished"
         Encounter.class = "IMP"        
-        Encounter.period.start = 2021-12-01T12:00:00Z
+        Encounter.period.start = 2021-12-03T14:00:00Z
         ...
     }
     class "Patient 2" as errorPT{
@@ -93,13 +93,13 @@ package "Message 2: Cancel admission" as error <<Frame>> {
     class "Provenance 1" as admiterrorPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"        
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
     class "Provenance 2" as errorPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "cancel-admit-inpatient"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         Provenance.entity.role = "removal"
         Provenance.entity.what = MessageHeader/MHID1
         ...

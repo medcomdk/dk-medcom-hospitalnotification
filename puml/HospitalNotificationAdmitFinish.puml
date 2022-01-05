@@ -47,7 +47,7 @@ package "Message 1: Admit inpatient" as admit <<Frame>>{
     class "Provenance 1" as admitPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
 
@@ -74,10 +74,10 @@ package "Message 2: Finished inpatient" as finished <<Frame>> {
         MessageHeader.id = MHID2
         ...
     }
-    class "Sender Organization 2" as finishedSOrg{
+    class "Sender Organization 1" as finishedSOrg{
         ...
     }
-    class "Reciver Organization 2" as finishedROrg{
+    class "Reciver Organization 1" as finishedROrg{
         ...
     }
     class "Encounter 2" as finishedENC{
@@ -91,17 +91,17 @@ package "Message 2: Finished inpatient" as finished <<Frame>> {
     }
     class "ServiceProvider Organization 2" as finishedSPOrg{
         ...
-    }
+    }    
     class "Provenance 1" as admitfinishedPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
     class "Provenance 2" as finishedPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "discharge-imp-home"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         Provenance.entity.role = "derivation"
         Provenance.entity.what = MessageHeader/MHID1
         ...

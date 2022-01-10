@@ -7,7 +7,7 @@ Changes to the IG are automatically built and viewed at http://build.fhir.org/ig
 The IG can be loaded up in a FHIR server instance using the following docker command:
 
 ```
-docker run --name=hapi-fhir --rm -p 8080:8080 -e HAPI_IMPLEMENTATION_GUIDE_URL=https://build.fhir.org/ig/hl7dk/dk-medcom/package.tgz mzgtrifork/hapi-fhir-jpaserver-starter:0.0.1
+docker run --name=hapi-fhir --rm -p 8080:8080 -e HAPI_IMPLEMENTATION_GUIDE_URL=https://build.fhir.org/ig/hl7dk/dk-medcom-hospitalnotification/package.tgz mzgtrifork/hapi-fhir-jpaserver-starter:0.0.1
 ```
 -where the environment variable HAPI_IMPLEMENTATION_GUIDE_URL points to the package.tgz of any given FHIR Implementation Guide
 

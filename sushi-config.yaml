@@ -13,9 +13,9 @@ publisher:
   url: http://www.medcom.dk
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
-  dk.fhir.ig.dk-core: 
-    uri: https://hl7.dk/fhir/core/1.1.0/
-    version: current
+  hl7.fhir.dk.core:
+   uri: https://hl7.dk/fhir/core/1.1.0/
+   version: 1.1.0
   dk.fhir.ig.dk-medcom-core: current
   dk.fhir.ig.dk-medcom-messaging: current
 

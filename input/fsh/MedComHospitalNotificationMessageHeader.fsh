@@ -44,7 +44,7 @@ Description: "Message header for a hospital notification start leave message. Va
 * focus = Reference(556e9c54-23d2-43a4-816e-951d2a6e3281)
 * extension[reportOfAdmissionFlag].valueBoolean = false
 
- Instance: e47254da-f170-46f0-b624-4778a9c92b1f
+Instance: e47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "Message header for a hospital notification end leave message. Valid only if used in a bundle (message)"
 Description: "Message header for a hospital notification end leave message. Valid only if used in a bundle (message)."

@@ -46,9 +46,6 @@ Description: "A core organization with a SOR identifier."
 * name = "Aros Burn Center"
 
 // MedComCoreEncounter instance
-Alias: $StatusCodes = http://hl7.org/fhir/encounter-status
-Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode 
-
 Instance: 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
@@ -58,8 +55,6 @@ Description: "Example of a simple MedCom Core Encounter"
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 
 // MedComMessagingMessage instance
-Alias: $BundleType = http://hl7.org/fhir/bundle-type
-
 Instance: eb26be85-fdb7-454d-a980-95cba6d1745b
 InstanceOf: MedComMessagingMessage
 Description: "Example of an emty message."
@@ -73,9 +68,6 @@ Description: "Example of an emty message."
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 
 // MedComMessagingMessageHeader og MedComMessagingDestinationUseExtension instance
-Alias: $Use = http://medcomfhir.dk/fhir/messaging/CodeSystem/medcom-messaging-destinationUse
-Alias: $MessageEvents = http://medcomfhir.dk/fhir/messaging/CodeSystem/medcom-messaging-eventCodes
-
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
@@ -121,7 +113,6 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[eanIdentifier].value = "5790000121530"
 
 // MedComMessagingProvenance instance 
-Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
 
 // Acknowledgement example
 Instance: 21ec3323-3e3b-43d9-8a53-e1155ef29f99

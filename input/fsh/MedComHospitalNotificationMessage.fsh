@@ -1,7 +1,7 @@
 Profile: MedComHospitalNotificationMessage
 Parent: MedComMessagingMessage
 Id: medcom-hospitalNotification-message
-Description: "A message for a Hospital Notification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care"
+Description: "A message for a HospitalNotification. The message is triggered as patients are admitted, onleave or has finished a hospital stay in order to notify the relevant Municipalicy home care"
 * entry ^short = "Message content (MedComHospitalNotificationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComHospitalNotificationEncounter, MedComCorePatient) - Open"
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
@@ -27,12 +27,12 @@ Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-hos
 
 Instance: 15e5b880-c087-4055-b9ec-99108695f81d
 InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message Admit Example"
-Description: "Example of MedCom Hospital Notification Admit"
+Title: "MedCom HospitalNotification Message Admit Example"
+Description: "Example of MedCom HospitalNotification Admit"
 * type = $BundleType#message
 * timestamp = 2020-10-15T13:44:14Z
-* entry[+].fullUrl = "MessageHeader/51b27813-8aa8-4fa1-846b-aeabf5afb7d4"
-* entry[=].resource = 51b27813-8aa8-4fa1-846b-aeabf5afb7d4
+* entry[+].fullUrl = "MessageHeader/29b4818e-02de-4cc4-b418-d20cbc7b5404"
+* entry[=].resource = 29b4818e-02de-4cc4-b418-d20cbc7b5404
 * entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
 * entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
@@ -50,8 +50,8 @@ Description: "Example of MedCom Hospital Notification Admit"
 
 Instance: 53128d9b-cede-4c7f-8904-809eab322d7d
 InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message Start Leave Example"
-Description: "Example of MedCom Hospital Notification Start Leave"
+Title: "MedCom HospitalNotification Message Start Leave Example"
+Description: "Example of MedCom HospitalNotification Start Leave"
 * type = $BundleType#message
 * timestamp = 2020-10-20T10:21:56Z
 * entry[+].fullUrl = "MessageHeader/b563a2b2-bf92-4b13-bbd2-0a021a95bded"
@@ -66,15 +66,15 @@ Description: "Example of MedCom Hospital Notification Start Leave"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa"
-* entry[=].resource = dc421d0a-cded-470f-9a53-2ddba7583baa
-* entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa"
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit prov
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
+* entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa" //start leave prov
 * entry[=].resource = dc421d0a-cded-470f-9a53-2ddba7583baa
 
 Instance: 094de8ee-bd94-475e-b454-b8fbbef8a685
 InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message End Leave Example"
-Description: "Example of MedCom Hospital Notification End Leave"
+Title: "MedCom HospitalNotification Message End Leave Example"
+Description: "Example of MedCom HospitalNotification End Leave"
 * type = $BundleType#message
 * timestamp = 2020-10-20T10:21:56Z
 * entry[+].fullUrl = "MessageHeader/e47254da-f170-46f0-b624-4778a9c92b1f"
@@ -100,8 +100,8 @@ Description: "Example of MedCom Hospital Notification End Leave"
 
 Instance: 04aa42a4-86db-4e68-9b38-9dda0dfd5774
 InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message Discharge Example"
-Description: "Example of MedCom Hospital Notification Discharge"
+Title: "MedCom HospitalNotification Message Discharge Example"
+Description: "Example of MedCom HospitalNotification Discharge"
 * type = $BundleType#message
 * timestamp = 2020-10-15T13:44:14Z
 * entry[+].fullUrl = "MessageHeader/01affa53-c157-4080-abb0-8e681524f969"
@@ -116,40 +116,18 @@ Description: "Example of MedCom Hospital Notification Discharge"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
-* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "Provenance/2710698c-83eb-4c3e-81c8-fe8e40baf524"
 * entry[=].resource = 2710698c-83eb-4c3e-81c8-fe8e40baf524
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
 
-/* 
-//Example of patient admitted before deceased message
-Instance: bfe14780-3f38-4a82-b102-c198e3762b45
-InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message Admitted before Deceased Example"
-Description: "Example of MedCom Hospital Notification admit when patient is later deceased"
-* type = $BundleType#message
-* timestamp = 2021-01-10T13:44:14Z
-* entry[+].fullUrl = "MessageHeader/29b4818e-02de-4cc4-b418-d20cbc7b5404"
-* entry[=].resource = 29b4818e-02de-4cc4-b418-d20cbc7b5404
-* entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
-* entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
-* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
-* entry[+].fullUrl = "Encounter/d6145390-62ad-4cd0-8fe0-9679a34c44a9"
-* entry[=].resource = d6145390-62ad-4cd0-8fe0-9679a34c44a9
-* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
-* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Provenance/3302eb96-a10a-47c3-95b6-461cb053cbd7"
-* entry[=].resource = 3302eb96-a10a-47c3-95b6-461cb053cbd7 */
 
 
 //Example of patient deceased message
 Instance: e099bbf3-3fca-4722-a248-bfe1aa956410
 InstanceOf: MedComHospitalNotificationMessage
-Title: "MedCom Hospital Notification Message Discharge Deceased Example"
-Description: "Example of MedCom Hospital Notification Discharge when patient is deceased"
+Title: "MedCom HospitalNotification Message Discharge Deceased Example"
+Description: "Example of MedCom HospitalNotification Discharge when patient is deceased"
 * type = $BundleType#message
 * timestamp = 2021-01-13T13:44:14Z
 * entry[+].fullUrl = "MessageHeader/8efc6d95-6161-4493-99c9-f359488dedb8"
@@ -158,11 +136,58 @@ Description: "Example of MedCom Hospital Notification Discharge when patient is 
 * entry[=].resource = 382fb8a3-6725-41e2-a615-2b1cfcfe9931
 * entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
 * entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
-* entry[+].fullUrl = "Encounter/8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased"
-* entry[=].resource = 8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased
+* entry[+].fullUrl = "Encounter/1cab7218-9584-11ec-b909-0242ac120002"
+* entry[=].resource = 1cab7218-9584-11ec-b909-0242ac120002
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
 * entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/09942adb-197a-4e30-bec8-566e3a113efe"
 * entry[=].resource = 09942adb-197a-4e30-bec8-566e3a113efe
+
+
+Instance: 883671a4-9584-11ec-b909-0242ac120002
+InstanceOf: MedComHospitalNotificationMessage
+Title: "MedCom HospitalNotification Message Cancel Admission Example"
+Description: "Example of MedCom HospitalNotification Cancel Admission"
+* type = $BundleType#message
+* timestamp = 2020-10-15T13:44:14Z
+* entry[+].fullUrl = "MessageHeader/01affa53-c157-4080-abb0-8e681524f969"
+* entry[=].resource = 01affa53-c157-4080-abb0-8e681524f969
+* entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
+* entry[+].fullUrl = "Encounter/8405ba2d-467a-4e92-9acc-9dc2a629760f"
+* entry[=].resource = 8405ba2d-467a-4e92-9acc-9dc2a629760f
+* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Provenance/467ecb1c-957a-11ec-b909-0242ac120002"
+* entry[=].resource = 467ecb1c-957a-11ec-b909-0242ac120002
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0
+
+Instance: 6fab3e80-9584-11ec-b909-0242ac120002
+InstanceOf: MedComHospitalNotificationMessage
+Title: "MedCom HospitalNotification Message Revise Admission Example"
+Description: "Example of MedCom HospitalNotification Revise Admission"
+* type = $BundleType#message
+* timestamp = 2020-10-15T13:44:14Z
+* entry[+].fullUrl = "MessageHeader/51b27813-8aa8-4fa1-846b-aeabf5afb7d4"
+* entry[=].resource = 51b27813-8aa8-4fa1-846b-aeabf5afb7d4
+* entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
+* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
+* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
+* entry[+].fullUrl = "Encounter/7790f964-88d3-4652-bbc8-81d2f3d035f8"
+* entry[=].resource = 7790f964-88d3-4652-bbc8-81d2f3d035f8
+* entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[=].resource = d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Provenance/35f7de8c-957a-11ec-b909-0242ac120002"
+* entry[=].resource = 35f7de8c-957a-11ec-b909-0242ac120002
+* entry[+].fullUrl = "Provenance/d7cf3888-6f42-4e4d-929c-d2475d24fba0"
+* entry[=].resource = d7cf3888-6f42-4e4d-929c-d2475d24fba0

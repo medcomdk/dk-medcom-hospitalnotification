@@ -36,8 +36,8 @@ Description: "Encounter derivation that handles hospital notification when a pat
 
 Instance: 7790f964-88d3-4652-bbc8-81d2f3d035f8
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter in progress"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
+Title: "MedCom HospitalNotification Encounter in progress"
+Description: "Example of MedCom HospitalNoticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #in-progress
 * class = $ActCodes#IMP 
@@ -49,35 +49,36 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter in pro
 
 Instance: 556e9c54-23d2-43a4-816e-951d2a6e3281
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter on leave"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter on leave with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
+Title: "MedCom HospitalNotification Encounter on leave"
+Description: "Example of MedCom HospitalNoticication inpatient Encounter on leave with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #onleave
 * class = $ActCodes#IMP 
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
-* period.start = 2020-10-15T13:44:14Z
+* period.start = 2020-10-20T10:21:56Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 Instance: 8405ba2d-467a-4e92-9acc-9dc2a629760f
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter in progress"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter in progress with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
+Title: "MedCom HospitalNotification Encounter finished"
+Description: "Example of MedCom HospitalNoticication inpatient Encounter finished with 12ee0dde-a672-462f-820d-5efe832d73c9 as serviceProvider"
 * identifier.value = "1234567890"
 * status = #finished
 * class = $ActCodes#IMP 
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
+* episodeOfCare[lpr3identifier].identifier.value = "771d5c62-9fe2-5d62-a232-ef465d810473" 
 * period.start = 2020-10-15T13:44:14Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 //Embedded Encounter with admit before patient is deceased
 Instance: d6145390-62ad-4cd0-8fe0-9679a34c44a9
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter admitted before deceased"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter when patient is admitted"
+Title: "MedCom HospitalNotification Encounter admitted before deceased"
+Description: "Example of MedCom HospitalNoticication inpatient Encounter when patient is admitted"
+Usage: #inline
 * identifier.value = "7b9f8497-3314-4535-8f86-20df7b5f4d55"
 * status = #in-progress
 * class = $ActCodes#IMP
@@ -88,10 +89,11 @@ Description: "Example of MedCom Hospital Noticication inpatient Encounter when p
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
 //Embedded Encouner with admitted patient deceased
-Instance: 8405ba2d-467a-4e92-9acc-9dc2a629760fWhenDeceased
+Instance: 1cab7218-9584-11ec-b909-0242ac120002
 InstanceOf: MedComHospitalNotificationEncounter
-Title: "MedCom Hospital Notification Encounter finished"
-Description: "Example of MedCom Hospital Noticication inpatient Encounter finished, patient deceased"
+Title: "MedCom HospitalNotification Encounter finished"
+Description: "Example of MedCom HospitalNoticication inpatient Encounter finished, patient deceased"
+Usage: #inline
 * identifier.value = "7b9f8497-3314-4535-8f86-20df7b5f4d55"
 * status = #finished
 * class = $ActCodes#IMP

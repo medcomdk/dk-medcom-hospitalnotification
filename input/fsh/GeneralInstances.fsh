@@ -37,28 +37,26 @@ Instance: 12ee0dde-a672-462f-820d-5efe832d73c9
 InstanceOf: MedComCoreOrganization
 Title: "Aros Burn Center"
 Description: "A core organization with a SOR identifier."
-* identifier[sorIdentifier].use = #official
-* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
-* identifier[sorIdentifier].value = "123456789012345"
+* identifier[SOR-ID].value = "459751000016008"
 * name = "Aros Burn Center"
 
 
 // Reciever instance
 Instance: 74cdf292-abf3-4f5f-80ea-60a48013ff6d
-InstanceOf: MedComMessagingOrganization
+InstanceOf: MedComMessagingOrganization // Odense Kommune, Beskæftigelses- og Socialforvaltningen
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "543210987654321"
-* identifier[eanIdentifier].value = "5790000121526"
+* identifier[SOR-ID].value = "942231000016003" 
+* identifier[EAN-ID].value = "5798006611867" 
 * name = "Receiver Organization"
 
 // Sender instance
 Instance: d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-InstanceOf: MedComMessagingOrganization
+InstanceOf: MedComMessagingOrganization // Region Syddanmark, OUH FS Operationsafsnit
 Title: "Example of a sender organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "123456789012345"
-* identifier[eanIdentifier].value = "5790001382445"
+* identifier[SOR-ID].value = "8071000016009" 
+* identifier[EAN-ID].value = "5798002572049" 
 * name = "Sender Organization"
 
 // Service provider instance
@@ -66,7 +64,5 @@ Instance: bf839e87-4e44-4977-b38e-92b5a6f187b5
 InstanceOf: MedComMessagingOrganization
 Title: "Example of a service provider organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "654321098765432"
-* identifier[eanIdentifier].value = "5790000121530"
-
-
+* identifier[SOR-ID].value = "8071000016009"
+* identifier[EAN-ID].value = "5798002572049" 

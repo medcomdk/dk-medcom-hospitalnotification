@@ -32,12 +32,12 @@ The MedComHospitalNotificationEncounter contains the main content of the message
 Information regarding non-technical guidelines and use cases for HospitalNotification is found here:
 
 English:
-* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital%20Notification_eng.pdf)
-* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital_Notification.pdf)
+* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital_Notification_eng.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital%20Notification_v.1.0.1.pdf)
 
 Danish:
 * [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
-* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold.pdf)
+* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold_1.0.1.pdf)
 
 
 #### Change of state

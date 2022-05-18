@@ -14,6 +14,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * episodeOfCare 1.. MS
 * episodeOfCare.identifier 1.. MS
 * episodeOfCare ^definition = "Shall contain an episode of care identifier for the entire hospitalization"
+* episodeOfCare[lpr3identifier] MS
 * episodeOfCare[lpr3identifier].reference ..0
 * episodeOfCare.reference ..0
 * basedOn ..0
@@ -42,8 +43,7 @@ Description: "Example of MedCom HospitalNoticication inpatient Encounter in prog
 * status = #in-progress
 * class = $ActCodes#IMP 
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
+* episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * period.start = 2020-10-15T13:44:14Z
 * serviceProvider = Reference(bf839e87-4e44-4977-b38e-92b5a6f187b5)
 
@@ -55,8 +55,7 @@ Description: "Example of MedCom HospitalNoticication inpatient Encounter on leav
 * status = #onleave
 * class = $ActCodes#IMP 
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "87654321-1234-1234-1234-123456789012" 
+* episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:a8e9917e-4081-5f99-905c-54246ae72867" 
 * period.start = 2020-10-20T10:21:56Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
@@ -68,8 +67,7 @@ Description: "Example of MedCom HospitalNoticication inpatient Encounter finishe
 * status = #finished
 * class = $ActCodes#IMP 
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "771d5c62-9fe2-5d62-a232-ef465d810473" 
+* episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:b0172334-fa5e-5dfe-acb8-2a5b7aee3143" 
 * period.start = 2020-10-15T13:44:14Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
@@ -83,12 +81,11 @@ Usage: #inline
 * status = #in-progress
 * class = $ActCodes#IMP
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
+* episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:77fad0f1-3847-59e1-97cb-d1761b2d2576"
 * period.start = 2021-01-10T13:44:14Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)
 
-//Embedded Encouner with admitted patient deceased
+//Embedded Encounter with admitted patient deceased
 Instance: 1cab7218-9584-11ec-b909-0242ac120002
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "MedCom HospitalNotification Encounter finished"
@@ -98,7 +95,6 @@ Usage: #inline
 * status = #finished
 * class = $ActCodes#IMP
 * subject = Reference(382fb8a3-6725-41e2-a615-2b1cfcfe9931)
-* episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
-* episodeOfCare[lpr3identifier].identifier.value = "200040a2-e05d-4af3-91e7-5febfa8ad0b3"
+* episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:150d589a-d7e0-50cd-9651-fd9cad93be68"
 * period.start = 2021-01-13T13:44:14Z
 * serviceProvider = Reference(12ee0dde-a672-462f-820d-5efe832d73c9)

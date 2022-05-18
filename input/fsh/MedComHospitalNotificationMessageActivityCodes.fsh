@@ -1,6 +1,3 @@
-
-
-
 ValueSet: MedComHospitalNotificationMessageActivities
 Id: medcom-hospitalNotification-messageActivities
 Title: "MedComHospitalNotificationMessageActivityCodes"

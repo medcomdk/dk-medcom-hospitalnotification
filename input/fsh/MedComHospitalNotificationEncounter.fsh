@@ -15,6 +15,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * episodeOfCare.identifier 1.. MS
 * episodeOfCare ^definition = "Shall contain an episode of care identifier for the entire hospitalization"
 * episodeOfCare[lpr3identifier] MS
+* episodeOfCare[lpr3identifier].identifier SU
 * episodeOfCare[lpr3identifier].reference ..0
 * episodeOfCare.reference ..0
 * basedOn ..0

@@ -24,6 +24,10 @@ Description: "All provenance resources shall contain activities from medcom-hosp
 Severity: #error
 Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-hospitalNotification-messageActivities'))"
 
+/* Invariant: medcom-messaging-3
+Description: "All Provenance resources shall conform to medcom-core-provenance profile"
+Severity: #error
+Expression: "entry.ofType(Provenance).all(resource.conformsTo('http://medcomfhir.dk/fhir/messaging/StructureDefinition/medcom-messaging-provenance'))" */
 
 Instance: 15e5b880-c087-4055-b9ec-99108695f81d
 InstanceOf: MedComHospitalNotificationMessage
@@ -35,8 +39,6 @@ Description: "Example of MedCom HospitalNotification Admit"
 * entry[=].resource = 29b4818e-02de-4cc4-b418-d20cbc7b5404
 * entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
-* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Encounter/7790f964-88d3-4652-bbc8-81d2f3d035f8"
 * entry[=].resource = 7790f964-88d3-4652-bbc8-81d2f3d035f8
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
@@ -81,8 +83,6 @@ Description: "Example of MedCom HospitalNotification End Leave"
 * entry[=].resource = e47254da-f170-46f0-b624-4778a9c92b1f
 * entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
-* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Encounter/7790f964-88d3-4652-bbc8-81d2f3d035f8"
 * entry[=].resource = 7790f964-88d3-4652-bbc8-81d2f3d035f8
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
@@ -179,10 +179,10 @@ Description: "Example of MedCom HospitalNotification Revise Admission"
 * entry[=].resource = 51b27813-8aa8-4fa1-846b-aeabf5afb7d4
 * entry[+].fullUrl = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/12ee0dde-a672-462f-820d-5efe832d73c9"
-* entry[=].resource = 12ee0dde-a672-462f-820d-5efe832d73c9
 * entry[+].fullUrl = "Encounter/7790f964-88d3-4652-bbc8-81d2f3d035f8"
 * entry[=].resource = 7790f964-88d3-4652-bbc8-81d2f3d035f8
+* entry[+].fullUrl = "Organization/bf839e87-4e44-4977-b38e-92b5a6f187b5" //service provider Org
+* entry[=].resource = bf839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Organization/74cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 * entry[+].fullUrl = "Organization/d7056980-a8b2-42aa-8a0e-c1fc85d1f40d"

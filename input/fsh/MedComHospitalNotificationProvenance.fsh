@@ -1,6 +1,14 @@
-/* // Admit instance
+Profile: MedComHospitalNotificationProvenance
+Parent: MedComMessagingProvenance
+Id: medcom-hospitalNotification-provenance
+Description: "A Provenance for a HospitalNotification."
+* activity from MedComHospitalNotificationMessageActivities
+* activity ^short = "Activity that occurred and triggered the message. These activities accommodates the use of the HospitalNotification."
+
+
+// Admit instance
 Instance: d7cf3888-6f42-4e4d-929c-d2475d24fba0
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - admit inpatient"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) -admit inpatient"
 Usage: #example
@@ -12,7 +20,7 @@ Usage: #example
 
 //start leave
 Instance: dc421d0a-cded-470f-9a53-2ddba7583baa
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - start leave"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - start leave"
 Usage: #example
@@ -26,7 +34,7 @@ Usage: #example
 
 // End leave example
 Instance: 04db4939-7c60-4ac6-aefc-523f809ccba6
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - end leave"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - end leave"
 Usage: #example
@@ -40,7 +48,7 @@ Usage: #example
 
 // discharge inpatient
 Instance: 2710698c-83eb-4c3e-81c8-fe8e40baf524
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - discharge inpatient"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - discharge inpatient"
 Usage: #example
@@ -54,7 +62,7 @@ Usage: #example
 
  // patient is deceased
 Instance: 09942adb-197a-4e30-bec8-566e3a113efe
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - deceased inpatient"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) deceased inpatient"
 Usage: #inline
@@ -66,7 +74,7 @@ Usage: #inline
 
 // Revise admit instance
 Instance: 35f7de8c-957a-11ec-b909-0242ac120002
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - admit inpatient"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) -admit inpatient"
 Usage: #example
@@ -80,7 +88,7 @@ Usage: #example
 
 // Cancel admit instance
 Instance: 467ecb1c-957a-11ec-b909-0242ac120002
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComHospitalNotificationProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - admit inpatient"
 Description: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) -admit inpatient"
 Usage: #example
@@ -90,4 +98,4 @@ Usage: #example
 * activity.coding = $ActivityCode#cancel-admit-inpatient
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #removal
-* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0) */
+* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0)

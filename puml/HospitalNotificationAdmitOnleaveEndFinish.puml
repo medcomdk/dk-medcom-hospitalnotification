@@ -13,250 +13,341 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: Admit, onleave, end onleave and finish inpatient
+title Simplified example: Admit, Onleave, and Discharge Inpatient
 
 
-'Message 1: Admit inpatient
-package "Message 1: Admit inpatient" as admit <<Frame>>{
-    class "Bundle 1" as admitB {
-        Bundle.id = BUN1
-        Bundle.timestamp = 2021-12-01T12:00:10Z
-        ...
+package "Message 1: Admit Inpatient" as admit <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as admitB{
+        id = BUN1
+        type = "message"
+        timestamp = 2021-12-01T12:00:10+01:00
     }
-    class "MessageHeader 1" as admitMH{
-        MessageHeader.id = MHID1
-        ...
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
+        id = MH1
+        event = "hospital-notification-message"
+        destination:primary = MedComMessagingOrganization/RO1
+        destination:primary.use = "primary"
+        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        sender = MedComMessagingOrganization/SO1
+        source.endpoint = *url to receiver of Acknowledgement*
+        focus = MedComHospitalNotificationEncounter/ENC1
     }
-    class "Sender Organization 1" as admitSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as admitPT{
+        id = PA1
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
     }
-    class "Reciver Organization 1" as admitROrg{
-        ...
+    class "Encounter (MedComHospitalNotificationEncounter)" as admitENC{
+        id = ENC1
+        status = "in-progress"
+        class = "IMP"
+        subject = MedComCorePatient/PA1
+        episodeOfCare = *refence to the episode of care*
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2021-12-01T12:00:00+01:00
+        serviceProvider = MedComCoreOrganization/SPO1
+    }    
+    class "ServiceProvider Organization (MedComCoreOrganization)" as admitSPOrg{
+        id = SPO1
+        sorIdentifier = 369258147
     }
-    class "Encounter 1" as admitENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        Encounter.period.start = 2021-12-01T12:00:00Z
-        ...
+    class "Receiver: Municipality (MedComMessagingOrganization)" as admitROrg{
+        id = RO1
+        eanIdentifier = 987654321
+        sorIdentifier = 741852963
     }
-    class "Patient 1" as admitPT{
-        ...
+    class "Sender: Hospital (MedComMessagingOrganization)" as admitSOrg{
+        id = SO1
+        eanIdentifier = 123456789
+        sorIdentifier = 369258147
     }
-    class "ServiceProvider Organization 1" as admitSPOrg{
-        ...
-    }
-    class "Provenance 1" as admitPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
+    class "Provenance (MedComMessagingProvenance)" as admitPRO{
+        id = PROV2
+        target = MH1
+        occuredDateTime = 2021-12-01T12:00:10+01:00
+        recorded = 2021-12-01T12:00:20
+        activity.code = "admit-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
     }
 
 admitB -[hidden]- admitMH
-admitMH -[hidden]- admitSOrg
-admitSOrg-[hidden]-admitROrg
-admitROrg-[hidden]-admitENC
-admitENC-[hidden]-admitPT
-admitPT-[hidden]-admitSPOrg
-admitSPOrg-[hidden]-admitPRO
-
-
-
+admitMH-[hidden]-admitPT
+admitPT-[hidden]-admitENC
+admitENC-[hidden]-admitSPOrg
+admitSPOrg-[hidden]-admitROrg
+admitROrg-[hidden]-admitSOrg
+admitSOrg-[hidden]-admitPRO
 }
 
 'Message 2: Onleave inpatient
-package "Message 2: Onleave inpatient" as Onleave <<Frame>> {
-    class "Bundle 2" as onleaveB {
-        Bundle.id = BUN2
-        Bundle.timestamp = 2021-12-02T08:00:10Z
+package "Message 2: Start Onleave Inpatient" as Onleave <<Frame>> {
+    class "Bundle (MedComHospitalNotificationMessage)" as onleaveB {
+        id = BUN2
+        type = "message"
+        timestamp = 2021-12-02T08:00:10
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as onleaveMH{
+        id = MH2
+        event = "hospital-notification-message"
+        destination:primary = MedComMessagingOrganization/RO1
+        destination:primary.use = "primary"
+        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        sender = MedComMessagingOrganization/SO1
+        source.endpoint = *url to receiver of Acknowledgement*
+        focus = MedComHospitalNotificationEncounter/ENC1
+    }
+    class "Patient (MedComCorePatient)" as onleavePT{
+        id = PA1
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as onleaveENC{
+        id = ENC2
+        status = "onleave"
+        class = "IMP"
+        subject = MedComCorePatient/PA1
+        episodeOfCare = *refence to the episode of care*
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2021-12-01T12:00:00Z
+        serviceProvider = MedComCoreOrganization/SPO1
+    }
+    class "Service Provider Organization (MedComCoreOrganization)" as onleaveSPOrg{
+        id = SPO1
+        sorIdentifier = 369258147
+    }
+    class "Receiver: Municipality (MedComMessagingOrganization)" as onleaveROrg{
+        id = RO1
+        eanIdentifier = 987654321
+        sorIdentifier = 741852963
+    }
+    class "Sender: Hospital (MedComMessagingOrganization)" as onleaveSOrg{
+        id = SO1
+        eanIdentifier = 123456789
+        sorIdentifier = 369258147
+    }
+    class "Provenance (MedComMessagingProvenance)" as admitonleavePRO{
+        id = PROV1
+        target = MessageHeader/MH1
+        occuredDateTime = 2021-12-01T12:00:10+01:00
+        recorded = 2021-12-01T12:00:20
+        activity.code = "admit-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+    }
+    class "Provenance (MedComMessagingProvenance)" as onleavePRO{
+        id = PROV2        
+        target = MH2
+        occuredDateTime = 2021-12-01T12:00:10+01:00
+        recorded = 2021-12-01T12:00:20
+        activity = "start-leave-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH1
 
-        ...
-    }
-    class "MessageHeader 2" as onleaveMH{
-        MessageHeader.id = MHID2
-        ...
-    }
-    class "Sender Organization 1" as onleaveSOrg{
-        ...
-    }
-    class "Reciver Organization 1" as onleaveROrg{
-        ...
-    }
-    class "Encounter 2" as onleaveENC{
-        Encounter.status = "onleave"
-        Encounter.class = "IMP"
-        Encounter.period.start = 2021-12-01T12:00:00Z
-        ...
-    }
-    class "Patient 1" as onleavePT{
-        ...
-    }
-    class "ServiceProvider Organization 2" as onleaveSPOrg{
-        ...
-    }
-    class "Provenance 1" as admitonleavePRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
-    }
-    class "Provenance 2" as onleavePRO{
-        Provenance.target = MessageHeader/MHID2
-        Provenance.activity = "start-leave-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID1
-        ...
     }
 onleaveB-[hidden]-onleaveMH
-onleaveMH-[hidden]-onleaveSOrg
-onleaveSOrg-[hidden]-onleaveROrg
-onleaveROrg-[hidden]-onleaveENC
-onleaveENC-[hidden]-onleavePT
-onleavePT-[hidden]-onleaveSPOrg
-onleaveSPOrg-[hidden]-admitonleavePRO
+onleaveMH-[hidden]-onleavePT
+onleavePT-[hidden]-onleaveENC
+onleaveENC-[hidden]-onleaveSPOrg
+onleaveSPOrg-[hidden]-onleaveROrg
+onleaveROrg-[hidden]-onleaveSOrg
+onleaveSOrg-[hidden]-admitonleavePRO
 admitonleavePRO-[hidden]-onleavePRO
 
 }
 
 'Message 3: End onleave inpatient
-package "Message 3: End onleave inpatient" as endOnleave <<Frame>> {
-    class "Bundle 3" as endOnleaveB {
-        Bundle.id = BUN3
-        Bundle.timestamp = 2021-12-02T18:00:10Z
-        ...
+package "Message 3: End onleave Inpatient" as endOnleave <<Frame>> {
+    class "Bundle (MedComHospitalNotificationMessage)" as endOnleaveB {
+        id = BUN3
+        type = "message"
+        timestamp = 2021-12-03T13:00:00
     }
-    class "MessageHeader 3" as endOnleaveMH{
-        MessageHeader.id = MHID3
-        ...
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as endOnleaveMH{
+        id = MH3
+        event = "hospital-notification-message"
+        destination:primary = MedComMessagingOrganization/RO1
+        destination:primary.use = "primary"
+        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        sender = MedComMessagingOrganization/SO1
+        source.endpoint = *url to receiver of Acknowledgement*
+        focus = MedComHospitalNotificationEncounter/ENC1
     }
-    class "Sender Organization 1" as endOnleaveSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as endOnleavePT{
+        id = PA1
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
     }
-    class "Reciver Organization 1" as endOnleaveROrg{
-        ...
+    class "Encounter (MedComHospitalNotificationEncounter)" as endOnleaveENC{
+        id = ENC3
+        status = "in-progress"
+        class = "IMP"
+        subject = MedComCorePatient/PA1
+        episodeOfCare = *refence to the episode of care*
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2021-12-01T12:00:00Z
+        serviceProvider = MedComCoreOrganization/SPO1
     }
-    class "Encounter 3" as endOnleaveENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        Encounter.period.start = 2021-12-01T12:00:00Z
-        ...
+    class "ServiceProvider Organization (MedComCoreOrganization)" as endOnleaveSPOrg{
+        id = SPO1
+        sorIdentifier = 369258147
     }
-    class "Patient 1" as endOnleavePT{
-        ...
+    class "Receiver: Municipality (MedComMessagingOrganization)" as endOnleaveROrg{
+        id = RO1
+        eanIdentifier = 987654321
+        sorIdentifier = 741852963
     }
-    class "ServiceProvider Organization 3" as endOnleaveSPOrg{
-        ...
+    class "Sender: Hospital (MedComMessagingOrganization)" as endOnleaveSOrg{
+        id = SO1
+        eanIdentifier = 123456789
+        sorIdentifier = 369258147
+    }    
+    class "Provenance(MedComMessagingProvenance)" as admitendOnleavePRO{
+        id = PROV1
+        target = MessageHeader/MH1
+        occuredDateTime = 2021-12-01T12:00:10+01:00
+        recorded = 2021-12-01T12:00:20
+        activity.code = "admit-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
     }
-    class "Provenance 1" as admitendOnleavePRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
+    class "Provenance (MedComMessagingProvenance)" as onleaveendOnleavePRO{
+        id = PROV2        
+        target = MessageHeader/MH2
+        occuredDateTime = 2021-12-02T08:00:00+01:00
+        recorded = 2021-12-02T08:00:20
+        activity = "start-leave-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH1
     }
-    class "Provenance 2" as onleaveendOnleavePRO{
-        Provenance.target = MessageHeader/MHID2
-        Provenance.activity = "start-leave-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID1
-        ...
-    }
-    class "Provenance 3" as endOnleavePRO{
-        Provenance.target = MessageHeader/MHID3
-        Provenance.activity = "end-leave-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID2
-        ...
+    class "Provenance (MedComMessagingProvenance)" as endOnleavePRO{
+        id = PROV3        
+        target = MessageHeader/MH3
+        occuredDateTime = 2021-12-03T13:00:00+01:00
+        recorded = 2021-12-03T13:00:20
+        activity = "end-leave-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH2
     }
 endOnleaveB-[hidden]-endOnleaveMH
-endOnleaveMH-[hidden]-endOnleaveSOrg
-endOnleaveSOrg-[hidden]-endOnleaveROrg
-endOnleaveROrg-[hidden]-endOnleaveENC
-endOnleaveENC-[hidden]-endOnleavePT
-endOnleavePT-[hidden]-endOnleaveSPOrg
-endOnleaveSPOrg-[hidden]-admitendOnleavePRO
+endOnleaveMH-[hidden]-endOnleavePT
+endOnleavePT-[hidden]-endOnleaveENC
+endOnleaveENC-[hidden]-endOnleaveSPOrg
+endOnleaveSPOrg-[hidden]-endOnleaveROrg
+endOnleaveROrg-[hidden]-endOnleaveSOrg
+endOnleaveSOrg-[hidden]-admitendOnleavePRO
 admitendOnleavePRO-[hidden]-onleaveendOnleavePRO
 onleaveendOnleavePRO-[hidden]-endOnleavePRO
 
 }
 
 
-'Message 4: Finished inpatient
-package "Message 4: Finished inpatient" as finished <<Frame>> {
-    class "Bundle 4" as finishedB {
-        Bundle.id = BUN4        
-        Bundle.timestamp = 2021-12-04T14:00:10Z
-        ...
+'Message 2: Finished inpatient
+package "Message 4: Discharge Inpatient to Home" as finished <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as finishedB{
+        id = BUN4
+        type = "message"
+        timestamp = 2021-12-04T14:00:10+01:00
     }
-    class "MessageHeader 4" as finishedMH{
-        MessageHeader.id = MHID4
-        ...
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as finishedMH{
+        id = MHID2
+        event = "hospital-notification-message"
+        destination:primary = MedComMessagingOrganization/RO2
+        destination:primary.use = "primary"
+        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        sender = MedComMessagingOrganization/SO1
+        source.endpoint = *url to receiver of Acknowledgement*
+        focus = MedComHospitalNotificationEncounter/ENC2
     }
-    class "Sender Organization 1" as finishedSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as finishedPT{
+        id = PA1
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
     }
-    class "Reciver Organization 1" as finishedROrg{
-        ...
+    class "Encounter (MedComHospitalNotificationEncounter)" as finishedENC{
+        id = ENC4
+        status = "finished"
+        class = "IMP"
+        subject = MedComCorePatient/PA1
+        episodeOfCare = *refence to the episode of care*
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2021-12-01T12:00:00+01:00
+        serviceProvider = MedComCoreOrganization/SPO1
     }
-    class "Encounter 4" as finishedENC{
-        Encounter.status = "finished"
-        Encounter.class = "IMP"
-        Encounter.period.start = 2021-12-01T12:00:00Z
-        ...
+    class "ServiceProvider Organization (MedComCoreOrganization)" as finishedSPOrg{
+        id = SPO1 
+        sorIdentifier = 369258147
+    }    
+    class "Receiver: Municipality (MedComMessagingOrganization)" as finishedROrg{
+        id = RO1
+        eanIdentifier = 987654321
+        sorIdentifier = 741852963
     }
-    class "Patient 1" as finishedPT{
-        ...
+    class "Sender: Hospital (MedComMessagingOrganization)" as finishedSOrg{
+        id = SO1
+        eanIdentifier = 123456789
+        sorIdentifier = 369258147
+    }    
+    class "Provenance (MedComMessagingProvenance)" as admitfinishedPRO{
+        id = PROV1
+        target = MessageHeader/MH1
+        occuredDateTime = 2021-12-01T12:00:10+01:00
+        recorded = 2021-12-01T12:00:20
+        activity.code = "admit-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
     }
-    class "ServiceProvider Organization 4" as finishedSPOrg{
-        ...
+    class "Provenance (MedComMessagingProvenance)" as startfinishedPRO{
+        id = PROV2        
+        target = MessageHeader/MH2
+        occuredDateTime = 2021-12-02T08:00:00+01:00
+        recorded = 2021-12-02T08:00:20
+        activity = "start-leave-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH1
     }
-    class "Provenance 1" as admitfinishedPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "admit-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
+    class "Provenance (MedComMessagingProvenance)" as endfinishedPRO{
+        id = PROV3        
+        target = MessageHeader/MH3
+        occuredDateTime = 2021-12-03T13:00:00+01:00
+        recorded = 2021-12-03T13:00:20
+        activity = "end-leave-inpatient"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH2
     }
-    class "Provenance 2" as onleavefinishedPRO{
-        Provenance.target = MessageHeader/MHID2
-        Provenance.activity = "start-leave-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID1
-        ...
-    }
-    class "Provenance 3" as endOnleavefinishedPRO{
-        Provenance.target = MessageHeader/MHID3
-        Provenance.activity = "end-leave-inpatient"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID2
-        ...
-    }
-    class "Provenance 4" as finishedPRO{
-        Provenance.target = MessageHeader/MHID4
-        Provenance.activity = "discharge-imp-home"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID3
-        ...
+    class "Provenance (MedComMessagingProvenance)" as finishedPRO{
+        id = PROV4
+        target = MessageHeader/MH4
+        occuredDateTime = 2021-12-04T14:00:10+01:00
+        recorded = 2021-12-04T14:00:20
+        activity = "discharge-inpatient-home"
+        agent.who = MedComMessagingOrganization/SO1
+        entity.role = "deriviation"
+        entity.what = MessageHeader/MH3
     }
 finishedB-[hidden]-finishedMH
-finishedMH-[hidden]-finishedSOrg
-finishedSOrg-[hidden]-finishedROrg
-finishedROrg-[hidden]-finishedENC
-finishedENC-[hidden]-finishedPT
-finishedPT-[hidden]-finishedSPOrg
-finishedSPOrg-[hidden]-admitfinishedPRO
-admitfinishedPRO-[hidden]-onleavefinishedPRO
-onleavefinishedPRO-[hidden]-endOnleavefinishedPRO
-endOnleavefinishedPRO-[hidden]-finishedPRO
+finishedMH-[hidden]-finishedPT
+finishedPT-[hidden]-finishedENC
+finishedENC-[hidden]-finishedSPOrg
+finishedSPOrg-[hidden]-finishedROrg
+finishedROrg-[hidden]-finishedSOrg
+finishedSOrg-[hidden]-admitfinishedPRO
+admitfinishedPRO-[hidden]-startfinishedPRO
+startfinishedPRO-[hidden]-endfinishedPRO
+endfinishedPRO-[hidden]-finishedPRO
+
 
 }
 
-' pile mellem de to beskeder
-' admit --> finished
 
 
 @enduml

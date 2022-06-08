@@ -71,5 +71,5 @@ This document presents MedCom FHIR messaging concepts defined via FHIR processab
 
 FHIR profiles are managed under MedCom:
 
-* [Source](https://github.com/hl7dk/dk-medcom)
-* [Wiki](https://github.com/hl7dk/dk-medcom)
+* [Source](https://github.com/medcomdk/dk-medcom-hospitalnotification)
+* [Wiki](https://github.com/medcomdk/dk-medcom-hospitalnotification)

@@ -26,9 +26,12 @@ The MedComHospitalNotificationMessageHeader constrains the MedComMessagingMessag
 
 The MedComHospitalNotificationEncounter contains the main content of the message and constrain the MedComCoreEncounter further to require a unique identifier for the encounter and restrict the status and class to value set of relevant values. The start time of the encounter and a reference to the service provider are made mandatory. Most other values are disallowed due to the legislation.
 
+
 ### Documentation
 
-#### Non-technical guidelines 
+Documentation such as use cases, clinical guidelines and mapping documents can be found on the [landing page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/)
+
+<!--#### Non-technical guidelines 
 Information regarding non-technical guidelines and use cases for HospitalNotification is found here:
 
 English:
@@ -56,7 +59,7 @@ This section describes how to map between MedCom OIOXML advis standard and the M
 Please notice, that not all elements from the HospitalNotification message are mentioned in the document, as not all information is relevant to map between the two standards. For a full overview of the requirements in the HospitalNotification message, view the included profiles, as showns on the figure in the top of the page.
 
 The mapping is only elaborated in English:
-* [OIOXML advis -> HospitalNotification ](./hospitalnotification/pdf/Map_between_OIOXML_and_FHIR_HospitalNotificationMessages-21-12-22.pdf)
+* [OIOXML advis -> HospitalNotification ](./hospitalnotification/pdf/Map_between_OIOXML_and_FHIR_HospitalNotificationMessages-21-12-22.pdf) -->
 
 
 #### Content

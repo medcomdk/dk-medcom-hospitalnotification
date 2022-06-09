@@ -1,37 +1,78 @@
 # MedCom HospitalNotification
 
-*** change content to HospitalNotification ***
-
-This page represents the core profiles (DK: Kerneprofiler) used in MedComs FHIR standards. The core profiles are static and used across standards. The core profiles does not alone constitute a standard, but one or more profiles will be used in the standards. Therefore does this page only include the Implementation Guide (IG) and not clinical guidelines, use cases, test protocols. 
+This page represents MedComs HospitalNotification standard (DK: SygehusAdvis). The standard will in time replace the existing standard called XDIS17 and XDIS20. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized or discharged, regardless if it is as inpatient or acute care. MedCom HospitalNotification will together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core Implementation Guide</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging Implementation Guide</a> constitute the standard, which you can read more about below. 
 
 <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return to frontpage</a>
 
 **Table of Content**
-- [1 Documentation](#1-documentation)
-  * [Implementation Guide](#implementation-guide)
-    + [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
-- [2 Release Notes](#2-release-notes)
-- [3 Support or Contact](#3-support-or-contact)
+- [MedCom HospitalNotification](#medcom-hospitalnotification)
+  * [1 Documentation](#1-documentation)
+    + [Clinical Guidelines](#clinical-guidelines)
+    + [Use Cases](#use-cases)
+    + [Technical Specification](#technical-specification)
+      - [Implementation Guide](#implementation-guide)
+      - [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
+    + [Other documentation](#other-documentation)
+      - [HospitalNotification Codes in FHIR](#hospitalnotification-codes-in-fhir)
+      - [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
+  * [2 Test and Certification](#2-test-and-certification)
+    + [Testprotocols](#testprotocols)
+  * [3 Release Notes](#3-release-notes)
+
+> Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
 ## 1 Documentation 
 
-In the documentation below you will find the necessary content to understand the technical specifications for the standard. 
+In the documentation below you will find the necessary content to understand the needs for modernization, the role of the HospitalNotification message, what to implement and how to get a MedCom certificate.
 
-### Implementation Guide
+### Clinical Guidelines
 
-The IG holds the technical specifications and examples of the MedCom Core profiles. It represents the base expectations when describing a Patient, Encounter, Practitioner or Organization in a MedCom standard. In some standards there are more specific or other requirements for a MedCom Core profile, why the MedComCore profile will be inherited to the given standard inherit the MedComCoreEncounter. 
+The clinical guidelines describes the practical needs for a modernization of the previous standards (XDIS20 and XDIS17), and how this standard supports the buisness inquires. <br> 
+[Clinical guidelines in Danish](assets/documents/Clinical-guidelines-DA.md) <br> 
+[Clinical guidelines in English](assets/documents/Clinical-guidelines-ENG.md) 
 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">Tab here to see the IG for MedCom Core.</a>
+### Use Cases
+
+Use cases are used to describe the different scenarios this standard supports. <br> 
+[Use cases in Danish](assets/documents/UseCases-DA.md) <br> 
+[Use cases in English](assets/documents/UseCases-ENG.md) 
+
+### Technical Specification
+
+#### Implementation Guide
+
+The IG holds the technical specifications and examples of the MedCom Core profiles. Together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> the HospitalNotification message is composed.
+
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">Tab here to see the IG for MedCom HospitalNotification.</a>
 
 #### Introduction to the Technical Specifications
 
 [Overview of the content of the standard.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-## 2 Release Notes
+### Other documentation
+
+#### HospitalNotification Codes in FHIR
+
+The overview document found below can be used to determine which type of HospitalNotification the message represents. Elements in different resources will togther form the composite understanding. 
+
+[The overview of HospitalNotification Codes used in FHIR can be found here](/assets/documents/Overview-HospitalNotification-codes-FHIR.md).
+
+#### Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
+
+Mapping from previous OIOXML standard to FHIR HospitalNotification standard can be found below. Please notice, that not all elements from XDIS20 and XDIS17 are transfered to the HospitalNotification. However, not all elements from the FHIR message are represented in the document.
+
+[The overview of the mapping can be found here](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md).
+
+## 2 Test and Certification
+
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Here you'll find a description of test and certification of FHIR standards in MedCom</a>
+
+### Testprotocols 
+
+Sending a HospitalNotification message:
+
+Receiving a HospitalNotification message:
+
+## 3 Release Notes
 
 [Updates in the latest release.](assets/documents/ReleaseNote-ENG.md)
-
-## 3 Support or Contact
-
-[MedCom](https://www.medcom.dk/) is responsible for this page.  
-For any question regaring the standard, please contact <fhir@medcom.dk> or write in <a href="https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup" target="_blank">MedComs stream on Zulip</a>.

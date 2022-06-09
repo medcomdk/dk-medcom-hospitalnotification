@@ -26,9 +26,10 @@ In the documentation below you will find the necessary content to understand the
 
 ### Clinical Guidelines
 
-The clinical guidelines describes the practical needs for a modernization of the previous standards (XDIS20 and XDIS17), and how this standard supports the buisness inquires. <br> 
-[Clinical guidelines in Danish](assets/documents/Clinical-guidelines-DA.md) <br> 
-[Clinical guidelines in English](assets/documents/Clinical-guidelines-ENG.md) 
+The clinical guidelines describes the practical needs for a modernization of the previous standards (XDIS20 and XDIS17), and how this standard supports the buisness inquires. 
+
+[Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
+[Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
 
 ### Use Cases
 
@@ -70,9 +71,13 @@ Mapping from previous OIOXML standard to FHIR HospitalNotification standard can 
 
 ### Testprotocols 
 
-Sending a HospitalNotification message:
+**Sending a HospitalNotification message**
+* Testprotocol
+* TouchStone Testscripts
 
-Receiving a HospitalNotification message:
+**Receiving a HospitalNotification message**
+* Testprotocol
+* TouchStone Testscripts
 
 ## 3 Release Notes
 

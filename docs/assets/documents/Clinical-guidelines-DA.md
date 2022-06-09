@@ -145,41 +145,41 @@ Formålet med formulerede forretningsregler for anvendelse er, at parterne, som 
 
 1. Adviser genereres på basis af tidstro registrering i EPJ/PAS-systemet.
 
-Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte kontakter, skal disse først udløse advis, når tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.
+    Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte kontakter, skal disse først udløse advis, når tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.
 
 2. Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor) 
 
-Advis om ’SLUT sygehusophold’ må ikke anvendes ved overflytninger.
+    Advis om ’SLUT sygehusophold’ må ikke anvendes ved overflytninger.
 
-> note: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’SLUT sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
+    > note: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’SLUT sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
 
 3. Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’START sygehusophold - indlagt ’-advis.
 
-Der skal ikke sendes advis om ’SLUT sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’SLUT sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). 
+    Der skal ikke sendes advis om ’SLUT sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’SLUT sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). 
 
 4. Hvis en indlagt kontakt ændres til akut ambulant, sendes et nyt advis ’START sygehusophold – akut ambulant ’-advis. 
 
-Der skal ikke sendes advis om ’SLU sygehusophold’, når indlæggelsen ændres til at være akut ambulant. Advis om ’SLUT sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). Denne hændelse anses for sjælden.
+    Der skal ikke sendes advis om ’SLU sygehusophold’, når indlæggelsen ændres til at være akut ambulant. Advis om ’SLUT sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). Denne hændelse anses for sjælden.
 
 5. Hvis patienten er erklæret død ved ankomst, erklæres død efter ankomst eller dør under sygehusopholdet sendes et advis af typen ’DØD’. 
 
-Advistypen ’DØD’ skal således anvendes i alle scenarier, hvor patienten er død eller dør. 
+    Advistypen ’DØD’ skal således anvendes i alle scenarier, hvor patienten er død eller dør. 
 
 6. Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’START orlov’) og slutter (’SLUT orlov’) sin orlov (til hjemmet)
 
-Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom. 
+    Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom. 
 
-> Note: Orlov ved dobbeltindlæggelser kan være samtidig indlæggelse på psykiatrisk og somatisk afdeling. 
+    > Note: Orlov ved dobbeltindlæggelser kan være samtidig indlæggelse på psykiatrisk og somatisk afdeling. 
 
 7. Hvis der er sket en fejlregistrering, som har udløst et fejlagtigt advis, skal der sendes en rettelse eller en annullering efter følgende principper:
 
-1. Hvis der er sendt advis pga. forkert indtastet cpr.nr. eller forkert valg af sygehusophold sendes **en annullering**.
+    1. Hvis der er sendt advis pga. forkert indtastet cpr.nr. eller forkert valg af sygehusophold sendes **en annullering**.
 
-2. Hvis der er sendt et advis med forkert angivelse af sygehusafdeling, forkert tidspunkt for opholdet sendes **en rettelse**, dvs. et nyt korrekt advis, som erstatter tidligere advis. Der skal her ikke sendes en annullering før rettelsen. 
+    2. Hvis der er sendt et advis med forkert angivelse af sygehusafdeling, forkert tidspunkt for opholdet sendes **en rettelse**, dvs. et nyt korrekt advis, som erstatter tidligere advis. Der skal her ikke sendes en annullering før rettelsen. 
 
 8. Der anvendes ikke specifikke overflytningsadviser. Der er krav om, at der sendes nyt advis med ’START sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra.
 
-> Note: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’SLUT sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
+    > Note: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’SLUT sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
 
 9. Udskrivning til hospice.
 Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’START sygehusophold - indlagt’-advis ved patientens ankomst.

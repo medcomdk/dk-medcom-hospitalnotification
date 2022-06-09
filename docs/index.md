@@ -1,6 +1,6 @@
 # MedCom HospitalNotification
 
-This page represents MedComs HospitalNotification standard (DK: SygehusAdvis). The standard will in time replace the existing standard called XDIS17 and XDIS20. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized or discharged, regardless if it is as inpatient or acute care. MedCom HospitalNotification will together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core Implementation Guide</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging Implementation Guide</a> constitute the standard, which you can read more about below. 
+This page represents MedComs HospitalNotification standard (DK: SygehusAdvis). The standard will in time replace the existing standard called XDIS17 and XDIS20. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized, on leave or discharged, regardless if it is as inpatient or acute care. MedCom HospitalNotification will together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core Implementation Guide</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging Implementation Guide</a> constitute the standard, which you can read more about below. 
 
 <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return to frontpage</a>
 

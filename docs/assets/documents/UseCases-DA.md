@@ -4,7 +4,7 @@
 
 Dette dokument indeholder en række use case-beskrivelser og udgør en del af det samlede dokumentationsmateriale for MedComs FHIR-standard ”Advis om sygehusophold”.
 
-Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygehusophold](./docs/index.md).
+Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygehusophold](../../index.md).
 1. ’Advis om sygehusophold’ - Sundhedsfaglige retningslinjer
 2. Implementation Guide for ’HospitalNotification’
 3. Use cases (nærværende dokument – findes også på engelsk)

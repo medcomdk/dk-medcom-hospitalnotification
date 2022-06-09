@@ -12,9 +12,8 @@ This page represents MedComs HospitalNotification standard (DK: SygehusAdvis). T
     + [Technical Specification](#technical-specification)
       - [Implementation Guide](#implementation-guide)
       - [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
-    + [Other documentation](#other-documentation)
-      - [HospitalNotification Codes in FHIR](#hospitalnotification-codes-in-fhir)
-      - [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
+    + [HospitalNotification Codes in FHIR](#hospitalnotification-codes-in-fhir)
+    + [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
   * [2 Test and Certification](#2-test-and-certification)
     + [Testprotocols](#testprotocols)
   * [3 Release Notes](#3-release-notes)
@@ -33,7 +32,9 @@ The clinical guidelines describes the practical needs for a modernization of the
 
 ### Use Cases
 
-Use cases are used to describe the different scenarios this standard supports. <br> 
+Use cases are used to describe the different scenarios this standard supports, by combining the content requirements with business regulations. The use cases should ensure a coherent implementation and use of the HospitalNotification and they are qualified in collaboration with EPR- and vendors catering to the municipalities.
+The use case descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities.
+ 
 [Use cases in Danish](assets/documents/UseCases-DA.md) <br> 
 [Use cases in English](assets/documents/UseCases-ENG.md) 
 
@@ -47,17 +48,17 @@ The IG holds the technical specifications and examples of the MedCom Core profil
 
 #### Introduction to the Technical Specifications
 
-[Overview of the content of the standard.](assets/documents/Intro-Technical-Spec-ENG.md)
+The purpose of this section is to give a brief introduction to MedComs HospitalNotification standard to stakeholders with limited knowledge about FHIR. It describes the overall purpose of each profile as well as the composition of the standard. 
 
-### Other documentation
+[Tab here for an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-#### HospitalNotification Codes in FHIR
+### HospitalNotification Codes in FHIR
 
 The overview document found below can be used to determine which type of HospitalNotification the message represents. Elements in different resources will togther form the composite understanding. 
 
 [The overview of HospitalNotification Codes used in FHIR can be found here](/assets/documents/Overview-HospitalNotification-codes-FHIR.md).
 
-#### Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
+### Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
 
 Mapping from previous OIOXML standard to FHIR HospitalNotification standard can be found below. Please notice, that not all elements from XDIS20 and XDIS17 are transfered to the HospitalNotification. However, not all elements from the FHIR message are represented in the document.
 

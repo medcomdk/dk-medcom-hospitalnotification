@@ -20,7 +20,7 @@ notification has been sent by a mistake. For example, if Encounter.status was �
 * If a patient dies, it must be noted in the element Patient.deceased. In this case, the element must be ‘true’.
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0;max-width:90%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -46,166 +46,166 @@ notification has been sent by a mistake. For example, if Encounter.status was �
 </thead>
 <tbody>
   <tr>
-    <td class="tg-6roq">STAA   </td>
-    <td class="tg-6roq"> Start   sygehusophold- akut ambulant   </td>
-    <td class="tg-6roq"> Start hospital stay-acute   ambulant   </td>
-    <td class="tg-6roq">   EMER   </td>
-    <td class="tg-6roq">   <br>in-progress   </td>
-    <td class="tg-6roq">   <br>admit-emergency   </td>
-    <td class="tg-6roq">   <br>    </td>
+    <td class="tg-6roq">STAA</td>
+    <td class="tg-6roq"> Start   sygehusophold- akut ambulant</td>
+    <td class="tg-6roq"> Start hospital stay-acute   ambulant</td>
+    <td class="tg-6roq">   EMER</td>
+    <td class="tg-6roq">in-progress</td>
+    <td class="tg-6roq">admit-emergency</td>
+    <td class="tg-6roq"> </td>
   </tr>
   <tr>
-    <td class="tg-6roq">   <br>RE_STAA   </td>
-    <td class="tg-6roq">   <br>Rettelse af   Start sygehusophold- akut ambulant   </td>
-    <td class="tg-6roq">   <br>Update of start hospital   stay-acute ambulant   </td>
-    <td class="tg-6roq">   <br>EMER   </td>
-    <td class="tg-6roq">   <br>in-progress   </td>
-    <td class="tg-6roq">   <br>revise-admit-emergency   </td>
-    <td class="tg-6roq">   <br>    </td>
+    <td class="tg-6roq">RE_STAA</td>
+    <td class="tg-6roq">Rettelse af   Start sygehusophold- akut ambulant</td>
+    <td class="tg-6roq">Update of start hospital   stay-acute ambulant</td>
+    <td class="tg-6roq">EMER</td>
+    <td class="tg-6roq">in-progress</td>
+    <td class="tg-6roq">revise-admit-emergency</td>
+    <td class="tg-6roq"> </td>
   </tr>
   <tr>
-    <td class="tg-6roq">   <br>AN_STAA   </td>
-    <td class="tg-6roq">   <br>Annullering   af start sygehusophold- akut ambulant   </td>
-    <td class="tg-6roq">   <br>Cancellation of start   hospital stay- acute ambulant   </td>
-    <td class="tg-6roq">   <br>EMER   </td>
-    <td class="tg-6roq">   <br>cancelled/ entered-in-error   </td>
-    <td class="tg-6roq">   <br>cancel-admit-emergency   </td>
-    <td class="tg-6roq">   <br>    </td>
+    <td class="tg-6roq">AN_STAA</td>
+    <td class="tg-6roq">Annullering   af start sygehusophold- akut ambulant</td>
+    <td class="tg-6roq">Cancellation of start   hospital stay- acute ambulant</td>
+    <td class="tg-6roq">EMER</td>
+    <td class="tg-6roq">cancelled/ entered-in-error</td>
+    <td class="tg-6roq">cancel-admit-emergency</td>
+    <td class="tg-6roq"> </td>
   </tr>
   <tr>
-    <td class="tg-ralc">   <br>STIN   </td>
-    <td class="tg-ralc">   <br>Start sygehusophold - indlagt   </td>
-    <td class="tg-ralc">   <br>Start   hospital stay-admission   </td>
-    <td class="tg-ralc">   <br>IMP   </td>
-    <td class="tg-ralc">   <br>in-progress   </td>
-    <td class="tg-ralc">   <br>admit-inpatient   </td>
-    <td class="tg-ralc">   <br>    </td>
+    <td class="tg-ralc">STIN</td>
+    <td class="tg-ralc">Start sygehusophold - indlagt</td>
+    <td class="tg-ralc">Start   hospital stay-admission</td>
+    <td class="tg-ralc">IMP</td>
+    <td class="tg-ralc">in-progress</td>
+    <td class="tg-ralc">admit-inpatient</td>
+    <td class="tg-ralc"> </td>
   </tr>
   <tr>
-    <td class="tg-ralc">   <br>RE_STIN   </td>
-    <td class="tg-ralc">   <br>Rettelse af   start sygehusophold - indlagt   </td>
-    <td class="tg-ralc">   <br>Update of start hospital   stay-admission   </td>
-    <td class="tg-ralc">   <br>IMP   </td>
-    <td class="tg-ralc">   <br>in-progress   </td>
-    <td class="tg-ralc">   <br>revise-admit-inpatient   </td>
-    <td class="tg-ralc">   <br>    </td>
+    <td class="tg-ralc">RE_STIN</td>
+    <td class="tg-ralc">Rettelse af   start sygehusophold - indlagt</td>
+    <td class="tg-ralc">Update of start hospital   stay-admission</td>
+    <td class="tg-ralc">IMP</td>
+    <td class="tg-ralc">in-progress</td>
+    <td class="tg-ralc">revise-admit-inpatient</td>
+    <td class="tg-ralc"> </td>
   </tr>
   <tr>
-    <td class="tg-ralc">   <br>AN_STIN   </td>
-    <td class="tg-ralc">   <br>Annullering   af start sygehusophold - indlagt   </td>
-    <td class="tg-ralc">   <br>Cancellation of start   hospital stay- admission   </td>
-    <td class="tg-ralc">   <br>IMP   </td>
-    <td class="tg-ralc">   <br>cancelled/ entered-in-error   </td>
-    <td class="tg-ralc">   <br>cancel-admit-inpatient   </td>
-    <td class="tg-ralc">   <br>    </td>
+    <td class="tg-ralc">AN_STIN</td>
+    <td class="tg-ralc">Annullering   af start sygehusophold - indlagt</td>
+    <td class="tg-ralc">Cancellation of start   hospital stay- admission</td>
+    <td class="tg-ralc">IMP</td>
+    <td class="tg-ralc">cancelled/ entered-in-error</td>
+    <td class="tg-ralc">cancel-admit-inpatient</td>
+    <td class="tg-ralc"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>STOR   </td>
-    <td class="tg-y698">   <br>Start orlov   </td>
-    <td class="tg-y698">   <br>Start leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>onleave   </td>
-    <td class="tg-y698">   <br>start-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">STOR</td>
+    <td class="tg-y698">Start orlov</td>
+    <td class="tg-y698">Start leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">onleave</td>
+    <td class="tg-y698">start-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>RE_STOR   </td>
-    <td class="tg-y698">   <br>Rettelse   Start orlov   </td>
-    <td class="tg-y698">   <br>Update of   Start leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>onleave   </td>
-    <td class="tg-y698">   <br>revise-start-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">RE_STOR</td>
+    <td class="tg-y698">Rettelse   Start orlov</td>
+    <td class="tg-y698">Update of   Start leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">onleave</td>
+    <td class="tg-y698">revise-start-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>AN_STOR   </td>
-    <td class="tg-y698">   <br>Annullering   af Start orlov   </td>
-    <td class="tg-y698">   <br>Cancellation   of Start leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>in-progress   </td>
-    <td class="tg-y698">   <br>cancel-start-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">AN_STOR</td>
+    <td class="tg-y698">Annullering   af Start orlov</td>
+    <td class="tg-y698">Cancellation   of Start leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">in-progress</td>
+    <td class="tg-y698">cancel-start-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>SLOR   </td>
-    <td class="tg-y698">   <br>Slut orlov   </td>
-    <td class="tg-y698">   <br>End leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>in-progress   </td>
-    <td class="tg-y698">   <br>end-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">SLOR</td>
+    <td class="tg-y698">Slut orlov</td>
+    <td class="tg-y698">End leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">in-progress</td>
+    <td class="tg-y698">end-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>RE_SLOR   </td>
-    <td class="tg-y698">   <br>Rettelse   Slut orlov   </td>
-    <td class="tg-y698">   <br>Update of   End leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>in-progress   </td>
-    <td class="tg-y698">   <br>revise-end-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">RE_SLOR</td>
+    <td class="tg-y698">Rettelse   Slut orlov</td>
+    <td class="tg-y698">Update of   End leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">in-progress</td>
+    <td class="tg-y698">revise-end-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-y698">   <br>AN_SLOR   </td>
-    <td class="tg-y698">   <br>Annullering   Slut orlov   </td>
-    <td class="tg-y698">   <br>Cancellation   of End leave   </td>
-    <td class="tg-y698">   <br>IMP   </td>
-    <td class="tg-y698">   <br>onleave   </td>
-    <td class="tg-y698">   <br>cancel-end-leave-inpatient   </td>
-    <td class="tg-y698">   <br>    </td>
+    <td class="tg-y698">AN_SLOR</td>
+    <td class="tg-y698">Annullering   Slut orlov</td>
+    <td class="tg-y698">Cancellation   of End leave</td>
+    <td class="tg-y698">IMP</td>
+    <td class="tg-y698">onleave</td>
+    <td class="tg-y698">cancel-end-leave-inpatient</td>
+    <td class="tg-y698"> </td>
   </tr>
   <tr>
-    <td class="tg-ncd7">   <br>SLHJ   </td>
-    <td class="tg-ncd7">   <br>Slut   sygehusophold- afsluttet til hjemmet   </td>
-    <td class="tg-ncd7">   <br>End hospital Stay- patient discharged   to home/primary sector   </td>
-    <td class="tg-ncd7">   <br>EMER/IMP   </td>
-    <td class="tg-ncd7">   <br>finished   </td>
-    <td class="tg-ncd7">   <br>discharge-[Encounter.Class]-home   </td>
-    <td class="tg-ncd7">   <br>    </td>
+    <td class="tg-ncd7">SLHJ</td>
+    <td class="tg-ncd7">Slut   sygehusophold- afsluttet til hjemmet</td>
+    <td class="tg-ncd7">End hospital Stay- patient discharged   to home/primary sector</td>
+    <td class="tg-ncd7">EMER/IMP</td>
+    <td class="tg-ncd7">finished</td>
+    <td class="tg-ncd7">discharge-[Encounter.Class]-home</td>
+    <td class="tg-ncd7"> </td>
   </tr>
   <tr>
-    <td class="tg-ncd7">   <br>RE_SLHJ   </td>
-    <td class="tg-ncd7">   <br>Rettelse   Slut sygehusophold-afsluttet til hjemmet   </td>
-    <td class="tg-ncd7">   <br>Update of End hospital Stay   </td>
-    <td class="tg-ncd7">   <br>EMER/IMP   </td>
-    <td class="tg-ncd7">   <br>finished   </td>
-    <td class="tg-ncd7">   <br>revise-discharge-[Encounter.Class]-home   </td>
-    <td class="tg-ncd7">   <br>    </td>
+    <td class="tg-ncd7">RE_SLHJ</td>
+    <td class="tg-ncd7">Rettelse   Slut sygehusophold-afsluttet til hjemmet</td>
+    <td class="tg-ncd7">Update of End hospital Stay</td>
+    <td class="tg-ncd7">EMER/IMP</td>
+    <td class="tg-ncd7">finished</td>
+    <td class="tg-ncd7">revise-discharge-[Encounter.Class]-home</td>
+    <td class="tg-ncd7"> </td>
   </tr>
   <tr>
-    <td class="tg-ncd7">   <br>AN_SLHJ   </td>
-    <td class="tg-ncd7">   <br>Annullering   Slut sygehusophold- afsluttet til hjemmet   </td>
-    <td class="tg-ncd7">   <br>Cancellation of End hospital   Stay   </td>
-    <td class="tg-ncd7">   <br>EMER/IMP   </td>
-    <td class="tg-ncd7">   <br>in-progress   </td>
-    <td class="tg-ncd7">   <br>cancel-discharge-[Encounter.Class]-home   </td>
-    <td class="tg-ncd7">   <br>    </td>
+    <td class="tg-ncd7">AN_SLHJ</td>
+    <td class="tg-ncd7">Annullering   Slut sygehusophold- afsluttet til hjemmet</td>
+    <td class="tg-ncd7">Cancellation of End hospital   Stay</td>
+    <td class="tg-ncd7">EMER/IMP</td>
+    <td class="tg-ncd7">in-progress</td>
+    <td class="tg-ncd7">cancel-discharge-[Encounter.Class]-home</td>
+    <td class="tg-ncd7"> </td>
   </tr>
   <tr>
-    <td class="tg-m3pm">   <br>MORS   </td>
-    <td class="tg-m3pm">   <br>Død   </td>
-    <td class="tg-m3pm">   <br>Deceased   </td>
-    <td class="tg-m3pm">   <br>EMER/IMP   </td>
-    <td class="tg-m3pm">   <br>finished   </td>
-    <td class="tg-m3pm">   <br>”current activity”   </td>
-    <td class="tg-m3pm">true   </td>
+    <td class="tg-m3pm">MORS</td>
+    <td class="tg-m3pm">Død</td>
+    <td class="tg-m3pm">Deceased</td>
+    <td class="tg-m3pm">EMER/IMP</td>
+    <td class="tg-m3pm">finished</td>
+    <td class="tg-m3pm">”current activity”</td>
+    <td class="tg-m3pm">true</td>
   </tr>
   <tr>
-    <td class="tg-m3pm">   <br>RE_MORS   </td>
-    <td class="tg-m3pm">   <br>Rettelse af   død   </td>
-    <td class="tg-m3pm">   <br>Update of   deceased   </td>
-    <td class="tg-m3pm">   <br>EMER/IMP   </td>
-    <td class="tg-m3pm">   <br>finished   </td>
-    <td class="tg-m3pm">   <br>”current activity”   </td>
-    <td class="tg-m3pm">true   </td>
+    <td class="tg-m3pm">RE_MORS</td>
+    <td class="tg-m3pm">Rettelse af   død</td>
+    <td class="tg-m3pm">Update of   deceased</td>
+    <td class="tg-m3pm">EMER/IMP</td>
+    <td class="tg-m3pm">finished</td>
+    <td class="tg-m3pm">”current activity”</td>
+    <td class="tg-m3pm">true</td>
   </tr>
   <tr>
-    <td class="tg-m3pm">   <br>AN_MORS   </td>
-    <td class="tg-m3pm">   <br>Annullering   af død   </td>
-    <td class="tg-m3pm">   <br>Cancellation   of deceased   </td>
-    <td class="tg-m3pm">   <br>EMER/IMP   </td>
-    <td class="tg-m3pm">   <br>"previous status"   </td>
-    <td class="tg-m3pm">   <br>”current activity”   </td>
-    <td class="tg-m3pm">false   </td>
+    <td class="tg-m3pm">AN_MORS</td>
+    <td class="tg-m3pm">Annullering   af død</td>
+    <td class="tg-m3pm">Cancellation   of deceased</td>
+    <td class="tg-m3pm">EMER/IMP</td>
+    <td class="tg-m3pm">"previous status"</td>
+    <td class="tg-m3pm">”current activity”</td>
+    <td class="tg-m3pm">false</td>
   </tr>
 </tbody>
 </table>

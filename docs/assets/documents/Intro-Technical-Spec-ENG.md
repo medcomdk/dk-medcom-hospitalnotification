@@ -78,5 +78,13 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </tbody>
 </table>
 
-## Composition of a HospitalNotification Standard.
+## Composition of the HospitalNotification Message
+
+The HospitalNotification message follows MedComs generic messaging paradigm. 
+
+The references between the profiles are shown on the figure below. The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader is sender, receiver and carbon-coby organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. An encounter shall always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter. To keep track of the messaging history and define the activity of the notification.
+
+![Show references between the profiles in an HospitalNotification message.](../images/HospitalNotification.png)
+
+To be done - Describe the actual content!!!!
 

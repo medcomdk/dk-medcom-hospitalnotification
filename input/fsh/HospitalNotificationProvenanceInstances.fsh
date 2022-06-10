@@ -1,4 +1,4 @@
-/* // Admit instance
+// Admit instance
 Instance: d7cf3888-6f42-4e4d-929c-d2475d24fba0
 InstanceOf: MedComMessagingProvenance
 Title: "HospitalNotification example. The Provenance instance is only valid if used in a bundle (message) - admit inpatient"
@@ -73,7 +73,7 @@ Usage: #example
 * target = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4) // should be changed to the current MessageHeader
 * occurredDateTime = 2020-10-15T13:45:15Z
 * recorded = 2020-10-15T13:46:15Z
-* activity.coding = $ActivityCode#revise-admit-inpatient
+* activity.coding = $ActivityCode#revise-admit-inpatient 
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #revision
 * entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0)
@@ -90,4 +90,4 @@ Usage: #example
 * activity.coding = $ActivityCode#cancel-admit-inpatient
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #removal
-* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0) */
+* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0)

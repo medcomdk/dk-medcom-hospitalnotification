@@ -1,4 +1,4 @@
-Profile: MedComHospitalNotificationProvenance
+/* Profile: MedComHospitalNotificationProvenance
 Parent: MedComMessagingProvenance
 Id: medcom-hospitalNotification-provenance
 Description: "A Provenance for a HospitalNotification."
@@ -98,4 +98,4 @@ Usage: #example
 * activity.coding = $ActivityCode#cancel-admit-inpatient
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #removal
-* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0)
+* entity.what = Reference(d7cf3888-6f42-4e4d-929c-d2475d24fba0) */

@@ -26,44 +26,49 @@ In the documentation below you will find the necessary content to understand the
 
 ### Clinical Guidelines
 
-The clinical guidelines describes the practical needs for a modernization of the previous standards (XDIS20 and XDIS17), and how this standard supports the buisness inquires. 
+These nontechnical guidelines is the foundation for the HospitalNotification standard. It is the primary textual part of the documentation for HospitalNotification. It describes the purpose of the standard, the background the requirements for the standard and how it standard supports the business needs. 
 
-[Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
-[Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
+[Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
+[English: Clinical guidelines - Work in progress](assets/documents/Clinical-guidelines-ENG.md) 
 
 ### Use Cases
 
 Use cases are used to describe the different scenarios this standard supports, by combining the content requirements with business regulations. The use cases should ensure a coherent implementation and use of the HospitalNotification and they are qualified in collaboration with EPR- and vendors catering to the municipalities.
 The use case descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities.
  
-[Use cases in Danish](assets/documents/UseCases-DA.md) <br> 
-[Use cases in English](assets/documents/UseCases-ENG.md) 
+[Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
+[English: Use cases](assets/documents/UseCases-ENG.md) 
 
 ### Technical Specification
 
 #### Implementation Guide
 
-The IG holds the technical specifications and examples of the MedCom Core profiles. Together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> the HospitalNotification message is composed.
+The IG holds the technical specifications and examples of the MedCom Core profiles. The IG includes profiles, rules, extensions, and examples. Together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> is a HospitalNotification message composed.
 
 <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">Tab here to see the IG for MedCom HospitalNotification.</a>
+
+#### Implementation Guide for Terminology
+
+Terminology covers ConceptMaps, CodeSystems and ValueSets in MedComs FHIR standards. ...
 
 #### Introduction to the Technical Specifications
 
 The purpose of this section is to give a brief introduction to MedComs HospitalNotification standard to stakeholders with limited knowledge about FHIR. It describes the overall purpose of each profile as well as the composition of the standard. 
 
-[Tab here for an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
+[An introduction to the technical specificationscan be found here.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 ### HospitalNotification Codes in FHIR
 
-The overview document found below can be used to determine which type of HospitalNotification the message represents. Elements in different resources will togther form the composite understanding. 
+The value of elements in different resources (Encounter, Provenance and Patient) will togther form the composite understanding of a HospitalNotification message. Depended on which activity has taken place, the elements shall be assigned to different values. The receiver (a municipality) of the HospitalNotification can act in accordance to the values.
 
-[The overview of HospitalNotification Codes used in FHIR can be found here](/assets/documents/Overview-HospitalNotification-codes-FHIR.md).
+[The HospitalNotification Codes used in FHIR can be found here.](/assets/documents/Overview-HospitalNotification-codes-FHIR.md)
 
 ### Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
 
-Mapping from previous OIOXML standard to FHIR HospitalNotification standard can be found below. Please notice, that not all elements from XDIS20 and XDIS17 are transfered to the HospitalNotification. However, not all elements from the FHIR message are represented in the document.
+Mapping from previous OIOXML standard to FHIR HospitalNotification standard can be found below. The document is intended as a help to translate the previous standard to the new FHIR standard. 
+Please notice, that not all elements from XDIS20 and XDIS17 are transfered to the HospitalNotification. However, not all elements from the FHIR elements are represented in the document.
 
-[The overview of the mapping can be found here](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md).
+[The mapping can be found here.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)
 
 ## 2 Test and Certification
 

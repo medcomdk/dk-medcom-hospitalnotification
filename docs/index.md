@@ -45,7 +45,7 @@ The use case descriptions are targeted IT system vendors and the people responsi
 
 The IG holds the technical specifications and examples of the MedCom Core profiles. The IG includes profiles, rules, extensions, and examples. Together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> is a HospitalNotification message composed.
 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">The Implementation Guide for MedCom HospitalNotification.</a>
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">The Implementation Guide for MedCom HospitalNotification.</a>
 
 #### Introduction to the Technical Specifications
 

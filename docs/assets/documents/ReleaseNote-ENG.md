@@ -4,11 +4,11 @@ As described in [Versioning DOC], the Implementation Guide (IG) and the textual 
 
 ## Implementation Guide
 
-<a href="https://github.com/medcomdk/dk-medcom-core/releases" target="_blank">Tab here to see Release Note for MedCom Core Implementation Guide.</a>
+<a href="https://github.com/medcomdk/dk-medcom-hospitalnotification/releases" target="_blank">The release note for MedCom HospitalNotification Implementation Guide can be found here.</a>
 
-## MedCom Core Introduction Page
+## MedCom HospitalNotification Introduction Page
 
-In the table below updates of the <a href="../index.md" target="_blank">MedCom Core introduction</a> can be seen. 
+In the table below updates of the <a href="../../index.md" target="_blank">MedCom HospitalNotification introduction</a> can be seen. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;max-width:65%;}
@@ -31,9 +31,9 @@ In the table below updates of the <a href="../index.md" target="_blank">MedCom C
 <tbody>
   <tr>
     <td class="tg-ne9s">1.0.0-a.1</td>
-    <td class="tg-ne9s">31-05-2022</td>
+    <td class="tg-ne9s">14-06-2022</td>
     <td class="tg-ne9s">TMS</td>
-    <td class="tg-ne9s">Inital release. Presentation of MedCom Core.</td>
+    <td class="tg-ne9s">Inital release. Presentation of MedCom HospitalNotification.</td>
   </tr>
   <tr>
     <td class="tg-ne9s"></td>

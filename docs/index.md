@@ -45,11 +45,7 @@ The use case descriptions are targeted IT system vendors and the people responsi
 
 The IG holds the technical specifications and examples of the MedCom Core profiles. The IG includes profiles, rules, extensions, and examples. Together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> is a HospitalNotification message composed.
 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">Tab here to see the IG for MedCom HospitalNotification.</a>
-
-#### Implementation Guide for Terminology
-
-Terminology covers ConceptMaps, CodeSystems and ValueSets in MedComs FHIR standards. ...
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">The Implementation Guide for MedCom HospitalNotification.</a>
 
 #### Introduction to the Technical Specifications
 
@@ -72,9 +68,14 @@ Please notice, that not all elements from XDIS20 and XDIS17 are transfered to th
 
 ## 2 Test and Certification
 
-<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Here you'll find a description of test and certification of FHIR standards in MedCom</a>
+Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. 
+TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. 
+
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a>
 
 ### Testprotocols 
+
+Below is testprotocols and testscripts used to test and certify MedCom HospitalNotification. 
 
 **Sending a HospitalNotification message**
 * Testprotocol

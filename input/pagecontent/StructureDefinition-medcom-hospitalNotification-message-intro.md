@@ -10,21 +10,19 @@ Please refer to the tab "Snapshot Table(Must support)" below for the definition 
 
 
 ### Simplified examples of the HospitalNotification message flow
-Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order. 
-Not all information that is required in a HospitalNotification message are displayed in the examples. 
 
-#### How to send HospitalNotification messages for the same encounter
-This section describes how a HospitalNotificationMessage flows, when handling an admission, leave and discharge of a patient.
+The simplified examples contains the required content of a HospitalNotification message
 
-Please refer to the following examples:  
-* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay ](./hospitalnotification/HNAdmitFinish.png)
-* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay ](./hospitalnotification/HNAdmitOnleaveEndFinish.png)
 
-#### HospitalNotification Message entered in error    
-This section describes how message entered in error should be handled.
+The messages illustrates an admission, discharge, and leave of a hospitalized patient. Also a cancelled messages is illustrated below. The patient, service provider organization, sender and receiver information is identical, since all messages are send from a hospital to a municipality.
 
-Please refer to the following example:  
-* [Simplified example of a MedComHospitalNotificationMessage entered in error ](./hospitalnotification/HNAdmitEnteredInError.png)
+> Note: Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
+
+> Note: Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, the Provenance resources may be listed in any order. 
+
+* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay.](./hospitalnotification/HNAdmitFinish.png)
+* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay.](./hospitalnotification/HNAdmitOnleaveEndFinish.png) 
+* [Simplified example of a cancelled MedComHospitalNotificationMessage message.](./hospitalnotification/HNAdmitEnteredInError.png)
 
 
 

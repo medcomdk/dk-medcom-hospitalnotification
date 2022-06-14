@@ -12,24 +12,26 @@ The following diagram depicts the structure of the HospitalNotification message.
 
 The HospitalNotification message follows the general MedCom FHIR messaging structure, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profile.
 
-#### MedComHospitalNotificationMessage
+**MedComHospitalNotificationMessage**
 
 The MedComHospitalNotificationMessage constrains the MedComMessagingMessage further to use the MedComHospitalNotificationMessageHeader and to require excactly one patient resource in the message. Furthermore, it constrains the MedComMessagingProvenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events that triggers a HospitalNotification Message.
 
-All referenced resources within the message are contained in the entry list in MedComHospitalNotificationMessage.
+All referenced resources within the message shall be contained in the entry list in MedComHospitalNotificationMessage.
 
-#### MedComHospitalNotificationMessageHeader
+**MedComHospitalNotificationMessageHeader**
 
 The MedComHospitalNotificationMessageHeader constrains the MedComMessagingMessageHeader further to specify the fixed coding for this message and require a focus reference to a MedComHospitalNotificationEncounter. Carbon-copy destination is not allowed.
 
-#### MedComHospitalNotificationEncounter
+**MedComHospitalNotificationEncounter**
 
-The MedComHospitalNotificationEncounter contains the main content of the message and constrain the MedComCoreEncounter further to require a unique identifier for the encounter and restrict the status and class to value set of relevant values. The start time of the encounter and a reference to the service provider are made mandatory. Most other values are disallowed due to the legislation.
+The MedComHospitalNotificationEncounter contains the main content of the message. It constrains the MedComCoreEncounter further to require a unique identifier for the encounter and restricts the status and class to value set of relevant values. The start time of the encounter and a reference to the service provider organization are mandatory. Most other values are disallowed due to the legislation.
 
+#### Dependencies
+This IG has a dependency to the [MedComCore IG](https://build.fhir.org/ig/medcomdk/dk-medcom-core/), [MedComMessaging IG](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/) and [DK-core v. 1.1.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). This is currently reflected in MedComHospitalNotificationMessage, MedComHospitalNotificationMessageHeader and MedComHospitalNotificationEncounter which all inherits from profiles defined in MedComCore or MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreOrganization and MedComMessagingOrganization.
 
 ### Documentation
 
-Documentation such as use cases, clinical guidelines and mapping documents can be found on the [landing page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/)
+Documentation such as use cases, clinical guidelines, mapping documents, testprotocols, ect. can be found on the [introdution page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/). 
 
 <!--#### Non-technical guidelines 
 Information regarding non-technical guidelines and use cases for HospitalNotification is found here:
@@ -62,7 +64,7 @@ The mapping is only elaborated in English:
 * [OIOXML advis -> HospitalNotification ](./hospitalnotification/pdf/Map_between_OIOXML_and_FHIR_HospitalNotificationMessages-21-12-22.pdf) -->
 
 
-#### Content
+### Scope
 
 This document presents MedCom FHIR messaging concepts defined via FHIR processable artefacts:
 
@@ -76,3 +78,9 @@ FHIR profiles are managed under MedCom:
 
 * [Source](https://github.com/medcomdk/dk-medcom-hospitalnotification)
 * [Wiki](https://github.com/medcomdk/dk-medcom-hospitalnotification)
+
+### Other
+
+#### Quality Assurance Report
+
+In the Quality Assurance report (QA-report) for this IG, there is an error with the following description: *Reference is remote which isn’t supported by the specified aggregation mode(s) for the reference (bundled)*. The error occurs when creating instances of the profiles and is due to some elements having a Bundled flag {b}, however the referenced profile is not included in a Bundle in an instance, since the instance only represents a part of the entire message. This should not influence the implementation by IT-vendors.

@@ -10,13 +10,15 @@ class "MedComHospitalNotificationEncounter" as encounter <<MedComCoreEncounter>>
 class "MedComMessagingProvenance" as provenance
 class "MedComCoreOrganization" as serviceProvider
 
-message -- messageHeader : "entry"
-messageHeader -- encounter : "focus"
-encounter -- patient : "subject"
-encounter -- serviceProvider : "serviceProvider"
-message -- provenance : "entry"
+message --> messageHeader : "entry"
+messageHeader --> encounter : "focus"
+encounter --> patient : "subject"
+encounter --> serviceProvider : "service provider"
+message --> provenance : "entry"
+provenance --> messageHeader : "target"
+provenance --> organization : "agent.who"
 
-messageHeader -- organization : "sender"
-messageHeader -- organization : "receiver"
+messageHeader --> organization : "sender"
+messageHeader --> organization : "receiver"
 
 @enduml

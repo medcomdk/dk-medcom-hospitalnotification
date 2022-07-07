@@ -1,4 +1,15 @@
 # MedCom HospitalNotification
+This page presents MedComs HospitalNotification standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
+<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a>. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized, on leave, or discharged. The notification will be sent regardless of the hospitalization of the patient is as an inpatient or acute care. 
+
+The HospitalNotification IG contains the following profiles: 
+*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>MedComHospitalNotificationEncounter
+*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
+* <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
+<p>&nbsp;</p>	
+Profiles in the HospitalNotification Implementation Guide (IG) will together with profiles from MedCom Core IG, MedCom Messaging IG and MedCom Terminology IG constitute the standard, which you can read more about below.
+
+
 
 This page represents MedComs HospitalNotification standard (DK: SygehusAdvis). The standard will in time replace the existing standard called XDIS17 and XDIS20. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized, on leave or discharged, regardless if it is as inpatient or acute care. MedCom HospitalNotification will together with profiles from <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core Implementation Guide</a> and <a href="https://medcomdk.github.io/dk-medcom-messaging/" target="_blank">MedCom Messaging Implementation Guide</a> constitute the standard, which you can read more about below. 
 
@@ -26,7 +37,7 @@ In the documentation below you will find the necessary content to understand the
 
 ### Clinical Guidelines
 
-These nontechnical guidelines is the foundation for the HospitalNotification standard. It is the primary textual part of the documentation for HospitalNotification. It describes the purpose of the standard, the background the requirements for the standard and how it standard supports the business needs. 
+These clinical guidelines is the foundation for the HospitalNotification standard. It is the primary textual part of the documentation for HospitalNotification. It describes the purpose of the standard, the background the requirements for the standard and how it standard supports the business needs. 
 
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines - Work in progress](assets/documents/Clinical-guidelines-ENG.md) 

@@ -5,20 +5,23 @@ body {
   background-color: #fff;
   padding:75px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  color:#333333;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  color:#2C415C;
   margin:0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
+ul, ol{
+  margin: 0 0 0;
+}
+p,table, pre, dl {
   margin:0 0 20px;
 }
 
-h1, h2, h3 {
+h1, h2, h3,h4 {
   line-height:1.1;
 }
 
@@ -27,21 +30,22 @@ h1 {
 }
 
 h2 {
-  color:#393939;
+  color:#2C415C;
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:#2C415C;
 }
 
 a {
-  color:#267CB9;
+  color:#3d597f;
   text-decoration:none;
 }
 
 a:hover, a:focus {
-  color:#069;
-  font-weight: bold;
+  color:#2C415C;
+  text-decoration: underline;
+
 }
 
 a small {

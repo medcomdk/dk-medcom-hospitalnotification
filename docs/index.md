@@ -25,7 +25,7 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
   * [2 Test and Certification](#2-test-and-certification)
     + [Testprotocols](#testprotocols)
   * [3 Release Notes](#3-release-notes)
-
+<p>&nbsp;</p>
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
 ## 1 Documentation 
@@ -40,7 +40,7 @@ The standard documentation below provides the necessary content to understand th
 ### Clinical Guidelines
 The clinical guidelines is the foundation for the HospitalNotification standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
 
-Below can the clinical guidelines in Danish and English be found: 
+Below can the clinical guidelines in Danish and English be found:
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines - Work in progress](assets/documents/Clinical-guidelines-ENG.md) 
 
@@ -52,7 +52,6 @@ Use cases describe the different scenarios a standard support. For a certain rea
 The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
 Below can the use cases in Danish and English be found: 
-
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 
 
@@ -62,7 +61,7 @@ The technical specifications for the HospitalNotification standard are defined i
 *	<a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>
-
+<p>&nbsp;</p>
 IGs might be difficult for people with little or no knowledge about FHIR and how to understand an IG. Therefor has MedCom developed a webpage describing the content of the HospitalNotification standard. The link below gives an overview of which profiles are included, what their purpose are, and which elements that shall be supported in a system. Further the structure of the standard is described and supported with examples in different degree of technical skills.
 
 

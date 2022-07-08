@@ -41,7 +41,7 @@ The standard documentation below provides the necessary content to understand th
 ### Clinical Guidelines
 The clinical guidelines is the foundation for the HospitalNotification standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
 
-Below can the clinical guidelines in Danish and English be found:
+Below can the clinical guidelines in Danish and English be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines - Work in progress](assets/documents/Clinical-guidelines-ENG.md) 
 

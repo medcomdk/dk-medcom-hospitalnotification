@@ -53,6 +53,8 @@ A &#39;Hospital Notification&#39; must include:
 6. Status of hospital stay (cf. Table 1).
  <p>&nbsp;</P>
 
+>Note:Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.  
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -151,9 +153,12 @@ A &#39;Hospital Notification&#39; must include:
 
 The purpose of the outlined business rules for use of the &#39;Hospital Notification&#39; is that the actors who use the notification, use the messages as intended. Business rules are a supplement to the standard for &#39;Hospital Notification&#39; and can be updated as the needs change.
 
+>Note:Private hospitals can also use hospital notifications
+
 1. **Electronic notifications are generated based on real-time registration in the EPR/PAS system**If EPR/PAS uses future registrations of planned contacts, these should trigger the electronic notification only when the time occurs, i.e. at the patient&#39;s physical attendance.
 
 2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
+>Note:f the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
 3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector).
 
@@ -163,11 +168,14 @@ The purpose of the outlined business rules for use of the &#39;Hospital Notifica
 The notification type &#39;DEAD&#39; should be used in all cases where the patient is dead or dies.
 
 6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications is only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
+>Note:Admission in psychiatric and somatic departments at the same time.
 
 7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**
   * If a notification has been sent because of wrongly entered personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent.
   * If a notification with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
-8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred **from**
+
+8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred form. 
+>Note: If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
 9. **Discharge to hospice**
 Same flow as for transfer to another hospital in the same or another region is used. Hospice sends &#39;START hospital stay – admission&#39; when the patient arrives.
@@ -175,7 +183,9 @@ Same flow as for transfer to another hospital in the same or another region is u
 
 # Use cases
 
-For use of the technical implementation of the &#39;Hospital Notification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the Hospital Notification. The use cases can be found [https://simplifier.net/medcom-fhir-messaging](https://simplifier.net/medcom-fhir-messaging).
+For use of the technical implementation of the &#39;Hospital Notification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the Hospital Notification. The use cases can be found <a href="https://simplifier.net/medcom-fhir-messaging" target="_blank">Simplifier</a>
+
+ [https://simplifier.net/medcom-fhir-messaging](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/UseCases-DA.html).
 
 # Technical specifications for &#39;Hospital Notification&#39;
 

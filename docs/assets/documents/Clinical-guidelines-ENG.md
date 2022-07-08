@@ -51,7 +51,7 @@ A &#39;Hospital Notification&#39; must include:
 5. Specification of where the admission report should be sent
 6. Status of hospital stay (cf. Table 1).
 
-![MD](C:/Git_hub/dk-medcom-hospitalnotification/input/images/hospitalnotification/StatusOnHospitalStay.png)
+![Status of hospital stay](...images/hospitalnotification/StatusOnHospitalStay.png)
 
 # Business rules for use of &#39;Hospital Notification&#39;
 

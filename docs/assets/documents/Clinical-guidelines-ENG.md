@@ -8,19 +8,17 @@
 * [Purpose](#_Toc101430331)
 * [Background](#_Toc101430332)
 * [Legal framework](#_Toc101430333)
-* [5&#39;Hospital Notification&#39;: requirements for content and benefits ](#_Toc101430334)
-* [6Business rules for use of &#39;Hospital Notification&#39; ](#_Toc101430335)
-* [7Use cases](#_Toc101430336)
-* [8Technical specifications for &#39;Hospital Notification&#39; 7](#_Toc101430337)
-* [9Example of a Hospital Notification 8](#_Toc101430338)
-* [10Corrections 9](#_Toc101430339)
+* [&#39;Hospital Notification&#39;: requirements for content and benefits](#_Toc101430334)
+* [Business rules for use of &#39;Hospital Notification&#39;](#_Toc101430335)
+* [Use cases](#_Toc101430336)
+* [Technical specifications for &#39;Hospital Notification&#39;](#_Toc101430337)
+* [Example of a Hospital Notification](#_Toc101430338)
+* [Corrections](#_Toc101430339)
 
 # Introduction
 
-This is the textual part of the documentation for MedCom&#39;s FHIR-standard &#39;Hospital Notification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;Hospital Notification&#39;.The target group is IT-system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;Hospital Notification&#39;.The requirements for content and business-related use of &#39;Hospital Notification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;
-<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a>
+This is the textual part of the documentation for MedCom&#39;s FHIR-standard &#39;Hospital Notification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;Hospital Notification&#39;.The target group is IT-system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;Hospital Notification&#39;.The requirements for content and business-related use of &#39;Hospital Notification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> in the MedCom11 project period 2018-2019. The &#39;Hospital Notification&#39; replaces the previous MedCom standards, Notification of Admission /<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">DIS20</a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a>, and Notification of Discharge XDIS17<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> 
 
- ([hjemmepleje-sygehusgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe)) and &#39;municipality-hospital vendor group&#39; ([kommune-sygehusleverandørgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen)) in the MedCom11 project period 2018-2019. The &#39;Hospital Notification&#39; replaces the previous MedCom standards, Notification of Admission DIS20/XDIS20 and Notification of Discharge DIS17/XDIS17.
 
 The technical specifications for the FHIR notification standard can be found via [https://simplifier.net/medcom-fhir-messaging](https://simplifier.net/medcom-fhir-messaging). This document is also available in Danish
 

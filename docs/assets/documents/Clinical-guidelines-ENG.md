@@ -67,8 +67,7 @@ If EPR/PAS uses future registrations of planned contacts, these should trigger t
 
 2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**
 
-Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer
-**# 4**.
+Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
 
 3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.**
 

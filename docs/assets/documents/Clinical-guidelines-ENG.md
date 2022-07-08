@@ -51,6 +51,7 @@ A &#39;Hospital Notification&#39; must include:
 5. Specification of where the admission report should be sent
 6. Status of hospital stay (cf. Table 1).
  <p>&nbsp;</P>
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -177,40 +178,9 @@ For use of the technical implementation of the &#39;Hospital Notification&#39;, 
 The FHIR profile for hospital notification can be found via [https://simplifier.net/medcom-fhir-messaging](https://simplifier.net/medcom-fhir-messaging).
 
 # 9Example of a Hospital Notification
+
 ![Status of hospital stay](...images/hospitalnotification/StatusOnHospitalStay.png) 
-|   |   |   |   |
-| --- | --- | --- | --- |
-|   | **NOTIFICATION OF HOSPITALIZATION** |   |
-|   |   |   |   |
-|   | Patient |   |
-|   |   |   |   |
-|   |   |   |   |
-|   | **Personal Identification Number (CPR)** | XXXXXX-XXXX |   |
-|   | **Date and Time** | 12-11-19 at 13:51 |   |
-|   | **Status of hospital stay** | Start hospital stay – admitted to hospital |   |
-|   |   |   |   |
-|   |   |   |   |
-|   | Receiver |   |
-|   |   |   |   |
-|   |   |   |   |
-|   | **Location no.** | 5790000121441 |   |
-|   | **Municipality no.** | 461 |   |
-|   | **Unit** | Æbleblomsten |   |
-|   | **Department** | Home health care |   |
-|   | **Organisation** | City of Odense |   |
-|   |   |   |   |
-|   |   |   |   |
-|   | Sender |   |
-|   |   |   |   |
-|   |   |   |   |
-|   | **Location no.** | 5790001354145 |   |
-|   | **SOR ID** | 239201000016001 |   |
-|   | **Unit** | Q |   |
-|   | **Department** | Infektionsmedicinsk Afdeling |   |
-|   | **Organisation** | Odense University Hospital |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   | ¨ |
+
 
 This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification, see Table 1.
 

@@ -18,6 +18,7 @@ inpatient’.
 notification has been sent by a mistake. For example, if Encounter.status was ‘onleave’ before the status was changed to
 ‘finished’, the status must be changed to ‘onleave’ again.
 * If a patient dies, it must be noted in the element Patient.deceased. In this case, the element must be ‘true’.
+<p>&nbsp;<p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;max-width:90%;}
@@ -25,11 +26,11 @@ notification has been sent by a mistake. For example, if Encounter.status was �
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-6roq{background-color:#fae7d0;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-m3pm{background-color:#c8d6f8;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-ralc{background-color:#defce6;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-y698{background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-cjtp{background-color:#ecf4ff;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-tul6{background-color:#cfcfcf;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-5pia{background-color:#ffe2bf;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
+.tg .tg-m5mm{background-color:#bbf7bb;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">

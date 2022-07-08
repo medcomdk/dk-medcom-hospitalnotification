@@ -69,7 +69,7 @@ A &#39;Hospital Notification&#39; must include:
 <thead>
   <tr>
     <th class="tg-d256">Event                                                                                                               </th>
-    <th class="tg-d256">Code<a href="https://wordhtml.com/#_ftn1" target="_blank" rel="noopener noreferrer">[1]</a></th>
+    <th class="tg-d256">Code</th>
     <th class="tg-d256">Name of notification</th>
     <th class="tg-d256">Benefits</th>
   </tr>

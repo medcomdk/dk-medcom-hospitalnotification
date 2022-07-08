@@ -36,9 +36,7 @@ Registration of hospital stays in the EPR system are linked to the reporting to 
 
 Notifications of hospital stay are exchanged on the basis of the Danish Health Act and Danish Legal Protection Act §12c:
 
-&quot;_For use in the planning of care services etc pursuant to § 79 a, chapter 16 and §§ 107 and 108 in the social services and health care act as well as for follow-ups of cases pursuant to §§ 8-10 in the act on sickness benefits, the municipal council and hospital can exchange information about citizens admission and discharge from hospitals within the municipality and about the citizen&#39;s acute hospital stay, where the citizen stays at the hospital for assessment and treatment without being admitted. The exchange can take place automatic and without the consent of the citizen.&quot;_
-
-_(_Danish Legal Act 12c LBK 265 25/02/2022)
+&quot;_For use in the planning of care services etc pursuant to § 79 a, chapter 16 and §§ 107 and 108 in the social services and health care act as well as for follow-ups of cases pursuant to §§ 8-10 in the act on sickness benefits, the municipal council and hospital can exchange information about citizens admission and discharge from hospitals within the municipality and about the citizen&#39;s acute hospital stay, where the citizen stays at the hospital for assessment and treatment without being admitted. The exchange can take place automatic and without the consent of the citizen.&quot; (_Danish Legal Act 12c LBK 265 25/02/2022)
 
 The service act §79 a includes _preventive home visits_, chapter 16 includes §§ 83-99, which covers _personal help, care and nursing as well as care wills, and §§ 107 and 108 covers temporary and long-term sheltered residence._
 
@@ -53,7 +51,7 @@ A &#39;Hospital Notification&#39; must include:
 5. Specification of where the admission report should be sent
 6. Status of hospital stay (cf. Table 1).
 
-![MD](C:\Git_hub\dk-medcom-hospitalnotification\input\images\hospitalnotification\StatusOnHospitalStay.png)
+![MD](C:/Git_hub/dk-medcom-hospitalnotification/input/images/hospitalnotification/StatusOnHospitalStay.png)
 
 # Business rules for use of &#39;Hospital Notification&#39;
 
@@ -65,11 +63,11 @@ The purpose of the outlined business rules for use of the &#39;Hospital Notifica
 
 If EPR/PAS uses future registrations of planned contacts, these should trigger the electronic notification only when the time occurs, i.e. at the patient&#39;s physical attendance.
 
-2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**
+1. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**
 
 Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
 
-3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.**
+1. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.**
 
 No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector).
 

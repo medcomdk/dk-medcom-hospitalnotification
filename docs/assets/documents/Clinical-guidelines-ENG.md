@@ -152,11 +152,16 @@ A &#39;Hospital Notification&#39; must include:
 The purpose of the outlined business rules for use of the &#39;Hospital Notification&#39; is that the actors who use the notification, use the messages as intended. Business rules are a supplement to the standard for &#39;Hospital Notification&#39; and can be updated as the needs change.
 
 1. **Electronic notifications are generated based on real-time registration in the EPR/PAS system**If EPR/PAS uses future registrations of planned contacts, these should trigger the electronic notification only when the time occurs, i.e. at the patient&#39;s physical attendance.
+
 2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
+
 3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector).
+
 4. **If an admission changes to acute ambulant care, a new &#39;START hospital stay – acute ambulant care&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the admission changes to acute ambulant care. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector). This occurrence is seen as rare.
+
 5. **If the patient is declared dead on arrival, after arrival or during the hospital stay, the notification of the type &#39;DEATH&#39; is sent.**
 The notification type &#39;DEAD&#39; should be used in all cases where the patient is dead or dies.
+
 6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications is only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
 
 7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**

@@ -163,7 +163,7 @@ The notification type &#39;DEAD&#39; should be used in all cases where the patie
 
   b. If a notification with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
 
-8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred _ **to** _, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred **from**
+8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred **from**
 
 9. **Discharge to hospice**
 

@@ -48,7 +48,7 @@ A &#39;Hospital Notification&#39; must include:
 3. Name of the hospital department/ward and hospital
 4. Specification if the notification should trigger an admission report from the receiver of the notification
 5. Specification of where the admission report should be sent
-6. Status of hospital stay (cf. Table 1).
+6. Status of hospital stay (cf. Table 1).<br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

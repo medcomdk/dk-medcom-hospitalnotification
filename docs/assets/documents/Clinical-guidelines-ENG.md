@@ -159,14 +159,12 @@ The notification type &#39;DEAD&#39; should be used in all cases where the patie
 6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications is only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
 
 7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**
-  a. If a notification has been sent because of wrongly entered personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent.
+  * If a notification has been sent because of wrongly entered personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent.
 
-  b. If a notification with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
-
+  * If a notification with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
 8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred **from**
 
 9. **Discharge to hospice**
-
 Same flow as for transfer to another hospital in the same or another region is used. Hospice sends &#39;START hospital stay – admission&#39; when the patient arrives.
 
 # Use cases
@@ -179,7 +177,7 @@ The FHIR profile for hospital notification can be found via [https://simplifier.
 
 # 9Example of a Hospital Notification
 
-![MD](...images/Example_HospitalNotification_ENG.png) 
+![MD](..images/Example_HospitalNotification_ENG.png) 
 
 
 This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification, see Table 1.

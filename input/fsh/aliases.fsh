@@ -4,3 +4,4 @@ Alias: $BundleType = http://hl7.org/fhir/bundle-type
 Alias: $Use = http://medcomfhir.dk/fhir/messaging/CodeSystem/medcom-messaging-destinationUse
 Alias: $MessageEvents = http://medcomfhir.dk/fhir/messaging/CodeSystem/medcom-messaging-eventCodes
 Alias: $ActivityCode = http://medcomfhir.dk/fhir/messaging/CodeSystem/medcom-messaging-activityCodes
+Alias: $EncounterActCodes = http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-core-encounter-act-codes 

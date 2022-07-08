@@ -30,7 +30,7 @@ notification has been sent by a mistake. For example, if Encounter.status was â€
 .tg .tg-tul6{background-color:#cfcfcf;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-5pia{background-color:#ffe2bf;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
-.tg .tg-6wfg{background-color:#d7fcd7;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-m5mm{background-color:#d7fcd7;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">

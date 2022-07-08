@@ -97,7 +97,8 @@ Testprotocols and testscripts are used to test and certify MedCom HospitalNotifi
 
 **Receiving a HospitalNotification message**
 * Testprotocol
-* TouchStone Testscripts<br>
+* TouchStone Testscripts
+<p>&nbsp;</p>
 
 
 ## 3 Release Notes

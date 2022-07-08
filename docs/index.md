@@ -52,7 +52,7 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-Below can the use cases in Danish and English be found:<p> </p> 
+Below can the use cases in Danish and English be found:</br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 
 
@@ -81,7 +81,6 @@ The value of element codes different profiles (MedComHospitalNotificationEncount
 
 Mapping from previous OIOXML standards to FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice, that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Further, not all elements from the FHIR elements are represented in the document and therefore it cannot stand alone for implementation.
-
 [The mapping can be found here.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)
 
 ## 2 Test and Certification

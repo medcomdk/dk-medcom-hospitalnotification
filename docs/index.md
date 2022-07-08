@@ -52,7 +52,7 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-Below can the use cases in Danish and English be found:</br>
+Below can the use cases in Danish and English be found:<br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 
 

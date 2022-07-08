@@ -53,29 +53,7 @@ A &#39;Hospital Notification&#39; must include:
 5. Specification of where the admission report should be sent
 6. Status of hospital stay (cf. Table 1).
 
-| **Event** | **Code
-# 2 **|** Name of notification **|** Benefits** |
-| --- | --- | --- | --- |
-| Start stay |
- |
-| Acute ambulant care start |  STAA | START hospital stay – Acute ambulant care | The receiver is informed that the citizen is registered as &#39;acute ambulant&#39; at the hospital. The specific status allows the receiving system to set rules for the system management. |
-| Admitted to hospital |  STIN | START hospital stay – admission | The receiver is informed that the citizen is registered as &#39;admitted to hospital&#39;. The specific status allows the receiving system to set rules for the system management. |
-| End stay |
- |
-| Patient discharged and sent home |  SLHJ | END hospital stay – patient discharged and sent home/to primary sector | The receiver is informed that the citizen&#39;s hospital stay is ended and is transferred to either home or primary sector. It allows the receiving system to set rules for the system management, for example resuming care services. Not used for transfer. |
-| Death |
- |
-| The patient is dead |  MORS | DEATH | The receiver is informed that the citizen is dead. Used both if dead at arrival and dead during the hospital stay. |
-| Leave |
- |
-| The patient starts leave | STOR | START leave | Information about current leave is useful when/if relatives/the citizen reaches out during the leave.The treatment responsibility for the patient on leave lies at the hospital and must be communicated separately if actors other than the hospital delivers care services during the patient&#39;s leave. |
-| The patient ends leave | SLOR | END leave |
-| Cancellations |
- |
-| Cancellation |  ANXX | CANCELLED &#39;Name of notification&#39; | Cancellation of previously sent notifications. Is used in case of wrong choice of hospital stay or wrongpersonal identification number (CPR). |
-| Corrections |
- |
-| Corrections | REXX | CORRECTED &#39;Name of electronic notification&#39; | Corrects content in previously sent notifications, for example hospital department or time. |
+![MD](../images/StatusOnHospitalStay.png)
 
 # Business rules for use of &#39;Hospital Notification&#39;
 

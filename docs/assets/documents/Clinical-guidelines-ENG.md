@@ -177,7 +177,8 @@ The FHIR profile for hospital notification can be found via [https://simplifier.
 
 # 9Example of a Hospital Notification
 
-[MD](..images/Example_HospitalNotification_ENG.png) 
+![MD](../images/Example_HospitalNotification_ENG.png) 
+
 
 
 This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification, see Table 1.

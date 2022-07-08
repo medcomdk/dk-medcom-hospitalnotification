@@ -4,7 +4,7 @@
 
 # Table of content
 
-* [Introduction] (#-Introduction)
+* [Introduction](#-Introduction)
 * [Purpose](#-Purpose)
 * [Background](# Background)
 * [Legal framework](#-Legal-framework)

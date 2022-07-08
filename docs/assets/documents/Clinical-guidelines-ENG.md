@@ -14,6 +14,7 @@
 * [Technical specifications for &#39;Hospital Notification&#39;](#-Technical-specifications-for-&#39;Hospital-Notification&#39;)
 * [Example of a Hospital Notification](#-Example-of-a-Hospital-Notification)
 * [Corrections](#-Corrections)
+<p>&nbsp;</P>
 
 # Introduction
 
@@ -48,8 +49,8 @@ A &#39;Hospital Notification&#39; must include:
 3. Name of the hospital department/ward and hospital
 4. Specification if the notification should trigger an admission report from the receiver of the notification
 5. Specification of where the admission report should be sent
-6. Status of hospital stay (cf. Table 1).<br>
-
+6. Status of hospital stay (cf. Table 1).
+ <p>&nbsp;</P>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

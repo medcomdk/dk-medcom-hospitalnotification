@@ -1,43 +1,31 @@
 # Clinical Guidelines
-![Shape1](RackMultipart20220708-1-h9e09n_html_64d01c7f479797c5.gif)
 
 ## HospitalNotification
 
-### MedCom FHIR standard
-
-v. 1.0.1
- 20.04.2022
-
 # Table of content
 
-[1Introduction 3](#_Toc101430330)
+* [Introduction] (#_Toc101430330)
+* [Purpose](#_Toc101430331)
+* [Background](#_Toc101430332)
+* [Legal framework](#_Toc101430333)
+* [5&#39;Hospital Notification&#39;: requirements for content and benefits ](#_Toc101430334)
+* [6Business rules for use of &#39;Hospital Notification&#39; ](#_Toc101430335)
+* [7Use cases](#_Toc101430336)
+* [8Technical specifications for &#39;Hospital Notification&#39; 7](#_Toc101430337)
+* [9Example of a Hospital Notification 8](#_Toc101430338)
+* [10Corrections 9](#_Toc101430339)
 
-[2Purpose 3](#_Toc101430331)
+# Introduction
 
-[3Background 3](#_Toc101430332)
+This is the textual part of the documentation for MedCom&#39;s FHIR-standard &#39;Hospital Notification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;Hospital Notification&#39;.The target group is IT-system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;Hospital Notification&#39;.The requirements for content and business-related use of &#39;Hospital Notification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;
+<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a>
 
-[4Legal framework 4](#_Toc101430333)
-
-[5&#39;Hospital Notification&#39;: requirements for content and benefits 4](#_Toc101430334)
-
-[6Business rules for use of &#39;Hospital Notification&#39; 5](#_Toc101430335)
-
-[7Use cases 7](#_Toc101430336)
-
-[8Technical specifications for &#39;Hospital Notification&#39; 7](#_Toc101430337)
-
-[9Example of a Hospital Notification 8](#_Toc101430338)
-
-[10Corrections 9](#_Toc101430339)
-
-# 1Introduction
-
-This is the textual part of the documentation for MedCom&#39;s FHIR-standard &#39;Hospital Notification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;Hospital Notification&#39;.The target group is IT-system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;Hospital Notification&#39;.The requirements for content and business-related use of &#39;Hospital Notification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39; ([hjemmepleje-sygehusgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe)) and &#39;municipality-hospital vendor group&#39; ([kommune-sygehusleverandørgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen)) in the MedCom11 project period 2018-2019. The &#39;Hospital Notification&#39; replaces the previous MedCom standards, Notification of Admission DIS20/XDIS20 and Notification of Discharge DIS17/XDIS17.
+ ([hjemmepleje-sygehusgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe)) and &#39;municipality-hospital vendor group&#39; ([kommune-sygehusleverandørgruppe](https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen)) in the MedCom11 project period 2018-2019. The &#39;Hospital Notification&#39; replaces the previous MedCom standards, Notification of Admission DIS20/XDIS20 and Notification of Discharge DIS17/XDIS17.
 
 The technical specifications for the FHIR notification standard can be found via [https://simplifier.net/medcom-fhir-messaging](https://simplifier.net/medcom-fhir-messaging). This document is also available in Danish
-# 1
 
-# 2Purpose
+
+# Purpose
 
 The &#39;Hospital Notification&#39; contributes to securing the foundation for a coherent clinical pathway across sectors. The specific purpose of the &#39;Hospital Notification&#39; is to inform the citizen&#39;s current care and health provider in the primary sector about the start and end of the citizen&#39;s stay at the hospital. It makes it possible to pause the current care and health providers&#39; services during the hospital stay and resume them when it ends. At the same time, the &#39;Hospital Notification&#39; can trigger the automatic sending of Report of Admission (XDIS16) from the receiver&#39;s system, which gives the health professionals an overview of the citizen&#39;s current services, level of function and health related problems. The Hospital Notification also contains notification of the patient&#39;s leave from the hospital stay and acute ambulant care.
 

@@ -1,3 +1,5 @@
+[Tilbage](../../index.md)
+
 # Sundhedsfaglige retningslinjer
 
   * [Introduktion](#introduktion)

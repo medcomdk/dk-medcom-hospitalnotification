@@ -367,7 +367,7 @@ Alle use cases er opdelt i:
 -   **Modtager (R)**-use case**:** Beskriver use casen fra modtagerside
     (R = Receiver)
 
-Primære use cases er bygget op af nedenstående elementer[^1].
+Primære use cases er bygget op af nedenstående elementer.
 
 
 <style type="text/css">
@@ -435,7 +435,54 @@ formål, startbetingelser/forudsætninger og igangsættende hændelse, ikke
 vil fremgå af de alternative use cases. Alternative use cases er derfor
 opbygget af nedenstående elementer:
 
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c41c;font-weight:bold"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Element<br></th>
+    <th class="tg-pu9k">Forklaring<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">   <br>ID   </td>
+    <td class="tg-tysj">   <br>Unikt ID   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Navn   </td>
+    <td class="tg-tysj">   <br>Aktivitet i   bydemåde   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Reference til   use case, som denne use case er et alternativ til   </td>
+    <td class="tg-tysj">   <br>Use case ID   på den primære use case, som denne use case er et alternativ til   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Handlinger   </td>
+    <td class="tg-tysj">   <br>Forløbet af   handlinger, der – uden afbrydelser – fører fra den igangsættende begivenhed   til slutresultatet.   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Slutresultat   </td>
+    <td class="tg-tysj">   <br>Det ønskede   forretningsmæssige mål   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Korrigerende   handlinger (CANC/CORR)   </td>
+    <td class="tg-tysj">   <br>Beskrivelse   af korrigerende handlinger, der foretages, når et forløb ender med en   fejlsituation eller med en genoptagelse (med reference/link til korrigerende   use case(s). Eksempelvis rettelser eller annulleringer.   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Bemærkninger   </td>
+    <td class="tg-tysj">   <br>Eventuelle   bemærkninger til use casen   </td>
+  </tr>
+</tbody>
+</table>
 
 
 

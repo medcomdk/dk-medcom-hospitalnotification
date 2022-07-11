@@ -48,89 +48,89 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 6. Status for sygehusophold (jf. Tabel 1). 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;max-width:80%;}
+.tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-9xjr{background-color:#e2ecf5;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
+.tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-1wig">Hændelse</th>
-    <th class="tg-1wig">Kode * </th>
-    <th class="tg-1wig">Navn på advis notifikation</th>
-    <th class="tg-1wig">Gevinst</th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Hændelse</span></th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Kode *</span></th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Navn på advis notifikation</span></th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Gevinst</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-9xjr" colspan="4">Start ophold</td>
+    <td class="tg-uwa6" colspan="4"><span style="font-weight:bold">Start ophold</span></td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Akut ambulant start</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">STAA</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">START sygehusophold - Akut ambulant</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Modtager informeres om at borger er registreret som ’akut ambulant’ påsygehuset. Specifik status giver mulighed for at modtagersystem kan opsætte regler forsystemhandlinger.</span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Akut ambulant start</td>
+    <td class="tg-i91a"><br>STAA</td>
+    <td class="tg-i91a"><br>START sygehusophold - Akut ambulant</td>
+    <td class="tg-i91a"><br>Modtager informeres om at borger er registreret som ’akut ambulant’ påsygehuset. Specifik status giver mulighed for at modtagersystem kan opsætte regler forsystemhandlinger.</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Indlagt</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">STIN</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">START sygehusophold - Indlagt</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Modtager informeres om at borger er registreret som ’indlagt’ påsygehuset. Specifik status giver mulighed for at modtagersystem kan opsætteregler for systemhandlinger.</span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Indlagt</td>
+    <td class="tg-i91a"><br>STIN</td>
+    <td class="tg-i91a"><br>START sygehusophold - Indlagt</td>
+    <td class="tg-i91a"><br>Modtager informeres om at borger er registreret som ’indlagt’ påsygehuset. Specifik status giver mulighed for at modtagersystem kan opsætteregler for systemhandlinger.</td>
   </tr>
   <tr>
-    <td class="tg-9xjr" colspan="4">   <br><span style="color:black">Slut ophold</span>   </td>
+    <td class="tg-uwa6" colspan="4">Slut ophold</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Afsluttet til hjemmet</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">SLHJ</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">SLUT sygehusophold – Afsluttet til hjemmet/primær sektor</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Modtager informeres om, at borgeren afsluttes til hjemmet eller primærsektor. Giver mulighed for, at modtagersystem kan opsætte regler forsystemhandlinger, fx genoptagelse af ydelser. Anvendes ikke ved overflytning.</span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Afsluttet til hjemmet</td>
+    <td class="tg-i91a"><br>SLHJ</td>
+    <td class="tg-i91a"><br>SLUT sygehusophold – Afsluttet til hjemmet/primær sektor</td>
+    <td class="tg-i91a"><br>Modtager informeres om, at borgeren afsluttes til hjemmet eller primærsektor. Giver mulighed for, at modtagersystem kan opsætte regler forsystemhandlinger, fx genoptagelse af ydelser. Anvendes ikke ved overflytning.</td>
   </tr>
   <tr>
-    <td class="tg-9xjr" colspan="4">   <br><span style="color:black">Død</span>   </td>
+    <td class="tg-uwa6" colspan="4">Død</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Patienten er død</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><br><span style="color:black">MORS</span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">DØD</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Modtager informeres om at borgeren er død. Anvendes både ved død vedankomst og ved død under sygehusophold. </span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Patienten er død</td>
+    <td class="tg-i91a">MORS</td>
+    <td class="tg-i91a"><br>DØD</td>
+    <td class="tg-i91a"><br>Modtager informeres om at borgeren er død. Anvendes både ved død vedankomst og ved død under sygehusophold.</td>
   </tr>
   <tr>
-    <td class="tg-9xjr" colspan="4">   <br><span style="color:black">Orlov</span>   </td>
+    <td class="tg-uwa6" colspan="4">Orlov</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Patienten starter orlov</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">STOR</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">START orlov</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax" rowspan="2"><span style="background-color:white"></span><br><span style="color:black">Information om aktuel orlov er nyttig når/hvis pårørende/borgeren selvhenvender sig under orloven. Behandlingsansvaret for patienter på orlov ersygehusets, og det skal meddeles særskilt, hvis andre aktører end sygehusetskal levere ydelser under patientens orlov.</span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Patienten starter orlov</td>
+    <td class="tg-i91a"><br>STOR</td>
+    <td class="tg-i91a"><br>START orlov</td>
+    <td class="tg-i91a" rowspan="2"><br>Information om aktuel orlov er nyttig når/hvis pårørende/borgeren selvhenvender sig under orloven. Behandlingsansvaret for patienter på orlov ersygehusets, og det skal meddeles særskilt, hvis andre aktører end sygehusetskal levere ydelser under patientens orlov.</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Patienten slutter orlov</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">SLOR</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">SLUT orlov</span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Patienten slutter orlov</td>
+    <td class="tg-i91a"><br>SLOR</td>
+    <td class="tg-i91a"><br>SLUT orlov</td>
   </tr>
   <tr>
-    <td class="tg-9xjr" colspan="4">   <br><span style="color:black">Annulleringer</span>   </td>
+    <td class="tg-uwa6" colspan="4">Annulleringer</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Annullering</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">ANXX</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">ANNULLERET 'Navn på advisnotifikation'</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Annullering af tidligere afsendt advis. Anvendes ved forkert valg af sygehusophold eller forkert cpr. </span><span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Annullering</td>
+    <td class="tg-i91a"><br>ANXX</td>
+    <td class="tg-i91a"><br>ANNULLERET 'Navn på advisnotifikation'</td>
+    <td class="tg-i91a"><br>Annullering af tidligere afsendt advis. Anvendes ved forkert valg af sygehusophold eller forkert cpr.</td>
   </tr>
   <tr>
-    <td class="tg-9xjr" colspan="4">   <br><span style="color:black">Rettelser</span>   </td>
+    <td class="tg-uwa6" colspan="4">Rettelser</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Rettelser</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">REXX</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">RETTET 'Navn på advisnotifikation’</span><span style="background-color:white"></span></td>
-    <td class="tg-0lax"><span style="background-color:white"></span><br><span style="color:black">Retter indhold i tidligere afsendt advis, fxsygehusafdeling eller tidspunkt. </span> <span style="background-color:white"></span></td>
+    <td class="tg-i91a"><br>Rettelser</td>
+    <td class="tg-i91a"><br>REXX</td>
+    <td class="tg-i91a"><br>RETTET 'Navn på advisnotifikation’</td>
+    <td class="tg-i91a"><br>Retter indhold i tidligere afsendt advis, fxsygehusafdeling eller tidspunkt.</td>
   </tr>
 </tbody>
 </table>

@@ -66,7 +66,7 @@ A &#39;Hospital Notification&#39; must include:
 <thead>
   <tr>
     <th class="tg-d256">Event                                                                                                               </th>
-    <th class="tg-d256">Code</th>
+    <th class="tg-d256">Code *</th>
     <th class="tg-d256">Name of notification</th>
     <th class="tg-d256">Benefits</th>
   </tr>
@@ -145,6 +145,9 @@ A &#39;Hospital Notification&#39; must include:
   </tr>
 </tbody>
 </table>
+*represents [danish codes names described in the overview of Hospital Notification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
+
+
 
 # Business rules for use of &#39;Hospital Notification&#39;
 

@@ -54,72 +54,73 @@ A &#39;Hospital Notification&#39; must include:
 
 
 
+
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
-.tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
-.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-vfn1{background-color:#9dbad7;color:#333333;text-align:left;vertical-align:top}
 </style>
-
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-d256">Event                                                                                                               </th>
-    <th class="tg-d256">Code *</th>
-    <th class="tg-d256">Name of notification</th>
-    <th class="tg-d256">Benefits</th>
+    <th class="tg-pu9k">Event</th>
+    <th class="tg-pu9k">Code *</th>
+    <th class="tg-pu9k">Name of notification</th>
+    <th class="tg-pu9k">Benefits</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-vfn1" colspan="3">Start stay</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">Acute ambulant care start</td>
-    <td class="tg-tysj"> <br>STAA</td>
+    <td class="tg-tysj">STAA</td>
     <td class="tg-tysj">START hospital stay – Acute ambulant care</td>
     <td class="tg-tysj">The receiver is informed that the citizen is registered as ‘acute ambulant’ at the hospital. The specific status allows the receiving system to set rules for the system management.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Admitted to hospital</td>
-    <td class="tg-tysj"> <br>STIN</td>
+    <td class="tg-tysj">STIN</td>
     <td class="tg-tysj">START hospital stay – admission</td>
     <td class="tg-tysj">The receiver is informed that the citizen is registered as ‘admitted to hospital’. The specific status allows the receiving system to set rules for the system management.</td>
   </tr>
   <tr>
     <td class="tg-vfn1" colspan="3">End stay</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">Patient discharged and sent home</td>
-    <td class="tg-tysj"> <br>SLHJ</td>
+    <td class="tg-tysj">SLHJ</td>
     <td class="tg-tysj">END hospital stay –<br>patient discharged and sent home/to primary sector</td>
     <td class="tg-tysj">The receiver is informed that the citizen’s hospital stay is ended and is transferred to either home or primary sector. It allows the receiving system to set rules for the system management, for example resuming care services. Not used for transfer.</td>
   </tr>
   <tr>
     <td class="tg-vfn1" colspan="3">Death</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">The patient is dead</td>
-    <td class="tg-tysj"> <br>MORS</td>
+    <td class="tg-tysj">MORS</td>
     <td class="tg-tysj">DEATH</td>
     <td class="tg-tysj">The receiver is informed that the citizen is dead. Used both if dead at arrival and dead during the hospital stay.</td>
   </tr>
   <tr>
     <td class="tg-vfn1" colspan="3">Leave</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">The patient starts leave</td>
     <td class="tg-tysj">STOR</td>
     <td class="tg-tysj">START leave</td>
-    <td class="tg-tysj" rowspan="2">Information about current leave is useful when/if relatives/the citizen reaches out during the leave.<br>The treatment responsibility for the patient on leave lies at the hospital and must be communicated separately if actors other than the hospital delivers care services during the patient’s leave. </td>
+    <td class="tg-tysj" rowspan="2">Information about current leave is useful when/if relatives/the citizen reaches out during the leave.<br>The treatment responsibility for the patient on leave lies at the hospital and must be communicated separately if actors other than the hospital delivers care services during the patient’s leave.</td>
   </tr>
   <tr>
     <td class="tg-tysj">The patient ends leave</td>
@@ -128,17 +129,17 @@ A &#39;Hospital Notification&#39; must include:
   </tr>
   <tr>
     <td class="tg-vfn1" colspan="3">Cancellations</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">Cancellation</td>
-    <td class="tg-tysj"> <br>ANXX</td>
+    <td class="tg-tysj">ANXX</td>
     <td class="tg-tysj">CANCELLED ‘Name of notification’</td>
     <td class="tg-tysj">Cancellation of previously sent notifications. Is used in case of wrong choice of hospital stay or wrong personal identification number (CPR).</td>
   </tr>
   <tr>
     <td class="tg-vfn1" colspan="3">Corrections</td>
-    <td class="tg-vfn1"> </td>
+    <td class="tg-vfn1"></td>
   </tr>
   <tr>
     <td class="tg-tysj">Corrections</td>

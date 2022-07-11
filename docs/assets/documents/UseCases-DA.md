@@ -1,4 +1,5 @@
 [Tilbage](../../index.md)
+
 # Use cases for advis om sygehusophold
 
 ## Introduktion

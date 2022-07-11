@@ -31,52 +31,53 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c; font-weight:bold"> Tabel 1: Overview over elements used in use cases </caption>
 <thead>
   <tr>
-    <th class="tg-1wig">Element</th>
-    <th class="tg-1wig">Explanation</th>
+    <th class="tg-pu9k">Element</th>
+    <th class="tg-pu9k">Explanation</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">ID</td>
-    <td class="tg-0lax">Unique ID</td>
+    <td class="tg-tysj">ID</td>
+    <td class="tg-tysj">Unique ID</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Name</td>
-    <td class="tg-0lax">Activity in city area</td>
+    <td class="tg-tysj">Name</td>
+    <td class="tg-tysj">Activity in city area</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Initiator</td>
-    <td class="tg-0lax">Name of the initiator (could be the user, (nurse or medical secretary) or System actor (i.e. received notification).&nbsp;</td>
+    <td class="tg-tysj">Initiator</td>
+    <td class="tg-tysj">Name of the initiator (could be the user, (nurse or medical secretary) or System actor (i.e. received notification). </td>
   </tr>
   <tr>
-    <td class="tg-0lax">Purpose, description and demarcation</td>
-    <td class="tg-0lax">Short description of the business-related pur-poses, possible demarcation related to other use cases.</td>
+    <td class="tg-tysj">Purpose, description and demarcation</td>
+    <td class="tg-tysj">Short description of the business-related pur-poses, possible demarcation related to other use cases.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Conditions for initiation</td>
-    <td class="tg-0lax">Preconditions which must be fulfilled in order for the standard procedure to run its course until the end.</td>
+    <td class="tg-tysj">Conditions for initiation</td>
+    <td class="tg-tysj">Preconditions which must be fulfilled in order for the standard procedure to run its course until the end.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Reason for initiation</td>
-    <td class="tg-0lax">The event that prompts the participant’s actions in the standard procedure.</td>
+    <td class="tg-tysj">Reason for initiation</td>
+    <td class="tg-tysj">The event that prompts the participant’s actions in the standard procedure.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Actions</td>
-    <td class="tg-0lax">The sequence of actions which, without interruption, leads from the first initiation to the end result.</td>
+    <td class="tg-tysj">Actions</td>
+    <td class="tg-tysj">The sequence of actions which, without interruption, leads from the first initiation to the end result.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Result</td>
-    <td class="tg-0lax">The targeted business-related goal</td>
+    <td class="tg-tysj">Result</td>
+    <td class="tg-tysj">The targeted business-related goal</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Alternative actions</td>
-    <td class="tg-0lax">Alternative procedures diverging from the stand-ard procedure which ends in error or with re-sumption.</td>
+    <td class="tg-tysj">Alternative actions</td>
+    <td class="tg-tysj">Alternative procedures diverging from the stand-ard procedure which ends in error or with re-sumption.</td>
   </tr>
 </tbody>
 </table>
@@ -92,88 +93,89 @@ In the use case descriptions, the following codes are used for different types o
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-ahvx{background-color:#ffffff;border-color:#656565;color:#656565;text-align:left;vertical-align:top}
-.tg .tg-m0jm{background-color:#ffffff;border-color:#656565;color:#656565;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c; font-weight:bold"> Table 2: Overview over codes used in use cases
 <thead>
   <tr>
-    <th class="tg-m0jm">Code   </th>
-    <th class="tg-m0jm">Name of Notification</th>
+    <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Code</span></th>
+    <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Name of Notification</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-ahvx">STAA</td>
-    <td class="tg-ahvx">Start hospital stay – Acute ambulant care</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start hospital stay – Acute ambulant care</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">STIN</td>
-    <td class="tg-ahvx">Start hospital stay- Admission</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start hospital stay- Admission</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">SLHJ</td>
-    <td class="tg-ahvx">End hospital stay – patient discharged and sent home/to primary sector</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">End hospital stay – patient discharged and sent home/to primary sector</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">STOR</td>
-    <td class="tg-ahvx">Start leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">SLOR</td>
-    <td class="tg-ahvx">End leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">End leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">MORS</td>
-    <td class="tg-ahvx">Death</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Death</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STAA</td>
-    <td class="tg-ahvx">Cancellation of acute ambulant stay</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of acute ambulant stay</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STAA</td>
-    <td class="tg-ahvx">Correction of acute ambulant stay</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of acute ambulant stay</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STIN</td>
-    <td class="tg-ahvx">Cancellation of admission</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of admission</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STIN</td>
-    <td class="tg-ahvx">Correction of admission</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of admission</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_SLHJ</td>
-    <td class="tg-ahvx">Cancellation of End of hospital stay</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of End of hospital stay</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_SLHJ</td>
-    <td class="tg-ahvx">Correction of End of hospital stay</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of End of hospital stay</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STOR</td>
-    <td class="tg-ahvx">Cancellation of Start leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of Start leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STOR</td>
-    <td class="tg-ahvx">Correction of Start leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of Start leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_SLOR</td>
-    <td class="tg-ahvx">Cancellation of End leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of End leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_SLOR</td>
-    <td class="tg-ahvx">Correction of End leave</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of End leave</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_MORS</td>
-    <td class="tg-ahvx">Cancellation of Death</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Cancellation of Death</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_MORS</td>
-    <td class="tg-ahvx">Correction of Death</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Correction of Death</span></td>
   </tr>
 </tbody>
 </table>

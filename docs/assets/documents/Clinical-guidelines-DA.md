@@ -178,6 +178,7 @@ Formålet med formulerede forretningsregler for anvendelse er, at parterne, som 
 
 9. **Udskrivning til hospice.**
 Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’START sygehusophold - indlagt’-advis ved patientens ankomst.
+<p>&nbsp;</p>
 
 ## Use cases 
 Til brug for den tekniske implementering af sygehusadvis findes detaljerede use case beskrivelser, som forbinder indholdsmæssige krav med den forretningsmæssige anvendelse for afsender og modtager af sygehusadvis. Use cases på [forsiden for advis om sygehusophold](../../index.md).

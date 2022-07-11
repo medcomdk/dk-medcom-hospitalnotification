@@ -180,6 +180,7 @@ The notification type &#39;DEAD&#39; should be used in all cases where the patie
 
 7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**
   1. If a notification has been sent because of wrongly entered personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent.
+  
   2. If a notification with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
 
 8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred form. 
@@ -191,16 +192,13 @@ Same flow as for transfer to another hospital in the same or another region is u
 <p>&nbsp;</p>
 
 # Use cases
-
 For use of the technical implementation of the &#39;Hospital Notification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the Hospital Notification. The use cases can be found on [the front page for HospitalNotification](../../index.md).
 
 # Technical specifications for &#39;Hospital Notification&#39;
-
 The FHIR profile for hospital notification can be found  on [the front page for HospitalNotification](../../index.md).
 
 
 # Example of a Hospital Notification
-
 ![MD](../images/Example_HospitalNotification_ENG.png) 
 
 >Note This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification.

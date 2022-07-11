@@ -588,7 +588,7 @@ opbygget af nedenstående elementer:
 </table>
 # Use cases
 
-## S1: Indlæg patient og send advis\[STIN\]
+## S1: Indlæg patient og send advis \[STIN\]
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -682,7 +682,7 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj">[S1](#s1-indlæg-patient-og-send-advisstin)</td>
+    <td class="tg-tysj">[S1](#s)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -771,7 +771,78 @@ opbygget af nedenstående elementer:
 
 
 ## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport<caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Use case R1</th>
+    <th class="tg-pu9k">Modtag advisering om indlæggelse og send indlæggelsesrapport</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj"> Systemaktør<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">At blive informeret om, at en borger er blevet indlagt på sygehuset</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a>  jf. <a href="https://wordhtml.com/#RPC" target="_blank" rel="noopener noreferrer">R.PC</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Systemaktør har lagt en formateret advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Systemaktør: Evaluerer positivt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Systemaktør: Indlæser advis[STIN] og notificerer brugeraktør om modtaget advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.       Brugeraktør: Tilgår advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">5.       Systemaktør: Viser advis[STIN] for brugeraktør.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Advis[STIN] er indlæst og vist, og brugeraktør er notificeret om modtagelsen.<br>Systemaktør har lagt en indlæggelsesrapport (XDIS16) i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Alternative handlinger</td>
+    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[STIN]. Se alternativ use case <a href="https://wordhtml.com/#R1A1" target="_blank" rel="noopener noreferrer">R1.A1</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Korrigerende handlinger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Det er op til modtagersystemet at opsætte regler for eventuel automatisk pausering af ydelser ved modtagelse af advis[STIN]</td>
+  </tr>
+</tbody>
+</table>
 
 
 

@@ -52,16 +52,19 @@ A &#39;Hospital Notification&#39; must include:
 
 >Note:Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.  
 
+
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
-.tg .tg-d256{background-color:#9dbad7;color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-vfn1{background-color:#9dbad7;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
+.tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
+
 <table class="tg">
 <thead>
   <tr>

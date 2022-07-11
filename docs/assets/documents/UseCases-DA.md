@@ -2,6 +2,43 @@
 
 # Use cases for advis om sygehusophold
 
+**Tabel of content**
+
+[1 Indledning 3](#indledning)
+[1.1 Baggrund og formål 3](#baggrund-og-formål)
+[1.2 Juridisk grundlag 3](#juridisk-grundlag)
+[1.3 Målgruppe 3](#målgruppe)
+[1.4 Referencer 3](#referencer)
+[1.5 Termer 4](#termer)
+[1.6 Afgrænsning 5](#afgrænsning)
+[1.7 Læsevejledning 6](#_Toc104888739)
+[2 Oversigt over use cases 9](#oversigt-over-use-cases)
+[2.1 Oversigt over primære og alternative use cases 9](#oversigt-over-primære-og-alternative-use-cases)
+[2.2 Korrigerende use cases 9](#korrigerende-use-cases)
+[2.3 Teknisk validering af lovhjemmel til modtagelse 9](#teknisk-validering-af-lovhjemmel-til-modtagelse)
+[3 Use cases 10](#use-cases)
+[3.1 S1: Indlæg patient og send advis\[STIN\] 10](#s1-indlæg-patient-og-send-advisstin)
+[3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport 11](#s1.a1-indlæg-patient-og-send-advisstin-uden-anmodning-om-indlæggelsesrapport)
+[3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] 12](#s1.a2-indlæg-patient-uden-afsendelse-af-advisstin)
+[3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport 13](#r1-modtag-advisering-om-indlæggelse-og-send-indlæggelsesrapport)
+[3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport 14](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
+[4 Korrigerende use cases 15](#korrigerende-use-cases-1)
+[4.1 S.CANC: Annullér et allerede udsendt advis 15](#s.canc-annullér-et-allerede-udsendt-advis)
+[4.2 R.CANC: Modtag advisering om annulleret advis 16](#r.canc-modtag-advisering-om-annulleret-advis)
+[4.3 S.CORR: Ret sygehusophold og send rettelsesadvis 17](#s.corr-ret-sygehusophold-og-send-rettelsesadvis)
+[4.4 R.CORR: Modtag advisering om rettet advis 18](#r.corr-modtag-advisering-om-rettet-advis)
+[5 Teknisk validering af lovhjemmel til modtagelse 19](#teknisk-validering-af-lovhjemmel-til-modtagelse-1)
+[5.1 R.PC: Modtag og indlæs advis (teknisk) 20](#r.pc-modtag-og-indlæs-advis-teknisk)
+[5.1.1 R.PC.A1 Modtag og kassér advis (teknisk) 21](#r.pc.a1-modtag-og-kassér-advis-teknisk)
+[6 Regler for systemerne, som use casene beror på 22](#regler-for-systemerne-som-use-casene-beror-på)
+[6.1 Regler for afsendersystemet, som use casene beror på 22](#regler-for-afsendersystemet-som-use-casene-beror-på)
+[6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser 22](#regler-vedr.-afsendelse-af-forskellige-typer-af-sygehusadviser)
+[6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification 23](#øvrige-regler-vedr.-forsendelse-af-hospitalnotification)
+[6.2 Regler for modtagersystemet, som use casene beror på 23](#regler-for-modtagersystemet-som-use-casene-beror-på)
+[6.2.1 Regler vedr. modtagelse af HospitalNotification 23](#regler-vedr.-modtagelse-af-hospitalnotification)
+
+
+
 ## Introduktion
 
 Dette dokument indeholder en række use case-beskrivelser og udgør en del af det samlede dokumentationsmateriale for MedComs FHIR-standard ”Advis om sygehusophold”.

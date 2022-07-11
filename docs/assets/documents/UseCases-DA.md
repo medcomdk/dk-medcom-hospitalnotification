@@ -588,7 +588,7 @@ opbygget af nedenstående elementer:
 </table>
 # Use cases
 
-## S1: Indlæg patient og send advis \[STIN\]
+## S1: Indlæg patient og send advis
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -682,7 +682,7 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj">[S1](#s)</td>
+    <td class="tg-tysj">[S1](#s1-indlæg-patient-og-send-advis)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>

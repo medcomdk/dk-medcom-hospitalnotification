@@ -715,7 +715,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-## S1.A2: Indlæg patient uden afsendelse af advis \[STIN\]
+### S1.A2: Indlæg patient uden afsendelse af advis \[STIN\]
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
 
 <style type="text/css">
@@ -845,7 +845,64 @@ opbygget af nedenstående elementer:
 </table>
 
 
+### R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport
 
+**Hændelse:** Patienten er blevet indlagt på andet sygehus i samme
+region (overflytning)
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport
+<thead>
+  <tr>
+    <th class="tg-pu9k">Alternativ use case R1.A1</th>
+    <th class="tg-pu9k">Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
+    <td class="tg-tysj"><a href="https://wordhtml.com/#R1" target="_blank" rel="noopener noreferrer">R1</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Systemaktør: Evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Indlæser advis[STIN] og notificerer brugeraktør om modtaget advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Brugeraktør: Tilgår advis[STIN]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.       Systemaktør: Viser advis[STIN] for brugeraktør.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Korrigerende handlinger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Det er op til modtagersystemet at opsætte regler for eventuel automatisk pausering af ydelser ved modtagelse af advis[STIN].</td>
+  </tr>
+</tbody>
+</table>
 
 
 ### Metode til use case-beskrivelser

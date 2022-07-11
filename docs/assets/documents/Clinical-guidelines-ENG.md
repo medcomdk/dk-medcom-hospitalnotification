@@ -148,6 +148,7 @@ A &#39;Hospital Notification&#39; must include:
     <td class="tg-tysj">Corrects content in previously sent notifications, for example hospital department or time.</td>
   </tr>
 </tbody>
+ [Tabel 1 danish codes names described in the overview of Hospital Notification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)]
 </table>
 *represents [danish codes names described in the overview of Hospital Notification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 

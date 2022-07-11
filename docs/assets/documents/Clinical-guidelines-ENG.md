@@ -1,9 +1,6 @@
-# Clinical Guidelines
+# Clinical Guidelines 
 
-## HospitalNotification
-
-# Table of content
-
+**Table of Content**
 * [Introduction](#-Introduction)
 * [Purpose](#-Purpose)
 * [Background](# Background)

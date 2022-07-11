@@ -715,7 +715,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-## S1.A2 Indlægpatient uden afsendelse af advis \[STIN\]
+## S1.A2: Indlæg patient uden afsendelse af advis \[STIN\]
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
 
 <style type="text/css">

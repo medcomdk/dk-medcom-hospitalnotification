@@ -1,4 +1,4 @@
-<a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return to frontpage</a>
+<a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return</a>
 
 # MedCom HospitalNotification
 This page presents MedComs HospitalNotification standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &

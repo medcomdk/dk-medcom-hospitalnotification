@@ -1,4 +1,4 @@
-[Return](../../index.md).
+[Return](../../index.md)
 # Clinical Guidelines 
 
 **Table of Content**

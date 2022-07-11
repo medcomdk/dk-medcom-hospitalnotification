@@ -58,7 +58,8 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 .tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption> Tabel 1: Status for sygehusophold</caption>
+<caption style="color:#2c415c;
+  font-weight:bold"> Tabel 1: Status for sygehusophold</caption>
 <thead>
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Hændelse</span></th>

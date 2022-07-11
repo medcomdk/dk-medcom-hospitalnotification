@@ -85,7 +85,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
 
 ### Types of Notifications and Codes in HospitalNotification
 
-In the use case descriptions, the following codes are used for different types of hospital notifications. [There is prepared a separate code overview, which shows the connection between notification codes and FHIR terminology, see section 'HospitalNotification Codes in FHIR'](./docs/index.md). 
+In the use case descriptions, the following codes are used for different types of hospital notifications. There is prepared a separate code overview, which shows the connection between notification codes and FHIR terminology, [see section 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

@@ -1,3 +1,4 @@
+[Tilbage](../../index.md)
 # Use cases for advis om sygehusophold
 
 ## Introduktion
@@ -29,60 +30,61 @@ Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c;
+  font-weight:bold"> Tabel 1: Elementer i use cases</caption>
 <thead>
   <tr>
-    <th class="tg-1wig">Element</th>
-    <th class="tg-1wig">Forklaring</th>
+    <th class="tg-pu9k">Element</th>
+    <th class="tg-pu9k">Forklaring</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">ID</td>
-    <td class="tg-0lax">Unikt ID</td>
+    <td class="tg-tysj">ID</td>
+    <td class="tg-tysj">Unikt ID</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Navn</td>
-    <td class="tg-0lax">Aktivitet i bydemåde</td>
+    <td class="tg-tysj">Navn</td>
+    <td class="tg-tysj">Aktivitet i bydemåde</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Igangsættende aktør</td>
-    <td class="tg-0lax">Navn på den igangsættende aktør (kan være en brugeraktør (fxsygeplejerske eller lægesekretær) eller systemaktør (fx et modtaget advis).&nbsp;</td>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj">Navn på den igangsættende aktør (kan være en brugeraktør (fxsygeplejerske eller lægesekretær) eller systemaktør (fx et modtaget advis). </td>
   </tr>
   <tr>
-    <td class="tg-0lax">Formål</td>
-    <td class="tg-0lax">Kort beskrivelse af det forretningsmæssige formål eventuelafgrænsning til andre use cases.</td>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">Kort beskrivelse af det forretningsmæssige formål eventuelafgrænsning til andre use cases.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Startbetingelser/forudsætninger</td>
-    <td class="tg-0lax">De forudsætninger, der skal være opfyldt for at normalforløbetkan gennemføres frem til slutresultatet.</td>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">De forudsætninger, der skal være opfyldt for at normalforløbetkan gennemføres frem til slutresultatet.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Igangsættende hændelse</td>
-    <td class="tg-0lax">Den begivenhed eller hændelse, som udløser aktørens handlingeri normalforløbet.</td>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Den begivenhed eller hændelse, som udløser aktørens handlingeri normalforløbet.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Handlinger</td>
-    <td class="tg-0lax">Forløbet af handlinger, der – uden afbrydelser – fører fra denigangsættende begivenhed til slutresultatet.</td>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">Forløbet af handlinger, der – uden afbrydelser – fører fra denigangsættende begivenhed til slutresultatet.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Slutresultat</td>
-    <td class="tg-0lax">Det ønskede forretningsmæssige mål</td>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Det ønskede forretningsmæssige mål</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Alternative handlinger</td>
-    <td class="tg-0lax">Alternative forløb ved afbrudt normalforløb, som ender med enfejlsituation eller med en genoptagelse.&nbsp;</td>
+    <td class="tg-tysj">Alternative handlinger</td>
+    <td class="tg-tysj">Alternative forløb ved afbrudt normalforløb, som ender med enfejlsituation eller med en genoptagelse. </td>
   </tr>
 </tbody>
 </table>
 
-
 ### Advistyper og koder i advis om sygehusophold
 
-I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. [Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, se afsnit 'HospitalNotification Codes in FHIR'](./docs/index.md). En oversigt over koderne ses desuden i tabellen herunder. 
+I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -90,88 +92,89 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-ahvx{background-color:#ffffff;border-color:#656565;color:#656565;text-align:left;vertical-align:top}
-.tg .tg-m0jm{background-color:#ffffff;border-color:#656565;color:#656565;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c; font-weight:bold">Tabel 2: Oversigt over koder i advis om sygehusophold </caption>
 <thead>
   <tr>
-    <th class="tg-m0jm">Kode</th>
-    <th class="tg-m0jm">Navn   på advis notifikation</th>
+    <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>
+    <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Navn på advis notifikation</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-ahvx">STAA</td>
-    <td class="tg-ahvx">Start sygehusophold- Akut Ambulant</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start sygehusophold- Akut Ambulant</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">STIN</td>
-    <td class="tg-ahvx">Start sygehusophold- Indlagt</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start sygehusophold- Indlagt</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">SLHJ</td>
-    <td class="tg-ahvx">Slut sygehusophold – afsluttet til   hjemmet </td>
+    <td class="tg-tysj"><span style="background-color:#FFF">SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Slut sygehusophold – afsluttet til hjemmet</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">STOR</td>
-    <td class="tg-ahvx">Start orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Start orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">SLOR</td>
-    <td class="tg-ahvx">Slut orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Slut orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">MORS</td>
-    <td class="tg-ahvx">Død</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Død</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STAA</td>
-    <td class="tg-ahvx">Annullering af akut ambulant ophold</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering af akut ambulant ophold</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STAA</td>
-    <td class="tg-ahvx">Rettelse af akut ambulant ophold</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STAA</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse af akut ambulant ophold</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STIN</td>
-    <td class="tg-ahvx">Annullering af indlagt</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering af indlagt</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STIN</td>
-    <td class="tg-ahvx">Rettelse af indlagt</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STIN</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse af indlagt</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_SLHJ</td>
-    <td class="tg-ahvx">Annullering Slut sygehusophold</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering Slut sygehusophold</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_SLHJ</td>
-    <td class="tg-ahvx">Rettelse Slut sygehusophold</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_SLHJ</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse Slut sygehusophold</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_STOR</td>
-    <td class="tg-ahvx">Annullering start orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering start orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_STOR</td>
-    <td class="tg-ahvx">Rettelse Start orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_STOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse Start orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_SLOR</td>
-    <td class="tg-ahvx">Annullering Slut orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering Slut orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_SLOR</td>
-    <td class="tg-ahvx">Rettelse Slut orlov</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_SLOR</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse Slut orlov</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">AN_MORS</td>
-    <td class="tg-ahvx">Annullering af Død</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">AN_MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Annullering af Død</span></td>
   </tr>
   <tr>
-    <td class="tg-ahvx">RE_MORS</td>
-    <td class="tg-ahvx">Rettelse af Død</td>
+    <td class="tg-tysj"><span style="background-color:#FFF">RE_MORS</span></td>
+    <td class="tg-tysj"><span style="background-color:#FFF">Rettelse af Død</span></td>
   </tr>
 </tbody>
 </table>

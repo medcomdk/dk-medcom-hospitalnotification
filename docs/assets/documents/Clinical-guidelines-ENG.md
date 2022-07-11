@@ -196,16 +196,3 @@ The FHIR profile for hospital notification can be found  on [the front page for 
 
 >Note This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification.
 
-# 10Corrections
-
-In this part, the corrections for the document will be documented continuously.
-
-| Version | Date | Responsible | Description |
-| --- | --- | --- | --- |
-| 0.6 | 03.10.2019 | Jeanette Jensen | 1. Outline of textual description of FHIR-notification standard |
-| 0.7 | 11.12.2019 | Jeanette Jensen | Added note about handling discharge to hospice. |
-| 0.8 | 31.03.2020 | Jeanette Jensen | Link in section 8 added. Date added and 0.8 version number. |
-| 0.9 | 24.06.2020 | KML | End of hospital stay is removed from table 1. Updated section about legal security act, added note about private hospitals. SOR ID is adjusted in example. |
-| 0.9.1. | 09.10.2020 | Jeanette Jensen | Added SLAN to End hospital stay |
-| 1.0 | 26.01.2021 | Jeanette Jensen | SLAN type of End hospital stay and business rules for use of SLAN is deleted. Clarification of pkt. 4 legal basis and addition of links. |
-| 1.0.1 | 02.11.2021 | Mie B. D. Kristensen | Minor lingual correctionsCorrection to section 4 Legal framework as the legal framework per. January 1, 2022 has been extended to include acute outpatient hospital stays as well as temporary and long term sheltered residence. |

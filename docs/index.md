@@ -43,7 +43,7 @@ The clinical guidelines is the foundation for the HospitalNotification standard.
 
 Below can the clinical guidelines in Danish and English be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: Clinical guidelines - Work in progress](assets/documents/Clinical-guidelines-ENG.md) 
+[English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
 
 
 ### Use Cases

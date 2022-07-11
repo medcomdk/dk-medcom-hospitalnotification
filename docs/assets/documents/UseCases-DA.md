@@ -317,6 +317,8 @@ uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
 
+![ Fillustration af forsendelsesflowet](../images/Forsendelsesflow.png)
+
 
 ### Metode til use case-beskrivelser
 

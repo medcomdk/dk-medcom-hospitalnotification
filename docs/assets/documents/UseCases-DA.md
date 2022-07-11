@@ -39,7 +39,7 @@
 
 
 
-## Introduktion
+# Introduktion
 
 Dette dokument indeholder en række use case-beskrivelser og udgør en del af det samlede dokumentationsmateriale for MedComs FHIR-standard ”Advis om sygehusophold”.
 
@@ -84,14 +84,7 @@ indeholder §§ 83-99, som omfatter personlig hjælp, omsorg og pleje samt
 plejetestamenter, og §§ 107 og 108 omfatter midlertidige og
 længerevarende botilbud
 
-
-
-Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering af sygehusadviser til flere modtagere samt det efterfølgende kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
-
-### Metode til use case-beskrivelser
-
-Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Hver use case består af nedenstående elementer. Der er defineret både [forretningsmæssige](#forretningsmæssige-use-cases) og [tekniske](#tekniske-use-cases) use cases.
-
+## Referencer 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -102,55 +95,107 @@ Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;
-  font-weight:bold"> Tabel 1: Elementer i use cases</caption>
+<caption style="color=#2c415c; font-weight:bold"> Tabel 1:Oversigt over relevante refenrencer til usecasene </caption>
 <thead>
   <tr>
-    <th class="tg-pu9k">Element</th>
-    <th class="tg-pu9k">Forklaring</th>
+    <th class="tg-pu9k">   <br>Materiale   </th>
+    <th class="tg-pu9k">   <br>Version   </th>
+    <th class="tg-pu9k">   <br>Link/reference   </th>
+    <th class="tg-pu9k">   <br>Beskrivelse   </th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-tysj">ID</td>
-    <td class="tg-tysj">Unikt ID</td>
+    <td class="tg-tysj">   <br>SKA-4.X.X Forretningsmæssige use cases   </td>
+    <td class="tg-tysj">   <br>1.0.0-rc.1   </td>
+    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK</span>   </td>
+    <td class="tg-tysj">   <br>Skabelon, som disse use cases er udarbejdet på baggrund af   </td>
   </tr>
   <tr>
-    <td class="tg-tysj">Navn</td>
-    <td class="tg-tysj">Aktivitet i bydemåde</td>
+    <td class="tg-tysj">   <br>Generelle tekniske   use cases   </td>
+    <td class="tg-tysj">   <br>1.0.0-rc.1   </td>
+    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK</span>   </td>
+    <td class="tg-tysj">   <br>Detaljerede use case-beskrivelser af de tekniske handlinger, der sker   før og efter brugeraktørens interaktion i systemet, herunder kommunikationen   med kommunikationsnetværket vedr. afsendelse og modtagelse af meddelelser og   kvitteringer.   </td>
   </tr>
   <tr>
-    <td class="tg-tysj">Igangsættende aktør</td>
-    <td class="tg-tysj">Navn på den igangsættende aktør (kan være en brugeraktør (fxsygeplejerske eller lægesekretær) eller systemaktør (fx et modtaget advis). </td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Formål</td>
-    <td class="tg-tysj">Kort beskrivelse af det forretningsmæssige formål eventuelafgrænsning til andre use cases.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
-    <td class="tg-tysj">De forudsætninger, der skal være opfyldt for at normalforløbetkan gennemføres frem til slutresultatet.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Igangsættende hændelse</td>
-    <td class="tg-tysj">Den begivenhed eller hændelse, som udløser aktørens handlingeri normalforløbet.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Handlinger</td>
-    <td class="tg-tysj">Forløbet af handlinger, der – uden afbrydelser – fører fra denigangsættende begivenhed til slutresultatet.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Det ønskede forretningsmæssige mål</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Alternative handlinger</td>
-    <td class="tg-tysj">Alternative forløb ved afbrudt normalforløb, som ender med enfejlsituation eller med en genoptagelse. </td>
+    <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
+    <td class="tg-tysj">   <br>1.0.0   </td>
+    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK</span>   </td>
+    <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>
 </table>
 
-### Advistyper og koder i advis om sygehusophold
+
+## Termer
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ztr9{border-color:#000000;color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold"> Tabel 2: Oversigt over termer brugt i usecasne m </caption>
+<thead>
+  <tr>
+    <th class="tg-ztr9">Termer</th>
+    <th class="tg-ztr9">Beskrivelse</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Fagsystem</td>
+    <td class="tg-0lax">Et fagsystem består -- ift.<br>meddelelsesforsendelse og<br>-modtagelse -- af en<br>forretningsmæssig og en teknisk<br>del. Fagsystemets to dele kan<br>være alt fra et tæt sammenbygget<br>system til to forskellige<br>moduler i samme system, eller to<br>systemer, der er konfigureret<br>til at kommunikere sammen. Dette<br>er uden betydning for use<br>casenes opbygning.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Afsendersystem</td>
+    <td class="tg-0lax">Fagsystem hos afsender af en<br>meddelelse</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Modtagersystem</td>
+    <td class="tg-0lax">Fagsystem hos modtager af en<br>meddelelse</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets forretningsmæssige<br>del</td>
+    <td class="tg-0lax">I den forretningsmæssige del<br>håndteres alt det faglige, som<br>er fagsystemets primære<br>anvendelsesområde. Fagsystemets<br>forretningsmæssige del består<br>af:<br><br>-   Fagsystemets<br>     forretningsmæssige indbakke<br><br>-   Fagsystemets<br>     forretningsmæssige<br>     meddelelsesmodul<br><br>-   Fagsystemets<br>     forretningsmæssige udbakke</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets tekniske del</td>
+    <td class="tg-0lax">I den tekniske del håndteres<br>kommunikationen med<br>kommunikationsnetværket<br>vedrørende afsendelse og<br>modtagelse af meddelelser og<br>kvitteringer. Her evalueres også<br>hvilken kvitteringstype, der<br>skal retur til afsender af en<br>modtaget meddelelse.<br><br>Fagsystemets tekniske del består<br>af:<br><br>-   Fagsystemets tekniske<br>     indbakke<br><br>-   Fagsystemets tekniske<br>     meddelelsesmodul<br><br>-   Fagsystemets tekniske<br>     udbakke</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets forretningsmæssige<br>meddelelsesmodul</td>
+    <td class="tg-0lax">I fagsystemets<br>forretningsmæssige<br>meddelelsesmodul håndteres alt<br>det faglige, som er fagsystemets<br>primære anvendelsesområde. Det<br>er bl.a. her slutbrugeren<br>arbejder med brugergrænsefladen<br>i fagsystemet.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets<br>forretningsmæssige indbakke</td>
+    <td class="tg-0lax">Fagsystemets forretningsmæssige<br>indbakke er en abstrakt term for<br>den indgående funktionalitet<br>mellem fagsystemets tekniske del<br>og dets forretningsmæssige del i<br>indgående retning.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets<br>forretningsmæssige udbakke</td>
+    <td class="tg-0lax">Fagsystemets forretningsmæssige<br>udbakke er en abstrakt term for<br>den udgående funktionalitet<br>mellem fagsystemets<br>forretningsmæssige del og dets<br>tekniske del i udgående retning.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Fagsystemets tekniske<br>indbakke</td>
+    <td class="tg-0lax">Fagsystemets tekniske indbakke<br>er en abstrakt term for den<br>indgående funktionalitet mellem<br>kommunikationsnetværket og<br>fagsystemets tekniske del i<br>indgående retning. Fagsystemets<br>tekniske indbakke er reelt<br>kommunikationsnetværkets<br>aflevering af en meddelelse til<br>fagsystemet.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Kommunikationsnetværket</td>
+    <td class="tg-0lax">Kommunikationsnetværket er det<br>netværk, som meddelelser fysisk<br>afsendes på. Netværket er pt det<br>samme som VANS-netværket.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Forsendelsesflow</td>
+    <td class="tg-0lax">Et forsendelsesflow består af:<br><br>-   Et meddelsesflow fra<br>     afsenders forretningsmæssige<br>     modul i fagsystemet til<br>     modtagers forretningsmæssige<br>     modul i fagsystemet.<br><br>-   Et kvitteringsflow fra<br>     modtagers forretningsmæssige<br>     modul i fagsystemet til<br>     afsenders forretningsmæssige<br>     modul i fagsystemet<br><br>Ikke alle meddelelser og<br>kvitteringer ses nødvendigvis af<br>fagsystemets forretningsmæssige<br>slutbrugere, men deres indhold<br>er tilgængeligt i fagsystemets<br>forretningsmæssige<br>meddelelsesmodul.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">ACK AA</td>
+    <td class="tg-0lax">HL7 kvitteringsterm for en<br>positiv kvittering. ACK AA er<br>HL7s pendant til MedComs<br>positive kvittering CTRL<br>((X)CTL03).</td>
+  </tr>
+</tbody>
+</table>
 
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
@@ -164,7 +209,7 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
 .tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold">Tabel 2: Oversigt over koder i advis om sygehusophold </caption>
+<caption style="color:#2c415c; font-weight:bold">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
 <thead>
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>
@@ -246,6 +291,98 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
   </tr>
 </tbody>
 </table>
+
+
+## Afgrænsning 
+
+Use casene i dette notat beskriver, med en enkelt undtagelse (se
+nedenfor), *brugeraktørens* interaktion med systemet, og omfatter
+således den forretningsmæssige del af forsendelsesflowet jf. den grønne
+markering i Figur 1. De tekniske handlinger, der ligger før og efter
+brugeraktørens interaktion med systemet (fx systemets funktionaliteter i
+kommunikationsnetværket samt afsendelse og modtagelse af kvitteringer),
+er generiske på tværs af forskellige MedCom-standarder og optræder som
+selvstændigt beskrevne use cases i dokumentet "[Generelle tekniske use
+cases](#_Juridisk_grundlag)" (markeret med rød i figur XX).[Generelle
+tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i Figur 1).
+
+Dvs, at afsender-use cases afsluttes med, at brugeraktør sender en
+meddelelse, som (af systemaktør) lægges i [*Fagsystemet
+forretningsmæssige udbakke*](#_Termer), mens modtager-use cases
+igangsættes ved, at systemaktør har registreret en (teknisk positivt
+valideret) meddelelse i [*Fagsystemets forretningsmæssige
+indbakke*](#_Termer), som præsenteres for brugeraktøren i
+brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
+uddybende forklaring i dokumentet "[Generelle tekniske use
+cases](#_Juridisk_grundlag)".
+
+
+
+### Metode til use case-beskrivelser
+
+Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Hver use case består af nedenstående elementer. Der er defineret både [forretningsmæssige](#forretningsmæssige-use-cases) og [tekniske](#tekniske-use-cases) use cases.
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c;
+  font-weight:bold"> Tabel 4: Elementer i use cases</caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Element</th>
+    <th class="tg-pu9k">Forklaring</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">ID</td>
+    <td class="tg-tysj">Unikt ID</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Navn</td>
+    <td class="tg-tysj">Aktivitet i bydemåde</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj">Navn på den igangsættende aktør (kan være en brugeraktør (fxsygeplejerske eller lægesekretær) eller systemaktør (fx et modtaget advis). </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">Kort beskrivelse af det forretningsmæssige formål eventuelafgrænsning til andre use cases.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">De forudsætninger, der skal være opfyldt for at normalforløbetkan gennemføres frem til slutresultatet.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Den begivenhed eller hændelse, som udløser aktørens handlingeri normalforløbet.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">Forløbet af handlinger, der – uden afbrydelser – fører fra denigangsættende begivenhed til slutresultatet.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Det ønskede forretningsmæssige mål</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Alternative handlinger</td>
+    <td class="tg-tysj">Alternative forløb ved afbrudt normalforløb, som ender med enfejlsituation eller med en genoptagelse. </td>
+  </tr>
+</tbody>
+</table>
+
+### Advistyper og koder i advis om sygehusophold
+
+
 
 ### Use cases 
 

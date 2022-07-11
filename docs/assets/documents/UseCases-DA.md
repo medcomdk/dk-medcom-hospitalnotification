@@ -599,7 +599,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold"> Use case over indlæggelse af patient og udsændelse af advis</caption>
+<caption style="color:#2c415c;font-weight:bold"> Use case: Indlæggelse af patient og udsændelse af advis</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Use case S1</th>
@@ -659,9 +659,8 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A2: Indlæg patient uden afsendelse af advis\[STIN\]
-**Hændelse:** Patienten indlægges på anden afdeling på samme sygehus
-(overflytning)
+### S1.A1: Indlæg patient og send advis \[STIN\] udenom anmodning om indlæggelsesrapport 
+**Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning)
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -673,7 +672,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-wight:bold">Alternativ use case over indlæggelse af patient uden anmodning om indlæggelsesrapport </caption>
+<caption style="color:#2c415c;font-wight:bold">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>
@@ -716,7 +715,60 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-###   {#section-2 .list-paragraph}
+## S1.A2 Indlægpatient uden afsendelse af advis \[STIN\]
+**Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold">Alternativ use case 2: Patienten indlægges uden afsændelse af advis [STIN]</caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Alternativ use case S1.A2</th>
+    <th class="tg-pu9k">Indlæg patient uden afsendelse af advis[STIN]</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
+    <td class="tg-tysj"><a href="https://wordhtml.com/#S1" target="_blank" rel="noopener noreferrer">S1</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Brugeraktør: Registrerer patienten som fremmødt og indlagt</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har ikke lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Korrigerende handlinger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+</tbody>
+</table>
+
+
+
 
 ## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport
 

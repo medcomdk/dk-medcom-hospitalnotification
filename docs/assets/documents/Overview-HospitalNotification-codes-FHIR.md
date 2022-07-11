@@ -34,6 +34,8 @@ notification has been sent by a mistake. For example, if Encounter.status was â€
 .tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c;
+  font-weight:bold"> Tabel 1 Overview of </caption>
 <thead>
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Use case code DK</span></th>

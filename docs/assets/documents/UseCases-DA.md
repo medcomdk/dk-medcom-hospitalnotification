@@ -599,7 +599,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold">Use case over indlæggelse af patient og udsændelse af advis</caption>
+<caption style="color:#2c415c;font-weight:bold"> Use case over indlæggelse af patient og udsændelse af advis</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Use case S1</th>
@@ -645,7 +645,8 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
-    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [S1.A2](#S1A2)<br>3a Systemaktør evaluerer negativt, at der skal anmodes om indlæggelsesrapport (XDIS16), da patienten er overflyttet fra andet sygehus i samme region jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [\_S1.A1:\_Indlæg_patient_1](#S1.A1:_indlæg_patient_1), [S1.A1](#S1A1)</td>
+    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [S1.A2](#s1-indlæg-patient-og-send-advisstin)<br>
+    3a Systemaktør evaluerer negativt, at der skal anmodes om indlæggelsesrapport (XDIS16), da patienten er overflyttet fra andet sygehus i samme region jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [S1.A2:Indlæg patient uden afsendelse af advis](#s1a2-indlæg-patient-uden-afsendelse-af-advisstin), </td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>

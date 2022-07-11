@@ -50,11 +50,40 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
 
 > Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument
 
-Use case-beskrivelserne bør således læses i tæt sammenhæng til det øvrige dokumentationsmateriale.
+Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
+bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).
 
+## Baggrund og formål
 Use casene forbinder krav til indhold med forretningsregler for anvendelse og skal sikre en ensartet implementering og anvendelse af ”Advis om sygehusophold”. Use casene er kvalificeret i samarbejde med EPJ- og kommuneleverandører.
 
+Use casene er udarbejdet og kvalificeret i samarbejde med repræsentanter
+fra regioner og kommuner gennem MedComs hjemmepleje-sygehusgruppe, samt
+relevante systemleverandører
+
+## Målgruppe
 Use case beskrivelserne er målrettet it-systemleverandørerne og de implementeringsansvarlige i regioner og kommuner.
+
+## Juridisk grundlag
+
+Adviser om sygehusophold udveksles med baggrund i Sundhedsloven og
+Retssikkerhedslovens § 12 c
+
+*"Til brug for tilrettelæggelsen af omsorgsopgaver mv. efter § 79 a og
+kapitel 16 og §§ 107 og 108 i lov om social service og Sundhedsloven
+samt til brug for opfølgning af sager efter §§ 8-10 i Lov om
+sygedagpenge kan kommunalbestyrelser og sygehuse udveksle oplysninger om
+indlæggelse på og udskrivning fra sygehuse af borgere i kommunen og om
+borgerens akutte sygehusophold, hvor borgeren opholder sig på sygehuset
+til vurdering og behandling uden at være indlagt. Udvekslingen kan ske
+automatisk og uden borgerens samtykke" (Retssikkerhedsloven § 12 c LBK
+nr. 265 af 25/02/2022).*
+
+Servicelovens § 79 a omfatter forebyggende hjemmebesøg, kapitel 16
+indeholder §§ 83-99, som omfatter personlig hjælp, omsorg og pleje samt
+plejetestamenter, og §§ 107 og 108 omfatter midlertidige og
+længerevarende botilbud
+
+
 
 Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering af sygehusadviser til flere modtagere samt det efterfølgende kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
 

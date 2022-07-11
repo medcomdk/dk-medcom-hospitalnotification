@@ -485,7 +485,6 @@ opbygget af nedenstående elementer:
 </table>
 
 # Oversigt over use cases
-## Oversigt over primære og alternative use cases
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:80%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -496,6 +495,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption style="color:#2c415c;font-weight:bold"> Tabel 6: primære og alternative use cases
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -522,6 +522,70 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:80%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold">Tabel 7: Korrigerende use cases</caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Hændelse<br></th>
+    <th class="tg-pu9k">Afsender (S)-use case<br></th>
+    <th class="tg-pu9k">Modtager (R)-use case<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj"> Der er behov for at annullere et allerede udsendt advis   </td>
+    <td class="tg-tysj">[S.CANC](#SCANC)<br></td>
+    <td class="tg-tysj">[R.CANC](#RCANC)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> Der er rettelser til et allerede udsendt advis   </td>
+    <td class="tg-tysj"> [S.CORR](#SCORR)</td>
+    <td class="tg-tysj">[R.CORR](#RCORR)</td>
+  </tr>
+</tbody>
+</table>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:80%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c;font-weight:bold">Teknisk validering af lovhjemmel til modtagelse </caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Hændelse<br></th>
+    <th class="tg-pu9k">Afsender (S)-use case</th>
+    <th class="tg-pu9k">Modtager (R)-use case<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Teknisk validering af lovhjemmel til modtagelse (positiv)<br></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">[R.PC](#RPC)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-style:italic">Teknisk validering af lovhjemmel til modtagelse (negativ)</span><br></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">[*<span style="font-style:italic">R.PC.A1*</span>](#RPCA1)</td>
+  </tr>
+</tbody>
+</table>
 # Use cases
 
 ## S1: Indlæg patient og send advis\[STIN\]

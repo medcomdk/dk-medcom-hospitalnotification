@@ -95,7 +95,7 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color=#2c415c; font-weight:bold"> Tabel 1:Oversigt over relevante refenrencer til usecasene </caption>
+<caption style="color=#2c415c; font-weight:bold"> Tabel 1:Oversigt over relevante refenrencer til use casene </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">   <br>Materiale   </th>
@@ -129,7 +129,7 @@ længerevarende botilbud
 
 ## Termer
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:80;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -138,7 +138,7 @@ længerevarende botilbud
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Tabel 2: Oversigt over termer brugt i usecasne m </caption>
+<caption style="color:#2c415c; font-weight:bold"> Tabel 2: Oversigt over termer brugt i use casene </caption>
 <thead>
   <tr>
     <th class="tg-ztr9">Termer</th>
@@ -200,7 +200,7 @@ længerevarende botilbud
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:80;}
+.tg  {border-collapse:collapse;border-spacing:80%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -336,9 +336,39 @@ Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering
 af sygehusadviser til flere modtagere samt det efterfølgende
 kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
 
-### Metode til use case-beskrivelser
+## Læsevejledning
+se casene i dokumentet beskriver et detaljeret forløb over
+*brugeraktørens* interaktion med systemet ved forskellige hændelser.
+Baggrunden for use casene er en række (forretnings)regler for
+anvendelse, som fremgår af afsnit 6 Regler for systemerne, som use
+casene beror på.
 
-Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Hver use case består af nedenstående elementer. Der er defineret både [forretningsmæssige](#forretningsmæssige-use-cases) og [tekniske](#tekniske-use-cases) use cases.
+Der skelnes mellem tre forskellige typer af use cases:
+
+-   **Primære** use cases: For hver hændelse vil der være beskrevet én
+    primær use case, som beskriver normalforløbet over aktørens
+    interaktion med systemet i brugergrænsefladen.
+
+-   **Alternative** use cases: Såfremt der kan være afvigelser til
+    normalforløbet, vil der i den primære use case være henvist til
+    alternative (selvstændigt beskrevne) use cases.
+
+-   **Korrigerende** use cases: Ligeledes vil der ved korrigerende
+    handlinger til forløbet (typisk rettelser og annulleringer) være
+    henvist til korrigerende (selvstændigt beskrevne) use cases fra den
+    primære use case. De korrigerende use cases vil typisk være
+    generiske på tværs af forskellige use cases.
+
+Alle use cases er opdelt i:
+
+-   **Afsender (S)**-use case**:** Beskriver use casen fra afsenderside
+    (S = Sender)
+
+-   **Modtager (R)**-use case**:** Beskriver use casen fra modtagerside
+    (R = Receiver)
+
+Primære use cases er bygget op af nedenstående elementer[^1].
+
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -351,7 +381,7 @@ Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8
 </style>
 <table class="tg">
 <caption style="color:#2c415c;
-  font-weight:bold"> Tabel 4: Elementer i use cases</caption>
+  font-weight:bold"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Element</th>
@@ -397,6 +427,22 @@ Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8
   </tr>
 </tbody>
 </table>
+
+
+Alternative use cases vil altid referere til en use case med et
+normalforløb, hvorfor de forudgående elementer; igangsættende aktør,
+formål, startbetingelser/forudsætninger og igangsættende hændelse, ikke
+vil fremgå af de alternative use cases. Alternative use cases er derfor
+opbygget af nedenstående elementer:
+
+
+
+
+
+
+### Metode til use case-beskrivelser
+
+Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Hver use case består af nedenstående elementer. Der er defineret både [forretningsmæssige](#forretningsmæssige-use-cases) og [tekniske](#tekniske-use-cases) use cases.
 
 ### Advistyper og koder i advis om sygehusophold
 

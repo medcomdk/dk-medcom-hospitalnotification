@@ -191,6 +191,6 @@ Til brug for den tekniske implementering af sygehusadvis findes detaljerede use 
 FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden for advis om sygehusophold](../../index.md).
 
 ## Eksempel på ‘Advis om sygehusophold’
-![Eksempel på, hvordan et advid om sygehus ophold kan se ud](../images/Example_HospitalNotification_DA)
+![Eksempel på, hvordan et advid om sygehus ophold kan se ud](../images/Example_HospitalNotification_DA.png)
 
 > Note: Dette er et eksempel på, hvordan ’Advis om sygehusophold’ kunne se ud. I adviset vil ’Status sygehusophold’ angive hvilken hændelse, der har udløst adviseringen jf. 

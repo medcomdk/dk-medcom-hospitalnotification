@@ -1,16 +1,16 @@
 # Clinical Guidelines 
 
 **Table of Content**
-* [Introduction](#-Introduction)
-* [Purpose](#-Purpose)
-* [Background](# Background)
-* [Legal framework](#-Legal-framework)
-* [&#39;Hospital Notification&#39;: requirements for content and benefits](#-&#39;Hospital-Notification&#39;:-requirements-for-content-and-benefits)
+* [Introduction](#introduction)
+* [Purpose](#purpose)
+* [Background](#background)
+* [Legal framework](#legal-framework)
+* [&#39;Hospital Notification&#39;: requirements for content and benefits](#-&#39;hospital-notification&#39;-:-requirements-for-content-and-benefits)
 * [Business rules for use of &#39;Hospital Notification&#39;](#_Business-rules-for-use-of-&#39;Hospital- Notification&#39;)
-* [Use cases](#-Use-cases)
-* [Technical specifications for &#39;Hospital Notification&#39;](#-Technical-specifications-for-&#39;Hospital-Notification&#39;)
-* [Example of a Hospital Notification](#-Example-of-a-Hospital-Notification)
-* [Corrections](#-Corrections)
+* [Use cases](#Use-cases)
+* [Technical specifications for &#39;Hospital Notification&#39;](#Technical-specifications-for-&#39;Hospital-Notification&#39;)
+* [Example of a Hospital Notification](#Example-of-a-Hospital-Notification)
+* [Corrections](#Corrections)
 <p>&nbsp;</P>
 
 # Introduction

@@ -436,7 +436,7 @@ vil fremgå af de alternative use cases. Alternative use cases er derfor
 opbygget af nedenstående elementer:
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:80%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -484,7 +484,44 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-
+# Oversigt over use cases
+## Oversigt over primære og alternative use cases
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:80%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-pu9k">Hændelse<br></th>
+    <th class="tg-pu9k">Afsender (S)-use case<br></th>
+    <th class="tg-pu9k">Modtager (R)-use case<br></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">   <br>Patientens indlægges   </td>
+    <td class="tg-tysj">   <br>[S1](#S1)    </td>
+    <td class="tg-tysj">   <br>[R1](#R1)  </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Patienten indlægges   på andet sygehus i samme region (overflytning)   </td>
+    <td class="tg-tysj">   <br>[*S1.A1*](#S1A1)   </td>
+    <td class="tg-tysj">   <br>[*R1.A1*](#R1A1)  </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>Patienten indlægges   på en anden afdeling på samme sygehus (overflytning)   </td>
+    <td class="tg-tysj">   <br> [*S1.A2*](#S1A2) </td>
+  </tr>
+</tbody>
+</table>
+## Korrigerende use cases 
+## Teknisk validering af lovhjemmel til modtalgese 
 
 
 ### Metode til use case-beskrivelser

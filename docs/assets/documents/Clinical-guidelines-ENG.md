@@ -67,7 +67,8 @@ A &#39;Hospital Notification&#39; must include:
 .tg .tg-vfn1{background-color:#9dbad7;color:#333333;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption> Table 1: Status of hospital stay</caption>
+<caption style  color: #2c415c;
+  font-weight:bold> Table 1: Status of hospital stay</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Event</th>

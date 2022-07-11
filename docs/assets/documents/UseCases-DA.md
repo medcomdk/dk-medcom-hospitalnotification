@@ -495,7 +495,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold"> Tabel 6: primære og alternative use cases
+<caption style="color:#2c415c;font-weight:bold"> Tabel 6: primære og alternative use cases </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -565,7 +565,7 @@ opbygget af nedenstående elementer:
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold">Teknisk validering af lovhjemmel til modtagelse </caption>
+<caption style="color:#2c415c;font-weight:bold">Tabel 8: Teknisk validering af lovhjemmel til modtagelse </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -589,231 +589,79 @@ opbygget af nedenstående elementer:
 # Use cases
 
 ## S1: Indlæg patient og send advis\[STIN\]
-
-+----------------------------------+----------------------------------+
-| **Use case** []{#S1              | **Indlæg patient og send         |
-| .anchor}**S1**                   | advis\[STIN\]**                  |
-+==================================+==================================+
-| Igangsættende aktør              | Brugeraktør:                     |
-|                                  | Sygeplejersker/sekretær på       |
-|                                  | sygehuset                        |
-+----------------------------------+----------------------------------+
-| Formål                           | At indlægge patient og at sende  |
-|                                  | advis\[STIN\], når betingelserne |
-|                                  | herfor er til stede/opfyldt jf.  |
-|                                  | Regler for afsendersystemet, som |
-|                                  | use casene beror på              |
-+----------------------------------+----------------------------------+
-| Startbetingelser/forudsætninger  | Patienten er henvist til         |
-|                                  | indlæggelse (akut eller          |
-|                                  | planlagt)                        |
-+----------------------------------+----------------------------------+
-| Igangsættende hændelse           | Patienten er fremmødt på         |
-|                                  | sygehuset mhp. indlæggelse       |
-+----------------------------------+----------------------------------+
-| Handlinger                       | 1.  Brugeraktør: Registrerer     |
-|                                  |     patienten som fremmødt og    |
-|                                  |     indlagt                      |
-+----------------------------------+----------------------------------+
-|                                  | 2.  Systemaktør: Evaluerer       |
-|                                  |     positivt, at der skal sendes |
-|                                  |     advis\[STIN\], da patienten  |
-|                                  |     ikke er overflyttet fra      |
-|                                  |     anden afdeling på samme      |
-|                                  |     sygehus jf. Regler for       |
-|                                  |     afsendersystemet, som use    |
-|                                  |     casene beror på              |
-+----------------------------------+----------------------------------+
-|                                  | 3.  Systemaktør: Evaluerer       |
-|                                  |     positivt, at der skal        |
-|                                  |     anmodes om                   |
-|                                  |     indlæggelsesrapport          |
-|                                  |     (XDIS16), da patienten ikke  |
-|                                  |     er overflyttet fra andet     |
-|                                  |     sygehus i samme region.      |
-+----------------------------------+----------------------------------+
-|                                  | 4.  Systemaktør: Lægger pba.     |
-|                                  |     evalueringen en              |
-|                                  |     advis\[STIN\] med anmodning  |
-|                                  |     om indlæggelsesrapport       |
-|                                  |     (XDIS16) i [Fagsystemets     |
-|                                  |     forretningsmæssige           |
-|                                  |     udbakke](#Fagsyste           |
-|                                  | mets_forretningsmæssige_udbakke) |
-+----------------------------------+----------------------------------+
-| Slutresultat                     | Borgeren er indlagt              |
-|                                  |                                  |
-|                                  | Systemaktør har lagt en          |
-|                                  | advis\[STIN\] i [Fagsystemets    |
-|                                  | forretningsmæssige               |
-|                                  | udbakke](#Fagsyste               |
-|                                  | mets_forretningsmæssige_udbakke) |
-|                                  | med anmodning om                 |
-|                                  | indlæggelsesrapport (XDIS16).    |
-+----------------------------------+----------------------------------+
-| Alternative handlinger           | **2a** Systemaktør evaluerer     |
-|                                  | negativt, at der skal sendes     |
-|                                  | advis\[STIN\], da patienten er   |
-|                                  | overflyttet fra anden afdeling   |
-|                                  | på samme sygehus jf. Regler for  |
-|                                  | afsendersystemet, som use casene |
-|                                  | beror på. Se alternativ use case |
-|                                  | [S1.A2](#S1A2)                   |
-|                                  |                                  |
-|                                  | **3a** Systemaktør evaluerer     |
-|                                  | negativt, at der skal anmodes om |
-|                                  | indlæggelsesrapport (XDIS16), da |
-|                                  | patienten er overflyttet fra     |
-|                                  | andet sygehus i samme region jf. |
-|                                  | Regler for afsendersystemet, som |
-|                                  | use casene beror på. Se          |
-|                                  | alternativ use case              |
-|                                  | [\_S1                            |
-|                                  | .A1:\_Indlæg_patient_1](#_S1.A1: |
-|                                  | _Indlæg_patient_1)[S1.A1](#S1A1) |
-+----------------------------------+----------------------------------+
-| Korrigerende handlinger          | **1a** Brugeraktør har           |
-|                                  | registreret forkert cpr.nr.      |
-|                                  | indlagt og dermed aktiveret      |
-|                                  | afsendelse af advis\[STIN\] på   |
-|                                  | forkert patient, se use case     |
-|                                  | [S.CANC](#SCANC)                 |
-|                                  |                                  |
-|                                  | **1b** Brugeraktør har           |
-|                                  | fejlagtigt registreret patienten |
-|                                  | som 'akut ambulant' i stedet for |
-|                                  | indlagt, se use case             |
-|                                  | [S.CANC](#SCANC)                 |
-|                                  |                                  |
-|                                  | **1c** Brugeraktør har           |
-|                                  | registreret forkert              |
-|                                  | sygehusafdeling eller tidspunkt, |
-|                                  | se use case [S.CORR](#SCORR)     |
-+----------------------------------+----------------------------------+
-| Bemærkninger                     | Ikke relevant                    |
-+----------------------------------+----------------------------------+
-
-### S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport
-
-**Hændelse:** Patienten indlægges på andet sygehus i samme region
-(overflytning)
-
-+----------------------------------+----------------------------------+
-| **Alternativ use case** []{#S1A1 | **Indlæg patient og send         |
-| .anchor}**S1.A1**                | advis\[STIN\] uden anmodning om  |
-|                                  | indlæggelsesrapport**            |
-+==================================+==================================+
-| Reference til use case som denne | [S1](#S1)                        |
-| use case er et alternativ til    |                                  |
-+----------------------------------+----------------------------------+
-| Handlinger                       | 1.  Brugeraktør: Registrerer     |
-|                                  |     patienten som fremmødt og    |
-|                                  |     indlagt                      |
-+----------------------------------+----------------------------------+
-|                                  | 2.  Systemaktør: Evaluerer       |
-|                                  |     positivt, at der skal sendes |
-|                                  |     advis\[STIN\], da patienten  |
-|                                  |     ikke er overflyttet fra      |
-|                                  |     anden afdeling på samme      |
-|                                  |     sygehus jf. Regler for       |
-|                                  |     systemerne, som use casene   |
-|                                  |     beror på                     |
-+----------------------------------+----------------------------------+
-|                                  | 3.  Systemaktør: Evaluerer       |
-|                                  |     negativt, at der skal        |
-|                                  |     anmodes om                   |
-|                                  |     indlæggelsesrapport          |
-|                                  |     (XDIS16), da patienten er    |
-|                                  |     overflyttet fra andet        |
-|                                  |     sygehus i samme region.      |
-+----------------------------------+----------------------------------+
-|                                  | 4.  Systemaktør: Lægger pba.     |
-|                                  |     evalueringen en              |
-|                                  |     advis\[STIN\] med anmodning  |
-|                                  |     om indlæggelsesrapport       |
-|                                  |     (XDIS16) i [Fagsystemets     |
-|                                  |     forretningsmæssige           |
-|                                  |     udbakke](#Fagsyste           |
-|                                  | mets_forretningsmæssige_udbakke) |
-+----------------------------------+----------------------------------+
-| Slutresultat                     | Patienten er indlagt.            |
-|                                  |                                  |
-|                                  | Systemaktør har lagt en          |
-|                                  | advis\[STIN\] i [Fagsystemets    |
-|                                  | forretningsmæssige               |
-|                                  | udbakke](#Fagsyste               |
-|                                  | mets_forretningsmæssige_udbakke) |
-|                                  | med anmodning om                 |
-|                                  | indlæggelsesrapport (XDIS16)     |
-+----------------------------------+----------------------------------+
-| Korrigerende handlinger          | **1a** Brugeraktør har           |
-|                                  | registreret forkert cpr.nr.      |
-|                                  | indlagt og dermed aktiveret      |
-|                                  | afsendelse af advis\[STIN\] på   |
-|                                  | forkert patient, se use case     |
-|                                  | [S.CANC](#SCANC)                 |
-|                                  |                                  |
-|                                  | **1b** Brugeraktør har           |
-|                                  | fejlagtigt registreret patienten |
-|                                  | som 'akut ambulant' i stedet for |
-|                                  | indlagt, se use case             |
-|                                  | [S.CANC](#SCANC)                 |
-|                                  |                                  |
-|                                  | **1c** Brugeraktør har           |
-|                                  | registreret forkert              |
-|                                  | sygehusafdeling eller tidspunkt, |
-|                                  | se use case [S.CORR](#SCORR)     |
-+----------------------------------+----------------------------------+
-| Bemærkninger                     | Ikke relevant                    |
-+----------------------------------+----------------------------------+
-
-####  
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c;font-weight:bold">Use case over indlæggelse af patient og udsændelse af advis</caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Use case S1</th>
+    <th class="tg-pu9k">Indlæg patient og send advis[STIN]</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj">Brugeraktør: Sygeplejersker/sekretær på sygehuset<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">At indlægge patient og at sende advis[STIN], når betingelserne herfor er til stede/opfyldt jf. Regler for afsendersystemet, som use casene beror på</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">Patienten er henvist til indlæggelse (akut eller planlagt)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Patienten er fremmødt på sygehuset mhp. indlæggelse</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.Brugeraktør: Registrerer patienten som fremmødt og indlagt</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.a Systemaktør: Evaluerer positivt, at der skal sendes advis[STIN], da patienten ikke er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.a Systemaktør: Evaluerer positivt, at der skal anmodes om indlæggelsesrapport (XDIS16), da patienten ikke er overflyttet fra andet sygehus i samme region. </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i [Fagsystemets forretningsmæssige udbakke] (#Fagsystemets_forretningsmæssige_udbakke)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a> med anmodning om indlæggelsesrapport (XDIS16).</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Alternative handlinger</td>
+    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [S1.A2](#S1A2)<br>3a Systemaktør evaluerer negativt, at der skal anmodes om indlæggelsesrapport (XDIS16), da patienten er overflyttet fra andet sygehus i samme region jf. Regler for afsendersystemet, som use casene beror på. Se alternativ use case [\_S1.A1:\_Indlæg_patient_1](#S1.A1:_indlæg_patient_1), [S1.A1](#S1A1)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Korrigerende handlinger</td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case [S.CANC](#SCANC)<br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case [S.CANC](#SCANC)<br>1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case [S.CANC](#SCANC)<br></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+</tbody>
+</table>
 
 ### S1.A2: Indlæg patient uden afsendelse af advis\[STIN\]
-
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus
 (overflytning)
 
-+----------------------------------+----------------------------------+
-| **Alternativ use case** []{#S1A2 | **Indlæg patient uden afsendelse |
-| .anchor}**S1.A2**                | af advis\[STIN\]**               |
-+==================================+==================================+
-| Reference til use case som denne | [S1](#S1)                        |
-| use case er et alternativ til    |                                  |
-+----------------------------------+----------------------------------+
-| Handlinger                       | 1.  Brugeraktør: Registrerer     |
-|                                  |     patienten som fremmødt og    |
-|                                  |     indlagt                      |
-+----------------------------------+----------------------------------+
-|                                  | 2.  Systemaktør: Evaluerer       |
-|                                  |     negativt, at der skal sendes |
-|                                  |     advis\[STIN\], da patienten  |
-|                                  |     er overflyttet fra anden     |
-|                                  |     afdeling på samme sygehus    |
-|                                  |     jf. Regler for               |
-|                                  |     afsendersystemet, som use    |
-|                                  |     casene beror på              |
-+----------------------------------+----------------------------------+
-|                                  | 3.  Systemaktør: Lægger pba. af  |
-|                                  |     evalueringen ikke            |
-|                                  |     advis\[STIN\] i              |
-|                                  |     [Fagsystemets                |
-|                                  |     forretningsmæssige           |
-|                                  |     udbakke](#Fagsyste           |
-|                                  | mets_forretningsmæssige_udbakke) |
-+----------------------------------+----------------------------------+
-| Slutresultat                     | Patienten er indlagt.            |
-|                                  |                                  |
-|                                  | Systemaktør har ikke lagt en     |
-|                                  | advis\[STIN\] i [Fagsystemets    |
-|                                  | forretningsmæssige               |
-|                                  | udbakke](#Fagsyste               |
-|                                  | mets_forretningsmæssige_udbakke) |
-+----------------------------------+----------------------------------+
-| Korrigerende handlinger          | Ikke relevant                    |
-+----------------------------------+----------------------------------+
-| Bemærkninger                     | Ikke relevant                    |
-+----------------------------------+----------------------------------+
 
 ###   {#section-2 .list-paragraph}
 

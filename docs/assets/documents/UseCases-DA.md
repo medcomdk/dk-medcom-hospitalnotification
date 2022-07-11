@@ -781,7 +781,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport<caption>
+<caption style="color:#2c415c; font-weight:bold"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Use case R1</th>

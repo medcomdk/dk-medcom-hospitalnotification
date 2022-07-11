@@ -1,3 +1,5 @@
+[Return](../../index.md)
+
 # Use cases for HospitalNotification
 
 ## Introduktion

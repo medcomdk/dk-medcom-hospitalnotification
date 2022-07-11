@@ -47,8 +47,9 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
 1. ’Advis om sygehusophold’ - Sundhedsfaglige retningslinjer
 2. Implementation Guide for ’HospitalNotification’
 3. Use cases (nærværende dokument – findes også på engelsk)
+<p>&nbsp;</p>
 
-> Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument
+  > Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument
 
 Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
 bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).

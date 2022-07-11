@@ -319,6 +319,22 @@ cases](#_Juridisk_grundlag)".
 
 ![ Fillustration af forsendelsesflowet](../images/Forsendelsesflow.png)
 
+**Bemærk:** Da sygehuset ikke på forhånd kan afgøre hvilke borgere,
+der aktuelt modtager ydelser fra primær sektor, dannes "advis om
+sygehusophold" på alle borgere med cpr.nr. og fast bopælsadresse i
+Danmark ved registrering i sygehusets EPJ-system. Det er op til
+modtagersystemet at sikre, at advis om sygehusophold kun indlæses og
+synliggøres på borgere, som modtager ydelser indenfor [det gældende
+lovgrundlag](#_Juridisk_grundlag). Derfor er der i dette dokument
+tilføjet en teknisk forudsætnings-use case, som beskriver de
+ekstra/særlige tekniske handlinger, der, forud for brugeraktørens
+interaktion med systemet, er nødvendige for at sikre, at
+modtagersystemets kun indlæser og viser adviser for brugeraktøren, når
+der er lovhjemmel hertil (se afsnit 1.2 [Juridisk grundlag](#juridisk-grundlag)).
+
+Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering
+af sygehusadviser til flere modtagere samt det efterfølgende
+kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
 
 ### Metode til use case-beskrivelser
 

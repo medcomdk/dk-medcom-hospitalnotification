@@ -183,21 +183,18 @@ Same flow as for transfer to another hospital in the same or another region is u
 
 # Use cases
 
-For use of the technical implementation of the &#39;Hospital Notification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the Hospital Notification. The use cases can be found <a href="https://simplifier.net/medcom-fhir-messaging" target="_blank">Simplifier</a>
-
- [Use Case ENG](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/UseCases-ENG.html).
+For use of the technical implementation of the &#39;Hospital Notification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the Hospital Notification. The use cases can be found on [the front page for HospitalNotification](../../index.md).
 
 # Technical specifications for &#39;Hospital Notification&#39;
 
-The FHIR profile for hospital notification can be found via [https://simplifier.net/medcom-fhir-messaging](https://simplifier.net/medcom-fhir-messaging).
+The FHIR profile for hospital notification can be found  on [the front page for HospitalNotification](../../index.md).
 
-# 9Example of a Hospital Notification
+
+# Example of a Hospital Notification
 
 ![MD](../images/Example_HospitalNotification_ENG.png) 
 
-
-
-This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification, see Table 1.
+>Note This is an example of what the Hospital Notification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification.
 
 # 10Corrections
 
@@ -212,19 +209,3 @@ In this part, the corrections for the document will be documented continuously.
 | 0.9.1. | 09.10.2020 | Jeanette Jensen | Added SLAN to End hospital stay |
 | 1.0 | 26.01.2021 | Jeanette Jensen | SLAN type of End hospital stay and business rules for use of SLAN is deleted. Clarification of pkt. 4 legal basis and addition of links. |
 | 1.0.1 | 02.11.2021 | Mie B. D. Kristensen | Minor lingual correctionsCorrection to section 4 Legal framework as the legal framework per. January 1, 2022 has been extended to include acute outpatient hospital stays as well as temporary and long term sheltered residence. |
-
-#
-
-[1](#sdfootnote1anc) In case of any discrepancies between the two documents, the Danish document is the document in force.
-
-[2](#sdfootnote2anc) Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.
-
-[3](#sdfootnote3anc) Private hospitals can also use hospital notifications
-
-[4](#sdfootnote4anc) If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-
-[5](#sdfootnote5anc) Admission in psychiatric and somatic departments at the same time.
-
-[6](#sdfootnote6anc) If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-
-13

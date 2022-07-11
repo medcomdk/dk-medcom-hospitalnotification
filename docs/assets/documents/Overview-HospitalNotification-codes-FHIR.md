@@ -1,4 +1,4 @@
-# Overview of HospitalNotification codes and HL7 FHIR resources
+# Overview of Hospital Notification codes and HL7 FHIR resources
 
 The table below shows how the hospital notification codes folders map into FHIR's terminology, and thus how one can determine, based
 on the resource elements, which type of hospital notification it is.
@@ -35,7 +35,7 @@ notification has been sent by a mistake. For example, if Encounter.status was â€
 </style>
 <table class="tg">
 <caption style="color:#2c415c;
-  font-weight:bold"> Tabel 1 Overview of </caption>
+  font-weight:bold"> Tabel 1: Overviwe of Hospital Notification codees  </caption>
 <thead>
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Use case code DK</span></th>

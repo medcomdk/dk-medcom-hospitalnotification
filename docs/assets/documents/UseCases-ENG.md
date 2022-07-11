@@ -97,7 +97,7 @@ In the use case descriptions, the following codes are used for different types o
 .tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Table 2: Overview over codes used in use cases
+<caption style="color:#2c415c; font-weight:bold"> Table 2: Overview over codes used in use cases</caption>
 <thead>
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Code</span></th>

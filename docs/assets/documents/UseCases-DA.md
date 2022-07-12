@@ -138,7 +138,7 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene {} </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
 <table id="Tb2">
 <thead>
   <tr>
@@ -296,7 +296,6 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
 
 
 ## Afgrænsning 
-
 Use casene i dette notat beskriver, med en enkelt undtagelse (se
 nedenfor), *brugeraktørens* interaktion med systemet, og omfatter
 således den forretningsmæssige del af forsendelsesflowet jf. den grønne

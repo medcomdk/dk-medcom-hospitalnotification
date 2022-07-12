@@ -17,7 +17,7 @@
   * [2.2 Korrigerende use cases ](#korrigerende-use-cases)
   * [2.3 Teknisk validering af lovhjemmel til modtagelse ](#teknisk-validering-af-lovhjemmel-til-modtagelse)
 * [3 Use cases](#use-cases)
-  * [3.1 S1: Indlæg patient og send advis\[STIN\]](#s1-indlæg-patient-og-send-advisstin)
+  * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#s1.a1-indlæg-patient-og-send-advisstin-uden-anmodning-om-indlæggelsesrapport)
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#s1.a2-indlæg-patient-uden-afsendelse-af-advisstin)
   * [3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport](#r1-modtag-advisering-om-indlæggelse-og-send-indlæggelsesrapport)
@@ -507,7 +507,7 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">   <br>Patientens indlægges   </td>
-    <td class="tg-tysj">   <br>[S1](#s1-indlæg-patient-og-send-advisstin) </td>
+    <td class="tg-tysj">   <br> [S1] (#s1a1-indlæg-patient-og-send-advis-stin-udenom-anmodning-om-indlæggelsesrapport) </td>
     <td class="tg-tysj">   <br>[R1](#r1-modtag-advisering-om-indlæggelse-og-send-indlæggelsesrapport)  </td>
   </tr>
   <tr>
@@ -673,7 +673,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-wight:bold">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
+<caption style="color:#2c415c; font-wight:bold">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>

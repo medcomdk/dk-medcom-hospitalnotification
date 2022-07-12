@@ -894,7 +894,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>)</a> </td>
+    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
@@ -984,7 +984,7 @@ region (overflytning)
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Korrigerende use case: Modtag advisering om annulleret advis</caption>
-<thead>
+<thead id="UC7">
   <tr>
     <th class="tg-pu9k">Use case R.CANC</th>
     <th class="tg-pu9k">Modtag advisering om annulleret advis</th>
@@ -1044,9 +1044,133 @@ region (overflytning)
 
 
 ## S.CORR: Ret sygehusophold og send rettelsesadvis
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width: 85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Ret sygehusophold og send rettelsesadvi </caption>
+<thead id="UC8">
+  <tr>
+    <th class="tg-pu9k">Use case S.CORR</th>
+    <th class="tg-pu9k">Ret sygehusophold og send rettelsesadvis</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj"> Brugeraktør: Sygeplejersker/sekretær på sygehuset<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">At korrigere for og notificere relevante parter om fejlagtigt advis (forkert afdeling eller tidspunkt for sygehusophold)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">Der er afsendt advis af typen [STIN] [STAA] [SLHJ] [MORS] [STOR] [SLOR]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Brugeraktør er blevet opmærksom på fejlagtig registrering af sygehusafdeling og/eller tidspunkt for sygehusophold</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Brugeraktør: Retter information om sygehusopholdet (afdeling og/eller tidspunkt for sygehusophold)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Evaluerer positivt, at der skal sendes advis[RE_XX] jf. Regler for afsendersystemet, som use casene beror på</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Systemaktør: Evaluerer negativt, at der skal anmodes om indlæggelsesrapport (XDIS16), da der er tale om en annullering.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[RE_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke <span style="color:#FE0000">XXX</span></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[RE_XX] i Fagsystemets forretningsmæssige udbakke <span style="color:#FE0000">XXX</span> uden anmodning om indlæggelsesrapport (XDIS16)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Kun rettelser til sygehusafdeling og/eller tidspunkt for sygehusophold skal medføre forsendelse af rettelser. Forkert registrering af cpr.nr. og type af sygehusophold skal medføre forsendelse af annulleringer.<br>Der skal ikke sendes annulleringer forud for rettelser<br>ID kobler entydigt rettelsen til det advis, som rettelsen vedrører.</td>
+  </tr>
+</tbody>
+</table>
 
 ## R.CORR: Modtag advisering om rettet advis
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width: 85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-67v1{border-color:inherit;color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Modtag advisering om rettet advis </caption>
+<thead id="UC9">
+  <tr>
+    <th class="tg-67v1">Use case R.CORR</th>
+    <th class="tg-67v1">Modtag advisering om rettet advis</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-i91a">Igangsættende aktør</td>
+    <td class="tg-i91a">Systemaktør<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Formål</td>
+    <td class="tg-i91a">At blive informeret om rettelser til et tidligere modtaget advis</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Startbetingelser/forudsætninger</td>
+    <td class="tg-i91a">Der er modtaget advis af typen [STIN] [STAA] [SLHJ] [MORS] [STOR] [SLOR]</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Igangsættende hændelse</td>
+    <td class="tg-i91a">Systemaktør har modtaget advis[RE_XX] i Fagsystemets forretningsmæssige indbakke <span style="color:#FE0000">XXX</span></td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Handlinger</td>
+    <td class="tg-i91a">1.      Systemaktør: Evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[RE_XX].</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">2.       Systemaktør: Indlæser advis[RE_XX] og notificerer eventuelt brugeraktør om modtaget rettelse.</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">3.       Systemaktør: Aktiverer ændringsmarkering for det advis, som er blevet rettet</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">4.       Brugeraktør: Tilgår eventuelt advis[RE_XX]</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">5.       Systemaktør: Viser advis[RE_XX] for brugeraktør med tydelig ændringsmarkering</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Slutresultat</td>
+    <td class="tg-i91a">Modtager er informeret om, at det tidligere modtagne advis er rettet.<br>Ændringsmarkering for det advis, som er annulleret, er aktiveret.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Bemærkninger</td>
+    <td class="tg-0pky">Det er op til modtagersystemet og kunder at beslutte, hvordan rettelser indlæses og vises for brugeren.</td>
+  </tr>
+</tbody>
+</table>
 
 
 ### Metode til use case-beskrivelser

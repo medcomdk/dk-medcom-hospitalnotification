@@ -5,8 +5,7 @@ Description: "A message for a HospitalNotification. The message is triggered as 
 * entry ^short = "Message content (MedComHospitalNotificationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComHospitalNotificationEncounter, MedComCorePatient) - Open"
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
-//* obeys medcom-hospitalNotification-3
-* medcom-messaging-3
+* obeys medcom-hospitalNotification-3
 * id ^short = "A unique identifier for a bundle. The element must be updated with a new value each time a new message is sent."
 * timestamp ^short = "Holds information about when a bundle is created."
 
@@ -20,15 +19,11 @@ Description: "Entry shall contain exactly one patient resource"
 Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
 
-/* Invariant: medcom-hospitalNotification-3
+Invariant: medcom-hospitalNotification-3
 Description: "All provenance resources shall contain activities from medcom-hospitalNotification-messageActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-hospitalNotification-messageActivities'))"
- */
-Invariant: medcom-messaging-3
-Description: "All Provenance resources shall conform to medcom-core-provenance profile"
-Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.conformsTo('http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalnotification-provenance'))"
+Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/fhir/dk-medcom-terminology/ValueSet/medcom-hospitalNotification-messageActivities'))"
+
 
 Instance: 15e5b880-c087-4055-b9ec-99108695f81d
 InstanceOf: MedComHospitalNotificationMessage

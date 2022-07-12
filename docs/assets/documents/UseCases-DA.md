@@ -505,9 +505,9 @@ opbygget af nedenstående elementer:
 </thead>
 <tbody>
   <tr>
-    <td class="tg-tysj">   <br>Patientens indlægges   </td>
+    <td class="tg-tysj">   <br>Patientens indlægges  </td>
     <td class="tg-tysj">   <br> <a href="#s1-indlæg-patient-og-send-advis" rel="noopener noreferrer">S1</a> </td>
-    <td class="tg-tysj">   <br>[R1]()  </td>
+    <td class="tg-tysj">   <br> <a href="#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport" rel="noopener noreferrer">R1</a> </td>
   </tr>
   <tr>
     <td class="tg-tysj">   <br>Patienten indlægges   på andet sygehus i samme region (overflytning)   </td>
@@ -545,13 +545,13 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj"> Der er behov for at annullere et allerede udsendt advis   </td>
-    <td class="tg-tysj">[S.CANC](#SCANC)<br></td>
-    <td class="tg-tysj">[R.CANC](#RCANC)</td>
+    <td class="tg-tysj"><a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">S.CANC</a><br></td>
+    <td class="tg-tysj"><a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">R.CANC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj"> Der er rettelser til et allerede udsendt advis   </td>
-    <td class="tg-tysj"> [S.CORR](#SCORR)</td>
-    <td class="tg-tysj">[R.CORR](#RCORR)</td>
+    <td class="tg-tysj"> <a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">S.CORR</a></td>
+    <td class="tg-tysj"><a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">R.CORR</a></td>
   </tr>
 </tbody>
 </table>
@@ -578,15 +578,17 @@ opbygget af nedenstående elementer:
   <tr>
     <td class="tg-0lax">Teknisk validering af lovhjemmel til modtagelse (positiv)<br></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">[R.PC](#RPC)</td>
+    <td class="tg-0lax"><a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-0lax"><span style="font-style:italic">Teknisk validering af lovhjemmel til modtagelse (negativ)</span><br></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">[*<span style="font-style:italic">R.PC.A1*</span>](#RPCA1)</td>
+    <td class="tg-0lax"><a href="#S1.A2-Indlæg-patient-uden-afsendelse-af-advis" rel="noopener noreferrer">R.PC.A1</a></td>
   </tr>
 </tbody>
 </table>
+
+
 # Use cases
 
 ## S1: Indlæg patient og send advis[STIN] {#s1-indlæg-patient-og-send-advis}

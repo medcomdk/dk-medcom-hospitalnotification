@@ -139,7 +139,6 @@ længerevarende botilbud
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
-<table id="Tb2">
 <thead>
   <tr>
     <th class="tg-pu9k">Termer</th>

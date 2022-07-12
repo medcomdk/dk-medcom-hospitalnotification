@@ -861,7 +861,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport
+<caption style="color:#2c415c; font-weight:bold"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case R1.A1</th>

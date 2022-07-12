@@ -210,7 +210,7 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
 .tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
+<caption style="color:#2c415c; font-weight:bold; text-align:center ">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
 <thead>
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>

@@ -148,7 +148,7 @@ længerevarende botilbud
 <tbody>
   <tr>
     <td class="tg-tysj">Fagsystem</td>
-    <td class="tg-tysj">Et fagsystem består -- ift.<br>meddelelsesforsendelse og<br>-modtagelse -- af en<br>forretningsmæssig og en teknisk<br>del. Fagsystemets to dele kan<br>være alt fra et tæt sammenbygget<br>system til to forskellige<br>moduler i samme system, eller to<br>systemer, der er konfigureret<br>til at kommunikere sammen. Dette<br>er uden betydning for use<br>casenes opbygning.</td>
+    <td class="tg-tysj">Et fagsystem består -- ift. meddelelsesforsendelse og-modtagelse -- af en forretningsmæssig og en teknisk del. Fagsystemets to dele kan være alt fra et tæt sammenbygget system til to forskellige moduler i samme system, eller to systemer, der er konfigureret til at kommunikere sammen. Dette er uden betydning for use casenes opbygning.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Afsendersystem</td>
@@ -159,8 +159,8 @@ længerevarende botilbud
     <td class="tg-tysj">Fagsystem hos modtager af en<br>meddelelse</td>
   </tr>
   <tr>
-    <td class="tg-tysj">Fagsystemets forretningsmæssige<br>del</td>
-    <td class="tg-tysj">I den forretningsmæssige del<br>håndteres alt det faglige, som<br>er fagsystemets primære<br>anvendelsesområde. Fagsystemets<br>forretningsmæssige del består<br>af:<br><br>- Fagsystemets<br>forretningsmæssige indbakke<br><br>- Fagsystemets<br>forretningsmæssige<br>meddelelsesmodul<br><br>- Fagsystemets<br>forretningsmæssige udbakke</td>
+    <td class="tg-tysj">Fagsystemets forretningsmæssige del</td>
+    <td class="tg-tysj">I den forretningsmæssige del håndteres alt det faglige, som<br>er fagsystemets primære anvendelsesområde. Fagsystemets forretningsmæssige del består af:<br><br>- Fagsystemets forretningsmæssige indbakke<br><br>- Fagsystemets forretningsmæssige meddelelsesmodul<br><br>- Fagsystemets forretningsmæssige udbakke</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets tekniske del</td>
@@ -171,8 +171,8 @@ længerevarende botilbud
     <td class="tg-tysj">I fagsystemets<br>forretningsmæssige<br>meddelelsesmodul håndteres alt<br>det faglige, som er fagsystemets<br>primære anvendelsesområde. Det<br>er bl.a. her slutbrugeren<br>arbejder med brugergrænsefladen<br>i fagsystemet.</td>
   </tr>
   <tr>
-    <td class="tg-tysj">Fagsystemets<br>forretningsmæssige indbakke</td>
-    <td class="tg-tysj">Fagsystemets forretningsmæssige<br>indbakke er en abstrakt term for<br>den indgående funktionalitet<br>mellem fagsystemets tekniske del<br>og dets forretningsmæssige del i<br>indgående retning.</td>
+    <td class="tg-tysj">Fagsystemets forretningsmæssige indbakke</td>
+    <td class="tg-tysj">Fagsystemets forretningsmæssige indbakke er en abstrakt term for<br>den indgående funktionalitet mellem fagsystemets tekniske del<br>og dets forretningsmæssige del i indgående retning.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets<br>forretningsmæssige udbakke</td>
@@ -201,7 +201,7 @@ længerevarende botilbud
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:50%;}
+.tg  {border-collapse:collapse;border-spacing:65%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

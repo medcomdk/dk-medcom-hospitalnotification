@@ -304,7 +304,7 @@ kommunikationsnetværket samt afsendelse og modtagelse af kvitteringer),
 er generiske på tværs af forskellige MedCom-standarder og optræder som
 selvstændigt beskrevne use cases i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).[Generelle
-tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i Figur 1).
+tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
 meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
@@ -701,15 +701,15 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4. Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i  [Fagsystemets forretningsmæssige udbakke](#Fagsystemets_forretningsmæssige_udbakke) </td>
+    <td class="tg-tysj">4. Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i  Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a> med anmodning om indlæggelsesrapport (XDIS16)</td>
+    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> (se tabel 2</a> med anmodning om indlæggelsesrapport (XDIS16)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
-    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="https://wordhtml.com/#SCANC" target="_blank" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case </td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="https://wordhtml.com/#SCANC" target="_blank" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -753,11 +753,11 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">3. Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">3. Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har ikke lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har ikke lagt en advis[STIN] i <a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
@@ -802,11 +802,11 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Startbetingelser/forudsætninger</td>
-    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a>  jf. <a href="https://wordhtml.com/#RPC" target="_blank" rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke<a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a> jf. <a href="" target="_blank" rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Igangsættende hændelse</td>
-    <td class="tg-tysj">Systemaktør har lagt en formateret advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a></td>
+    <td class="tg-tysj">Systemaktør har lagt en formateret advis[STIN] i <a href="" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -814,7 +814,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
@@ -830,7 +830,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Advis[STIN] er indlæst og vist, og brugeraktør er notificeret om modtagelsen.<br>Systemaktør har lagt en indlæggelsesrapport (XDIS16) i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">Advis[STIN] er indlæst og vist, og brugeraktør er notificeret om modtagelsen.<br>Systemaktør har lagt en indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke <a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a> </td>
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
@@ -894,7 +894,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] iFagsystemets forretningsmæssige udbakke <a href="#Tb2" rel="noopener noreferrer"> (se tabel 2)</a> </td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>

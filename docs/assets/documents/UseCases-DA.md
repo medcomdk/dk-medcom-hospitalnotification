@@ -303,7 +303,7 @@ brugeraktørens interaktion med systemet (fx systemets funktionaliteter i
 kommunikationsnetværket samt afsendelse og modtagelse af kvitteringer),
 er generiske på tværs af forskellige MedCom-standarder og optræder som
 selvstændigt beskrevne use cases i dokumentet "[Generelle tekniske use
-cases](#_Juridisk_grundlag)" (markeret med rød i figur XX).[Generelle
+cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).[Generelle
 tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i Figur 1).
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
@@ -313,11 +313,10 @@ uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
 <figure>
-<img src="../images/Forsendelsesflow.png" alt="Trulli" style="width:100%">
-<figcaption align = "center"><b>Fig.1 : Illustration af forsendelsesflow </b></figcaption>
+<img src="../images/Forsendelsesflow.png" alt="Illustration af forsendelsesflow" style="width:100%" id="Fig1">
+<figcaption align = "center"><b>Figur 1: Illustration af forsendelsesflow </b></figcaption>
 </figure>
 
-![ Fillustration af forsendelsesflowet](../images/Forsendelsesflow.png)
 
 **Bemærk:** Da sygehuset ikke på forhånd kan afgøre hvilke borgere,
 der aktuelt modtager ydelser fra primær sektor, dannes "advis om

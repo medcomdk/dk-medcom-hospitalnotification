@@ -138,8 +138,8 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene </caption>
-<thead>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
+<thead id="Tb2">
   <tr>
     <th class="tg-pu9k">Termer</th>
     <th class="tg-pu9k">Beskrivelse</th>
@@ -295,7 +295,6 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
 
 
 ## Afgrænsning 
-
 Use casene i dette notat beskriver, med en enkelt undtagelse (se
 nedenfor), *brugeraktørens* interaktion med systemet, og omfatter
 således den forretningsmæssige del af forsendelsesflowet jf. den grønne
@@ -369,6 +368,7 @@ Alle use cases er opdelt i:
     (R = Receiver)
 
 Primære use cases er bygget op af nedenstående elementer.
+
 
 
 <style type="text/css">
@@ -640,7 +640,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i [Fagsystemets forretningsmæssige udbakke] (#Fagsystemets_forretningsmæssige_udbakke)</td>
+    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke <a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>

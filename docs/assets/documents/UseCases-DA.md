@@ -137,8 +137,9 @@ længerevarende botilbud
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
-<table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene </caption>
+<table class="tg"; id="Tb2">
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene {} </caption>
+
 <thead>
   <tr>
     <th class="tg-pu9k">Termer</th>
@@ -640,7 +641,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i [Fagsystemets forretningsmæssige udbakke] (#Fagsystemets_forretningsmæssige_udbakke)</td>
+    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke <a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>

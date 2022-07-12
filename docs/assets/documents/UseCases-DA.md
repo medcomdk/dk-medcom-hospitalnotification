@@ -96,7 +96,7 @@ længerevarende botilbud
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 1: Oversigt over relevante refenrencer til use casene </caption>
-<thead>
+<thead id="#Tb1">
   <tr>
     <th class="tg-pu9k">   <br>Materiale   </th>
     <th class="tg-pu9k">   <br>Version   </th>
@@ -139,7 +139,7 @@ længerevarende botilbud
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
-<thead id="Tb2">
+<thead id="#Tb2">
   <tr>
     <th class="tg-pu9k">Termer</th>
     <th class="tg-pu9k">Beskrivelse</th>
@@ -211,7 +211,7 @@ I use case beskrivelserne anvendes følgende koder for de forskellige typer af s
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center ">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
-<thead>
+<thead id="#Tb3">
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Navn på advis notifikation</span></th>
@@ -306,16 +306,16 @@ selvstændigt beskrevne use cases i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)" (markeret med rød i figur XX).[Generelle
 tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i Figur 1).
 
-Dvs, at afsender-use cases afsluttes med, at brugeraktør sender en
-meddelelse, som (af systemaktør) lægges i [*Fagsystemet
-forretningsmæssige udbakke*](#_Termer), mens modtager-use cases
-igangsættes ved, at systemaktør har registreret en (teknisk positivt
-valideret) meddelelse i [*Fagsystemets forretningsmæssige
-indbakke*](#_Termer), som præsenteres for brugeraktøren i
-brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
+Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
+meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
+valideret) meddelelse i Fagsystemets forretningsmæssige indbakke(<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
 uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
+<figure>
+<img src="../images/Forsendelsesflow.png" alt="Trulli" style="width:100%">
+<figcaption align = "center"><b>Fig.1 : Illustration af forsendelsesflow </b></figcaption>
+</figure>
 
 ![ Fillustration af forsendelsesflowet](../images/Forsendelsesflow.png)
 
@@ -382,7 +382,7 @@ Primære use cases er bygget op af nedenstående elementer.
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
-<thead>
+<thead id="#Tb4">
   <tr>
     <th class="tg-pu9k">Element</th>
     <th class="tg-pu9k">Forklaring</th>
@@ -446,7 +446,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
-<thead>
+<thead id="#Tb5">
   <tr>
     <th class="tg-pu9k">Element<br></th>
     <th class="tg-pu9k">Forklaring<br></th>
@@ -496,7 +496,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 6: primære og alternative use cases </caption>
-<thead>
+<thead id="#Tb6">
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
     <th class="tg-pu9k">Afsender (S)-use case<br></th>
@@ -535,7 +535,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 7: Korrigerende use cases</caption>
-<thead>
+<thead id="#Tb7">
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
     <th class="tg-pu9k">Afsender (S)-use case<br></th>
@@ -603,7 +603,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold;text-align:center"> Use case: Indlæggelse af patient og udsændelse af advis</caption>
-<thead>
+<thead id="#UC1">
   <tr>
     <th class="tg-pu9k">Use case S1</th>
     <th class="tg-pu9k">Indlæg patient og send advis[STIN]</th>
@@ -644,7 +644,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] i <a href="#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a> med anmodning om indlæggelsesrapport (XDIS16).</td>
+    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] iFagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) med anmodning om indlæggelsesrapport (XDIS16).</td>
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
@@ -677,7 +677,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold;text-align:center">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
-<thead>
+<thead id="#UC2">
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>
     <th class="tg-pu9k">Indlæg patient og send advis[STIN] uden anmodning om indlæggelsesrapport</th>
@@ -733,7 +733,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center">Alternativ use case 2: Patienten indlægges uden afsændelse af advis [STIN]</caption>
-<thead>
+<thead id="#UC3">
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A2</th>
     <th class="tg-pu9k">Indlæg patient uden afsendelse af advis[STIN]</th>
@@ -786,7 +786,7 @@ opbygget af nedenstående elementer:
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
-<thead>
+<thead id="#UC4">
   <tr>
     <th class="tg-pu9k">Use case R1</th>
     <th class="tg-pu9k">Modtag advisering om indlæggelse og send indlæggelsesrapport</th>
@@ -866,7 +866,7 @@ region (overflytning)
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
-<thead>
+<thead id="#UC5">
   <tr>
     <th class="tg-pu9k">Alternativ use case R1.A1</th>
     <th class="tg-pu9k">Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport</th>

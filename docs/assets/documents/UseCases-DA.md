@@ -1173,26 +1173,328 @@ region (overflytning)
 </table>
 
 
-### Metode til use case-beskrivelser
+# Teknisk validering af lovhjemmel til modtagelse
 
-Use casene er lavet ud fra <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Hver use case består af nedenstående elementer. Der er defineret både [forretningsmæssige](#forretningsmæssige-use-cases) og [tekniske](#tekniske-use-cases) use cases.
+Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt
+modtager ydelser fra primær sektor, dannes "advis om sygehusophold" på
+alle borgere med cpr.nr. og fast bopælsadresse i Danmark ved
+registrering i sygehusets EPJ-system. Det er op til modtagersystemet at
+sikre, at advis om sygehusophold kun indlæses og synliggøres på borgere,
+som modtager ydelser indenfor det gældende lovgrundlag. Derfor er der
+nedenfor beskrevet en teknisk forudsætnings-use case, som beskriver de
+ekstra tekniske handlinger, der, forud for brugeraktørens interaktion
+med systemet, er nødvendige for at sikre, at modtagersystemet kun
+indlæser og viser adviser for brugeraktøren, når der er lovhjemmel. Use
+casen supplerer de øvrige tekniske handlinger, som ligger før og efter
+brugeraktørens interaktion med systemet, og som er beskrevet i
+dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 
-### Advistyper og koder i advis om sygehusophold
+## R.PC: Modtag og indlæs advis (teknisk)
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-67v1{border-color:inherit;color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<thead id="UC 10">
+  <tr>
+    <th class="tg-67v1">Use case R.PC</th>
+    <th class="tg-67v1">Modtag og indlæs advis (teknisk)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-i91a">Igangsættende aktør</td>
+    <td class="tg-i91a"> Systemaktør<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Formål</td>
+    <td class="tg-i91a">At lægge adviset i Fagsystemets forretningsmæssige indbakke, når der er lovhjemmel hertil  <span style="color:#FE0000">(se tabel 2XXX)</span>.</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Startbetingelser/forudsætninger</td>
+    <td class="tg-i91a"><a href="https://wordhtml.com/#_Termer_1" target="_blank" rel="noopener noreferrer">Kommunikationsnetværket</a> har lagt et advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a> <span style="color:#FE0000">(se tabel 2XXX)</span>.</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Igangsættende hændelse</td>
+    <td class="tg-i91a">Systemaktør registrerer, at der er modtaget et advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a> <span style="color:#FE0000">(se tabel 2 XX)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Handlinger</td>
+    <td class="tg-i91a">1.       Systemaktør: Henter advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a>&nbsp;&nbsp; og logger tilstrækkelige metadata i systemet, så der kan afsendes en kvittering</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">2.       Systemaktør: Evaluerer adviset positivt (<a href="https://wordhtml.com/#ACKAA" target="_blank" rel="noopener noreferrer">ACK AA</a>) mod standardens profilering</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">3.       Systemaktør: Konstaterer, at adviset er markeret for at ville modtage kvittering jf. regler som beskrevet i ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”, og logger/markerer for, at der skal sendes positiv kvittering.</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">4.       Systemaktør: Sætter meddelelsestilstand til ”Validated”</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">5.       Systemaktør: Formaterer meddelelsesindhold iht. fagsystemets meddelelsesformat.</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a"> </td>
+    <td class="tg-i91a">6.       Systemaktør: Evaluerer positivt, at adviset skal indlæses/lægges i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> pba. Regler for modtagersystemet, som use casene beror på (der er lovhjemmel til indlæsning) <span style="color:#FE0000">(Se tabel 2 XXX)</span></td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Slutresultat</td>
+    <td class="tg-i91a">Systemaktør har lagt et formateret meddelelsesindhold i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> <span style="color:#FE0000">(se table 2XXX)</span>, og logget/markeret for, at der skal sendes en positiv kvittering. Meddelelsestilstand er sat til ”Validated”</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Alternative handlinger</td>
+    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se <a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">’Generelle tekniske use cases’</a>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (se <a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">’Generelle tekniske use cases’</a>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="https://wordhtml.com/#RPCA1" target="_blank" rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Korrigerende handlinger</td>
+    <td class="tg-i91a">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-i91a">Bemærkninger</td>
+    <td class="tg-i91a">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”<span style="color:#FE0000">( se tabel 2XX)</span>.</td>
+  </tr>
+</tbody>
+</table>
 
+### R.PC.A1 Modtag og kassér advis (teknisk)
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<thead id="UC11">
+  <tr>
+    <th class="tg-pu9k">Use case R.PC.A1</th>
+    <th class="tg-pu9k">Modtag og kassér advis (teknisk)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
+    <td class="tg-tysj"><a href="https://wordhtml.com/#RPC" target="_blank" rel="noopener noreferrer">R.PC</a></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Systemaktør: Evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på (der er ikke lovhjemmel til indlæsning)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Sletter advis og lægger ikke adviset i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> <span style="color:#FE0000">(se tabel 2 XX) </span></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Systemaktør har ikke indlæst adviset og vist det for slutbruger. Systemaktør har dog logget. Systemaktør har fortsat logget/markeret for, at der skal sendes en positiv kvittering. Meddelelsestilstand er sat til ”Validated”.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Korrigerende handlinger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Alternative handlinger</td>
+    <td class="tg-tysj">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”.<br> <br>Modtagersystemet skal, også selvom adviset ikke indlæses/persisteres i systemets, kvittere positivt for modtagelse af advis (hvis de øvrige forudsætninger herfor er tilstede).</td>
+  </tr>
+</tbody>
+</table>
 
+# Regler for systemerne, som use casene beror på
 
-### Use cases 
+## Regler for afsendersystemet, som use casene beror på
 
-Use case-beskrivelserne er opdelt i forretningsmæssige use cases og tekniske use cases. De tekniske use cases er generelle overordnede use cases, som aktiveres i de forskellige handlinger, der er beskrevet i de forretningsmæssige use cases. Til hver af de forretningsmæssige use cases er tilknyttet use cases som hhv. annullerer og retter den aktuelle use case.
+### Regler vedr. afsendelse af forskellige typer af sygehusadviser 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<thead id="RG1">
+  <tr>
+    <th class="tg-pu9k">   <br>ID   </th>
+    <th class="tg-pu9k">   <br>Hændelse   </th>
+    <th class="tg-pu9k">   <br>Advistype, der sendes   </th>
+    <th class="tg-pu9k">   <br>Anmodning om indlæggelsesrapport   (XDIS16)   </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR1   </td>
+    <td class="tg-tysj">   <br>Akut ambulant patient   </td>
+    <td class="tg-tysj">   <br>STAA   </td>
+    <td class="tg-tysj">   <br>Ja   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR2   </td>
+    <td class="tg-tysj">   <br>Indlæg patient   </td>
+    <td class="tg-tysj">   <br>STIN   </td>
+    <td class="tg-tysj">   <br>Ja   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR3   </td>
+    <td class="tg-tysj">   <br>Indlæg patient fra anden   region   </td>
+    <td class="tg-tysj">   <br>STIN   </td>
+    <td class="tg-tysj">   <br>Ja   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR4   </td>
+    <td class="tg-tysj">   <br>Indlæg patient fra andet   sygehus i samme region   </td>
+    <td class="tg-tysj">   <br>STIN   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR5   </td>
+    <td class="tg-tysj">   <br>Indlæg patient fra anden   afdeling på samme sygehus   </td>
+    <td class="tg-tysj">   <br>Der sendes ikke advis   </td>
+    <td class="tg-tysj">   <br>Ikke relevant   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR6   </td>
+    <td class="tg-tysj">   <br>Patient går på orlov fra   sygehusophold   </td>
+    <td class="tg-tysj">   <br>STOR   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR7   </td>
+    <td class="tg-tysj">   <br>Patient returnerer fra   orlov fra sygehusophold   </td>
+    <td class="tg-tysj">   <br>SLOR   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR8   </td>
+    <td class="tg-tysj">   <br>Afslut patient til   hjemmet/primær sektor. <br>   <br>Bemærk i øvrigt S.BR13   </td>
+    <td class="tg-tysj">   <br>SLHJ   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR9   </td>
+    <td class="tg-tysj">   <br>Patienten dør (v. ankomst   eller under sygehusophold)   </td>
+    <td class="tg-tysj">   <br>MORS   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR10   </td>
+    <td class="tg-tysj">   <br>Send rettelse til advis   (forkert afdeling) <br>   <br>Bemærk i øvrigt S.BR14   </td>
+    <td class="tg-tysj">   <br>RE_XX   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR11   </td>
+    <td class="tg-tysj">   <br>Send rettelse til advis   (forkert tidspunkt)<br>   <br>Bemærk i øvrigt S.BR14   </td>
+    <td class="tg-tysj">   <br>RE_XX   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR12   </td>
+    <td class="tg-tysj">   <br>Send annullering (anvendes   ved forkert patient/cpr. eller forkert type af sygehusophold)<br>   <br>Bemærk i øvrigt S.BR14   </td>
+    <td class="tg-tysj">   <br>AN_XX   </td>
+    <td class="tg-tysj">   <br>Nej   </td>
+  </tr>
+</tbody>
+</table>
 
-**Generel bemærkning vedr. annulleringer og rettelser:** Der anvendes samme ID i annulleringen/rettelsen som i det oprindelige advis, så modtager kan koble meddelelserne entydigt sammen. Når tidspunkt for afslut-ning af patientens sygehusophold er overskredet, og der er afsendt advis[SLHJ], skal der ikke aktiveres syge-husadviser med rettelser og annulleringer, medmindre rettelsen/annulleringen relaterer sig til netop ad-vis[SLHJ].
+### Øvrige regler vedr. forsendelse af HospitalNotification
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<thead id="RG2">
+  <tr>
+    <th class="tg-pu9k">   <br>ID   </th>
+    <th class="tg-pu9k">   <br>Regel   </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR13   </td>
+    <td class="tg-tysj">   <br>Adviserne skal genereres på basis af tidstro   registrering i EPJ/PAS-systemet. <br>   <br> <br>   <br>Hvis der i PAS/EPJ anvendes fremtidige   registreringer af planlagte kontakter, skal disse først udløse advis, når   tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S. BR14   </td>
+    <td class="tg-tysj">   <br>Adviserne skal som udgangspunkt   genereres på alle patienter som indlægges eller opholder sig akut ambulant på   sygehuset. Leverandøren   kan vælge, at afsendelse af øvrige adviser (dvs. adviser, som ikke udtrykker   start af et sygehusophold, fx orlov-adviser og afslutningsadviser) kun sker   på patienter, hvor der er modtaget en (automatisk/og eller manuel)   indlæggelsesrapport (XDIS16).   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR15   </td>
+    <td class="tg-tysj">   <br>Adviser (som   ikke er annulleringer eller rettelser til allerede afsendte adviser)   adresseres til borgens bopælskommune.    </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR16   </td>
+    <td class="tg-tysj">   <br>Annulleringer og rettelser adresseres til modtageren af det   fejlagtige advis.    </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR17   </td>
+    <td class="tg-tysj">   <br>Der sendes udelukkende rettelser til   senest afsendte advis. Foretages der en rettelse til fx   indlæggelsestidspunktet for en patient, der er udskrevet, skal denne rettelse   ikke sendes. <br>   <br> <br>   <br>Der skal ikke sendes annulleringer før   rettelser.   </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">   <br>S.BR18   </td>
+    <td class="tg-tysj">   <br>Der sendes ikke advisering om   afslutning fra den afdeling/det sygehus, som patienten overflyttes fra.<br>   <br> <br>   <br>Reglen kan kun fraviges, hvis og   såfremt patienten selv varetager/er ansvarlig for transporten fra sygehus A   til sygehus B. Den planlagte overflytning bør da være kommunikeret til   modtageren på anden vis, fx i plejeforløbsplan og/eller i en   korrespondancemeddelelse   </td>
+  </tr>
+</tbody>
+</table>
 
-I [afsnit om Patientrejser og use cases](#patientrejser-og-use-cases) er et overblik over patientrejser og kobling til use cases. Derefter følger de [forretningsmæssige use cases](#forretningsmæssige-use-cases) og [tekniske use cases](#tekniske-use-cases). Alle use cases er opdelt i:
-1. afsender (sygehus) 
-2. modtager (relevant modtager, typisk kommune) 
+## Regler for modtagersystemet, som use casene beror på
 
-## Patientrejser og use cases 
-
-## Forretningsmæssige use cases
-
-## Tekniske use cases
+### Regler vedr. modtagelse af HospitalNotification
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<thead id="RG3">
+  <tr>
+    <th class="tg-pu9k">ID</th>
+    <th class="tg-pu9k">Beskrivelse af regel</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">R.BR1</td>
+    <td class="tg-tysj">Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt modtager ydelser fra primær sektor, dannes ”advis om sygehusophold” på alle borgere med cpr.nr. og fast bopælsadresse i Danmark ved registrering i sygehusets EPJ-system. Det er op til modtagersystemet at sikre, at advis om sygehusophold kun indlæses og synliggøres på borgere, som modtager ydelser indenfor det gældende lovgrundlag. Modtagersystemet har pligt til at slette øvrige adviser men at logge tekniske meddelelseshændelsesmetadata.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">R.BR2</td>
+    <td class="tg-tysj">Modtagersystemet skal afsende indlæggelsesrapport (XDIS16), når der er anmodet om dette i det modtagne advis jf. Regler vedr. afsendelse af forskellige typer af sygehusadviser</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">R.BR3</td>
+    <td class="tg-tysj">Det er op til modtagersystemet (og kunder), hvordan slutbrugeren notificeres/gøres opmærksom på modtagelse af HospitalNotification.<br> <br>Særligt vedr. rettelser: Modtagersystemet kan vælge at indlæse rettelser [RE_XX] uden notifikationer til brugeren, men brugeren skal – ved øvrige adviser – gøres opmærksom på/notificeres om modtagelse af HospitalNotification.</td>
+  </tr>
+</tbody>
+</table>

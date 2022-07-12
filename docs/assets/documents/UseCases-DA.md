@@ -152,11 +152,11 @@ længerevarende botilbud
   </tr>
   <tr>
     <td class="tg-tysj">Afsendersystem</td>
-    <td class="tg-tysj">Fagsystem hos afsender af en<br>meddelelse</td>
+    <td class="tg-tysj">Fagsystem hos afsender af en meddelelse</td>
   </tr>
   <tr>
     <td class="tg-tysj">Modtagersystem</td>
-    <td class="tg-tysj">Fagsystem hos modtager af en<br>meddelelse</td>
+    <td class="tg-tysj">Fagsystem hos modtager af en meddelelse</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets forretningsmæssige del</td>
@@ -164,35 +164,35 @@ længerevarende botilbud
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets tekniske del</td>
-    <td class="tg-tysj">I den tekniske del håndteres<br>kommunikationen med<br>kommunikationsnetværket<br>vedrørende afsendelse og<br>modtagelse af meddelelser og<br>kvitteringer. Her evalueres også<br>hvilken kvitteringstype, der<br>skal retur til afsender af en<br>modtaget meddelelse.<br><br>Fagsystemets tekniske del består<br>af:<br><br>- Fagsystemets tekniske<br>indbakke<br><br>- Fagsystemets tekniske<br>meddelelsesmodul<br><br>- Fagsystemets tekniske<br>udbakke</td>
+    <td class="tg-tysj">I den tekniske del håndteres kommunikationen med kommunikationsnetværket vedrørende afsendelse og modtagelse af meddelelser og kvitteringer. Her evalueres også hvilken kvitteringstype, der skal retur til afsender af en modtaget meddelelse.<br><br>Fagsystemets tekniske del består<br>af:<br><br>- Fagsystemets tekniske indbakke<br><br>- Fagsystemets tekniske meddelelsesmodul<br><br>- Fagsystemets tekniske udbakke</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets forretningsmæssige<br>meddelelsesmodul</td>
-    <td class="tg-tysj">I fagsystemets<br>forretningsmæssige<br>meddelelsesmodul håndteres alt<br>det faglige, som er fagsystemets<br>primære anvendelsesområde. Det<br>er bl.a. her slutbrugeren<br>arbejder med brugergrænsefladen<br>i fagsystemet.</td>
+    <td class="tg-tysj">I fagsystemets forretningsmæssige meddelelsesmodul håndteres alt det faglige, som er fagsystemets primære anvendelsesområde. Det er bl.a. her slutbrugeren arbejder med brugergrænsefladen i fagsystemet.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets forretningsmæssige indbakke</td>
-    <td class="tg-tysj">Fagsystemets forretningsmæssige indbakke er en abstrakt term for<br>den indgående funktionalitet mellem fagsystemets tekniske del<br>og dets forretningsmæssige del i indgående retning.</td>
+    <td class="tg-tysj">Fagsystemets forretningsmæssige indbakke er en abstrakt term for den indgående funktionalitet mellem fagsystemets tekniske del og dets forretningsmæssige del i indgående retning.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets<br>forretningsmæssige udbakke</td>
-    <td class="tg-tysj">Fagsystemets forretningsmæssige<br>udbakke er en abstrakt term for<br>den udgående funktionalitet<br>mellem fagsystemets<br>forretningsmæssige del og dets<br>tekniske del i udgående retning.</td>
+    <td class="tg-tysj">Fagsystemets forretningsmæssige udbakke er en abstrakt term for den udgående funktionalitet mellem fagsystemets forretningsmæssige del og dets tekniske del i udgående retning.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Fagsystemets tekniske<br>indbakke</td>
-    <td class="tg-tysj">Fagsystemets tekniske indbakke<br>er en abstrakt term for den<br>indgående funktionalitet mellem<br>kommunikationsnetværket og<br>fagsystemets tekniske del i<br>indgående retning. Fagsystemets<br>tekniske indbakke er reelt<br>kommunikationsnetværkets<br>aflevering af en meddelelse til<br>fagsystemet.</td>
+    <td class="tg-tysj">Fagsystemets tekniske indbakke er en abstrakt term for den indgående funktionalitet mellem kommunikationsnetværket og fagsystemets tekniske del i indgående retning. Fagsystemets tekniske indbakke er reelt kommunikationsnetværkets aflevering af en meddelelse til fagsystemet.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Kommunikationsnetværket</td>
-    <td class="tg-tysj">Kommunikationsnetværket er det<br>netværk, som meddelelser fysisk<br>afsendes på. Netværket er pt det<br>samme som VANS-netværket.</td>
+    <td class="tg-tysj">Kommunikationsnetværket er det netværk, som meddelelser fysisk afsendes på. Netværket er pt det samme som VANS-netværket.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Forsendelsesflow</td>
-    <td class="tg-tysj">Et forsendelsesflow består af:<br><br>- Et meddelsesflow fra<br>afsenders forretningsmæssige<br>modul i fagsystemet til<br>modtagers forretningsmæssige<br>modul i fagsystemet.<br><br>- Et kvitteringsflow fra<br>modtagers forretningsmæssige<br>modul i fagsystemet til<br>afsenders forretningsmæssige<br>modul i fagsystemet<br><br>Ikke alle meddelelser og<br>kvitteringer ses nødvendigvis af<br>fagsystemets forretningsmæssige<br>slutbrugere, men deres indhold<br>er tilgængeligt i fagsystemets<br>forretningsmæssige<br>meddelelsesmodul.</td>
+    <td class="tg-tysj">Et forsendelsesflow består af:<br><br>- Et meddelsesflow fra afsenders forretningsmæssige modul i fagsystemet til modtagers forretningsmæssige modul i fagsystemet.<br><br>- Et kvitteringsflow fra modtagers forretningsmæssige modul i fagsystemet til afsenders forretningsmæssige modul i fagsystemet<br><br>Ikke alle meddelelser og kvitteringer ses nødvendigvis af fagsystemets forretningsmæssige slutbrugere, men deres indhold er tilgængeligt i fagsystemets forretningsmæssige meddelelsesmodul.</td>
   </tr>
   <tr>
     <td class="tg-tysj">ACK AA</td>
-    <td class="tg-tysj">HL7 kvitteringsterm for en<br>positiv kvittering. ACK AA er<br>HL7s pendant til MedComs<br>positive kvittering CTRL<br>((X)CTL03).</td>
+    <td class="tg-tysj">HL7 kvitteringsterm for en positiv kvittering. ACK AA er HL7s pendant til MedComs positive kvittering CTRL ((X)CTL03).</td>
   </tr>
 </tbody>
 </table>

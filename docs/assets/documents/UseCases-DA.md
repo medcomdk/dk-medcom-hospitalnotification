@@ -920,7 +920,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: anulleér udesendt advis </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Anulleér udesendt advis </caption>
 <thead id="UC6">
   <tr>
     <th class="tg-pu9k">Use case S.CANC</th>

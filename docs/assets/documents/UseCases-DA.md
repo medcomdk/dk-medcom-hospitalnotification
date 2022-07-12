@@ -673,7 +673,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-wight:bold;text-align:center">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
+<caption style="color:#2c415c;font-weight:bold;text-align:center">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>

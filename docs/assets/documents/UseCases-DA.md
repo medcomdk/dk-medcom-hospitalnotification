@@ -739,7 +739,7 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href="https://wordhtml.com/#S1" target="_blank" rel="noopener noreferrer">S1</a></td>
+    <td class="tg-tysj"><a href="#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport" target="_blank" rel="noopener noreferrer">S1</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>

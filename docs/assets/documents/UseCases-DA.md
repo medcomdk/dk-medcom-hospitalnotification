@@ -506,17 +506,17 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">   <br>Patientens indlægges   </td>
-    <td class="tg-tysj">   <br> [S1](#s1-indlæg-patient-og-send-advis) </td>
+    <td class="tg-tysj">   <br> <a href="#s1-indlæg-patient-og-send-advis" rel="noopener noreferrer">S1</a> </td>
     <td class="tg-tysj">   <br>[R1]()  </td>
   </tr>
   <tr>
     <td class="tg-tysj">   <br>Patienten indlægges   på andet sygehus i samme region (overflytning)   </td>
-    <td class="tg-tysj">   <br>[S1.A1](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)   </td>
+    <td class="tg-tysj">   <br><a href="#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport" rel="noopener noreferrer">S1.A1</a></td>
     <td class="tg-tysj">   <br>[R1.A1](#r1a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)  </td>
   </tr>
   <tr>
     <td class="tg-tysj">   <br>Patienten indlægges   på en anden afdeling på samme sygehus (overflytning)   </td>
-    <td class="tg-tysj">   <br> [*S1.A2*](#s1a2-indlæg-patient-uden-afsendelse-af-advisstin) </td>
+    <td class="tg-tysj">   <br> <a href="#S1.A2:Indlæg-patient-uden-afsendesle-af-advis" rel="noopener noreferrer">S1.A2</a></td>
     <td class="tg-tysj">   <br> </td>
   </tr>
 </tbody>
@@ -641,7 +641,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a> med anmodning om indlæggelsesrapport (XDIS16).</td>
+    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] i <a href="#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a> med anmodning om indlæggelsesrapport (XDIS16).</td>
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
@@ -832,7 +832,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
-    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[STIN]. Se alternativ use case <a href="https://wordhtml.com/#R1A1" target="_blank" rel="noopener noreferrer">R1.A1</a></td>
+    <td class="tg-tysj">2a Systemaktør evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[STIN]. Se alternativ use case <a href="#S1.A2-indlæg-patient-uden-afsendelse af advis"  rel="noopener noreferrer">R1.A1</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>

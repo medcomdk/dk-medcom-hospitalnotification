@@ -95,7 +95,7 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color=#2c415c; font-weight:bold; text-align:center"> Tabel 1:Oversigt over relevante refenrencer til use casene </caption>
+<caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 1: Oversigt over relevante refenrencer til use casene </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">   <br>Materiale   </th>
@@ -381,8 +381,7 @@ Primære use cases er bygget op af nedenstående elementer.
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;
-  font-weight:bold;text-align:center"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
+<caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Element</th>
@@ -496,7 +495,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold:text-align:center"> Tabel 6: primære og alternative use cases </caption>
+<caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 6: primære og alternative use cases </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>

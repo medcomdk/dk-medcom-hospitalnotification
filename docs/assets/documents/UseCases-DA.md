@@ -802,7 +802,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Startbetingelser/forudsætninger</td>
-    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) jf. <a href=""rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tb1" rel="noopener noreferrer"> se tabel 2</a>) jf. <a href=""rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Igangsættende hændelse</td>

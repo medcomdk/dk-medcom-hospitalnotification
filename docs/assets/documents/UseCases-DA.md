@@ -920,7 +920,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:2c415c;font-weigt:bould;text-alaign:center">Korrigerende use case: anulleér udesendt advis </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: anulleér udesendt advis </caption>
 <thead id="UC6">
   <tr>
     <th class="tg-pu9k">Use case S.CANC</th>
@@ -972,6 +972,76 @@ region (overflytning)
 </table>
 
 ## R.CANC: Modtage advisering om annulleret advis 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Korrigerende use case: Modtag advisering om annulleret advis</caption>
+<thead>
+  <tr>
+    <th class="tg-pu9k">Use case R.CANC</th>
+    <th class="tg-pu9k">Modtag advisering om annulleret advis</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj">Systemaktør<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">At blive informeret om, at et tidligere modtaget advis er annulleret/ikke gældende.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">Der er modtaget advis af typen [STIN] [STAA] [SLHJ] [MORS] [STOR] [SLOR]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Systemaktør har modtaget advis[AN_XX] i Fagsystemets forretningsmæssige indbakke <span style="color:#FE0000">xxx</span></td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Systemaktør: Evaluerer negativt, at der skal sendes indlæggelsesrapport (XDIS16) jf. anmodning i advis[AN_XX].</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Indlæser advis[AN_XX] og notificerer brugeraktør om modtaget annullering</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Systemaktør: Aktiverer annulleringsvisning for det advis, som er blevet annulleret</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.       Brugeraktør: Tilgår advis[AN_XX]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">5.       Systemaktør: Viser advis[AN_XX] for brugeraktør</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Modtager er informeret om, at det tidligere modtagne advis er annulleret.<br>Annulleringsvisning for det advis, som er annulleret, er aktiveret.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Alternative handlinger</td>
+    <td class="tg-0lax">Ikke relevant</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Bemærkninger</td>
+    <td class="tg-0lax">Det er op til modtagersystemet at sikre, at meddelelsen, som er blevet annulleret, optræder/vises som annulleret for brugeren (annulleringsvisning)</td>
+  </tr>
+</tbody>
+</table>
+
 
 ## S.CORR: Ret sygehusophold og send rettelsesadvis
 

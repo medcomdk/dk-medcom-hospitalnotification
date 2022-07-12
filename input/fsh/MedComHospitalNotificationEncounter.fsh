@@ -3,10 +3,10 @@ Parent: MedComCoreEncounter
 Id: medcom-hospitalNotification-encounter
 Description: "Encounter derivation that handles hospital notification when a patient is admitted to a hospital. The hospital notification is always send from a hospital. The receiver of the message is the patients home municipalicy. The hospital notification is send for example when patient is admitted, on leave, returned from leave, finished hospital stay."
 * status MS
-* status from MedComHospitalNotificationEncounterStatus
+* status from $HNEncounterStatus
 * status 1..1
 * status ^short = "in-progress | onleave | finished | entered-in-error"
-* class from MedComHospitalNotificationEncounterClass
+* class from $HNEncounterClass
 * class ^short = "inpatient | emergency | other"
 * type 0..0
 * serviceType 0..0

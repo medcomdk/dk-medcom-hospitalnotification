@@ -371,6 +371,7 @@ Alle use cases er opdelt i:
 Primære use cases er bygget op af nedenstående elementer.
 
 
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

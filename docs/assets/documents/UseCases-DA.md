@@ -137,7 +137,7 @@ længerevarende botilbud
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
-<table class="tg">
+<table class="tg" id="#Tb2">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
 <thead id="#Tb2">
   <tr>
@@ -814,7 +814,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="#Tbl2" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
   </tr>
   <tr>
     <td class="tg-tysj"> </td>

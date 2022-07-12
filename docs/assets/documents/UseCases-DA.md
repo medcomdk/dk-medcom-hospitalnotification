@@ -445,7 +445,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c41c;font-weight:bold;text-align:center"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
+<caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Element<br></th>
@@ -506,8 +506,8 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj">   <br>Patientens indlægges   </td>
-    <td class="tg-tysj">   <br> [S1] (#s1a1-indlæg-patient-og-send-advis-stin-udenom-anmodning-om-indlæggelsesrapport) </td>
-    <td class="tg-tysj">   <br>[R1](#r1-modtag-advisering-om-indlæggelse-og-send-indlæggelsesrapport)  </td>
+    <td class="tg-tysj">   <br> [S1](#s1-indlæg-patient-og-send-advis) </td>
+    <td class="tg-tysj">   <br>[R1]()  </td>
   </tr>
   <tr>
     <td class="tg-tysj">   <br>Patienten indlægges   på andet sygehus i samme region (overflytning)   </td>

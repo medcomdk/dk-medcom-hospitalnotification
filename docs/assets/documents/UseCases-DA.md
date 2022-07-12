@@ -371,7 +371,7 @@ Primære use cases er bygget op af nedenstående elementer.
 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:1px;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

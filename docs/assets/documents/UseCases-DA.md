@@ -907,6 +907,77 @@ region (overflytning)
 </tbody>
 </table>
 
+# Korrigerende use cases 
+
+## S.CANC: Anullér et allerede udsendt advis
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
+.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<caption style="color:2c415c;font-weigt:bould;text-alaign:center">Korrigerende use case: anulleér udesendt advis </caption>
+<thead id="UC6">
+  <tr>
+    <th class="tg-pu9k">Use case S.CANC</th>
+    <th class="tg-pu9k">Annullér et allerede udsendt advis</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-tysj">Igangsættende aktør</td>
+    <td class="tg-tysj"> Brugeraktør: Sygeplejersker/sekretær på sygehuset<br> </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Formål</td>
+    <td class="tg-tysj">At korrigere for og notificere relevante parter om advis, som ikke skulle være sendt pga. forkert registrering af cpr.nr. eller type af sygehusophold</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Startbetingelser/forudsætninger</td>
+    <td class="tg-tysj">Der er afsendt advis af typen [STIN] [STAA] [SLHJ] [MORS] [STOR] [SLOR]</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Igangsættende hændelse</td>
+    <td class="tg-tysj">Brugeraktør er blevet opmærksom på fejlagtig registrering af cpr.nr. eller typen af sygehusophold</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Handlinger</td>
+    <td class="tg-tysj">1.       Brugeraktør: Korrigerer den udførte handling</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">2.       Systemaktør: Evaluerer positivt, at der skal sendes advis[AN_XX] jf. Regler for afsendersystemet, som use casene beror på</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">3.       Systemaktør: Evaluerer negativt, at der skal anmodes om indlæggelsesrapport (XDIS16), da der er tale om en annullering.</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj"> </td>
+    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[AN_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke ### </td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Slutresultat</td>
+    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[AN_XX] i Fagsystemets forretningsmæssige udbakke#### uden anmodning om indlæggelsesrapport (XDIS16)</td>
+  </tr>
+  <tr>
+    <td class="tg-tysj">Bemærkninger</td>
+    <td class="tg-tysj">Kun fejlregistreringer vedr. cpr.nr. eller type af sygehusophold skal medføre forsendelse af annulleringer. Rettelser til sygehusafdeling og/eller tidspunkt for sygehusophold skal medføre forsendelse af rettelser.<br>Der skal ikke sendes annulleringer forud for rettelser<br>ID kobler entydigt annulleringen til det advis, som annulleringen vedrører.</td>
+  </tr>
+</tbody>
+</table>
+
+## R.CANC: Modtage advisering om annulleret advis 
+
+## S.CORR: Ret sygehusophold og send rettelsesadvis
+
+## R.CORR: Modtag advisering om rettet advis
+
+
 
 ### Metode til use case-beskrivelser
 

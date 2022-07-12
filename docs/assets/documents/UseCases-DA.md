@@ -137,9 +137,9 @@ længerevarende botilbud
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
-<table class="tg"; id="Tb2">
+<table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene {} </caption>
-
+<table id="Tb2">
 <thead>
   <tr>
     <th class="tg-pu9k">Termer</th>

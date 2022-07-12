@@ -19,7 +19,7 @@
 * [3 Use cases](#use-cases)
   * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#s1.a1-indlæg-patient-og-send-advisstin-uden-anmodning-om-indlæggelsesrapport)
-    * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#s1.a2-indlæg-patient-uden-afsendelse-af-advisstin)
+    * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2:Indlæg-patient-uden-afsendelse-af-advis)
   * [3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport](#r1-modtag-advisering-om-indlæggelse-og-send-indlæggelsesrapport)
     * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
 * [4 Korrigerende use cases](#korrigerende-use-cases-1)

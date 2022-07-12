@@ -86,7 +86,7 @@ længerevarende botilbud
 
 ## Referencer 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -95,7 +95,7 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color=#2c415c; font-weight:bold"> Tabel 1:Oversigt over relevante refenrencer til use casene </caption>
+<caption style="color=#2c415c; font-weight:bold; text-align:center"> Tabel 1:Oversigt over relevante refenrencer til use casene </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">   <br>Materiale   </th>
@@ -129,7 +129,7 @@ længerevarende botilbud
 
 ## Termer
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -138,7 +138,7 @@ længerevarende botilbud
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Tabel 2: Oversigt over termer brugt i use casene </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Termer</th>
@@ -201,7 +201,7 @@ længerevarende botilbud
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0; width:75%}
+.tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -372,7 +372,7 @@ Primære use cases er bygget op af nedenstående elementer.
 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -382,7 +382,7 @@ Primære use cases er bygget op af nedenstående elementer.
 </style>
 <table class="tg">
 <caption style="color:#2c415c;
-  font-weight:bold"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
+  font-weight:bold;text-align:center"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Element</th>
@@ -437,7 +437,7 @@ vil fremgå af de alternative use cases. Alternative use cases er derfor
 opbygget af nedenstående elementer:
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -446,7 +446,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c41c;font-weight:bold"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
+<caption style="color:#2c41c;font-weight:bold;text-align:center"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Element<br></th>
@@ -487,7 +487,7 @@ opbygget af nedenstående elementer:
 
 # Oversigt over use cases
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -496,7 +496,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold"> Tabel 6: primære og alternative use cases </caption>
+<caption style="color:#2c415c;font-weight:bold:text-align:center"> Tabel 6: primære og alternative use cases </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -525,7 +525,7 @@ opbygget af nedenstående elementer:
 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -534,7 +534,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold">Tabel 7: Korrigerende use cases</caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 7: Korrigerende use cases</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -557,7 +557,7 @@ opbygget af nedenstående elementer:
 </table>
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -566,7 +566,7 @@ opbygget af nedenstående elementer:
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold">Tabel 8: Teknisk validering af lovhjemmel til modtagelse </caption>
+<caption style="color:#2c415c;font-weight:bold;text-align:center">Tabel 8: Teknisk validering af lovhjemmel til modtagelse </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Hændelse<br></th>
@@ -591,7 +591,7 @@ opbygget af nedenstående elementer:
 
 ## S1: Indlæg patient og send advis
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -600,7 +600,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold"> Use case: Indlæggelse af patient og udsændelse af advis</caption>
+<caption style="color:#2c415c;font-weight:bold;text-align:center"> Use case: Indlæggelse af patient og udsændelse af advis</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Use case S1</th>
@@ -660,11 +660,12 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport 
+### S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport {#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport}
+
 **Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning)
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -673,7 +674,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-wight:bold">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
+<caption style="color:#2c415c; font-wight:bold;text-align:center">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>
@@ -716,11 +717,11 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A2: Indlæg patient uden afsendelse af advis \[STIN\]
+### S1.A2: Indlæg patient uden afsendelse af advis \[STIN\] {#S1.A2:Indlæg-patient-uden-afsendelse-af-advis}
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -729,7 +730,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold">Alternativ use case 2: Patienten indlægges uden afsændelse af advis [STIN]</caption>
+<caption style="color:#2c415c; font-weight:bold; text-align:center">Alternativ use case 2: Patienten indlægges uden afsændelse af advis [STIN]</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A2</th>
@@ -773,7 +774,7 @@ opbygget af nedenstående elementer:
 
 ## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -782,7 +783,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Use case R1</th>
@@ -853,7 +854,7 @@ region (overflytning)
 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -862,7 +863,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
 <thead>
   <tr>
     <th class="tg-pu9k">Alternativ use case R1.A1</th>

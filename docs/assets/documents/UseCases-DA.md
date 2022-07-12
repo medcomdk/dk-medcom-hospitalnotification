@@ -200,7 +200,7 @@ længerevarende botilbud
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:65%;}
+.tg  {border-collapse:collapse;border-spacing:50%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -659,7 +659,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A1: Indlæg patient og send advis \[STIN\] udenom anmodning om indlæggelsesrapport 
+### S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport 
 **Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning)
 
 <style type="text/css">
@@ -742,15 +742,15 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
-    <td class="tg-tysj">1.       Brugeraktør: Registrerer patienten som fremmødt og indlagt</td>
+    <td class="tg-tysj">1. Brugeraktør: Registrerer patienten som fremmødt og indlagt</td>
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">2.       Systemaktør: Evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på</td>
+    <td class="tg-tysj">2. Systemaktør: Evaluerer negativt, at der skal sendes advis[STIN], da patienten er overflyttet fra anden afdeling på samme sygehus jf. Regler for afsendersystemet, som use casene beror på</td>
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">3.       Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">3. Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_udbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>

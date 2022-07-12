@@ -27,10 +27,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification admit message, reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
 Description: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
 Usage: #example
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
@@ -43,10 +43,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)"
 Description: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
 Usage: #example
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
@@ -57,10 +57,10 @@ Instance: b563a2b2-bf92-4b13-bbd2-0a021a95bded
 InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification start leave message. Valid only if used in a bundle (message)"
 Description: "MessageHeader for a HospitalNotification start leave message. Valid only if used in a bundle (message)."
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(556e9c54-23d2-43a4-816e-951d2a6e3281)
@@ -70,10 +70,10 @@ Instance: e47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification end leave message. Valid only if used in a bundle (message)"
 Description: "MessageHeader for a HospitalNotification end leave message. Valid only if used in a bundle (message)."
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
@@ -84,10 +84,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification discharge message. Valid only if used in a bundle (message)"
 Description: "MessageHeader for a HospitalNotification discharge message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcomfhir.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
 * focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760f)
@@ -101,10 +101,10 @@ InstanceOf: MedComHospitalNotificationMessageHeader
 Title: "MessageHeader for a HospitalNotification discharge message when patient is deceased. Valid only if used in a bundle (message)"
 Description: "MessageHeader for a HospitalNotification discharge message when patient is deceased. Valid only if used in a bundle (message)."
 Usage: #inline
-* destination.extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
-* destination.endpoint = "http://medcom.dk/unknown"
-* destination.receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
 * focus = Reference(1cab7218-9584-11ec-b909-0242ac120002)

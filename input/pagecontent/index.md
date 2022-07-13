@@ -2,9 +2,13 @@
 
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR &reg;&copy; in message based exchange of data in Danish healthcare.
 
-The IG contains profiles for MedCom HospitalNotification, which is used to inform a municipality about hospitalization of a patient.
+The IG contains profiles for MedCom HospitalNotification (Dansk: Sygehusadvis), which is used to inform a municipality about hospitalization of a patient.
 
-Profiles used in HospitalNotification are not as open as other profiles because the message is automatically sent and thus not based on a patient consent. The legislation permits this exchange, but the message shall not contain more information than nessecary.
+Profiles used in HospitalNotification are not as open as other profiles because the message is automatically sent and thus not based on a patient consent. The legislation permits this exchange, but the message shall not contain more information than necessary.
+
+More information about the [clinical guidelines and legislation](https://medcomdk.github.io/dk-medcom-hospitalnotification/#clinical-guidelines) can be found here.
+
+#### HospitalNotification Message
 
 The following diagram depicts the structure of the HospitalNotification message.
 
@@ -12,75 +16,60 @@ The following diagram depicts the structure of the HospitalNotification message.
 
 The HospitalNotification message follows the general MedCom FHIR messaging structure, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profile.
 
-**MedComHospitalNotificationMessage**
+##### MedComHospitalNotificationMessage
 
-The MedComHospitalNotificationMessage constrains the MedComMessagingMessage further to use the MedComHospitalNotificationMessageHeader and to require excactly one patient resource in the message. Furthermore, it constrains the MedComMessagingProvenance activity to contain only activities from the MedComHospitalNotificationMessageActivities value set, which contains activities such as admit, start-leave, end-leave, discharge, and other events that triggers a HospitalNotification Message.
+The [MedComHospitalNotificationMessage](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html) constrains the [MedComMessagingMessage](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-message.html) to further use the MedComHospitalNotificationMessageHeader and to require exactly one patient resource in the message. Furthermore, it constrains the Provenance.activity to contain only activities from the MedComHospitalNotificationMessageActivities ValueSet, which contains activities such as admit, start-leave, end-leave, discharge, and other events that triggers a HospitalNotification Message.
 
 All referenced resources within the message shall be contained in the entry list in MedComHospitalNotificationMessage.
 
-**MedComHospitalNotificationMessageHeader**
+##### MedComHospitalNotificationMessageHeader
 
-The MedComHospitalNotificationMessageHeader constrains the MedComMessagingMessageHeader further to specify the fixed coding for this message and require a focus reference to a MedComHospitalNotificationEncounter. Carbon-copy destination is not allowed.
+The [MedComHospitalNotificationMessageHeader](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html) constrains the [MedComMessagingMessageHeader](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus of the message to be a MedComHospitalNotificationEncounter. Carbon-copy destination is not allowed.
 
-**MedComHospitalNotificationEncounter**
+##### MedComHospitalNotificationEncounter
 
-The MedComHospitalNotificationEncounter contains the main content of the message. It constrains the MedComCoreEncounter further to require a unique identifier for the encounter and restricts the status and class to value set of relevant values. The start time of the encounter and a reference to the service provider organization are mandatory. Most other values are disallowed due to the legislation.
+The [MedComHospitalNotificationEncounter](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html) contains the main content of the message. It constrains the [MedComCoreEncounter](https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-encounter.html) further to require a unique identifier for the encounter and restricts the status and class to ValueSet of relevant values. The start time of the encounter and a reference to the service provider organization are also mandatory. Most other values are disallowed due to the legislation.
+
+#### Simplified examples of the HospitalNotification message flow
+
+The simplified examples contain the required content of a HospitalNotification message
+
+The messages illustrate admission, discharge, and leave of a hospitalized patient. Also a cancelled messages is illustrated below. The patient, service provider organization, sender and receiver information are identical across a message stream, since all messages are send from a hospital to a municipality.
+
+> Note: Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
+
+> Note: Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, resources may be listed in any order. 
+
+* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay.](./hospitalnotification/HNAdmitFinish.png)
+* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay.](./hospitalnotification/HNAdmitOnleaveEndFinish.png) 
+* [Simplified example of a cancelled MedComHospitalNotificationMessage message.](./hospitalnotification/HNAdmitEnteredInError.png)
+
+#### Terminology
+On [MedCom Terminology IG](https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.
 
 #### Dependencies
-This IG has a dependency to the [MedComCore IG](https://build.fhir.org/ig/medcomdk/dk-medcom-core/), [MedComMessaging IG](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/) and [DK-core v. 1.1.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). This is currently reflected in MedComHospitalNotificationMessage, MedComHospitalNotificationMessageHeader and MedComHospitalNotificationEncounter which all inherits from profiles defined in MedComCore or MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreOrganization and MedComMessagingOrganization.
+This IG has a dependency to the [MedCom Core IG](https://build.fhir.org/ig/medcomdk/dk-medcom-core/), [MedCom Messaging IG](https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/) and [DK-core v. 1.1.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). This is currently reflected in MedComHospitalNotificationMessage, MedComHospitalNotificationMessageHeader and MedComHospitalNotificationEncounter which all inherits from profiles defined in MedComCore or MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreOrganization and MedComMessagingOrganization.
 
 ### Documentation
 
-Documentation such as use cases, clinical guidelines, mapping documents, testprotocols, ect. can be found on the [introdution page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/). 
+On the [introduction page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/) the following documentation can be found: 
+* Clinical guidelines
+* Use cases
+* Overview of codes used a HospitalNotification message
+* Mapping document from the previous OIOXML standard (XDIS17 and XDIS20) to HospitalNotification
 
-<!--#### Non-technical guidelines 
-Information regarding non-technical guidelines and use cases for HospitalNotification is found here:
+### Governance
 
-English:
-* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use%20cases_Hospital_Notification_eng.pdf)
-* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_Hospital%20Notification_v.1.0.1.pdf)
+MedComs FHIR profiles and extension are managed in GitHub under MedCom: [Source code](https://github.com/medcomdk/dk-medcom-hospitalnotification)
 
-Danish:
-* [HospitalNotification Use Cases](./hospitalnotification/pdf/Use_cases_advis_om_sygehusophold.pdf)
-* [Non-technical guidelines for HospitalNotification](./hospitalnotification/pdf/FHIR_advis_om_sygehusophold_1.0.1.pdf)
-
-
-#### Change of state
-The change of state for an admission is dispicted in both the MedComHospitalNotificationEncounter elements *status* and *class*, the MedComMessagingProvenance element *system*, and the MedComCorePatient element *deceased*.
-Please refer to following maping documents for more details: 
-
-English: 
-* [Map between HospitalNotification codes and FHIR elements](./hospitalnotification/pdf/Overview_HospitalNotification_codes_HL7_FHIR_1.0.3.pdf)
-
-Danish: 
-* [Mapning mellem advis koder og FHIR elementer](.hospitalnotification\pdf\Oversigt_adviskoder_HL7_FHIR_1.0.3.pdf)
-
-#### Mapping betweeen MedCom OIOXML advis standard and the HospitalNotification message.
-This section describes how to map between MedCom OIOXML advis standard and the MedCom FHIR HospitalNotification message
-
-Please notice, that not all elements from the HospitalNotification message are mentioned in the document, as not all information is relevant to map between the two standards. For a full overview of the requirements in the HospitalNotification message, view the included profiles, as showns on the figure in the top of the page.
-
-The mapping is only elaborated in English:
-* [OIOXML advis -> HospitalNotification ](./hospitalnotification/pdf/Map_between_OIOXML_and_FHIR_HospitalNotificationMessages-21-12-22.pdf) -->
-
-
-### Scope
-
-This document presents MedCom FHIR messaging concepts defined via FHIR processable artefacts:
-
-* [Profiles](profiles.html) - contain the constraints to core FHIR resources and datatype for use in MedCom messages
-* [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts for the messaging
-* [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the messaging context
-
-#### Governance
-
-FHIR profiles are managed under MedCom:
-
-* [Source](https://github.com/medcomdk/dk-medcom-hospitalnotification)
-* [Wiki](https://github.com/medcomdk/dk-medcom-hospitalnotification)
-
-### Other
+A description of [governance concerning change management and versioning](https://medcomdk.github.io/MedComLandingPage/#4-change-managment-and-versioning) of MedComs FHIR artefacts, can be found on the link.
 
 #### Quality Assurance Report
 
 In the Quality Assurance report (QA-report) for this IG, there is an error with the following description: *Reference is remote which isn’t supported by the specified aggregation mode(s) for the reference (bundled)*. The error occurs when creating instances of the profiles and is due to some elements having a Bundled flag {b}, however the referenced profile is not included in a Bundle in an instance, since the instance only represents a part of the entire message. This should not influence the implementation by IT-vendors.
+
+### Contact 
+
+[MedCom](https://www.medcom.dk/) is responsible for this IG.
+
+If you have any questions, please contact <fhir@medcom.dk> or write to MedCom's stream in [Zulip](https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup).

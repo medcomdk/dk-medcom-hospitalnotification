@@ -308,7 +308,7 @@ tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" r
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
 meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
-valideret) meddelelse i Fagsystemets forretningsmæssige indbakke(<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
+valideret) meddelelse i Fagsystemets forretningsmæssige indbakke(<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
 uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
@@ -639,11 +639,11 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) </td>
+    <td class="tg-tysj">4.Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] iFagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) med anmodning om indlæggelsesrapport (XDIS16).</td>
+    <td class="tg-tysj">Borgeren er indlagt<br>Systemaktør har lagt en advis[STIN] iFagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) med anmodning om indlæggelsesrapport (XDIS16).</td>
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
@@ -701,15 +701,15 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4. Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i  Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) </td>
+    <td class="tg-tysj">4. Systemaktør: Lægger pba. evalueringen en advis[STIN] med anmodning om indlæggelsesrapport (XDIS16) i  Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) med anmodning om indlæggelsesrapport (XDIS16)</td>
+    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) med anmodning om indlæggelsesrapport (XDIS16)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
-    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="https://wordhtml.com/#SCANC" target="_blank" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="" target="_blank" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -753,11 +753,11 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">3. Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i (Fagsystemets forretningsmæssige udbakke <a href="#Tb2" rel="noopener noreferrer"> se tabel 2)</a></td>
+    <td class="tg-tysj">3. Systemaktør: Lægger pba. af evalueringen ikke advis[STIN] i (Fagsystemets forretningsmæssige udbakke <a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har ikke lagt en advis[STIN] i (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>)</td>
+    <td class="tg-tysj">Patienten er indlagt.<br>Systemaktør har ikke lagt en advis[STIN] i (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
@@ -802,11 +802,11 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Startbetingelser/forudsætninger</td>
-    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tb1" rel="noopener noreferrer"> se tabel 2</a>) jf. <a href=""rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) jf. <a href=""rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Igangsættende hændelse</td>
-    <td class="tg-tysj">Systemaktør har lagt en formateret advis[STIN] i Fagsystemets forretningsmæssige indbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>)</td>
+    <td class="tg-tysj">Systemaktør har lagt en formateret advis[STIN] i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -814,7 +814,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="#Tbl2" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
+    <td class="tg-tysj">2.       Systemaktør: Lægger pba. evalueringen en indlæggelsesrapport (XDIS16) i <a href="#Tabel2" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige udbakke</a></td>
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
@@ -830,7 +830,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Advis[STIN] er indlæst og vist, og brugeraktør er notificeret om modtagelsen.<br>Systemaktør har lagt en indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) </td>
+    <td class="tg-tysj">Advis[STIN] er indlæst og vist, og brugeraktør er notificeret om modtagelsen.<br>Systemaktør har lagt en indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Alternative handlinger</td>
@@ -874,7 +874,7 @@ region (overflytning)
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href="https://wordhtml.com/#R1" target="_blank" rel="noopener noreferrer">R1</a></td>
+    <td class="tg-tysj"><a href="" target="_blank" rel="noopener noreferrer">R1</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -894,7 +894,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tb2" rel="noopener noreferrer"> se tabel 2</a>) </td>
+    <td class="tg-tysj">Patienten er indlagt på andet sygehus i samme region.<br>Systemets har ikke lagt en advis[STIN] i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
@@ -962,7 +962,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[AN_XX] i Fagsystemets forretningsmæssige udbakke#### uden anmodning om indlæggelsesrapport (XDIS16)</td>
+    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[AN_XX] i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) uden anmodning om indlæggelsesrapport (XDIS16)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -1005,7 +1005,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj">Igangsættende hændelse</td>
-    <td class="tg-tysj">Systemaktør har modtaget advis[AN_XX] i Fagsystemets forretningsmæssige indbakke <span style="color:#FE0000">xxx</span></td>
+    <td class="tg-tysj">Systemaktør har modtaget advis[AN_XX] i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -1092,11 +1092,11 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[RE_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke <span style="color:#FE0000">XXX</span></td>
+    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[RE_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
-    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[RE_XX] i Fagsystemets forretningsmæssige udbakke <span style="color:#FE0000">XXX</span> uden anmodning om indlæggelsesrapport (XDIS16)</td>
+    <td class="tg-tysj">Fejlen er korrigeret.<br>Systemets har lagt en advis[RE_XX] i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) uden anmodning om indlæggelsesrapport (XDIS16)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -1139,7 +1139,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-i91a">Igangsættende hændelse</td>
-    <td class="tg-i91a">Systemaktør har modtaget advis[RE_XX] i Fagsystemets forretningsmæssige indbakke <span style="color:#FE0000">XXX</span></td>
+    <td class="tg-i91a">Systemaktør har modtaget advis[RE_XX] i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-i91a">Handlinger</td>
@@ -1218,23 +1218,23 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a">Startbetingelser/forudsætninger</td>
-    <td class="tg-i91a"><a href="https://wordhtml.com/#_Termer_1" target="_blank" rel="noopener noreferrer">Kommunikationsnetværket</a> har lagt et advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a> <span style="color:#FE0000">(se tabel 2XXX)</span>.</td>
+    <td class="tg-i91a">Kommunikationsnetværket (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring tabel 2</a>) har lagt et advis i Fagsystemets tekniske indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se fprklaring i tabel 2</a>) </span>.</td>
   </tr>
   <tr>
     <td class="tg-i91a">Igangsættende hændelse</td>
-    <td class="tg-i91a">Systemaktør registrerer, at der er modtaget et advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a> <span style="color:#FE0000">(se tabel 2 XX)</span></td>
+    <td class="tg-i91a">Systemaktør registrerer, at der er modtaget et advis i Fagsystemets tekniske indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) </span></td>
   </tr>
   <tr>
     <td class="tg-i91a">Handlinger</td>
-    <td class="tg-i91a">1.       Systemaktør: Henter advis i <a href="https://wordhtml.com/#Fagsystemets_tekniske_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets tekniske indbakke</a>&nbsp;&nbsp; og logger tilstrækkelige metadata i systemet, så der kan afsendes en kvittering</td>
+    <td class="tg-i91a">1.       Systemaktør: Henter advis i Fagsystemets tekniske indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) og logger tilstrækkelige metadata i systemet, så der kan afsendes en kvittering</td>
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
-    <td class="tg-i91a">2.       Systemaktør: Evaluerer adviset positivt (<a href="https://wordhtml.com/#ACKAA" target="_blank" rel="noopener noreferrer">ACK AA</a>) mod standardens profilering</td>
+    <td class="tg-i91a">2.       Systemaktør: Evaluerer adviset positivt (ACK AA (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>)) mod standardens profilering</td>
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
-    <td class="tg-i91a">3.       Systemaktør: Konstaterer, at adviset er markeret for at ville modtage kvittering jf. regler som beskrevet i ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”, og logger/markerer for, at der skal sendes positiv kvittering.</td>
+    <td class="tg-i91a">3.       Systemaktør: Konstaterer, at adviset er markeret for at ville modtage kvittering jf. regler som beskrevet i ”<a href="" rel="noopener noreferrer">Generelle tekniske use cases</a>”, og logger/markerer for, at der skal sendes positiv kvittering.</td>
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
@@ -1246,15 +1246,15 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
-    <td class="tg-i91a">6.       Systemaktør: Evaluerer positivt, at adviset skal indlæses/lægges i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> pba. Regler for modtagersystemet, som use casene beror på (der er lovhjemmel til indlæsning) <span style="color:#FE0000">(Se tabel 2 XXX)</span></td>
+    <td class="tg-i91a">6.       Systemaktør: Evaluerer positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) pba. Regler for modtagersystemet, som use casene beror på (der er lovhjemmel til indlæsning)</td>
   </tr>
   <tr>
     <td class="tg-i91a">Slutresultat</td>
-    <td class="tg-i91a">Systemaktør har lagt et formateret meddelelsesindhold i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> <span style="color:#FE0000">(se table 2XXX)</span>, og logget/markeret for, at der skal sendes en positiv kvittering. Meddelelsestilstand er sat til ”Validated”</td>
+    <td class="tg-i91a">Systemaktør har lagt et formateret meddelelsesindhold i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se tabel 2</a>), og logget/markeret for, at der skal sendes en positiv kvittering. Meddelelsestilstand er sat til ”Validated”</td>
   </tr>
   <tr>
     <td class="tg-i91a">Alternative handlinger</td>
-    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se <a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">’Generelle tekniske use cases’</a>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (se <a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">’Generelle tekniske use cases’</a>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="https://wordhtml.com/#RPCA1" target="_blank" rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
+    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se  <span>’Generelle tekniske use cases’</span>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (<span>’Generelle tekniske use cases’</span>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="" target="_blank" rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
   </tr>
   <tr>
     <td class="tg-i91a">Korrigerende handlinger</td>
@@ -1262,7 +1262,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a">Bemærkninger</td>
-    <td class="tg-i91a">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”<span style="color:#FE0000">( se tabel 2XX)</span>.</td>
+    <td class="tg-i91a">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet <span style="color:#FE0000">(Generelle tekniske use cases)</span>.</td>
   </tr>
 </tbody>
 </table>
@@ -1288,7 +1288,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href="https://wordhtml.com/#RPC" target="_blank" rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj"><a href=""rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>
@@ -1296,7 +1296,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">2.       Systemaktør: Sletter advis og lægger ikke adviset i <a href="https://wordhtml.com/#Fagsystemets_forretningsm%C3%A6ssige_indbakke" target="_blank" rel="noopener noreferrer">Fagsystemets forretningsmæssige indbakke</a> <span style="color:#FE0000">(se tabel 2 XX) </span></td>
+    <td class="tg-tysj">2.       Systemaktør: Sletter advis og lægger ikke adviset i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>)</td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>
@@ -1312,7 +1312,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
-    <td class="tg-tysj">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ”<a href="https://wordhtml.com/#_Referencer_1" target="_blank" rel="noopener noreferrer">Generelle tekniske use cases</a>”.<br> <br>Modtagersystemet skal, også selvom adviset ikke indlæses/persisteres i systemets, kvittere positivt for modtagelse af advis (hvis de øvrige forudsætninger herfor er tilstede).</td>
+    <td class="tg-tysj">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ” <span>Generelle tekniske use cases</span>”.<br> <br>Modtagersystemet skal, også selvom adviset ikke indlæses/persisteres i systemets, kvittere positivt for modtagelse af advis (hvis de øvrige forudsætninger herfor er tilstede).</td>
   </tr>
 </tbody>
 </table>

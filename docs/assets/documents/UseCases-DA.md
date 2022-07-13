@@ -313,7 +313,7 @@ uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
 <figure>
-<img src="../images/Forsendelsesflow.png" alt="Illustration af forsendelsesflow" style="width:100%" id="Fig1">
+<img src="../images/Forsendelsesflow.png" alt="Illustration af forsendelsesflow" style="width:85%" id="Fig1">
 <figcaption align = "center"><b>Figur 1: Illustration af forsendelsesflow </b></figcaption>
 </figure>
 

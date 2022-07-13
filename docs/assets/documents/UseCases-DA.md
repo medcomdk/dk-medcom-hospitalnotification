@@ -137,9 +137,9 @@ længerevarende botilbud
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
-<table class="tg" id="#Tb2">
+<table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
-<thead id="#Tb2">
+<thead id="Tabel2">
   <tr>
     <th class="tg-pu9k">Termer</th>
     <th class="tg-pu9k">Beskrivelse</th>
@@ -201,7 +201,7 @@ længerevarende botilbud
 I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0; width:85%}
+.tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

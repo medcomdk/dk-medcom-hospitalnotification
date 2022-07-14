@@ -874,7 +874,7 @@ region (overflytning)
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href="#modtageadvisering om indlæggelse og send indlæggeæsesrapport" target="_blank" rel="noopener noreferrer">R1</a></td>
+    <td class="tg-tysj"><a href="#modtageadvisering-om-indlæggelse-og-send indlæggeæsesrapport" target="_blank" rel="noopener noreferrer">R1</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>

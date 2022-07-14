@@ -773,7 +773,7 @@ opbygget af nedenstående elementer:
 
 
 
-## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#modtageadvisering om indlæggelse og send indlæggeæsesrapport}
+## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#modtageadvisering-om-indlæggelse-og-send-indlæggeæsesrapport}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

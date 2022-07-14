@@ -22,11 +22,11 @@
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
   * [3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
      * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
-* [4 Korrigerende use cases](#korrigerende-use-cases)
+* [4 Korrigerende use cases](#Korrigerende-use-cases)
   * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
-  * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#s.corr-ret-sygehusophold-og-send-rettelsesadvis)
-  * [4.4 R.CORR: Modtag advisering om rettet advis](#r.corr-modtag-advisering-om-rettet-advis)
+  * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#S.CORR-ret-sygehusophold-og-send-rettelsesadvis)
+  * [4.4 R.CORR: Modtag advisering om rettet advis](#R.COR-modtag-advisering-om-rettet-advis)
 * [5 Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse-1)
   * [5.1 R.PC: Modtag og indlæs advis (teknisk)](#r.pc-modtag-og-indlæs-advis-teknisk)
     * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#r.pc.a1-modtag-og-kassér-advis-teknisk)
@@ -549,8 +549,8 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj"> Der er rettelser til et allerede udsendt advis   </td>
-    <td class="tg-tysj"> <a href="" rel="noopener noreferrer">S.CORR</a></td>
-    <td class="tg-tysj"><a href="" rel="noopener noreferrer">R.CORR</a></td>
+    <td class="tg-tysj"> <a href="#S.CORR-ret-sygehusophold-og-send-rettelsesadvis" rel="noopener noreferrer">S.CORR</a></td>
+    <td class="tg-tysj"><a href="#R.COR-modtag-advisering-om-rettet-advis" rel="noopener noreferrer">R.CORR</a></td>
   </tr>
 </tbody>
 </table>
@@ -709,7 +709,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
-    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case <a href="#S.CORR-ret-sygehusophold-og-send-rettelsesadvis" rel="noopener noreferrer">S.CORR</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -1045,7 +1045,7 @@ region (overflytning)
 </table>
 
 
-## S.CORR: Ret sygehusophold og send rettelsesadvis
+## S.CORR: Ret sygehusophold og send rettelsesadvis {#S.CORR-ret-sygehusophold-og-send-rettelsesadvis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width: 85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1107,7 +1107,7 @@ region (overflytning)
 </tbody>
 </table>
 
-## R.CORR: Modtag advisering om rettet advis
+## R.CORR: Modtag advisering om rettet advis {#R.COR-modtag-advisering-om-rettet-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width: 85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

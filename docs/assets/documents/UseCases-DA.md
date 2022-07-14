@@ -31,10 +31,10 @@
     * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#R.PC.A1-Modtage-og-kasser-advis)
 * [6 Regler for systemerne, som use casene beror på](#regler-for-systemerne-som-use-casene-beror-på)
   * [6.1 Regler for afsendersystemet, som use casene beror på](#regler-for-afsendersystemet-som-use-casene-beror-på)
-    * [6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser](#regler-vedr.-afsendelse-af-forskellige-typer-af-sygehusadviser)
-    * [6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification](#øvrige-regler-vedr.-forsendelse-af-hospitalnotification)
+    * [6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser](#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser)
+    * [6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification](#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification)
 * [6.2 Regler for modtagersystemet, som use casene beror på](#regler-for-modtagersystemet-som-use-casene-beror-på)
-  * [6.2.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedr.-modtagelse-af-hospitalnotification)
+  * [6.2.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
 
 
 
@@ -1322,7 +1322,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 
 ## Regler for afsendersystemet, som use casene beror på
 
-### Regler vedr. afsendelse af forskellige typer af sygehusadviser 
+### Regler vedr. afsendelse af forskellige typer af sygehusadviser {#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1418,7 +1418,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-### Øvrige regler vedr. forsendelse af HospitalNotification
+### Øvrige regler vedr. forsendelse af HospitalNotification {#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1466,7 +1466,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 
 ## Regler for modtagersystemet, som use casene beror på
 
-### Regler vedr. modtagelse af HospitalNotification
+### Regler vedr. modtagelse af HospitalNotification {#regler-vedrørende-modtagelse-af-hospital-notification}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

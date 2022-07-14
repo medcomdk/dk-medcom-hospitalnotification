@@ -11,10 +11,10 @@
   * [1.4 Referencer ](#referencer)
   * [1.5 Termer ](#termer)
   * [1.6 Afgrænsning ](#afgrænsning)
-  * [1.7 Læsevejledning ](#_Toc104888739)
-  * [2 Oversigt over use cases ](#oversigt-over-use-cases)
-* [2.1 Oversigt over primære og alternative use cases ](#oversigt-over-primære-og-alternative-use-cases)
-  * [2.2 Korrigerende use cases ](#korrigerende-use-cases)
+  * [1.7 Læsevejledning ](#Læsevejledning)
+* [2 Oversigt over use cases ](#oversigt-over-use-cases)
+  * [2.1 Oversigt over primære og alternative use cases ](#oversigt-over-primære-og-alternative-use-cases)
+  * [2.2 Korrigerende use cases ](#Korrigerende-use-cases)
   * [2.3 Teknisk validering af lovhjemmel til modtagelse ](#teknisk-validering-af-lovhjemmel-til-modtagelse)
 * [3 Use cases](#use-cases)
   * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
@@ -1290,7 +1290,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href=""rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj"><a href="#R.PC-Modtage-og-indlæs-advis" rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>

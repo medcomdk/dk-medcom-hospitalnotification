@@ -22,7 +22,7 @@
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
   * [3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
      * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
-* [4 Korrigerende use cases](#korrigerende-use-cases-1)
+* [4 Korrigerende use cases](#korrigerende-use-cases)
   * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
   * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#s.corr-ret-sygehusophold-og-send-rettelsesadvis)
@@ -909,7 +909,7 @@ region (overflytning)
 </tbody>
 </table>
 
-# Korrigerende use cases 
+# Korrigerende use cases {#Korrigernede-use-cases}
 
 ## S.CANC: Anullér et allerede udsendt advis {#S.CANC-annuler-et-allerede-udsendt-advis}
 <style type="text/css">
@@ -960,7 +960,7 @@ region (overflytning)
   </tr>
   <tr>
     <td class="tg-tysj"> </td>
-    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[AN_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke ### </td>
+    <td class="tg-tysj">4.       Systemaktør: Lægger pba. evalueringen en advis[AN_XX] uden anmodning om indlæggelsesrapport (XDIS16) i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) </td>
   </tr>
   <tr>
     <td class="tg-tysj">Slutresultat</td>

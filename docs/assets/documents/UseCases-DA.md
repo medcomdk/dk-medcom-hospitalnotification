@@ -24,7 +24,7 @@
      * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
 * [4 Korrigerende use cases](#korrigerende-use-cases-1)
   * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
-  * [4.2 R.CANC: Modtag advisering om annulleret advis](#r.canc-modtag-advisering-om-annulleret-advis)
+  * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
   * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#s.corr-ret-sygehusophold-og-send-rettelsesadvis)
   * [4.4 R.CORR: Modtag advisering om rettet advis](#r.corr-modtag-advisering-om-rettet-advis)
 * [5 Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse-1)
@@ -545,7 +545,7 @@ opbygget af nedenstående elementer:
   <tr>
     <td class="tg-tysj"> Der er behov for at annullere et allerede udsendt advis   </td>
     <td class="tg-tysj"><a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a><br></td>
-    <td class="tg-tysj"><a href="" rel="noopener noreferrer">R.CANC</a></td>
+    <td class="tg-tysj"><a href="#R.CANC-modtage-advisering-om-annulleret-advis" rel="noopener noreferrer">R.CANC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj"> Der er rettelser til et allerede udsendt advis   </td>
@@ -973,7 +973,7 @@ region (overflytning)
 </tbody>
 </table>
 
-## R.CANC: Modtage advisering om annulleret advis 
+## R.CANC: Modtage advisering om annulleret advis {#R.CANC-modtage-advisering-om-annulleret-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

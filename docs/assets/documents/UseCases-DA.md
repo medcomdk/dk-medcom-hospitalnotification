@@ -28,8 +28,8 @@
   * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#S.CORR-ret-sygehusophold-og-send-rettelsesadvis)
   * [4.4 R.CORR: Modtag advisering om rettet advis](#R.COR-modtag-advisering-om-rettet-advis)
 * [5 Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse-1)
-  * [5.1 R.PC: Modtag og indlæs advis (teknisk)](#r.pc-modtag-og-indlæs-advis-teknisk)
-    * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#r.pc.a1-modtag-og-kassér-advis-teknisk)
+  * [5.1 R.PC: Modtag og indlæs advis (teknisk)](#R.PC-Modtage-og-indlæs-advis)
+    * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#R.PC.A1-Modtage-og-kasser-advis)
 * [6 Regler for systemerne, som use casene beror på](#regler-for-systemerne-som-use-casene-beror-på)
   * [6.1 Regler for afsendersystemet, som use casene beror på](#regler-for-afsendersystemet-som-use-casene-beror-på)
     * [6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser](#regler-vedr.-afsendelse-af-forskellige-typer-af-sygehusadviser)
@@ -577,12 +577,12 @@ opbygget af nedenstående elementer:
   <tr>
     <td class="tg-0lax">Teknisk validering af lovhjemmel til modtagelse (positiv)<br></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax"><a href="" rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-0lax"><a href="#R.PC-Modtage-og-indlæs-advis" rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-0lax"><span style="font-style:italic">Teknisk validering af lovhjemmel til modtagelse (negativ)</span><br></td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax"><a href="" rel="noopener noreferrer">R.PC.A1</a></td>
+    <td class="tg-0lax"><a href="#R.PC.A1-Modtage-og-kasser-advis" rel="noopener noreferrer">R.PC.A1</a></td>
   </tr>
 </tbody>
 </table>
@@ -804,7 +804,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Startbetingelser/forudsætninger</td>
-    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) jf. <a href=""rel="noopener noreferrer">R.PC</a></td>
+    <td class="tg-tysj">Borgeren er registreret som indlagt på et sygehus.<br>Systemaktør har evalueret positivt, at adviset skal indlæses/lægges i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>) jf.  <a href="#R.PC-Modtage-og-indlæs-advis"rel="noopener noreferrer">R.PC</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Igangsættende hændelse</td>
@@ -1191,7 +1191,7 @@ casen supplerer de øvrige tekniske handlinger, som ligger før og efter
 brugeraktørens interaktion med systemet, og som er beskrevet i
 dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 
-## R.PC: Modtag og indlæs advis (teknisk)
+## R.PC: Modtag og indlæs advis (teknisk) {#R.PC-Modtage-og-indlæs-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1256,7 +1256,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a">Alternative handlinger</td>
-    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se  <span>’Generelle tekniske use cases’</span>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (<span>’Generelle tekniske use cases’</span>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="" target="_blank" rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
+    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se  <span>’Generelle tekniske use cases’</span>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (<span>’Generelle tekniske use cases’</span>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="#R.PC.A1-Modtage-og-kasser-advis"  rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
   </tr>
   <tr>
     <td class="tg-i91a">Korrigerende handlinger</td>
@@ -1269,7 +1269,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-### R.PC.A1 Modtag og kassér advis (teknisk) 
+### R.PC.A1 Modtag og kassér advis (teknisk) {#R.PC.A1-Modtage-og-kasser-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

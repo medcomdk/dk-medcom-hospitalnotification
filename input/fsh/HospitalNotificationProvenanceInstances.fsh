@@ -83,7 +83,7 @@ Description: "HospitalNotification Provenance - MORS (inpatient). The Provenance
 * target = Reference(hefc6d95-6161-4493-99c9-f359488dedb8)
 * occurredDateTime = 2021-01-13T13:44:14Z
 * recorded = 2021-01-13T13:45:15Z
-* activity.coding = $ActivityCode#discharge-inpatient-home
+* activity.coding = $ActivityCode#admit-inpatient
 * agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d) 
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
@@ -148,7 +148,7 @@ Description: "HospitalNotification Provenance - MORS (acute ambulant). The Prove
 * target = Reference(nabb68aa-c97b-4905-a60c-71ff3209fd51)
 * occurredDateTime = 2021-01-13T13:44:14Z
 * recorded = 2021-01-13T13:45:15Z
-* activity.coding = $ActivityCode#discharge-emergency-home
+* activity.coding = $ActivityCode#admit-emergency
 * agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity.role = #revision
 * entity.what = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029)

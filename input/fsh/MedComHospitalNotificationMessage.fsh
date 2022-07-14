@@ -296,7 +296,7 @@ Description: "Example of MedCom HospitalNotification - SLHJ Discharge inpatient"
 //Example of patient deceased message
 Instance: ld31e08a-b91f-49c3-841a-ce80e6380517
 InstanceOf: MedComHospitalNotificationMessage
-Title: "HospitalNotification Message - MORS (inpatient)"
+Title: "HospitalNotification Message - MORS (acute ambulant)"
 Description: "Example of MedCom HospitalNotification - MORS. Discharge when patient is deceased"
 * type = $BundleType#message
 * timestamp = 2021-01-13T13:44:14Z

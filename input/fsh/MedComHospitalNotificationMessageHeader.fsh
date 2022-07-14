@@ -22,93 +22,189 @@ InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
 * valueCoding = $Use#primary
 
-Instance: 51b27813-8aa8-4fa1-846b-aeabf5afb7d4
+Instance: a1b27813-8aa8-4fa1-846b-aeabf5afb7d4
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification admit message, reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
-Description: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
-Usage: #example
+Title: "HospitalNotification MessageHeader - STIN. reportOfAdmissionFlag = true"
+Description: "HospitalNotification MessageHeader - STIN. reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcomfhir.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
+* focus = Reference(a790f964-88d3-4652-bbc8-81d2f3d035f8)
 * extension[reportOfAdmissionFlag].valueBoolean = true
-* extension[reportOfAdmissionRecipient].valueReference = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* extension[reportOfAdmissionRecipient].valueReference = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
 // admit message 
-Instance: 29b4818e-02de-4cc4-b418-d20cbc7b5404
+Instance: b9b4818e-02de-4cc4-b418-d20cbc7b5404
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)"
-Description: "MessageHeader for a HospitalNotification  admit message, reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
-Usage: #example
+Title: "HospitalNotification MessageHeader - STIN. reportOfAdmissionFlag = false"
+Description: "HospitalNotification MessageHeader - STIN. reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
+* focus = Reference(a790f964-88d3-4652-bbc8-81d2f3d035f8)
 * extension[reportOfAdmissionFlag].valueBoolean = false
 
-
-Instance: b563a2b2-bf92-4b13-bbd2-0a021a95bded
+// admit message 
+Instance: cc47c1e2-78e6-4291-b071-f423a4f7fbfe
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification start leave message. Valid only if used in a bundle (message)"
-Description: "MessageHeader for a HospitalNotification start leave message. Valid only if used in a bundle (message)."
+Title: "HospitalNotification MessageHeader - RE_STIN. reportOfAdmissionFlag = false"
+Description: "HospitalNotification MessageHeader - RE_STIN. reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(b9846c24-0335-11ed-b939-0242ac120002)
+* extension[reportOfAdmissionFlag].valueBoolean = false
+
+// admit message 
+Instance: d8749b54-1aeb-4089-8941-8d876bdffc51
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - AN_STIN."
+Description: "HospitalNotification MessageHeader - AN_STIN. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(c9782061-ce63-41b5-8be6-655812d23332)
+
+Instance: e563a2b2-bf92-4b13-bbd2-0a021a95bded
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - STOR."
+Description: "HospitalNotification MessageHeader - STOR. Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcomfhir.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(556e9c54-23d2-43a4-816e-951d2a6e3281)
-* extension[reportOfAdmissionFlag].valueBoolean = false
+* focus = Reference(d56e9c54-23d2-43a4-816e-951d2a6e3281)
 
-Instance: e47254da-f170-46f0-b624-4778a9c92b1f
+Instance: f47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification end leave message. Valid only if used in a bundle (message)"
-Description: "MessageHeader for a HospitalNotification end leave message. Valid only if used in a bundle (message)."
+Title: "HospitalNotification MessageHeader - SLOR."
+Description: "HospitalNotification MessageHeader - SLOR. Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcomfhir.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(7790f964-88d3-4652-bbc8-81d2f3d035f8)
-* extension[reportOfAdmissionFlag].valueBoolean = false 
+* focus = Reference(e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b)
 
-Instance: 01affa53-c157-4080-abb0-8e681524f969
+Instance: g1affa53-c157-4080-abb0-8e681524f969
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification discharge message. Valid only if used in a bundle (message)"
-Description: "MessageHeader for a HospitalNotification discharge message. Valid only if used in a bundle (message)."
-Usage: #example
+Title: "HospitalNotification MessageHeader - SLHJ (inpatient)."
+Description: "HospitalNotification MessageHeader - SLHJ (inpatient). Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcomfhir.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(8405ba2d-467a-4e92-9acc-9dc2a629760f)
-* extension[reportOfAdmissionFlag].valueBoolean = false
-
-
+* focus = Reference(f405ba2d-467a-4e92-9acc-9dc2a629760f)
 
 // Discharge message - patient discharged as deceased
-Instance: 8efc6d95-6161-4493-99c9-f359488dedb8
+Instance: hefc6d95-6161-4493-99c9-f359488dedb8
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "MessageHeader for a HospitalNotification discharge message when patient is deceased. Valid only if used in a bundle (message)"
-Description: "MessageHeader for a HospitalNotification discharge message when patient is deceased. Valid only if used in a bundle (message)."
-Usage: #inline
+Title: "HospitalNotification MessageHeader - MORS (inpatient)."
+Description: "HospitalNotification MessageHeader - MORS (inpatient). Valid only if used in a bundle (message)."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
 * destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(1cab7218-9584-11ec-b909-0242ac120002)
+* focus = Reference(gcab7218-9584-11ec-b909-0242ac120002)
+
+
+// Use cases associated with acute ambulant hospitalization
+
+Instance: i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - STAA. reportOfAdmissionFlag = true"
+Description: "HospitalNotification MessageHeader - STAA. reportOfAdmissionFlag sat to true. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcomfhir.dk/unknown"
+* focus = Reference(h2cb16ce-af8c-46f3-be9e-89406ef3e7b5)
+* extension[reportOfAdmissionFlag].valueBoolean = true
+* extension[reportOfAdmissionRecipient].valueReference = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+
+// admit message 
+Instance: j3675c4a-33db-40f1-b578-ff16e3e9134c
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - STAA. reportOfAdmissionFlag = false"
+Description: "HospitalNotification MessageHeader - STAA. reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(h2cb16ce-af8c-46f3-be9e-89406ef3e7b5)
 * extension[reportOfAdmissionFlag].valueBoolean = false
 
+// admit message 
+Instance: k06f2487-7aab-4e35-9a80-70431060a7e8
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - RE_STAA. reportOfAdmissionFlag = false"
+Description: "HospitalNotification MessageHeader - RE_STAA. reportOfAdmissionFlag sat to false. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(i458ddc8-fea4-41c3-992b-ff73cb6f657b)
+* extension[reportOfAdmissionFlag].valueBoolean = false
 
+// admit message 
+Instance: l3398a98-37ed-4bff-8e19-cc78ccb5b5f2
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - AN_STAA."
+Description: "HospitalNotification MessageHeader - AN_STAA. Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(j245dcc2-8668-4fcf-ae5f-d49a50bfc2d4)
 
+Instance: m9bea09c-e662-4d59-b84f-9af570b57f42
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - SLHJ (acute ambulant)."
+Description: "HospitalNotification MessageHeader - SLHJ (acute ambulant). Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcomfhir.dk/unknown"
+* focus = Reference(kbbad98c-3310-404a-af0c-7e3739d7b49f)
+
+// Discharge message - patient discharged as deceased
+Instance: nabb68aa-c97b-4905-a60c-71ff3209fd51
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - MORS (acute ambulant)."
+Description: "HospitalNotification MessageHeader - MORS (acute ambulant). Valid only if used in a bundle (message)."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "http://medcom.dk/unknown"
+* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* source.endpoint = "http://medcom.dk/unknown"
+* focus = Reference(l001c640-6b5d-414c-b6bd-e00ec6d4ceee)

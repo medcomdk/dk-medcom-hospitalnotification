@@ -20,8 +20,8 @@
   * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
-  * [3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport]  (#modtageadvisering_om_indlæggelse_og_send_indlæggeæsesrapport)
-    * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
+  *[3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
+     * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
 * [4 Korrigerende use cases](#korrigerende-use-cases-1)
   * [4.1 S.CANC: Annullér et allerede udsendt advis](#s.canc-annullér-et-allerede-udsendt-advis)
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#r.canc-modtag-advisering-om-annulleret-advis)
@@ -773,7 +773,9 @@ opbygget af nedenstående elementer:
 
 
 
-## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#modtageadvisering-om-indlæggelse-og-send-indlæggeæsesrapport}
+## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport}
+
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -874,7 +876,7 @@ region (overflytning)
 <tbody>
   <tr>
     <td class="tg-tysj">Reference til use case som denne use case er et alternativ til</td>
-    <td class="tg-tysj"><a href="#modtageadvisering-om-indlæggelse-og-send indlæggeæsesrapport" target="_blank" rel="noopener noreferrer">R1</a></td>
+    <td class="tg-tysj"><a href="#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport" target="_blank" rel="noopener noreferrer">R1</a></td>
   </tr>
   <tr>
     <td class="tg-tysj">Handlinger</td>

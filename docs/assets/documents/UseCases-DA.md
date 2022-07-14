@@ -20,10 +20,10 @@
   * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
-  *[3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
+  * [3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
      * [3.2.2 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
 * [4 Korrigerende use cases](#korrigerende-use-cases-1)
-  * [4.1 S.CANC: Annullér et allerede udsendt advis](#s.canc-annullér-et-allerede-udsendt-advis)
+  * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#r.canc-modtag-advisering-om-annulleret-advis)
   * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#s.corr-ret-sygehusophold-og-send-rettelsesadvis)
   * [4.4 R.CORR: Modtag advisering om rettet advis](#r.corr-modtag-advisering-om-rettet-advis)
@@ -506,7 +506,7 @@ opbygget af nedenstående elementer:
   <tr>
     <td class="tg-tysj">   <br>Patientens indlægges  </td>
     <td class="tg-tysj">   <br> <a href="#s1-indlæg-patient-og-send-advis" rel="noopener noreferrer">S1</a> </td>
-    <td class="tg-tysj">   <br> <a href="#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport" rel="noopener noreferrer">R1</a> </td>
+    <td class="tg-tysj">   <br> <a href="#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport" rel="noopener noreferrer">R1</a> </td>
   </tr>
   <tr>
     <td class="tg-tysj">   <br>Patienten indlægges   på andet sygehus i samme region (overflytning)   </td>
@@ -544,7 +544,7 @@ opbygget af nedenstående elementer:
 <tbody>
   <tr>
     <td class="tg-tysj"> Der er behov for at annullere et allerede udsendt advis   </td>
-    <td class="tg-tysj"><a href="" rel="noopener noreferrer">S.CANC</a><br></td>
+    <td class="tg-tysj"><a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a><br></td>
     <td class="tg-tysj"><a href="" rel="noopener noreferrer">R.CANC</a></td>
   </tr>
   <tr>
@@ -652,7 +652,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
-    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case [S.CANC](#SCANC)<br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case [S.CANC](#SCANC)<br>1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case [S.CANC](#SCANC)<br></td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case [<a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a>]<br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case [<a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a>]<br>1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case [<a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a>]<br></td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -709,7 +709,7 @@ opbygget af nedenstående elementer:
   </tr>
   <tr>
     <td class="tg-tysj">Korrigerende handlinger</td>
-    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="" target="_blank" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
+    <td class="tg-tysj">1a Brugeraktør har registreret forkert cpr.nr. indlagt og dermed aktiveret afsendelse af advis[STIN] på forkert patient, se use case <a href="#S.CANC-annuler-et-allerede-udsendt-advis" rel="noopener noreferrer">S.CANC</a><br>1b Brugeraktør har fejlagtigt registreret patienten som ’akut ambulant’ i stedet for indlagt, se use case<br> 1c Brugeraktør har registreret forkert sygehusafdeling eller tidspunkt, se use case S.CORR </td>
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
@@ -911,7 +911,7 @@ region (overflytning)
 
 # Korrigerende use cases 
 
-## S.CANC: Anullér et allerede udsendt advis
+## S.CANC: Anullér et allerede udsendt advis {#S.CANC-annuler-et-allerede-udsendt-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

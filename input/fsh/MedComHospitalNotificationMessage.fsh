@@ -251,7 +251,7 @@ Title: "HospitalNotification Message - AN_STAA"
 Description: "Example of MedCom HospitalNotification - AN_STAA. Cancel Admission"
 * type = $BundleType#message
 * timestamp = 2020-10-15T13:44:14Z
-* entry[+].fullUrl = "MessageHeader/l3398a98-37ed-4bff-8e19-cc78ccb5b5f21"
+* entry[+].fullUrl = "MessageHeader/l3398a98-37ed-4bff-8e19-cc78ccb5b5f2"
 * entry[=].resource = l3398a98-37ed-4bff-8e19-cc78ccb5b5f2
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1

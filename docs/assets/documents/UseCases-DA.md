@@ -15,7 +15,6 @@
 * [2 Oversigt over use cases ](#oversigt-over-use-cases)
   * [2.1 Oversigt over primære og alternative use cases ](#oversigt-over-primære-og-alternative-use-cases)
   * [2.2 Korrigerende use cases ](#Korrigerende-use-cases)
-  * [2.3 Teknisk validering af lovhjemmel til modtagelse ](#teknisk-validering-af-lovhjemmel-til-modtagelse)
 * [3 Use cases](#use-cases)
   * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
@@ -27,7 +26,7 @@
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
   * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#S.CORR-ret-sygehusophold-og-send-rettelsesadvis)
   * [4.4 R.CORR: Modtag advisering om rettet advis](#R.COR-modtag-advisering-om-rettet-advis)
-* [5 Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse-1)
+* [5 Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse)
   * [5.1 R.PC: Modtag og indlæs advis (teknisk)](#R.PC-Modtage-og-indlæs-advis)
     * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#R.PC.A1-Modtage-og-kasser-advis)
 * [6 Regler for systemerne, som use casene beror på](#regler-for-systemerne-som-use-casene-beror-på)
@@ -909,7 +908,7 @@ region (overflytning)
 </tbody>
 </table>
 
-# Korrigerende use cases {#Korrigernede-use-cases}
+# Korrigerende use cases {#Korrigerende-use-cases}
 
 ## S.CANC: Anullér et allerede udsendt advis {#S.CANC-annuler-et-allerede-udsendt-advis}
 <style type="text/css">

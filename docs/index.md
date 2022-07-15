@@ -14,7 +14,7 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
 
 **Table of Content**
 - [MedCom HospitalNotification](#medcom-hospitalnotification)
-  * [Documentation](#-standard-documentation)
+  * [Standard Documentation](#standard-documentation)
     + [Clinical Guidelines](#clinical-guidelines)
     + [Use Cases](#use-cases)
     + [Technical Specification](#technical-specification)

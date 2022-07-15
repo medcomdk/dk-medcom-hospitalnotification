@@ -2,7 +2,7 @@
 
 # Use cases for HospitalNotification
 
-## Introduktion
+## Introduction
 
 This document contains a number of use case descriptions and is part of the documentation of Med-Com’s FHIR-standard “HospitalNotification”. 
 The documentation consists of 3 parts, accessible via [the frontpage of HospitalNotification](./docs/index.md).
@@ -23,7 +23,7 @@ Currently, the use case descriptions do not include the consignment of hospital 
  
 ### Method for use case descriptions
 
-The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Every case consists of the following elements. A definition for both [business-related](#business-related-use-cases) and [technical](#technical-use-cases) use cases can be found in the following as well.
+The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Every case consists of the following elements. A definition for both [business-related](#business-related-use-cases) and [technical](#technical-use-cases) use cases can be found further down on this page.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

@@ -313,7 +313,7 @@ cases](#_Juridisk_grundlag)".
 
 <figure>
 <img src="../images/Forsendelsesflow.png" alt="Illustration af forsendelsesflow" style="width:85%" id="Fig1">
-<figcaption align = "center"><b>Figur 1: Illustration af forsendelsesflow </b></figcaption>
+<figcaption text-align = "center"><b>Figur 1: Illustration af forsendelsesflow </b></figcaption>
 </figure>
 
 
@@ -323,7 +323,7 @@ sygehusophold" på alle borgere med cpr.nr. og fast bopælsadresse i
 Danmark ved registrering i sygehusets EPJ-system. Det er op til
 modtagersystemet at sikre, at advis om sygehusophold kun indlæses og
 synliggøres på borgere, som modtager ydelser indenfor [det gældende
-lovgrundlag](#_Juridisk_grundlag). Derfor er der i dette dokument
+lovgrundlag](#juridisk_grundlag). Derfor er der i dette dokument
 tilføjet en teknisk forudsætnings-use case, som beskriver de
 ekstra/særlige tekniske handlinger, der, forud for brugeraktørens
 interaktion med systemet, er nødvendige for at sikre, at
@@ -674,7 +674,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c;font-weight:bold;text-align:center">Alternativ use case 1: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
+<caption style="color:#2c415c;font-weight:bold;text-align:center">Use case: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead id="#UC2">
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A1</th>
@@ -730,7 +730,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold; text-align:center">Alternativ use case 2: Patienten indlægges uden afsændelse af advis [STIN]</caption>
+<caption style="color:#2c415c; font-weight:bold; text-align:center">Use case: Patienten indlægges uden afsændelse af advis [STIN]</caption>
 <thead id="#UC3">
   <tr>
     <th class="tg-pu9k">Alternativ use case S1.A2</th>
@@ -785,7 +785,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: Afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
 <thead id="#UC4">
   <tr>
     <th class="tg-pu9k">Use case R1</th>
@@ -865,7 +865,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Modtager use case 2: Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case : Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
 <thead id="#UC5">
   <tr>
     <th class="tg-pu9k">Alternativ use case R1.A1</th>
@@ -921,7 +921,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Anulleér udesendt advis </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Anulleér udesendt advis </caption>
 <thead id="UC6">
   <tr>
     <th class="tg-pu9k">Use case S.CANC</th>
@@ -984,7 +984,7 @@ region (overflytning)
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center"> Korrigerende use case: Modtag advisering om annulleret advis</caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: Modtag advisering om annulleret advis</caption>
 <thead id="UC7">
   <tr>
     <th class="tg-pu9k">Use case R.CANC</th>
@@ -1055,7 +1055,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Ret sygehusophold og send rettelsesadvi </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Ret sygehusophold og send rettelsesadvis </caption>
 <thead id="UC8">
   <tr>
     <th class="tg-pu9k">Use case S.CORR</th>
@@ -1118,7 +1118,7 @@ region (overflytning)
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Korrigerende use case: Modtag advisering om rettet advis </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Modtagelse af advisering om rettet advis </caption>
 <thead id="UC9">
   <tr>
     <th class="tg-67v1">Use case R.CORR</th>
@@ -1201,7 +1201,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 .tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case: Modtagelse og indlæsning af advis </caption>
 <thead id="UC 10">
   <tr>
     <th class="tg-67v1">Use case R.PC</th>
@@ -1279,7 +1279,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case over modtagelse og kassering af en advis </caption>
 <thead id="UC11">
   <tr>
     <th class="tg-pu9k">Use case R.PC.A1</th>
@@ -1333,7 +1333,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 10: Regler for afsendelse af forskellige typer af sygehusadvis </caption>
 <thead id="RG1">
   <tr>
     <th class="tg-pu9k">   <br>ID   </th>
@@ -1429,7 +1429,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 11: Øvrige relger for forsendelse af HospitalNotification</caption>
 <thead id="RG2">
   <tr>
     <th class="tg-pu9k">   <br>ID   </th>
@@ -1477,7 +1477,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case </caption>
+<caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 12: Regler for modtagelse af HospitalNotification </caption>
 <thead id="RG3">
   <tr>
     <th class="tg-pu9k">ID</th>

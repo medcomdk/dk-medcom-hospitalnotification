@@ -18,8 +18,6 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
     + [Clinical Guidelines](#clinical-guidelines)
     + [Use Cases](#use-cases)
     + [Technical Specification](#technical-specification)
-      - [Implementation Guide](#implementation-guide)
-      - [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
     + [HospitalNotification Activity Codes](#hospitalnotification-activity-codes)
     + [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
   * [Test and Certification](#test-and-certification)

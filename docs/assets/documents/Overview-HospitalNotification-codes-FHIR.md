@@ -20,6 +20,7 @@ notification has been sent by a mistake. For example, if Encounter.status was �
 * If a patient dies, it must be noted in the element Patient.deceased. In this case, the element must be ‘true’.
 <p>&nbsp;<p>
 
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:90%;width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

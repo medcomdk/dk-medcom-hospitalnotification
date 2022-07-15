@@ -210,7 +210,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center ">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
-<thead id="#3">
+<thead id="3">
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Navn på advis notifikation</span></th>

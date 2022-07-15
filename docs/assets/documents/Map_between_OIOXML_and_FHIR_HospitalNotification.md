@@ -5,7 +5,7 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
 > Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app called FHIRPath tester. In other applications, are the apostrophe ( ‘…’ ) might not used.
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0; width:70%}
+.tg  {border-collapse:collapse;border-spacing:0; max-width:60%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

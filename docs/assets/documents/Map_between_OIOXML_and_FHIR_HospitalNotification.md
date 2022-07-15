@@ -209,17 +209,17 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
     <td class="tg-uwa6" rowspan="2">This information is depending on the SOR identifier and shall only be included, if the OrganizationName is given in the SOR identifier.</td>
   </tr>
   <tr>
-    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').name</td>
+    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.<br>reference.replace('Organization/','')).resource.ofType('Organization').name</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">Receiver organization</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.receiver.<br>OrganizationName</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.destination.primary.receiver.medcomMessaging<br>Organization.name</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.destination.primary.<br>receiver.medcomMessagingOrganization.name</td>
     <td class="tg-o5v9" rowspan="2">Yes</td>
     <td class="tg-o5v9" rowspan="2">This information is depending on the SOR identifier and shall only be included, if the OrganizationName is given in the SOR identifier.  </td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).resource.ofType<br>('Organization').name</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).<br>resource.ofType('Organization').name</td>
   </tr>
   <tr>
     <td class="tg-uwa6" rowspan="2">Sender department</td>

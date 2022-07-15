@@ -10,8 +10,7 @@ The original code on the left reflects the content of the use case, then follows
 columns reflect the values from the 4 elements from ‘Encounter’, ‘Provenance’ and ‘Patient’.
 
 Comments to the table:
-* Where there are two values in the Encounter.Class column, the value depends on what value the previous message with
-Encounter.Class had, except when a patient change hospital stay type from ‘emergency’ (EMER) to ‘inpatient’ (IMP).
+* If there are two values in the Encounter.class column, the value depends on what value the previous message with Encounter.class had. The only exception is when a patient change hospital stay type from ‘emergency´ (EMER) to ‘inpatient’ (IMP).
 * ”current activity” describes that the activity from the previous message must be use. For example, if a patient is admitted for a
 hospital stay-admission, and dies during the admission, the element Provenance.activity must in both messages be ‘admit-
 inpatient’.

@@ -197,7 +197,7 @@ længerevarende botilbud
 </table>
 
 
-I use case beskrivelserne anvendes følgende koder (<a href="#Table3" rel="noopener noreferrer">se table 3 </a>) for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i (<a href="#Table3" rel="noopener noreferrer"> table 3 </a>)  herunder. 
+I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener noreferrer">se tabel 3 </a>) for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i (<a href="#3" rel="noopener noreferrer"> table 3 </a>)  herunder. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
@@ -210,7 +210,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#Table3" rel="noope
 </style>
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center ">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
-<thead id="#Table3">
+<thead id="#3">
   <tr>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Kode</span></th>
     <th class="tg-wqo7"><span style="font-weight:bold;background-color:#FFF">Navn på advis notifikation</span></th>

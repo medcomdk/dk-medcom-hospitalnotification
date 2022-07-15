@@ -335,10 +335,10 @@ af sygehusadviser til flere modtagere samt det efterfølgende
 kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
 
 ## Læsevejledning
-se casene i dokumentet beskriver et detaljeret forløb over
+Use casene i dokumentet beskriver et detaljeret forløb over
 *brugeraktørens* interaktion med systemet ved forskellige hændelser.
 Baggrunden for use casene er en række (forretnings)regler for
-anvendelse, som fremgår af afsnit 6 Regler for systemerne, som use
+anvendelse, som fremgår af afsnit (<a href="#regler-for-systemerne-som-use-casene-beror-på" rel="noopener noreferrer">Regler for systemerne </a>), som use
 casene beror på.
 
 Der skelnes mellem tre forskellige typer af use cases:

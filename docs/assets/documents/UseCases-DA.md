@@ -119,7 +119,7 @@ længerevarende botilbud
   <tr>
     <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br>< <a href="../documents/Cliical-guidelines-DA" rel="noopener noreferrer"> Sundhedsfaglige retningslinjer </a> </td>
+    <td class="tg-tysj">   <br> <a href="../documents/Cliical-guidelines-DA" rel="noopener noreferrer"> Sundhedsfaglige retningslinjer </a> </td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>

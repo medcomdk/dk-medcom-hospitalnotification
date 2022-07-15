@@ -111,7 +111,7 @@ længerevarende botilbud
     <td class="tg-tysj">   <br>Skabelon, som disse use cases er udarbejdet på baggrund af   </td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Generelle tekniske   use cases   </td>
+    <td class="tg-tysj">   <br>Generelle tekniske  use cases   </td>
     <td class="tg-tysj">   <br>1.0.0-rc.1   </td>
     <td class="tg-tysj">   <br><span style="background-color:yellow">LINK</span>   </td>
     <td class="tg-tysj">   <br>Detaljerede use case-beskrivelser af de tekniske handlinger, der sker   før og efter brugeraktørens interaktion i systemet, herunder kommunikationen   med kommunikationsnetværket vedr. afsendelse og modtagelse af meddelelser og   kvitteringer.   </td>
@@ -119,7 +119,7 @@ længerevarende botilbud
   <tr>
     <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br>< <a href="../../index.md" rel="noopener noreferrer"> Link</a> </td>
+    <td class="tg-tysj">   <br>< <a href="../documents/Cliical-guidelines-DA" rel="noopener noreferrer"> Sundhedsfaglige retningslinjer </a> </td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>

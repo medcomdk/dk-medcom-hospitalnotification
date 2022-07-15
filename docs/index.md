@@ -14,13 +14,13 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
 
 **Table of Content**
 - [MedCom HospitalNotification](#medcom-hospitalnotification)
-  * [1 Documentation](#1-documentation)
+  * [Documentation](#-standard-documentation)
     + [Clinical Guidelines](#clinical-guidelines)
     + [Use Cases](#use-cases)
     + [Technical Specification](#technical-specification)
       - [Implementation Guide](#implementation-guide)
       - [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
-    + [HospitalNotification Codes in FHIR](#hospitalnotification-codes-in-fhir)
+    + [HospitalNotification Activity Codes](#hospitalnotification-activity-codes)
     + [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
   * [2 Test and Certification](#2-test-and-certification)
     + [Testprotocols](#testprotocols)
@@ -28,7 +28,7 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
 <p>&nbsp;</p>
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
-## 1 Documentation 
+## Standard Documentation 
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the HospitalNotification message, what to implement and how to get a MedCom certificate. The standard documentation for HospitalNotification includes: 
 * Clinical Guidelines
 * Use cases
@@ -70,7 +70,7 @@ IGs might be difficult for people with little or no knowledge about FHIR and how
 
 
 
-### HospitalNotification Codes in FHIR
+### HospitalNotification Activity Codes
 
 The purpose of presenting the activity codes, is to help vendors of IT-systems implement the codes in the same way.  This is important as the receiver of the HospitalNotification message, in this case the municipalities, will act in accordance with the activity codes.
 

@@ -119,7 +119,7 @@ længerevarende botilbud
   <tr>
     <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK</span>   </td>
+    <td class="tg-tysj">   <br>< <a href="../../index.md" rel="noopener noreferrer"> Link</a> </td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>
@@ -307,7 +307,7 @@ tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" r
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
 meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
-valideret) meddelelse i Fagsystemets forretningsmæssige indbakke(<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
+valideret) meddelelse i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
 uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 

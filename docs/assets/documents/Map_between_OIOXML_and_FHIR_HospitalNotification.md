@@ -6,7 +6,7 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
 > Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app called FHIRPath tester. In other applications, are the apostrophe ( ‘…’ ) might not used.
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0; max-width:60%}
+.tg  {border-collapse:collapse;border-spacing:0;width:70%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -15,13 +15,13 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
 .tg .tg-8j8v{background-color:#ffffff;border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
-<table class="tg" style="undefined;table-layout: fixed; width: 2201px">
+<table class="tg" style="undefined;table-layout: fixed; width: 1795px">
 <colgroup>
-<col style="width: 192.88889px">
-<col style="width: 353.88889px">
-<col style="width: 865.88889px">
+<col style="width: 165.88889px">
+<col style="width: 328.88889px">
+<col style="width: 705.88889px">
 <col style="width: 100.88889px">
-<col style="width: 687.88889px">
+<col style="width: 493.88889px">
 </colgroup>
 <thead>
   <tr>
@@ -140,7 +140,7 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-o5v9" rowspan="2">Episode of care identifier</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.Letter.NotificationIdentifier</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.<br>episodeOfCare.identifier.value</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationEncounter.episodeOfCare.identifier.value</td>
     <td class="tg-o5v9" rowspan="2">No</td>
     <td class="tg-o5v9" rowspan="2">A unique identifier for the episode of care.</td>
   </tr>
@@ -150,12 +150,12 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-uwa6" rowspan="2">EAN id for sender</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.sender.<br>EANIdentifier</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.MedComMessagingOrganization.<br>identifier.eanIdentifier</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.MedComMessaging<br>Organization.identifier.eanIdentifier</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">The EAN identifier for a sending organization.</td>
   </tr>
   <tr>
-    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).resource.ofType('Organization').<br>identifier.where(system = 'urn:oid:1.3.88').value</td>
+    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">EAN id for receiver</td>
@@ -165,17 +165,17 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
     <td class="tg-o5v9" rowspan="2">The EAN identifier for a receiving organization.</td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
   </tr>
   <tr>
     <td class="tg-uwa6" rowspan="2">Sender id</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.sender.Identifier</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.MedcomMessagingOrganization.identifier</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.<br>MedcomMessagingOrganization.identifier</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">The identifier that describes the sender of the HospitalNotification message. Both a SOR- and EAN-identifier must be sent.</td>
   </tr>
   <tr>
-    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).resource.ofType('Organization').identifier</td>
+    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">Receiver id</td>
@@ -185,7 +185,7 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
     <td class="tg-o5v9" rowspan="2">The identifier that describes the receiver of the HospitalNotification message. Both a SOR- and EAN-identifier must be sent.  </td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).resource.ofType<br>('Organization').identifier</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier</td>
   </tr>
   <tr>
     <td class="tg-uwa6">Sender type</td>
@@ -204,12 +204,12 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-uwa6" rowspan="2">Sender organization</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.sender.<br>OrganizationName</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.medcomMessagingOrganization.name</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.<br>medcomMessagingOrganization.name</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">This information is depending on the SOR identifier and shall only be included, if the OrganizationName is given in the SOR identifier.</td>
   </tr>
   <tr>
-    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).resource.ofType('Organization').name</td>
+    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').name</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">Receiver organization</td>
@@ -224,22 +224,22 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-uwa6" rowspan="2">Sender department</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.sender.<br>DepartmentName</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.medcomMessagingOrganization.name</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.<br>medcomMessagingOrganization.name</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">This information is depending on the SOR identifier and shall only be included, if the DepartmentName is given in the SOR identifier.</td>
   </tr>
   <tr>
-    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).resource.ofType('Organization').name</td>
+    <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').name</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">Sender unit</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.sender.UnitName</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.medcomMessagingOrganization.name</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.<br>medcomMessagingOrganization.name</td>
     <td class="tg-o5v9" rowspan="2">Yes</td>
     <td class="tg-o5v9" rowspan="2">This information is depending on the SOR identifier and shall only be included, if the UnitName is given in the SOR identifier.  </td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).resource.ofType('Organization').name</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').name</td>
   </tr>
   <tr>
     <td class="tg-uwa6">Sender telephone</td>
@@ -251,17 +251,17 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-o5v9" rowspan="2">Answer to EAN id</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.sender.AnswerTo.<br>EANIdentifier</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationReportOfAdmissionRecipientExtension.MedComMessagingOrganization.identifier:eanIdentifier</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationReportOfAdmissionRecipientExtension.MedComMessagingOrganization.identifier:<br>eanIdentifier</td>
     <td class="tg-o5v9" rowspan="2">Yes</td>
     <td class="tg-o5v9" rowspan="2">Contains EANidentifier for the recipient of the report of admission.</td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').extension.where(url = 'http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionRecipientExtension').value.reference.replace('Organization/','')).resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').extension.where(url = 'http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-messaging-reportOfAdmissionRecipientExtension').value.reference.replace('Organization/','')).resource.ofType<br>('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
   </tr>
   <tr>
     <td class="tg-uwa6" rowspan="2">Patient id</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.Patient.<br>CivilRegistrationNumber</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.<br>MedComCorePatient.identifier.cpr</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationEncounter.MedComCorePatient.identifier.cpr</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">Information about the patient cpr-identifier.</td>
   </tr>
@@ -271,17 +271,17 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-o5v9" rowspan="2">Episode of care status</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.Patient.<br>EpisodeOfCareStatusCode</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComMessagingProvenance.activity.coding.<br>code MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.<br>MedComCorePatient.deceased</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComMessagingProvenance.activity.coding.code MedComHospitalNotificationMessage.<br>MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.<br>MedComCorePatient.deceased</td>
     <td class="tg-o5v9" rowspan="2">Yes (all)</td>
     <td class="tg-o5v9" rowspan="2">The HospitalNotification message episodeofcare status is more complexed than the OIOXML message, please refer to the implementation guide for more information.</td>
   </tr>
   <tr>
-    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Provenance').target.reference.replace('MessageHeader/','') = %resource.entry.resource.ofType('MessageHeader').id).resource.ofType('Provenance').activity.coding.codeBundle.entry.resource.<br>ofType('Patient').deceased</td>
+    <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Provenance').target.reference.replace('MessageHeader/','') = %resource.entry.resource.ofType('MessageHeader').id).resource.ofType('Provenance').activity.coding.<br>codeBundle.entry.resource.ofType('Patient').deceased</td>
   </tr>
   <tr>
     <td class="tg-uwa6" rowspan="2">Notification start date</td>
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.Admission.Date</td>
-    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.period.start</td>
+    <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationEncounter.period.start</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
     <td class="tg-uwa6" rowspan="2">The start of the admission. Date and time are included in the same element.</td>
   </tr>
@@ -291,7 +291,7 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   <tr>
     <td class="tg-o5v9" rowspan="2">Notification start time</td>
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.Admission.Time</td>
-    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.MedComHospitalNotificationEncounter.period.start</td>
+    <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.<br>MedComHospitalNotificationEncounter.period.start</td>
     <td class="tg-o5v9" rowspan="2">Yes</td>
     <td class="tg-o5v9" rowspan="2">The start of the admission. Date and time are included in the same element.</td>
   </tr>
@@ -300,5 +300,3 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
   </tr>
 </tbody>
 </table>
-
-

@@ -22,9 +22,9 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
       - [Introduction to the Technical Specifications](#introduction-to-the-technical-specifications)
     + [HospitalNotification Activity Codes](#hospitalnotification-activity-codes)
     + [Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
-  * [2 Test and Certification](#2-test-and-certification)
+  * [Test and Certification](#test-and-certification)
     + [Testprotocols](#testprotocols)
-  * [3 Release Notes](#3-release-notes)
+  * [Release Notes](#release-notes)
 <p>&nbsp;</p>
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
@@ -84,7 +84,7 @@ Mapping from previous OIOXML standards to FHIR HospitalNotification standard can
 
 [The mapping can be found here.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)
 
-## 2 Test and Certification
+## Test and Certification
 
 Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. 
 TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
@@ -102,5 +102,5 @@ Testprotocols and testscripts are used to test and certify MedCom HospitalNotifi
 <p>&nbsp;</p>
 
 
-## 3 Release Notes
+## Release Notes
 [Updates in the latest release.](assets/documents/ReleaseNote-ENG.md)

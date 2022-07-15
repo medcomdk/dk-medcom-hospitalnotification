@@ -197,7 +197,7 @@ længerevarende botilbud
 </table>
 
 
-I use case beskrivelserne anvendes følgende koder for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
+I use case beskrivelserne anvendes følgende koder (<a href="#Tb3" rel="noopener noreferrer">se table 3 </a>) for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i tabellen herunder. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}

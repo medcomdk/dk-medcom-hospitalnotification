@@ -86,6 +86,7 @@ længerevarende botilbud.
 <p>&nbsp;</p>
 
 ## 1.4 Referencer 
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -119,9 +120,9 @@ længerevarende botilbud.
     <td class="tg-tysj">   <br>Detaljerede use case-beskrivelser af de tekniske handlinger, der sker   før og efter brugeraktørens interaktion i systemet, herunder kommunikationen   med kommunikationsnetværket vedr. afsendelse og modtagelse af meddelelser og   kvitteringer.   </td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK på vej</span> Sundhedsfaglige og tekniske behov </td>
+    <td class="tg-tysj">   <br> Sundhedsfaglige og tekniske behov </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br> </td>
+    <td class="tg-tysj">   <br> <span style="background-color:yellow">LINK på vej</span> </td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>

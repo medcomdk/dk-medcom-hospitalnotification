@@ -47,7 +47,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 3. Navn på sygehusafdeling/afsnit og sygehus
 4. Angivelse af, om adviset skal trigge en indlæggelsesrapport fra modtager af advis
 5. Angivelse af, hvortil indlæggelsesrapport skal sendes
-6. Status for sygehusophold (jf. Tabel 1). 
+6. Status for sygehusophold (jf.<a href="#Tabel1" rel="noopener noreferrer">se tabel 1 </a>). 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -62,7 +62,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 <table class="tg">
 <caption style="color:#2c415c;
   font-weight:bold"> Tabel 1: Status for sygehusophold</caption>
-<thead>
+<thead id="Tabel1">
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Hændelse</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">Kode *</span></th>
@@ -189,6 +189,11 @@ Til brug for den tekniske implementering af sygehusadvis findes detaljerede use 
 FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden for advis om sygehusophold](../../index.md).
 
 ## 6.3 Eksempel på ‘Advis om sygehusophold’
-![Eksempel på, hvordan et advid om sygehus ophold kan se ud](../images/Example_HospitalNotification_DA.png)
+
+<figure>
+<img src="../images/Example_HospitalNotification_DA.png" alt="Eksempel på, hvordan et advid om sygehus ophold kan se ud" style="width:50%" id="Fig1">
+<figcaption text-align = "center"><b>Figur 1: IEksempel på, et advid om sygehus ophold</b></figcaption>
+</figure>
+
 
 > Note: Dette er et eksempel på, hvordan ’Advis om sygehusophold’ kunne se ud. I adviset vil ’Status sygehusophold’ angive hvilken hændelse, der har udløst adviseringen jf. 

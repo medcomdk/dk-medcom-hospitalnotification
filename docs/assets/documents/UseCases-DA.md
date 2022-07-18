@@ -4,41 +4,39 @@
 
 **Tabel of content**
 
-* [Indledning ](#indledning)
-  * [Baggrund og formål ](#baggrund-og-formål)
-  * [Juridisk grundlag ](#juridisk-grundlag)
-  * [Målgruppe ](#målgruppe)
-  * [Referencer ](#referencer)
-  * [Termer ](#termer)
-  * [Afgrænsning ](#afgrænsning)
-  * [Læsevejledning ](#Læsevejledning)
-* [Oversigt over use cases ](#oversigt-over-use-cases)
-  * [Oversigt over primære og alternative use cases ](#oversigt-over-primære-og-alternative-use-cases)
-  * [Korrigerende use cases ](#Korrigerende-use-cases)
-* [Use cases](#use-cases)
-  * [S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
-    * [S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
-    * [S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
-  * [R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
-     * [R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
-* [Korrigerende use cases](#Korrigerende-use-cases)
-  * [S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
-  * [R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
-  * [S.CORR: Ret sygehusophold og send rettelsesadvis](#S.CORR-ret-sygehusophold-og-send-rettelsesadvis)
-  * [R.CORR: Modtag advisering om rettet advis](#R.COR-modtag-advisering-om-rettet-advis)
-* [Teknisk validering af lovhjemmel til modtagelse](#teknisk-validering-af-lovhjemmel-til-modtagelse)
-  * [R.PC: Modtag og indlæs advis (teknisk)](#R.PC-Modtage-og-indlæs-advis)
-    * [R.PC.A1 Modtag og kassér advis (teknisk)](#R.PC.A1-Modtage-og-kasser-advis)
-* [Regler for systemerne, som use casene beror på](#regler-for-systemerne-som-use-casene-beror-på)
-  * [Regler for afsendersystemet, som use casene beror på](#regler-for-afsendersystemet-som-use-casene-beror-på)
-    * [Regler vedr. afsendelse af forskellige typer af sygehusadviser](#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser)
-    * [Øvrige regler vedr. forsendelse af HospitalNotification](#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification)
-* [Regler for modtagersystemet, som use casene beror på](#regler-for-modtagersystemet-som-use-casene-beror-på)
-  * [Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
+* [1 Introduktion ](#1-introduktion)
+  * [1.1 Baggrund og formål ](#11-baggrund-og-formål)
+  * [1.2 Målgruppe ](#12-målgruppe)
+  * [1.3 Juridisk grundlag ](#13-juridisk-grundlag)
+  * [1.4 Referencer ](#14-referencer)
+  * [1.5 Termer ](#15-termer)
+  * [1.6 Afgrænsning ](#16-afgrænsning)
+  * [1.7 Læsevejledning ](#17-Læsevejledning)
+* [2 Oversigt over use cases ](#2-oversigt-over-use-cases)
+* [3 Use cases](#3-use-cases)
+  * [3.1 S1: Indlæg patient og send advis](#s1-indlæg-patient-og-send-advis)
+    * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#311-S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
+    * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#312-S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
+  * [3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
+     * [3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
+* [4 Korrigerende use cases](#4-Korrigerende-use-cases)
+  * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
+  * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
+  * [4.3 S.CORR: Ret sygehusophold og send rettelsesadvis](#S.CORR-ret-sygehusophold-og-send-rettelsesadvis)
+  * [4.4 R.CORR: Modtag advisering om rettet advis](#R.COR-modtag-advisering-om-rettet-advis)
+* [5 Teknisk validering af lovhjemmel til modtagelse](#5-teknisk-validering-af-lovhjemmel-til-modtagelse)
+  * [5.1 R.PC: Modtag og indlæs advis (teknisk)](#R.PC-Modtage-og-indlæs-advis)
+    * [5.1.1 R.PC.A1 Modtag og kassér advis (teknisk)](#R.PC.A1-Modtage-og-kasser-advis)
+* [6 Regler for systemerne, som use casene beror på](#6-regler-for-systemerne-som-use-casene-beror-på)
+  * [6.1 Regler for afsendersystemet, som use casene beror på](#61-regler-for-afsendersystemet-som-use-casene-beror-på)
+    * [6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser](#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser)
+    * [6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification](#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification)
+* [7 Regler for modtagersystemet, som use casene beror på](#7-regler-for-modtagersystemet-som-use-casene-beror-på)
+  * [7.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
 <p>&nbsp;</p>
 
 
-# Introduktion
+# 1 Introduktion
 
 Dette dokument indeholder en række use case-beskrivelser og udgør en del af det samlede dokumentationsmateriale for MedComs FHIR-standard ”Advis om sygehusophold”.
 
@@ -53,17 +51,17 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
 Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
 bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).
 
-## Baggrund og formål
+## 1.1 Baggrund og formål
 Use casene forbinder krav til indhold med forretningsregler for anvendelse og skal sikre en ensartet implementering og anvendelse af ”Advis om sygehusophold”. Use casene er kvalificeret i samarbejde med EPJ- og kommuneleverandører.
 
 Use casene er udarbejdet og kvalificeret i samarbejde med repræsentanter
 fra regioner og kommuner gennem MedComs hjemmepleje-sygehusgruppe, samt
 relevante systemleverandører
 
-## Målgruppe
+## 1.2 Målgruppe
 Use case beskrivelserne er målrettet it-systemleverandørerne og de implementeringsansvarlige i regioner og kommuner.
 
-## Juridisk grundlag
+## 1.3 Juridisk grundlag
 
 Adviser om sygehusophold udveksles med baggrund i Sundhedsloven og
 Retssikkerhedslovens § 12 c
@@ -83,7 +81,7 @@ indeholder §§ 83-99, som omfatter personlig hjælp, omsorg og pleje samt
 plejetestamenter, og §§ 107 og 108 omfatter midlertidige og
 længerevarende botilbud
 
-## Referencer 
+## 1.4 Referencer 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -126,7 +124,7 @@ længerevarende botilbud
 </table>
 
 
-## Termer
+## 1.5 Termer
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -293,7 +291,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
 </table>
 
 
-## Afgrænsning 
+## 1.6 Afgrænsning 
 Use casene i dette notat beskriver, med en enkelt undtagelse (se
 <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>), *brugeraktørens* interaktion med systemet, og omfatter
 således den forretningsmæssige del af forsendelsesflowet jf. den grønne
@@ -334,7 +332,7 @@ Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering
 af sygehusadviser til flere modtagere samt det efterfølgende
 kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
 
-## Læsevejledning
+## 1.7 Læsevejledning
 Use casene i dokumentet beskriver et detaljeret forløb over
 *brugeraktørens* interaktion med systemet ved forskellige hændelser.
 Baggrunden for use casene er en række (forretnings)regler for
@@ -482,7 +480,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-# Oversigt over use cases
+# 2 Oversigt over use cases
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -587,9 +585,9 @@ opbygget af nedenstående elementer:
 </table>
 
 
-# Use cases
+# 3 Use cases
 
-## S1: Indlæg patient og send advis[STIN] {#s1-indlæg-patient-og-send-advis}
+## 3.1 S1: Indlæg patient og send advis[STIN] {#s1-indlæg-patient-og-send-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -660,7 +658,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport {#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport}
+### 3.1.1 S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport {#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport}
 
 **Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning)
 
@@ -717,7 +715,7 @@ opbygget af nedenstående elementer:
 </tbody>
 </table>
 
-### S1.A2: Indlæg patient uden afsendelse af advis \[STIN\] {#S1.A2-Indlæg-patient-uden-afsendelse-af-advis}
+### 3.1.2 S1.A2: Indlæg patient uden afsendelse af advis \[STIN\] {#S1.A2-Indlæg-patient-uden-afsendelse-af-advis}
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
 
 <style type="text/css">
@@ -772,7 +770,7 @@ opbygget af nedenstående elementer:
 
 
 
-## R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport}
+## 3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport}
 
 
 <style type="text/css">
@@ -849,7 +847,7 @@ opbygget af nedenstående elementer:
 </table>
 
 
-### R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport
+### 3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport
 
 **Hændelse:** Patienten er blevet indlagt på andet sygehus i samme
 region (overflytning)
@@ -908,9 +906,9 @@ region (overflytning)
 </tbody>
 </table>
 
-# Korrigerende use cases {#Korrigerende-use-cases}
+# 4 Korrigerende use cases {#Korrigerende-use-cases}
 
-## S.CANC: Anullér et allerede udsendt advis {#S.CANC-annuler-et-allerede-udsendt-advis}
+## 4.1 S.CANC: Anullér et allerede udsendt advis {#S.CANC-annuler-et-allerede-udsendt-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -972,7 +970,7 @@ region (overflytning)
 </tbody>
 </table>
 
-## R.CANC: Modtage advisering om annulleret advis {#R.CANC-modtage-advisering-om-annulleret-advis}
+## 4.2 R.CANC: Modtage advisering om annulleret advis {#R.CANC-modtage-advisering-om-annulleret-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1044,7 +1042,7 @@ region (overflytning)
 </table>
 
 
-## S.CORR: Ret sygehusophold og send rettelsesadvis {#S.CORR-ret-sygehusophold-og-send-rettelsesadvis}
+## 4.3 S.CORR: Ret sygehusophold og send rettelsesadvis {#S.CORR-ret-sygehusophold-og-send-rettelsesadvis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width: 85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1106,7 +1104,7 @@ region (overflytning)
 </tbody>
 </table>
 
-## R.CORR: Modtag advisering om rettet advis {#R.COR-modtag-advisering-om-rettet-advis}
+## 4.4 R.CORR: Modtag advisering om rettet advis {#R.COR-modtag-advisering-om-rettet-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width: 85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1174,7 +1172,7 @@ region (overflytning)
 </table>
 
 
-# Teknisk validering af lovhjemmel til modtagelse
+# 5 Teknisk validering af lovhjemmel til modtagelse
 
 Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt
 modtager ydelser fra primær sektor, dannes "advis om sygehusophold" på
@@ -1190,7 +1188,7 @@ casen supplerer de øvrige tekniske handlinger, som ligger før og efter
 brugeraktørens interaktion med systemet, og som er beskrevet i
 dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 
-## R.PC: Modtag og indlæs advis (teknisk) {#R.PC-Modtage-og-indlæs-advis}
+## 5.1 R.PC: Modtag og indlæs advis (teknisk) {#R.PC-Modtage-og-indlæs-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1268,7 +1266,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-### R.PC.A1 Modtag og kassér advis (teknisk) {#R.PC.A1-Modtage-og-kasser-advis}
+### 5.1.1 R.PC.A1 Modtag og kassér advis (teknisk) {#R.PC.A1-Modtage-og-kasser-advis}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1318,11 +1316,11 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-# Regler for systemerne, som use casene beror på
+# 6 Regler for systemerne, som use casene beror på
 
-## Regler for afsendersystemet, som use casene beror på
+## 6.1 Regler for afsendersystemet, som use casene beror på
 
-### Regler vedr. afsendelse af forskellige typer af sygehusadviser {#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser}
+### 6.1.1 Regler vedr. afsendelse af forskellige typer af sygehusadviser {#Regler-vedrørende-afsendelse-af-forskellige-typer-af-sygehusadviser}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1418,7 +1416,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-### Øvrige regler vedr. forsendelse af HospitalNotification {#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification}
+### 6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification {#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1464,9 +1462,9 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
 </tbody>
 </table>
 
-## Regler for modtagersystemet, som use casene beror på
+## 7 Regler for modtagersystemet, som use casene beror på
 
-### Regler vedr. modtagelse af HospitalNotification {#regler-vedrørende-modtagelse-af-hospital-notification}
+### 7.1 Regler vedr. modtagelse af HospitalNotification {#regler-vedrørende-modtagelse-af-hospital-notification}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;

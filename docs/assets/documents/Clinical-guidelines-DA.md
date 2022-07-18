@@ -192,7 +192,7 @@ FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden 
 
 <figure>
 <img src="../images/Example_HospitalNotification_DA.png" alt="Eksempel på, hvordan et advid om sygehus ophold kan se ud" style="width:50%" id="Fig1">
-<figcaption text-align = "center"><b>Figur 1: IEksempel på, et advid om sygehus ophold</b></figcaption>
+<figcaption text-align = "center"><b>Figur 1: Eksempel på, et advid om sygehus ophold</b></figcaption>
 </figure>
 
 

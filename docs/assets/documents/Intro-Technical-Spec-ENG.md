@@ -3,9 +3,11 @@
 > In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
 
 **Table of Content**
+* [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
+* [2 Internal References in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message2 Internal References in a HospitalNotification Message)
+* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message)
 
-
-## Profiles in the HospitalNotification Standard
+# 1 Profiles in the HospitalNotification Standard
 
 In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short describtion of each profile can be seen in the table below.
 
@@ -84,7 +86,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </table>
 
 
-## Internal References in a HospitalNotification Message
+# 2 Internal References in a HospitalNotification Message
 
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging paradigm</a>. 
 
@@ -97,7 +99,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 </figure>
 
 
-## Examples in a HospitalNotification Message
+# 3 Examples in a HospitalNotification Message
 
 On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
 

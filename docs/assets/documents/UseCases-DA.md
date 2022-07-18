@@ -295,9 +295,9 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
 
 ## Afgrænsning 
 Use casene i dette notat beskriver, med en enkelt undtagelse (se
-nedenfor), *brugeraktørens* interaktion med systemet, og omfatter
+<a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>), *brugeraktørens* interaktion med systemet, og omfatter
 således den forretningsmæssige del af forsendelsesflowet jf. den grønne
-markering i Figur 1. De tekniske handlinger, der ligger før og efter
+markering i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>. De tekniske handlinger, der ligger før og efter
 brugeraktørens interaktion med systemet (fx systemets funktionaliteter i
 kommunikationsnetværket samt afsendelse og modtagelse af kvitteringer),
 er generiske på tværs af forskellige MedCom-standarder og optræder som

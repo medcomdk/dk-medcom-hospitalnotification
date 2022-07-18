@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This document contains a number of use case descriptions and is part of the documentation of Med-Com’s FHIR-standard “HospitalNotification”. 
+This document contains a number of use case descriptions and is part of the documentation of MedCom’s FHIR-standard “HospitalNotification”. 
 The documentation consists of 3 parts, accessible via [the frontpage of HospitalNotification](./docs/index.md).
 
 1.	’HospitalNotification’ – Clinical guidelines
@@ -17,9 +17,9 @@ The use case descriptions should therefore be read together with the rest of the
 
 The use case descriptions combine content requirements with business regulations for use and should ensure a coherent implementation and use of the ‘HospitalNotification’. The use cases are qualified in collaboration with EPR- and vendors catering to the municipalities. 
 
-The use case descriptions are targeted IT system vendors and the people responsible for the imple-mentation in regions and municipalities. 
+The use case descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities. 
 
-Currently, the use case descriptions do not include the consignment of hospital notifications for sev-eral recipients and the following communication flow containing home care-hospital notifications.
+Currently, the use case descriptions do not include the consignment of hospital notifications for several recipients and the following communication flow containing home carehospital notifications.
  
 ### Method for use case descriptions
 
@@ -57,7 +57,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
   </tr>
   <tr>
     <td class="tg-tysj">Purpose, description and demarcation</td>
-    <td class="tg-tysj">Short description of the business-related pur-poses, possible demarcation related to other use cases.</td>
+    <td class="tg-tysj">Short description of the business-related purposes, possible demarcation related to other use cases.</td>
   </tr>
   <tr>
     <td class="tg-tysj">Conditions for initiation</td>
@@ -77,7 +77,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
   </tr>
   <tr>
     <td class="tg-tysj">Alternative actions</td>
-    <td class="tg-tysj">Alternative procedures diverging from the stand-ard procedure which ends in error or with re-sumption.</td>
+    <td class="tg-tysj">Alternative procedures diverging from the standard procedure which ends in error or with resumption.</td>
   </tr>
 </tbody>
 </table>
@@ -182,11 +182,11 @@ In the use case descriptions, the following codes are used for different types o
 
 ### Use cases 
 
-The use case descriptions are divided into business-related use cases and technical use cases. The technical use cases are general use cases which are activated in the different actions that are de-scribed in the business-related use cases. To each of the business-related use cases, another use case is connected that respectively cancels and corrects the use case in question.
+The use case descriptions are divided into business-related use cases and technical use cases. The technical use cases are general use cases which are activated in the different actions that are described in the business-related use cases. To each of the business-related use cases, another use case is connected that respectively cancels and corrects the use case in question.
 
 **A General remark on cancellations/corrections:** The same ID is used in case of cancellation/correction as in the original notification. This way, the recipient can easily connect the two messages unequivocally. When the patient’s hospital stay has ended and a notification [SLHJ] has been sent, it is no longer necessary to use notifications with corrections and cancellations, unless the correction/cancellation is related to that exact noti-fication [SLHJ].
 
-In [section is an overview of the patient journeys](#patient-journeys-and-use-cases) and their connection to use cases. These are fol-lowed by [business-related use cases](#business-related-use-cases) and [technical use cases](#technical-use-cases). All use cases are divided into:
+In [section is an overview of the patient journeys](#patient-journeys-and-use-cases) and their connection to use cases. These are followed by [business-related use cases](#business-related-use-cases) and [technical use cases](#technical-use-cases). All use cases are divided into:
 1. Sender (hospital) 
 2. Recipient (relevant recipient, typically the municipality) 
 

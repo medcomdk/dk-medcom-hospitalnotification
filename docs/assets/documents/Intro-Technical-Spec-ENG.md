@@ -99,9 +99,9 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
 ## Examples in a HospitalNotification Message
 
-On the figure below is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the figure. 
+On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
 
-The messages illustrates an admission and discharge of a patient. The patient, service provider organization, sender and receiver information is identical, since both messages are send from a hospital to a municipality.
+The messages in <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> illustrates an admission and discharge of a patient. The patient, service provider organization, sender and receiver information is identical, since both messages are send from a hospital to a municipality.
 
 In 'Message 2: Discharg Inpatient to Home' there are two MedComMessagingProvenances, as all provenance instances in a stream of messages shall be included, as it constitutes a messaging history. 
 
@@ -109,16 +109,12 @@ Some of the information does not fulfill the requirements in the IG, this accoun
 
 > Note: IT-vendors cannot assume any specific order of the resources in a message. 
 
-![Shows the required content in each profiles of a MedCom HospitalNotification Message.](../images/HNAdmitFinish.png)
-
-
-
 <figure>
-<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width:50%" id="Fig2">
+<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 45%" id="Fig2">
 <figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inplatient </b></figcaption>
 </figure>
 
-Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the figure above. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
+Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a>. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
 
 In the example there is added some comments. These indicate the beginning of a profile or describes the content of the element. All comments are presented in the following way.
 

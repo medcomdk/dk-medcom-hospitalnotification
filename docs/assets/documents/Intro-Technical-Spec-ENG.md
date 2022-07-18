@@ -6,7 +6,7 @@
 **Table of Content**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
 * [2 Internal References in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message2 Internal References in a HospitalNotification Message)
-* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message)
+* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) <br><br>
 
 # 1 Profiles in the HospitalNotification Standard
 
@@ -85,6 +85,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   </tr>
 </tbody>
 </table>
+<br><br>
 
 
 # 2 Internal References in a HospitalNotification Message
@@ -98,6 +99,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:40%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
 </figure>
+<br><br>
 
 
 # 3 Examples in a HospitalNotification Message

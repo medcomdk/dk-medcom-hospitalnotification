@@ -18,7 +18,7 @@
     * [3.1.1 S1.A1: Indlæg patient og send advis\[STIN\] uden anmodning om indlæggelsesrapport ](#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport)
     * [3.1.2 S1.A2: Indlæg patient uden afsendelse af advis\[STIN\] ](#S1.A2-Indlæg-patient-uden-afsendelse-af-advis)
   * [3.2 R1:Modtag advisering om indlæggelse og send indlæggelsesrapport](#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport) 
-     * [3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#321r1.a1-modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelsesrapport)
+     * [3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport](#Modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelesesrapporten)
 * [4 Korrigerende use cases](#Korrigerende-use-cases)
   * [4.1 S.CANC: Annullér et allerede udsendt advis](#S.CANC-annuler-et-allerede-udsendt-advis)
   * [4.2 R.CANC: Modtag advisering om annulleret advis](#R.CANC-modtage-advisering-om-annulleret-advis)
@@ -861,7 +861,7 @@ opbygget af nedenstående elementer:
 </table>
 <p>&nbsp;</p>
 
-### 3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport
+### 3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport {#Modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelesesrapporten}
 
 **Hændelse:** Patienten er blevet indlagt på andet sygehus i samme
 region (overflytning)

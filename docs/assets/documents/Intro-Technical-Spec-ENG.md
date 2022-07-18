@@ -92,7 +92,7 @@ The references between the profiles are shown on the <a href="#Fig1" rel="noopen
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the notification. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
 <figure>
-<img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:30%" id="Fig1">
+<img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:45%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ Some of the information does not fulfill the requirements in the IG, this accoun
 > Note: IT-vendors cannot assume any specific order of the resources in a message. 
 
 <figure>
-<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 45%" id="Fig2">
+<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
 <figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inplatient </b></figcaption>
 </figure>
 

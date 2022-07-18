@@ -20,7 +20,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
-<caption style="color:#2c415c; fornt-weight:bold; text-align:center"> Table 1: Overview of the profiles in HospitalNotification standard </caption>
+<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in HospitalNotification standard </caption>
 <thead>
   <tr>
     <th class="tg-4mz0"><span style="font-weight:bold">Profile</span></th>
@@ -110,6 +110,13 @@ Some of the information does not fulfill the requirements in the IG, this accoun
 > Note: IT-vendors cannot assume any specific order of the resources in a message. 
 
 ![Shows the required content in each profiles of a MedCom HospitalNotification Message.](../images/HNAdmitFinish.png)
+
+
+
+<figure>
+<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width:50%" id="Fig2">
+<figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inplatient </b></figcaption>
+</figure>
 
 Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the figure above. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
 

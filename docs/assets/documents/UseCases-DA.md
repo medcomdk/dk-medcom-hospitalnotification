@@ -50,16 +50,19 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
 
 Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
 bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).
+<p>&nbsp;</p>
 
 ## 1.1 Baggrund og formål
 Use casene forbinder krav til indhold med forretningsregler for anvendelse og skal sikre en ensartet implementering og anvendelse af ”Advis om sygehusophold”. Use casene er kvalificeret i samarbejde med EPJ- og kommuneleverandører.
 
 Use casene er udarbejdet og kvalificeret i samarbejde med repræsentanter
 fra regioner og kommuner gennem MedComs hjemmepleje-sygehusgruppe, samt
-relevante systemleverandører
+relevante systemleverandører.
+<p>&nbsp;</p>
 
 ## 1.2 Målgruppe
 Use case beskrivelserne er målrettet it-systemleverandørerne og de implementeringsansvarlige i regioner og kommuner.
+<p>&nbsp;</p>
 
 ## 1.3 Juridisk grundlag
 
@@ -79,7 +82,8 @@ nr. 265 af 25/02/2022).*
 Servicelovens § 79 a omfatter forebyggende hjemmebesøg, kapitel 16
 indeholder §§ 83-99, som omfatter personlig hjælp, omsorg og pleje samt
 plejetestamenter, og §§ 107 og 108 omfatter midlertidige og
-længerevarende botilbud
+længerevarende botilbud.
+<p>&nbsp;</p>
 
 ## 1.4 Referencer 
 <style type="text/css">
@@ -122,6 +126,7 @@ længerevarende botilbud
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 ## 1.5 Termer
@@ -193,9 +198,11 @@ længerevarende botilbud
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
-I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener noreferrer">se tabel 3 </a>) for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i (<a href="#3" rel="noopener noreferrer"> table 3 </a>)  herunder. 
+I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener noreferrer">se tabel 3 </a>) for de forskellige typer af sygehusadvis. Der er udarbejdet en særskilt kodeoversigt, som viser sammenhængen mellem adviskoder i use casene og FHIR-terminologien, [se afsnit 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). En oversigt over koderne ses desuden i (<a href="#3" rel="noopener noreferrer"> table 3 </a>) herunder.
+<p>&nbsp;</p> 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
@@ -289,6 +296,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 ## 1.6 Afgrænsning 
@@ -305,7 +313,7 @@ tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" r
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
 meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
-valideret) meddelelse i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 Termer samt
+valideret) meddelelse i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 [Termer](#15Termer) samt
 uddybende forklaring i dokumentet "[Generelle tekniske use
 cases](#_Juridisk_grundlag)".
 
@@ -326,11 +334,12 @@ tilføjet en teknisk forudsætnings-use case, som beskriver de
 ekstra/særlige tekniske handlinger, der, forud for brugeraktørens
 interaktion med systemet, er nødvendige for at sikre, at
 modtagersystemets kun indlæser og viser adviser for brugeraktøren, når
-der er lovhjemmel hertil (se afsnit 1.2 [Juridisk grundlag](#juridisk-grundlag)).
+der er lovhjemmel hertil (se afsnit 1.3 [Juridisk grundlag](#juridisk-grundlag)).
 
 Use case-beskrivelserne omfatter ikke på nuværende tidspunkt adressering
 af sygehusadviser til flere modtagere samt det efterfølgende
 kommunikationsflow med øvrige hjemmepleje-sygehusmeddelelser.
+<p>&nbsp;</p>
 
 ## 1.7 Læsevejledning
 Use casene i dokumentet beskriver et detaljeret forløb over
@@ -364,6 +373,7 @@ Alle use cases er opdelt i:
     (R = Receiver)
 
 Primære use cases er bygget op af nedenstående elementer.
+<p>&nbsp;</p>
 
 
 
@@ -423,6 +433,7 @@ Primære use cases er bygget op af nedenstående elementer.
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 Alternative use cases vil altid referere til en use case med et
@@ -479,6 +490,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 # 2 Oversigt over use cases
 <style type="text/css">
@@ -518,7 +530,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
-
+<p>&nbsp;</p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
@@ -551,6 +563,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
@@ -583,6 +596,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 # 3 Use cases
@@ -657,10 +671,11 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ### 3.1.1 S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport {#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport}
 
-**Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning)
+**Hændelse:** Patienten indlægges på andet sygehus i samme region (overflytning).
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;width:85%}
@@ -714,6 +729,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ### 3.1.2 S1.A2: Indlæg patient uden afsendelse af advis \[STIN\] {#S1.A2-Indlæg-patient-uden-afsendelse-af-advis}
 **Hændelse:** Patienten indlægges på anden afdeling på samme sygehus (overflytning)
@@ -766,9 +782,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
-
-
-
+<p>&nbsp;</p>
 
 ## 3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport}
 
@@ -845,7 +859,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
-
+<p>&nbsp;</p>
 
 ### 3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport
 
@@ -905,6 +919,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 # 4 Korrigerende use cases {#Korrigerende-use-cases}
 
@@ -969,6 +984,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ## 4.2 R.CANC: Modtage advisering om annulleret advis {#R.CANC-modtage-advisering-om-annulleret-advis}
 <style type="text/css">
@@ -1040,6 +1056,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 ## 4.3 S.CORR: Ret sygehusophold og send rettelsesadvis {#S.CORR-ret-sygehusophold-og-send-rettelsesadvis}
@@ -1103,6 +1120,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ## 4.4 R.CORR: Modtag advisering om rettet advis {#R.COR-modtag-advisering-om-rettet-advis}
 <style type="text/css">
@@ -1170,6 +1188,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 
 # 5 Teknisk validering af lovhjemmel til modtagelse
@@ -1187,6 +1206,7 @@ indlæser og viser adviser for brugeraktøren, når der er lovhjemmel. Use
 casen supplerer de øvrige tekniske handlinger, som ligger før og efter
 brugeraktørens interaktion med systemet, og som er beskrevet i
 dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
+<p>&nbsp;</p>
 
 ## 5.1 R.PC: Modtag og indlæs advis (teknisk) {#R.PC-Modtage-og-indlæs-advis}
 <style type="text/css">
@@ -1265,6 +1285,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ### 5.1.1 R.PC.A1 Modtag og kassér advis (teknisk) {#R.PC.A1-Modtage-og-kasser-advis}
 <style type="text/css">
@@ -1315,6 +1336,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 # 6 Regler for systemerne, som use casene beror på
 
@@ -1415,6 +1437,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ### 6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification {#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification}
 <style type="text/css">
@@ -1461,6 +1484,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
 
 ## 7 Regler for modtagersystemet, som use casene beror på
 

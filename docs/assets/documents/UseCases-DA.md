@@ -49,7 +49,7 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
   > Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument
 
 Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
-bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#14-referencer).
+bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).
 <p>&nbsp;</p>
 
 ## 1.1 Baggrund og formål
@@ -109,7 +109,7 @@ længerevarende botilbud.
   <tr>
     <td class="tg-tysj">   <br>SKA-4.X.X Forretningsmæssige use cases   </td>
     <td class="tg-tysj">   <br>1.0.0-rc.1   </td>
-    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK på vej</span>   </td>
+    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK på vej</span></td>
     <td class="tg-tysj">   <br>Skabelon, som disse use cases er udarbejdet på baggrund af   </td>
   </tr>
   <tr>
@@ -119,9 +119,9 @@ længerevarende botilbud.
     <td class="tg-tysj">   <br>Detaljerede use case-beskrivelser af de tekniske handlinger, der sker   før og efter brugeraktørens interaktion i systemet, herunder kommunikationen   med kommunikationsnetværket vedr. afsendelse og modtagelse af meddelelser og   kvitteringer.   </td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
+    <td class="tg-tysj">   <br><span style="background-color:yellow">LINK på vej</span> Sundhedsfaglige og tekniske behov </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br> <a href="../documents/Cliical-guidelines-DA" rel="noopener noreferrer"> Sundhedsfaglige retningslinjer </a> </td>
+    <td class="tg-tysj">   <br> </td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>

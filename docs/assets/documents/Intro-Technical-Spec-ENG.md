@@ -88,10 +88,14 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging paradigm</a>. 
 
-The references between the profiles are shown on the figure below. The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader is sender, receiver and carbon-coby organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter shall always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter.<br> 
+The references between the profiles are shown on the <a href="#Fig1" rel="noopener noreferrer"> figure 1 </a> below . The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader is sender, receiver and carbon-coby organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter shall always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the notification. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
-![Show references between the profiles in an HospitalNotification message.](../images/HospitalNotification.png)
+<figure>
+<img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:50%" id="Fig1">
+<figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
+</figure>
+
 
 ## Examples in a HospitalNotification Message
 

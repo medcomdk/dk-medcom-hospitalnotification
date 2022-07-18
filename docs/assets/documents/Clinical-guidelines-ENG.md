@@ -8,9 +8,9 @@
 * [4 Legal framework](#4-legal-framework)
 * [5 &#39;HospitalNotification&#39;: requirements for content and benefits](#5-&#39;hospital-notification&#39;-:-requirements-for-content-and-benefits)
 * [6 Business rules for use of &#39;HospitalNotification&#39;](#6-Business-rules-for-use-of-&#39;HospitalNotification&#39;)
-* [7 Use cases](#7-Use-cases)
-* [8 Technical specifications for &#39;HospitalNotification&#39;](#8-Technical-specifications-for-&#39;Hospital-Notification&#39;)
-* [9 Example of a HospitalNotification](#9-Example-of-a-HospitalNotification)
+  * [6.1 Use cases](#7-Use-cases)
+  * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#8-Technical-specifications-for-&#39;Hospital-Notification&#39;)
+  * [6.3 Example of a HospitalNotification](#9-Example-of-a-HospitalNotification)
 <p>&nbsp;</P>
 
 # 1 Introduction
@@ -188,14 +188,14 @@ The notification type &#39;DEAD&#39; should be used in all cases where the patie
 Same flow as for transfer to another hospital in the same or another region is used. Hospice sends &#39;START hospital stay – admission&#39; when the patient arrives.
 <p>&nbsp;</p>
 
-# 7 Use cases
+## 6.1 Use cases
 For use of the technical implementation of the &#39;HospitalNotification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the HospitalNotification. The use cases can be found on [the front page for HospitalNotification](../../index.md).
 
-# 8 Technical specifications for &#39;HospitalNotification&#39;
+## 6.2 Technical specifications for &#39;HospitalNotification&#39;
 The FHIR profile for hospitalnotification can be found  on [the front page for HospitalNotification](../../index.md).
 
 
-# 9 Example of a HospitalNotification
+## 6.3 Example of a HospitalNotification
 
 <figure>
 <img src="../images/Example_HospitalNotification_ENG.png" alt="Example on HospitalNotification " style="width:50%" id="Fig1">

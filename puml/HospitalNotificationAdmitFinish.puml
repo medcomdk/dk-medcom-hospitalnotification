@@ -13,7 +13,7 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: Admit and Discharge Inpatient
+'title Simplified example: Admit and Discharge Inpatient
 
 'Message 1: Admit inpatient
 package "Message 1: Admit Inpatient" as admit <<Frame>>{

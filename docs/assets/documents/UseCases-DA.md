@@ -49,7 +49,7 @@ Dokumentationen består af 3 dele og kan findes på [forsiden for advis om sygeh
   > Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument
 
 Use case-beskrivelserne supplerer det øvrige dokumentationsmateriale og
-bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#s.canc-annullér-et-allerede-udsendt-advis).
+bør derfor læses i sammenhæng til dette [se afsnit 1.4 Referencer](#14-referencer).
 <p>&nbsp;</p>
 
 ## 1.1 Baggrund og formål
@@ -121,7 +121,7 @@ længerevarende botilbud.
   <tr>
     <td class="tg-tysj">   <br>Sundhedsfaglige og tekniske behov    </td>
     <td class="tg-tysj">   <br>1.0.0   </td>
-    <td class="tg-tysj">   <br> <a href="../documents/Cliical-guidelines-DA" rel="noopener noreferrer"> Sundhedsfaglige retningslinjer </a> </td>
+    <td class="tg-tysj">   <br> <span style="background-color:yellow"> LINK på vej</td>
     <td class="tg-tysj">   <br>Samlet overblik over de sundhedsfaglige og tekniske behov, som   standarden skal opfylde og use casene afspejle.   </td>
   </tr>
 </tbody>
@@ -307,15 +307,11 @@ markering i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>. De tekniske
 brugeraktørens interaktion med systemet (fx systemets funktionaliteter i
 kommunikationsnetværket samt afsendelse og modtagelse af kvitteringer),
 er generiske på tværs af forskellige MedCom-standarder og optræder som
-selvstændigt beskrevne use cases i dokumentet "[Generelle tekniske use
-cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).[Generelle
-tekniske use cases](#_Juridisk_grundlag)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).
+selvstændigt beskrevne use cases i dokumentet " [Generelle tekniske use cases](#14-referencer)" (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>). [Generelle tekniske use cases](#14-referencer)." (markeret med rød i <a href="#Fig1" rel="noopener noreferrer"> figur 1 </a>).
 
 Dvs., at afsender-use cases afsluttes med, at brugeraktør sender en
 meddelelse, som (af systemaktør) lægges i Fagsystemets forretningsmæssige udbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), mens modtager-use cases igangsættes ved, at systemaktør har registreret en (teknisk positivt
-valideret) meddelelse i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 [Termer](#15Termer) samt
-uddybende forklaring i dokumentet "[Generelle tekniske use
-cases](#_Juridisk_grundlag)".
+valideret) meddelelse i Fagsystemets forretningsmæssige indbakke (<a href="#Tabel2" rel="noopener noreferrer"> se forklaring i tabel 2</a>), som præsenteres for brugeraktøren i brugergrænsefladen. Se i øvrigt forklaring under afsnit 1.5 [Termer](#15-Termer) samt uddybende forklaring i dokumentet [Generelle tekniske use cases](#14-referencer).
 
 <figure>
 <img src="../images/Forsendelsesflow.png" alt="Illustration af forsendelsesflow" style="width:50%" id="Fig1">
@@ -1205,7 +1201,7 @@ med systemet, er nødvendige for at sikre, at modtagersystemet kun
 indlæser og viser adviser for brugeraktøren, når der er lovhjemmel. Use
 casen supplerer de øvrige tekniske handlinger, som ligger før og efter
 brugeraktørens interaktion med systemet, og som er beskrevet i
-dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
+dokumentet "[Generelle tekniske use cases](#14-referencer)".
 <p>&nbsp;</p>
 
 ## 5.1 R.PC: Modtag og indlæs advis (teknisk) {#R.PC-Modtage-og-indlæs-advis}
@@ -1253,7 +1249,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
-    <td class="tg-i91a">3.       Systemaktør: Konstaterer, at adviset er markeret for at ville modtage kvittering jf. regler som beskrevet i ”<a href="" rel="noopener noreferrer">Generelle tekniske use cases</a>”, og logger/markerer for, at der skal sendes positiv kvittering.</td>
+    <td class="tg-i91a">3.       Systemaktør: Konstaterer, at adviset er markeret for at ville modtage kvittering jf. regler som beskrevet i ”<a href="#14-referencer" rel="noopener noreferrer">Generelle tekniske use cases</a>”, og logger/markerer for, at der skal sendes positiv kvittering.</td>
   </tr>
   <tr>
     <td class="tg-i91a"> </td>
@@ -1273,7 +1269,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a">Alternative handlinger</td>
-    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se  <span>’Generelle tekniske use cases’</span>)<br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet (<span>’Generelle tekniske use cases’</span>)<br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="#R.PC.A1-Modtage-og-kasser-advis"  rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
+    <td class="tg-i91a">2a Systemaktør afviser adviset pga. teknisk invalidt indhold se <a href="#14-referencer" rel="noopener noreferrer">Generelle tekniske use cases</a><br>2b Systemaktør adviser adviset pga. teknisk fejl i modtagersystemet <a href="#14-referencer" rel="noopener noreferrer">Generelle tekniske use cases</a><br>6a Systemaktør evaluerer negativt, at adviset skal indlæses pba. Regler for modtagersystemet, som use casene beror på. Se alternative use case <a href="#R.PC.A1-Modtage-og-kasser-advis"  rel="noopener noreferrer">R.PC.A1</a>R.PC.A1 Modtag og kassér advis</td>
   </tr>
   <tr>
     <td class="tg-i91a">Korrigerende handlinger</td>
@@ -1281,7 +1277,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-i91a">Bemærkninger</td>
-    <td class="tg-i91a">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet <span style="color:#FE0000">(Generelle tekniske use cases)</span>.</td>
+    <td class="tg-i91a">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet <a href="#14-referencer" rel="noopener noreferrer">Generelle tekniske use cases</a>.</td>
   </tr>
 </tbody>
 </table>
@@ -1332,7 +1328,7 @@ dokumentet "[Generelle tekniske use cases](#juridisk-grundlag)".
   </tr>
   <tr>
     <td class="tg-tysj">Bemærkninger</td>
-    <td class="tg-tysj">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ” <span>Generelle tekniske use cases</span>”.<br> <br>Modtagersystemet skal, også selvom adviset ikke indlæses/persisteres i systemets, kvittere positivt for modtagelse af advis (hvis de øvrige forudsætninger herfor er tilstede).</td>
+    <td class="tg-tysj">Use casen supplerer de øvrige tekniske handlinger, som ligger før og efter brugeraktørens interaktion med systemet, og som er beskrevet i dokumentet ”<a href="#14-referencer" rel="noopener noreferrer">Generelle tekniske use cases</a>”.<br> <br>Modtagersystemet skal, også selvom adviset ikke indlæses/persisteres i systemets, kvittere positivt for modtagelse af advis (hvis de øvrige forudsætninger herfor er tilstede).</td>
   </tr>
 </tbody>
 </table>

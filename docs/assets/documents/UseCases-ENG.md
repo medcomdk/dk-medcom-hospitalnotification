@@ -2,7 +2,17 @@
 
 # Use cases for HospitalNotification
 
-## Introduction
+**Tabel of content**
+* [1 Introduction](#1-introduction)
+  * [1.1 Method for use case descriptions](#11-method-for-use-case-description)
+  * [1.2 Types of Notifications and Codes in HospitalNotification](#12-types-of-notifications-and-codes-in-hospitalnotification)
+  * [1.3 Use cases ](#13-use-cases)
+* [2 Patient journeys and use cases](#2-Patient-journeys-and-use-cases)
+* [3 Business-related use cases](#3-Business-related-use-cases) 
+* [4 Technical use cases](#4-technical-use-cases)
+
+
+## 1 Introduction
 
 This document contains a number of use case descriptions and is part of the documentation of MedCom’s FHIR-standard “HospitalNotification”. 
 The documentation consists of 3 parts, accessible via [the frontpage of HospitalNotification](./docs/index.md).
@@ -21,7 +31,7 @@ The use case descriptions are targeted IT system vendors and the people responsi
 
 Currently, the use case descriptions do not include the consignment of hospital notifications for several recipients and the following communication flow containing home carehospital notifications.
  
-### Method for use case descriptions
+### 1.1 Method for use case descriptions
 
 The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger" target="_blank">KOMBIT’s metodehåndbog for use cases</a>. Every case consists of the following elements. A definition for both [business-related](#business-related-use-cases) and [technical](#technical-use-cases) use cases can be found further down on this page.
 
@@ -83,7 +93,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
 </table>
 
 
-### Types of Notifications and Codes in HospitalNotification
+### 1.2 Types of Notifications and Codes in HospitalNotification
 
 In the use case descriptions, the following codes are used for different types of hospital notifications. There is prepared a separate code overview, which shows the connection between notification codes and FHIR terminology, [see section 'HospitalNotification Codes in FHIR'](../documents/Overview-HospitalNotification-codes-FHIR.md). 
 
@@ -180,7 +190,7 @@ In the use case descriptions, the following codes are used for different types o
 </tbody>
 </table>
 
-### Use cases 
+### 1.3 Use cases 
 
 The use case descriptions are divided into business-related use cases and technical use cases. The technical use cases are general use cases which are activated in the different actions that are described in the business-related use cases. To each of the business-related use cases, another use case is connected that respectively cancels and corrects the use case in question.
 
@@ -190,8 +200,8 @@ In [section is an overview of the patient journeys](#patient-journeys-and-use-ca
 1. Sender (hospital) 
 2. Recipient (relevant recipient, typically the municipality) 
 
-## Patient journeys and use cases 
+## 2 Patient journeys and use cases 
 
-## Business-related use cases
+## 3 Business-related use cases
 
-## Technical use cases
+## 4 Technical use cases

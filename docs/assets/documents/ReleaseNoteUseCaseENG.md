@@ -1,13 +1,17 @@
-# Release notes 
+# Release Note
 [Return](../../index.md)
 
 The release notes in the following describes the changes made to the landing page of MedComs FHIR standards and subpages.
 Each subpage will have its own release note, and they can be found here: 
 
-  * [Landing page](ReleaseNotesIndex.md)
-    * [TouchStone getting started](ReleaseNotesTouchStoneGettingStarted.md)
-    * [New to FHIR ?](ReleaseNotesNewToFHIR.md)
-      * [Step-by-Step Guide](ReleaseNotesFHIRImplementationGuide.md)
+  * [MedCom HospitalNotification](../documents/ReleaseNote-ENG.md)
+    * [Danish:Sundhedsfaglige retningslinjer](../documents/ReleaseNoteClinGuideDK.md)
+    * [English:Clinical Guideline](../documents/ReleaseNotesClinGuideENG.md)
+    * [Introduction to the Technical specification](../documents/ReleaseNoteIntroTechnicalSpec.md)
+    * [The HospitalNotification Codes](../documents/RelaseNoteOverviewHospitalNot.md)
+    * [Map Between OIOXML anf FHIR](../documents/ReleaseNoteOIO.md)
+    * [Danish: Use Case](../documents/ReleaseNoteUsecaseDK.md)
+    * [English Use Case](../documents/ReleaseNoteUseCaseENG.md)
 
 In the table below is an overview of the changes recently made and where to find more information.
 
@@ -34,7 +38,7 @@ In the table below is an overview of the changes recently made and where to find
     <td class="tg-pkxh"><span style="color:#343434">1.0.0-b.1</span></td>
     <td class="tg-pkxh"><span style="color:#343434">22-07-2022</span></td>
     <td class="tg-pkxh"><span style="color:#343434">Inital release. Presentation of MedCom FHIR standards.</span></td>
-    <td class="tg-pkxh"><span style="color:#343434">View release note for: <br> </span><a href="ReleaseNotesIndex.html">Landing page</a> <br> <a href="ReleaseNotesTouchStoneGettingStarted.html">TouchStone getting started</a> <br> <a href="ReleaseNotesNewToFHIR.html">New to FHIR ?</a> <br> <a href="ReleaseNotesFHIRImplementationGuide.html">Step-by-Step Guide</a></td>
+    <td class="tg-pkxh"><span style="color:#343434">View release note for: <br> </span><a href="../documents/ReleaseNote-ENG.md">MedCom HospitalNotification</a> <br> <a href="../documents/ReleaseNoteClinGuideDK.md">Danish:Sundhedsfaglige retningslinjer</a> <br> <a href="../documents/ReleaseNotesClinGuideENG.md">English:Clinical Guideline</a> <br> <a href="../documents/ReleaseNoteIntroTechnicalSpec.md">Introduction to the Technical specification</a> <br> <a href="../documents/ReleaseNotesClinGuideENG.md">English:Clinical Guideline</a> <br> <a href="../documents/ReleaseNoteIntroTechnicalSpec.md">Introduction to the Technical specification</a> <br> <a href="../documents/RelaseNoteOverviewHospitalNot.md">The HospitalNotification Codes</a> <br> <a href="../documents/ReleaseNoteOIO.md">Map Between OIOXML anf FHIR</a> <br> <a href="../documents/ReleaseNoteUsecaseDK.md">Danish: Use Case</a> <br> <a href="../documents/ReleaseNoteUseCaseENG.md">English Use Case</a> </td>
   </tr>
   <tr>
     <td class="tg-pkxh"></td>

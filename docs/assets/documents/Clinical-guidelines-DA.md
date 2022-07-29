@@ -197,3 +197,6 @@ FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden 
 
 
 > Note: Dette er et eksempel på, hvordan ’Advis om sygehusophold’ kunne se ud. I adviset vil ’Status sygehusophold’ angive hvilken hændelse, der har udløst adviseringen jf. 
+
+## Release Notes 
+[The latest changes of this page](../documents/ReleaseNoteClinGuideDK.md) can be found here

@@ -1,7 +1,7 @@
 # Release Note
-[Return](../../index.md)
+[Return](../../assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)
 
-The release notes in the following describes the changes made to the landing page of MedComs FHIR standards and subpages.
+The release notes in the following describes the changes made to the HopitalNotification standard and subpages.
 Each subpage will have its own release note, and they can be found here: 
 
   * [MedCom HospitalNotification](../documents/ReleaseNote-ENG.md)

@@ -1,7 +1,8 @@
 # Release Note
-[Return](../../index.md)
+[Return](../../assets/documents/Intro-Technical-Spec-ENG.md)
 
-The release notes in the following describes the changes made to the landing page of MedComs FHIR standards and subpages.
+
+The release notes in the following describes the changes made to the HopitalNotification standard and subpages.
 Each subpage will have its own release note, and they can be found here: 
 
   * [MedCom HospitalNotification](../documents/ReleaseNote-ENG.md)

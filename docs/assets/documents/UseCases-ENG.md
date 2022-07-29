@@ -205,3 +205,5 @@ In [section is an overview of the patient journeys](#patient-journeys-and-use-ca
 ## 3 Business-related use cases
 
 ## 4 Technical use cases
+## 5 Release Notes
+[The latest changes of this page](../documents/ReleaseNoteUseCaseENG.md) can be found here.

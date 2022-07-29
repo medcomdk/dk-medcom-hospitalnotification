@@ -1519,3 +1519,6 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+
+## 8 Release Notes 
+[The latest changes of this page](../documents/ReleaseNoteUsecaseDK.md) can be found here.

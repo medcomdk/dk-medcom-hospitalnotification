@@ -1,4 +1,5 @@
-[Return](../documents/Clinical-guidelines-ENG.md)
+[Return](index.md)
+
 # Overview of Hospital Notification codes and HL7 FHIR resources
 
 The table below shows how the hospital notification codes folders map into FHIR's terminology, and thus how one can determine, based
@@ -214,3 +215,5 @@ notification has been sent by a mistake. For example, if Encounter.status was â€
 </tbody>
 </table>
 
+# Release Notes
+[The latest changes of this page](../documents/RelaseNoteOverviewHospitalNot.md) can be found here.

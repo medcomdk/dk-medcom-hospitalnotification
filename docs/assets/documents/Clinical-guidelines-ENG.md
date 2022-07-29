@@ -205,3 +205,5 @@ The FHIR profile for hospitalnotification can be found  on [the front page for H
 
 >Note This is an example of what the HospitalNotification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification.
 
+# Release Notes 
+[The latest changes of this page](../documents/ReleaseNotesClinGuideENG.md) can be found here.

@@ -372,7 +372,8 @@ In the example there is added some comments. These indicate the beginning of a p
   </entry>
 </Bundle> 
 ```
-
+# Release Notes 
+[The latest changes of this page](../documents/ReleaseNoteIntroTechnicalSpec.md) can be found here.
 
 
 

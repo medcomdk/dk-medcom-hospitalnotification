@@ -33,6 +33,7 @@
     * [6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification](#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification)
 * [7 Regler for modtagersystemet, som use casene beror på](#7-regler-for-modtagersystemet-som-use-casene-beror-på)
   * [7.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
+* [8 Release Notes](#8-release-notes)
 <p>&nbsp;</p>
 
 

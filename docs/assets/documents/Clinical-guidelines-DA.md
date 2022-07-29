@@ -11,6 +11,7 @@
   - [6.1 Use cases](#61-use-cases)
   - [6.2Tekniske specifikationer for ‘Advis om sygehusophold’](#62-tekniske-specifikationer-for--advis-om-sygehusophold-)
   - [6.3 Eksempel på ‘Advis om sygehusophold’](#63-eksempel-p---advis-om-sygehusophold-)
+- [7 Release Notes](#7-release-notes)
 
 # 1  Introduktion 
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard ’Advis om sygehusophold’. Den indeholder formål, baggrund og overordnede krav til indhold og forretningsmæssig anvendelse af ’Advis om sygehusophold’. Målgruppen er it-systemleverandører, og implementeringsansvarlige i regioner og kommuner, som skal it-understøtte afsendelse og modtagelse af ‘Advis om sygehusophold’. Krav til indhold og forretningsmæssig anvendelse af Advis om sygehusophold er udarbejdet i samarbejde med MedComs <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> i MedCom11 perioden 2018-2020. Advis om sygehusophold erstatter de tidligere MedCom standarder indlæggelsesadvis <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, og udskrivningsadvis <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>.Nærværende dokument findes også i engelsk udgave.
@@ -198,5 +199,5 @@ FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden 
 
 > Note: Dette er et eksempel på, hvordan ’Advis om sygehusophold’ kunne se ud. I adviset vil ’Status sygehusophold’ angive hvilken hændelse, der har udløst adviseringen jf. 
 
-## Release Notes 
+## 7 Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteClinGuideDK.md) can be found here

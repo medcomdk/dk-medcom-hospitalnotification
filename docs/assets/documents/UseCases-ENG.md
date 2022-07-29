@@ -10,6 +10,7 @@
 * [2 Patient journeys and use cases](#2-Patient-journeys-and-use-cases)
 * [3 Business-related use cases](#3-Business-related-use-cases) 
 * [4 Technical use cases](#4-technical-use-cases)
+* [5 Release Notes](#5-release-notes)
 
 
 ## 1 Introduction

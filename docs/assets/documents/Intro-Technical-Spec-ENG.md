@@ -7,6 +7,7 @@
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
 * [2 Internal References in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message2 Internal References in a HospitalNotification Message)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) <br><br>
+* [4 Release Notes](#4-release-notes)
 
 # 1 Profiles in the HospitalNotification Standard
 
@@ -372,7 +373,7 @@ In the example there is added some comments. These indicate the beginning of a p
   </entry>
 </Bundle> 
 ```
-# Release Notes 
+# 4 Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteIntroTechnicalSpec.md) can be found here.
 
 

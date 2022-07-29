@@ -11,6 +11,7 @@
   * [6.1 Use cases](#7-Use-cases)
   * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#8-Technical-specifications-for-&#39;Hospital-Notification&#39;)
   * [6.3 Example of a HospitalNotification](#9-Example-of-a-HospitalNotification)
+* [7 Release Notes](#7-release-notes)
 <p>&nbsp;</P>
 
 # 1 Introduction
@@ -205,5 +206,5 @@ The FHIR profile for hospitalnotification can be found  on [the front page for H
 
 >Note This is an example of what the HospitalNotification could look like. In the notification, the &#39;status on hospital stay&#39; will indicate which event has caused the electronic notification.
 
-# Release Notes 
+# 7 Release Notes 
 [The latest changes of this page](../documents/ReleaseNotesClinGuideENG.md) can be found here.

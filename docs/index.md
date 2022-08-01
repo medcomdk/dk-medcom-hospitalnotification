@@ -25,7 +25,7 @@ Profiles in the HospitalNotification Implementation Guide (IG) will together wit
 <p>&nbsp;</p>
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
-## 1 Standard Documentation 
+# 1 Standard Documentation 
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the HospitalNotification message, what to implement and how to get a MedCom certificate. The standard documentation for HospitalNotification includes: 
 * Clinical Guidelines
 * Use cases
@@ -35,7 +35,7 @@ The standard documentation below provides the necessary content to understand th
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a> to FHIR  HospitalNotification Message.
 <p>&nbsp;</p>
 
-### 1.1 Clinical Guidelines
+## 1.1 Clinical Guidelines
 The clinical guidelines is the foundation for the HospitalNotification standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
 
 Below can the clinical guidelines in Danish and English be found:<br> 
@@ -43,7 +43,7 @@ Below can the clinical guidelines in Danish and English be found:<br>
 [English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
 
 
-### 1.2 Use Cases
+## 1.2 Use Cases
 
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of the HospitalNotification. The descriptions are targeted IT-system vendors and the people responsible for the implementation in regions and municipalities.
 
@@ -53,7 +53,7 @@ Below can the use cases in Danish and English be found:<br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 
 
-### 1.3 Technical Specification
+## 1.3 Technical Specification
 The technical specifications for the HospitalNotification standard are defined in IGs. As mentioned previously is the Hospitalnotification standard composed by profiles from three IGs and terminology from one IG. Links to the IG’s are listed below:
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/index.html" target="_blank">MedCom HospitalNotification IG</a>
 *	<a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a>
@@ -66,21 +66,21 @@ IGs might be difficult for people with little or no knowledge about FHIR and how
 
 
 
-### 1.4 HospitalNotification Activity Codes
+## 1.4 HospitalNotification Activity Codes
 
 The purpose of presenting the activity codes, is to help vendors of IT-systems implement the codes in the same way.  This is important as the receiver of the HospitalNotification message, in this case the municipalities, will act in accordance with the activity codes.
 
 The value of element codes different profiles (MedComHospitalNotificationEncounter, MedComMessagingProvenance and MedComCorePatient) will together form the composite understanding of a HospitalNotification message, e.g. a hospitalization of an acute patient or discharge of an inpatient. Depended on which activity has taken place, the elements shall be assigned to different values.
 [The HospitalNotification Codes used in FHIR can be found here.](/assets/documents/Overview-HospitalNotification-codes-FHIR.md)
 
-### 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
+## 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
 
 Mapping from previous OIOXML standards to FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice, that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Further, not all elements from the FHIR elements are represented in the document and therefore it cannot stand alone for implementation.
 
 [The mapping can be found here.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)
 
-## 2 Test and Certification
+# 2 Test and Certification
 
 Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. 
 TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
@@ -98,5 +98,5 @@ Testprotocols and testscripts are used to test and certify MedCom HospitalNotifi
 <p>&nbsp;</p>
 
 
-## 3 Release Notes
+# 3 Release Notes
 [Updates in the latest release.](assets/documents/ReleaseNote-ENG.md)

@@ -9,7 +9,7 @@
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) <br><br>
 * [4 Release Notes](#4-release-notes)
 
-# 1 Profiles in the HospitalNotification Standard
+## 1 Profiles in the HospitalNotification Standard
 
 In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short describtion of each profile can be seen in the table below.
 
@@ -89,7 +89,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 <br><br>
 
 
-# 2 Internal References in a HospitalNotification Message
+## 2 Internal References in a HospitalNotification Message
 
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging paradigm</a>. 
 
@@ -103,7 +103,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <br><br>
 
 
-# 3 Examples in a HospitalNotification Message
+## 3 Examples in a HospitalNotification Message
 
 On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
 
@@ -373,7 +373,7 @@ In the example there is added some comments. These indicate the beginning of a p
   </entry>
 </Bundle> 
 ```
-# 4 Release Notes 
+## 4 Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteIntroTechnicalSpec.md) can be found here.
 
 

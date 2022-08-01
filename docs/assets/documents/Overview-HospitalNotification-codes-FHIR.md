@@ -19,7 +19,7 @@ inpatient’.
 notification has been sent by a mistake. For example, if Encounter.status was ‘onleave’ before the status was changed to
 ‘finished’, the status must be changed to ‘onleave’ again.
 * If a patient dies, it must be noted in the element Patient.deceased. In this case, the element must be ‘true’.
-<br>
+<br><br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:90%;width:85%;}
@@ -213,8 +213,7 @@ notification has been sent by a mistake. For example, if Encounter.status was �
   </tr>
 </tbody>
 </table>
-<br>
-<br>
+<br> <br>
 
 # Release Notes 
 <a href="../documents/RelaseNoteOverviewHospitalNot.md" target="_blank">The lates changes of this page</a> can be found here.

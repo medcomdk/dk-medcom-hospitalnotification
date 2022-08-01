@@ -13,25 +13,25 @@
   - [6.3 Eksempel på ‘Advis om sygehusophold’](#63-eksempel-p---advis-om-sygehusophold-)
 - [7 Release Notes](#7-release-notes)
 
-# 1  Introduktion 
+## 1  Introduktion 
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard ’Advis om sygehusophold’. Den indeholder formål, baggrund og overordnede krav til indhold og forretningsmæssig anvendelse af ’Advis om sygehusophold’. Målgruppen er it-systemleverandører, og implementeringsansvarlige i regioner og kommuner, som skal it-understøtte afsendelse og modtagelse af ‘Advis om sygehusophold’. Krav til indhold og forretningsmæssig anvendelse af Advis om sygehusophold er udarbejdet i samarbejde med MedComs <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> i MedCom11 perioden 2018-2020. Advis om sygehusophold erstatter de tidligere MedCom standarder indlæggelsesadvis <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, og udskrivningsadvis <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>.Nærværende dokument findes også i engelsk udgave.
 
 > Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske dokument det gældende dokument)
 
 De tekniske specifikationer kan findes på [forsiden for advis om sygehusophold](../../index.md).  
 
-# 2 Formål
+## 2 Formål
 
 Advis om sygehusophold medvirker til at sikre grundlaget for et sammenhængende patientforløb over sektorgrænser. Det specifikke formål med ‘Advis om sygehusophold’ er at informere borgerens aktuelle omsorgs- og sundhedsaktører i primær sektor om start og sluttidspunkt for borgerens ophold på et sygehus. Det giver mulighed for at pausere aktuelle ydelser under sygehusopholdet og igangsætte, når det ophører. Samtidigt kan ‘Advis om sygehusophold’ trigge automatisk afsendelse af en indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) fra modtagers system, som giver sygehuspersonalet et overblik over borgerens aktuelle ydelser, funktionsniveau og sundhedsfaglige problemer. Advis om sygehusophold indeholder derudover advis om patientens orlov fra sygehusophold, samt akut ambulant sygehusophold. 
 
-# 3 Baggrund 
+## 3 Baggrund 
 Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt modtager ydelser fra primær sektor, dannes ‘Advis om sygehusophold’ på alle borgere med cpr. nr. og fast bopælsadresse i Danmark ved registrering i sygehusets EPJ-system. Modtagersystemet sikrer, at ‘Advis om sygehusophold’ kun indlæses og synliggøres på borgere, som modtager ydelser indenfor det gældende [lovgrundlag](#lovgrundlag). 
 
 Registrering af sygehusophold i EPJ-systemet har sammenhæng til indberetning til landspatientregisteret, LPR. Ved overgang til LPR3 (2019) er begreberne indlagt og ambulant ophævet i indberetningen til LPR, og erstattet af fysisk fremmøde. I praksis fortsætter alle regioner med registrering af sygehusophold som hhv. ambulant og indlagt. Det er aftalt mellem parterne bag udvikling af moderniseret sygehusadvis, at rammen for de sygehusophold, som skal advis understøttes, er:
 
 *”Alle akutte sygehusophold med patientens fysiske fremmøde, samt alle planlagte sygehusophold med patientens fysiske fremmøde mhp. Indlæggelse”.*
 
-# 4 Lovgrundlag
+## 4 Lovgrundlag
 
 Adviser om sygehusophold udveksles med baggrund i Sundhedsloven og Retssikkerhedslovens §12c:
 
@@ -40,7 +40,7 @@ Fra Retssikkerhedsloven 12c LBK nr. 265 af 25/02/2022
 
 Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder §§ 83-99, som omfatter *personlig hjælp, omsorg og pleje samt plejetestamenter,* og §§ 107 og 108 omfatter *midlertidige og længerevarende botilbud*. 
 
-# 5 Krav til indhold og gevinster ved ‘Advis om sygehusophold’
+## 5 Krav til indhold og gevinster ved ‘Advis om sygehusophold’
 ’Advis om sygehusophold’ skal indeholde:
 
 1. Patientens cpr.nr 
@@ -142,7 +142,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 
 *repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
-# 6 Forretningsregler for anvendelse af ’Advis om sygehusophold’
+## 6 Forretningsregler for anvendelse af ’Advis om sygehusophold’
 
 Formålet med formulerede forretningsregler for anvendelse er, at parterne, som anvender advis, understøtter meddelelserne i overensstemmelse med behovet. Forretningsregler er et tillæg til den givne standard for ”Advis for sygehusophold’, som kan opdateres i takt med, at behovene ændrer sig. 
 
@@ -183,13 +183,13 @@ Formålet med formulerede forretningsregler for anvendelse er, at parterne, som 
 Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’START sygehusophold - indlagt’-advis ved patientens ankomst.
 <p>&nbsp;</p>
 
-## 6.1 Use cases 
+### 6.1 Use cases 
 Til brug for den tekniske implementering af sygehusadvis findes detaljerede use case beskrivelser, som forbinder indholdsmæssige krav med den forretningsmæssige anvendelse for afsender og modtager af sygehusadvis. Use cases på [forsiden for advis om sygehusophold](../../index.md).
 
-## 6.2 Tekniske specifikationer for ‘Advis om sygehusophold’
+### 6.2 Tekniske specifikationer for ‘Advis om sygehusophold’
 FHIR-profil for ‘Advis om sygehusophold’ kan tilgås via link på [forsiden for advis om sygehusophold](../../index.md).
 
-## 6.3 Eksempel på ‘Advis om sygehusophold’
+### 6.3 Eksempel på ‘Advis om sygehusophold’
 
 <figure>
 <img src="../images/Example_HospitalNotification_DA.png" alt="Eksempel på, hvordan et advid om sygehus ophold kan se ud" style="width:50%" id="Fig1">

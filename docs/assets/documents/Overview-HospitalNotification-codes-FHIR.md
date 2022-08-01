@@ -215,5 +215,6 @@ notification has been sent by a mistake. For example, if Encounter.status was â€
 </tbody>
 </table>
 
+
 # Release Notes
 [The latest changes of this page](../documents/RelaseNoteOverviewHospitalNot.md) can be found here.

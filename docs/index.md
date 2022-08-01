@@ -70,7 +70,7 @@ IGs might be difficult for people with little or no knowledge about FHIR and how
 
 The purpose of presenting the activity codes, is to help vendors of IT-systems implement the codes in the same way.  This is important as the receiver of the HospitalNotification message, in this case the municipalities, will act in accordance with the activity codes.
 
-The value of element codes different profiles (MedComHospitalNotificationEncounter, MedComMessagingProvenance and MedComCorePatient) will together form the composite understanding of a HospitalNotification message, e.g. a hospitalization of an acute patient or discharge of an inpatient. Depended on which activity has taken place, the elements shall be assigned to different values.
+The value of element codes different profiles (MedComHospitalNotificationEncounter, MedComMessagingProvenance and MedComCorePatient) will together form the composite understanding of a HospitalNotification message, e.g. a hospitalization of an acute patient or discharge of an inpatient. Depended on which activity has taken place, the elements shall be assigned to different values.<br> 
 [The HospitalNotification Codes used in FHIR can be found here.](/assets/documents/Overview-HospitalNotification-codes-FHIR.md)
 
 ## 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
@@ -83,7 +83,8 @@ Mapping from previous OIOXML standards to FHIR HospitalNotification standard can
 # 2 Test and Certification
 
 Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. 
-TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
+TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. <br> 
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
 
 Testprotocols and testscripts are used to test and certify MedCom HospitalNotification.The testprotocols and testscripts are currently in preparation. As soon as the tesprotocols and testscripts are reay, they will be presented below.
 

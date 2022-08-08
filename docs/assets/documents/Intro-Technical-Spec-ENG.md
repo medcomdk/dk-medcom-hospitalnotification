@@ -11,7 +11,7 @@
 
 ## 1 Profiles in the HospitalNotification Standard
 
-In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short describtion of each profile can be seen in the table below.
+In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short description of each profile can be seen in the table below.
 
 
 <style type="text/css">
@@ -29,7 +29,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   <tr>
     <th class="tg-4mz0"><span style="font-weight:bold">Profile</span></th>
     <th class="tg-4mz0"><span style="font-weight:bold">Resource</span></th>
-    <th class="tg-4mz0"><span style="font-weight:bold">Describtion</span></th>
+    <th class="tg-4mz0"><span style="font-weight:bold">Description</span></th>
     <th class="tg-4mz0"><span style="font-weight:bold">MustSupport elements</span></th>
     <th class="tg-4mz0"><span style="font-weight:bold">Implementation Guide Origin</span></th>
   </tr>

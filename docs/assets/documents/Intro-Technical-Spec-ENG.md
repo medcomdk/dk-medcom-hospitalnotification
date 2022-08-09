@@ -6,8 +6,9 @@
 **Table of Content**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
-* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) <br><br>
+* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
 * [4 Release Notes](#4-release-notes)
+<br><br>
 
 ## 1 Profiles in the HospitalNotification Standard
 
@@ -36,49 +37,49 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </thead>
 <tbody>
   <tr>
-    <td class="tg-7euo">MedComHospitalNotificationMessage</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a></td>
     <td class="tg-7euo">Bundle</td>
     <td class="tg-7euo">Acts as a container for the content of the message. The type of the Bundle shall always be 'message'.<br><br>Inherits from MedComMessagingMessage.</td>
     <td class="tg-7euo">Message id<br>Timestamp<br>Reference to all included profiles</td>
     <td class="tg-7euo">MedCom HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComHospitalNotificationMessageHeader</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a></td>
     <td class="tg-7euo">MessageHeader</td>
     <td class="tg-7euo">The header of a message, which profile shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver and the content of the message.<br><br>Inherits from MedComMessagingMessageHeader.</td>
     <td class="tg-7euo">MessagHeader id<br>Narrative text<br>Type of message<br>Sender Organization<br>Receiver Organization<br>Carbon Copy<br>Receiver of the receipt<br>Focus</td>
     <td class="tg-7euo">MedCom HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComHospitalNotificationEncounter</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a></td>
     <td class="tg-7euo">Encounter</td>
     <td class="tg-7euo">A meeting between a healthcare professional and a patient. In a HospitalNotification message the start time of the encounter represents the hospitalization of the patient.<br><br>Inherits from MedComCoreEncounter</td>
     <td class="tg-7euo">Encounter status<br>Encounter classification<br>Subject of the encounter<br>Episode of care identifier<br>Start time of the encounter<br>Service provider organization</td>
     <td class="tg-7euo">MedCom HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComCorePatient</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-patient.html" target="_blank">MedComCorePatient</a></td>
     <td class="tg-7euo">Patient</td>
     <td class="tg-7euo">Describes a citizen or patient, when exchanging a MedCom message.</td>
     <td class="tg-7euo">Identifier (CPR-number)<br>Name<br>Address<br>Telecom<br>Managing Organization<br>Deceased or not</td>
     <td class="tg-7euo">MedCom Core</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComCoreOrganization</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-organization.html" target="_blank">MedComCoreOrganization</a></td>
     <td class="tg-7euo">Organization</td>
     <td class="tg-7euo">Information useful to identify an organization. In a HospitalNotification message it is used to describe the service provider organization.</td>
     <td class="tg-7euo">Identifier (SOR-id)<br>Name</td>
     <td class="tg-7euo">MedCom Core</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComMessagingOrganization</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
     <td class="tg-7euo">Organization</td>
     <td class="tg-7euo">Information useful to identify an sender or receiver organization.<br>Inherits from MedComCoreOrganization.</td>
     <td class="tg-7euo">Identifier (SOR-id)<br>Identifier (EAN/GLN-id)<br>Name</td>
     <td class="tg-7euo">MedCom Messaging</td>
   </tr>
   <tr>
-    <td class="tg-7euo">MedComMessagingProvenance</td>
+    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank">MedComMessagingProvenance</a></td>
     <td class="tg-7euo">Provenance</td>
     <td class="tg-7euo">Describes the activity and history of a message. It includes a reference to the target which is the MedComMessagingMessageHeader from the current message, the actors involved the activity and the previuos message if there is any.</td>
     <td class="tg-7euo">Target<br>Timestamps<br>Activity<br>Actors<br>Reference to the previous message</td>

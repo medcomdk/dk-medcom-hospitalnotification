@@ -8,6 +8,49 @@
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+
+    <style>
+      .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        min-width: 260px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 360px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -17,8 +60,33 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" style="height:70%;"/>
         {% endif %}
 
-        <!--<h1 align="left"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>-->
+        <!-- <h1 align="left"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
         <h3 align="left">This specification conforms to {{ site.fhir_version }}</h3>
+        
+        <strong>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            {% if site.menuurl_item1 %}
+              <a href="{{ site.menuurl_item1 }}">{{ site.menutxt_item1 }}</a>
+            {% endif %}
+            {% if site.menuurl_item2 and site.menuurl_item2!=site.href %}
+              <a href="{{ site.menuurl_item2 }}">{{ site.menutxt_item2 }}</a>
+            {% endif %}
+            {% if site.menuurl_item3 %}
+              <a href="{{ site.menuurl_item3 }}">{{ site.menutxt_item3 }}</a>
+            {% endif %}
+            {% if site.menutxt_item4 %}
+              <a href="https://medcomdk.github.io/MedComLandingPage/">Return</a>
+            {% endif %}
+          </div>
+        </div>
+        <hr/>
+      </strong>
+
+      <!--script>
+        document.write('<a href="' + document.referrer + '">Return</a>');
+      </script-->
 
         <!--p>{{ site.description | default: site.github.project_tagline }}</p-->
 
@@ -30,7 +98,15 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 
-    
+        <!-- {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        {% endif %} -->
+      <!--/header-->
+      <!--section-->
       
       <!-- <h3 align="left">{{ site.description }}</h3> -->
       
@@ -45,20 +121,22 @@
         -->
         <!--p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p-->
         
+        <p><br/></p>
+
+        <hr/>
+
+        <h1 id="About">About</h1>
+
         <h2>Support or Contact</h2>
         <a href="https://www.medcom.dk/">MedCom</a> is responsible for this page. 
         If you have any questions regarding the IG, please contact <a href="mailto:fhir@medcom.dk">fhir@medcom.dk</a> or write to <a href="https://chat.fhir.org/#narrow/stream/315677-denmark.2Fmedcom.2FFHIRimplementationErfaGroup" target="_blank">MedComs stream on Zulip</a>. <br> <br>
-        
         <i>"FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this implementation guide by HL7, nor affirmation that this content is conformant to the various applicable standards" </i>
-        
-        <!--
-        {% if site.logo %}
-        <p align="left">
-          <img src="{{site.logo | relative_url}}" alt="Logo" style="height:20%;"/>
-        </p>
-        {% endif %}
-		-->
-      <!--/footer-->
+
+        <h2>Version of this documentation</h2>
+        The version of this documentation is: <i><strong>{{ site.version }}</strong></i>
+        The releasenote of this version is <a href="{{ site.releasenote | relative_url }}"><strong>here</strong></a>
+
+        <!--/footer-->
       </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

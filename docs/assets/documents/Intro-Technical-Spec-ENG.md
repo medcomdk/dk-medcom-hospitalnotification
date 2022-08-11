@@ -7,7 +7,7 @@
 * [4 Release Notes](#4-release-notes)
 <br><br>
 
->Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
+  >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
 
 
 
@@ -92,7 +92,6 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 
 
 ## 2 Internal References in a HospitalNotification Message
-
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging model</a>. 
 
 The references between the profiles are shown on the <a href="#Fig1" rel="noopener noreferrer"> figure 1 </a> below . The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader is sender, receiver and carbon-coby organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter shall always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter.<br> 
@@ -102,11 +101,9 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:40%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
 </figure>
-<br><br>
 
 
 ## 3 Examples in a HospitalNotification Message
-
 On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
 
 The messages in <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> illustrates an admission and discharge of a patient. The patient, service provider organization, sender and receiver information is identical, since both messages are send from a hospital to a municipality.
@@ -115,7 +112,7 @@ In 'Message 2: Discharg Inpatient to Home' there are two MedComMessagingProvenan
 
 Some of the information does not fulfill the requirements in the IG, this accounts for the id’s and organization identifiers. These are made up to simplify the example.
 
-> Note: IT-vendors cannot assume any specific order of the resources in a message. 
+  > Note: IT-vendors cannot assume any specific order of the resources in a message. 
 
 <figure>
 <img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
@@ -125,7 +122,7 @@ Some of the information does not fulfill the requirements in the IG, this accoun
 Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a>. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
 
 In the example there is added some comments. These indicate the beginning of a profile or describes the content of the element. All comments are presented in the following way.
-
+<br>
 ``` xml 
 <!-- TEXT--> 
 ``` 
@@ -375,6 +372,8 @@ In the example there is added some comments. These indicate the beginning of a p
   </entry>
 </Bundle> 
 ```
+<br>
+
 ## 4 Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteIntroTechnicalSpec.md) can be found here.
 

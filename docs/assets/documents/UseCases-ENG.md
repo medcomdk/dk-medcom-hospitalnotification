@@ -21,12 +21,12 @@ The documentation consists of 3 parts, accessible via [the frontpage of Hospital
 1.	’HospitalNotification’ – Clinical guidelines
 1.	HospitalNotification’ – FHIR Profile
 2.	Use cases (this document – also available in Danish )
+<br>
 
 > Note: In case of any discrepancies between the two documents, the Danish document is the document in force.
 
-The use case descriptions should therefore be read together with the rest of the documentation.
-
-The use case descriptions combine content requirements with business regulations for use and should ensure a coherent implementation and use of the ‘HospitalNotification’. The use cases are qualified in collaboration with EPR- and vendors catering to the municipalities. 
+<br>
+The use case descriptions should therefore be read together with the rest of the documentation.The use case descriptions combine content requirements with business regulations for use and should ensure a coherent implementation and use of the ‘HospitalNotification’. The use cases are qualified in collaboration with EPR- and vendors catering to the municipalities. 
 
 The use case descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities. 
 

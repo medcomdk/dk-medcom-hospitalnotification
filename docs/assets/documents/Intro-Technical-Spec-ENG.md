@@ -5,16 +5,16 @@
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
 * [4 Release Notes](#4-release-notes)
-<br><br>
-
+<br>
+  
   >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
-
+<br>
 
 
 ## 1 Profiles in the HospitalNotification Standard
 
 In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short description of each profile can be seen in the table below.
-<br>
+<br><br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;max-width:80%}
@@ -101,7 +101,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <img src="../images/HospitalNotification.png" alt="Show references between the profiles in an HospitalNotification message." style="width:40%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
 </figure>
-
+<br><br>
 
 ## 3 Examples in a HospitalNotification Message
 On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
@@ -118,11 +118,12 @@ Some of the information does not fulfill the requirements in the IG, this accoun
 <img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
 <figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inplatient </b></figcaption>
 </figure>
+<br><br>
 
 Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a>. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
 
 In the example there is added some comments. These indicate the beginning of a profile or describes the content of the element. All comments are presented in the following way.
-<br>
+<br><br>
 ``` xml 
 <!-- TEXT--> 
 ``` 

@@ -12,7 +12,7 @@
   + [2.1 Testprotocols](#21-testprotocols)
 * [3 Release Notes](#3-release-notes)
 <hr/>
-<p>&nbsp;</p>
+
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
 

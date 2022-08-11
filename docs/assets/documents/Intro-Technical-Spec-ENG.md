@@ -14,7 +14,7 @@
 ## 1 Profiles in the HospitalNotification Standard
 
 In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short description of each profile can be seen in the table below.
-
+<br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;max-width:80%}

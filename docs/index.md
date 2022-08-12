@@ -11,11 +11,10 @@
   + [2.1 Testprotocols](#21-testprotocols)
 * [3 Release Notes](#3-release-notes)
 <hr/>
-<br>
 
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 <br>
-
+<br>
 This page presents MedComs HospitalNotification standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a>. The purpose of the standard is to notify the municipalities then a citizen in their care is hospitalized, on leave, or discharged. The notification will be sent regardless of the hospitalization of the patient is as an inpatient or acute care. 
 
@@ -87,8 +86,10 @@ Mapping from previous OIOXML standards to FHIR HospitalNotification standard can
 Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. 
 TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. 
 <br>
+
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
 <br>
+
 Testprotocols and testscripts are used to test and certify MedCom HospitalNotification.The testprotocols and testscripts are currently in preparation. As soon as the tesprotocols and testscripts are ready, they will be presented below.
 
 **Sending a HospitalNotification message**

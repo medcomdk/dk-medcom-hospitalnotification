@@ -6,13 +6,8 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 version: "Version 1.0.0-alpha.1"
-fhir_version: "FHIR R4"
+fhir_version: "FHIR®© R4"
 releasenote: /assets/documents/ReleaseNote-ENG.md
 thisurl: https://medcomdk.github.io/MedCom-FHIR-Communication/
 menuurl_item1: https://medcomdk.github.io/MedComLandingPage/
-menutxt_item1: MedCom FHIR LandingPage
-# menuurl_item2: https://medcomdk.github.io/MedCom-FHIR-Communication/
-# menutxt_item2: MedCom FHIR Governance
-# menuurl_item3: https://medcomdk.github.io/MedCom-FHIR-Communication/#About
-# menutxt_item3: About MedCom FHIR Governance
-menutxt_item4: MedCom FHIR LandingPage
+menutxt_item1: MedCom FHIR®© LandingPage

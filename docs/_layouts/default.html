@@ -4,12 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--library for responsive manu bar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2c415c;
+  overflow: hidden;
+}
 
-    <style>
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #08892f;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+    <!-- style for dropdownmenu -->
+    <!-- <style>
       .dropbtn {
         background-color: #4CAF50;
         color: white;
@@ -49,13 +121,12 @@
       
       .dropdown:hover .dropbtn {
         background-color: #3e8e41;
-      }
-    </style>
+      } -->
+    <!-- </style> -->
   </head>
   <body>
     <div class="wrapper">
-      <section>
-      <!--header-->
+        <!--header-->
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" style="height:70%;"/>
         {% endif %}
@@ -63,12 +134,10 @@
         <!-- <h1 align="left"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
         <h3 align="left">This specification conforms to {{ site.fhir_version }}</h3>
         
-        <strong>
-        <div class="dropdown">
-          <button class="dropbtn">Menu</button>
-          <div class="dropdown-content">
+      <!-- <strong> -->
+        <div class="topnav" id="myTopnav">
             {% if site.menuurl_item1 %}
-              <a href="{{ site.menuurl_item1 }}">{{ site.menutxt_item1 }}</a>
+              <a href="{{ site.menuurl_item1 }}" class="active">{{ site.menutxt_item1 }}</a>
             {% endif %}
             <!-- {% if site.menuurl_item2 and site.menuurl_item2!=site.href %}
               <a href="{{ site.menuurl_item2 }}">{{ site.menutxt_item2 }}</a>
@@ -76,16 +145,11 @@
             {% if site.menuurl_item3 %}
               <a href="{{ site.menuurl_item3 }}">{{ site.menutxt_item3 }}</a>
             {% endif %} -->
-            <!-- {% if site.menutxt_item4 %}
-              <a href="https://medcomdk.github.io/MedComLandingPage/">Return</a>
-            {% endif %} -->
-          </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i></a>
         </div>
-        <br>
         <p/>
-        <hr/>
-      </strong>
-    
+      
 
       <!--script>
         document.write('<a href="' + document.referrer + '">Return</a>');
@@ -93,37 +157,21 @@
 
         <!--p>{{ site.description | default: site.github.project_tagline }}</p-->
 
-        {% if site.github.is_project_page %}
-        <!--p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p-->
-        {% endif %}
+      {% if site.github.is_project_page %}
+      <!--p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p-->
+      {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+      {% if site.github.is_user_page %}
+      <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+      {% endif %}
 
-        <!-- {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %} -->
-      <!--/header-->
-      <!--section-->
-      
-      <!-- <h3 align="left">{{ site.description }}</h3> -->
-      
+    
       {{ content }}
-
-      <!--/section-->
+      
       <!--footer-->
-      <!--
-        {% if site.github.is_project_page %}
-        <p>This site is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        -->
-        <!--p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p-->
-         <p><br/></p>
+     
+      <section>
+        <p><br/></p>
 
         <hr/>
 
@@ -143,7 +191,7 @@
 
         <i>"FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this implementation guide by HL7, nor affirmation that this content is conformant to the various applicable standards" </i>
         <!--/footer-->
-      </section>
+      </section> 
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>

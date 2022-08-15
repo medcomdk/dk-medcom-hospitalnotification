@@ -27,6 +27,7 @@ The HospitalNotification IG contains the following profiles:
 * <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
 <p>&nbsp;</p>	
 Profiles in the HospitalNotification Implementation Guide (IG) will together with profiles from MedCom Core IG, MedCom Messaging IG and MedCom Terminology IG constitute the standard, which you can read more about below.
+<br>
 
 ## 1 Standard Documentation 
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the HospitalNotification message, what to implement and how to get a MedCom certificate. The standard documentation for HospitalNotification includes: 
@@ -44,7 +45,7 @@ The clinical guidelines is the foundation for the HospitalNotification standard.
 Below can the clinical guidelines in Danish and English be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
-
+<br>
 
 ### 1.2 Use Cases
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of the HospitalNotification. The descriptions are targeted IT-system vendors and the people responsible for the implementation in regions and municipalities.
@@ -54,6 +55,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 Below can the use cases in Danish and English be found:<br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 
+<br>
 
 ### 1.3 Technical Specification
 The technical specifications for the HospitalNotification standard are defined in IGs. As mentioned previously is the Hospitalnotification standard composed by profiles from three IGs and terminology from one IG. Links to the IG’s are listed below:

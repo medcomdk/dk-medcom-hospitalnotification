@@ -1,11 +1,13 @@
 [Return](../../index.md)
 # Introduction to the Technical Content
+<hr/>
+
 **Table of Content**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
 <!-- * [4 Release Notes](#4-release-notes) -->
-<br>
+<hr/>
   
   >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
 <br>

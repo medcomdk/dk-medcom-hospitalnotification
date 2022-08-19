@@ -1,7 +1,8 @@
 <!-- <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return</a> -->
-<hr/>
+
 
 # MedCom HospitalNotification
+<hr/>
 
 **Table of Content**
 * [1 Standard Documentation](#1-standard-documentation)

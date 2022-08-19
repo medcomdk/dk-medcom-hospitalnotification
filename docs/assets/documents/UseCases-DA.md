@@ -1,10 +1,10 @@
 [Tilbage](../../index.md)
-<hr/>
+
 
 # Use cases for advis om sygehusophold
+<hr/>
 
 **Tabel of content**
-
 * [1 Introduktion ](#1-introduktion)
   * [1.1 Baggrund og formål ](#11-baggrund-og-formål)
   * [1.2 Målgruppe ](#12-målgruppe)

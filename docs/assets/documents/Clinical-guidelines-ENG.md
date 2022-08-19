@@ -1,5 +1,6 @@
 [Return](../../index.md)
 # Clinical Guidelines 
+<hr/>
 
 **Table of Content**
 * [1 Introduction](#1-introduction)
@@ -12,7 +13,7 @@
   * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#8-Technical-specifications-for-&#39;Hospital-Notification&#39;)
   * [6.3 Example of a HospitalNotification](#9-Example-of-a-HospitalNotification)
 <!-- * [7 Release Notes](#7-release-notes) -->
-<p>&nbsp;</P>
+<hr/>
 
 # 1 Introduction
 

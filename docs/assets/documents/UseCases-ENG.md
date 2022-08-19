@@ -1,7 +1,8 @@
 [Return](../../index.md)
 
-<hr/>
+
 # Use cases for HospitalNotification
+<hr/>
 
 **Tabel of content**
 * [1 Introduction](#1-introduction)
@@ -13,7 +14,6 @@
 * [4 Technical use cases](#4-technical-use-cases)
 <!-- * [5 Release Notes](#5-release-notes) -->
 <hr/>
-<p>&nbsp;</p>
 
 ## 1 Introduction
 

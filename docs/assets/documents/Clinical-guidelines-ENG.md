@@ -199,8 +199,8 @@ The FHIR profile for hospitalnotification can be found  on [the front page for H
 ## 6.3 Example of a HospitalNotification
 
 <figure>
-<img src="../images/Example_HospitalNotification_ENG.png" alt="Example on HospitalNotification " style="width:50%" id="Fig1">
-<figcaption text-align = "center"><b>Figur 1: Example on HospitalNotification</b></figcaption>
+<img src="../images/Example_HospitalNotification_ENG.png" alt="Example of a HospitalNotification " style="width:50%" id="Fig1">
+<figcaption text-align = "center"><b>Figur 1: Example of a HospitalNotification</b></figcaption>
 </figure>
  
 

@@ -53,10 +53,13 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-Below can the use cases in Danish and English be found:<br>
+<b>The use cases are currently in preparation, as soon as they are ready they will be presented below in Danish and English:</b> 
+
+
+<!-- Below can the use cases in Danish and English be found:<br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
-[English: Use cases](assets/documents/UseCases-ENG.md) 
-<p>&nbsp;</p>	
+[English: Use cases](assets/documents/UseCases-ENG.md)  -->
+<!-- <p>&nbsp;</p>	 -->
 
 ### 1.3 Technical Specification
 The technical specifications for the HospitalNotification standard are defined in IGs. As mentioned previously is the Hospitalnotification standard composed by profiles from three IGs and terminology from one IG. Links to the IG’s are listed below:

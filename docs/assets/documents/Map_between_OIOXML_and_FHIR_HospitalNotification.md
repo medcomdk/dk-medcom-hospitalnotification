@@ -301,5 +301,5 @@ This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the
 </tbody>
 </table>
 
-# Release Notes 
-[The latest changes of this page](../documents/ReleaseNoteOIO.md) can be found here.
+<!-- # Release Notes 
+[The latest changes of this page](../documents/ReleaseNoteOIO.md) can be found here. -->

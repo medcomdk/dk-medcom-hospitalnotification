@@ -1,5 +1,6 @@
 [Return](../../index.md)
 
+<hr/>
 # Use cases for HospitalNotification
 
 **Tabel of content**
@@ -10,8 +11,9 @@
 * [2 Patient journeys and use cases](#2-Patient-journeys-and-use-cases)
 * [3 Business-related use cases](#3-Business-related-use-cases) 
 * [4 Technical use cases](#4-technical-use-cases)
-* [5 Release Notes](#5-release-notes)
-
+<!-- * [5 Release Notes](#5-release-notes) -->
+<hr/>
+<p>&nbsp;</p>
 
 ## 1 Introduction
 
@@ -206,5 +208,5 @@ In [section is an overview of the patient journeys](#patient-journeys-and-use-ca
 ## 3 Business-related use cases
 
 ## 4 Technical use cases
-## 5 Release Notes
-[The latest changes of this page](../documents/ReleaseNoteUseCaseENG.md) can be found here.
+<!-- ## 5 Release Notes
+[The latest changes of this page](../documents/ReleaseNoteUseCaseENG.md) can be found here. -->

@@ -1,7 +1,7 @@
 <!-- <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return</a> -->
+<hr/>
 
 # MedCom HospitalNotification
-<hr/>
 
 **Table of Content**
 * [1 Standard Documentation](#1-standard-documentation)
@@ -12,7 +12,7 @@
   + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#15-mapping-from-xdis17-xdis20-to-medcom-hospitalnotification)
 * [2 Test and Certification](#2test-and-certification)
   + [2.1 Testprotocols](#21-testprotocols)
-* [3 Release Notes](#3-release-notes)
+
 <hr/>
 
   > Note: Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
@@ -113,5 +113,5 @@ Testprotocols and testscripts are used to test and certify MedCom HospitalNotifi
 <p>&nbsp;</p>
 
 
-## 3 Release Notes
-[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md)
+<!-- ## 3 Release Notes
+[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md) -->

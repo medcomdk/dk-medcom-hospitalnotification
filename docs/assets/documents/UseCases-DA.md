@@ -1,4 +1,5 @@
 [Tilbage](../../index.md)
+<hr/>
 
 # Use cases for advis om sygehusophold
 
@@ -34,6 +35,7 @@
 * [7 Regler for modtagersystemet, som use casene beror på](#7-regler-for-modtagersystemet-som-use-casene-beror-på)
   * [7.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
 * [8 Release Notes](#8-release-notes)
+<hr/>
 <p>&nbsp;</p>
 
 
@@ -1485,9 +1487,9 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 </table>
 <p>&nbsp;</p>
 
-### 7 Regler for modtagersystemet, som use casene beror på
+## 7 Regler for modtagersystemet, som use casene beror på
 
-#### 7.1 Regler vedr. modtagelse af HospitalNotification {#regler-vedrørende-modtagelse-af-hospital-notification}
+### 7.1 Regler vedr. modtagelse af HospitalNotification {#regler-vedrørende-modtagelse-af-hospital-notification}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0; width:85%;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -1521,5 +1523,5 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 </tbody>
 </table>
 
-### 8 Release Notes 
-[The latest changes of this page](../documents/ReleaseNoteUsecaseDK.md) can be found here.
+<!-- ### 8 Release Notes 
+[The latest changes of this page](../documents/ReleaseNoteUsecaseDK.md) can be found here. -->

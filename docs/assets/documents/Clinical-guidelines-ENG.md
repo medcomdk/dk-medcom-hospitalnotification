@@ -28,7 +28,7 @@ The &#39;HospitalNotification&#39; contributes to securing the foundation for a 
 
 # 3 Background
 
-As the hospital is not able to determine in advance which citizens currently receive services from the primary sector, a &#39;HospitalNotification&#39; is generated for all citizens with a personal identification number (CPR) and home address in Denmark when registered in the hospital&#39;s EPR system. The receiving system ensures that the &#39;HospitalNotification&#39; stay is only downloaded and shown for citizens receiving services within the valid legal framework (see Section [Legal framework](#-Legal-framework)).
+As the hospital is not able to determine in advance which citizens currently receive services from the primary sector, a &#39;HospitalNotification&#39; is generated for all citizens with a personal identification number (CPR) and home address in Denmark when registered in the hospital&#39;s EPR system. The receiving system ensures that the &#39;HospitalNotification&#39; stay is only downloaded and shown for citizens receiving services within the valid legal framework (see Section [Legal framework](#4-legal-framework)).
 
 Registration of hospital stays in the EPR system are linked to the reporting to the National Patient Registry, LPR. By transition to LPR3 (2019), the concepts &#39;admitted&#39; and &#39;outpatient&#39; are removed in the reporting to LPR and replaced by physical attendance. In practice, all regions continue to register the hospital stay as outpatient and admission, respectively. It is agreed among the parties behind the development of the modernisedhospitalnotification that the scope of the hospital stays, which will be supported by a notification, is:
 

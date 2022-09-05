@@ -101,7 +101,7 @@ Certification of a system implies both an approved testprotocol and runtrough of
 TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom. 
 <br>
 
-<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">A description of test and certification of FHIR standards in MedCom can be founc here.</a> 
 <br>
 
 Testprotocols and testscripts are used to test and certify MedCom HospitalNotification.<b>The testprotocols and testscripts are currently in preparation. As soon as the tesprotocols and testscripts are ready, they will be presented below.</b>

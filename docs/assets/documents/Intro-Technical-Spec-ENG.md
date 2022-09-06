@@ -92,7 +92,6 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </table>
 <br><br>
 
-
 ## 2 Internal References in a HospitalNotification Message
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging model</a>. 
 
@@ -104,6 +103,11 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <figcaption text-align="center"><b>Figure 1: Structure of the HospitalNotification message </b> </figcaption>
 </figure>
 <br><br>
+
+### 2.1  Report of admission
+The request for a report of admission must be sent when a patient is initially admitted, meaning that the type of HospitalNotification is STIN og STAA. In these cases, the Provenance.activity.code is admit-inpatient or admit-emergency, respectively. A request for a report of admission shall not be send when the patient returns from leave (SLOR) or is relocated from another hospital. 
+
+On page 10 in the use case document the usage of the report of admission flag is further described
 
 ## 3 Examples in a HospitalNotification Message
 On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 

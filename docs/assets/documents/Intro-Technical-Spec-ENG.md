@@ -92,6 +92,10 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </table>
 <br><br>
 
+### 1.1 Service Provider
+The service provider is the organization or department in charge of the patients admission. 
+The service provider can be described using MedComMessaging Organization or MedComCoreOrganization, since MedComMessaiging Organization inherits properties from MedComCore Organization. 
+
 ## 2 Internal References in a HospitalNotification Message
 The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging model</a>. 
 

@@ -55,6 +55,9 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <b>The use cases are currently in preparation, as soon as they are ready they will be presented below in Danish and English:</b> 
 
+<a href="https://medcomtest-my.sharepoint.com/:b:/g/personal/mbu_medcom_dk/ET4QEIkA3aFJl0Ajz73D5tEBMhPiKOBlI3Vu62PsRtAitA?e=KzjhxN"> Uses cases</a>
+  > Be aware that new version of uses cases will come soon!
+    
 
 <!-- Below can the use cases in Danish and English be found:<br>
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 

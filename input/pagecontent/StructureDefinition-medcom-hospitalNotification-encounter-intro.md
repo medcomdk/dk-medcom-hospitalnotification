@@ -10,3 +10,6 @@ The figure below shows the references from a MedComHospitalNotificationEncounter
 
 Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationEncounter.
 
+### Service Provider
+The service provider is the organization or department in charge of the patients admission. 
+The service provider can be described using MedComMessaging Organization or MedComCoreOrganization, since MedComMessaiging Organization inherits properties from MedComCore Organization. 

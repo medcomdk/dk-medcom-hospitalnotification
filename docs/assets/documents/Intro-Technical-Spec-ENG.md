@@ -4,7 +4,9 @@
 
 **Table of Content**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
+  * [1.1 Service Provider](#11-service-provider)
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
+  * [Report of admission](#21-report-of-admission)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
 <!-- * [4 Release Notes](#4-release-notes) -->
 <hr/>

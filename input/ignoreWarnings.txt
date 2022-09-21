@@ -1,6 +1,0 @@
-== Suppressed Messages ==
-
-# Allowed MimeTypes are checked manually 
-Unable to check if http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
-
-

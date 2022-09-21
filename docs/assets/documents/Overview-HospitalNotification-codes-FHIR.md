@@ -7,17 +7,13 @@ on the resource elements, which type of hospital notification it is.
 
 It is an overview of how values in the FHIR resources ‘Encounter’, ‘Provenance’ and ‘Patient’ together form the composite understanding.
 
-The original code on the left reflects the content of the use case, then follows the explanatory text in Danish and English. The last 4
+The original code on the left reflects the content of the use case and then follows the explanatory text in Danish and English. The last 4
 columns reflect the values from the 4 elements from ‘Encounter’, ‘Provenance’ and ‘Patient’.
 
 Comments to the table:
-* If there are two values in the Encounter.class column, the value depends on what value the previous message with Encounter.class had. The only exception is when a patient change hospital stay type from ‘emergency´ (EMER) to ‘inpatient’ (IMP).
-* ”current activity” describes that the activity from the previous message must be use. For example, if a patient is admitted for a
-hospital stay-admission, and dies during the admission, the element Provenance.activity must in both messages be ‘admit-
-inpatient’.
-* “previous status” describes that the status from the previous message must be used. This is relevant in cases where a death
-notification has been sent by a mistake. For example, if Encounter.status was ‘onleave’ before the status was changed to
-‘finished’, the status must be changed to ‘onleave’ again.
+* If there are two values in the Encounter.class column, the value depends on what value the previous message with Encounter.class had. The only exception is when a patient changes hospital stay type from ‘emergency´ (EMER) to ‘inpatient’ (IMP).
+* ”current activity” describes that the activity from the previous message must be used. For example, if a patient is admitted for a hospital stay admission, and dies during the admission, the element Provenance.activity must be ‘admit-inpatient’ in both messages.
+* “previous status” describes that the status from the previous message must be used. This is relevant in cases where a death notification has been sent by mistake. For example, if Encounter.status was ‘onleave’ before the status was changed to ‘finished’, the status must be changed to ‘onleave’ again.
 * If a patient dies, it must be noted in the element Patient.deceased. In this case, the element must be ‘true’.
 <br><br>
 

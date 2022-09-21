@@ -1,8 +1,8 @@
 [Return](../../index.md)
-# Introduction to the Technical Content
+# Introduction to the technical content
 <hr/>
 
-**Table of Content**
+**Table of contents**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
   * [1.1 Service Provider](#11-service-provider)
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
@@ -11,13 +11,13 @@
 <!-- * [4 Release Notes](#4-release-notes) -->
 <hr/>
   
-  >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepandies.
+  >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
 <br>
 
 
 ## 1 Profiles in the HospitalNotification Standard
 
-In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitutes the HospitalNotification standard. They are derived from three different IGs, and a short description of each profile can be seen in the table below.
+In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. They are derived from three different IG's, and a short description of each profile can be seen in the table below.
 <br><br>
 
 <style type="text/css">
@@ -99,9 +99,9 @@ The service provider is the organization or department in charge of the patients
 The service provider can be described using MedComMessaging Organization or MedComCoreOrganization, since MedComMessaiging Organization inherits properties from MedComCore Organization. 
 
 ## 2 Internal References in a HospitalNotification Message
-The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedComs generic messaging model</a>. 
+The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedCom's generic messaging model</a>. 
 
-The references between the profiles are shown on the <a href="#Fig1" rel="noopener noreferrer"> figure 1 </a> below . The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader is sender, receiver and carbon-coby organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter shall always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter.<br> 
+The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader are the sender, receiver and carbon-copy organization referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter must always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organization is also referenced from the encounter.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the notification. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
 <figure>
@@ -113,28 +113,28 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 ### 2.1  Report of admission
 The request for a report of admission must be sent when a patient is initially admitted, meaning that the type of HospitalNotification is STIN og STAA. In these cases, the Provenance.activity.code is admit-inpatient or admit-emergency, respectively. A request for a report of admission shall not be send when the patient returns from leave (SLOR) or is relocated from another hospital. 
 
-On page 10 in the use case document the usage of the report of admission flag is further described
+On page 10 in the use case document the usage of the report of admission flag is further described. <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Click here to finde the use cases</a>. 
 
 ## 3 Examples in a HospitalNotification Message
-On the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> is the required content of a HospitalNotification message illustrated. There is a difference between the required elements and MustSupport elements, where the required element always shall be included in a message and MustSupport elements shall be included if they are present in the sender system and the receiver shall be abel to handle the information if it is included. Therefore is there a discrepancy between the elements mentioned in the table above and the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> . 
+In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a>, the required content of a HospitalNotification message is illustrated. There is a difference between the required elements and MustSupport elements, as the required element must always be included in a message. Similarly, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> . 
 
-The messages in <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a> illustrates an admission and discharge of a patient. The patient, service provider organization, sender and receiver information is identical, since both messages are send from a hospital to a municipality.
+The messages in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> illustrate an admission and discharge of a patient. The patient, service provider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
 
-In 'Message 2: Discharg Inpatient to Home' there are two MedComMessagingProvenances, as all provenance instances in a stream of messages shall be included, as it constitutes a messaging history. 
+In 'Message 2: Discharge Inpatient to Home' there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 
 
-Some of the information does not fulfill the requirements in the IG, this accounts for the id’s and organization identifiers. These are made up to simplify the example.
+Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
 
-  > Note: IT-vendors cannot assume any specific order of the resources in a message. 
+  > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
 <figure>
 <img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
-<figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inplatient </b></figcaption>
+<figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inpatient </b></figcaption>
 </figure>
 <br><br>
 
-Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' on the <a href="#Fig2" rel="noopener noreferrer"> figure 2 </a>. As mentioned all profiles shall be reference from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
+Below is an XML example of a HospitalNotification message, including the same content as the 'Message 1: Admit inpatient' in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a>. As mentioned, all profiles must be referenced from the entry element in the MedComHospitalNotificationMessage, which can be seen in the example. 
 
-In the example there is added some comments. These indicate the beginning of a profile or describes the content of the element. All comments are presented in the following way.
+Comments are added in the example that indicate the beginning of a profile or describe the content of the element. All comments are presented in the following way.
 <br><br>
 ``` xml 
 <!-- TEXT--> 

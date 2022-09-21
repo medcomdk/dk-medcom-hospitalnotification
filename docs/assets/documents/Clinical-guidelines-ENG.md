@@ -2,7 +2,7 @@
 # Clinical Guidelines 
 <hr/>
 
-**Table of Content**
+**Table of contents**
 * [1 Introduction](#1-introduction)
 * [2 Purpose](#2-purpose)
 * [3 Background](#3-background)
@@ -17,22 +17,23 @@
 
 # 1 Introduction
 
-This is the textual part of the documentation for MedCom&#39;s FHIR-standard &#39;HospitalNotification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;HospitalNotification&#39;.The target group is IT-system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;HospitalNotification&#39;.The requirements for content and business-related use of &#39;HospitalNotification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> in the MedCom11 project period 2018-2019. The &#39;HospitalNotification&#39; replaces the previous MedCom standards, Notification of Admission <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, and Notification of Discharge <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>. The technical specifications for the FHIR notification standard can be found on [the front page for HospitalNotification](../../index.md). This document is also available in Danish.<br>
+This is the textual part of the documentation for MedCom&#39;s FHIR standard &#39;HospitalNotification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;HospitalNotification&#39;. The target group is IT system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;HospitalNotification&#39;. The requirements for content and business-related use of &#39;HospitalNotification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> in the MedCom11 project period 2018-2020. The &#39;HospitalNotification&#39; replaces the previous MedCom standards, Notification of Admission <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, and Notification of Discharge <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> / <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>. 
+[The technical specifications for the FHIR notification standard can be found onthe front page of HospitalNotification](../../index.md). This document is also available in Danish.<br>
 
   >Note: In case of any discrepancies between the two documents, the Danish document is the document in force.  
 
 
 # 2 Purpose
 
-The &#39;HospitalNotification&#39; contributes to securing the foundation for a coherent clinical pathway across sectors. The specific purpose of the &#39;HospitalNotification&#39; is to inform the citizen&#39;s current care and health provider in the primary sector about the start and end of the citizen&#39;s stay at the hospital. It makes it possible to pause the current care and health providers&#39; services during the hospital stay and resume them when it ends. At the same time, the &#39;HospitalNotification&#39; can trigger the automatic sending of Report of Admission (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) from the receiver&#39;s system, which gives the health professionals an overview of the citizen&#39;s current services, level of function and health related problems. The HospitalNotification also contains notification of the patient&#39;s leave from the hospital stay and acute ambulant care.
+The &#39;HospitalNotification&#39; contributes to securing the foundation for a coherent clinical pathway across sectors. The specific purpose of the &#39;HospitalNotification&#39; is to inform the citizen&#39;s current care and health provider in the primary sector about the start and end of the citizen&#39;s stay at the hospital. It makes it possible to pause the current care and health providers&#39; services during the hospital stay and resume them when it ends. At the same time, the &#39;HospitalNotification&#39; can trigger the automatic sending of Report of Admission (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) from the receiver&#39;s system, which gives the health professionals an overview of the citizen&#39;s current services, level of function and health-related problems. The HospitalNotification also contains notification of the patient&#39;s leave from the hospital stay and acute ambulant care.
 
 # 3 Background
 
 As the hospital is not able to determine in advance which citizens currently receive services from the primary sector, a &#39;HospitalNotification&#39; is generated for all citizens with a personal identification number (CPR) and home address in Denmark when registered in the hospital&#39;s EPR system. The receiving system ensures that the &#39;HospitalNotification&#39; stay is only downloaded and shown for citizens receiving services within the valid legal framework (see Section [Legal framework](#4-legal-framework)).
 
-Registration of hospital stays in the EPR system are linked to the reporting to the National Patient Registry, LPR. By transition to LPR3 (2019), the concepts &#39;admitted&#39; and &#39;outpatient&#39; are removed in the reporting to LPR and replaced by physical attendance. In practice, all regions continue to register the hospital stay as outpatient and admission, respectively. It is agreed among the parties behind the development of the modernisedhospitalnotification that the scope of the hospital stays, which will be supported by a notification, is:
+Registration of hospital stays in the EPR system is linked to the reporting to the National Patient Registry, LPR. By transition to LPR3 (2019), the concepts &#39;admitted&#39; and &#39;outpatient&#39; are removed in the reporting to LPR and replaced by physical attendance. In practice, all regions continue to register the hospital stay as outpatient and admission respectively. It is agreed among the parties behind the development of the modernisedhospitalnotification that the scope of the hospital stays, which will be supported by a notification, is:
 
-&quot;_All current hospital stays with physical attendance by the patient and all planned hospital stays with physical attendance by the patient for the purpose of admission.&quot;
+&quot;All current hospital stays with physical attendance by the patient and all planned hospital stays with physical attendance by the patient for the purpose of admission.&quot;
 
 # 4 Legal framework
 
@@ -52,7 +53,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 6. Status of hospital stay (cf. Table 1).
  <p>&nbsp;</P>
 
->Note:Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.  
+>Note: Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.  
 
 
 
@@ -157,32 +158,32 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 
 # 6 Business rules for use of &#39;HospitalNotification&#39;
 
-The purpose of the outlined business rules for use of the &#39;HospitalNotification&#39; is that the actors who use the notification, use the messages as intended. Business rules are a supplement to the standard for &#39;HospitalNotification&#39; and can be updated as the needs change.
+The purpose of the outlined business rules for use of the &#39;HospitalNotification&#39; is that the notification users use the messages as intended. Business rules are a supplement to the standard for &#39;HospitalNotification&#39; and can be updated as the needs change.
 
-  >Note:Private hospitals can also use hospitalnotifications
+  >Note: Private hospitals can also use hospitalnotifications
 
 1. **Electronic notifications are generated based on real-time registration in the EPR/PAS system**If EPR/PAS uses future registrations of planned contacts, these should trigger the electronic notification only when the time occurs, i.e. at the patient&#39;s physical attendance.
 
-2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to primary sector)**Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
+2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)** Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
 
-    >Note:f the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
+    >Note: If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
-3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector).
+3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to the primary sector).
 
-4. **If an admission changes to acute ambulant care, a new &#39;START hospital stay – acute ambulant care&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the admission changes to acute ambulant care. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to primary sector). This occurrence is seen as rare.
+4. **If an admission changes to acute ambulant care, a new &#39;START hospital stay – acute ambulant care&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the admission changes to acute ambulant care. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to the primary sector). This occurrence is seen as rare.
 
 5. **If the patient is declared dead on arrival, after arrival or during the hospital stay, the notification of the type &#39;DEATH&#39; is sent.**
 The notification type &#39;DEAD&#39; should be used in all cases where the patient is dead or dies.
 
-6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications is only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
+6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications are only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
 
    >Note:Admission in psychiatric and somatic departments at the same time.
 
 7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**
-    1. If a notification has been sent because of wrongly entered personal identification number (CPR) or wrong choice of hospital stay, **a cancellation** is sent.
-    2. If a notification with the wrongly stated hospital department or time of stay is sent, **a correction** is sent, i.e. a new correct notification that replaces previous notifications. A cancellation is not sent prior to the correction.
+    1. If a notification has been sent because of a wrongly entered personal identification number (CPR) or wrong choice of hospital stay, **a cancellation** is sent.
+    2. If a notification with the wrongly stated hospital department or time of stay is sent, **a correction** is sent, i.e. a new correct notification that replaces previous notifications. Cancellation is not sent prior to the correction.
 
-8. **No specific transfer notification is used.** A requirement is made that new notifications with &#39;START hospital stay&#39; is sent from the hospital, which the patient is transferred **to**, either if it is in the same region or another region. No notification is sent from the hospital, which the patient is transferred form. 
+8. **No specific transfer notification is used.** A requirement is made that new notifications with 'START hospital stay'; is sent from the hospital the patient is transferred **to**, whether it is in the same region or another region. No notification is sent from the hospital, from which the patient is transferred form. 
 
    >Note: If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
@@ -191,17 +192,17 @@ Same flow as for transfer to another hospital in the same or another region is u
 <p>&nbsp;</p>
 
 ## 6.1 Use cases
-For use of the technical implementation of the &#39;HospitalNotification&#39;, use case descriptions in more details exist. They connect content requirements with the business-related use for sender and receiver of the HospitalNotification. The use cases can be found on [the front page for HospitalNotification](../../index.md).
+For use of the technical implementation of the 'HospitalNotification', use case descriptions in more detail exist. They connect content requirements with the business-related use for the sender and receiver of the HospitalNotification.  [The use cases can be found on the front page for HospitalNotification](../../index.md).
 
 ## 6.2 Technical specifications for &#39;HospitalNotification&#39;
 The FHIR profile for hospitalnotification can be found  on [the front page for HospitalNotification](../../index.md).
 
 
-## 6.3 Example of a HospitalNotification
+## 6.3 Example of a 'HospitalNotification'
 
 <figure>
 <img src="../images/Example_HospitalNotification_ENG.png" alt="Example of a HospitalNotification " style="width:50%" id="Fig1">
-<figcaption text-align = "center"><b>Figur 1: Example of a HospitalNotification</b></figcaption>
+<figcaption text-align = "center"><b>Figure 1: Example of a HospitalNotification</b></figcaption>
 </figure>
  
 

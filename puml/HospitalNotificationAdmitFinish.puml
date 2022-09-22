@@ -27,9 +27,11 @@ package "Message 1: Admit Inpatient" as admit <<Frame>>{
         event = "hospital-notification-message"
         destination:primary = Organization
         destination:primary.use = "primary"
-        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        destination:primary.endpoint = https://sor2.sum.dsdn.dk/#id=953741000016009
         sender =Organization
-        source.endpoint = *url to receiver of Acknowledgement*
+        source.endpoint = https://sor2.sum.dsdn.dk/#id=265161000016000
+        reportOfAdmissionFlag = "true"
+        reportofAdmissionRecipient = Organization
         focus = Encounter
     }
     class "Patient (MedComCorePatient)" as admitPT{
@@ -44,24 +46,23 @@ package "Message 1: Admit Inpatient" as admit <<Frame>>{
         status = "in-progress"
         class = "IMP"
         subject = Patient
-        episodeOfCare = *refence to the episode of care*
         episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = 2022-09-01T12:00:05+02:00
         serviceProvider = Organization
     }    
     class "ServiceProvider Organization (MedComCoreOrganization)" as admitSPOrg{
         id = 774a3d07-e270-4df2-9d2e-2ec99f18dce1
-        sorIdentifier = 369258147
+        sorIdentifier = 265161000016000
     }
     class "Receiver: Municipality (MedComMessagingOrganization)" as admitROrg{
         id = 85b7fb3b-510c-43a3-8ef8-18fe22adaafd
-        eanIdentifier = 987654321
-        sorIdentifier = 741852963
+        eanIdentifier = 5790001348120
+        sorIdentifier = 953741000016009
     }
     class "Sender: Hospital (MedComMessagingOrganization)" as admitSOrg{
         id = 4120546a-44aa-4262-8542-398b2315e9cc
-        eanIdentifier = 123456789
-        sorIdentifier = 369258147
+        eanIdentifier = 5790000209354
+        sorIdentifier = 265161000016000
     }
     class "Provenance  (MedComMessagingProvenance)" as admitPRO{
         id = a7128eb7-8df1-4479-b56f-9c66970159f6
@@ -93,9 +94,9 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         event = "hospital-notification-message"
         destination:primary = Organization
         destination:primary.use = "primary"
-        destination:primary.endpoint = *url to receiver of HospitalNotification message*
+        destination:primary.endpoint = https://sor2.sum.dsdn.dk/#id=953741000016009
         sender = Organization
-        source.endpoint = *url to receiver of Acknowledgement*
+        source.endpoint = https://sor2.sum.dsdn.dk/#id=265161000016000 
         focus = Encounter
     }
     class "Patient  (MedComCorePatient)" as finishedPT{
@@ -110,24 +111,23 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         status = "finished"
         class = "IMP"
         subject = Patient
-        episodeOfCare = *refence to the episode of care*
         episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = 2022-09-01T12:00:05+02:00
         serviceProvider = Organization
     }
     class "ServiceProvider Organization (MedComCoreOrganization)" as finishedSPOrg{
         id = 0bb913be-fae5-4a8c-8229-9dbe9a1ff82a
-        sorIdentifier = 369258147
+        sorIdentifier = 265161000016000
     }    
     class "Receiver: Municipality (MedComMessagingOrganization)" as finishedROrg{
         id = a2c7fd20-3456-4417-bdf7-0d6dd0db2e79
-        eanIdentifier = 987654321
-        sorIdentifier = 741852963
+        eanIdentifier = 5790001348120
+        sorIdentifier = 953741000016009
     }
     class "Sender: Hospital (MedComMessagingOrganization)" as finishedSOrg{
         id = ccc7cae0-b23c-488d-82fb-3dcca55301e3
-        eanIdentifier = 123456789
-        sorIdentifier = 369258147
+        eanIdentifier = 5790000209354
+        sorIdentifier = 265161000016000
     }    
     class "Provenance (MedComMessagingProvenance)" as admitfinishedPRO{
         id = a7128eb7-8df1-4479-b56f-9c66970159f6

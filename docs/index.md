@@ -19,8 +19,8 @@
   > Note: Clinical guidelines and use cases are in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	
 
-This page presents MedCom's HospitalNotification  standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
-<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a>. The purpose of the standard is to notify the municipalities when a citizen in their care is hospitalised, on leave or discharged. The notification will be sent regardless of the hospitalisation of the patient as an inpatient or acute care. 
+This page presents MedCom's HospitalNotification  standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
+<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>. The purpose of the standard is to notify the municipalities when a citizen in their care is hospitalised, on leave or discharged. The notification will be sent regardless of the hospitalisation of the patient as an inpatient or acute care. 
 
 The HospitalNotification IG contains the following profiles: 
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
@@ -36,8 +36,8 @@ The standard documentation below provides the necessary content to understand th
 * Use cases
 *	Technical Specifications in terms of the relevant IGs and clinical introduction to the content of the IG.
 *	An overview of the codes in a FHIR HospitalNotification message which compose a certain meaning
-*	Mapping document from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> &
-<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a> to FHIR  HospitalNotification Message.
+*	Mapping document from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
+<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> to FHIR  HospitalNotification Message.
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines
@@ -90,8 +90,8 @@ The value of element codes in different profiles (MedComHospitalNotificationEnco
 <br>
 
 ### 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification
-Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/XDIS17.pdf" target="_blank">XDIS17</a> and
-<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/XDIS20.pdf" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
+Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and
+<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>
 
 [Click here to see mapping from previous OIOXML standards to the FHIR HospitalNotification standard.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)

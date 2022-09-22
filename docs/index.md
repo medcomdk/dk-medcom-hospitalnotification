@@ -55,7 +55,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b> 
 
-[Uses cases](HospitalNotification_use_20cases_full.pdf)
+[Uses cases](../docs/HospitalNotification_use%20cases__full.pdf)
 
   > Be aware that new version of uses cases will come soon!
     

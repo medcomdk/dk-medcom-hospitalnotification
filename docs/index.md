@@ -45,7 +45,7 @@ The clinical guidelines for application are the foundation for the HospitalNotif
 
 Below you can find the clinical guidelines for application in both Danish and English:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: clinical guidelines for application for application](assets/documents/Clinical-guidelines-ENG.md) 
+[English: clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
 <p>&nbsp;</p>	
 
 ### 1.2 Use cases

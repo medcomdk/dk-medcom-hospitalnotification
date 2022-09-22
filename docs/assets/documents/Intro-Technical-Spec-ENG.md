@@ -127,7 +127,7 @@ Some of the information does not fulfill the requirements in the IG. This accoun
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
 <figure>
-<img src="../images/HNAdmitFinish.png" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
+<img src="../images/HNAdmitFinish.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
 <figcaption text-align = "center"><b>Figur 2: Simplified example: Admit and Discharge Inpatient </b></figcaption>
 </figure>
 <br><br>

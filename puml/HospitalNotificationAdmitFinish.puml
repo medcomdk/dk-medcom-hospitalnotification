@@ -81,7 +81,6 @@ admitSPOrg-[hidden]-admitROrg
 admitROrg-[hidden]-admitSOrg
 admitSOrg-[hidden]-admitPRO
 }
-
 'Message 2: Finished inpatient
 package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
     class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{

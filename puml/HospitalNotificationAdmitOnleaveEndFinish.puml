@@ -80,7 +80,6 @@ admitSPOrg-[hidden]-admitROrg
 admitROrg-[hidden]-admitSOrg
 admitSOrg-[hidden]-admitPRO
 }
-
 'Message 2: Onleave inpatient
 package "Message 2: Start Onleave Inpatient" as Onleave <<Frame>> {
     class "Bundle (MedComHospitalNotificationMessage)" as onleaveB {

@@ -1,7 +1,8 @@
 [Tilbage](../../index.md)
 
-# Sundhedsfaglige retningslinjer
+# Sundhedsfaglige retningslinjer for anvendelse
 <hr/>
+
 **Indholdsfortegnelse**
 - [1 Introduktion](#1-introduktion)
 - [2 Formål](#2-form-l)
@@ -24,7 +25,7 @@ De tekniske specifikationer kan findes på [forsiden for Advis om sygehusophold]
 
 ## 2 Formål
 
-Advis om sygehusophold medvirker til at sikre grundlaget for et sammenhængende patientforløb over sektorgrænser. Det specifikke formål med ‘Advis om sygehusophold’ er at informere borgerens aktuelle omsorgs- og sundhedsaktører i primær sektor om start og sluttidspunkt for borgerens ophold på et sygehus. Det giver mulighed for at pausere aktuelle ydelser under sygehusopholdet og igangsætte, når det ophører. Samtidig kan ‘Advis om sygehusophold’ udløse automatisk afsendelse af en indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) fra modtagers system, som giver sygehuspersonalet et overblik over borgerens aktuelle ydelser, funktionsniveau og sundhedsfaglige problemer. Advis om sygehusophold indeholder derudover advis om patientens orlov fra sygehusophold, samt akut ambulant sygehusophold. 
+Advis om sygehusophold medvirker til at sikre grundlaget for et sammenhængende patientforløb over sektorgrænser. Det specifikke formål med ‘Advis om sygehusophold’ er at informere borgerens aktuelle omsorgs- og sundhedsaktører i primær sektor om start og sluttidspunkt for borgerens ophold på et sygehus. Det giver mulighed for at pausere aktuelle ydelser i kommunen under sygehusopholdet og igangsætte, når det ophører. Samtidig kan ‘Advis om sygehusophold’ udløse automatisk afsendelse af en indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) fra modtagers system, som giver sygehuspersonalet et overblik over borgerens aktuelle ydelser, funktionsniveau og sundhedsfaglige problemer. Advis om sygehusophold indeholder derudover advis om patientens orlov fra sygehusophold, samt akut ambulant sygehusophold. 
 
 ## 3 Baggrund 
 Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt modtager ydelser fra primær sektor, dannes ‘Advis om sygehusophold’ på alle borgere med cpr-nummer og fast bopælsadresse i Danmark ved registrering i sygehusets EPJ-system. Modtagersystemet sikrer, at ‘Advis om sygehusophold’ kun indlæses og synliggøres på borgere, som modtager ydelser indenfor det gældende [lovgrundlag](#4-lovgrundlag). 
@@ -151,17 +152,17 @@ Formålet med formulerede forretningsregler for anvendelse er, at parterne, som 
 > Note: Private hospitaler kan også anvende sygehusadvis. 
 
 1. **Adviser genereres på basis af tidstro registrering i EPJ-/PAS-systemet.**
-    Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte kontakter, skal disse først udløse advis når tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.
+    Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte sygehusopholder, skal disse først udløse advis når tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.
 
 2. **Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor)** 
     Advis om ’SLUT sygehusophold’ må ikke anvendes ved overflytninger.
 
     > Note: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’SLUT sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
 
-3. **Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’START sygehusophold - indlagt’-advis.**
-    Der skal ikke sendes advis om ’SLUT sygehusophold’ når den akut ambulante kontakt ændres til indlagt. Advis om ’SLUT sygehusophold’ sendes først når patienten derefter afsluttes (til hjem/primær sektor). 
+3. **Hvis en akut ambulant sygehusophold ændres til indlagt, sendes et nyt ’START sygehusophold - indlagt’-advis.**
+    Der skal ikke sendes advis om ’SLUT sygehusophold’ når den akut ambulante sygehusophold ændres til indlagt. Advis om ’SLUT sygehusophold’ sendes først når patienten derefter afsluttes (til hjem/primær sektor). 
 
-4. **Hvis en indlagt kontakt ændres til akut ambulant, sendes et nyt advis ’START sygehusophold – akut ambulant’-advis.** 
+4. **Hvis en indlagt sygehusophold ændres til akut ambulant, sendes et nyt advis ’START sygehusophold – akut ambulant’-advis.** 
     Der skal ikke sendes advis om ’SLUT sygehusophold’, når indlæggelsen ændres til at være akut ambulant. Advis om ’SLUT sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). Denne hændelse anses for sjælden.
 
 5. **Hvis patienten er erklæret død ved ankomst, erklæres død efter ankomst eller dør under sygehusopholdet sendes et advis af typen ’DØD’.**

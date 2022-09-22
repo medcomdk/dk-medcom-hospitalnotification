@@ -1,5 +1,5 @@
 [Return](../../index.md)
-# Clinical Guidelines 
+# Clinical Guidelines for application
 <hr/>
 
 **Table of contents**

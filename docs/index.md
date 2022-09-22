@@ -6,7 +6,7 @@
 
 **Table of contents**
 * [1 Standard documentation](#1-standard-documentation)
-  + [1.1 Clinical guidelines](#11-clinical-guidelines)
+  + [1.1 clinical guidelines for application for application](#11-clinical-guidelines-for-application)
   + [1.2 Use gases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
   + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
@@ -16,7 +16,7 @@
 
 <hr/>
 
-  > Note: Clinical guidelines and use cases are in both Danish and English. The remaining documentation will solely be in English.
+  > Note: clinical guidelines for application and use cases are in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	
 
 This page presents MedCom's HospitalNotification  standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
@@ -32,7 +32,7 @@ Profiles in the HospitalNotification Implementation Guide (IG) will, together wi
 
 ## 1 Standard documentation 
 The standard documentation below provides the necessary content to understand the needs for modernisation, the role of the HospitalNotification message, what to implement and how to get a MedCom Certificate. The standard documentation for HospitalNotification includes: 
-* Clinical Guidelines
+* clinical guidelines for application
 * Use cases
 *	Technical Specifications in terms of the relevant IGs and clinical introduction to the content of the IG.
 *	An overview of the codes in a FHIR HospitalNotification message which compose a certain meaning
@@ -40,12 +40,12 @@ The standard documentation below provides the necessary content to understand th
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> to FHIR  HospitalNotification Message.
 <p>&nbsp;</p>
 
-### 1.1 Clinical guidelines
-The clinical guidelines are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
+### 1.1 Clinical guidelines for application
+The clinical guidelines for application are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
-Below you can find the clinical guidelines in both Danish and English:<br> 
-[Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
+Below you can find the clinical guidelines for application in both Danish and English:<br> 
+[Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
+[English: clinical guidelines for application for application](assets/documents/Clinical-guidelines-ENG.md) 
 <p>&nbsp;</p>	
 
 ### 1.2 Use cases

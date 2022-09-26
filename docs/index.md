@@ -7,7 +7,7 @@
 **Table of contents**
 * [1 Standard documentation](#1-standard-documentation)
   + [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
-  + [1.2 Use gases](#12-use-cases)
+  + [1.2 Use cases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
   + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
   + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)

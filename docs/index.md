@@ -10,8 +10,8 @@
   + [1.2 Use gases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
   + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
-  + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#15-mapping-from-xdis17xdis20-to-medcom-hospitalnotification-mapping-from-xml-to-hospitalnotification)
-* [2 Test and certification](#2-test-and-certification)
+  + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
+*  [2 Test and certification](#2-test-and-certification)
 
 <hr/>
 
@@ -19,7 +19,9 @@
 <p>&nbsp;</p>	
 
 This page presents MedCom's HospitalNotification  standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
-<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>. The purpose of the standard is to notify the municipalities when a citizen in their care is hospitalised, on leave or discharged. The notification will be sent regardless of the hospitalisation of the patient as an inpatient or acute care. 
+<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the citizen's care and health actors in the primary sector about the start, periods of leave and end time of the citizen's stay in a hospital. The notification allows pausing current health and care services during the citizen's hospitalisation and to start the services when the hospitalisation ends. 
+Furthermore, the notification of hospital stay can trigger the automatic sending of an admission report (XDIS16) from the recipient's system, which gives the hospital staff an overview of the citizen's current services, functional level, and healthcare problems.
+
 
 The HospitalNotification IG contains the following profiles: 
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
@@ -56,7 +58,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <a href="https://medcomtest-my.sharepoint.com/:b:/g/personal/mbu_medcom_dk/ET4QEIkA3aFJl0Ajz73D5tEBMhPiKOBlI3Vu62PsRtAitA?e=KzjhxN"> Uses cases</a>
   > Be aware that new version of uses cases will come soon!
-  
+
 [Use cases](HospitalNotification_use_cases_full.pdf) 
 
 <!-- Below, you can find the use cases in Danish and English be found:<br>
@@ -89,7 +91,7 @@ The value of element codes in different profiles (MedComHospitalNotificationEnco
 
 <br>
 
-### 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-hospitalNotification}
+### 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
 Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>

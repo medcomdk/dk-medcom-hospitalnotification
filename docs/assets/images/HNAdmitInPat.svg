@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1106px" preserveAspectRatio="none" style="width:559px;height:1106px;background:#FFFFFF;" version="1.1" viewBox="0 0 559 1106" width="559px" zoomAndPan="magnify"><defs/><g><!--MD5=[e3ce9a70b36f22ff1736cff4b5094119]
+cluster admit--><g id="cluster_admit"><rect fill="none" height="1093" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="546" x="7" y="7"/><path d="M206,7 L206,17.6094 L196,27.6094 L7,27.6094 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="189" x="10" y="22.5332">Message 1: Admit Inpatient</text></g><!--MD5=[8b0fb6bcdbcce853e3af8ebdd7dc8030]
+class admitB--><g id="elem_admitB"><rect codeLine="15" fill="#FFFFFF" height="88.4375" id="admitB" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="43"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="135" y="62.5332">Bundle (MedComHospitalNotificationMessage)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="70.6094" y2="70.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="297" x="29.5" y="89.1426">id = 148a14dd-9614-4445-a136-428ec198df8c</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="29.5" y="106.752">type = "message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="29.5" y="124.3613">timestamp = 2022-09-01T12:00:10+02:00</text></g><!--MD5=[68044dbd0c0fdc3b9d6261f9ceefe69d]
+class admitMH--><g id="elem_admitMH"><rect codeLine="20" fill="#FFFFFF" height="211.7031" id="admitMH" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="395" x="82.5" y="160.5332">MessageHeader (MedComHospitalNotificationMessageHeader)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="168.6094" y2="168.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29.5" y="187.1426">id = e422436e-9885-48c4-920d-f7bc05c18aaf</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="29.5" y="204.752">event = "hospital-notification-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="29.5" y="222.3613">destination:primary = Organization</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="220" x="29.5" y="239.9707">destination:primary.use = "primary"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="501" x="29.5" y="257.5801">destination:primary.endpoint = https://sor2.sum.dsdn.dk/#id=953741000016009</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="29.5" y="275.1895">sender =Organization</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="424" x="29.5" y="292.7988">source.endpoint = https://sor2.sum.dsdn.dk/#id=265161000016000</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="29.5" y="310.4082">reportOfAdmissionFlag = "true"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="29.5" y="328.0176">reportofAdmissionRecipient = Organization</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="29.5" y="345.627">focus = Encounter</text></g><!--MD5=[e036c46784c1ca676a3972d4e1c0dddd]
+class admitPT--><g id="elem_admitPT"><rect codeLine="32" fill="#FFFFFF" height="123.6563" id="admitPT" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="363"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="185.5" y="382.5332">Patient (MedComCorePatient)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="390.6094" y2="390.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="291" x="29.5" y="409.1426">id = d760c244-fc96-44bf-86aa-acbcb7a2797b</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="29.5" y="426.752">identifier:cpr = 2509479989</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="29.5" y="444.3613">name.family = Elmer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="29.5" y="461.9707">name.given[0] = Bruno</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="29.5" y="479.5801">name.given[1] = Test</text></g><!--MD5=[221b3f3a43b02d938eddc6ab5661f5a7]
+class admitENC--><g id="elem_admitENC"><rect codeLine="39" fill="#FFFFFF" height="158.875" id="admitENC" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="497"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="120.5" y="516.5332">Encounter (MedComHospitalNotificationEncounter)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="524.6094" y2="524.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="297" x="29.5" y="543.1426">id = 774ab50d-e10d-4c0c-b19c-e9ec8c07e8c9</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="29.5" y="560.752">status = "in-progress"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="29.5" y="578.3613">class = "IMP"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="29.5" y="595.9707">subject = Patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="501" x="29.5" y="613.5801">episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="271" x="29.5" y="631.1895">period.start = 2022-09-01T12:00:05+02:00</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="29.5" y="648.7988">serviceProvider = Organization</text></g><!--MD5=[56280e04ae2d6525eae61d698a7b1914]
+class admitSPOrg--><g id="elem_admitSPOrg"><rect codeLine="48" fill="#FFFFFF" height="70.8281" id="admitSPOrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="666"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="365" x="97.5" y="685.5332">ServiceProvider Organization (MedComCoreOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="693.6094" y2="693.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="29.5" y="712.1426">id = 774a3d07-e270-4df2-9d2e-2ec99f18dce1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="29.5" y="729.752">sorIdentifier = 265161000016000</text></g><!--MD5=[ad527777f3a6291c7554598c28fca64f]
+class admitROrg--><g id="elem_admitROrg"><rect codeLine="52" fill="#FFFFFF" height="88.4375" id="admitROrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="747"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="355" x="102.5" y="766.5332">Receiver: Municipality (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="774.6094" y2="774.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="286" x="29.5" y="793.1426">id = 85b7fb3b-510c-43a3-8ef8-18fe22adaafd</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="29.5" y="810.752">eanIdentifier = 5790001348120</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="29.5" y="828.3613">sorIdentifier = 953741000016009</text></g><!--MD5=[89083fc17cd646efcc5774baa7271f78]
+class admitSOrg--><g id="elem_admitSOrg"><rect codeLine="57" fill="#FFFFFF" height="88.4375" id="admitSOrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="845"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="322" x="119" y="864.5332">Sender: Hospital (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="872.6094" y2="872.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="301" x="29.5" y="891.1426">id = 4120546a-44aa-4262-8542-398b2315e9cc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="29.5" y="908.752">eanIdentifier = 5790000209354</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="29.5" y="926.3613">sorIdentifier = 265161000016000</text></g><!--MD5=[2368394ca3ef2fd76d3f052c2d010166]
+class admitPRO--><g id="elem_admitPRO"><rect codeLine="62" fill="#FFFFFF" height="141.2656" id="admitPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="513" x="23.5" y="943"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="133" y="962.5332">Provenance  (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="535.5" y1="970.6094" y2="970.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="29.5" y="989.1426">id = a7128eb7-8df1-4479-b56f-9c66970159f6</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="29.5" y="1006.752">target = MessageHeader</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="311" x="29.5" y="1024.3613">occuredDateTime = 2022-09-01T12:00:30+02:00</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="29.5" y="1041.9707">recorded = 2022-09-01T12:00:30</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="29.5" y="1059.5801">activity.code = "admit-inpatient"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="29.5" y="1077.1895">agent.who = Organization</text></g><!--MD5=[556b98b3a4d3909b45b7fc5f1a3a2576]
+link admitB to admitMH--><!--MD5=[2f36b81be7e2fd37c8dd70abd0e29703]
+link admitMH to admitPT--><!--MD5=[859e67acec9d8ffbc65cb4a1350759d6]
+link admitPT to admitENC--><!--MD5=[06d0fe3381ba44b7d1445f2ebe40cb91]
+link admitENC to admitSPOrg--><!--MD5=[6d5dc946f14686ec6eece0504ff7b07d]
+link admitSPOrg to admitROrg--><!--MD5=[f8460bd4b2c2a4369224dcea9f47c36b]
+link admitROrg to admitSOrg--><!--MD5=[f3a8aefdba3953f5b249616a0861bf2e]
+link admitSOrg to admitPRO--><!--MD5=[7c3df2c90dabc824b5dc2c4c0afa2ec7]
+@startuml HNAdmitInPat
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+'Message 1: Admit inpatient
+package "Message 1: Admit Inpatient" as admit <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as admitB{
+        id = 148a14dd-9614-4445-a136-428ec198df8c
+        type = "message"
+        timestamp = 2022-09-01T12:00:10+02:00
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
+        id = e422436e-9885-48c4-920d-f7bc05c18aaf
+        event = "hospital-notification-message"
+        destination:primary = Organization
+        destination:primary.use = "primary"
+        destination:primary.endpoint = https://sor2.sum.dsdn.dk/#id=953741000016009
+        sender =Organization
+        source.endpoint = https://sor2.sum.dsdn.dk/#id=265161000016000
+        reportOfAdmissionFlag = "true"
+        reportofAdmissionRecipient = Organization
+        focus = Encounter
+    }
+    class "Patient (MedComCorePatient)" as admitPT{
+        id = d760c244-fc96-44bf-86aa-acbcb7a2797b
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as admitENC{
+        id = 774ab50d-e10d-4c0c-b19c-e9ec8c07e8c9
+        status = "in-progress"
+        class = "IMP"
+        subject = Patient
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2022-09-01T12:00:05+02:00
+        serviceProvider = Organization
+    }    
+    class "ServiceProvider Organization (MedComCoreOrganization)" as admitSPOrg{
+        id = 774a3d07-e270-4df2-9d2e-2ec99f18dce1
+        sorIdentifier = 265161000016000
+    }
+    class "Receiver: Municipality (MedComMessagingOrganization)" as admitROrg{
+        id = 85b7fb3b-510c-43a3-8ef8-18fe22adaafd
+        eanIdentifier = 5790001348120
+        sorIdentifier = 953741000016009
+    }
+    class "Sender: Hospital (MedComMessagingOrganization)" as admitSOrg{
+        id = 4120546a-44aa-4262-8542-398b2315e9cc
+        eanIdentifier = 5790000209354
+        sorIdentifier = 265161000016000
+    }
+    class "Provenance  (MedComMessagingProvenance)" as admitPRO{
+        id = a7128eb7-8df1-4479-b56f-9c66970159f6
+        target = MessageHeader
+        occuredDateTime = 2022-09-01T12:00:30+02:00
+        recorded = 2022-09-01T12:00:30
+        activity.code = "admit-inpatient"
+        agent.who = Organization
+    }
+
+admitB -[hidden]- admitMH
+admitMH-[hidden]-admitPT
+admitPT-[hidden]-admitENC
+admitENC-[hidden]-admitSPOrg
+admitSPOrg-[hidden]-admitROrg
+admitROrg-[hidden]-admitSOrg
+admitSOrg-[hidden]-admitPRO
+}
+
+
+@enduml
+
+@startuml HNAdmitInPat
+
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+package "Message 1: Admit Inpatient" as admit <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as admitB{
+        id = 148a14dd-9614-4445-a136-428ec198df8c
+        type = "message"
+        timestamp = 2022-09-01T12:00:10+02:00
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
+        id = e422436e-9885-48c4-920d-f7bc05c18aaf
+        event = "hospital-notification-message"
+        destination:primary = Organization
+        destination:primary.use = "primary"
+        destination:primary.endpoint = https://sor2.sum.dsdn.dk/#id=953741000016009
+        sender =Organization
+        source.endpoint = https://sor2.sum.dsdn.dk/#id=265161000016000
+        reportOfAdmissionFlag = "true"
+        reportofAdmissionRecipient = Organization
+        focus = Encounter
+    }
+    class "Patient (MedComCorePatient)" as admitPT{
+        id = d760c244-fc96-44bf-86aa-acbcb7a2797b
+        identifier:cpr = 2509479989
+        name.family = Elmer
+        name.given[0] = Bruno
+        name.given[1] = Test
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as admitENC{
+        id = 774ab50d-e10d-4c0c-b19c-e9ec8c07e8c9
+        status = "in-progress"
+        class = "IMP"
+        subject = Patient
+        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = 2022-09-01T12:00:05+02:00
+        serviceProvider = Organization
+    }    
+    class "ServiceProvider Organization (MedComCoreOrganization)" as admitSPOrg{
+        id = 774a3d07-e270-4df2-9d2e-2ec99f18dce1
+        sorIdentifier = 265161000016000
+    }
+    class "Receiver: Municipality (MedComMessagingOrganization)" as admitROrg{
+        id = 85b7fb3b-510c-43a3-8ef8-18fe22adaafd
+        eanIdentifier = 5790001348120
+        sorIdentifier = 953741000016009
+    }
+    class "Sender: Hospital (MedComMessagingOrganization)" as admitSOrg{
+        id = 4120546a-44aa-4262-8542-398b2315e9cc
+        eanIdentifier = 5790000209354
+        sorIdentifier = 265161000016000
+    }
+    class "Provenance  (MedComMessagingProvenance)" as admitPRO{
+        id = a7128eb7-8df1-4479-b56f-9c66970159f6
+        target = MessageHeader
+        occuredDateTime = 2022-09-01T12:00:30+02:00
+        recorded = 2022-09-01T12:00:30
+        activity.code = "admit-inpatient"
+        agent.who = Organization
+    }
+
+admitB -[hidden]- admitMH
+admitMH-[hidden]-admitPT
+admitPT-[hidden]-admitENC
+admitENC-[hidden]-admitSPOrg
+admitSPOrg-[hidden]-admitROrg
+admitROrg-[hidden]-admitSOrg
+admitSOrg-[hidden]-admitPRO
+}
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: da
+Country: DK
+--></g></svg>

@@ -116,11 +116,11 @@ The request for a report of admission must be sent when a patient is initially a
 On page 10 in the use case document the usage of the report of admission flag is further described. <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Click here to finde the use cases</a>. 
 
 ## 3 Examples in a HospitalNotification Message
-In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a>, the required content of a HospitalNotification message is illustrated. There is a difference between the required elements and MustSupport elements, as the required element must always be included in a message. Similarly, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> . 
+In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>, the required content of a HospitalNotification message is illustrated. There is a difference between the required elements and MustSupport elements, as the required element must always be included in a message. Similarly, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> . 
 
-The messages in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> illustrate an admission and discharge of a patient. The patient, service provider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
+The message in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> illustrate an admission and discharge of a patient. The patient, service provider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
 
-In 'Message 2: Discharge Inpatient to Home' there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 
+In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>) there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 
 
 Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
  
@@ -133,8 +133,8 @@ Some of the information does not fulfill the requirements in the IG. This accoun
 </figure>
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
-<figcaption text-align = "center"><b>Figur 2: Simplified example: Admit  Inpatient </b></figcaption>
+<img src="../images/HNAdmitFinish.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig3">
+<figcaption text-align = "center"><b>Figur 3: Simplified example: Discharge  Inpatient </b></figcaption>
 </figure>
 <br><br>
 

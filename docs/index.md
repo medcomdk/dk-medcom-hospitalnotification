@@ -15,10 +15,10 @@
 
 <hr/>
 
-  > Note: clinical guidelines for application and use cases are in both Danish and English. The remaining documentation will solely be in English.
+  > Note: clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	
 
-This page presents MedCom's HospitalNotification  standard (Dansk: Sygehusadvis). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
+This page presents MedCom's HospitalNotification  standard (Danish: Advis om sygehusophold). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the citizen's care and health actors in the primary sector about the start, periods of leave and end time of the citizen's stay in a hospital. The notification allows pausing current health and care services during the citizen's hospitalisation and to start the services when the hospitalisation ends. 
 Furthermore, the notification of hospital stay can trigger the automatic sending of an admission report (XDIS16) from the recipient's system, which gives the hospital staff an overview of the citizen's current services, functional level, and healthcare problems.
 

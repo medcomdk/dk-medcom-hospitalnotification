@@ -1,9 +1,9 @@
 [Return](index.md)
 
-# Overview of Hospital Notification codes and HL7 FHIR resources
+# Overview of HospitalNotification codes and HL7 FHIR resources
 
-The table below shows how the hospital notification codes folders map into FHIR's terminology, and thus how one can determine, based
-on the resource elements, which type of hospital notification it is.
+The table below shows how the HospitalNotification codes folders map into FHIR's terminology, and thus how one can determine, based
+on the resource elements, which type of HospitalNotification it is.
 
 It is an overview of how values in the FHIR resources ‘Encounter’, ‘Provenance’ and ‘Patient’ together form the composite understanding.
 
@@ -32,7 +32,7 @@ Comments to the table:
 </style>
 <table class="tg">
 <caption style="color:#2c415c;
-  font-weight:bold"> Tabel 1: Overviwe of Hospital Notification codes  </caption>
+  font-weight:bold"> Tabel 1: Overviwe of HospitalNotification codes  </caption>
 <thead>
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Use case code DK</span></th>

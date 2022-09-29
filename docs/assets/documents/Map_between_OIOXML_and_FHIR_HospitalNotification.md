@@ -1,7 +1,7 @@
 [Return](../../index.md)
 # Map between OIOXML Advis and FHIR HospitalNotification Messages 
 
-This document describes mapping between the OIOXML Advis (XDIS20/XDIS17) and the FHIR HospitalNotification message. Not all elements from OIOXML Advis are relevant in FHIR HospitalNotification message, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR HospitalNotification message. The actual implementation guide which includes all requirements for the HospitalNotificationMessage can be found <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/index.html" target="_blank">here</a> 
+This document describes mapping between the OIOXML Advis(<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>) and the FHIR HospitalNotification message. Not all elements from OIOXML Advis are relevant in FHIR HospitalNotification message, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR HospitalNotification message. The actual implementation guide which includes all requirements for the HospitalNotificationMessage can be found <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/index.html" target="_blank">here</a> 
 
 > Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app called FHIRPath tester. In other applications, are the apostrophe ( ‘…’ ) might not used.
 

@@ -75,7 +75,7 @@ The link below gives an overview of the included profiles, what their purpose is
 
 
 ### 1.4 HospitalNotification Codes
-The HospitalNotification message notifies the care and health actors in the primary sector about the status of the patient's hospital stay. The status is represented using HospitalNotification codes. The value of codes orginates from MedComHospitalNotificationEncounter, MedComMessagingProvenance and MedComCorePatient profile and will together form the composite understanding of a HospitalNotification message, e.g. a hospitalization of an acute patient or discharge of an inpatient. Depending on which activity has taken place, the elements should be assigned to different values.
+The HospitalNotification message notifies the care and health actors in the primary sector about the status of the patient's hospital stay. The status is represented using HospitalNotification codes. The value of codes can be found in MedComHospitalNotificationEncounter, MedComMessagingProvenance and MedComCorePatient profile and will together form the composite understanding of a HospitalNotification message, e.g. a hospitalization of an acute patient or discharge of an inpatient. Depending on which activity has taken place, the elements should be assigned to different values.
 <br>
 To help vendors of the IT system implement the codes in the same way MedCom has developed an overview of the HospitalNotification codes.
 

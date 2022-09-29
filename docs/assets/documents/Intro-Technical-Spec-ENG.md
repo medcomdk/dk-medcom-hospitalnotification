@@ -17,7 +17,7 @@
 
 ## 1 Profiles in the HospitalNotification Standard
 
-In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. They are derived from three different IG's, and a short description of each profile can be seen in the table below.
+In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
 <br><br>
 
 <style type="text/css">
@@ -29,7 +29,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 .tg .tg-4mz0{background-color:#ffffff;color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 </style>
-<table class="tg">
+<table class="tg" id="tab1">
 <caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in HospitalNotification standard </caption>
 <thead>
   <tr>

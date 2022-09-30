@@ -6,6 +6,8 @@ Description: "A message for a HospitalNotification. The message is triggered as 
 * obeys medcom-hospitalNotification-1
 * obeys medcom-hospitalNotification-2
 * obeys medcom-hospitalNotification-3
+* obeys medcom-hospitalNotification-4
+* obeys medcom-hospitalNotification-5
 * id ^short = "A unique identifier for a bundle. The element must be updated with a new value each time a new message is sent."
 * timestamp ^short = "Holds information about when a bundle is created."
 
@@ -23,6 +25,16 @@ Invariant: medcom-hospitalNotification-3
 Description: "All provenance resources shall contain activities from medcom-hospitalNotification-messageActivities valueset"
 Severity: #error
 Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/fhir/dk-medcom-terminology/ValueSet/medcom-hospitalNotification-messageActivities'))"
+
+Invariant: medcom-hospitalNotification-4
+Description: "The system of Patient.identifier shall be 'urn:oid:1.2.208.176.1.2', which represents an official Danish CPR-number"
+Severity: #error
+Expression: "entry.resource.ofType(Patient).identifier.system = 'urn:oid:1.2.208.176.1.2'"
+
+Invariant: medcom-hospitalNotification-5
+Description: "The receiver of a HospitalNotification shall always be a primary receiver."
+Severity: #error
+Expression: "Bundle.entry.resource.ofType(MessageHeader).destination.extension.value.code = 'primary'"
 
 // use cases associated with inpatient hospitalization
 Instance: a5e5b880-c087-4055-b9ec-99108695f81d

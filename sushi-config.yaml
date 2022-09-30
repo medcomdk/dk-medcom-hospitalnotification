@@ -14,8 +14,8 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core:
-   uri: https://hl7.dk/fhir/core/1.1.0/
-   version: 1.1.0
+   uri: https://hl7.dk/fhir/core/2.0.0/
+   version: 2.0.0
   dk.fhir.ig.dk-medcom-core: current
   dk.fhir.ig.dk-medcom-messaging: current
 

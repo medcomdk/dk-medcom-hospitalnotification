@@ -11,5 +11,8 @@ The figure below shows the references from a MedComHospitalNotificationEncounter
 Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationEncounter.
 
 ### Service Provider
-The service provider is the organization or department in charge of the patients admission. 
-The service provider can be described using MedComMessaging Organization or MedComCoreOrganization, since MedComMessaiging Organization inherits properties from MedComCore Organization. 
+
+The element Encounter.serviceProvider describes the organization or hospital department in charge of the patient's admission. 
+The element references a MedComMessagingOrganization or MedComCoreOrganization, since MedComMessaigingOrganization inherits properties from MedComCoreOrganization.
+
+The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvider (Encounter.serviceProvider) may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR register)than the serviceProvider organisation, and in this case they shall be represented referencing two different instances of a Organization resource.

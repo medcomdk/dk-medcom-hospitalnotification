@@ -173,14 +173,14 @@ The process of timestamps registration when patient's admission ends is visualis
 </figure> 
 
 
-In case of that, the patient takes leave from the hospital admission the hospital staff register leave in the system.Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleave is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
+In case of that, the patient takes leave from the hospital admission the hospital staff register leave in the system (see <a href="#Fig5"> Figure 6</a>).Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleave is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
 
 <figure>
 <img src="../images/HN_Time_Stamp_patientOnLeave.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for onleave start" style="width: 55%" id="Fig6">
 <figcaption text-align = "center"><b>Figure 6: Timestamps registration in HospitalNotification for onleave start. </b></figcaption>
 </figure> 
 
-When the patient returns to the hospital from his leave,the hospital staff register the return and the patient continues his admission (see <a href="#Fig5"> Figure 7</a>. ). Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleav is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
+When the patient returns to the hospital from his leave,the hospital staff register the return and the patient continues his admission (see <a href="#Fig7"> Figure 7</a>). Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleav is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
 Please notice that the Encounter.period.start stays unchanged when the patient takes leave and the Encounter.period.end is not registered. The Encounter.period.end is ONLY registered when the patient ends the admission. 
 <figure>
 <img src="../images/HN_Time_Stamp_patientOnLeave_back.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for onleave end" style="width: 55%" id="Fig7">

@@ -167,7 +167,7 @@ When the patient arrives at the hospital, the hospital staff admits the patient 
 Immediately after the hospital staff admits the patient to the hospital, the HospitalNotification for admission is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable timestamp.
 
 <figure>
-<img src="../images/HN_Time_Stamp_admission.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for admission start" style="width: 60%" id="Fig4">
+<img src="../images/HN_Time_Stamp_admission.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for admission start" style="width: 70%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 4: Timestamps registration  in HospitalNotfication for Patient admission start </b></figcaption>
 </figure> 
 

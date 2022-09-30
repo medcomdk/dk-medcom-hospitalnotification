@@ -69,7 +69,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 <thead id="Tabel1">
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Hændelse</span></th>
-    <th class="tg-p3tq"><span style="font-weight:bold">Kode *</span></th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Use case Kode *</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">Navn på advis notifikation</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">Gevinst</span></th>
   </tr>

@@ -73,7 +73,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 <thead>
   <tr>
     <th class="tg-pu9k">Event</th>
-    <th class="tg-pu9k">Code *</th>
+    <th class="tg-pu9k">Use case code *</th>
     <th class="tg-pu9k">Name of notification</th>
     <th class="tg-pu9k">Benefits</th>
   </tr>

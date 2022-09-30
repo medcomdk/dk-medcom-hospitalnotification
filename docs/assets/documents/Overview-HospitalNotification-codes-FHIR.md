@@ -1,4 +1,4 @@
-[Return](index.md)
+[Return](../../index.md)
 
 # Overview of HospitalNotification codes and HL7 FHIR resources
 
@@ -35,7 +35,7 @@ Comments to the table:
   font-weight:bold"> Tabel 1: Overviwe of HospitalNotification codes  </caption>
 <thead>
   <tr>
-    <th class="tg-p3tq"><span style="font-weight:bold">Use case code DK</span></th>
+    <th class="tg-p3tq"><span style="font-weight:bold">Use case code</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">Danish text</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">English text</span></th>
     <th class="tg-p3tq"><span style="font-weight:bold">Encounter.Class</span></th>

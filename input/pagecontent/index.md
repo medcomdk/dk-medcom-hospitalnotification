@@ -12,7 +12,7 @@ More information about the [clinical guidelines and legislation](https://medcomd
 
 The following diagram depicts the structure of the HospitalNotification message.
 
-<img alt="Shows the structure of a HospitalNotification message. The MedComHospitalNotificationMessage includes a MedComHospitalNotificationMessageHeader and a MedComMessagingProvenance. MedComHospitalNotificationMessageHeader references a sender and receiver organization, the MedComMessagingOrganization and a focus which is a reference to a MedComHospitalNotificationEncounter. From the MedComHospitalNotificationEncounter is a MedComCorePatient and a MedComCoreOrganization referenced." src="./hospitalnotification/HospitalNotification.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="Shows the structure of a HospitalNotification message. The MedComHospitalNotificationMessage includes a MedComHospitalNotificationMessageHeader and a MedComMessagingProvenance. MedComHospitalNotificationMessageHeader references a sender and receiver organization, the MedComMessagingOrganization and a focus which is a reference to a MedComHospitalNotificationEncounter. From the MedComHospitalNotificationEncounter is a MedComCorePatient and a MedComCoreOrganization referenced." src="./hospitalnotification/HospitalNotification.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 The HospitalNotification message follows the general MedCom FHIR messaging structure, except that the carbon-copy destination is not allowed. The following sections describe the overall purpose of each profile.
 
@@ -74,17 +74,14 @@ All profiles shall have a global unique id by using an UUID. [Read more about th
 
 #### Simplified examples of the HospitalNotification message flow
 
-The simplified examples contain the required content of a HospitalNotification message
+The simplified examples contain the required content of a HospitalNotification message. The messages illustrate admission and discharge of an inpatient admission, as well as an cancellation of a messages. The patient, service provider organization, sender and receiver information are identical across a message stream, since all messages are send from a hospital to a municipality.
 
-The messages illustrate admission, discharge, and leave of a hospitalized patient. Also a cancelled messages is illustrated below. The patient, service provider organization, sender and receiver information are identical across a message stream, since all messages are send from a hospital to a municipality.
+[More examples of a HospitalNotification message can be found here](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
 
-> Note: Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
+> Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, resources may be listed in any order. 
 
-> Note: Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, resources may be listed in any order. 
-
-* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay.](./hospitalnotification/HNAdmitFinish.png)
-* [Simplified example of a MedComHospitalNotificationMessage for admit, onleave, end onleave and finished stay.](./hospitalnotification/HNAdmitOnleaveEndFinish.png) 
-* [Simplified example of a cancelled MedComHospitalNotificationMessage message.](./hospitalnotification/HNAdmitEnteredInError.png)
+* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay.](./hospitalnotification/HNAdmitInPat.svg)
+* [Simplified example of a cancelled MedComHospitalNotificationMessage message.](./hospitalnotification/HNAdmitEnteredInError.svg)
 
 #### Terminology
 On [MedCom Terminology IG](https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.

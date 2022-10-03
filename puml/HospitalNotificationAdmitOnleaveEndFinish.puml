@@ -18,65 +18,73 @@ title Simplified example: Admit, Onleave, and Discharge Inpatient
 
 package "Message 1: Admit Inpatient" as admit <<Frame>>{
     class "Bundle (MedComHospitalNotificationMessage)" as admitB{
-        id = BUN1
+        id = "a5e5b880-c087-4055-b9ec-99108695f81d"
         type = "message"
-        timestamp = 2021-12-01T12:00:10+01:00
+        timestamp = "2022-09-01T12:00:10"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
-        id = MH1
-        event = "hospital-notification-message"
-        destination:primary = MedComMessagingOrganization/RO1
-        destination:primary.use = "primary"
-        destination:primary.endpoint = *url to receiver of HospitalNotification message*
-        sender = MedComMessagingOrganization/SO1
-        source.endpoint = *url to receiver of Acknowledgement*
-        focus = MedComHospitalNotificationEncounter/ENC1
+        id = "b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        event.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "hospital-notification-message"
+        destination.use.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        reportOfAdmissionFlag = "true"
+        reportofAdmissionRecipient = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        focus = "Encounter/a790f964-88d3-4652-bbc8-81d2f3d035f8"
     }
     class "Patient (MedComCorePatient)" as admitPT{
-        id = PA1
-        identifier:cpr = 2509479989
-        name.family = Elmer
-        name.given[0] = Bruno
-        name.given[1] = Test
+        id = "t33cef33-3626-422b-955d-d506aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
     }
     class "Encounter (MedComHospitalNotificationEncounter)" as admitENC{
-        id = ENC1
-        status = "in-progress"
-        class = "IMP"
-        subject = MedComCorePatient/PA1
-        episodeOfCare = *refence to the episode of care*
-        episodeOfCare.identifier = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = 2021-12-01T12:00:00+01:00
-        serviceProvider = MedComCoreOrganization/SPO1
+        id = "a790f964-88d3-4652-bbc8-81d2f3d035f8"
+        status.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
+        status.code = "in-progress"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = "2022-09-01T12:00:05+02:00"
+        serviceProvider = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }    
-    class "ServiceProvider Organization (MedComCoreOrganization)" as admitSPOrg{
-        id = SPO1
-        sorIdentifier = 369258147
-    }
     class "Receiver: Municipality (MedComMessagingOrganization)" as admitROrg{
-        id = RO1
-        eanIdentifier = 987654321
-        sorIdentifier = 741852963
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[0].system = "urn:oid:1.2.208.176.1.1"
+        identifier[0].value = "953741000016009"
     }
     class "Sender: Hospital (MedComMessagingOrganization)" as admitSOrg{
-        id = SO1
-        eanIdentifier = 123456789
-        sorIdentifier = 369258147
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[0].system = "urn:oid:1.2.208.176.1.1"
+        identifier[0].value = "265161000016000"
     }
-    class "Provenance (MedComMessagingProvenance)" as admitPRO{
-        id = PROV2
-        target = MH1
-        occuredDateTime = 2021-12-01T12:00:10+01:00
-        recorded = 2021-12-01T12:00:20
+    class "Provenance  (MedComMessagingProvenance)" as admitPRO{
+        id = "a7128eb7-8df1-4479-b56f-9c66970159f6"
+        target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        occuredDateTime = "2022-09-01T12:00:30+02:00"
+        recorded = "2022-09-01T12:00:30"
+        activity.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
-        agent.who = MedComMessagingOrganization/SO1
+        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }
 
 admitB -[hidden]- admitMH
 admitMH-[hidden]-admitPT
 admitPT-[hidden]-admitENC
-admitENC-[hidden]-admitSPOrg
-admitSPOrg-[hidden]-admitROrg
+admitENC-[hidden]-admitROrg
 admitROrg-[hidden]-admitSOrg
 admitSOrg-[hidden]-admitPRO
 }
@@ -84,9 +92,9 @@ admitSOrg-[hidden]-admitPRO
 'Message 2: Onleave inpatient
 package "Message 2: Start Onleave Inpatient" as Onleave <<Frame>> {
     class "Bundle (MedComHospitalNotificationMessage)" as onleaveB {
-        id = BUN2
+        id = "a5e5b880-c087-4055-b9ec-99108695f81d"
         type = "message"
-        timestamp = 2021-12-02T08:00:10
+        timestamp = "2022-09-01T12:00:10"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as onleaveMH{
         id = MH2

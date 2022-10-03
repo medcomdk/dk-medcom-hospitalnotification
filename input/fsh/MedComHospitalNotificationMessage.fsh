@@ -42,7 +42,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STIN"
 Description: "Example of MedCom HospitalNotification  - STIN. Admit inpatient."
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-09-01T12:00:10Z
 * entry[+].fullUrl = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
 * entry[=].resource = b9b4818e-02de-4cc4-b418-d20cbc7b5404
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
@@ -51,10 +51,8 @@ Description: "Example of MedCom HospitalNotification  - STIN. Admit inpatient."
 * entry[=].resource = a790f964-88d3-4652-bbc8-81d2f3d035f8
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" 
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0"
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 
@@ -64,19 +62,17 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - RE_STIN"
 Description: "Example of MedCom HospitalNotification RE_STIN. Revise Admission"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-09-01T14:00:10Z
 * entry[+].fullUrl = "MessageHeader/cc47c1e2-78e6-4291-b071-f423a4f7fbfe"
 * entry[=].resource = cc47c1e2-78e6-4291-b071-f423a4f7fbfe
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
 * entry[+].fullUrl = "Encounter/b9846c24-0335-11ed-b939-0242ac120002"
 * entry[=].resource = b9846c24-0335-11ed-b939-0242ac120002
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5" //service provider Org
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
+* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/b5f7de8c-957a-11ec-b909-0242ac120002"
 * entry[=].resource = b5f7de8c-957a-11ec-b909-0242ac120002
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0"
@@ -88,19 +84,17 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - AN_STIN"
 Description: "Example of MedCom HospitalNotification - AN_STIN. Cancel Admission"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-09-01T15:00:10Z
 * entry[+].fullUrl = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
 * entry[=].resource = d8749b54-1aeb-4089-8941-8d876bdffc51
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"
 * entry[=].resource = c9782061-ce63-41b5-8be6-655812d23332
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
+* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/c67ecb1c-957a-11ec-b909-0242ac120002"
 * entry[=].resource = c67ecb1c-957a-11ec-b909-0242ac120002
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0"
@@ -111,18 +105,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STOR"
 Description: "Example of MedCom HospitalNotification - STOR. Start Leave"
 * type = $BundleType#message
-* timestamp = 2020-10-20T10:21:56Z
+* timestamp = 2022-09-04T14:00:10Z
 * entry[+].fullUrl = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
 * entry[=].resource = e563a2b2-bf92-4b13-bbd2-0a021a95bded
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/d56e9c54-23d2-43a4-816e-951d2a6e3281"
 * entry[=].resource = d56e9c54-23d2-43a4-816e-951d2a6e3281
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit prov
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
@@ -134,7 +126,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLOR"
 Description: "Example of MedCom HospitalNotification - SLOR End Leave"
 * type = $BundleType#message
-* timestamp = 2020-10-20T10:21:56Z
+* timestamp = 2022-09-05T15:00:10Z
 * entry[+].fullUrl = "MessageHeader/f47254da-f170-46f0-b624-4778a9c92b1f"
 * entry[=].resource = f47254da-f170-46f0-b624-4778a9c92b1f
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
@@ -143,10 +135,8 @@ Description: "Example of MedCom HospitalNotification - SLOR End Leave"
 * entry[=].resource = e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa" //start leave
@@ -159,19 +149,17 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLHJ (inpatient)"
 Description: "Example of MedCom HospitalNotification - SLHJ Discharge inpatient"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-09-30T09:22:33Z
 * entry[+].fullUrl = "MessageHeader/g1affa53-c157-4080-abb0-8e681524f969"
 * entry[=].resource = g1affa53-c157-4080-abb0-8e681524f969
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/f405ba2d-467a-4e92-9acc-9dc2a629760f"
 * entry[=].resource = f405ba2d-467a-4e92-9acc-9dc2a629760f
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
+* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa" //start leave
@@ -189,18 +177,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - MORS (inpatient)"
 Description: "Example of MedCom HospitalNotification - MORS. Discharge when patient is deceased"
 * type = $BundleType#message
-* timestamp = 2021-01-13T13:44:14Z
+* timestamp = 2022-09-30T09:22:33Z
 * entry[+].fullUrl = "MessageHeader/hefc6d95-6161-4493-99c9-f359488dedb8"
 * entry[=].resource = hefc6d95-6161-4493-99c9-f359488dedb8
 * entry[+].fullUrl = "Patient/t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
 * entry[=].resource = t82fb8a3-6725-41e2-a615-2b1cfcfe9931
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/gcab7218-9584-11ec-b909-0242ac120002"
 * entry[=].resource = gcab7218-9584-11ec-b909-0242ac120002
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
@@ -216,7 +202,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STAA"
 Description: "Example of MedCom HospitalNotification - STAA. Admit acute ambulate patient."
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-10-01T10:00:05Z
 * entry[+].fullUrl = "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029"
 * entry[=].resource = i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
@@ -225,10 +211,8 @@ Description: "Example of MedCom HospitalNotification - STAA. Admit acute ambulat
 * entry[=].resource = h2cb16ce-af8c-46f3-be9e-89406ef3e7b5
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
 
@@ -238,18 +222,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - RE_STAA"
 Description: "Example of MedCom HospitalNotification RE_STAA. Revise Admission"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-10-01T12:00:10Z
 * entry[+].fullUrl = "MessageHeader/k06f2487-7aab-4e35-9a80-70431060a7e8"
 * entry[=].resource = k06f2487-7aab-4e35-9a80-70431060a7e8
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
 * entry[+].fullUrl = "Encounter/i458ddc8-fea4-41c3-992b-ff73cb6f657b"
 * entry[=].resource = i458ddc8-fea4-41c3-992b-ff73cb6f657b
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5" //service provider Org
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
-* entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d" 
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
@@ -262,18 +244,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - AN_STAA"
 Description: "Example of MedCom HospitalNotification - AN_STAA. Cancel Admission"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-10-01T13:00:10Z
 * entry[+].fullUrl = "MessageHeader/l3398a98-37ed-4bff-8e19-cc78ccb5b5f2"
 * entry[=].resource = l3398a98-37ed-4bff-8e19-cc78ccb5b5f2
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/j245dcc2-8668-4fcf-ae5f-d49a50bfc2d4"
 * entry[=].resource = j245dcc2-8668-4fcf-ae5f-d49a50bfc2d4
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
@@ -285,18 +265,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLHJ (acute ambulant)"
 Description: "Example of MedCom HospitalNotification - SLHJ Discharge inpatient"
 * type = $BundleType#message
-* timestamp = 2020-10-15T13:44:14Z
+* timestamp = 2022-10-02T22:00:10Z
 * entry[+].fullUrl = "MessageHeader/m9bea09c-e662-4d59-b84f-9af570b57f42"
 * entry[=].resource = m9bea09c-e662-4d59-b84f-9af570b57f42
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/kbbad98c-3310-404a-af0c-7e3739d7b49f"
 * entry[=].resource = kbbad98c-3310-404a-af0c-7e3739d7b49f
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
@@ -311,18 +289,16 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - MORS (acute ambulant)"
 Description: "Example of MedCom HospitalNotification - MORS. Discharge when patient is deceased"
 * type = $BundleType#message
-* timestamp = 2021-01-13T13:44:14Z
+* timestamp = 2022-10-02T22:00:10Z
 * entry[+].fullUrl = "MessageHeader/nabb68aa-c97b-4905-a60c-71ff3209fd51"
 * entry[=].resource = nabb68aa-c97b-4905-a60c-71ff3209fd51
 * entry[+].fullUrl = "Patient/t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
 * entry[=].resource = t82fb8a3-6725-41e2-a615-2b1cfcfe9931
-* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5"
-* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
 * entry[+].fullUrl = "Encounter/l001c640-6b5d-414c-b6bd-e00ec6d4ceee"
 * entry[=].resource = l001c640-6b5d-414c-b6bd-e00ec6d4ceee
 * entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
 * entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
-* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
 * entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 * entry[+].fullUrl = "Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
@@ -330,3 +306,24 @@ Description: "Example of MedCom HospitalNotification - MORS. Discharge when pati
 * entry[=].resource = l17de5f5-abb0-4701-93aa-6b0d7b4127bc
 
 
+// use cases associated with inpatient hospitalization
+Instance: m908i967-9ie3-9023-b9ec-98108695f01d
+InstanceOf: MedComHospitalNotificationMessage
+Title: "HospitalNotification Message - STIN, with different serviceProvider and sender Organization."
+Description: "Example of MedCom HospitalNotification  - STIN. Admit inpatient, with different serviceProvider and sender Organization."
+* type = $BundleType#message
+* timestamp = 2022-09-01T12:00:10Z
+* entry[+].fullUrl = "MessageHeader/o9b4818e-12de-5cc4-c418-d30cbc7b5404"
+* entry[=].resource = o9b4818e-12de-5cc4-c418-d30cbc7b5404
+* entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
+* entry[=].resource = t33cef33-3626-422b-955d-d506aaa65fe1
+* entry[+].fullUrl = "Organization/of839e87-4e44-4977-b38e-92b5a6f187b5" // service provider org
+* entry[=].resource = of839e87-4e44-4977-b38e-92b5a6f187b5
+* entry[+].fullUrl = "Encounter/m790f964-98d3-4852-bac8-83d2f3d035f8"
+* entry[=].resource = m790f964-98d3-4852-bac8-83d2f3d035f8
+* entry[+].fullUrl = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+* entry[=].resource = o4cdf292-abf3-4f5f-80ea-60a48013ff6d
+* entry[+].fullUrl = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" 
+* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "Provenance/m7cf3888-6f52-5e4d-939c-d2575d24fba0"
+* entry[=].resource = m7cf3888-6f52-5e4d-939c-d2575d24fba0

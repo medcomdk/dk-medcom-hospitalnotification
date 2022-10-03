@@ -6,7 +6,7 @@ The HospitalNotification message is sent without patient consent, why only a lim
 
 The figure below shows the references from a MedComHospitalNotificationEncounter.
 
-<img alt="The MedComHospitalNotificationEncounter references a subject which is a MedComCorePatient and a serviceProvider organization which is a MedComCoreOrganization." src="./hospitalnotification/HospitalNotificationEncounter.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<img alt="The MedComHospitalNotificationEncounter references a subject which is a MedComCorePatient and a serviceProvider organization which is a MedComCoreOrganization." src="./hospitalnotification/HospitalNotificationEncounter.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
 
 Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComHospitalNotificationEncounter.
 
@@ -16,3 +16,6 @@ The element Encounter.serviceProvider describes the organization or hospital dep
 The element references a MedComMessagingOrganization or MedComCoreOrganization, since MedComMessaigingOrganization inherits properties from MedComCoreOrganization.
 
 The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvider (Encounter.serviceProvider) may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR register)than the serviceProvider organisation, and in this case they shall be represented referencing two different instances of a Organization resource.
+
+[An example of different serviceProvider and sender organisation can be found here](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/Bundle-m908i967-9ie3-9023-b9ec-98108695f01d.html). Other examples will have the same organisation as serviceProvider and sender.
+

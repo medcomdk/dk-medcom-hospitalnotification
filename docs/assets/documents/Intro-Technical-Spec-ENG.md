@@ -1,6 +1,5 @@
 [Return](../../index.md)
 # Introduction to the technical specification
-<hr/>
 
 **Table of contents**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
@@ -14,7 +13,6 @@
   * [4.3 Scenario 3-Patient leave starts](#43-scenario-3--patient-leave-starts)
   * [4.4 Scenario 4-Patient leave ends](#44-scenario-4--patient-leave-ends)
 <!-- * [4 Release Notes](#4-release-notes) -->
-<hr/>
   
   >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
 <br>

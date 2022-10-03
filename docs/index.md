@@ -2,7 +2,7 @@
 
 
 # MedCom HospitalNotification
-<hr/>
+
 
 **Table of contents**
 * [1 Standard documentation](#1-standard-documentation)
@@ -13,7 +13,6 @@
   + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
 *  [2 Test and certification](#2-test-and-certification)
 
-<hr/>
 
   > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	

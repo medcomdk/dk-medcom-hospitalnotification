@@ -2,7 +2,6 @@
 
 
 # Use cases for advis om sygehusophold
-<hr/>
 
 **Tabel of content**
 * [1 Introduktion ](#1-introduktion)
@@ -35,7 +34,7 @@
 * [7 Regler for modtagersystemet, som use casene beror på](#7-regler-for-modtagersystemet-som-use-casene-beror-på)
   * [7.1 Regler vedr. modtagelse af HospitalNotification](#regler-vedrørende-modtagelse-af-hospital-notification)
 * [8 Release Notes](#8-release-notes)
-<hr/>
+
 <p>&nbsp;</p>
 
 

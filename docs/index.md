@@ -44,13 +44,10 @@ Use cases describe the different scenarios in which a standard support. For a ce
 
 The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-<b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b> 
+<!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
-[Use cases](HospitalNotification_use_cases_full.pdf) 
-<!-- 
-<a href="https://medcomtest-my.sharepoint.com/:b:/g/personal/mbu_medcom_dk/ET4QEIkA3aFJl0Ajz73D5tEBMhPiKOBlI3Vu62PsRtAitA?e=KzjhxN"> Uses cases</a> -->
-  > Be aware that new version of uses cases will come soon!
-
+[Danish: Use cases](HospitalNotification_use_cases__2_0_0.pdf) 
+> Please be aware that the Use cases are in danish. 
 
 
 <!-- Below, you can find the use cases in Danish and English be found:<br>

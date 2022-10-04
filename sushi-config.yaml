@@ -1,5 +1,5 @@
-id: dk.fhir.ig.dk-medcom-hospitalnotification
-canonical: http://medcomfhir.dk/fhir/hospitalnotification
+id: medcom.fhir.dk.hospitalnotification
+canonical: http://medcomfhir.dk/ig/hospitalnotification
 name: MedComHospitalNotification
 title: "DK MedCom HospitalNotification"
 description: The DK MedCom HospitalNotification IG
@@ -16,8 +16,8 @@ dependencies:
   hl7.fhir.dk.core:
    uri: https://hl7.dk/fhir/core/2.0.0/
    version: 2.0.0
-  dk.fhir.ig.dk-medcom-core: current
-  dk.fhir.ig.dk-medcom-messaging: current
+  medcom.fhir.dk.core: current
+  medcom.fhir.dk.messaging: current
 
 menu:
   Table of Contents: toc.html

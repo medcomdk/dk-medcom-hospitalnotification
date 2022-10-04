@@ -17,5 +17,5 @@ The element references a MedComMessagingOrganization or MedComCoreOrganization, 
 
 The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvider (Encounter.serviceProvider) may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR register)than the serviceProvider organisation, and in this case they shall be represented referencing two different instances of a Organization resource.
 
-[An example of different serviceProvider and sender organisation can be found here](https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/Bundle-m908i967-9ie3-9023-b9ec-98108695f01d.html). Other examples will have the same organisation as serviceProvider and sender.
+[An example of different serviceProvider and sender organisation can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-m908i967-9ie3-9023-b9ec-98108695f01d.html). Other examples will have the same organisation as serviceProvider and sender.
 

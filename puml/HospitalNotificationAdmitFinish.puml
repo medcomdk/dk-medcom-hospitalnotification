@@ -98,8 +98,8 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         destination.use.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
-        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        destination.receiver.reference = "Organization/0cfcaed6-067d-4c66-92eb-690d26b333bc"
+        sender.reference = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
         focus = "Encounter/f405ba2d-467a-4e92-9acc-9dc2a629760f"
     }
@@ -123,17 +123,17 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = "2022-09-01T12:00:05+02:00"
         periode.end = "2022-09-30T09:22:28+02:00"
-        serviceProvider = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        serviceProvider = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
     } 
     class "Receiver: Municipality (MedComMessagingOrganization)" as finishedROrg{
-        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        id = "0cfcaed6-067d-4c66-92eb-690d26b333bc"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
     class "Sender: Hospital (MedComMessagingOrganization)" as finishedSOrg{
-        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        id = "d6ed6725-1aec-42ad-829d-f7074c3914f3"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
@@ -146,7 +146,7 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         recorded = "2022-09-01T12:00:30"
         activity.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
-        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
     }
     class "Provenance (MedComMessagingProvenance)" as finishedPRO{
         id = "dc421d0a-cded-470f-9a53-2ddba7583baa"
@@ -155,7 +155,7 @@ package "Message 2: Discharge Inpatient to Home" as finished <<Frame>>{
         recorded = "2022-09-30T09:22:53"
         activity.system = "http://medcomfhir.dk/fhir/dk-medcom-terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "discharge-inpatient-home"
-        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"

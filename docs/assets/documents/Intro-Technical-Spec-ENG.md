@@ -8,10 +8,10 @@
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
 * [4 Timestamps in HospitalNotification message](#4-timestamps-in-hospitalnotification-message)
-  * [4.1 Scenario 1-Patient admission starts](#41-scenario-1--patient-admission-starts)
-  * [4.2 Scenario 2-Patient admission ends](#42-scenario-2--patient-admission-ends)
-  * [4.3 Scenario 3-Patient leave starts](#43-scenario-3--patient-leave-starts)
-  * [4.4 Scenario 4-Patient leave ends](#44-scenario-4--patient-leave-ends)
+  * [4.1 Scenario 1-Patient admission starts](#41-scenario-1---patient-admission-starts)
+  * [4.2 Scenario 2-Patient admission ends](#42-scenario-2---patient-admission-ends)
+  * [4.3 Scenario 3-Patient leave starts](#43-scenario-3---patient-leave-starts)
+  * [4.4 Scenario 4-Patient leave ends](#44-scenario-4---patient-leave-ends)
 <!-- * [4 Release Notes](#4-release-notes) -->
   
   >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
@@ -122,17 +122,14 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
 ## 3 Examples in a HospitalNotification Message
 In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>, the required content of a HospitalNotification message is illustrated. 
-There is a difference between the required elements and MustSupport elements, as the required element must always be included in a message. Similarly, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>  . 
-More examples for Hospital notification in both XML and JSON format can be found on  MedCom HospitalNotificationMessage profile. 
+There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>  . 
+More examples for HospitalNotification in both XML and JSON format can be found on  MedComHospitalNotificationMessage profile. 
 <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples for MedCom HospitalNotificationMessage </a>
-The message in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> illustrate an admission and discharge of a patient. The patient, service provider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
+The message in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> illustrate an admission and discharge of a patient, respectively. In the two messages the serviceProvider and sender organization are represented with the same instance. The patient, serviceProvider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
 
 In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>) there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 
-
-Some of the information does not fulfill the requirements in the IG. This accounts for the id’s and organization identifiers. These are made up to simplify the example.
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
-
 
 <figure>
 <img src="../images/HNAdmitInPat.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
@@ -159,7 +156,7 @@ The HospitalNotification message contains five timestamps:
 
 The five timestamps are registered at different times during the patient's hospital stay.
 
-### 4.1 Scenario 1- Patient admission starts
+### 4.1 Scenario 1 - Patient admission starts
 E.i. during patient admission, the timestamps are registered in the following way (see <a href="#Fig4">Figure 4</a>):
 
 When the patient arrives at the hospital, the hospital staff admits the patient and the first timestamp, Encounter.period.start,  is registered. Please notice that the Encounter.period.start does not change during the citizen's hospital stay.
@@ -171,7 +168,7 @@ Immediately after the hospital staff admits the patient to the hospital, the Hos
 <figcaption text-align = "center"><b>Figure 4: Timestamps registration  in HospitalNotfication for Patient admission start </b></figcaption>
 </figure> 
 
-### 4.2 Scenario 2- Patient admission ends
+### 4.2 Scenario 2 - Patient admission ends
 When the patient is ready to be discharged from the hospital, the hospital staff completes the discharge form and the Encounter.period.end is registered. Immediately after the hospital staff completed the discharge form, a HospitalNotification for discharge is generated and the Bundle.timestamp for the discharge HospitalNotification is registered. When the discharge HospitalNotification is sent to the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable timestamp.
 
 The process of timestamps registration when patient's admission ends is visualised in <a href="#Fig5"> Figure 5</a>.
@@ -181,7 +178,7 @@ The process of timestamps registration when patient's admission ends is visualis
 <figcaption text-align = "center"><b>Figure 5: Timestamps registration in HospitalNotification for Patient admission end. </b></figcaption>
 </figure> 
 
-### 4.3 Scenario 3- Patient leave starts
+### 4.3 Scenario 3 - Patient leave starts
 In case of that, the patient takes leave from the hospital admission the hospital staff register leave in the system (see <a href="#Fig5"> Figure 6</a>).Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleave is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
 
 <figure>
@@ -189,7 +186,7 @@ In case of that, the patient takes leave from the hospital admission the hospita
 <figcaption text-align = "center"><b>Figure 6: Timestamps registration in HospitalNotification for onleave start. </b></figcaption>
 </figure> 
 
-### 4.4 Scenario 4- Patient leave ends
+### 4.4 Scenario 4 - Patient leave ends
 When the patient returns to the hospital from his leave,the hospital staff register the return and the patient continues his admission (see <a href="#Fig7"> Figure 7</a>). Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleav is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
 Please notice that the Encounter.period.start stays unchanged when the patient takes leave and the Encounter.period.end is not registered. The Encounter.period.end is ONLY registered when the patient ends the admission. 
 <figure>

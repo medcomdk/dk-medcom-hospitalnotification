@@ -63,10 +63,10 @@ The profiles that are part of the technical specification for HospitalNotificati
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
 * <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
 
-The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support. Further the structure of the standard is described and supported with examples in different degree of technical skills.
+The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support. Further, the structure of the standard is described and supported with examples in different degree of technical skills.
 <br>
 
-[Click her to read an introduction to the technical specification.](assets/documents/Intro-Technical-Spec-ENG.md)
+[Click here to read an introduction to the technical specification.](assets/documents/Intro-Technical-Spec-ENG.md)
 <p>&nbsp;</p>	
 
 
@@ -95,16 +95,16 @@ Certification of a system implies both an approved testprotocol and run-through 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">Click here to find the description of test and certification of FHIR standards in MedCom. </a> 
 <br>
 
-Test protocols and test scripts are used to test and certify MedCom HospitalNotification.<b>The test protocols and test scripts are currently in preparation. As soon as the test protocols and test scripts are ready, they will be presented below.</b>
+Test protocols and test scripts are used to test and certify MedCom HospitalNotification. **Below is a draft of the test protocols presented, wherefore vendors should expect that these protocols will be updated within the nearest future. TouchStone test scripts will also be provided.**
 
 **Sending a HospitalNotification message**
-* [Test protocol](FHIR-advis_afsend_ny-testprotokol_arbejdsdokument.docx) 
-* TouchStone Testscripts - link will be provided soon
+* [Test protocol - draft version](FHIR-advis_afsend_ny-testprotokol_arbejdsdokument.docx) 
+* TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol](FHIR-advis_modtage_ny-testprotokol_arbejdsdokument.docx) 
-* TouchStone Testscripts - link will be provided soon
+* [Test protocol - draft version](FHIR-advis_modtage_ny-testprotokol_arbejdsdokument.docx) 
+* TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 

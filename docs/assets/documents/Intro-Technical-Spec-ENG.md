@@ -54,7 +54,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a></td>
     <td class="tg-7euo">MessageHeader</td>
-    <td class="tg-7euo">The header of a message, which shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver, the content of the message and request for report of admission.<br><br>this profile inherits from MedComMessagingMessageHeader.</td>
+    <td class="tg-7euo">The header of a message, which shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver, the content of the message and request for report of admission.<br><br>This profile inherits from MedComMessagingMessageHeader.</td>
     <td class="tg-7euo">Id<br>ReportOfAdmissionFlag <br>ReportOfAdmissionRecipient <br>Event[x]:eventCoding <br>Sender Organization<br>Receiver Organization<br>Source (Receiver of the Acknowledgement)<br>Focus</td>
     <td class="tg-7euo">HospitalNotification</td>
   </tr>

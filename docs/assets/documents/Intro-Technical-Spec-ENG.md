@@ -3,7 +3,7 @@
 
 **Table of contents**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
-  * [1.1 Service Provider](#11-service-provider)
+  * [1.1 Service Provider](#11-serviceprovider)
   * [1.2 Report of admission](#12-report-of-admission)
 * [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
 * [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
@@ -47,59 +47,59 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a></td>
     <td class="tg-7euo">Bundle</td>
-    <td class="tg-7euo">Acts as a container for the content of the message. The type of the Bundle shall always be 'message'.<br><br>Inherits from MedComMessagingMessage.</td>
+    <td class="tg-7euo">Acts as a container for the content of the message. The type of the Bundle shall always be 'message'.<br><br>This profile inherits from MedComMessagingMessage.</td>
     <td class="tg-7euo">Id<br>Type<br>Timestamp<br> Entry</td>
-    <td class="tg-7euo">MedCom HospitalNotification</td>
+    <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a></td>
     <td class="tg-7euo">MessageHeader</td>
-    <td class="tg-7euo">The header of a message, which profile shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver and the content of the message.<br><br>Inherits from MedComMessagingMessageHeader.</td>
-    <td class="tg-7euo">Id<br>Text (Narrative)<br>reportOfAdmissionFlag <br>reportOfAdmissionRecipient <br>Event[x]:eventCoding <br>Sender Organization<br>Receiver Organization<br>Carbon Copy<br>Source (Receiver of the receipt)<br>Focus</td>
-    <td class="tg-7euo">MedCom HospitalNotification</td>
+    <td class="tg-7euo">The header of a message, which shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver, the content of the message and request for report of admission.<br><br>this profile inherits from MedComMessagingMessageHeader.</td>
+    <td class="tg-7euo">Id<br>ReportOfAdmissionFlag <br>ReportOfAdmissionRecipient <br>Event[x]:eventCoding <br>Sender Organization<br>Receiver Organization<br>Source (Receiver of the Acknowledgement)<br>Focus</td>
+    <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a></td>
     <td class="tg-7euo">Encounter</td>
-    <td class="tg-7euo">A meeting between a healthcare professional and a patient. In a HospitalNotification message the start time of the encounter represents the hospitalization of the patient.<br><br>Inherits from MedComCoreEncounter</td>
-    <td class="tg-7euo">Status<br> class<br>Subject <br>EpisodeOfCare identifier<br>Period Start (start time of the encounter)<br>Service provider organization</td>
-    <td class="tg-7euo">MedCom HospitalNotification</td>
+    <td class="tg-7euo">A meeting between a healthcare professional and a patient. In a HospitalNotification message the start time of the encounter represents the hospitalization of the patient.<br><br>This profile inherits from MedComCoreEncounter</td>
+    <td class="tg-7euo">Id<br>Status<br> class<br>Subject <br>EpisodeOfCare identifier<br>Period start (start time of the encounter)<br>Period end (end time of the encounter)<br>ServiceProvider organization</td>
+    <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-patient.html" target="_blank">MedComCorePatient</a></td>
     <td class="tg-7euo">Patient</td>
     <td class="tg-7euo">Describes a citizen or patient, when exchanging a MedCom message.</td>
-    <td class="tg-7euo">Slices for identifier (CPR-number)<br>Slices for nameName<br>Address<br>Telecom<br>Managing Organization<br>Deceased[x]</td>
-    <td class="tg-7euo">MedCom Core</td>
+    <td class="tg-7euo">Id<br>identifier (CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
+    <td class="tg-7euo">Core</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-organization.html" target="_blank">MedComCoreOrganization</a></td>
     <td class="tg-7euo">Organization</td>
-    <td class="tg-7euo">Information useful to identify an organization. In a HospitalNotification message it is used to describe the service provider organization.</td>
-    <td class="tg-7euo">Identifier (SOR-id)<br>Name</td>
-    <td class="tg-7euo">MedCom Core</td>
+    <td class="tg-7euo">Contains information which is useful in order to identify an organization. In a HospitalNotification message it is often used to describe the serviceProvider organization or department.</td>
+    <td class="tg-7euo">Id<br>Identifier (SOR-id)<br>Name</td>
+    <td class="tg-7euo">Core</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
     <td class="tg-7euo">Organization</td>
-    <td class="tg-7euo">Information useful to identify an sender or receiver organization.<br>Inherits from MedComCoreOrganization.</td>
-    <td class="tg-7euo">Text (Narrative text)<br>Slices for identifier (SOR-id)<br>Slices for identifier (EAN/GLN-id)<br>Name</td>
-    <td class="tg-7euo">MedCom Messaging</td>
+    <td class="tg-7euo">Contains information which is useful in order to identify a sender or receiver organization.<br>This profile inherits from MedComCoreOrganization.</td>
+    <td class="tg-7euo">Id<br>Slices for identifier (SOR-id)<br>Slices for identifier (EAN/GLN-id)<br>Name</td>
+    <td class="tg-7euo">Messaging</td>
   </tr>
   <tr>
     <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank">MedComMessagingProvenance</a></td>
     <td class="tg-7euo">Provenance</td>
-    <td class="tg-7euo">Describes the activity and history of a message. It includes a reference to the target which is the MedComMessagingMessageHeader from the current message, the actors involved the activity and the previuos message if there is any.</td>
-    <td class="tg-7euo">Text (Narrative text)<br>Target<br>OccurredDateTime <br>Timestamps<br>Activity<br>Agent<br>Entity (Reference to the previous message)</td>
-    <td class="tg-7euo">MedCom Messaging</td>
+    <td class="tg-7euo">Describes the activity of a message, e.g. whether the message concern an inpatient admission or discharge. In cases of a previously send message concerning the same admission, the Provenance resource holds a reference to the previous message. Thereby it is possible to get an overview of the patient's admission.</td>
+    <td class="tg-7euo">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (Reference to the previous message)</td>
+    <td class="tg-7euo">Messaging</td>
   </tr>
 </tbody>
 </table>
 <br><br>
 
-### 1.1 Service Provider
-The service provider is the organization or department in charge of the patients admission. 
-The service provider can be described using MedComMessaging Organization or MedComCoreOrganization, since MedComMessaiging Organization inherits properties from MedComCore Organization. 
+### 1.1 ServiceProvider and Sender
+The serviceProvider is the organization or department in charge of the patients admission, whereas the sender is the organization or deprtment responsible for sending the HospitalNotification message. 
+The sender of a HospitalNotification and the serviceProvider may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which in this case shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR-register) than the serviceProvider, and in this case they shall be represented referencing two different instances of a Organization resource.
 
 ### 1.2  Report of admission
 The request for a report of admission must be sent when a patient is initially admitted, meaning that the type of HospitalNotification is STIN og STAA. In these cases, the Provenance.activity.code is admit-inpatient or admit-emergency, respectively. A request for a report of admission shall not be send when the patient returns from leave (SLOR) or is relocated from another hospital. 

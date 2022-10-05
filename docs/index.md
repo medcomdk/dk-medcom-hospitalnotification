@@ -75,7 +75,7 @@ The HospitalNotification message notifies the care and health actors in the prim
 <br>
 To help vendors of the IT system implement the codes in the same way MedCom has developed an overview of the HospitalNotification codes.
 
-[Click here to se the HospitalNotification codes used in FHIR](/assets/documents/Overview-HospitalNotification-codes-FHIR.md)
+[Click here to see the HospitalNotification codes used in FHIR](/assets/documents/Overview-HospitalNotification-codes-FHIR.md)
 
 <br>
 
@@ -98,13 +98,13 @@ Certification of a system implies both an approved testprotocol and run-through 
 Test protocols and test scripts are used to test and certify MedCom HospitalNotification.<b>The test protocols and test scripts are currently in preparation. As soon as the test protocols and test scripts are ready, they will be presented below.</b>
 
 **Sending a HospitalNotification message**
-* Testprotocol
-* TouchStone Testscripts
+* [Test protocol](FHIR-advis_afsend_ny-testprotokol_arbejdsdokument.docx) 
+* TouchStone Testscripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* Testprotocol
-* TouchStone Testscripts
+* [Test protocol](FHIR-advis_modtage_ny-testprotokol_arbejdsdokument.docx) 
+* TouchStone Testscripts - link will be provided soon
 <p>&nbsp;</p>
 
 

@@ -10,14 +10,14 @@
   + [1.2 Use cases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
   + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
-  + [1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
+  + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
 *  [2 Test and certification](#2-test-and-certification)
 
 
   > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	
 
-This page presents MedCom's HospitalNotification standard (Danish: Advis om sygehusophold). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>/ <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the patient's care and health actors in the primary sector about the start, periods of leave and end time of the patient's stay in a hospital. The notification allows pausing current health and care services during the patient's hospitalisation and to start the services when the hospitalisation ends. 
+This page presents MedCom's HospitalNotification standard (Danish: Advis om sygehusophold). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the patient's care and health actors in the primary sector about the start, periods of leave and end time of the patient's stay in a hospital. The notification allows pausing current health and care services during the patient's hospitalisation and to start the services when the hospitalisation ends. 
 Furthermore, the notification of hospital stay can trigger the automatic sending of an admission report <a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/"> (XDIS16)</a> from the recipient's system, which gives the hospital staff an overview of the patient's current services, functional level, and healthcare problems.
 
 
@@ -27,7 +27,7 @@ The standard documentation below provides the necessary content to understand th
 * Use cases
 *	Technical Specifications in terms of the relevant IGs and clinical introduction to the content of the IG.
 *	An overview of the codes in a FHIR HospitalNotification message which compose a certain meaning
-*	Mapping document from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> &
+*	Mapping document from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and
 <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> to FHIR  HospitalNotification Message.
 <p>&nbsp;</p>
 
@@ -79,7 +79,7 @@ To help vendors of the IT system implement the codes in the same way MedCom has 
 
 <br>
 
-### 1.5 Mapping from XDIS17/XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
+### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
 Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>
 

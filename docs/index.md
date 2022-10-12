@@ -56,12 +56,12 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 <!-- <p>&nbsp;</p>	 -->
 
 ### 1.3 Technical specification
-The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedComCore IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>. 
+The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomfhir.dk/ig/dk-medcom-core/" target="_blank">MedComCore IG</a>, <a href="https://medcomfhir.dk/ig/dk-medcom-messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://medcomfhir.dk/ig/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>. 
 
 The profiles that are part of the technical specification for HospitalNotification are: 
-*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
-*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
-* <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
+*	<a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
+*	<a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
+* <a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
 
 The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support. Further, the structure of the standard is described and supported with examples in different degree of technical skills.
 <br>

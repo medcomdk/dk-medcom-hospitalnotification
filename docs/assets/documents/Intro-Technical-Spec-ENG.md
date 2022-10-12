@@ -14,13 +14,13 @@
   * [4.4 Scenario 4-Patient leave ends](#44-scenario-4---patient-leave-ends)
 <!-- * [4 Release Notes](#4-release-notes) -->
   
-  >Note: In case of discrepancies between the <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
+  >Note: In case of discrepancies between the <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
 <br>
 
 
 ## 1 Profiles in the HospitalNotification Standard
 
-In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
+In total, seven profiles from <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-core/" target="_blank">MedCom Core IG</a>, <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
 <br><br>
 
 <style type="text/css">
@@ -32,6 +32,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 .tg .tg-4mz0{background-color:#ffffff;color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg" id="tab1">
 <caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in HospitalNotification standard </caption>
 <thead>
@@ -45,49 +46,49 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 </thead>
 <tbody>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a></td>
     <td class="tg-7euo">Bundle</td>
     <td class="tg-7euo">Acts as a container for the content of the message. The type of the Bundle shall always be 'message'.<br><br>This profile inherits from MedComMessagingMessage.</td>
     <td class="tg-7euo">Id<br>Type<br>Timestamp<br> Entry</td>
     <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a></td>
     <td class="tg-7euo">MessageHeader</td>
     <td class="tg-7euo">The header of a message, which shall always be the first referenced profile, when the type of the Bundle is 'message'. This profile holds references to the fundamental information in a message such as sender, receiver, the content of the message and request for report of admission.<br><br>This profile inherits from MedComMessagingMessageHeader.</td>
     <td class="tg-7euo">Id<br>ReportOfAdmissionFlag <br>ReportOfAdmissionRecipient <br>Event[x]:eventCoding <br>Sender Organization<br>Receiver Organization<br>Source (Receiver of the Acknowledgement)<br>Focus</td>
     <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a></td>
     <td class="tg-7euo">Encounter</td>
     <td class="tg-7euo">A meeting between a healthcare professional and a patient. In a HospitalNotification message the start time of the encounter represents the hospitalization of the patient.<br><br>This profile inherits from MedComCoreEncounter</td>
     <td class="tg-7euo">Id<br>Status<br> class<br>Subject <br>EpisodeOfCare identifier<br>Period start (start time of the encounter)<br>Period end (end time of the encounter)<br>ServiceProvider organization</td>
     <td class="tg-7euo">HospitalNotification</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-patient.html" target="_blank">MedComCorePatient</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-core/StructureDefinition-medcom-core-patient.html" target="_blank">MedComCorePatient</a></td>
     <td class="tg-7euo">Patient</td>
     <td class="tg-7euo">Describes a citizen or patient, when exchanging a MedCom message.</td>
     <td class="tg-7euo">Id<br>identifier (CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
     <td class="tg-7euo">Core</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-organization.html" target="_blank">MedComCoreOrganization</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-core/StructureDefinition-medcom-core-organization.html" target="_blank">MedComCoreOrganization</a></td>
     <td class="tg-7euo">Organization</td>
     <td class="tg-7euo">Contains information which is useful in order to identify an organization. In a HospitalNotification message it is often used to describe the serviceProvider organization or department.</td>
     <td class="tg-7euo">Id<br>Identifier (SOR-id)<br>Name</td>
     <td class="tg-7euo">Core</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
     <td class="tg-7euo">Organization</td>
     <td class="tg-7euo">Contains information which is useful in order to identify a sender or receiver organization.<br>This profile inherits from MedComCoreOrganization.</td>
     <td class="tg-7euo">Id<br>Slices for identifier (SOR-id)<br>Slices for identifier (EAN/GLN-id)<br>Name</td>
     <td class="tg-7euo">Messaging</td>
   </tr>
   <tr>
-    <td class="tg-7euo"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank">MedComMessagingProvenance</a></td>
+    <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/dk-medcom-messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank">MedComMessagingProvenance</a></td>
     <td class="tg-7euo">Provenance</td>
     <td class="tg-7euo">Describes the activity of a message, e.g. whether the message concern an inpatient admission or discharge. In cases of a previously send message concerning the same admission, the Provenance resource holds a reference to the previous message. Thereby it is possible to get an overview of the patient's admission.</td>
     <td class="tg-7euo">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (Reference to the previous message)</td>
@@ -95,6 +96,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   </tr>
 </tbody>
 </table>
+</div>
 <br><br>
 
 ### 1.1 ServiceProvider and Sender
@@ -124,7 +126,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>, the required content of a HospitalNotification message is illustrated. 
 There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>  . 
 More examples for HospitalNotification in both XML and JSON format can be found on  MedComHospitalNotificationMessage profile. 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples for MedCom HospitalNotificationMessage </a>
+<a href="https://medcomfhir.dk/ig/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples for MedCom HospitalNotificationMessage </a>
 The message in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> illustrate an admission and discharge of a patient, respectively. In the two messages the serviceProvider and sender organization are represented with the same instance. The patient, serviceProvider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
 
 In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>) there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 

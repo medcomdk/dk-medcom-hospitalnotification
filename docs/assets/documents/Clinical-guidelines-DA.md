@@ -63,6 +63,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
 .tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 .tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;
   font-weight:bold"> Tabel 1: Status for sygehusophold</caption>
@@ -142,6 +143,7 @@ Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder
   </tr>
 </tbody>
 </table>
+</div>
 
 *repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 

@@ -30,6 +30,7 @@ Comments to the table:
 .tg .tg-m5mm{background-color:#d7fcd7;border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-ncd7{background-color:#ffffc7;border-color:inherit;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;
   font-weight:bold"> Tabel 1: Overviwe of HospitalNotification codes  </caption>
@@ -209,6 +210,7 @@ Comments to the table:
   </tr>
 </tbody>
 </table>
+</div>
 <br> <br>
 
 <!-- # Release Notes 

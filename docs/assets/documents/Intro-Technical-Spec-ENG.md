@@ -32,6 +32,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
 .tg .tg-4mz0{background-color:#ffffff;color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg" id="tab1">
 <caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in HospitalNotification standard </caption>
 <thead>
@@ -95,6 +96,7 @@ In total, seven profiles from <a href="https://build.fhir.org/ig/medcomdk/dk-med
   </tr>
 </tbody>
 </table>
+</div>
 <br><br>
 
 ### 1.1 ServiceProvider and Sender

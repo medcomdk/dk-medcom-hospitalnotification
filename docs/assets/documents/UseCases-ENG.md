@@ -94,6 +94,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
   </tr>
 </tbody>
 </table>
+</div>
 
 
 ### 1.2 Types of Notifications and Codes in HospitalNotification
@@ -192,6 +193,7 @@ In the use case descriptions, the following codes are used for different types o
   </tr>
 </tbody>
 </table>
+</div>
 
 ### 1.3 Use cases 
 

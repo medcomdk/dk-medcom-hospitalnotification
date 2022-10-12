@@ -134,12 +134,12 @@ In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener nor
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
 <figure>
-<img src="../images/HNAdmitInPat.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig2">
+<img src="../images/HNAdmitInPat.svg" alt="Simplified example: Admit Inpatient." style="width: 55%" id="Fig2">
 <figcaption text-align = "center"><b>Figure 2: Simplified example: Admit Inpatient </b></figcaption>
 </figure>
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Shows the required content in each profiles of a MedCom HospitalNotification Message." style="width: 55%" id="Fig3">
+<img src="../images/HNAdmitFinish.svg" alt="Simplified example:Discharge Inpatient" style="width: 55%" id="Fig3">
 <figcaption text-align = "center"><b>Figure 3: Simplified example: Discharge  Inpatient </b></figcaption>
 </figure>
 <br><br>

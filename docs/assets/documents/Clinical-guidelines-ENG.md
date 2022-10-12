@@ -66,6 +66,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-vfn1{background-color:#9dbad7;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;
   font-weight:bold"> Table 1: Status of hospital stay</caption>
@@ -151,6 +152,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
   </tr>
 </tbody>
 </table>
+</div>
 *represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 

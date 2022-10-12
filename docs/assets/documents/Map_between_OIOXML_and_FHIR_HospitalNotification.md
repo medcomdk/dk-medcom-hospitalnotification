@@ -15,6 +15,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
 .tg .tg-8j8v{background-color:#ffffff;border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-uwa6{background-color:#9dbad7;border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg" style="undefined;table-layout: fixed; width: 1795px">
 <colgroup>
 <col style="width: 165.88889px">
@@ -300,6 +301,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
   </tr>
 </tbody>
 </table>
+</div>
 
 <!-- # Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteOIO.md) can be found here. -->

@@ -98,6 +98,7 @@ længerevarende botilbud.
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 1: Oversigt over relevante refenrencer til use casene </caption>
 <thead id="#Tb1">
@@ -129,6 +130,7 @@ længerevarende botilbud.
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -142,6 +144,7 @@ længerevarende botilbud.
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Tabel 2: Oversigt over termer brugt i use casene  </caption>
 <thead id="Tabel2">
@@ -201,6 +204,7 @@ længerevarende botilbud.
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -216,6 +220,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center ">Tabel 3: Oversigt over koder andvendt i advis om sygehusophold </caption>
 <thead id="3">
@@ -299,6 +304,7 @@ I use case beskrivelserne anvendes følgende koder (<a href="#3" rel="noopener n
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -386,6 +392,7 @@ Primære use cases er bygget op af nedenstående elementer.
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 4: Oversigt over de elementer, som indgår i de primære use cases</caption>
 <thead id="#Tb4">
@@ -433,6 +440,7 @@ Primære use cases er bygget op af nedenstående elementer.
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -451,6 +459,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 5: Oversigt over elementer brugt i alternative use cases </caption>
 <thead id="#Tb5">
@@ -490,6 +499,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ## 2 Oversigt over use cases
@@ -502,6 +512,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold; text-align:center"> Tabel 6: primære og alternative use cases </caption>
 <thead id="#Tb6">
@@ -530,6 +541,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 <style type="text/css">
@@ -541,6 +553,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 7: Korrigerende use cases</caption>
 <thead id="#Tb7">
@@ -563,6 +576,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 <style type="text/css">
@@ -574,6 +588,7 @@ opbygget af nedenstående elementer:
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold;text-align:center">Tabel 8: Teknisk validering af lovhjemmel til modtagelse </caption>
 <thead>
@@ -596,6 +611,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -611,6 +627,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold;text-align:center"> Use case: Indlæggelse af patient og udsændelse af advis</caption>
 <thead id="#UC1">
@@ -671,6 +688,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 #### 3.1.1 S1.A1: Indlæg patient og send advis [STIN] udenom anmodning om indlæggelsesrapport {#S1.A1-indlæg-patient-og-send-advis-udenom-anmodning-om-indlæggelsesrapport}
@@ -686,6 +704,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;font-weight:bold;text-align:center">Use case: Indlæggelse af patient uden uden anmodning om indlæggelsesrapport </caption>
 <thead id="#UC2">
@@ -729,6 +748,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 #### 3.1.2 S1.A2: Indlæg patient uden afsendelse af advis \[STIN\] {#S1.A2-Indlæg-patient-uden-afsendelse-af-advis}
@@ -743,6 +763,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center">Use case: Patienten indlægges uden afsændelse af advis [STIN]</caption>
 <thead id="#UC3">
@@ -782,6 +803,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ### 3.2 R1: Modtag advisering om indlæggelse og send indlæggelsesrapport {#R.1-modtage-advisering-om-indlæggelse-og-send-indlæggeæsesrapport}
@@ -796,6 +818,7 @@ opbygget af nedenstående elementer:
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: Afsender modtager advisering om indlæggelse og sender indlæggelsesrapport</caption>
 <thead id="#UC4">
@@ -859,6 +882,7 @@ opbygget af nedenstående elementer:
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 #### 3.2.1 R1.A1: Modtag advisering om indlæggelse uden afsendelse af indlæggelsesrapport {#Modtag-advisering-om-indlæggelse-uden-afsendelse-af-indlæggelesesrapporten}
@@ -876,6 +900,7 @@ region (overflytning)
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case : Modtagelse af indlæggelses advisering uden afsendeslse af indlæggelsesrapport </caption>
 <thead id="#UC5">
@@ -919,6 +944,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ## 4 Korrigerende use cases {#Korrigerende-use-cases}
@@ -933,6 +959,7 @@ region (overflytning)
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Anulleér udesendt advis </caption>
 <thead id="UC6">
@@ -984,6 +1011,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ### 4.2 R.CANC: Modtage advisering om annulleret advis {#R.CANC-modtage-advisering-om-annulleret-advis}
@@ -997,6 +1025,7 @@ region (overflytning)
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center"> Use case: Modtag advisering om annulleret advis</caption>
 <thead id="UC7">
@@ -1056,6 +1085,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -1069,6 +1099,7 @@ region (overflytning)
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Ret sygehusophold og send rettelsesadvis </caption>
 <thead id="UC8">
@@ -1120,6 +1151,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ### 4.4 R.CORR: Modtag advisering om rettet advis {#R.COR-modtag-advisering-om-rettet-advis}
@@ -1133,6 +1165,7 @@ region (overflytning)
 .tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Use case: Modtagelse af advisering om rettet advis </caption>
 <thead id="UC9">
@@ -1188,6 +1221,7 @@ region (overflytning)
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 
@@ -1218,6 +1252,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 .tg .tg-67v1{border-color:inherit;color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case: Modtagelse og indlæsning af advis </caption>
 <thead id="UC 10">
@@ -1285,6 +1320,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 #### 5.1.1 R.PC.A1 Modtag og kassér advis (teknisk) {#R.PC.A1-Modtage-og-kasser-advis}
@@ -1297,6 +1333,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Use Case over modtagelse og kassering af en advis </caption>
 <thead id="UC11">
@@ -1336,6 +1373,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ## 6 Regler for systemerne, som use casene beror på
@@ -1352,6 +1390,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 10: Regler for afsendelse af forskellige typer af sygehusadvis </caption>
 <thead id="RG1">
@@ -1437,6 +1476,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 #### 6.1.2 Øvrige regler vedr. forsendelse af HospitalNotification {#øvrige-regler-vedrørende-forsendelse-af-hospitalnotification}
@@ -1449,6 +1489,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 11: Øvrige relger for forsendelse af HospitalNotification</caption>
 <thead id="RG2">
@@ -1484,6 +1525,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+</div>
 <p>&nbsp;</p>
 
 ## 7 Regler for modtagersystemet, som use casene beror på
@@ -1498,6 +1540,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold;text-align:center">Tabel 12: Regler for modtagelse af HospitalNotification </caption>
 <thead id="RG3">
@@ -1521,6 +1564,7 @@ dokumentet "[Generelle tekniske use cases](#14-referencer)".
   </tr>
 </tbody>
 </table>
+</div>
 
 <!-- ### 8 Release Notes 
 [The latest changes of this page](../documents/ReleaseNoteUsecaseDK.md) can be found here. -->

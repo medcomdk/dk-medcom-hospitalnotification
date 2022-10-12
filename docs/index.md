@@ -1,6 +1,4 @@
 <!-- <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return</a> -->
-
-
 # MedCom HospitalNotification
 
 

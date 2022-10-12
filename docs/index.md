@@ -30,11 +30,11 @@ The standard documentation below provides the necessary content to understand th
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application
-The clinical guidelines for application are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
+The clinical guidelines for application are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
 Below you can find the clinical guidelines for application in both Danish and English:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
+[English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
 <p>&nbsp;</p>	
 
 ### 1.2 Use cases

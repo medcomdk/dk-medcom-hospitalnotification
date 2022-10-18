@@ -6,11 +6,11 @@
 * [2 Purpose](#2-purpose)
 * [3 Background](#3-background)
 * [4 Legal framework](#4-legal-framework)
-* [5 &#39;HospitalNotification&#39;: requirements for content and benefits](#5-&#39;hospital-notification&#39;-:-requirements-for-content-and-benefits)
-* [6 Business rules for use of &#39;HospitalNotification&#39;](#6-Business-rules-for-use-of-&#39;HospitalNotification&#39;)
-  * [6.1 Use cases](#7-Use-cases)
-  * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#8-Technical-specifications-for-&#39;Hospital-Notification&#39;)
-  * [6.3 Example of a HospitalNotification](#9-Example-of-a-HospitalNotification)
+* [5 &#39;HospitalNotification&#39;: requirements for content and benefits](#hospitalnotification-requirements-for-content-and-benefits)
+* [6 Business rules for use of &#39;HospitalNotification&#39;](#business-rules-for-use-of-hospitalnotification)
+  * [6.1 Use cases](#61-Use-cases)
+  * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#technical-specification-for-hospitalnotification)
+  * [6.3 Example of a HospitalNotification](#example-of-a-hospitalnotification)
 <!-- * [7 Release Notes](#7-release-notes) -->
 
 
@@ -42,7 +42,8 @@ Notifications of hospital stay are exchanged on the basis of the Danish Health A
 
 The service act §79 a includes *preventive home visits*, chapter 16 includes §§ 83-99, which covers *personal help, care and nursing as well as care wills,* and §§ 107 and 108 covers *temporary and long-term sheltered residence.*
 
-# 5 &#39;HospitalNotification&#39;: requirements for content and benefits &#39;HospitalNotification&#39; must include:
+# 5 &#39;HospitalNotification&#39;: requirements for content and benefits {#hospitalnotification-requirements-for-content-and-benefits}
+&#39;HospitalNotification&#39; must include:
 
 1. The patient&#39;s personal identification number (CPR)
 2. Time and date for start/end of the hospital stay
@@ -157,7 +158,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 
 
 
-# 6 Business rules for use of &#39;HospitalNotification&#39;
+# 6 Business rules for use of &#39;HospitalNotification&#39;{#business-rules-for-use-of-hospitalnotification}
 
 The purpose of the outlined business rules for use of the &#39;HospitalNotification&#39; is that the notification users use the messages as intended. Business rules are a supplement to the standard for &#39;HospitalNotification&#39; and can be updated as the needs change.
 
@@ -195,11 +196,11 @@ Same flow as for transfer to another hospital in the same or another region is u
 ## 6.1 Use cases
 For use of the technical implementation of the 'HospitalNotification', use case descriptions in more detail exist. They connect content requirements with the business-related use for the sender and receiver of the HospitalNotification.  [The use cases can be found on the front page for HospitalNotification](../../index.md).
 
-## 6.2 Technical specifications for &#39;HospitalNotification&#39;
+## 6.2 Technical specifications for &#39;HospitalNotification&#39;{#technical-specification-for-hospitalnotification}
 The FHIR profile for hospitalnotification can be found  on [the front page for HospitalNotification](../../index.md).
 
 
-## 6.3 Example of a 'HospitalNotification'
+## 6.3 Example of a 'HospitalNotification' {#example-of-a-hospitalnotification}
 
 <figure>
 <img src="../images/Example_HospitalNotification_ENG.png" alt="Example of a HospitalNotification " style="width:50%" id="Fig1">

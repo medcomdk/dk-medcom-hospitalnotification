@@ -1,6 +1,4 @@
 <!-- <a href="https://medcomdk.github.io/MedComLandingPage/" target="_blank">Return</a> -->
-
-
 # MedCom HospitalNotification
 
 
@@ -32,11 +30,11 @@ The standard documentation below provides the necessary content to understand th
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application
-The clinical guidelines for application are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements.  It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
+The clinical guidelines for application are the foundation for the HospitalNotification standard. It describes the clinical needs for the modernisation, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for HospitalNotification. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
 Below you can find the clinical guidelines for application in both Danish and English:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
+[English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
 <p>&nbsp;</p>	
 
 ### 1.2 Use cases
@@ -56,12 +54,12 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 <!-- <p>&nbsp;</p>	 -->
 
 ### 1.3 Technical specification
-The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedComCore IG</a>, <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>. 
+The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a>, <a href="https://medcomfhir.dk/ig/core/" target="_blank">MedComCore IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>. 
 
-The profiles that are part of the technical specification for HospitalNotification are: 
-*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
-*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
-* <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
+The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> are: 
+*	<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>
+*	<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html" target="_blank">MedComHospitalNotificationMessage</a>
+* <a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html" target="_blank">MedComHospitalNotificationMessageHeader</a>
 
 The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support. Further, the structure of the standard is described and supported with examples in different degree of technical skills.
 <br>
@@ -80,7 +78,7 @@ To help vendors of the IT system implement the codes in the same way MedCom has 
 <br>
 
 ### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
-Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
+Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>
 
 [Click here to see mapping from previous OIOXML standards to the FHIR HospitalNotification standard.](/assets/documents/Map_between_OIOXML_and_FHIR_HospitalNotification.md)

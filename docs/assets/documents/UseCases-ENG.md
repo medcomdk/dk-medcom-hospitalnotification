@@ -2,8 +2,6 @@
 
 
 # Use cases for HospitalNotification
-
-
 **Tabel of content**
 * [1 Introduction](#1-introduction)
   * [1.1 Method for use case descriptions](#11-method-for-use-case-description)
@@ -47,6 +45,7 @@ The use cases are made from <a href="https://www.kombit.dk/metodeh%C3%A5ndb%C3%B
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold"> Tabel 1: Overview over elements used in use cases </caption>
 <thead>
@@ -110,6 +109,7 @@ In the use case descriptions, the following codes are used for different types o
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-wqo7{color:#2c415c;text-align:left;vertical-align:top}
 </style>
+<div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c; font-weight:bold"> Table 2: Overview over codes used in use cases</caption>
 <thead>

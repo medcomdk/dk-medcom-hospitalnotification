@@ -89,7 +89,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-uwa6">Emessage.NotificationOfAdmission.Letter.<br>VersionCode</td>
     <td class="tg-uwa6">NA</td>
     <td class="tg-uwa6"></td>
-    <td class="tg-uwa6">The version of the FHIR profiles is part of the profile’s URL.</td>
+    <td class="tg-uwa6">The version of a FHIR message can be found in the respective Implementation Guide, but is not included when exchanging a message.</td>
   </tr>
   <tr>
     <td class="tg-uwa6">Statistical code</td>
@@ -153,7 +153,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-uwa6" rowspan="2">Emessage.NotificationOfAdmission.sender.<br>EANIdentifier</td>
     <td class="tg-uwa6">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.sender.MedComMessaging<br>Organization.identifier.eanIdentifier</td>
     <td class="tg-uwa6" rowspan="2">Yes</td>
-    <td class="tg-uwa6" rowspan="2">The EAN identifier for a sending organization.</td>
+    <td class="tg-uwa6" rowspan="2">The EAN identifier for a sending organisation.</td>
   </tr>
   <tr>
     <td class="tg-uwa6">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').sender.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
@@ -163,7 +163,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-o5v9" rowspan="2">Emessage.NotificationOfAdmission.receiver.EANIdentifier</td>
     <td class="tg-o5v9">MedComHospitalNotificationMessage.MedComHospitalNotificationMessageHeader.destination.primary.receiver.<br>MedComMessagingOrganization.identifier.eanIdentifier</td>
     <td class="tg-o5v9" rowspan="2">Yes</td>
-    <td class="tg-o5v9" rowspan="2">The EAN identifier for a receiving organization.</td>
+    <td class="tg-o5v9" rowspan="2">The EAN identifier for a receiving organisation.</td>
   </tr>
   <tr>
     <td class="tg-o5v9">Bundle.entry.where(resource.ofType('Organization').id.replace('string', 'id') = %resource.entry.resource.ofType('MessageHeader').destination.receiver.reference.replace('Organization/','')).<br>resource.ofType('Organization').identifier.where(system = 'urn:oid:1.3.88').value</td>
@@ -193,14 +193,14 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-uwa6">Emessage.NotificationOfAdmission.sender.<br>IdentifierCode</td>
     <td class="tg-uwa6">NA</td>
     <td class="tg-uwa6"></td>
-    <td class="tg-uwa6">The type of the organization is given in the SOR identifier. See sender id.</td>
+    <td class="tg-uwa6">The type of the organisation is given in the SOR identifier. See sender id.</td>
   </tr>
   <tr>
     <td class="tg-o5v9">Receiver type</td>
     <td class="tg-o5v9">Emessage.NotificationOfAdmission.receiver.<br>IdentifierCode</td>
     <td class="tg-o5v9">NA</td>
     <td class="tg-o5v9"></td>
-    <td class="tg-o5v9">The type of the organization is given in the SOR identifier. See receiver id.  </td>
+    <td class="tg-o5v9">The type of the organisation is given in the SOR identifier. See receiver id.  </td>
   </tr>
   <tr>
     <td class="tg-uwa6" rowspan="2">Sender organization</td>
@@ -247,7 +247,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-uwa6">Emessage.NotificationOfAdmission.sender.<br>TelephoneSubscriberIdentifier</td>
     <td class="tg-uwa6">NA</td>
     <td class="tg-uwa6"></td>
-    <td class="tg-uwa6">Organization contactinformation is described by the SOR identifier.</td>
+    <td class="tg-uwa6">Organisation contactinformation is described by the SOR identifier.</td>
   </tr>
   <tr>
     <td class="tg-o5v9" rowspan="2">Answer to EAN id</td>

@@ -54,7 +54,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 <!-- <p>&nbsp;</p>	 -->
 
 ### 1.3 Technical specification
-The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a>,<a href="https://medcomfhir.dk/ig/core/" target="_blank">MedComCore IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>. 
+The technical specification for HospitalNotification standard is composed by profiles form <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a>, <a href="https://medcomfhir.dk/ig/core/" target="_blank">MedComCore IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedComMessaging IG</a> and from <a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>. 
 
 The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> are: 
 *	<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">MedComHospitalNotificationEncounter</a>

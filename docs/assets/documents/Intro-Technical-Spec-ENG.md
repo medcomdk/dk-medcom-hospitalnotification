@@ -20,7 +20,7 @@
 
 ## 1 Profiles in the HospitalNotification Standard
 
-In total, seven profiles from <a href="https://medcomfhir.dk/ig/core" target="_blank">MedCom Core IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
+In total, seven profiles from <a href="https://medcomfhir.dk/ig/core/" target="_blank">MedCom Core IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification IG</a> constitute the HospitalNotification standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
 <br><br>
 
 <style type="text/css">
@@ -83,7 +83,7 @@ In total, seven profiles from <a href="https://medcomfhir.dk/ig/core" target="_b
   <tr>
     <td class="tg-7euo"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
     <td class="tg-7euo">Organisation</td>
-    <td class="tg-7euo">Contains information which is useful in order to identify a sender or receiver organisation.<br>This profile inherits from MedComCoreorganisation.</td>
+    <td class="tg-7euo">Contains information which is useful in order to identify a sender or receiver organisation.<br>This profile inherits from MedComCoreOrganization.</td>
     <td class="tg-7euo">Id<br>Slices for identifier (SOR-id)<br>Slices for identifier (EAN/GLN-id)<br>Name</td>
     <td class="tg-7euo">Messaging</td>
   </tr>
@@ -100,17 +100,17 @@ In total, seven profiles from <a href="https://medcomfhir.dk/ig/core" target="_b
 <br><br>
 
 ### 1.1 ServiceProvider and Sender
-The serviceProvider is the organisation or department in charge of the patients admission, whereas the sender is the organisation or deprtment responsible for sending the HospitalNotification message. 
-The sender of a HospitalNotification and the serviceProvider may be the same hospital department, hence be represented referencing the same instance of a organisation resource, which in this case shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR-register) than the serviceProvider, and in this case they shall be represented referencing two different instances of a organisation resource.
+The serviceProvider is the organisation or department in charge of the patients admission, whereas the sender is the organisation or department responsible for sending the HospitalNotification message. 
+The sender of a HospitalNotification and the serviceProvider may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which in this case shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level deparment (in the SOR-register) than the serviceProvider, and in this case they shall be represented referencing two different instances of a Organization resource.
 
 ### 1.2  Report of admission
 The request for a report of admission must be sent when a patient is initially admitted, meaning that the type of HospitalNotification is STIN og STAA. In these cases, the Provenance.activity.code is admit-inpatient or admit-emergency, respectively. A request for a report of admission shall not be send when the patient returns from leave (SLOR) or is relocated from another hospital. 
  
-On page 10 in the use case document the usage of the report of admission flag is further described. <a href="https://medcomdk.github.io/hospitalnotification/#12-use-cases">Click here to finde the use cases</a>. 
+On page 10 in the use case document the usage of the report of admission flag is further described. <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Click here to finde the use cases</a>. 
 
 
 ## 2 Internal References in a HospitalNotification Message
-The HospitalNotification message follows <a href="https://medcomdk.github.io/messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedCom's generic messaging model</a>. 
+The HospitalNotification message follows <a href="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">MedCom's generic messaging model</a>. 
 
 The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComHospitalNotificationMessage profile acts as the container which includes the other profiles. From the MedComHospitalNotificatiomMessageHeader are the sender, receiver and carbon-copy organisation referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComHospitalNotificationEncounter profile. This encounter must always reference a subject of the type MedComCorePatient. Additionally, the patient's service provider organisation is also referenced from the encounter.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the notification. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
@@ -139,7 +139,7 @@ In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener nor
 </figure>
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example:Discharge Inpatient" style="width: 55%" id="Fig3">
+<img src="../images/HNAdmitFinish.svg" alt="Simplified example: Discharge Inpatient" style="width: 55%" id="Fig3">
 <figcaption text-align = "center"><b>Figure 3: Simplified example: Discharge  Inpatient </b></figcaption>
 </figure>
 <br><br>

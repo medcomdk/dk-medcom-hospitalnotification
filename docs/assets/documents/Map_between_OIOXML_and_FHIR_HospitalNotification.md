@@ -89,7 +89,7 @@ This document describes mapping between the OIOXML Advis(<a href="https://svn.me
     <td class="tg-uwa6">Emessage.NotificationOfAdmission.Letter.<br>VersionCode</td>
     <td class="tg-uwa6">NA</td>
     <td class="tg-uwa6"></td>
-    <td class="tg-uwa6">The version of the FHIR profiles is part of the profile’s URL.</td>
+    <td class="tg-uwa6">The version of a FHIR message can be found in the respective Implementation Guide, but is not included when exchanging a message.</td>
   </tr>
   <tr>
     <td class="tg-uwa6">Statistical code</td>

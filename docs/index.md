@@ -7,8 +7,8 @@
   + [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   + [1.2 Use cases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
-  + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
-  + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
+  + [1.4 HospitalNotification Codes](#14-hospitalnotification-codes)
+  + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping-from-old-standard-to-hospitalnotification) 
 *  [2 Test and certification](#2-test-and-certification)
 
 
@@ -77,7 +77,7 @@ To help vendors of the IT system implement the codes in the same way MedCom has 
 
 <br>
 
-### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
+### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping-from-old-standard-to-HospitalNotification}
 Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>
 

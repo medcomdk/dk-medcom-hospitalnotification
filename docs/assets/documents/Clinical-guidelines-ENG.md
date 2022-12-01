@@ -6,27 +6,38 @@
 * [2 Purpose](#2-purpose)
 * [3 Background](#3-background)
 * [4 Legal framework](#4-legal-framework)
-* [5 &#39;HospitalNotification&#39;: requirements for content and benefits](#hospitalnotificationrequirements)
-* [6 Business rules for use of &#39;HospitalNotification&#39;](#businessrules)
-  * [6.1 Use cases](#61-Use-cases)
-  * [6.2 Technical specifications for &#39;HospitalNotification&#39;](#technicalspecification)
-  * [6.3 Example of a HospitalNotification](#example)
+* [5 Contents and functionality](#hospitalnotificationrequirements)
+* [6 Business rules for application](#businessrules)
+* [7 Example](#example)
 <!-- * [7 Release Notes](#7-release-notes) -->
 
 
 # 1 Introduction
+The health professional guidelines for using the standard ‘Hospital Notification’ (DAN: Advis om sygehusophold) are described here. This includes the purpose, back-ground, legal basis for exchange as well as the content and functionality of ‘Hospital Notification’. The target group is IT system vendors and those responsible for im-plementation in regions and municipalities. The 'Hospital Notification' replaces the previous MedCom standards, Notification of Admission  <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, and Notification of Discharge <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>. 
 
-This is the textual part of the documentation for MedCom&#39;s FHIR standard &#39;HospitalNotification&#39;. It includes purpose, background and overall requirements for content and business-related use of &#39;HospitalNotification&#39;. The target group is IT system vendors and those responsible for implementation in the regions and municipalities, who will technically support the sending and receiving of &#39;HospitalNotification&#39;. The requirements for content and business-related use of &#39;HospitalNotification&#39;are prepared in collaboration with MedCom&#39;s &#39;homecare-hospital group&#39;<a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">hjemmepleje-sygehusgruppe</a> og <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">kommune-sygehusleverandørgruppe</a> in the MedCom11 project period 2018-2020. The &#39;HospitalNotification&#39; replaces the previous MedCom standards, Notification of Admission <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, and Notification of Discharge <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>. 
-[The technical specifications for the FHIR notification standard can be found onthe front page of HospitalNotification](../../index.md). This document is also available in Danish.<br>
+Please note that for the technical implementation, a number of use cases have been prepared, where functionalitites and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases" target="_blank">Click here to read use cases. </a>
+
+Also note that the total content is described in the technical specifications. [Click here to read the technical specifications](assets/documents/Intro-Technical-Spec-ENG.md).<br>
 
   >Note: In case of any discrepancies between the two documents, the Danish document is the document in force.  
 
 
 # 2 Purpose
+Hospital Notification is a central and business-critical message which - automatically - informs the citizen's current care and health actors in the municipality when a citi-zen starts and ends his/hers hospital stay (acute ambulant or inpatient). This gives the citizen's actors in the municipality the opportunity to pause the citizen's current care and health services during the hospital stay and resume them when it ends. Hospital Notification can also trigger the automatic sending of an admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) from the recipient's system, which gives the hospital staff an overview of the citizen's current services, functional level, and healthcare problems. Hospital Notification ensures that the business needs for notification are supported and includes notification by:
+*	Admission
+*	Acute ambulant hospital stay
+*	Leave – start and end
+*	End of hospital stay
 
-The &#39;HospitalNotification&#39; contributes to securing the foundation for a coherent clinical pathway across sectors. The specific purpose of the &#39;HospitalNotification&#39; is to inform the citizen&#39;s current care and health provider in the primary sector about the start and end of the citizen&#39;s stay at the hospital. It makes it possible to pause the current care and health providers&#39; services during the hospital stay and resume them when it ends. At the same time, the &#39;HospitalNotification&#39; can trigger the automatic sending of Report of Admission (<a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/" target="_blank">XDIS16</a>) from the receiver&#39;s system, which gives the health professionals an overview of the citizen&#39;s current services, level of function and health-related problems. The HospitalNotification also contains notification of the patient&#39;s leave from the hospital stay and acute ambulant care.
 
 # 3 Background
+In line with the fact that more and more patients are not admitted, but is treated acute ambulant at the hospital, a need has arisen for notification of citizens not admitted. 
+The development of 'Hospital Notification’ was initiated in 2018 under the auspices of <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank"> MedCom's home care-hospital group </a> (DAN: hjemmepleje-sygehusgruppen) and <a href ="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">municipal hospital supplier group </a> (DAN: Kommune-sygehusleverandørgruppen), which have defined requirements for content and clinical guidelines for application. 
+Note regarding LPR3: Registration of hospital stays in the EPR system is linked to the reporting to the National Patient Registry, LPR. By transition to LPR3 (2019), the concepts 'admitted' and 'outpatient' are removed in the reporting to LPR and replaced by physical attendance. In practice, all regions continue to register the hospital stay as outpatient and admission respectively. It is agreed among the parties behind the development of the ‘Hospital Notification’ that the scope of the hospital stays, which will be supported by a notification, is:
+
+"All current hospital stays with physical attendance by the patient and all planned hospital stays with physical attendance by the patient for the purpose of admission."
+
+
 
 As the hospital is not able to determine in advance which citizens currently receive services from the primary sector, a &#39;HospitalNotification&#39; is generated for all citizens with a personal identification number (CPR) and home address in Denmark when registered in the hospital&#39;s EPR system. The receiving system ensures that the &#39;HospitalNotification&#39; stay is only downloaded and shown for citizens receiving services within the valid legal framework (see Section [Legal framework](#4-legal-framework)).
 
@@ -42,8 +53,7 @@ Notifications of hospital stay are exchanged on the basis of the Danish Health A
 
 The service act §79 a includes *preventive home visits*, chapter 16 includes §§ 83-99, which covers *personal help, care and nursing as well as care wills,* and §§ 107 and 108 covers *temporary and long-term sheltered residence.*
 
-# 5 &#39;HospitalNotification&#39;: requirements for content and benefits {#hospitalnotificationrequirements}
-&#39;HospitalNotification&#39; must include:
+# 5 Contents and functionality
 
 1. The patient&#39;s personal identification number (CPR)
 2. Time and date for start/end of the hospital stay
@@ -158,7 +168,7 @@ The service act §79 a includes *preventive home visits*, chapter 16 includes §
 
 
 
-# 6 Business rules for use of &#39;HospitalNotification&#39; {#businessrules}
+# 6 Business rules for application
 
 The purpose of the outlined business rules for use of the &#39;HospitalNotification&#39; is that the notification users use the messages as intended. Business rules are a supplement to the standard for &#39;HospitalNotification&#39; and can be updated as the needs change.
 
@@ -193,14 +203,7 @@ The notification type &#39;DEAD&#39; should be used in all cases where the patie
 Same flow as for transfer to another hospital in the same or another region is used. Hospice sends &#39;START hospital stay – admission&#39; when the patient arrives.
 <p>&nbsp;</p>
 
-## 6.1 Use cases
-For use of the technical implementation of the 'HospitalNotification', use case descriptions in more detail exist. They connect content requirements with the business-related use for the sender and receiver of the HospitalNotification.  [The use cases can be found on the front page for HospitalNotification](../../index.md).
-
-## 6.2 Technical specifications for &#39;HospitalNotification&#39; {#technicalspecification}
-The FHIR profile for hospitalnotification can be found  on [the front page for HospitalNotification](../../index.md).
-
-
-## 6.3 Example of a 'HospitalNotification' {#example}
+## 7 Example
 
 <figure>
 <img src="../images/Example_HospitalNotification_ENG.png" alt="Example of a HospitalNotification " style="width:50%" id="Fig1">

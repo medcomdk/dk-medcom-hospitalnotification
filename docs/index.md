@@ -102,7 +102,7 @@ Test protocols and test scripts are used to test and certify MedCom HospitalNoti
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol - draft version](FHIR-advis_modtage_ny-testprotokol_arbejdsdokument.docx) 
+* [Test protocol - draft version](FHIR-advis_modtag_ny-testprotokol_arbejdsdokument.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

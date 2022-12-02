@@ -65,8 +65,6 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 
 >Note: Danish code names, which can be related to overview of notification codes and HL7 FHIR resources.  
 
-
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -83,9 +81,9 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 <thead>
   <tr>
     <th class="tg-lc33" rowspan="2">Event</th>
-    <th class="tg-lc33" rowspan="2">Code</th>
+    <th class="tg-lc33" rowspan="2">Code*</th>
     <th class="tg-lc33" rowspan="2">Status for stay<br>(type of Hospital Notification)</th>
-    <th class="tg-lc33" rowspan="2">Request for admission report   (XDIS16)</th>
+    <th class="tg-lc33" rowspan="2">Request for admission report(XDIS16)</th>
     <th class="tg-lc33" rowspan="2">Benefit</th>
   </tr>
   <tr>
@@ -193,149 +191,79 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 </tbody>
 </table></div>
 
-
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0; width:85%; }
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
-.tg .tg-pu9k{color:#2c415c;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-vfn1{background-color:#9dbad7;color:#333333;text-align:left;vertical-align:top}
-</style>
-<div style="overflow-x:auto;">
-<table class="tg">
-<caption style="color:#2c415c;
-  font-weight:bold"> Table 1: Status of hospital stay</caption>
-<thead>
-  <tr>
-    <th class="tg-pu9k">Event</th>
-    <th class="tg-pu9k">Use case code *</th>
-    <th class="tg-pu9k">Name of notification</th>
-    <th class="tg-pu9k">Benefits</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-vfn1" colspan="3">Start stay</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Acute ambulant care start</td>
-    <td class="tg-tysj">STAA</td>
-    <td class="tg-tysj">START hospital stay – Acute ambulant care</td>
-    <td class="tg-tysj">The receiver is informed that the citizen is registered as ‘acute ambulant’ at the hospital. The specific status allows the receiving system to set rules for the system management.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Admitted to hospital</td>
-    <td class="tg-tysj">STIN</td>
-    <td class="tg-tysj">START hospital stay – admission</td>
-    <td class="tg-tysj">The receiver is informed that the citizen is registered as ‘admitted to hospital’. The specific status allows the receiving system to set rules for the system management.</td>
-  </tr>
-  <tr>
-    <td class="tg-vfn1" colspan="3">End stay</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Patient discharged and sent home</td>
-    <td class="tg-tysj">SLHJ</td>
-    <td class="tg-tysj">END hospital stay –<br>patient discharged and sent home/to primary sector</td>
-    <td class="tg-tysj">The receiver is informed that the citizen’s hospital stay is ended and is transferred to either home or primary sector. It allows the receiving system to set rules for the system management, for example resuming care services. Not used for transfer.</td>
-  </tr>
-  <tr>
-    <td class="tg-vfn1" colspan="3">Death</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">The patient is dead</td>
-    <td class="tg-tysj">MORS</td>
-    <td class="tg-tysj">DEATH</td>
-    <td class="tg-tysj">The receiver is informed that the citizen is dead. Used both if dead at arrival and dead during the hospital stay.</td>
-  </tr>
-  <tr>
-    <td class="tg-vfn1" colspan="3">Leave</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">The patient starts leave</td>
-    <td class="tg-tysj">STOR</td>
-    <td class="tg-tysj">START leave</td>
-    <td class="tg-tysj" rowspan="2">Information about current leave is useful when/if relatives/the citizen reaches out during the leave.<br>The treatment responsibility for the patient on leave lies at the hospital and must be communicated separately if actors other than the hospital delivers care services during the patient’s leave.</td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">The patient ends leave</td>
-    <td class="tg-tysj">SLOR</td>
-    <td class="tg-tysj">END leave</td>
-  </tr>
-  <tr>
-    <td class="tg-vfn1" colspan="3">Cancellations</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Cancellation</td>
-    <td class="tg-tysj">ANXX</td>
-    <td class="tg-tysj">CANCELLED ‘Name of notification’</td>
-    <td class="tg-tysj">Cancellation of previously sent notifications. Is used in case of wrong choice of hospital stay or wrong personal identification number (CPR).</td>
-  </tr>
-  <tr>
-    <td class="tg-vfn1" colspan="3">Corrections</td>
-    <td class="tg-vfn1"></td>
-  </tr>
-  <tr>
-    <td class="tg-tysj">Corrections</td>
-    <td class="tg-tysj">REXX</td>
-    <td class="tg-tysj">CORRECTED 'Name of electronic notification’</td>
-    <td class="tg-tysj">Corrects content in previously sent notifications, for example hospital department or time.</td>
-  </tr>
-</tbody>
-</table>
-</div>
 *represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 
 
 # 6 Business rules for application
-
-The purpose of the outlined business rules for use of the &#39;HospitalNotification&#39; is that the notification users use the messages as intended. Business rules are a supplement to the standard for &#39;HospitalNotification&#39; and can be updated as the needs change.
-
-  >Note: Private hospitals can also use hospitalnotifications
-
-1. **Electronic notifications are generated based on real-time registration in the EPR/PAS system**If EPR/PAS uses future registrations of planned contacts, these should trigger the electronic notification only when the time occurs, i.e. at the patient&#39;s physical attendance.
-
-2. **Ended hospital stay (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)** Notification of &#39;ENDED hospital stay&#39; cannot be used in case of transfer.
-
-    >Note: If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-
-3. **If an acute ambulant stay is changed to the patient being admitted, a new &#39;START hospital stay – admission&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the acute ambulant stay changes to the patient being admitted. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to the primary sector).
-
-4. **If an admission changes to acute ambulant care, a new &#39;START hospital stay – acute ambulant care&#39; notification is sent.** No notification on &#39;ENDED hospital stay&#39; should be sent when the admission changes to acute ambulant care. Notification on &#39;ENDED hospital stay&#39; is sent when the patient is subsequently discharged (sent home/to the primary sector). This occurrence is seen as rare.
-
-5. **If the patient is declared dead on arrival, after arrival or during the hospital stay, the notification of the type &#39;DEATH&#39; is sent.**
-The notification type &#39;DEAD&#39; should be used in all cases where the patient is dead or dies.
-
-6. **If the patient is registered as on leave in the EPR, the notification is sent when the patient starts (&#39;START leave&#39;) or finishes (&#39;END leave&#39;) their leave (at home).** Leave notifications are only sent when the patient is registered as being on leave at home. In case of a double admission,leave should therefore not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.
-
-   >Note:Admission in psychiatric and somatic departments at the same time.
-
-7. **If an incorrect registration has happened, which has caused an incorrect electronic notification, a correction or cancellation must be sent on the following principles:**
-    1. If a notification has been sent because of a wrongly entered personal identification number (CPR) or wrong choice of hospital stay, **a cancellation** is sent.
-    2. If a notification with the wrongly stated hospital department or time of stay is sent, **a correction** is sent, i.e. a new correct notification that replaces previous notifications. Cancellation is not sent prior to the correction.
-
-8. **No specific transfer notification is used.** A requirement is made that new notifications with 'START hospital stay'; is sent from the hospital the patient is transferred **to**, whether it is in the same region or another region. No notification is sent from the hospital, from which the patient is transferred form. 
-
-   >Note: If the patient is responsible for transport from hospital A to hospital B him-/herself, END hospital stay can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-
-9. **Discharge to hospice**
-Same flow as for transfer to another hospital in the same or another region is used. Hospice sends &#39;START hospital stay – admission&#39; when the patient arrives.
-<p>&nbsp;</p>
+The following business rules have been agreed for the application of ‘Hospital Notification’. Please note that for the technical implementation, a number of use cases have been prepared, where functionalities and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Click here too read the use cases. </a><br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7k98{background-color:#2c415c;color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg" id="tab2">
+<caption style="color:#2c415c;
+  font-weight:bold">Table 2: Business rules for application of ’Hospital Notification’</caption>
+<thead>
+  <tr>
+    <th class="tg-7k98">#</th>
+    <th class="tg-7k98">Business rule</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax"><span style="font-weight:bold">Hospital Notifications are generated based on real-time registration in the EPR/PAS system.</span> <br>If EPR uses future   registrations of planned contacts, ‘Hospital Notifications’ should only be   triggered when the time occurs, i.e. at the patient's physical attendance.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2</td>
+    <td class="tg-0lax"><span style="font-weight:bold">‘End hospital stay’ (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)</span>.<br>Notification of this type cannot be used in case of   transfers[1]. </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an acute ambulant stay is changed to the patient being admitted, a new 'Start hospital stay – admitted' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the acute ambulant stay changes to the patient being admitted.   Notification ‘End hospital stay’ is sent when the patient is subsequently   discharged (sent home/to the primary sector) </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an admission changes to acute ambulant care, a new 'Start hospital stay – acute ambulant' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the   admission changes to acute ambulant care. Notification 'End hospital stay' is sent when the patient is subsequently discharged (sent home/to the primary   sector). This occurrence is seen as rare.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">5</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If the patient is declared dead on arrival, dies after arrival or during the hospital stay, the notification of the type  'Death' is sent.</span><br>The notification type 'Death' should be used in all cases where the patient is dead or dies. </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If the patient is registered as on leave in   the EPR, a notification is sent when the patient starts ('Start leave') and   finishes ('End leave') his/hers leave (at home).</span><br>Leave notifications are   only sent when the patient is registered as being on leave at home. Leave in   case of a double admission[2] must not trigger a leave notification. Leave   notifications should not activate care services in the municipality unless   otherwise agreed.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an incorrect registration has happened, which has caused an incorrect ‘Hospital Notification’, a correction or cancellation must be sent on the   following principles:</span><br>a. If a ‘Hospital Notification’ has been sent because of a wrongly entered  personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent. <br>b.If a ‘Hospital Notification’ with the wrongly stated hospital department or time of stay is  sent, a correction is sent, i.e. a new correct notification that replaces   previous notifications. Cancellation is not sent prior to the correction.   </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">8</td>
+    <td class="tg-0lax"><span style="font-weight:bold">No specific transfer notification is used. </span><br>It is required that a new ‘Hospital Notification’ is sent from the hospital that the patient is transferred to, whether it is in the same or another region). No ‘Hospital   Notification’ is sent from the hospital that the patient is transferred  from[3].  </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">9</td>
+    <td class="tg-0lax">Discharge to hospice Same flow as for transfer&nbsp;&nbsp;&nbsp;to another hospital in the same or another region is used. Hospice sends&nbsp;&nbsp;&nbsp;'Start hospital stay – admitted' when the patient arrives.</td>
+  </tr>
+</tbody>
+</table></div>
+  
+  > 1 If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
+  > 2 Admission in psychiatric and somatic departments at the same time.
+  > 3 If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
 ## 7 Example
-
+<a href="Fig1">Figure 1</a> shows an example of what a HospitalNotification could look like. 
 <figure>
 <img src="../images/Example_HospitalNotification_ENG.png" alt="Example of a HospitalNotification " style="width:50%" id="Fig1">
-<figcaption text-align = "center"><b>Figure 1: Example of a HospitalNotification</b></figcaption>
+<figcaption text-align = "center"><b>Figure 1: Example of what a Hospital Notification could look like. Status for stay will indicate which event triggered the notification.</b></figcaption>
 </figure>
  
 

@@ -189,14 +189,15 @@ Der anmodes om indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases
 ## 6 Forretningsregler for anvendelse
 Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse præsenteres i <a href="Tabel2"> tabel 2</a>. Bemærk, at der til brug for den tekniske implementering, er der udarbejdet en række use cases, hvor funktionaliteter og forretningsregler for anvendelse er omsat til en række detaljerede use cases for hhv. afsender- og modtagersystemer.<br><a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Klik her for at læse use cases. </a><br>
 
+
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-7k98{background-color:#2c415c;color:#ffffff;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg" id="Tabel2">
 <caption style="color:#2c415c;
@@ -209,74 +210,44 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax" rowspan="2">1</td>
-    <td class="tg-0lax">Adviser genereres på basis af&nbsp;&nbsp;&nbsp;tidstro registrering i EPJ/PAS-systemet. </td>
+    <td class="tg-tysj">1</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Adviser genereres på basis af tidstro registrering i EPJ/PAS-systemet. </span> <br>Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte kontakter, skal disse   først udløse advis, når tidspunktet indtræffer, dvs. ved patientens fysiske  fremmøde.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Hvis der i PAS/EPJ anvendes fremtidige registreringer af planlagte kontakter, skal   disse først udløse advis, når tidspunktet indtræffer, dvs. ved patientens fysiske fremmøde.</td>
+    <td class="tg-tysj">2</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </span><br>Advis om ’Slut sygehusophold’ må ikke anvendes ved   overflytninger[1]. </td>
   </tr>
   <tr>
-    <td class="tg-0lax" rowspan="2">2</td>
-    <td class="tg-0lax">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </td>
+    <td class="tg-tysj">3</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’Start sygehusophold - indlagt ’-advis.</span><br>Der skal ikke sendes advis om ’Slut sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). </td>
   </tr>
   <tr>
-    <td class="tg-0lax">Advis om slut sygehusophold må ikke anvendes ved overflytninger[2].</td>
+    <td class="tg-tysj">4</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis en indlagt kontakt ændres til akut ambulant, sendes et nyt advis ’Start sygehusophold – akut ambulant ’-advis.</span> <br>Der skal ikke sendes advis om ’Slut sygehusophold’, når indlæggelsen ændres til at være akut ambulant. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). Denne hændelse anses for sjælden.</td>
   </tr>
   <tr>
-    <td class="tg-0lax" rowspan="2">3</td>
-    <td class="tg-0lax">Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’Start sygehusophold - indlagt ’-advis. </td>
+    <td class="tg-tysj">5</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten er erklæret død ved ankomst, erklæres død efter ankomst eller dør under sygehusopholdet sendes et advis af typen ’Død’. </span><br>Advistypen ’Død’ skal således anvendes i alle scenarier, hvor patienten er død eller dør.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Der skal ikke sendes advis om ’Slut sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). </td>
+    <td class="tg-tysj">6</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet).</span><br>Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser[2] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom.</td>
   </tr>
   <tr>
-    <td class="tg-0lax" rowspan="2">4</td>
-    <td class="tg-0lax">Hvis en indlagt kontakt ændres til akut ambulant, sendes et nyt advis ’Start sygehusophold – akut ambulant ’-advis. </td>
+    <td class="tg-tysj">7</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis der er sket en fejlregistrering, som har udløst et fejlagtigt advis, skal der  sendes en rettelse eller en  annullering efter følgende principper</span>:<br> a.  Hvis der er sendt   advis pga. forkert indtastet cpr.nr. eller forkert valg af sygehusophold  sendes en annullering. <br> b.   Hvis der er sendt et advis med forkert angivelse af sygehusafdeling, forkert tidspunkt  for opholdet sendes en rettelse, dvs. et nyt korrekt advis, som erstatter tidligere advis. Der skal her ikke sendes en annullering før rettelsen.</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Der skal ikke sendes advis om ’Slut sygehusophold’, når indlæggelsen ændres til at være akut ambulant. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). Denne hændelse anses for sjælden.</td>
+    <td class="tg-tysj">8</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Der anvendes ikke specifikke overflytningsadviser.</span> <br>Der er krav om, at der sendes nyt   advis med ’Start sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra [3].</td>
   </tr>
   <tr>
-    <td class="tg-0lax" rowspan="2">5</td>
-    <td class="tg-0lax">Hvis patienten er erklæret død ved ankomst, erklæres død efter ankomst eller dør under sygehusopholdet sendes et advis af typen ’Død’. </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Advistypen ’Død’ skal således anvendes i alle scenarier, hvor patienten er død eller dør. </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax" rowspan="2">6</td>
-    <td class="tg-0lax">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet). </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser[3] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom. </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax" rowspan="3">7</td>
-    <td class="tg-0lax">Hvis der er sket en fejlregistrering, som har udløst et fejlagtigt advis, skal der sendes en rettelse eller en annullering efter følgende principper:</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">a. Hvis der er sendt advis pga. forkert indtastet cpr.nr. eller forkert valg af sygehusophold sendes en annullering.</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">b. Hvis der er sendt et advis med forkert angivelse af sygehusafdeling, forkert  tidspunkt for opholdet sendes en rettelse, dvs. et nyt korrekt advis, som erstatter tidligere advis. Der skal her ikke sendes en annullering før rettelsen.</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax" rowspan="2">8</td>
-    <td class="tg-0lax">Der anvendes ikke specifikke overflytningsadviser. </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Der er krav om, at der sendes nyt advis med "Start sygehusophold", fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra [4].</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax" rowspan="2">9</td>
-    <td class="tg-0lax">Udskrivning til hospice. </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’Start sygehusophold - indlagt’-advis ved patientens ankomst.</td>
+    <td class="tg-tysj">9</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Udskrivning til hospice</span>.<br>Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’Start sygehusophold -   indlagt’-advis ved patientens ankomst.</td>
   </tr>
 </tbody>
 </table></div>
- 
+
  > 2 Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
  > 3 Samtidig indlæggelse på psykiatrisk og somatisk afdeling. 
  > 4 Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.

@@ -7,8 +7,8 @@
   + [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   + [1.2 Use cases](#12-use-cases)
   + [1.3 Technical specification](#13-technical-specification)
-  + [1.4 HospitalNotification Activity Codes](#14-hospitalnotification-activity-codes)
-  + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping-from-xml-to-HospitalNotification)
+  + [1.4 HospitalNotification Codes](#14-hospitalnotification-codes)
+  + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping) 
 *  [2 Test and certification](#2-test-and-certification)
 
 
@@ -44,8 +44,9 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
-[Danish: Use cases](HospitalNotification_use_cases_2_0_0.pdf) 
+[Danish: Use cases](Advisomsygehusophold_use_cases__2.0.1.pdf) 
 > Please be aware that the Use cases are in danish. 
+
 
 
 <!-- Below, you can find the use cases in Danish and English be found:<br>
@@ -77,7 +78,7 @@ To help vendors of the IT system implement the codes in the same way MedCom has 
 
 <br>
 
-### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping-from-xml-to-HospitalNotification}
+### 1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification {#mapping}
 Mapping from previous OIOXML standards to the FHIR HospitalNotification standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a> are transferred to the HospitalNotification, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.
 <br>
 
@@ -101,7 +102,7 @@ Test protocols and test scripts are used to test and certify MedCom HospitalNoti
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol - draft version](FHIR-advis_modtage_ny-testprotokol_arbejdsdokument.docx) 
+* [Test protocol - draft version](FHIR-advis_modtag_ny-testprotokol_arbejdsdokument.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

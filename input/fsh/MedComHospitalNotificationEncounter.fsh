@@ -24,6 +24,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * period 1.. MS
 * period ^definition = "The start and end time of the encounter. For notification of hospitalization an start interval is always known as the notification of adminssion is trigged by the arrival of a patient. There a period will always exist as the notification of admission always starts the communication flow. Please that the encounter.period values always referes to the encounter start and end. The period of the leave of absence is not part of the notification of hospitalization FHIR resource ."
 * period.start 1.. MS
+* period.end MS
 * period.start ^definition = "Encounter Starting time.  \r\nFor the notificationOfHospitalization a starting time is the timestamp that is registered by the hospital at patient physical arrival at the ward or emergency department."
 * length ..0
 * reasonCode ..0
@@ -34,6 +35,14 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * location ..0
 * serviceProvider 1.. MS
 * partOf ..0
+* extension contains medcom-hospitalnotifiation-leave-period-extension named leavePeriod 0..1 MS SU
+* obeys medcom-hospitalNotification-6
+
+Invariant: medcom-hospitalNotification-6
+Description: "When the status = 'onleave', the timestamp for beginning of a leave (extension.valuePeriod.start) shall be present."
+Severity: #error
+Expression: "where(status = 'onleave').extension.value.start.exists() or status != 'onleave'"
+
 
 // All use cases associated with inpatient hospitalization
 Instance: a790f964-88d3-4652-bbc8-81d2f3d035f8
@@ -79,6 +88,7 @@ Description: "Example of HospitalNoticication inpatient Encounter on leave with 
 * subject = Reference(t33cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:a8e9917e-4081-5f99-905c-54246ae72867" 
 * period.start = 2022-09-01T12:00:05Z
+* extension[leavePeriod].valuePeriod.start = 2022-09-04T14:00:30Z
 * serviceProvider = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
 Instance: e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b
@@ -90,6 +100,8 @@ Description: "Example of HospitalNoticication inpatient Encounter End leave with
 * subject = Reference(t33cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:a8e9917e-4081-5f99-905c-54246ae72867" 
 * period.start = 2022-09-01T12:00:05Z
+* extension[leavePeriod].valuePeriod.start = 2022-09-04T14:00:30Z
+* extension[leavePeriod].valuePeriod.end = 2022-09-05T15:00:10Z
 * serviceProvider = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
 Instance: f405ba2d-467a-4e92-9acc-9dc2a629760f

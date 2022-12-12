@@ -47,26 +47,15 @@ The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDef
 
 #### Timestamps 
 
-The HospitalNotification message contains five timestamps that representes at different times during the patient's hospital stay and message delivery:
+HospitalNotification messages are generated and sent based on real-time registration in the EPR/PAS system. So, in case the EPR allows future registrations of planned contacts or a period of leave, the HospitalNotifications shall only be triggered when the event occurs, i.e. at the patient's physical attendance, as described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application). 
 
-* Encounter.period.start
-* Encounter.period.end
-* Bundle.timestamp
-* Provenance.occuredDateTime[x]
-* Provenance.recorded.
- 
-**Admitting a patient**: 
-When the patient arrives at a hospital, the hospital staff admits the patient and the first timestamp, **Encounter.period.start**,  is registered. Please notice that the Encounter.period.start does not change during the citizen's hospital stay.
-Immediately after the hospital staff admits the patient to the hospital, the HospitalNotification for admission is generated and **Bundle.timestamp** is registered. When the HospitalNotification is sent to the municipality the **Provenance.occuredDateTime[x]** and **Provenance.recorded** timestamps are registered. Note that the Provenance.occuredDateTime[x] is a human redable, where Provenance.recorded is a system readable timestamp. 
-The most precise timestamp for the admission is **Encounter.period.start**.
+The HospitalNotification message contains several timestamps. These timestamps are present in the profiles MedComHospitalNotificationEncounter, MedComHospitalNotificationMessage and MedComMessagingProvenance and have different purposes: 
 
-**Discharge a patient**:
-When the patient is ready to be discharged from the hospital, the hospital staff completes the discharge form and the **Encounter.period.end** is registered. Immediately after the hospital staff completed the discharge form, a HospitalNotification for discharge is generated and the **Bundle.timestamp** is registered. When the discharge HospitalNotification is sent the municipality the **Provenance.occuredDateTime[x]** and **Provenance.recorded** timestamps are registered. 
-The most precise timestamp for the discharge will be **Encounter.period.end**.
+* Encounter-timestamps represent the time of an event. [The usage of these timestamps are more thoroughly described here.](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html)
+* Bundle.timestamp represents the time bundle is generated.
+* Provenance.occuredDateTime[x] represents the time the HospitalNotification is sent, in a human-readable time
+* Provenance.recorded represents the time the HospitalNotification is sent, in a machine-readable time
 
-**Periods of leave**:
-When a patient is onleave or ends onleave a HospitalNotification message is sent, but no timestamp will be registered in the Encounter resource. Immediately after onleave or ends onleave is registered by the hospital staff, a HospitalNotification message is generated and the **Bundle.timestamp** is registered. When the onleave or end onleave HospitalNotification message is sent to the municipality the **Provenance.occuredDateTime[x]** and **Provenance.recorded** timestamps are registered. 
-The most precise timestamp for onleave or end onleave is **Provenance.occuredDateTime[x]**. This timestamp has the same data structure as in the timestamp for admitting and discharging a patient, why it is recommended over the Bundle.timestamp and Provenance.recorded.
 
 #### IDs
 

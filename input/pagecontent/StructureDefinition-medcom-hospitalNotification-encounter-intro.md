@@ -19,3 +19,29 @@ The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvi
 
 [An example of different serviceProvider and sender organisation can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-m908i967-9ie3-9023-b9ec-98108695f01d.html). Other examples will have the same organisation as serviceProvider and sender.
 
+### Timestamps 
+
+The Encounter profile contains four timestamps each representing a different time during a hospitalisation. Common for the four timestamps is that they represent the time of the event, e.g. the patient's physical attendance at the hospital (Encounter.period.start) or the patient leaves the hospital for to go on leave (Encounter.extension:leavePeriod.start).  
+
+|FHIR-element|Description|Event|See example [MISSING LINKS]|
+|-----|------|------| ------| 
+|Encounter.period.start|Start hospital stay, i.e. the actual beginning of the meeting between the health care professional and patient|Patient is physical attendant at the hospital|HospitalNotification Encounter - STIN|
+|Encounter.period.end|End hospital stay, i.e. the actual end of the meeting between the health care professional and patient|Patient leaves the hospital after discharge or when a patient dies (on arrival or during hospital stay)| HospitalNotification Encounter - SLHJ and HospitalNotification Encounter - MORS|
+|Encounter.extension:leavePeriod.start|Patient starts leave, i.e. the actual beginning of a leave-period, when the patient leaves the hospital|Patient leaves the hospital for to go on leave.|HospitalNotification Encounter - STOR|
+|Encounter.extension:leavePeriod.end|Patient ends leave, i.e. the actual end of a leave-period, when the patient returns to the hospital|Patient is physical attendant at the hospital after a period of leave|HospitalNotification Encounter - SLOR|
+
+#### Start and end of hospital stay
+As described above, the timestamp of start and end of hospital stay are included in the element Encounter.period.start and Encounter.period.end, respectively. 
+Encounter.period.start shall always be present, despite it is not a start hospital stay HospitalNotification being sent. 
+
+In cases where a patient is transferred to a hospital in the same region or in another region, or a hospitalisation changes from 'acute ambulant' to 'inpatient', a new start hospital stay HospitalNotification shall be sent. These three cases shall be given a new Encounter.period.start representing the time of the cahnge in the hospitalisation. All cases are described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application).
+
+#### Leave
+To express the timestamps for a period of leave, the MedComHospitalNotificationLeavePeriodExtension shall be used. 
+
+When a patient goes on leave the Encounter.extension:leavePeriod.start shall be used, and when the patient returns from leave both Encounter.extension:leavePeriod.start and Encounter.extension:leavePeriod.end shall be present. 
+
+The cardinality of MedComHospitalNotificationLeavePeriodExtension is 0..1 meaning that only one period of leave can be included in a HospitalNotification to avoid confusion about which period of leave is the current. In case a patient goes on leave several times during the same hospitalisation, the period shall be described in separate HospitalNotifications, that are being sent when each period of leave occurs. 
+
+#### Death
+When a patient dies either on arrival or during hospital stay, the timestamp Encounter.period.end represents the time the encounter ended i.e the time of death. The Encounter.period.start shall also be populated. If a patient dies either on arrival Encounter.period.start shall be equal to Encounter.period.end and if the dies during hospital stay Encounter.period.start shall represent the acutal beginning of the hospital stay. A HospitalNotification can only be interpreted as describing a deceased patient when the element Patient.deaceased = 'true'.  

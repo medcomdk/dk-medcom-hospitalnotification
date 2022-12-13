@@ -51,7 +51,7 @@ HospitalNotification messages are generated and sent based on real-time registra
 
 The HospitalNotification message contains several timestamps. These timestamps are present in the profiles MedComHospitalNotificationEncounter, MedComHospitalNotificationMessage and MedComMessagingProvenance and have different purposes: 
 
-* Encounter-timestamps represent the time of an event. [The usage of these timestamps are more thoroughly described here.](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html)
+* Encounter-timestamps represent the time of an event. For receiving systems, this is the timestamps that must be displayed for the end user in the HospitalNotification as ‘date and time of start/end for the event’. [The usage of these timestamps is more thoroughly described here.](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html)
 * Bundle.timestamp represents the time bundle is generated.
 * Provenance.occuredDateTime[x] represents the time the HospitalNotification is sent, in a human-readable time
 * Provenance.recorded represents the time the HospitalNotification is sent, in a machine-readable time

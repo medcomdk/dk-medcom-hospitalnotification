@@ -57,7 +57,7 @@ The HospitalNotification message contains several timestamps. These timestamps a
 * Provenance.recorded represents the time the HospitalNotification is sent, in a machine-readable time
 
 
-#### IDs
+#### ID's
 
 All profiles shall have a global unique id by using an UUID. [Read more about the use of ids here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/052.2_MessageHeader_Identifiers_Timestamps.html).
 

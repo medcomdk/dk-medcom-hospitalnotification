@@ -47,7 +47,7 @@ The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDef
 
 #### Timestamps 
 
-HospitalNotification messages are generated and sent based on real-time registration in the EPR/PAS system. So, in case the EPR allows future registrations of planned contacts or a period of leave, the HospitalNotifications shall only be triggered when the event occurs, i.e. at the patient's physical attendance, as described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application). 
+HospitalNotification messages are generated and sent based on real-time registration in the EPR/PAS system. In case the EPR allows future registrations of planned contacts or a period of leave, the HospitalNotifications shall only be triggered when the event occurs, i.e. at the patient's physical attendance, as described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application). 
 
 The HospitalNotification message contains several timestamps. These timestamps are present in the profiles MedComHospitalNotificationEncounter, MedComHospitalNotificationMessage and MedComMessagingProvenance and have different purposes: 
 
@@ -63,14 +63,54 @@ All profiles shall have a global unique id by using an UUID. [Read more about th
 
 #### Simplified examples of the HospitalNotification message flow
 
-The simplified examples contain the required content of a HospitalNotification message. The messages illustrate admission and discharge of an inpatient admission, as well as an cancellation of a messages. The patient, service provider organization, sender and receiver information are identical across a message stream, since all messages are send from a hospital to a municipality.
+The simplified examples contain the required content of a HospitalNotification message. Throughout this section different activity codes and statuses are used. [To get an overview of all the codes and statuses, please go to GitHub pages for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes).
 
-[More examples of a HospitalNotification message can be found here](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
+In the sections below is a limited number HospitalNotifications examplified. [More examples of a HospitalNotification message can be found here](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
 
 > Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, resources may be listed in any order. 
 
-* [Simplified example of a MedComHospitalNotificationMessage for admit and finished stay.](./hospitalnotification/HNAdmitInPat.svg)
-* [Simplified example of a cancelled MedComHospitalNotificationMessage message.](./hospitalnotification/HNAdmitEnteredInError.svg)
+##### STIN - Start hospital stay - admitted
+The simplified example below is an example of a 'Start hospital stay - admitted' HospitalNotification. In the MessageHeader there is a request for a reportOfAdmission (extension:reportOfAdmissionFlag). In the Encounter instance the status is 'in-progress', and the Encounter is populated with a start timestamp (period.start). In the Provenance instance is the activity code 'admit-inpatient'. The sender and serviceProvider organisation is the same. 
+
+* [1 - Simplified example of 'Start hospital stay - admitted'](./hospitalnotification/HNAdmitInPat.svg)
+
+[Click here to see the generated example of simplified example number 1.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-a5e5b880-c087-4055-b9ec-99108695f81d.html)
+
+##### STOR - Start leave
+The simplified example below is an example of a 'Start leave' HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from 'in-progress' to 'onleave', and the Encounter is populated with a start timestamp for the period of leave (extension:leavePeriod.start). In the Provenance instance is the activity code 'start-leave-inpatient'. The sender and serviceProvider organisation is the same. 
+
+* [2 - Simplified example of 'Start leave'](./hospitalnotification/HNstartOnleave.svg)
+
+[Click here to see the generated example of simplified example number 2.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-d3128d9b-cede-4c7f-8904-809eab322d7d.html)
+
+##### SLOR - End leave
+The simplified example below is an example of a 'End leave' HospitalNotification which is sent in continuation of simplified example number 2. The status in the Encounter is changed from 'onleave' to 'in-progress', and the Encounter is populated with a end timestamp for the period of leave (extension:leavePeriod.end). In the Provenance instance is the activity code 'end-leave-inpatient'. The sender and serviceProvider organisation is the same. 
+
+* [3 - Simplified example of 'End leave'](./hospitalnotification/HNendOnleave.svg)
+
+[Click here to see the generated example of simplified example number 3.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-e94de8ee-bd94-475e-b454-b8fbbef8a685.html)
+
+##### SLHJ - End hospital stay - patient completed to home/primary sector (inpatient)
+The simplified example below is an example of a 'End hospital stay - patient completed to home/primary sector' HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from 'in-progress' to 'finished', and the Encounter is populated with a timestamp indicating end of the encounter (period.end). In the Provenance instance is the activity code 'discharge-inpatient-home'. The sender and serviceProvider organisation is the same. 
+
+* [4 - Simplified example of 'End hospital stay - patient completed to home/primary sector'](./hospitalnotification/HNdischargeInPat.svg)
+
+[Click here to see the generated example of simplified example number 4.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-f4aa42a4-86db-4e68-9b38-9dda0dfd5774.html)
+
+##### MORS - Deceased (inpatient)
+The simplified example below is an example of a 'Deceased' HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from 'in-progress' to 'finished', and the Encounter is populated with a timestamp indicating end of the encounter (period.end) i.e. the death of the patient. The element Patient.deceased is sat to 'true', indicating that the patient is deceased. In the Provenance instance is the activity code 'admit-inpatient', as it shall remain the current activity. The sender and serviceProvider organisation is the same. 
+
+* [5 - Simplified example of 'Deceased'](./hospitalnotification/HNdeceasedInPat.svg)
+
+[Click here to see the generated example of simplified example number 5.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-g099bbf3-3fca-4722-a248-bfe1aa956410.html)
+
+##### AN_STIN - Cancellation Start hospital stay - admitted
+The simplified example below is an example of a 'Cancellation Start hospital stay - admitted' HospitalNotification which is sent in continuation of simplified example number 1. In the Provenance instance the activity code is changed to 'cancel-admit-inpatient' and the entity.what is now 'removal' indicating that the previous message is cancelled. The sender and serviceProvider organisation is the same. 
+
+* [6 - Simplified example of 'Cancellation Start hospital stay - admitted'](./hospitalnotification/HNcancelEnteredInError.svg)
+
+[Click here to see the generated example of simplified example number 6.](https://medcomfhir.dk/ig/hospitalnotification/Bundle-c83671a4-9584-11ec-b909-0242ac120002.html)
+
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.

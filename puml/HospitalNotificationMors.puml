@@ -1,4 +1,4 @@
-@startuml HNcancelEnteredInError
+@startuml HNdeceasedInPat
 
 'layout
 skinparam class {
@@ -12,66 +12,64 @@ skinparam SameClassWidth true
 skinparam Ranksep 10
 
 
-'title
-title Simplified example: Cancellation Start hospital stay - admitted
-
-'Message 1: Admit inpatient
-package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
-    class "Bundle (MedComHospitalNotificationMessage)" as cancelB{
-        id = "c83671a4-9584-11ec-b909-0242ac120002"
+package "Deceased" as finished <<Frame>>{
+    class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{
+        id = "g099bbf3-3fca-4722-a248-bfe1aa956410"
         type = "message"
-        timestamp = "2022-12-07T15:00:01"
+        timestamp = "2022-12-09T09:45:31"
     }
-    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as cancelMH{
-        id = "d8749b54-1aeb-4089-8941-8d876bdffc51"
+    class "MessageHeader  (MedComHospitalNotificationMessageHeader)" as finishedMH{
+        id = "hefc6d95-6161-4493-99c9-f359488dedb8"
         event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
         event.code = "hospital-notification-message"
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"
-        sender.reference = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        destination.receiver.reference = "Organization/753bdcba-81ce-11ed-a1eb-0242ac120002"
+        sender.reference = "Organization/840b4046-81ce-11ed-a1eb-0242ac120002"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        focus = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"
+        focus = "Encounter/gcab7218-9584-11ec-b909-0242ac120002"
     }
-    class "Patient (MedComCorePatient)" as cancelPT{
-        id = "d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+    class "Patient  (MedComCorePatient)" as finishedPT{
+        id = "t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
         name.family = "Elmer"
         name.given[0] = "Bruno"
         name.given[1] = "Test"
+        deceased = "true"
     }
-    class "Encounter (MedComHospitalNotificationEncounter)" as cancelENC{
-        id = "c9782061-ce63-41b5-8be6-655812d23332"
+    class "Encounter  (MedComHospitalNotificationEncounter)" as finishedENC{
+        id = "gcab7218-9584-11ec-b909-0242ac120002"
         status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
-        status.code = "entered-in-error"
+        status.code = "finished"
         class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
         class.code = "IMP"
-        subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        subject = "Patient/t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = "2022-12-07T12:00:00"
-        serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
-    }    
-    class "Receiver (MedComMessagingOrganization)" as cancelROrg{
-        id = "eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+        periode.end = "2022-12-09T09:45:30"
+        serviceProvider = "Organization/840b4046-81ce-11ed-a1eb-0242ac120002"
+    } 
+    class "Receiver (MedComMessagingOrganization)" as finishedROrg{
+        id = "753bdcba-81ce-11ed-a1eb-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
         name = "Plejecenter Herlev"
     }
-    class "Sender (MedComMessagingOrganization)" as cancelSOrg{
-        id = "05266a00-81c7-11ed-a1eb-0242ac120002"
+    class "Sender (MedComMessagingOrganization)" as finishedSOrg{
+        id = "840b4046-81ce-11ed-a1eb-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "265161000016000"
         name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
     }
-    class "Provenance (MedComMessagingProvenance)" as admitPRO{
+    class "Provenance (MedComMessagingProvenance)" as admitfinishedPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
         occuredDateTime = "2022-12-07T12:00:02"
@@ -80,27 +78,30 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
         activity.code = "admit-inpatient"
         agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
     }
-    class "Provenance (MedComMessagingProvenance)" as cancelPRO{
-        id = "c67ecb1c-957a-11ec-b909-0242ac120002"
-        target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
-        occuredDateTime = "2022-12-07T15:00:02"
-        recorded = "2022-12-07T15:00:02"
+    class "Provenance (MedComMessagingProvenance)" as finishedPRO{
+        id = "g9942adb-197a-4e30-bec8-566e3a113efe"
+        target = "MessageHeader/hefc6d95-6161-4493-99c9-f359488dedb8"
+        occuredDateTime = "2022-12-09T09:45:32"
+        recorded = "2022-12-09T09:45:32"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
-        activity.code = "cancel-admit-inpatient"
-        agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        activity.code = "admit-inpatient"
+        agent.who = "Organization/840b4046-81ce-11ed-a1eb-0242ac120002"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
-        entity.role.value = "removal"
+        entity.role.value = "revision"
         entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
     }
+finishedB-[hidden]-finishedMH
+finishedMH-[hidden]-finishedPT
+finishedPT-[hidden]-finishedENC
+finishedENC-[hidden]-finishedROrg
+finishedROrg-[hidden]-finishedSOrg
+finishedSOrg-[hidden]-admitfinishedPRO
+admitfinishedPRO-[hidden]-finishedPRO
 
-cancelB -[hidden]- cancelMH
-cancelMH-[hidden]-cancelPT
-cancelPT-[hidden]-cancelENC
-cancelENC-[hidden]-cancelROrg
-cancelROrg-[hidden]-cancelSOrg
-cancelSOrg-[hidden]-admitPRO
-admitPRO-[hidden]-cancelPRO
 }
+' pile mellem de to beskeder
+' admit --> finished
+
 
 @enduml
 

@@ -1,0 +1,124 @@
+@startuml HNendOnleave
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: End leave
+
+
+'Message 3: End onleave inpatient
+package "End leave" as endOnleave <<Frame>> {
+    class "Bundle (MedComHospitalNotificationMessage)" as endOnleaveB{
+        id = "e94de8ee-bd94-475e-b454-b8fbbef8a685"
+        type = "message"
+        timestamp = "2022-12-14T15:30:01"
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as endOnleaveMH{
+        id = "f47254da-f170-46f0-b624-4778a9c92b1f"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "hospital-notification-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/55ba5884-81ca-11ed-a1eb-0242ac120002"
+        sender.reference = "Organization/5961ade8-81ca-11ed-a1eb-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus = "Encounter/e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b"
+    }
+    class "Patient (MedComCorePatient)" as endOnleavePT{
+        id = "519d5170-81ca-11ed-a1eb-0242ac120002"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as endOnleaveENC{
+        id = "e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b"
+        status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
+        status.code = "in-progress"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/519d5170-81ca-11ed-a1eb-0242ac120002"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = "2022-12-07T12:00:00"
+        extension:leavePeriod.start = "2022-12-13T14:00:10"
+        extension:leavePeriod.end = "2022-12-14T15:30:00"
+        serviceProvider = "Organization/5961ade8-81ca-11ed-a1eb-0242ac120002"
+    }    
+class "Receiver (MedComMessagingOrganization)" as endOnleaveROrg{
+        id = "a39d4a04-81c8-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+        name = "Plejecenter Herlev"
+    }
+    class "Sender (MedComMessagingOrganization)" as endOnleaveSOrg{
+        id = "b79a7914-81c8-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+        name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
+    }
+    class "Provenance  (MedComMessagingProvenance)" as admitPRO{
+        id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
+        target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        occuredDateTime = "2022-12-07T12:00:02"
+        recorded = "2022-12-07T12:00:02"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "admit-inpatient"
+        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+    class "Provenance  (MedComMessagingProvenance)" as startOnleavePRO{
+        id = "dc421d0a-cded-470f-9a53-2ddba7583baa"
+        target = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
+        occuredDateTime = "2022-12-13T14:00:12"
+        recorded = "2022-12-13T14:00:12"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "start-leave-inpatient"
+        agent.who = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "revision"
+        entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+    }
+    class "Provenance  (MedComMessagingProvenance)" as endOnleavePRO{
+        id = "e4db4939-7c60-4ac6-aefc-523f809ccba6"
+        target = "MessageHeader/f47254da-f170-46f0-b624-4778a9c92b1f"
+        occuredDateTime = "2022-12-14T15:30:02"
+        recorded = "2022-12-14T15:30:02"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "end-leave-inpatient"
+        agent.who = "Organization/5961ade8-81ca-11ed-a1eb-0242ac120002"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "revision"
+        entity.what = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
+    }
+endOnleaveB -[hidden]- endOnleaveMH
+endOnleaveMH-[hidden]-endOnleavePT
+endOnleavePT-[hidden]-endOnleaveENC
+endOnleaveENC-[hidden]-endOnleaveROrg
+endOnleaveROrg-[hidden]-endOnleaveSOrg
+endOnleaveSOrg-[hidden]-admitPRO
+admitPRO-[hidden]-startOnleavePRO
+startOnleavePRO-[hidden]-endOnleavePRO
+
+}
+
+
+
+@enduml
+

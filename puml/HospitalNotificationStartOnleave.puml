@@ -1,5 +1,4 @@
-@startuml HNcancelEnteredInError
-
+@startuml HNstartOnleave
 'layout
 skinparam class {
     BackgroundColor White
@@ -13,29 +12,30 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: Cancellation Start hospital stay - admitted
+title Simplified example: Start leave
 
-'Message 1: Admit inpatient
-package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
-    class "Bundle (MedComHospitalNotificationMessage)" as cancelB{
-        id = "c83671a4-9584-11ec-b909-0242ac120002"
+
+'Message 3: End onleave inpatient
+package "Start leave" as startOnleave <<Frame>> {
+    class "Bundle (MedComHospitalNotificationMessage)" as startOnleaveB{
+        id = "d3128d9b-cede-4c7f-8904-809eab322d7d"
         type = "message"
-        timestamp = "2022-12-07T15:00:01"
+        timestamp = "2022-12-13T15:30:01"
     }
-    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as cancelMH{
-        id = "d8749b54-1aeb-4089-8941-8d876bdffc51"
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as startOnleaveMH{
+        id = "e563a2b2-bf92-4b13-bbd2-0a021a95bded"
         event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
         event.code = "hospital-notification-message"
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"
-        sender.reference = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        destination.receiver.reference = "Organization/a39d4a04-81c8-11ed-a1eb-0242ac120002"
+        sender.reference = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        focus = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"
+        focus = "Encounter/d56e9c54-23d2-43a4-816e-951d2a6e3281"
     }
-    class "Patient (MedComCorePatient)" as cancelPT{
-        id = "d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+    class "Patient (MedComCorePatient)" as startOnleavePT{
+        id = "97404d10-81c8-11ed-a1eb-0242ac120002"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -43,64 +43,67 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
         name.given[0] = "Bruno"
         name.given[1] = "Test"
     }
-    class "Encounter (MedComHospitalNotificationEncounter)" as cancelENC{
-        id = "c9782061-ce63-41b5-8be6-655812d23332"
+    class "Encounter (MedComHospitalNotificationEncounter)" as startOnleaveENC{
+        id = "d56e9c54-23d2-43a4-816e-951d2a6e3281"
         status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
-        status.code = "entered-in-error"
+        status.code = "onleave"
         class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
         class.code = "IMP"
-        subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        subject = "Patient/97404d10-81c8-11ed-a1eb-0242ac120002"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = "2022-12-07T12:00:00"
-        serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        extension:leavePeriod.start = "2022-12-13T14:00:10"
+        serviceProvider = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
     }    
-    class "Receiver (MedComMessagingOrganization)" as cancelROrg{
-        id = "eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+    class "Receiver (MedComMessagingOrganization)" as startOnleaveROrg{
+        id = "a39d4a04-81c8-11ed-a1eb-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
         name = "Plejecenter Herlev"
     }
-    class "Sender (MedComMessagingOrganization)" as cancelSOrg{
-        id = "05266a00-81c7-11ed-a1eb-0242ac120002"
+    class "Sender (MedComMessagingOrganization)" as startOnleaveSOrg{
+        id = "b79a7914-81c8-11ed-a1eb-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "265161000016000"
         name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
     }
-    class "Provenance (MedComMessagingProvenance)" as admitPRO{
+    class "Provenance  (MedComMessagingProvenance)" as admitPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
         occuredDateTime = "2022-12-07T12:00:02"
         recorded = "2022-12-07T12:00:02"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
-        agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
+        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }
-    class "Provenance (MedComMessagingProvenance)" as cancelPRO{
-        id = "c67ecb1c-957a-11ec-b909-0242ac120002"
-        target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
-        occuredDateTime = "2022-12-07T15:00:02"
-        recorded = "2022-12-07T15:00:02"
+    class "Provenance  (MedComMessagingProvenance)" as startOnleavePRO{
+        id = "dc421d0a-cded-470f-9a53-2ddba7583baa"
+        target = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
+        occuredDateTime = "2022-12-13T14:00:12"
+        recorded = "2022-12-13T14:00:12"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
-        activity.code = "cancel-admit-inpatient"
-        agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        activity.code = "start-leave-inpatient"
+        agent.who = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
-        entity.role.value = "removal"
+        entity.role.value = "revision"
         entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
     }
+startOnleaveB -[hidden]- startOnleaveMH
+startOnleaveMH-[hidden]-startOnleavePT
+startOnleavePT-[hidden]-startOnleaveENC
+startOnleaveENC-[hidden]-startOnleaveROrg
+startOnleaveROrg-[hidden]-startOnleaveSOrg
+startOnleaveSOrg-[hidden]-admitPRO
+admitPRO-[hidden]-startOnleavePRO
 
-cancelB -[hidden]- cancelMH
-cancelMH-[hidden]-cancelPT
-cancelPT-[hidden]-cancelENC
-cancelENC-[hidden]-cancelROrg
-cancelROrg-[hidden]-cancelSOrg
-cancelSOrg-[hidden]-admitPRO
-admitPRO-[hidden]-cancelPRO
 }
+
+
 
 @enduml
 

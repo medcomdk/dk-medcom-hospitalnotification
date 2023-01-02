@@ -48,8 +48,8 @@ Comments to the table:
 <tbody>
   <tr>
     <td class="tg-5pia">STAA</td>
-    <td class="tg-5pia">Start sygehusophold- akut ambulant</td>
-    <td class="tg-5pia">Start hospital stay-acute ambulant</td>
+    <td class="tg-5pia">Start sygehusophold - akut ambulant</td>
+    <td class="tg-5pia">Start hospital stay - acute ambulant</td>
     <td class="tg-5pia">EMER</td>
     <td class="tg-5pia">in-progress</td>
     <td class="tg-5pia">admit-emergency</td>
@@ -57,8 +57,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-5pia">RE_STAA</td>
-    <td class="tg-5pia">Rettelse af Start sygehusophold- akut ambulant</td>
-    <td class="tg-5pia">Update of start hospital stay-acute ambulant</td>
+    <td class="tg-5pia">Rettelse Start sygehusophold - akut ambulant</td>
+    <td class="tg-5pia">Update Start hospital stay - acute ambulant</td>
     <td class="tg-5pia">EMER</td>
     <td class="tg-5pia">in-progress</td>
     <td class="tg-5pia">revise-admit-emergency</td>
@@ -66,8 +66,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-5pia">AN_STAA</td>
-    <td class="tg-5pia">Annullering af start sygehusophold- akut ambulant</td>
-    <td class="tg-5pia">Cancellation of start hospital stay- acute ambulant</td>
+    <td class="tg-5pia">Annullering Start sygehusophold - akut ambulant</td>
+    <td class="tg-5pia">Cancellation Start hospital stay - acute ambulant</td>
     <td class="tg-5pia">EMER</td>
     <td class="tg-5pia">cancelled/ entered-in-error</td>
     <td class="tg-5pia">cancel-admit-emergency</td>
@@ -76,7 +76,7 @@ Comments to the table:
   <tr>
     <td class="tg-m5mm">STIN</td>
     <td class="tg-m5mm">Start sygehusophold - indlagt</td>
-    <td class="tg-m5mm">Start hospital stay-admission</td>
+    <td class="tg-m5mm">Start hospital stay - admitted</td>
     <td class="tg-m5mm">IMP</td>
     <td class="tg-m5mm">in-progress</td>
     <td class="tg-m5mm">admit-inpatient</td>
@@ -84,8 +84,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-m5mm">RE_STIN</td>
-    <td class="tg-m5mm">Rettelse af start sygehusophold - indlagt</td>
-    <td class="tg-m5mm">Update of start hospital stay-admission</td>
+    <td class="tg-m5mm">Rettelse Start sygehusophold - indlagt</td>
+    <td class="tg-m5mm">Update Start hospital stay - admitted</td>
     <td class="tg-m5mm">IMP</td>
     <td class="tg-m5mm">in-progress</td>
     <td class="tg-m5mm">revise-admit-inpatient</td>
@@ -93,8 +93,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-m5mm">AN_STIN</td>
-    <td class="tg-m5mm">Annullering af start sygehusophold - indlagt</td>
-    <td class="tg-m5mm">Cancellation of start hospital stay- admission</td>
+    <td class="tg-m5mm">Annullering Start sygehusophold - indlagt</td>
+    <td class="tg-m5mm">Cancellation Start hospital stay - admitted</td>
     <td class="tg-m5mm">IMP</td>
     <td class="tg-m5mm">cancelled/ entered-in-error</td>
     <td class="tg-m5mm">cancel-admit-inpatient</td>
@@ -112,7 +112,7 @@ Comments to the table:
   <tr>
     <td class="tg-tul6">RE_STOR</td>
     <td class="tg-tul6">Rettelse Start orlov</td>
-    <td class="tg-tul6">Update of Start leave</td>
+    <td class="tg-tul6">Update Start leave</td>
     <td class="tg-tul6">IMP</td>
     <td class="tg-tul6">onleave</td>
     <td class="tg-tul6">revise-start-leave-inpatient</td>
@@ -120,8 +120,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-tul6">AN_STOR</td>
-    <td class="tg-tul6">Annullering af Start orlov</td>
-    <td class="tg-tul6">Cancellation of Start leave</td>
+    <td class="tg-tul6">Annullering Start orlov</td>
+    <td class="tg-tul6">Cancellation Start leave</td>
     <td class="tg-tul6">IMP</td>
     <td class="tg-tul6">in-progress</td>
     <td class="tg-tul6">cancel-start-leave-inpatient</td>
@@ -139,7 +139,7 @@ Comments to the table:
   <tr>
     <td class="tg-tul6">RE_SLOR</td>
     <td class="tg-tul6">Rettelse Slut orlov</td>
-    <td class="tg-tul6">Update of End leave</td>
+    <td class="tg-tul6">Update End leave</td>
     <td class="tg-tul6">IMP</td>
     <td class="tg-tul6">in-progress</td>
     <td class="tg-tul6">revise-end-leave-inpatient</td>
@@ -148,7 +148,7 @@ Comments to the table:
   <tr>
     <td class="tg-tul6">AN_SLOR</td>
     <td class="tg-tul6">Annullering Slut orlov</td>
-    <td class="tg-tul6">Cancellation of End leave</td>
+    <td class="tg-tul6">Cancellation End leave</td>
     <td class="tg-tul6">IMP</td>
     <td class="tg-tul6">onleave</td>
     <td class="tg-tul6">cancel-end-leave-inpatient</td>
@@ -156,8 +156,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-ncd7">SLHJ</td>
-    <td class="tg-ncd7">Slut sygehusophold- afsluttet til hjemmet</td>
-    <td class="tg-ncd7">End hospital Stay- patient discharged to home/primary sector</td>
+    <td class="tg-ncd7">Slut sygehusophold - afsluttet til hjemmet/primær sektor</td>
+    <td class="tg-ncd7">End hospital stay - patient completed to home/primary sector</td>
     <td class="tg-ncd7">EMER/IMP</td>
     <td class="tg-ncd7">finished</td>
     <td class="tg-ncd7">discharge-[Encounter.Class]-home</td>
@@ -165,8 +165,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-ncd7">RE_SLHJ</td>
-    <td class="tg-ncd7">Rettelse Slut sygehusophold-afsluttet til hjemmet</td>
-    <td class="tg-ncd7">Update of End hospital Stay</td>
+    <td class="tg-ncd7">Rettelse Slut sygehusophold - afsluttet til hjemmet/primær sektor</td>
+    <td class="tg-ncd7">Update End hospital stay - patient completed to home/primary sector</td>
     <td class="tg-ncd7">EMER/IMP</td>
     <td class="tg-ncd7">finished</td>
     <td class="tg-ncd7">revise-discharge-[Encounter.Class]-home</td>
@@ -174,8 +174,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-ncd7">AN_SLHJ</td>
-    <td class="tg-ncd7">Annullering Slut sygehusophold- afsluttet til hjemmet</td>
-    <td class="tg-ncd7">Cancellation of End hospital Stay</td>
+    <td class="tg-ncd7">Annullering Slut sygehusophold - afsluttet til hjemmet/primær sektor</td>
+    <td class="tg-ncd7">Cancellation End hospital stay - patient completed to home/primary sector</td>
     <td class="tg-ncd7">EMER/IMP</td>
     <td class="tg-ncd7">in-progress</td>
     <td class="tg-ncd7">cancel-discharge-[Encounter.Class]-home</td>
@@ -192,8 +192,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-cjtp">RE_MORS</td>
-    <td class="tg-cjtp">Rettelse af død</td>
-    <td class="tg-cjtp">Update of deceased</td>
+    <td class="tg-cjtp">Rettelse Død</td>
+    <td class="tg-cjtp">Update Deceased</td>
     <td class="tg-cjtp">EMER/IMP</td>
     <td class="tg-cjtp">finished</td>
     <td class="tg-cjtp">”current activity”</td>
@@ -201,8 +201,8 @@ Comments to the table:
   </tr>
   <tr>
     <td class="tg-cjtp">AN_MORS</td>
-    <td class="tg-cjtp">Annullering af død</td>
-    <td class="tg-cjtp">Cancellation of deceased</td>
+    <td class="tg-cjtp">Annullering Død</td>
+    <td class="tg-cjtp">Cancellation Deceased</td>
     <td class="tg-cjtp">EMER/IMP</td>
     <td class="tg-cjtp">"previous status"</td>
     <td class="tg-cjtp">”current activity”</td>

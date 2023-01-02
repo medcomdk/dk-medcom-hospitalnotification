@@ -13,7 +13,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * priority 0..0
 * episodeOfCare 1.. MS
 * episodeOfCare.identifier 1.. MS
-* episodeOfCare ^definition = "Shall contain an episode of care identifier for the entire hospitalization"
+* episodeOfCare ^definition = "Shall contain an episode of care identifier for the entire hospitalisation"
 * episodeOfCare[lpr3identifier] MS
 * episodeOfCare[lpr3identifier].identifier SU
 * episodeOfCare[lpr3identifier].reference ..0
@@ -22,10 +22,13 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * participant ..0
 * appointment ..0
 * period 1.. MS
-* period ^definition = "The start and end time of the encounter. For notification of hospitalization an start interval is always known as the notification of adminssion is trigged by the arrival of a patient. There a period will always exist as the notification of admission always starts the communication flow. Please that the encounter.period values always referes to the encounter start and end. The period of the leave of absence is not part of the notification of hospitalization FHIR resource ."
+* period ^definition = "The start and end time of the encounter. For notification of hospitalisation an start interval is always known as the notification of adminssion is trigged by the arrival of a patient. There a period will always exist as the notification of admission always starts the communication flow. Please that the encounter.period values always referes to the encounter start and end. The period of the leave of absence is not part of the notification of hospitalization FHIR resource ."
 * period.start 1.. MS
 * period.end MS
-* period.start ^definition = "Encounter Starting time. \r\nFor the notificationOfHospitalization a starting time is the timestamp that is registered by the hospital at patient physical arrival at the ward or emergency department."
+* period.start ^short = "Encounter start time."
+* period.start ^definition = "In HospitalNotification a start time is the timestamp that is registered by the hospital at patient physical attendance at the hospital."
+* period.end ^short = "Encounter end time."
+* period.end ^definition = "In HospitalNotification a end time is the timestamp that is registered by the hospital when the patient leaves the hospital after discharge."
 * length ..0
 * reasonCode ..0
 * reasonReference ..0
@@ -53,19 +56,19 @@ Description: "Example of MedComHospitalNotificationEncounter 'Start hospital sta
 * class = $ActCodes#IMP 
 * subject = Reference(t33cef33-3626-422b-955d-d506aaa65fe1)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* period.start = 2022-12-07T12:00:00Z
+* period.start = 2022-12-07T12:00:00+02:00
 * serviceProvider = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 
 
 Instance: b9846c24-0335-11ed-b939-0242ac120002
 InstanceOf: MedComHospitalNotificationEncounter
 Title: "HospitalNotification Encounter - RE_STIN"
-Description: "Example of MedComHospitalNotificationEncounter 'Revise Start hospital stay - admitted'. Only Valid if used in a Bundle."
+Description: "Example of MedComHospitalNotificationEncounter 'Update Start hospital stay - admitted'. Only Valid if used in a Bundle."
 * status = #in-progress
 * class = $ActCodes#IMP 
 * subject = Reference(48393486-81c6-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* period.start = 2022-12-07T13:00:00Z //updated here
+* period.start = 2022-12-07T13:00:00+02:00 //updated here
 * serviceProvider = Reference(abb09e14-81c6-11ed-a1eb-0242ac120002)
 
 Instance: c9782061-ce63-41b5-8be6-655812d23332
@@ -76,7 +79,7 @@ Description: "Example of MedComHospitalNotificationEncounter 'Cancellation Start
 * class = $ActCodes#IMP 
 * subject = Reference(d6eeaca6-81c6-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* period.start = 2022-12-07T12:00:00Z
+* period.start = 2022-12-07T12:00:00+02:00
 * serviceProvider = Reference(05266a00-81c7-11ed-a1eb-0242ac120002)
 
 Instance: d56e9c54-23d2-43a4-816e-951d2a6e3281
@@ -87,8 +90,8 @@ Description: "Example of MedComHospitalNotificationEncounter 'Start leave'. Only
 * class = $ActCodes#IMP 
 * subject = Reference(97404d10-81c8-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:a8e9917e-4081-5f99-905c-54246ae72867" 
-* period.start = 2022-12-07T12:00:00Z
-* extension[leavePeriod].valuePeriod.start = 2022-12-13T14:00:10Z
+* period.start = 2022-12-07T12:00:00+02:00
+* extension[leavePeriod].valuePeriod.start = 2022-12-13T14:00:10+02:00
 * serviceProvider = Reference(b79a7914-81c8-11ed-a1eb-0242ac120002)
 
 Instance: e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b
@@ -99,9 +102,9 @@ Description: "Example of MedComHospitalNotificationEncounter 'End leave'. Only V
 * class = $ActCodes#IMP 
 * subject = Reference(519d5170-81ca-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:a8e9917e-4081-5f99-905c-54246ae72867" 
-* period.start = 2022-12-07T12:00:00Z
-* extension[leavePeriod].valuePeriod.start = 2022-12-13T14:00:10Z
-* extension[leavePeriod].valuePeriod.end = 2022-12-14T15:30:00Z
+* period.start = 2022-12-07T12:00:00+02:00
+* extension[leavePeriod].valuePeriod.start = 2022-12-13T14:00:10+02:00
+* extension[leavePeriod].valuePeriod.end = 2022-12-14T15:30:00+02:00
 * serviceProvider = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
 
 Instance: f405ba2d-467a-4e92-9acc-9dc2a629760f
@@ -112,8 +115,8 @@ Description: "Example of MedComHospitalNotificationEncounter 'End hospital stay 
 * class = $ActCodes#IMP 
 * subject = Reference(6841b54e-81cd-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:b0172334-fa5e-5dfe-acb8-2a5b7aee3143" 
-* period.start = 2022-12-07T12:00:00Z
-* period.end = 2022-12-18T09:45:30Z
+* period.start = 2022-12-07T12:00:00+02:00
+* period.end = 2022-12-18T09:45:30+02:00
 * serviceProvider = Reference(8d813af0-81cd-11ed-a1eb-0242ac120002)
 
 //Embedded Encounter with admitted patient deceased
@@ -125,8 +128,8 @@ Description: "Example of MedComHospitalNotificationEncounter 'Deceased' (inpatie
 * class = $ActCodes#IMP
 * subject = Reference(t82fb8a3-6725-41e2-a615-2b1cfcfe9931)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:150d589a-d7e0-50cd-9651-fd9cad93be68"
-* period.start = 2022-12-07T12:00:00Z
-* period.end = 2022-12-09T09:45:30Z
+* period.start = 2022-12-07T12:00:00+02:00
+* period.end = 2022-12-09T09:45:30+02:00
 * serviceProvider = Reference(840b4046-81ce-11ed-a1eb-0242ac120002)
 
 
@@ -139,7 +142,7 @@ Description: "Example of MedComHospitalNotificationEncounter 'Start hospital sta
 * class = $ActCodes#EMER 
 * subject = Reference(fdc1fc66-81d0-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* period.start = 2022-12-01T10:00:04Z
+* period.start = 2022-12-01T10:00:04+02:00
 * serviceProvider = Reference(1f5882b4-81d1-11ed-a1eb-0242ac120002)
 
 Instance: kbbad98c-3310-404a-af0c-7e3739d7b49f
@@ -150,8 +153,8 @@ Description: "Example of MedComHospitalNotificationEncounter 'End hospital stay 
 * class = $ActCodes#EMER 
 * subject = Reference(6c16f41e-81d1-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:b0172334-fa5e-5dfe-acb8-2a5b7aee3143" 
-* period.start = 2022-12-01T10:00:04Z
-* period.end = 2022-12-02T22:00:09Z
+* period.start = 2022-12-01T10:00:04+02:00
+* period.end = 2022-12-02T22:00:09+02:00
 * serviceProvider = Reference(0465ec66-81d2-11ed-a1eb-0242ac120002)
 
 //Embedded Encounter with admitted patient deceased
@@ -163,8 +166,8 @@ Description: "Example of MedComHospitalNotificationEncounter 'Deceased' (acute a
 * class = $ActCodes#EMER
 * subject = Reference(384b4a58-81d2-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:150d589a-d7e0-50cd-9651-fd9cad93be68"
-* period.start = 2022-12-01T10:00:04Z
-* period.end = 2022-12-02T07:00:00Z
+* period.start = 2022-12-01T10:00:04+02:00
+* period.end = 2022-12-02T07:00:00+02:00
 * serviceProvider = Reference(66c12a92-81d2-11ed-a1eb-0242ac120002)
 
 Instance: m790f964-98d3-4852-bac8-83d2f3d035f8
@@ -175,5 +178,5 @@ Description: "Example of MedComHospitalNotificationEncounter 'Start hospital sta
 * class = $ActCodes#IMP 
 * subject = Reference(b00ea1c0-81d2-11ed-a1eb-0242ac120002)
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* period.start = 2022-12-07T12:00:00Z
+* period.start = 2022-12-07T12:00:00+02:00
 * serviceProvider = Reference(of839e87-4e44-4977-b38e-92b5a6f187b5)

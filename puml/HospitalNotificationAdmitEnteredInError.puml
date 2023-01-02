@@ -20,7 +20,7 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
     class "Bundle (MedComHospitalNotificationMessage)" as cancelB{
         id = "c83671a4-9584-11ec-b909-0242ac120002"
         type = "message"
-        timestamp = "2022-12-07T15:00:01"
+        timestamp = "2022-12-07T15:00:01+02:00"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as cancelMH{
         id = "d8749b54-1aeb-4089-8941-8d876bdffc51"
@@ -52,7 +52,7 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
         subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
+        period.start = "2022-12-07T12:00:00+02:00"
         serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
     }    
     class "Receiver (MedComMessagingOrganization)" as cancelROrg{
@@ -74,8 +74,8 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as admitPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
@@ -83,8 +83,8 @@ package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as cancelPRO{
         id = "c67ecb1c-957a-11ec-b909-0242ac120002"
         target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
-        occuredDateTime = "2022-12-07T15:00:02"
-        recorded = "2022-12-07T15:00:02"
+        occuredDateTime = "2022-12-07T15:00:02+02:00"
+        recorded = "2022-12-07T15:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "cancel-admit-inpatient"
         agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"

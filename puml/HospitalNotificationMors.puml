@@ -16,7 +16,7 @@ package "Deceased" as finished <<Frame>>{
     class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{
         id = "g099bbf3-3fca-4722-a248-bfe1aa956410"
         type = "message"
-        timestamp = "2022-12-09T09:45:31"
+        timestamp = "2022-12-09T09:45:31+02:00"
     }
     class "MessageHeader  (MedComHospitalNotificationMessageHeader)" as finishedMH{
         id = "hefc6d95-6161-4493-99c9-f359488dedb8"
@@ -49,8 +49,8 @@ package "Deceased" as finished <<Frame>>{
         subject = "Patient/t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
-        periode.end = "2022-12-09T09:45:30"
+        period.start = "2022-12-07T12:00:00+02:00"
+        periode.end = "2022-12-09T09:45:30+02:00"
         serviceProvider = "Organization/840b4046-81ce-11ed-a1eb-0242ac120002"
     } 
     class "Receiver (MedComMessagingOrganization)" as finishedROrg{
@@ -72,8 +72,8 @@ package "Deceased" as finished <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as admitfinishedPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
@@ -81,8 +81,8 @@ package "Deceased" as finished <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as finishedPRO{
         id = "g9942adb-197a-4e30-bec8-566e3a113efe"
         target = "MessageHeader/hefc6d95-6161-4493-99c9-f359488dedb8"
-        occuredDateTime = "2022-12-09T09:45:32"
-        recorded = "2022-12-09T09:45:32"
+        occuredDateTime = "2022-12-09T09:45:32+02:00"
+        recorded = "2022-12-09T09:45:32+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/840b4046-81ce-11ed-a1eb-0242ac120002"

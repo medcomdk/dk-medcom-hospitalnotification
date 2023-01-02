@@ -65,9 +65,9 @@ All profiles shall have a global unique id by using an UUID. [Read more about th
 
 The simplified examples contain the required content of a HospitalNotification message. Throughout this section different activity codes and statuses are used. [To get an overview of all the codes and statuses, please go to GitHub pages for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes).
 
-In the sections below is a limited number HospitalNotifications examplified. [More examples of a HospitalNotification message can be found here](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
+In the sections below is a limited number HospitalNotifications simplified examples. [More examples of a HospitalNotification message can be found here](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
 
-> Please notice, that in the following examples is the Provenance resources listed as an array. This is just an example of an order, resources may be listed in any order. 
+> Please notice, that in the following examples is the resources listed as an array. This is just an example of an order, resources may be listed in any order. 
 
 ##### STIN - Start hospital stay - admitted
 The simplified example below is an example of a 'Start hospital stay - admitted' HospitalNotification. In the MessageHeader there is a request for a reportOfAdmission (extension:reportOfAdmissionFlag). In the Encounter instance the status is 'in-progress', and the Encounter is populated with a start timestamp (period.start). In the Provenance instance is the activity code 'admit-inpatient'. The sender and serviceProvider organisation is the same. 

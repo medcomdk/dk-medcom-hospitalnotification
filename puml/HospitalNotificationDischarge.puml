@@ -16,7 +16,7 @@ package "End hospital stay - patient completed to home/primary sector" as finish
     class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{
         id = "f4aa42a4-86db-4e68-9b38-9dda0dfd5774"
         type = "message"
-        timestamp = "2022-12-18T09:45:31"
+        timestamp = "2022-12-18T09:45:31+02:00"
     }
     class "MessageHeader  (MedComHospitalNotificationMessageHeader)" as finishedMH{
         id = "g1affa53-c157-4080-abb0-8e681524f969"
@@ -48,8 +48,8 @@ package "End hospital stay - patient completed to home/primary sector" as finish
         subject = "Patient/6841b54e-81cd-11ed-a1eb-0242ac120002"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
-        periode.end = "2022-12-18T09:45:30"
+        period.start = "2022-12-07T12:00:00+02:00"
+        periode.end = "2022-12-18T09:45:30+02:00"
         serviceProvider = "Organization/8d813af0-81cd-11ed-a1eb-0242ac120002"
     } 
     class "Receiver (MedComMessagingOrganization)" as finishedROrg{
@@ -71,8 +71,8 @@ package "End hospital stay - patient completed to home/primary sector" as finish
     class "Provenance (MedComMessagingProvenance)" as admitfinishedPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -80,8 +80,8 @@ package "End hospital stay - patient completed to home/primary sector" as finish
     class "Provenance (MedComMessagingProvenance)" as finishedPRO{
         id = "f710698c-83eb-4c3e-81c8-fe8e40baf524"
         target = "MessageHeader/g1affa53-c157-4080-abb0-8e681524f969"
-        occuredDateTime = "2022-12-18T09:45:32"
-        recorded = "2022-12-18T09:45:32"
+        occuredDateTime = "2022-12-18T09:45:32+02:00"
+        recorded = "2022-12-18T09:45:32+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "discharge-inpatient-home"
         agent.who = "Organization/8d813af0-81cd-11ed-a1eb-0242ac120002"

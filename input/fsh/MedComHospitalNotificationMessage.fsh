@@ -42,7 +42,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STIN"
 Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay - admitted'"
 * type = $BundleType#message
-* timestamp = 2022-12-07T12:00:01Z
+* timestamp = 2022-12-07T12:00:01+02:00
 * entry[+].fullUrl = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
 * entry[=].resource = b9b4818e-02de-4cc4-b418-d20cbc7b5404
 * entry[+].fullUrl = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
@@ -62,7 +62,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - RE_STIN"
 Description: "Example of MedComHospitalNotificationMessage 'Update Start hospital stay - admitted'"
 * type = $BundleType#message
-* timestamp = 2022-12-07T14:00:01Z
+* timestamp = 2022-12-07T14:00:01+02:00
 * entry[+].fullUrl = "MessageHeader/cc47c1e2-78e6-4291-b071-f423a4f7fbfe"
 * entry[=].resource = cc47c1e2-78e6-4291-b071-f423a4f7fbfe
 * entry[+].fullUrl = "Patient/48393486-81c6-11ed-a1eb-0242ac120002"
@@ -84,7 +84,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - AN_STIN"
 Description: "Example of MedComHospitalNotificationMessage 'Cancellation Start hospital stay - admitted'"
 * type = $BundleType#message
-* timestamp = 2022-12-07T15:00:01Z
+* timestamp = 2022-12-07T15:00:01+02:00
 * entry[+].fullUrl = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
 * entry[=].resource = d8749b54-1aeb-4089-8941-8d876bdffc51
 * entry[+].fullUrl = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
@@ -105,7 +105,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STOR"
 Description: "Example of MedComHospitalNotificationMessage 'Start leave'"
 * type = $BundleType#message
-* timestamp = 2022-12-13T14:00:11Z
+* timestamp = 2022-12-13T14:00:11+02:00
 * entry[+].fullUrl = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
 * entry[=].resource = e563a2b2-bf92-4b13-bbd2-0a021a95bded
 * entry[+].fullUrl = "Patient/97404d10-81c8-11ed-a1eb-0242ac120002"
@@ -126,7 +126,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLOR"
 Description: "Example of MedComHospitalNotificationMessage 'End leave'"
 * type = $BundleType#message
-* timestamp = 2022-12-14T15:30:01Z
+* timestamp = 2022-12-14T15:30:01+02:00
 * entry[+].fullUrl = "MessageHeader/f47254da-f170-46f0-b624-4778a9c92b1f"
 * entry[=].resource = f47254da-f170-46f0-b624-4778a9c92b1f
 * entry[+].fullUrl = "Patient/519d5170-81ca-11ed-a1eb-0242ac120002"
@@ -149,7 +149,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLHJ (inpatient)"
 Description: "Example of MedComHospitalNotificationMessage 'End hospital stay - patient completed to home/primary sector' (inpatient)"
 * type = $BundleType#message
-* timestamp = 2022-12-18T09:45:31Z
+* timestamp = 2022-12-18T09:45:31+02:00
 * entry[+].fullUrl = "MessageHeader/g1affa53-c157-4080-abb0-8e681524f969"
 * entry[=].resource = g1affa53-c157-4080-abb0-8e681524f969
 * entry[+].fullUrl = "Patient/6841b54e-81cd-11ed-a1eb-0242ac120002"
@@ -173,7 +173,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - MORS (inpatient)"
 Description: "Example of MedComHospitalNotificationMessage 'Deceased' (inpatient)"
 * type = $BundleType#message
-* timestamp = 2022-12-09T09:45:31Z
+* timestamp = 2022-12-09T09:45:31+02:00
 * entry[+].fullUrl = "MessageHeader/hefc6d95-6161-4493-99c9-f359488dedb8"
 * entry[=].resource = hefc6d95-6161-4493-99c9-f359488dedb8
 * entry[+].fullUrl = "Patient/t82fb8a3-6725-41e2-a615-2b1cfcfe9931"
@@ -198,7 +198,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STAA"
 Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay - acute ambulant'"
 * type = $BundleType#message
-* timestamp = 2022-12-01T10:00:05Z
+* timestamp = 2022-12-01T10:00:05+02:00
 * entry[+].fullUrl = "MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029"
 * entry[=].resource = i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029
 * entry[+].fullUrl = "Patient/fdc1fc66-81d0-11ed-a1eb-0242ac120002"
@@ -218,7 +218,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - SLHJ (acute ambulant)"
 Description: "Example of MedComHospitalNotificationMessage 'End hospital stay - patient completed to home/primary sector' (acute ambulant)"
 * type = $BundleType#message
-* timestamp = 2022-12-02T22:00:10Z
+* timestamp = 2022-12-02T22:00:10+02:00
 * entry[+].fullUrl = "MessageHeader/m9bea09c-e662-4d59-b84f-9af570b57f42"
 * entry[=].resource = m9bea09c-e662-4d59-b84f-9af570b57f42
 * entry[+].fullUrl = "Patient/6c16f41e-81d1-11ed-a1eb-0242ac120002"
@@ -242,7 +242,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - MORS (acute ambulant)"
 Description: "Example of MedComHospitalNotificationMessage 'Deceased' (acute ambulant)"
 * type = $BundleType#message
-* timestamp = 2022-12-02T07:00:01Z
+* timestamp = 2022-12-02T07:00:01+02:00
 * entry[+].fullUrl = "MessageHeader/nabb68aa-c97b-4905-a60c-71ff3209fd51"
 * entry[=].resource = nabb68aa-c97b-4905-a60c-71ff3209fd51
 * entry[+].fullUrl = "Patient/384b4a58-81d2-11ed-a1eb-0242ac120002"
@@ -265,7 +265,7 @@ InstanceOf: MedComHospitalNotificationMessage
 Title: "HospitalNotification Message - STIN"
 Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay - admitted'. With different serviceProvider and sender Organization."
 * type = $BundleType#message
-* timestamp = 2022-12-07T12:00:01Z
+* timestamp = 2022-12-07T12:00:01+02:00
 * entry[+].fullUrl = "MessageHeader/o9b4818e-12de-5cc4-c418-d30cbc7b5404"
 * entry[=].resource = o9b4818e-12de-5cc4-c418-d30cbc7b5404
 * entry[+].fullUrl = "Patient/b00ea1c0-81d2-11ed-a1eb-0242ac120002"

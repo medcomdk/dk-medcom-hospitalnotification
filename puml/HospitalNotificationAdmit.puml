@@ -16,7 +16,7 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
     class "Bundle (MedComHospitalNotificationMessage)" as admitB{
         id = "a5e5b880-c087-4055-b9ec-99108695f81d"
         type = "message"
-        timestamp = "2022-12-07T12:00:01"
+        timestamp = "2022-12-07T12:00:01+02:00"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
         id = "b9b4818e-02de-4cc4-b418-d20cbc7b5404"
@@ -50,7 +50,7 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
         subject = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
+        period.start = "2022-12-07T12:00:00+02:00"
         serviceProvider = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }    
     class "Receiver (MedComMessagingOrganization)" as admitROrg{
@@ -72,8 +72,8 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as admitPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"

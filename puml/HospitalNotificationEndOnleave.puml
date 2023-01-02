@@ -21,7 +21,7 @@ package "End leave" as endOnleave <<Frame>> {
     class "Bundle (MedComHospitalNotificationMessage)" as endOnleaveB{
         id = "e94de8ee-bd94-475e-b454-b8fbbef8a685"
         type = "message"
-        timestamp = "2022-12-14T15:30:01"
+        timestamp = "2022-12-14T15:30:01+02:00"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as endOnleaveMH{
         id = "f47254da-f170-46f0-b624-4778a9c92b1f"
@@ -53,9 +53,9 @@ package "End leave" as endOnleave <<Frame>> {
         subject = "Patient/519d5170-81ca-11ed-a1eb-0242ac120002"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
-        extension:leavePeriod.start = "2022-12-13T14:00:10"
-        extension:leavePeriod.end = "2022-12-14T15:30:00"
+        period.start = "2022-12-07T12:00:00+02:00"
+        extension:leavePeriod.start = "2022-12-13T14:00:10+02:00"
+        extension:leavePeriod.end = "2022-12-14T15:30:00+02:00"
         serviceProvider = "Organization/5961ade8-81ca-11ed-a1eb-0242ac120002"
     }    
 class "Receiver (MedComMessagingOrganization)" as endOnleaveROrg{
@@ -77,8 +77,8 @@ class "Receiver (MedComMessagingOrganization)" as endOnleaveROrg{
     class "Provenance  (MedComMessagingProvenance)" as admitPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -86,8 +86,8 @@ class "Receiver (MedComMessagingOrganization)" as endOnleaveROrg{
     class "Provenance  (MedComMessagingProvenance)" as startOnleavePRO{
         id = "dc421d0a-cded-470f-9a53-2ddba7583baa"
         target = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
-        occuredDateTime = "2022-12-13T14:00:12"
-        recorded = "2022-12-13T14:00:12"
+        occuredDateTime = "2022-12-13T14:00:12+02:00"
+        recorded = "2022-12-13T14:00:12+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "start-leave-inpatient"
         agent.who = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
@@ -98,8 +98,8 @@ class "Receiver (MedComMessagingOrganization)" as endOnleaveROrg{
     class "Provenance  (MedComMessagingProvenance)" as endOnleavePRO{
         id = "e4db4939-7c60-4ac6-aefc-523f809ccba6"
         target = "MessageHeader/f47254da-f170-46f0-b624-4778a9c92b1f"
-        occuredDateTime = "2022-12-14T15:30:02"
-        recorded = "2022-12-14T15:30:02"
+        occuredDateTime = "2022-12-14T15:30:02+02:00"
+        recorded = "2022-12-14T15:30:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "end-leave-inpatient"
         agent.who = "Organization/5961ade8-81ca-11ed-a1eb-0242ac120002"

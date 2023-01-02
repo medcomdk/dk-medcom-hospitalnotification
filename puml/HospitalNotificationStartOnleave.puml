@@ -20,7 +20,7 @@ package "Start leave" as startOnleave <<Frame>> {
     class "Bundle (MedComHospitalNotificationMessage)" as startOnleaveB{
         id = "d3128d9b-cede-4c7f-8904-809eab322d7d"
         type = "message"
-        timestamp = "2022-12-13T15:30:01"
+        timestamp = "2022-12-13T15:30:01+02:00"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as startOnleaveMH{
         id = "e563a2b2-bf92-4b13-bbd2-0a021a95bded"
@@ -52,8 +52,8 @@ package "Start leave" as startOnleave <<Frame>> {
         subject = "Patient/97404d10-81c8-11ed-a1eb-0242ac120002"
         episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
         episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
-        period.start = "2022-12-07T12:00:00"
-        extension:leavePeriod.start = "2022-12-13T14:00:10"
+        period.start = "2022-12-07T12:00:00+02:00"
+        extension:leavePeriod.start = "2022-12-13T14:00:10+02:00"
         serviceProvider = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"
     }    
     class "Receiver (MedComMessagingOrganization)" as startOnleaveROrg{
@@ -75,8 +75,8 @@ package "Start leave" as startOnleave <<Frame>> {
     class "Provenance  (MedComMessagingProvenance)" as admitPRO{
         id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
-        occuredDateTime = "2022-12-07T12:00:02"
-        recorded = "2022-12-07T12:00:02"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
         agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -84,8 +84,8 @@ package "Start leave" as startOnleave <<Frame>> {
     class "Provenance  (MedComMessagingProvenance)" as startOnleavePRO{
         id = "dc421d0a-cded-470f-9a53-2ddba7583baa"
         target = "MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a95bded"
-        occuredDateTime = "2022-12-13T14:00:12"
-        recorded = "2022-12-13T14:00:12"
+        occuredDateTime = "2022-12-13T14:00:12+02:00"
+        recorded = "2022-12-13T14:00:12+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "start-leave-inpatient"
         agent.who = "Organization/b79a7914-81c8-11ed-a1eb-0242ac120002"

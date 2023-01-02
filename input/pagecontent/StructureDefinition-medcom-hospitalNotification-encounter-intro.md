@@ -21,20 +21,20 @@ The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvi
 
 ### Timestamps 
 
-The Encounter profile contains four timestamps each representing a different time during a hospitalisation. Common for the four timestamps is that they represent the time of the event, e.g. the patient's physical attendance at the hospital (Encounter.period.start) or a patient going on leave from the hospital  (Encounter.extension:leavePeriod.start).  
+The Encounter profile contains four timestamps each representing a different time during a hospitalisation. Common for the four timestamps is that they represent the time of the event, e.g. the patient's physical attendance at the hospital (Encounter.period.start) or a patient going on leave from the hospital (Encounter.extension:leavePeriod.start).  
 
-|FHIR-element|Description|Event|See example [MISSING LINKS]|
+|FHIR-element|Description|Event|See Encounter example|
 |-----|------|------| ------| 
-|Encounter.period.start|Start hospital stay, i.e. the actual beginning of the meeting between the health care professional and patient|Patient is physical attendant at the hospital|[HospitalNotification Encounter - STIN](https://medcomfhir.dk/ig/hospitalnotification/Encounter-a790f964-88d3-4652-bbc8-81d2f3d035f8.html) and [HospitalNotification Encounter - STAA](https://medcomfhir.dk/ig/hospitalnotification/Encounter-h2cb16ce-af8c-46f3-be9e-89406ef3e7b5.html)|
+|Encounter.period.start|Start hospital stay, i.e. the actual beginning of the meeting between the health care professional and patient|Patient's physical attendance at the hospital|[HospitalNotification Encounter - STIN](https://medcomfhir.dk/ig/hospitalnotification/Encounter-a790f964-88d3-4652-bbc8-81d2f3d035f8.html) and [HospitalNotification Encounter - STAA](https://medcomfhir.dk/ig/hospitalnotification/Encounter-h2cb16ce-af8c-46f3-be9e-89406ef3e7b5.html)|
 |Encounter.period.end|End hospital stay, i.e. the actual end of the meeting between the health care professional and patient|Patient leaves the hospital after discharge or when a patient dies (on arrival or during hospital stay)| [HospitalNotification Encounter - SLHJ (inpatient)](https://medcomfhir.dk/ig/hospitalnotification/Encounter-f405ba2d-467a-4e92-9acc-9dc2a629760f.html) and [HospitalNotification Encounter - MORS (inpatient)](https://medcomfhir.dk/ig/hospitalnotification/Encounter-gcab7218-9584-11ec-b909-0242ac120002.html)|
-|Encounter.extension:leavePeriod.start|Patient starts leave, i.e. the actual beginning of a leave-period, when the patient leaves the hospital|Patient leaves the hospital to go on leave.|[HospitalNotification Encounter - STOR](https://medcomfhir.dk/ig/hospitalnotification/Encounter-d56e9c54-23d2-43a4-816e-951d2a6e3281.html)|
-|Encounter.extension:leavePeriod.end|Patient ends leave, i.e. the actual end of a leave-period, when the patient returns to the hospital|Patient is physical attendant at the hospital after a period of leave|[HospitalNotification Encounter - SLOR](https://medcomfhir.dk/ig/hospitalnotification/Encounter-e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b.html)|
+|Encounter.extension:leavePeriod.start|Patient starts leave, i.e. the actual beginning of a leave-period|Patient leaves the hospital to go on leave.|[HospitalNotification Encounter - STOR](https://medcomfhir.dk/ig/hospitalnotification/Encounter-d56e9c54-23d2-43a4-816e-951d2a6e3281.html)|
+|Encounter.extension:leavePeriod.end|Patient ends leave, i.e. the actual end of a leave-period|Patient's physical attendance at the hospital after a period of leave|[HospitalNotification Encounter - SLOR](https://medcomfhir.dk/ig/hospitalnotification/Encounter-e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b.html)|
 
 #### Start and end of hospital stay
 As described above, the timestamp of start and end of hospital stay are included in the elements Encounter.period.start and Encounter.period.end, respectively. 
-Encounter.period.start shall always be present, despite it is not a start hospital stay HospitalNotification being sent. 
+Encounter.period.start shall always be present, also when sending a HospitalNotification describing a period of leave or end or hospital stay. 
 
-In cases where a patient is transferred to a hospital in the same region or in another region, or a hospitalisation changes from 'acute ambulant' to 'inpatient', a new start hospital stay HospitalNotification shall be sent. These three cases shall result in a new instance of the Encounter profile and be given a new Encounter.period.start representing the time of the change in the hospitalisation. All cases are described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application).
+In cases where a patient is transferred to a hospital in the same region or in another region, or a hospitalisation changes from 'acute ambulant' to 'inpatient', a new start hospital stay HospitalNotification shall be sent. These three cases shall result in a new instance of the Encounter profile which has a new Encounter.period.start representing the time of the change in the hospitalisation. All cases are described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application).
 
 #### Leave
 To express the timestamps for a period of leave, the MedComHospitalNotificationLeavePeriodExtension shall be used. 

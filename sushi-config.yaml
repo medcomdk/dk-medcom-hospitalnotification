@@ -3,20 +3,20 @@ canonical: http://medcomfhir.dk/ig/hospitalnotification
 name: MedComHospitalNotification
 title: "DK MedCom HospitalNotification"
 description: The DK MedCom HospitalNotification IG
-status: draft
-version: "2.0.0"
+status: active
+version: "3.0.0"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
-releaseLabel: Build CI
+releaseLabel: Release
 publisher:
   name: MedCom
   url: http://www.medcom.dk
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 2.0.0
-  medcom.fhir.dk.core: "current"
-  medcom.fhir.dk.messaging: "current"
-  medcom.fhir.dk.terminology: "current"
+  medcom.fhir.dk.core: 2.1.0
+  medcom.fhir.dk.messaging: 2.0.0
+  medcom.fhir.dk.terminology: 1.1.1
 
 menu:
   Table of Contents: toc.html

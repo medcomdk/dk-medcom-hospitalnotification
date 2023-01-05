@@ -1,0 +1,5 @@
+- Created MedComHospitalNotificationLeavePeriodExtension
+- References MedComHospitalNotificationLeavePeriodExtension from MedComHospitalNotificationEncounter to support timestamps for a period of leave including invariant medcom-hospitalNotification-6
+- Added description about timestamps for MedComHospitalNotificationEncounter
+- Updated description about timestamps on the homepage
+- Updated and added examples

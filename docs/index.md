@@ -45,8 +45,9 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 <!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
 [Danish: Use cases](Advisomsygehusophold_use_cases__2.0.1.pdf) 
-> Please be aware that the Use cases are in danish. 
 
+
+> Please be aware that the use cases are in danish. Use cases in English, are currently in preparation. As soon as they are ready, they will be published.
 
 
 <!-- Below, you can find the use cases in Danish and English be found:<br>
@@ -88,13 +89,13 @@ Mapping from previous OIOXML standards to the FHIR HospitalNotification standard
 
 ## 2 Test and certification
 
-Certification of a system implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. Test protocols and test scripts are used to test and certify whether systems comply to the HospitalNotification standard. 
+Certification of a system implies both an approved test protocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. Test protocols and test scripts are used to test and certify whether systems comply to the HospitalNotification standard. 
 <br>
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">Click here to find the description of test and certification of FHIR standards in MedCom. </a> 
 <br>
 
-> Note: Use cases for HospitalNotification in English, are currently in preparation. As soon as they are, ready they will be published.
+> Note: Test protocols, for HospitalNotification in English, are currently in preparation. As soon as they are ready, they will be published.
 
 **Sending a HospitalNotification message**
 * [Test protocol](FHIR-advis_afsend_testprotokol.docx) 

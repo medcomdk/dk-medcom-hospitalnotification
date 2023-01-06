@@ -88,21 +88,21 @@ Mapping from previous OIOXML standards to the FHIR HospitalNotification standard
 
 ## 2 Test and certification
 
-Certification of a system implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. 
+Certification of a system implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. Test protocols and test scripts are used to test and certify whether systems comply to the HospitalNotification standard. 
 <br>
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">Click here to find the description of test and certification of FHIR standards in MedCom. </a> 
 <br>
 
-Test protocols and test scripts are used to test and certify MedCom HospitalNotification. **Below is a draft of the test protocols presented, wherefore vendors should expect that these protocols will be updated within the nearest future. TouchStone test scripts will also be provided.**
+> Note: Use cases for HospitalNotification in English, are currently in preparation. As soon as they are, ready they will be published.
 
 **Sending a HospitalNotification message**
-* [Test protocol - draft version](FHIR-advis_afsend_ny-testprotokol_arbejdsdokument.docx) 
+* [Test protocol](FHIR-advis_afsend_testprotokol.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol - draft version](FHIR-advis_modtag_ny-testprotokol_arbejdsdokument.docx) 
+* [Test protocol](FHIR-advis_modtag_testprotokol.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

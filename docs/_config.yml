@@ -5,7 +5,7 @@ description: "MedCom standard based on HL7 FHIR"
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-version: "Version 2.0.3"
+version: "Version 3.0.0"
 fhir_version: "FHIR®© R4"
 releasenote: https://github.com/medcomdk/dk-medcom-hospitalnotification/releases
 thisurl: https://medcomdk.github.io/dk-medcom-hospitalnotification/

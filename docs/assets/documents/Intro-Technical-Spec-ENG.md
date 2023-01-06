@@ -3,17 +3,18 @@
 
 **Table of contents**
 * [1 Profiles in the HospitalNotification Standard](#1-profiles-in-the-hospitalnotification-standard)
-  * [1.1 Service Provider](#11-serviceprovider)
-  * [1.2 Report of admission](#12-report-of-admission)
-* [2 Internal Reference in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
-* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message) 
+  * [1.1 ServiceProvider and Sender](#11-serviceprovider-and-sender)
+  * [1.2  Report of admission](#12--report-of-admission)
+* [2 Internal References in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
+* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message)
+  * [3.1 STIN - Start hospital stay - admitted](#31-stin---start-hospital-stay---admitted)
+  * [3.2 STOR - Start leave](#32-stor---start-leave)
+  * [3.3 SLOR - End leave](#33-slor---end-leave)
+  * [3.4 SLHJ - End hospital stay - patient completed to home/primary sector](#34-slhj---end-hospital-stay---patient-completed-to-home-primary-sector)
+  * [3.5 MORS - Deceased](#35-mors---deceased)
+  * [3.6 AN_STIN - Cancellation Start hospital stay - admitted](#36-an-stin---cancellation-start-hospital-stay---admitted)
 * [4 Timestamps in HospitalNotification message](#4-timestamps-in-hospitalnotification-message)
-  * [4.1 Scenario 1-Patient admission starts](#41-scenario-1---patient-admission-starts)
-  * [4.2 Scenario 2-Patient admission ends](#42-scenario-2---patient-admission-ends)
-  * [4.3 Scenario 3-Patient leave starts](#43-scenario-3---patient-leave-starts)
-  * [4.4 Scenario 4-Patient leave ends](#44-scenario-4---patient-leave-ends)
-<!-- * [4 Release Notes](#4-release-notes) -->
-  
+
   >Note: In case of discrepancies between the <a href="https://medcomfhir.dk/ig/hospitalnotification/" target="_blank">MedCom HospitalNotification Implementation Guide (IG)</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
 <br>
 
@@ -123,80 +124,83 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
 
 ## 3 Examples in a HospitalNotification Message
-In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>, the required content of a HospitalNotification message is illustrated. 
-There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>  . 
-More examples for HospitalNotification in both XML and JSON format can be found on  MedComHospitalNotificationMessage profile. 
-<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples for MedCom HospitalNotificationMessage </a>
-The message in <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> illustrate an admission and discharge of a patient, respectively. In the two messages the serviceProvider and sender organisation are represented with the same instance. The patient, serviceProvider organization, sender and receiver information are identical since both messages are sent from a hospital to a municipality.
+Examples in section [3.1](#31-stin---start-hospital-stay---admitted) to [3.6](#36-an_stin---cancellation-start-hospital-stay---admitted) illustrates different types of HospitalNotifications. For each example, the type of HospitalNotification can be seen in the associated headline. In the examples the serviceProvider and sender organisation is represented by the same Organization instance. Further, the instances of resources are in the same order to create a better overview, however IT vendors cannot assume any specific order of the instances in a message.
 
-In 'Message 2: Discharge Inpatient to Home'(in <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>) there are two MedComMessagingProvenances, as all provenance instances in a stream of messages must be included, as it constitutes a messaging history. 
- 
-  > Note: IT vendors cannot assume any specific order of the resources in a message. 
+<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes" target="_blank">Click here to get an overview of the HospitalNotification types.</a>
+
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a> to <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, the required content of a HospitalNotification message is illustrated. 
+There is a difference between the required elements and MustSupport elements, as the required elements always shall be included in a message. However, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. 
+
+<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples in in XML and JSON for MedCom HospitalNotificationMessage </a>
+
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>, only one instance of the Provenance recource is included, since only one HospitalNotification has been sent. On <a href="#Fig3" rel="noopener noreferrer">Figure 3</a> to <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, two or more in instance of the Provenance recource, to reference the previously sent HospitalNotifications as well as the instance representing the current HospitalNotfication.
+
+### 3.1 STIN - Start hospital stay - admitted
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>, a simplified example of a ‘Start hospital stay - admitted’ HospitalNotification is presented. In the MessageHeader there is a request for a reportOfAdmission (extension:reportOfAdmissionFlag). In the Encounter instance the status is ‘in-progress’, and the Encounter is populated with a start timestamp (period.start). In the Provenance instance the activity code is ‘admit-inpatient’. 
 
 <figure>
-<img src="../images/HNAdmitInPat.svg" alt="Simplified example: Admit Inpatient." style="width: 55%" id="Fig2">
-<figcaption text-align = "center"><b>Figure 2: Simplified example: Admit Inpatient </b></figcaption>
+<img src="../images/HNAdmitInPat.svg" alt="Simplified example: STIN - Start hospital stay - admitted" style="width: 55%" id="Fig2">
+<figcaption text-align = "center"><b>Figure 2: Simplified example: Start hospital stay - admitted</b></figcaption>
 </figure>
 
+### 3.2 STOR - Start leave
+On <a href="#Fig3" rel="noopener noreferrer">Figure 3</a>, a simplified example of a ‘Start leave’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘onleave’, and the Encounter is populated with a start timestamp for the period of leave (extension:leavePeriod.start). In the current Provenance instance the activity code is ‘start-leave-inpatient’. 
+
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: Discharge Inpatient" style="width: 55%" id="Fig3">
-<figcaption text-align = "center"><b>Figure 3: Simplified example: Discharge  Inpatient </b></figcaption>
+<img src="../images/HNstartOnleave.svg" alt="Simplified example: STOR - Start leave" style="width: 55%" id="Fig3">
+<figcaption text-align = "center"><b>Figure 3: Simplified example: Start leave</b></figcaption>
+</figure>
+<br><br>
+
+### 3.3 SLOR - End leave
+On <a href="#Fig4" rel="noopener noreferrer">Figure 4</a>, a simplified example of a ‘End leave’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig3" rel="noopener noreferrer">Figure 3</a>. The status in the Encounter is changed from ‘onleave’ to ‘in-progress’, and the Encounter is populated with a end timestamp for the period of leave (extension:leavePeriod.end). In the current Provenance instance the activity code is ‘end-leave-inpatient’. 
+
+<figure>
+<img src="../images/HNendOnleave.svg" alt="Simplified example: SLOR - End leave" style="width: 55%" id="Fig4">
+<figcaption text-align = "center"><b>Figure 4: Simplified example: End Leave</b></figcaption>
+</figure>
+<br><br>
+
+### 3.4 SLHJ - End hospital stay - patient completed to home/primary sector
+On <a href="#Fig5" rel="noopener noreferrer">Figure 5</a>, a simplified example of a ‘End hospital stay - patient completed to home/primary sector’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end). In the current Provenance instance the activity code is ‘discharge-inpatient-home’. 
+
+<figure>
+<img src="../images/HNdischargeInPat.svg" alt="Simplified example: SLHJ - End hospital stay - patient completed to home/primary sector" style="width: 55%" id="Fig5">
+<figcaption text-align = "center"><b>Figure 5: Simplified example: End hospital stay - patient completed to home/primary sector</b></figcaption>
+</figure>
+<br><br>
+
+### 3.5 MORS - Deceased
+On <a href="#Fig6" rel="noopener noreferrer">Figure 6</a>, a simplified example of a ‘Deceased’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end) i.e. the death of the patient. The element Patient.deceased is sat to ‘true’, indicating that the patient is deceased. In the current Provenance instance the activity code is ‘admit-inpatient’, as it shall remain the current activity. 
+
+<figure>
+<img src="../images/HNdeceasedInPat.svg" alt="Simplified example: MORS - Deceased" style="width: 55%" id="Fig6">
+<figcaption text-align = "center"><b>Figure 6: Simplified example: Deceased</b></figcaption>
+</figure>
+<br><br>
+
+### 3.6 AN_STIN - Cancellation Start hospital stay - admitted
+On <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, a simplified example of a 'Cancellation Start hospital stay - admitted' HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. In the current Provenance instance the activity code is changed to ‘cancel-admit-inpatient’ and the entity.what is ‘removal’ indicating that the previous message is cancelled. 
+
+<figure>
+<img src="../images/HNcancelEnteredInError.svg" alt="Simplified example: AN_STIN - Cancellation Start hospital stay - admitted" style="width: 55%" id="Fig7">
+<figcaption text-align = "center"><b>Figure 7: Simplified example: Cancellation Start hospital stay - admitted</b></figcaption>
 </figure>
 <br><br>
 
 
-## 4 Timestamps occured in HospitalNotification message
+## 4 Timestamps in HospitalNotification message
 
-The HospitalNotification message contains five timestamps:
+HospitalNotification messages are generated and sent based on real-time registration in the EPR/PAS system. In case the EPR allows future registrations of planned contacts or a period of leave, the HospitalNotifications shall only be triggered when the event occurs, i.e. at the patient’s physical attendance, as described in the [Clinical guidelines for application](https://medcomdk.github.io/dk-medcom-hospitalnotification/#11-clinical-guidelines-for-application).
 
-* Encounter.period.start
-* Encounter.period.end
-* Bundle.timestamp
-* Provenance.occuredDateTime[x]
-* Provenance.recorded.
- 
+The HospitalNotification message contains several timestamps. These timestamps are present in the profiles MedComHospitalNotificationEncounter, MedComHospitalNotificationMessage and MedComMessagingProvenance and have different purposes:
 
-The five timestamps are registered at different times during the patient's hospital stay.
+* Encounter-timestamps represent the time of an event. For receiving systems, this is the timestamps that must be displayed for the end user as ‘date and time of start/end for the event’. <a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html" target="_blank">The usage of these timestamps is more thoroughly described in the IG on the page for the MedComHospitalNotificationEncounter profile</a>.
+* Bundle.timestamp represents the time bundle is generated. 
+* Provenance.occuredDateTime[x] represents the time the HospitalNotification is sent, in a human-readable time
+* Provenance.recorded represents the time the HospitalNotification is sent, in a machine-readable time
 
-### 4.1 Scenario 1 - Patient admission starts
-E.i. during patient admission, the timestamps are registered in the following way (see <a href="#Fig4">Figure 4</a>):
 
-When the patient arrives at the hospital, the hospital staff admits the patient and the first timestamp, Encounter.period.start,  is registered. Please notice that the Encounter.period.start does not change during the citizen's hospital stay.
-
-Immediately after the hospital staff admits the patient to the hospital, the HospitalNotification for admission is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable timestamp.
-
-<figure>
-<img src="../images/HN_Time_Stamp_admission.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for admission start" style="width: 55%" id="Fig4">
-<figcaption text-align = "center"><b>Figure 4: Timestamps registration  in HospitalNotfication for Patient admission start </b></figcaption>
-</figure> 
-
-### 4.2 Scenario 2 - Patient admission ends
-When the patient is ready to be discharged from the hospital, the hospital staff completes the discharge form and the Encounter.period.end is registered. Immediately after the hospital staff completed the discharge form, a HospitalNotification for discharge is generated and the Bundle.timestamp for the discharge HospitalNotification is registered. When the discharge HospitalNotification is sent to the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable timestamp.
-
-The process of timestamps registration when patient's admission ends is visualised in <a href="#Fig5"> Figure 5</a>.
-
-<figure>
-<img src="../images/HN_Time_Stamp_admission_end.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for patient adsmission end" style="width: 55%" id="Fig5">
-<figcaption text-align = "center"><b>Figure 5: Timestamps registration in HospitalNotification for Patient admission end. </b></figcaption>
-</figure> 
-
-### 4.3 Scenario 3 - Patient leave starts
-In case of that, the patient takes leave from the hospital admission the hospital staff register leave in the system (see <a href="#Fig5"> Figure 6</a>).Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleave is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
-
-<figure>
-<img src="../images/HN_Time_Stamp_patientOnLeave.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for onleave start" style="width: 55%" id="Fig6">
-<figcaption text-align = "center"><b>Figure 6: Timestamps registration in HospitalNotification for onleave start. </b></figcaption>
-</figure> 
-
-### 4.4 Scenario 4 - Patient leave ends
-When the patient returns to the hospital from his leave,the hospital staff register the return and the patient continues his admission (see <a href="#Fig7"> Figure 7</a>). Immediately after the hospital staff has registered the patient's leave, the HospitalNotification for onleav is generated and Bundle.timestamp is registered. When the HospitalNotification is sent to the municipality the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human-readable, where Provenance.recorded is a system readable timestamp. 
-Please notice that the Encounter.period.start stays unchanged when the patient takes leave and the Encounter.period.end is not registered. The Encounter.period.end is ONLY registered when the patient ends the admission. 
-<figure>
-<img src="../images/HN_Time_Stamp_patientOnLeave_back.svg" alt="Illustration of how timestamps are registred in HospitalNotification Message for onleave end" style="width: 55%" id="Fig7">
-<figcaption text-align = "center"><b>Figure 7: Timestamps registration in HospitalNotification for onleave end. </b></figcaption>
-</figure> 
-
-<br><br>
 <!--  -->
 
 <!-- ## 4 Release Notes 

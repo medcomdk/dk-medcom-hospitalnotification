@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1497px" preserveAspectRatio="none" style="width:759px;height:1497px;background:#FFFFFF;" version="1.1" viewBox="0 0 759 1497" width="759px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="440" x="152.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="430" x="157.5" y="24.5332">Simplified example: Cancellation Start hospital stay - admitted</text><!--MD5=[89aab9ccae0ad4c10abfd3158e14a105]
+cluster cancel--><g id="cluster_cancel"><rect fill="none" height="1446" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="746" x="7" y="45.6094"/><path d="M307,45.6094 L307,56.2188 L297,66.2188 L7,66.2188 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="290" x="10" y="61.1426">Cancellation Start hospital stay - admitted</text></g><!--MD5=[9c4c787fc80e9639e4969afb5347adbd]
+class cancelB--><g id="elem_cancelB"><rect codeLine="19" fill="#FFFFFF" height="88.4375" id="cancelB" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="81.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="235" y="101.1426">Bundle (MedComHospitalNotificationMessage)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="109.2188" y2="109.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="29" y="127.752">id = "c83671a4-9584-11ec-b909-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="29" y="145.3613">type = "message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="29" y="162.9707">timestamp = "2022-12-07T15:00:01+02:00"</text></g><!--MD5=[3295c9b529d258ca96e57881573292eb]
+class cancelMH--><g id="elem_cancelMH"><rect codeLine="24" fill="#FFFFFF" height="211.7031" id="cancelMH" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="179.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="395" x="182.5" y="199.1426">MessageHeader (MedComHospitalNotificationMessageHeader)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="207.2188" y2="207.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="29" y="225.752">id = "d8749b54-1aeb-4089-8941-8d876bdffc51"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="624" x="29" y="243.3613">event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="29" y="260.9707">event.code = "hospital-notification-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="702" x="29" y="278.5801">destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="29" y="296.1895">destination.use.code = "primary"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="460" x="29" y="313.7988">destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="564" x="29" y="331.4082">destination.receiver.reference = "Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="493" x="29" y="349.0176">sender.reference = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="434" x="29" y="366.627">source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="403" x="29" y="384.2363">focus = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"</text></g><!--MD5=[58c019352c2432c238b4217051ba5a54]
+class cancelPT--><g id="elem_cancelPT"><rect codeLine="36" fill="#FFFFFF" height="158.875" id="cancelPT" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="401.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="285.5" y="421.1426">Patient (MedComCorePatient)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="429.2188" y2="429.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="29" y="447.752">id = "d6eeaca6-81c6-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="29" y="465.3613">identifier.system = "urn:oid:1.2.208.176.1.2"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="29" y="482.9707">identifier.value = "2509479989"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="29" y="500.5801">name.use = "official"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="29" y="518.1895">name.family = "Elmer"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="29" y="535.7988">name.given[0] = "Bruno"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="29" y="553.4082">name.given[1] = "Test"</text></g><!--MD5=[04112e82ba0d964cdd1fd0b591869556]
+class cancelENC--><g id="elem_cancelENC"><rect codeLine="45" fill="#FFFFFF" height="211.7031" id="cancelENC" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="570.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="220.5" y="590.1426">Encounter (MedComHospitalNotificationEncounter)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="598.2188" y2="598.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="311" x="29" y="616.752">id = "c9782061-ce63-41b5-8be6-655812d23332"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="682" x="29" y="634.3613">status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="29" y="651.9707">status.code = "entered-in-error"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="425" x="29" y="669.5801">class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="29" y="687.1895">class.code = "IMP"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="392" x="29" y="704.7988">subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="594" x="29" y="722.4082">episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="539" x="29" y="740.0176">episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="29" y="757.627">period.start = "2022-12-07T12:00:00+02:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="482" x="29" y="775.2363">serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"</text></g><!--MD5=[c1ee5d1e60cd54b4e03dd4caa59d84dc]
+class cancelROrg--><g id="elem_cancelROrg"><rect codeLine="57" fill="#FFFFFF" height="141.2656" id="cancelROrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="792.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="243" y="812.1426">Receiver (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="820.2188" y2="820.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="29" y="838.752">id = "eefc2dfa-81c6-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29" y="856.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29" y="873.9707">identifier[0].value = "5790001348120"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29" y="891.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29" y="909.1895">identifier[1].value = "953741000016009"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="29" y="926.7988">name = "Plejecenter Herlev"</text></g><!--MD5=[276b8b0c80623393b47be3359e980ff4]
+class cancelSOrg--><g id="elem_cancelSOrg"><rect codeLine="65" fill="#FFFFFF" height="141.2656" id="cancelSOrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="943.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="248" y="963.1426">Sender (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="971.2188" y2="971.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="311" x="29" y="989.752">id = "05266a00-81c7-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29" y="1007.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29" y="1024.9707">identifier[0].value = "5790000209354"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29" y="1042.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29" y="1060.1895">identifier[1].value = "265161000016000"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="360" x="29" y="1077.7988">name = "Hjerteafdelingen på Herlev og Gentofte hospital"</text></g><!--MD5=[2368394ca3ef2fd76d3f052c2d010166]
+class admitPRO--><g id="elem_admitPRO"><rect codeLine="73" fill="#FFFFFF" height="158.875" id="admitPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="1094.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="235" y="1114.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="1122.2188" y2="1122.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="29" y="1140.752">id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="442" x="29" y="1158.3613">target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="321" x="29" y="1175.9707">occuredDateTime = "2022-12-07T12:00:02+02:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="29" y="1193.5801">recorded = "2022-12-07T12:00:02+02:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29" y="1211.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="29" y="1228.7988">activity.code = "admit-inpatient"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="441" x="29" y="1246.4082">agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"</text></g><!--MD5=[6a63071bbd1240e3093ba5b0567ecdd8]
+class cancelPRO--><g id="elem_cancelPRO"><rect codeLine="82" fill="#FFFFFF" height="211.7031" id="cancelPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="714" x="23" y="1263.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="235" y="1283.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24" x2="736" y1="1291.2188" y2="1291.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="29" y="1309.752">id = "c67ecb1c-957a-11ec-b909-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="437" x="29" y="1327.3613">target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="321" x="29" y="1344.9707">occuredDateTime = "2022-12-07T15:00:02+02:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="29" y="1362.5801">recorded = "2022-12-07T15:00:02+02:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29" y="1380.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="243" x="29" y="1397.7988">activity.code = "cancel-admit-inpatient"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="449" x="29" y="1415.4082">agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="448" x="29" y="1433.0176">entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="29" y="1450.627">entity.role.value = "removal"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="472" x="29" y="1468.2363">entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"</text></g><!--MD5=[7485026127ad8884a11178a40f83945d]
+link cancelB to cancelMH--><!--MD5=[0afe9d959afe5b5653546b11e1ac6476]
+link cancelMH to cancelPT--><!--MD5=[d3f0a871e483079c7f6f778ccd8d41e5]
+link cancelPT to cancelENC--><!--MD5=[51b26afd67893d8015d1259fa7a81b87]
+link cancelENC to cancelROrg--><!--MD5=[a4dacbf51e43cdf542a0fe6ac1ce230d]
+link cancelROrg to cancelSOrg--><!--MD5=[9e969d95e7d481be6fdb2c695f5c1461]
+link cancelSOrg to admitPRO--><!--MD5=[8f079a6438a84102f2758350a88cc8fe]
+link admitPRO to cancelPRO--><!--MD5=[87deff6b6cc6800102320c6e98d956ff]
+@startuml HNcancelEnteredInError
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Cancellation Start hospital stay - admitted
+
+'Message 1: Admit inpatient
+package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as cancelB{
+        id = "c83671a4-9584-11ec-b909-0242ac120002"
+        type = "message"
+        timestamp = "2022-12-07T15:00:01+02:00"
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as cancelMH{
+        id = "d8749b54-1aeb-4089-8941-8d876bdffc51"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "hospital-notification-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+        sender.reference = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"
+    }
+    class "Patient (MedComCorePatient)" as cancelPT{
+        id = "d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as cancelENC{
+        id = "c9782061-ce63-41b5-8be6-655812d23332"
+        status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
+        status.code = "entered-in-error"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = "2022-12-07T12:00:00+02:00"
+        serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+    }    
+    class "Receiver (MedComMessagingOrganization)" as cancelROrg{
+        id = "eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+        name = "Plejecenter Herlev"
+    }
+    class "Sender (MedComMessagingOrganization)" as cancelSOrg{
+        id = "05266a00-81c7-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+        name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
+    }
+    class "Provenance (MedComMessagingProvenance)" as admitPRO{
+        id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
+        target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "admit-inpatient"
+        agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
+    }
+    class "Provenance (MedComMessagingProvenance)" as cancelPRO{
+        id = "c67ecb1c-957a-11ec-b909-0242ac120002"
+        target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
+        occuredDateTime = "2022-12-07T15:00:02+02:00"
+        recorded = "2022-12-07T15:00:02+02:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "cancel-admit-inpatient"
+        agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "removal"
+        entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+    }
+
+cancelB -[hidden]- cancelMH
+cancelMH-[hidden]-cancelPT
+cancelPT-[hidden]-cancelENC
+cancelENC-[hidden]-cancelROrg
+cancelROrg-[hidden]-cancelSOrg
+cancelSOrg-[hidden]-admitPRO
+admitPRO-[hidden]-cancelPRO
+}
+
+@enduml
+
+@startuml HNcancelEnteredInError
+
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+title Simplified example: Cancellation Start hospital stay - admitted
+
+package "Cancellation Start hospital stay - admitted" as cancel <<Frame>>{
+    class "Bundle (MedComHospitalNotificationMessage)" as cancelB{
+        id = "c83671a4-9584-11ec-b909-0242ac120002"
+        type = "message"
+        timestamp = "2022-12-07T15:00:01+02:00"
+    }
+    class "MessageHeader (MedComHospitalNotificationMessageHeader)" as cancelMH{
+        id = "d8749b54-1aeb-4089-8941-8d876bdffc51"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "hospital-notification-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+        sender.reference = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus = "Encounter/c9782061-ce63-41b5-8be6-655812d23332"
+    }
+    class "Patient (MedComCorePatient)" as cancelPT{
+        id = "d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Encounter (MedComHospitalNotificationEncounter)" as cancelENC{
+        id = "c9782061-ce63-41b5-8be6-655812d23332"
+        status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
+        status.code = "entered-in-error"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/d6eeaca6-81c6-11ed-a1eb-0242ac120002"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
+        period.start = "2022-12-07T12:00:00+02:00"
+        serviceProvider = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+    }    
+    class "Receiver (MedComMessagingOrganization)" as cancelROrg{
+        id = "eefc2dfa-81c6-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+        name = "Plejecenter Herlev"
+    }
+    class "Sender (MedComMessagingOrganization)" as cancelSOrg{
+        id = "05266a00-81c7-11ed-a1eb-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+        name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
+    }
+    class "Provenance (MedComMessagingProvenance)" as admitPRO{
+        id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
+        target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        occuredDateTime = "2022-12-07T12:00:02+02:00"
+        recorded = "2022-12-07T12:00:02+02:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "admit-inpatient"
+        agent.who = "Organization/d6ed6725-1aec-42ad-829d-f7074c3914f3"
+    }
+    class "Provenance (MedComMessagingProvenance)" as cancelPRO{
+        id = "c67ecb1c-957a-11ec-b909-0242ac120002"
+        target = "MessageHeader/d8749b54-1aeb-4089-8941-8d876bdffc51"
+        occuredDateTime = "2022-12-07T15:00:02+02:00"
+        recorded = "2022-12-07T15:00:02+02:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "cancel-admit-inpatient"
+        agent.who = "Organization/05266a00-81c7-11ed-a1eb-0242ac120002"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "removal"
+        entity.what = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+    }
+
+cancelB -[hidden]- cancelMH
+cancelMH-[hidden]-cancelPT
+cancelPT-[hidden]-cancelENC
+cancelENC-[hidden]-cancelROrg
+cancelROrg-[hidden]-cancelSOrg
+cancelSOrg-[hidden]-admitPRO
+admitPRO-[hidden]-cancelPRO
+}
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: da
+Country: DK
+--></g></svg>

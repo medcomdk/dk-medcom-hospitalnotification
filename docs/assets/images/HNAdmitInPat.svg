@@ -26,6 +26,9 @@ hide empty members
 skinparam SameClassWidth true
 skinparam Ranksep 10
 
+'title
+title Simplified example: Start hospital stay
+
 'Message 1: Admit inpatient
 package "Start hospital stay - admitted" as admit <<Frame>>{
     class "Bundle (MedComHospitalNotificationMessage)" as admitB{

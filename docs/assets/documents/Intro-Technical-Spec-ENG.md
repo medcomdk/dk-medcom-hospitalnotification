@@ -6,7 +6,7 @@
   * [1.1 ServiceProvider and Sender](#11-serviceprovider-and-sender)
   * [1.2  Report of admission](#12--report-of-admission)
 * [2 Internal References in a HospitalNotification Message](#2-internal-references-in-a-hospitalnotification-message)
-_ [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message)
+* [3 Examples in a HospitalNotification Message](#3-examples-in-a-hospitalnotification-message)
   * [3.1 STIN - Start hospital stay - admitted](#31-stin---start-hospital-stay---admitted)
   * [3.2 STOR - Start leave](#32-stor---start-leave)
   * [3.3 SLOR - End leave](#33-slor---end-leave)
@@ -124,14 +124,19 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
 
 ## 3 Examples in a HospitalNotification Message
-In the <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a>, the required content of a HospitalNotification message is illustrated. 
-There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Examples for HospitalNotification in XML and JSON format can be found on MedComHospitalNotificationMessage profile. 
-<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples for MedCom HospitalNotificationMessage </a>
+Examples in section [3.1](#31-stin---start-hospital-stay---admitted) to [3.6](#36-an_stin---cancellation-start-hospital-stay---admitted) illustrates different types of HospitalNotifications. For each example, the type of HospitalNotification can be seen in the associated headline. In the examples the serviceProvider and sender organisation is represented by the same Organization instance. Further, the instances of resources are in the same order to create a better overview, however IT vendors cannot assume any specific order of the instances in a message.
 
-The examples below illustrated different types of HospitalNotifications, which reflects different activity codes and statuses. <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes" target="_blank">Click here to get an overview of the HospitalNotification types.</a> For each example the type of HospitalNotification can be seen in the associated headline. In the examples the serviceProvider and sender organisation is represented by the same Organization instance. Further, are the instances in the same order to create a better overview, however IT vendors cannot assume any specific order of the resources in a message.
+<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes" target="_blank">Click here to get an overview of the HospitalNotification types.</a>
+
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a> to <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, the required content of a HospitalNotification message is illustrated. 
+There is a difference between the required elements and MustSupport elements, as the required elements always shall be included in a message. However, MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. 
+
+<a href="https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html" target="_blank">Click here to see examples in in XML and JSON for MedCom HospitalNotificationMessage </a>
+
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>, only one instance of the Provenance recource is included, since only one HospitalNotification has been sent. On <a href="#Fig3" rel="noopener noreferrer">Figure 3</a> to <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, two or more in instance of the Provenance recource, to reference the previously sent HospitalNotifications as well as the instance representing the current HospitalNotfication.
 
 ### 3.1 STIN - Start hospital stay - admitted
-The simplified example below is an example of a ‘Start hospital stay - admitted’ HospitalNotification. In the MessageHeader there is a request for a reportOfAdmission (extension:reportOfAdmissionFlag). In the Encounter instance the status is ‘in-progress’, and the Encounter is populated with a start timestamp (period.start). In the Provenance instance is the activity code ‘admit-inpatient’. 
+On <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>, a simplified example of a ‘Start hospital stay - admitted’ HospitalNotification is presented. In the MessageHeader there is a request for a reportOfAdmission (extension:reportOfAdmissionFlag). In the Encounter instance the status is ‘in-progress’, and the Encounter is populated with a start timestamp (period.start). In the Provenance instance the activity code is ‘admit-inpatient’. 
 
 <figure>
 <img src="../images/HNAdmitInPat.svg" alt="Simplified example: STIN - Start hospital stay - admitted" style="width: 55%" id="Fig2">
@@ -139,46 +144,46 @@ The simplified example below is an example of a ‘Start hospital stay - admitte
 </figure>
 
 ### 3.2 STOR - Start leave
-The simplified example below is an example of a ‘Start leave’ HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from ‘in-progress’ to ‘onleave’, and the Encounter is populated with a start timestamp for the period of leave (extension:leavePeriod.start). In the Provenance instance is the activity code ‘start-leave-inpatient’. 
+On <a href="#Fig3" rel="noopener noreferrer">Figure 3</a>, a simplified example of a ‘Start leave’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘onleave’, and the Encounter is populated with a start timestamp for the period of leave (extension:leavePeriod.start). In the current Provenance instance the activity code is ‘start-leave-inpatient’. 
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: STOR - Start leave" style="width: 55%" id="Fig3">
+<img src="../images/HNstartOnleave.svg" alt="Simplified example: STOR - Start leave" style="width: 55%" id="Fig3">
 <figcaption text-align = "center"><b>Figure 3: Simplified example: Start leave</b></figcaption>
 </figure>
 <br><br>
 
 ### 3.3 SLOR - End leave
-The simplified example below is an example of a ‘End leave’ HospitalNotification which is sent in continuation of simplified example number 2. The status in the Encounter is changed from ‘onleave’ to ‘in-progress’, and the Encounter is populated with a end timestamp for the period of leave (extension:leavePeriod.end). In the Provenance instance is the activity code ‘end-leave-inpatient’. 
+On <a href="#Fig4" rel="noopener noreferrer">Figure 4</a>, a simplified example of a ‘End leave’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig3" rel="noopener noreferrer">Figure 3</a>. The status in the Encounter is changed from ‘onleave’ to ‘in-progress’, and the Encounter is populated with a end timestamp for the period of leave (extension:leavePeriod.end). In the current Provenance instance the activity code is ‘end-leave-inpatient’. 
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: SLOR - End leave" style="width: 55%" id="Fig4">
+<img src="../images/HNendOnleave.svg" alt="Simplified example: SLOR - End leave" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 4: Simplified example: End Leave</b></figcaption>
 </figure>
 <br><br>
 
 ### 3.4 SLHJ - End hospital stay - patient completed to home/primary sector
-The simplified example below is an example of a ‘End hospital stay - patient completed to home/primary sector’ HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end). In the Provenance instance is the activity code ‘discharge-inpatient-home’. 
+On <a href="#Fig5" rel="noopener noreferrer">Figure 5</a>, a simplified example of a ‘End hospital stay - patient completed to home/primary sector’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end). In the current Provenance instance the activity code is ‘discharge-inpatient-home’. 
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: SLHJ - End hospital stay - patient completed to home/primary sector" style="width: 55%" id="Fig5">
+<img src="../images/HNdischargeInPat.svg" alt="Simplified example: SLHJ - End hospital stay - patient completed to home/primary sector" style="width: 55%" id="Fig5">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: End hospital stay - patient completed to home/primary sector</b></figcaption>
 </figure>
 <br><br>
 
 ### 3.5 MORS - Deceased
-The simplified example below is an example of a ‘Deceased’ HospitalNotification which is sent in continuation of simplified example number 1. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end) i.e. the death of the patient. The element Patient.deceased is sat to ‘true’, indicating that the patient is deceased. In the Provenance instance is the activity code ‘admit-inpatient’, as it shall remain the current activity. 
+On <a href="#Fig6" rel="noopener noreferrer">Figure 6</a>, a simplified example of a ‘Deceased’ HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. The status in the Encounter is changed from ‘in-progress’ to ‘finished’, and the Encounter is populated with a timestamp indicating end of the encounter (period.end) i.e. the death of the patient. The element Patient.deceased is sat to ‘true’, indicating that the patient is deceased. In the current Provenance instance the activity code is ‘admit-inpatient’, as it shall remain the current activity. 
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: MORS - Deceased" style="width: 55%" id="Fig6">
+<img src="../images/HNdeceasedInPat.svg" alt="Simplified example: MORS - Deceased" style="width: 55%" id="Fig6">
 <figcaption text-align = "center"><b>Figure 6: Simplified example: Deceased</b></figcaption>
 </figure>
 <br><br>
 
 ### 3.6 AN_STIN - Cancellation Start hospital stay - admitted
-The simplified example below is an example of a ‘Cancellation Start hospital stay - admitted’ HospitalNotification which is sent in continuation of simplified example number 1. In the Provenance instance the activity code is changed to ‘cancel-admit-inpatient’ and the entity.what is now ‘removal’ indicating that the previous message is cancelled. 
+On <a href="#Fig7" rel="noopener noreferrer">Figure 7</a>, a simplified example of a 'Cancellation Start hospital stay - admitted' HospitalNotification is presented, which is sent in continuation of the simplified example in <a href="#Fig2" rel="noopener noreferrer">Figure 2</a>. In the current Provenance instance the activity code is changed to ‘cancel-admit-inpatient’ and the entity.what is ‘removal’ indicating that the previous message is cancelled. 
 
 <figure>
-<img src="../images/HNAdmitFinish.svg" alt="Simplified example: AN_STIN - Cancellation Start hospital stay - admitted" style="width: 55%" id="Fig7">
+<img src="../images/HNcancelEnteredInError.svg" alt="Simplified example: AN_STIN - Cancellation Start hospital stay - admitted" style="width: 55%" id="Fig7">
 <figcaption text-align = "center"><b>Figure 7: Simplified example: Cancellation Start hospital stay - admitted</b></figcaption>
 </figure>
 <br><br>

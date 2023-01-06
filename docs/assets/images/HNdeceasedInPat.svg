@@ -28,6 +28,8 @@ hide empty members
 skinparam SameClassWidth true
 skinparam Ranksep 10
 
+'title
+title Simplified example: Deceased
 
 package "Deceased" as finished <<Frame>>{
     class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{

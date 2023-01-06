@@ -33,7 +33,7 @@ Comments to the table:
 <div style="overflow-x:auto;">
 <table class="tg">
 <caption style="color:#2c415c;
-  font-weight:bold"> Tabel 1: Overviwe of HospitalNotification codes  </caption>
+  font-weight:bold"> Tabel 1: Overview of HospitalNotification codes  </caption>
 <thead>
   <tr>
     <th class="tg-p3tq"><span style="font-weight:bold">Use case code</span></th>
@@ -69,7 +69,7 @@ Comments to the table:
     <td class="tg-5pia">Annullering Start sygehusophold - akut ambulant</td>
     <td class="tg-5pia">Cancellation Start hospital stay - acute ambulant</td>
     <td class="tg-5pia">EMER</td>
-    <td class="tg-5pia">cancelled/ entered-in-error</td>
+    <td class="tg-5pia">entered-in-error</td>
     <td class="tg-5pia">cancel-admit-emergency</td>
     <td class="tg-5pia"></td>
   </tr>
@@ -96,7 +96,7 @@ Comments to the table:
     <td class="tg-m5mm">Annullering Start sygehusophold - indlagt</td>
     <td class="tg-m5mm">Cancellation Start hospital stay - admitted</td>
     <td class="tg-m5mm">IMP</td>
-    <td class="tg-m5mm">cancelled/ entered-in-error</td>
+    <td class="tg-m5mm">entered-in-error</td>
     <td class="tg-m5mm">cancel-admit-inpatient</td>
     <td class="tg-m5mm"></td>
   </tr>

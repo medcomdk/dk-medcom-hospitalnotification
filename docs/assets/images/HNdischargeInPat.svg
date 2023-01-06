@@ -28,6 +28,8 @@ hide empty members
 skinparam SameClassWidth true
 skinparam Ranksep 10
 
+'title
+title Simplified example: End hospital stay
 
 package "End hospital stay - patient completed to home/primary sector" as finished <<Frame>>{
     class "Bundle  (MedComHospitalNotificationMessage)" as finishedB{

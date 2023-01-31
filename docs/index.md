@@ -44,7 +44,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
-[Danish: Use cases](Advisomsygehusophold_use_cases__2.0.1.pdf) 
+[Danish: Use cases](Advisomsygehusophold_use_cases__3.0.0.pdf) 
 
 
 > Please be aware that the use cases are in danish. Use cases in English, are currently in preparation. As soon as they are ready, they will be published.

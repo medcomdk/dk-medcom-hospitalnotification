@@ -44,7 +44,7 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
-[Danish: Use cases](Advisomsygehusophold_use_cases__2.0.1.pdf) 
+[Danish: Use cases](Advisomsygehusophold_use_cases__3.0.0.pdf) 
 
 
 > Please be aware that the use cases are in danish. Use cases in English, are currently in preparation. As soon as they are ready, they will be published.
@@ -98,12 +98,12 @@ Certification of a system implies both an approved test protocol and run-through
 > Note: Test protocols, for HospitalNotification in English, are currently in preparation. As soon as they are ready, they will be published.
 
 **Sending a HospitalNotification message**
-* [Test protocol](FHIR-advis_afsend_testprotokol.docx) 
+* [Test protocol](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol](FHIR-advis_modtag_testprotokol.docx) 
+* [Test protocol](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

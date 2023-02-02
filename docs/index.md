@@ -98,12 +98,12 @@ Certification of a system implies both an approved test protocol and run-through
 > Note: Test protocols, for HospitalNotification in English, are currently in preparation. As soon as they are ready, they will be published.
 
 **Sending a HospitalNotification message**
-* [Test protocol](FHIR-advis_afsend_testprotokol.docx) 
+* [Test protocol](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol](FHIR-advis_modtag_testprotokol.docx) 
+* [Test protocol](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

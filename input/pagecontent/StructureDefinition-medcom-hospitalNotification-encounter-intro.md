@@ -38,7 +38,7 @@ When a locally defined identifier for the specific admission/contact is included
   </episodeOfCare>
 ```
 
-[A simplified example with two episode of care identifieres can be found here](./hospitalnotification/HospitalNotificationAdmitTwoEOCid.svg) and [a FHIR example with two episode of care identifieres can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-n73ccf30-80b9-4bd2-bf50-1ac1914498f0.html) Other examples will have just one episode of care identifier.
+[A simplified example with two episode of care identifieres can be found here](./hospitalnotification/HNAdmitInPatEoC.svg) and [a FHIR example with two episode of care identifieres can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-n73ccf30-80b9-4bd2-bf50-1ac1914498f0.html) Other examples will have just one episode of care identifier.
 
 ### Timestamps 
 

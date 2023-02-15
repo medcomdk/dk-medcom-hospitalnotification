@@ -1,5 +1,3 @@
-- Created MedComHospitalNotificationLeavePeriodExtension
-- References MedComHospitalNotificationLeavePeriodExtension from MedComHospitalNotificationEncounter to support timestamps for a period of leave including invariant medcom-hospitalNotification-6
-- Added description about timestamps for MedComHospitalNotificationEncounter
-- Updated description about timestamps on the homepage
-- Updated and added examples
+- Description about EpisodeOfCare-identifier (Danish: Forløbsid) is added on the page for MedComHospitalNotificationEncounter
+- EpisodeOfCare-identifier is updated in examples to reflect the actual use better.
+- Description about download is added on the Home page

@@ -118,6 +118,9 @@ On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced 
 #### Dependencies
 This IG has a dependency to the [MedCom Core IG](http://medcomfhir.dk/ig/core/), [MedCom Messaging IG](http://medcomfhir.dk/ig/messaging/) and [DK-core v. 2.0.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). This is currently reflected in MedComHospitalNotificationMessage, MedComHospitalNotificationMessageHeader and MedComHospitalNotificationEncounter which all inherits from profiles defined in MedComCore or MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreOrganization and MedComMessagingOrganization.
 
+### Download
+Content in this IG can be downloaded in npm format under [Download](https://medcomfhir.dk/ig/hospitalnotification/downloads.html). This can be used to validate locale FHIR profiles against.
+
 ### Documentation
 
 On the [introduction page for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/) the following documentation can be found: 

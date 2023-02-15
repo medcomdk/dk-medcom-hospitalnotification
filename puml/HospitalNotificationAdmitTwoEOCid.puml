@@ -1,4 +1,4 @@
-@startuml HNAdmitInPat
+@startuml HNAdmitInPatEoC
 
 'layout
 skinparam class {
@@ -14,26 +14,26 @@ skinparam Ranksep 10
 'Message 1: Admit inpatient
 package "Start hospital stay - admitted" as admit <<Frame>>{
     class "Bundle (MedComHospitalNotificationMessage)" as admitB{
-        id = "a5e5b880-c087-4055-b9ec-99108695f81d"
+        id = "n73ccf30-80b9-4bd2-bf50-1ac1914498f0"
         type = "message"
         timestamp = "2022-12-07T12:00:01+02:00"
     }
     class "MessageHeader (MedComHospitalNotificationMessageHeader)" as admitMH{
-        id = "b9b4818e-02de-4cc4-b418-d20cbc7b5404"
+        id = "1ca19ddf-31bc-4597-8739-968c38dd88f8"
         event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
         event.code = "hospital-notification-message"
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
-        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        destination.receiver.reference = "Organization/a8ec5ae1-e324-453d-9d9f-39ffe41f308a"
+        sender.reference = "Organization/2565d3de-082e-4368-9160-4c719071026b"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
         extension:reportOfAdmissionFlag = "true"
-        extension:reportofAdmissionRecipient = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
-        focus = "Encounter/a790f964-88d3-4652-bbc8-81d2f3d035f8"
+        extension:reportofAdmissionRecipient = "Organization/2565d3de-082e-4368-9160-4c719071026b"
+        focus = "Encounter/ne70f2b8-a924-11ed-afa1-0242ac120002"
     }
     class "Patient (MedComCorePatient)" as admitPT{
-        id = "t33cef33-3626-422b-955d-d506aaa65fe1"
+        id = "545fd5e6-a924-11ed-afa1-0242ac120002"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -42,19 +42,21 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
         name.given[1] = "Test"
     }
     class "Encounter (MedComHospitalNotificationEncounter)" as admitENC{
-        id = "a790f964-88d3-4652-bbc8-81d2f3d035f8"
+        id = "ne70f2b8-a924-11ed-afa1-0242ac120002"
         status.system = "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-hospitalNotification-encounterStatus"
         status.code = "in-progress"
         class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
         class.code = "IMP"
-        subject = "Patient/t33cef33-3626-422b-955d-d506aaa65fe1"
+        subject = "Patient/545fd5e6-a924-11ed-afa1-0242ac120002"
         episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000"
         episodeOfCare.identifier.value = "bd481c38-a921-11ed-afa1-0242ac120002"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
         period.start = "2022-12-07T12:00:00+02:00"
-        serviceProvider = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        serviceProvider = "Organization/2565d3de-082e-4368-9160-4c719071026b"
     }    
     class "Receiver (MedComMessagingOrganization)" as admitROrg{
-        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        id = "a8ec5ae1-e324-453d-9d9f-39ffe41f308a"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
@@ -62,7 +64,7 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
         name = "Plejecenter Herlev"
     }
     class "Sender (MedComMessagingOrganization)" as admitSOrg{
-        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        id = "2565d3de-082e-4368-9160-4c719071026b"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
@@ -70,13 +72,13 @@ package "Start hospital stay - admitted" as admit <<Frame>>{
         name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
     }
     class "Provenance (MedComMessagingProvenance)" as admitPRO{
-        id = "a7cf3888-6f42-4e4d-929c-d2475d24fba0"
+        id = "4e9f2c26-9d9b-4239-ade6-e26c130e855e"
         target = "MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc7b5404"
         occuredDateTime = "2022-12-07T12:00:02+02:00"
         recorded = "2022-12-07T12:00:02+02:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "admit-inpatient"
-        agent.who = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        agent.who = "Organization/2565d3de-082e-4368-9160-4c719071026b"
     }
 
 admitB -[hidden]- admitMH

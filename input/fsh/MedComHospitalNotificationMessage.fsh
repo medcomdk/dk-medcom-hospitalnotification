@@ -262,7 +262,7 @@ Description: "Example of MedComHospitalNotificationMessage 'Deceased' (acute amb
 // use cases associated with inpatient hospitalization
 Instance: m908i967-9ie3-9023-b9ec-98108695f01d
 InstanceOf: MedComHospitalNotificationMessage
-Title: "HospitalNotification Message - STIN"
+Title: "HospitalNotification Message - STIN (different sender and serviceProvider)"
 Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay - admitted'. With different serviceProvider and sender Organization."
 * type = $BundleType#message
 * timestamp = 2022-12-07T12:00:01+02:00
@@ -280,3 +280,23 @@ Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay 
 * entry[=].resource = cd72967c-81d2-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "Provenance/m7cf3888-6f52-5e4d-939c-d2575d24fba0"
 * entry[=].resource = m7cf3888-6f52-5e4d-939c-d2575d24fba0
+
+// use cases associated with inpatient hospitalization
+Instance: n73ccf30-80b9-4bd2-bf50-1ac1914498f0
+InstanceOf: MedComHospitalNotificationMessage
+Title: "HospitalNotification Message - STIN (with two episodeOfCare-identifiers)"
+Description: "Example of MedComHospitalNotificationMessage 'Start hospital stay - admitted' (with two episodeOfCare-identifiers)"
+* type = $BundleType#message
+* timestamp = 2022-12-07T12:00:01+02:00
+* entry[+].fullUrl = "MessageHeader/1ca19ddf-31bc-4597-8739-968c38dd88f8"
+* entry[=].resource = 1ca19ddf-31bc-4597-8739-968c38dd88f8
+* entry[+].fullUrl = "Patient/545fd5e6-a924-11ed-afa1-0242ac120002"
+* entry[=].resource = 545fd5e6-a924-11ed-afa1-0242ac120002
+* entry[+].fullUrl = "Encounter/ne70f2b8-a924-11ed-afa1-0242ac120002"
+* entry[=].resource = ne70f2b8-a924-11ed-afa1-0242ac120002
+* entry[+].fullUrl = "Organization/a8ec5ae1-e324-453d-9d9f-39ffe41f308a"
+* entry[=].resource = a8ec5ae1-e324-453d-9d9f-39ffe41f308a
+* entry[+].fullUrl = "Organization/2565d3de-082e-4368-9160-4c719071026b" 
+* entry[=].resource = 2565d3de-082e-4368-9160-4c719071026b
+* entry[+].fullUrl = "Provenance/4e9f2c26-9d9b-4239-ade6-e26c130e855e"
+* entry[=].resource = 4e9f2c26-9d9b-4239-ade6-e26c130e855e

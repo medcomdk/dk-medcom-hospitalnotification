@@ -1,6 +1,6 @@
 ### Scope and usage 
 This profile is used as the Encounter resource for the HospitalNotification message. The HospitalNotificationEncounter inherits from the MedComCoreEncounter. 
-Besides the references shown on the figure below, the MedComHospitalNotificationEncounter contains an episode of care identifier, a status describing the status of the encounter e.g., if the patient is *onleave* and the class of the admission, which can be either *inpatient* or *emergency*. Both status and class shall be included in all messages and depending on the status of the encounter, the status and class shall be assigned to different codes. [Here you the find the combination of codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/#hospitalnotification-codes-in-fhir).
+Besides the references shown on the figure below, the MedComHospitalNotificationEncounter contains an episode of care identifier (Danish: forløbsid), a status describing the status of the encounter e.g., if the patient is *onleave* and the class of the admission, which can be either *inpatient* or *emergency*. Both status and class shall be included in all messages and depending on the status of the encounter, the status and class shall be assigned to different codes. [Here you the find the combination of codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/#hospitalnotification-codes-in-fhir).
 
 The HospitalNotification message is sent without patient consent, why only a limited data set is allowed to transmit due to Danish legislation. For this reason, is the HospitalNotificationEncounter profile quite narrow. <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#clinical-guidelines" target="_blank">More information about the legal aspects can be found here</a>. 
 
@@ -18,6 +18,27 @@ The element references a MedComMessagingOrganization or MedComCoreOrganization, 
 The sender of a HospitalNotification (MessageHeader.sender) and the serviceProvider (Encounter.serviceProvider) may be the same hospital department, hence be represented referencing the same instance of a Organization resource, which shall be a MedComMessagingOrganization. However, the sender organisation may be a higher-level department (in the SOR register) than the serviceProvider organisation, and in this case they shall be represented referencing two different instances of a Organization resource.
 
 [An example of different serviceProvider and sender organisation can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-m908i967-9ie3-9023-b9ec-98108695f01d.html). Other examples will have the same organisation as serviceProvider and sender.
+
+### Episode of care identifier
+The MedComHospitalNotificationEncounter profile requires at least one episode of care identifiers to be included, but allows more than one to be included. The episode of care identifier can be a locally defined UUID for the specific admission/contact or it can be an LPR3 identifier. The identifier is used for linking messages exchanged during a specific message flow. Hence, the episode of care identifier send and received in the initial HospitalNotification message must also be returned in e.g ReportOfAdmission (Danish: Indlæggelsesrapport), ProgressOfCarePlan (Danish: Plejeforløbsplan), CareCommunication (Danish: Korrespondancemeddelelse) etc.
+ 
+**In case only one episode of care identifier is included in the initial HospitalNotification message, either a locally defined UUID for the specific admission/contact or an LPR3 identifier:** The following messages exchanged must apply/return this episode of care identifier, regardless of whether it is a locally defined UUID or an LPR3 identifier. If more identifiers are subsequently added, these can be ignored (or returned if possible).
+ 
+**In case more episode of care identifiers are included in the initial HospitalNotification message:** The following messages exchanged must return the locally defined UUID for the specific admission/contact. The other identifiers can be ignored (or returned if possible). If no locally defined UUID is included in the message, one of the LPR3 identifiers must be returned.
+
+#### System for locally defined episode of care identifiers
+When a locally defined identifier for the specific admission/contact is included in a HospitalNotification message, a system for the identifier shall also be included. The system is used to destinguish between the LPR3 identifier and the locally defined identifier. The system is found at Encounter.episodeOfCare.identifier.system in the profile. The datatype of the system is Unique Resource Identifier Reference (uri), meaning that the system must be absolut or relative unique. It is recommended to use SOR-endpoint, which is also definied in the MessageHeader.source.endpoint. This is shown in the XML-snippet and examples below.
+
+```xml
+ <episodeOfCare>
+    <identifier>
+      <system value="https://sor2.sum.dsdn.dk/#id=265161000016000"/>
+      <value value="bd481c38-a921-11ed-afa1-0242ac120002"/>
+    </identifier>
+  </episodeOfCare>
+```
+
+[A simplified example with two episode of care identifieres can be found here](./hospitalnotification/HospitalNotificationAdmitTwoEOCid.svg) and [a FHIR example with two episode of care identifieres can be found here](http://medcomfhir.dk/ig/hospitalnotification/Bundle-n73ccf30-80b9-4bd2-bf50-1ac1914498f0.html) Other examples will have just one episode of care identifier.
 
 ### Timestamps 
 

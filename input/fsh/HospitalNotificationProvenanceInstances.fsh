@@ -150,3 +150,16 @@ Usage: #definition
 * recorded = 2022-12-09T12:00:02Z
 * activity.coding = $ActivityCode#admit-inpatient
 * agent.who = Reference(cd72967c-81d2-11ed-a1eb-0242ac120002)
+
+// Provenances for Inpatient hospitalizations - with two episodeOfCareidentifiers
+// Admit instance
+Instance: 4e9f2c26-9d9b-4239-ade6-e26c130e855e
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(1ca19ddf-31bc-4597-8739-968c38dd88f8) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(2565d3de-082e-4368-9160-4c719071026b)

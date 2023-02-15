@@ -314,7 +314,7 @@ Usage: #definition
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital" 
 
 // MedComCorePatient instance - STIN - different serviceprovider
-Instance: b00ea1c0-81d2-11ed-a1eb-0242ac120002 // MORS
+Instance: b00ea1c0-81d2-11ed-a1eb-0242ac120002 
 InstanceOf: MedComCorePatient
 Title: "Patient - Bruno Test Elmer"
 Description: "Deceased Example of a MedComCorePatient with minimal information. Only valid if used in a Bundle."
@@ -353,3 +353,34 @@ Description: "Example of a MedComCoreOrganization with SOR identifier. Only vali
 Usage: #definition
 * identifier[SOR-ID].value = "399841000016000"
 * name = "Hjertemedicinsk sengeafs. S103"
+
+// MedComCorePatient instance - STIN - two episodeofcare
+Instance: 545fd5e6-a924-11ed-afa1-0242ac120002 
+InstanceOf: MedComCorePatient
+Title: "Patient - Bruno Test Elmer"
+Description: "Deceased Example of a MedComCorePatient with minimal information. Only valid if used in a Bundle."
+Usage: #definition
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "2509479989"
+* name[official].use = #official
+* name[official].family = "Elmer"
+
+// Reciever instance
+Instance: a8ec5ae1-e324-453d-9d9f-39ffe41f308a
+InstanceOf: MedComMessagingOrganization  
+Title: "Receiver organization - Plejecenter Herlev."
+Description: "Example of a MedComMessagingOrganization with SOR and EAN identifier. Only valid if used in a Bundle."
+Usage: #definition
+* identifier[SOR-ID].value = "953741000016009" 
+* identifier[EAN-ID].value = "5790001348120" 
+* name = "Plejecenter Herlev"
+
+// Sender instance
+Instance: 2565d3de-082e-4368-9160-4c719071026b
+InstanceOf: MedComMessagingOrganization  
+Title: "Sender organization - Hjerteafdelingen på Herlev og Gentofte hospital."
+Description: "Example of a MedComMessagingOrganization with SOR and EAN identifier. Only valid if used in a Bundle."
+Usage: #definition
+* identifier[SOR-ID].value = "265161000016000" 
+* identifier[EAN-ID].value = "5790000209354" 
+* name = "Hjerteafdelingen på Herlev og Gentofte hospital"

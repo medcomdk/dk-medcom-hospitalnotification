@@ -37,7 +37,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 // admit message 
 Instance: b9b4818e-02de-4cc4-b418-d20cbc7b5404
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "HospitalNotification MessageHeader - STIN."
+Title: "HospitalNotification MessageHeader - STIN (including reportOfAdmissionFlag = 'true'"
 Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital stay - admitted'. reportOfAdmissionFlag is 'true'. Only Valid if used in a Bundle."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
@@ -183,7 +183,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Deceased' (acu
 // admit message 
 Instance: o9b4818e-12de-5cc4-c418-d30cbc7b5404
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "HospitalNotification MessageHeader - STIN."
+Title: "HospitalNotification MessageHeader - STIN (different serviceProvider and sender organisation)"
 Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital stay - admitted'. With different serviceProvider and sender organisation. Only Valid if used in a Bundle."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message
@@ -192,3 +192,17 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * sender = Reference(cd72967c-81d2-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(m790f964-98d3-4852-bac8-83d2f3d035f8)
+
+
+// admit message 
+Instance: 1ca19ddf-31bc-4597-8739-968c38dd88f8
+InstanceOf: MedComHospitalNotificationMessageHeader
+Title: "HospitalNotification MessageHeader - STIN (With two episodeOfCare-identifiers)"
+Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital stay - admitted'. With two episodeOfCare-identifiers. Only Valid if used in a Bundle."
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#hospital-notification-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(a8ec5ae1-e324-453d-9d9f-39ffe41f308a)
+* sender = Reference(2565d3de-082e-4368-9160-4c719071026b)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(ne70f2b8-a924-11ed-afa1-0242ac120002)

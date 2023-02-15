@@ -4,7 +4,7 @@ name: MedComHospitalNotification
 title: "DK MedCom HospitalNotification"
 description: The DK MedCom HospitalNotification IG
 status: active
-version: "3.0.0"
+version: "3.0.1"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Release

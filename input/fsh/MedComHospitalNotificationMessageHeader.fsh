@@ -37,7 +37,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 // admit message 
 Instance: b9b4818e-02de-4cc4-b418-d20cbc7b5404
 InstanceOf: MedComHospitalNotificationMessageHeader
-Title: "HospitalNotification MessageHeader - STIN (including reportOfAdmissionFlag = 'true'"
+Title: "HospitalNotification MessageHeader - STIN (including reportOfAdmissionFlag = 'true')"
 Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital stay - admitted'. reportOfAdmissionFlag is 'true'. Only Valid if used in a Bundle."
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#hospital-notification-message

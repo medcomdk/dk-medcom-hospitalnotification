@@ -95,15 +95,15 @@ Certification of a system implies both an approved test protocol and run-through
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">Click here to find the description of test and certification of FHIR standards in MedCom. </a> 
 <br>
 
-> Note: Test protocols, for HospitalNotification in English, are currently in preparation. As soon as they are ready, they will be published.
-
 **Sending a HospitalNotification message**
-* [Test protocol](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
+* [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
+* [Test protocol in English (docx)](HospitalNotification_Testprotocol_Send.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
+* [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
+* [Test protocol in Engish (docx)](HospitalNotification_Testprotocol_Receive.docx) 
 * TouchStone Test scripts - link will be provided soon
 <p>&nbsp;</p>
 

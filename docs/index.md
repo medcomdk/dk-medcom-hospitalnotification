@@ -98,13 +98,15 @@ Certification of a system implies both an approved test protocol and run-through
 **Sending a HospitalNotification message**
 * [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
 * [Test protocol in English (docx)](HospitalNotification_Testprotocol_Send.docx) 
-* TouchStone Test scripts - link will be provided soon
+* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples and the intended use hereof</a>
+  * <a href="https://touchstone.aegis.net/touchstone/testdefinitions? selectedTestGrp=%2FFHIRSandbox%2FMedCom%2FHospitalNotification& activeOnly=false&includeInactive=false&ps=50&sb=qualifiedName&sd= DESC&allSelected=false&contentEntry=ALL ">Direct link to test scripts in TouchStone</a>
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
 * [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
-* [Test protocol in Engish (docx)](HospitalNotification_Testprotocol_Receive.docx) 
-* TouchStone Test scripts - link will be provided soon
+* [Test protocol in English (docx)](HospitalNotification_Testprotocol_Receive.docx) 
+* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples and the intended use hereof</a>
+  * <a href="https://touchstone.aegis.net/touchstone/testdefinitions? selectedTestGrp=%2FFHIRSandbox%2FMedCom%2FHospitalNotification& activeOnly=false&includeInactive=false&ps=50&sb=qualifiedName&sd= DESC&allSelected=false&contentEntry=ALL ">Direct link to test scripts in TouchStone</a>
 <p>&nbsp;</p>
 
 

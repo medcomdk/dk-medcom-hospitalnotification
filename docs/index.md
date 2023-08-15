@@ -44,10 +44,9 @@ The use cases for HospitalNotification are qualified in collaboration with EPR- 
 
 <!-- <b>The use cases are currently in preparation. As soon as they are ready, they will be presented below in Danish and English:</b>  -->
 
-[Danish: Use cases](Advisomsygehusophold_use_cases__3.0.0.pdf) 
+[Use cases in Danish (pdf)](Advisomsygehusophold_use_cases__3.0.0.pdf) 
 
-
-> Please be aware that the use cases are in danish. Use cases in English, are currently in preparation. As soon as they are ready, they will be published.
+[Use cases in English (pdf)](HospitalNotification_use_cases__3.0.0.pdf) 
 
 
 <!-- Below, you can find the use cases in Danish and English be found:<br>
@@ -96,17 +95,15 @@ Certification of a system implies both an approved test protocol and run-through
 <br>
 
 **Sending a HospitalNotification message**
-* [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Afsendelse.docx) 
 * [Test protocol in English (docx)](HospitalNotification_Testprotocol_Send.docx) 
-* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples and the intended use hereof</a>
-  * <a href="https://touchstone.aegis.net/touchstone/testdefinitions? selectedTestGrp=%2FFHIRSandbox%2FMedCom%2FHospitalNotification& activeOnly=false&includeInactive=false&ps=50&sb=qualifiedName&sd= DESC&allSelected=false&contentEntry=ALL ">Direct link to test scripts in TouchStone</a>
+* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples, and the intended use hereof</a>
+
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
-* [Test protocol in Danish (docx)](Advisomsygehusophold_Testprotokol_Modtagelse.docx) 
 * [Test protocol in English (docx)](HospitalNotification_Testprotocol_Receive.docx) 
-* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples and the intended use hereof</a>
-  * <a href="https://touchstone.aegis.net/touchstone/testdefinitions? selectedTestGrp=%2FFHIRSandbox%2FMedCom%2FHospitalNotification& activeOnly=false&includeInactive=false&ps=50&sb=qualifiedName&sd= DESC&allSelected=false&contentEntry=ALL ">Direct link to test scripts in TouchStone</a>
+* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples, and the intended use hereof</a>
+
 <p>&nbsp;</p>
 
 

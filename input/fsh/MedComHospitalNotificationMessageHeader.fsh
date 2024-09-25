@@ -15,6 +15,9 @@ Description: "MessageHeader for a HospitalNotification message."
 * extension[reportOfAdmissionRecipient] MS SU
 * extension[reportOfAdmissionRecipient] ^definition = "Shall contain recipient of report of admission if the recipient is not the sender of the hospital notification"
 * event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value hospital-notification-message"
+* definition 1..1 MS
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
+
 
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
@@ -33,6 +36,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(a790f964-88d3-4652-bbc8-81d2f3d035f8)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // admit message 
 Instance: b9b4818e-02de-4cc4-b418-d20cbc7b5404
@@ -48,6 +52,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * focus = Reference(a790f964-88d3-4652-bbc8-81d2f3d035f8)
 * extension[reportOfAdmissionFlag].valueBoolean = true
 * extension[reportOfAdmissionRecipient].valueReference = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // admit message 
 Instance: cc47c1e2-78e6-4291-b071-f423a4f7fbfe
@@ -61,6 +66,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Revise Start h
 * sender = Reference(abb09e14-81c6-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(b9846c24-0335-11ed-b939-0242ac120002)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // admit message 
 Instance: d8749b54-1aeb-4089-8941-8d876bdffc51
@@ -74,6 +80,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Cancellation S
 * sender = Reference(05266a00-81c7-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(c9782061-ce63-41b5-8be6-655812d23332)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 Instance: e563a2b2-bf92-4b13-bbd2-0a021a95bded
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -86,6 +93,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start leave'. 
 * sender = Reference(b79a7914-81c8-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d56e9c54-23d2-43a4-816e-951d2a6e3281)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 Instance: f47254da-f170-46f0-b624-4778a9c92b1f
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -98,6 +106,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'End leave'. On
 * sender = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 Instance: g1affa53-c157-4080-abb0-8e681524f969
 InstanceOf: MedComHospitalNotificationMessageHeader
@@ -110,6 +119,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'End hospital s
 * sender = Reference(8d813af0-81cd-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(f405ba2d-467a-4e92-9acc-9dc2a629760f)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // Discharge message - patient discharged as deceased
 Instance: hefc6d95-6161-4493-99c9-f359488dedb8
@@ -123,6 +133,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Deceased' (inp
 * sender = Reference(840b4046-81ce-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(gcab7218-9584-11ec-b909-0242ac120002)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 
 // Use cases associated with acute ambulant hospitalization
@@ -140,6 +151,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * focus = Reference(h2cb16ce-af8c-46f3-be9e-89406ef3e7b5)
 * extension[reportOfAdmissionFlag].valueBoolean = true
 * extension[reportOfAdmissionRecipient].valueReference = Reference(1f5882b4-81d1-11ed-a1eb-0242ac120002)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // admit message 
 Instance: j3675c4a-33db-40f1-b578-ff16e3e9134c
@@ -153,6 +165,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * sender = Reference(1f5882b4-81d1-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(h2cb16ce-af8c-46f3-be9e-89406ef3e7b5)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 
 Instance: m9bea09c-e662-4d59-b84f-9af570b57f42
@@ -166,6 +179,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'End hospital s
 * sender = Reference(0465ec66-81d2-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(kbbad98c-3310-404a-af0c-7e3739d7b49f)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // Discharge message - patient discharged as deceased
 Instance: nabb68aa-c97b-4905-a60c-71ff3209fd51
@@ -179,6 +193,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Deceased' (acu
 * sender = Reference(66c12a92-81d2-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(l001c640-6b5d-414c-b6bd-e00ec6d4ceee)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 // admit message 
 Instance: o9b4818e-12de-5cc4-c418-d30cbc7b5404
@@ -192,6 +207,7 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * sender = Reference(cd72967c-81d2-11ed-a1eb-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(m790f964-98d3-4852-bac8-83d2f3d035f8)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"
 
 
 // admit message 
@@ -206,3 +222,4 @@ Description: "Example of MedComHospitalNotificationMessageHeader 'Start hospital
 * sender = Reference(2565d3de-082e-4368-9160-4c719071026b)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(ne70f2b8-a924-11ed-afa1-0242ac120002)
+* definition = "http://medcomfhir.dk/ig/hospitalnotification/medcom-hospital-notifiation-message-definition|3.0.0"

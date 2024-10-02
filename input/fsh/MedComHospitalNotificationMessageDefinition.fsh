@@ -1,6 +1,6 @@
 Profile: MedComHospitalNotificationMessageDefinition
 Parent: MedComMessagingMessageDefinitionFhir 
-Id: medcom-hospitalnotification-messagedefinition
+Id: medcom-hospitalnotification-message-definition
 Description: "The MessageDefinition for HospitalNotification:3.0"
 * id = "MedComMessagingMessageDefinition-HospitalNotification-3-0"
 * url = "urn:dk:healthcare:medcom:messaging:fhir:structuredefinition:hospitalnotification:3.0"

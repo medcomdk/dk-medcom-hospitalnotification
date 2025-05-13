@@ -1,0 +1,12 @@
+on:
+  push:
+    tags: [ '[0-9]+.[0-9]+.[0-9]+' ]
+
+jobs:
+  publish:
+    uses: medcomdk/fhir-publishing/.github/workflows/publish.yaml@main
+    with:
+      RELEASE_VERSION: ${{ github.ref_name }}
+      FHIR_PUBLICATION_BOT_APP_ID: ${{ vars.FHIR_PUBLICATION_BOT_APP_ID }}
+    secrets:
+      PUBLISHER_APP_PRIVATE_KEY: ${{ secrets.PUBLISHER_APP_PRIVATE_KEY }}

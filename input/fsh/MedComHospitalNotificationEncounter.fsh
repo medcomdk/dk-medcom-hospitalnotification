@@ -41,7 +41,7 @@ Description: "Encounter derivation that handles hospital notification when a pat
 * location ..0
 * serviceProvider 1.. MS
 * partOf ..0
-* extension contains medcom-hospitalnotifiation-leave-period-extension named leavePeriod 0..1 MS SU
+* extension contains medcom-hospitalnotifiation-leave-period-extension named leavePeriod 0..1 MS 
 * obeys medcom-hospitalNotification-6
 
 Invariant: medcom-hospitalNotification-6

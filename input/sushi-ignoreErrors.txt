@@ -1,0 +1,4 @@
+== Suppressed errors ==
+# Link to sushi desciption: https://fshschool.org/docs/sushi/project/#using-the-hl7-ig-publisher-and-auto-builder
+# Suppresses this error as IG Publisher autogenerates narratives after SUSHI has run.
+Reference is external which isn't supported by the specified aggregation mode(s) for the reference (bundled)

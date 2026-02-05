@@ -21,7 +21,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-07T14:00:02+02:00
 * recorded = 2022-12-07T14:00:02+02:00
 * activity.coding = $ActivityCode#revise-admit-inpatient 
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* agent.who = Reference(abb09e14-81c6-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
 
@@ -35,7 +35,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-07T15:00:02+02:00
 * recorded = 2022-12-07T15:00:02+02:00
 * activity.coding = $ActivityCode#cancel-admit-inpatient
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* agent.who = Reference(05266a00-81c7-11ed-a1eb-0242ac120002)
 * entity.role = #removal
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
 
@@ -49,7 +49,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-13T14:00:12+02:00
 * recorded = 2022-12-13T14:00:12+02:00
 * activity.coding = $ActivityCode#start-leave-inpatient
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* agent.who = Reference(b79a7914-81c8-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
 
@@ -63,7 +63,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-14T15:30:02+02:00
 * recorded = 2022-12-14T15:30:02+02:00
 * activity.coding = $ActivityCode#end-leave-inpatient
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* agent.who = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(e563a2b2-bf92-4b13-bbd2-0a021a95bded)
 
@@ -77,7 +77,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-18T09:45:32+02:00
 * recorded = 2022-12-18T09:45:32+02:00
 * activity.coding = $ActivityCode#discharge-inpatient-home
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* agent.who = Reference(8d813af0-81cd-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
 
@@ -121,7 +121,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-02T22:00:11+02:00
 * recorded = 2022-12-02T22:00:11+02:00
 * activity.coding = $ActivityCode#discharge-emergency-home
-* agent.who = Reference(1f5882b4-81d1-11ed-a1eb-0242ac120002)
+* agent.who = Reference(0465ec66-81d2-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029)
 
@@ -135,7 +135,7 @@ Usage: #definition
 * occurredDateTime = 2022-12-02T07:00:02+02:00
 * recorded = 2022-12-02T07:00:02+02:00
 * activity.coding = $ActivityCode#admit-emergency
-* agent.who = Reference(1f5882b4-81d1-11ed-a1eb-0242ac120002)
+* agent.who = Reference(66c12a92-81d2-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029)
 

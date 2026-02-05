@@ -69,8 +69,8 @@ Description: "Example of MedComHospitalNotificationMessage 'Update Start hospita
 * entry[=].resource = 48393486-81c6-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Encounter/b9846c24-0335-11ed-b939-0242ac120002"
 * entry[=].resource = b9846c24-0335-11ed-b939-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/abb09e14-81c6-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = abb09e14-81c6-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/8858e7e6-81c6-11ed-a1eb-0242ac120002"
 * entry[=].resource = 8858e7e6-81c6-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/b5f7de8c-957a-11ec-b909-0242ac120002"
@@ -91,8 +91,8 @@ Description: "Example of MedComHospitalNotificationMessage 'Cancellation Start h
 * entry[=].resource = d6eeaca6-81c6-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Encounter/c9782061-ce63-41b5-8be6-655812d23332"
 * entry[=].resource = c9782061-ce63-41b5-8be6-655812d23332
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/05266a00-81c7-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 05266a00-81c7-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/eefc2dfa-81c6-11ed-a1eb-0242ac120002"
 * entry[=].resource = eefc2dfa-81c6-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/c67ecb1c-957a-11ec-b909-0242ac120002"
@@ -114,8 +114,8 @@ Description: "Example of MedComHospitalNotificationMessage 'Start leave'"
 * entry[=].resource = d56e9c54-23d2-43a4-816e-951d2a6e3281
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/a39d4a04-81c8-11ed-a1eb-0242ac120002"
 * entry[=].resource = a39d4a04-81c8-11ed-a1eb-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/b79a7914-81c8-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = b79a7914-81c8-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit prov
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa" //start leave prov
@@ -135,8 +135,8 @@ Description: "Example of MedComHospitalNotificationMessage 'End leave'"
 * entry[=].resource = e07c4bd4-cfad-4c4d-9c4b-e4ba3424a65b
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/55ba5884-81ca-11ed-a1eb-0242ac120002"
 * entry[=].resource = 55ba5884-81ca-11ed-a1eb-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/5961ade8-81ca-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 5961ade8-81ca-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/dc421d0a-cded-470f-9a53-2ddba7583baa" //start leave
@@ -156,8 +156,8 @@ Description: "Example of MedComHospitalNotificationMessage 'End hospital stay - 
 * entry[=].resource = 6841b54e-81cd-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Encounter/f405ba2d-467a-4e92-9acc-9dc2a629760f"
 * entry[=].resource = f405ba2d-467a-4e92-9acc-9dc2a629760f
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/8d813af0-81cd-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 8d813af0-81cd-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/7e692262-81cd-11ed-a1eb-0242ac120002"
 * entry[=].resource = 7e692262-81cd-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
@@ -182,8 +182,8 @@ Description: "Example of MedComHospitalNotificationMessage 'Deceased' (inpatient
 * entry[=].resource = gcab7218-9584-11ec-b909-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/753bdcba-81ce-11ed-a1eb-0242ac120002"
 * entry[=].resource = 753bdcba-81ce-11ed-a1eb-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d" //service provider Org
-* entry[=].resource = o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/840b4046-81ce-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 840b4046-81ce-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/a7cf3888-6f42-4e4d-929c-d2475d24fba0" //admit
 * entry[=].resource = a7cf3888-6f42-4e4d-929c-d2475d24fba0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/g9942adb-197a-4e30-bec8-566e3a113efe"
@@ -227,8 +227,8 @@ Description: "Example of MedComHospitalNotificationMessage 'End hospital stay - 
 * entry[=].resource = kbbad98c-3310-404a-af0c-7e3739d7b49f
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/e5682f5e-81d1-11ed-a1eb-0242ac120002"
 * entry[=].resource = e5682f5e-81d1-11ed-a1eb-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/1f5882b4-81d1-11ed-a1eb-0242ac120002" //service provider Org
-* entry[=].resource = 1f5882b4-81d1-11ed-a1eb-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/0465ec66-81d2-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 0465ec66-81d2-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/ka776a3e-3eca-407b-9f81-b8c16f089874" //discharge
@@ -251,8 +251,8 @@ Description: "Example of MedComHospitalNotificationMessage 'Deceased' (acute amb
 * entry[=].resource = l001c640-6b5d-414c-b6bd-e00ec6d4ceee
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/55eb90b8-81d2-11ed-a1eb-0242ac120002"
 * entry[=].resource = 55eb90b8-81d2-11ed-a1eb-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/1f5882b4-81d1-11ed-a1eb-0242ac120002" //service provider Org
-* entry[=].resource = 1f5882b4-81d1-11ed-a1eb-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Organization/66c12a92-81d2-11ed-a1eb-0242ac120002" //service provider Org
+* entry[=].resource = 66c12a92-81d2-11ed-a1eb-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/h60bd482-9c47-43c5-9b77-1134eaa2d5f0"
 * entry[=].resource = h60bd482-9c47-43c5-9b77-1134eaa2d5f0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/hospitalnotification/Provenance/l17de5f5-abb0-4701-93aa-6b0d7b4127bc"

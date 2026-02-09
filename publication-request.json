@@ -1,12 +1,10 @@
 {
-  "package-id": "medcom.fhir.dk.hospitalnotification",
-  "version": "3.0.2",
-  "path": "http://medcomfhir.dk/ig/hospitalnotification/3.0.2",
-  "status": "release",
-  "sequence": "Release",
-  "milestone" : true,
-  "title": "The DK MedCom HospitalnNotification IG",
-  "category": "MedCom HospitalnNotification",
-  "introduction": "The MedCom HospitalnNotification Implementation Guide",
-  "descmd": "@release-notes.md"
+    "package-id": "medcom.fhir.dk.hospitalnotification",
+    "version": "3.0.2",
+    "path": "http://medcomfhir.dk/ig/hospitalnotification/3.0.2",
+    "status": "release",
+    "sequence": "Release 2.x.x",
+    "mode": "milestone",
+    "descmd": "@release-notes.md",
+    "desc": "Release 3.0.2 - see release notes"
 }

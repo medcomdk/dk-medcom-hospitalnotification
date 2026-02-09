@@ -24,6 +24,17 @@ Usage: #definition
 * agent.who = Reference(abb09e14-81c6-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
+//Admit til reviseadmit
+Instance: 9d4f53ed-7e4b-477c-8021-1424cf5e9b1e
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(abb09e14-81c6-11ed-a1eb-0242ac120002)
 
 // Cancel admit instance
 Instance: c67ecb1c-957a-11ec-b909-0242ac120002
@@ -38,6 +49,17 @@ Usage: #definition
 * agent.who = Reference(05266a00-81c7-11ed-a1eb-0242ac120002)
 * entity.role = #removal
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
+//Admit til cancel admit
+Instance: 9925ca91-62aa-40f0-8b6f-5afae2a36c67
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(05266a00-81c7-11ed-a1eb-0242ac120002)
 
 //start leave
 Instance: dc421d0a-cded-470f-9a53-2ddba7583baa
@@ -52,6 +74,17 @@ Usage: #definition
 * agent.who = Reference(b79a7914-81c8-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
+//Admit til STOR
+Instance: dc7dd664-f588-4f82-963b-3a032759c5a9
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(b79a7914-81c8-11ed-a1eb-0242ac120002)
 
 // End leave example
 Instance: e4db4939-7c60-4ac6-aefc-523f809ccba6
@@ -66,6 +99,31 @@ Usage: #definition
 * agent.who = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(e563a2b2-bf92-4b13-bbd2-0a021a95bded)
+//start leave til SLOR
+Instance: 1b2e59fe-d6d3-457c-9c5c-3de1711a8a0b
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STOR"
+Description: "Example of MedComMessagingProvenance used in 'Start leave'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(e563a2b2-bf92-4b13-bbd2-0a021a95bded)
+* occurredDateTime = 2022-12-13T14:00:12+02:00
+* recorded = 2022-12-13T14:00:12+02:00
+* activity.coding = $ActivityCode#start-leave-inpatient
+* agent.who = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
+* entity.role = #revision
+* entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
+//Admit til SLOR
+Instance: 8a3b783c-60b3-4d6b-ae90-f6ead50ecb1d
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(5961ade8-81ca-11ed-a1eb-0242ac120002)
+
 
 // discharge inpatient
 Instance: f710698c-83eb-4c3e-81c8-fe8e40baf524
@@ -80,6 +138,17 @@ Usage: #definition
 * agent.who = Reference(8d813af0-81cd-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
+//Admit til SLHJ
+Instance: ca506c7f-fec6-4711-9397-efb98b7233b6
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(8d813af0-81cd-11ed-a1eb-0242ac120002)
 
  // patient is deceased
 Instance: g9942adb-197a-4e30-bec8-566e3a113efe
@@ -91,10 +160,20 @@ Usage: #definition
 * occurredDateTime = 2022-12-09T09:45:32+02:00
 * recorded = 2022-12-09T09:45:32+02:00
 * activity.coding = $ActivityCode#admit-inpatient
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d) 
+* agent.who = Reference(840b4046-81ce-11ed-a1eb-0242ac120002) 
 * entity.role = #revision
 * entity.what = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404)
-
+//Admit til MORS
+Instance: 9c2257be-2a91-4314-8577-6f1a69f7ab86
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STIN"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - admitted'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(b9b4818e-02de-4cc4-b418-d20cbc7b5404) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-07T12:00:02+02:00
+* recorded = 2022-12-07T12:00:02+02:00
+* activity.coding = $ActivityCode#admit-inpatient
+* agent.who = Reference(840b4046-81ce-11ed-a1eb-0242ac120002)
 
 // Provenance for acute ambulant hospitalization
 // Admit instance
@@ -124,6 +203,17 @@ Usage: #definition
 * agent.who = Reference(0465ec66-81d2-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029)
+// Admit acute ambulant til SLHJ
+Instance: 543296c8-d01b-4fbb-b737-1b1d9630a052
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STAA"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - acute ambulant'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-01T10:00:06+02:00
+* recorded = 2022-12-01T10:00:06+02:00
+* activity.coding = $ActivityCode#admit-emergency
+* agent.who = Reference(0465ec66-81d2-11ed-a1eb-0242ac120002)
 
  // patient is deceased
 Instance: l17de5f5-abb0-4701-93aa-6b0d7b4127bc
@@ -138,6 +228,17 @@ Usage: #definition
 * agent.who = Reference(66c12a92-81d2-11ed-a1eb-0242ac120002)
 * entity.role = #revision
 * entity.what = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029)
+// Admit acute ambulant til SLHJ
+Instance: fc7efe44-2708-49b2-becf-3eddd2fdef43
+InstanceOf: MedComMessagingProvenance
+Title: "MedComMessagingProvenance - STAA"
+Description: "Example of MedComMessagingProvenance used in 'Start hospital stay - acute ambulant'. Only valid if used in a Bundle (message)."
+Usage: #definition
+* target = Reference(i50fc5fe-2d11-4ef3-acac-2e2e5c6c0029) // should be changed to the current MessageHeader
+* occurredDateTime = 2022-12-01T10:00:06+02:00
+* recorded = 2022-12-01T10:00:06+02:00
+* activity.coding = $ActivityCode#admit-emergency
+* agent.who = Reference(66c12a92-81d2-11ed-a1eb-0242ac120002)
 
 // Admit instance - different serviceprovider
 Instance: m7cf3888-6f52-5e4d-939c-d2575d24fba0

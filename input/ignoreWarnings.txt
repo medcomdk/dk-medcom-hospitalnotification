@@ -1,6 +1,15 @@
 == Suppressed Messages ==
+# Unable to check definition
+%No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'%
+%No definition could be found for URL value 'https://www.gs1.org/gln'%
 
-# Allowed MimeTypes are checked manually 
-Unable to check if http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-core-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
+# This is an example and is expected behavior
+Reference is external which isn't supported by the specified aggregation mode(s) for the reference (bundled)
 
+# We are aware of this and will make an improvement in a future version
+Error in constraint 'medcom-hospitalNotification-1' with expression 'entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/hospitalnotification/StructureDefinition/medcom-hospitalNotification-messageHeader'))': Error evaluating FHIRPath expression: The name 'resource' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/MessageHeader] (@char 33)
+Error in constraint 'medcom-hospitalNotification-3' with expression 'entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/fhir/dk-medcom-terminology/ValueSet/medcom-hospitalNotification-messageActivities'))': Error evaluating FHIRPath expression: The name 'resource' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Provenance] (@char 30)
 
+# A message msut have a primary receiver, why the slicing must add up to 1
+The slice definition for MessageHeader.destination:primary.extension has a minimum of 0 but the slices add up to a minimum of 1
+The slice definition for MessageHeader.destination:cc.extension has a minimum of 0 but the slices add up to a minimum of 1

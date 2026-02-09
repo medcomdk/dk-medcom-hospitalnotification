@@ -1,7 +1,7 @@
 {
   "package-id": "medcom.fhir.dk.hospitalnotification",
-  "version": "3.0.1",
-  "path": "http://medcomfhir.dk/ig/hospitalnotification/3.0.1",
+  "version": "3.0.2",
+  "path": "http://medcomfhir.dk/ig/hospitalnotification/3.0.2",
   "status": "release",
   "sequence": "Release",
   "milestone" : true,

@@ -10,9 +10,9 @@ Description: "MessageHeader for a HospitalNotification message."
 * focus ^type.aggregation = #bundled
 * extension contains MedComHospitalNotificationReportOfAdmissionExtension named reportOfAdmissionFlag ..1
 * extension contains MedComHospitalNotificationReportOfAdmissionRecipientExtension named reportOfAdmissionRecipient ..1
-* extension[reportOfAdmissionFlag] MS SU
+* extension[reportOfAdmissionFlag] MS 
 * extension[reportOfAdmissionFlag] ^definition = "Shall be set to true if recipient is requested to send a report of admission"
-* extension[reportOfAdmissionRecipient] MS SU
+* extension[reportOfAdmissionRecipient] MS 
 * extension[reportOfAdmissionRecipient] ^definition = "Shall contain recipient of report of admission if the recipient is not the sender of the hospital notification"
 * event[x] ^short = "The MedComMessagingMessageHeader shall contain the event value hospital-notification-message"
 

@@ -18,17 +18,17 @@ The HospitalNotification message follows the general MedCom FHIR messaging struc
 
 ##### MedComHospitalNotificationMessage
 
-The [MedComHospitalNotificationMessage](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html) profile constrains the [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) to further use the MedComHospitalNotificationMessageHeader and to require exactly one patient resource in the message. Furthermore, it constrains the Provenance.activity to contain only activities from the MedComHospitalNotificationMessageActivities ValueSet.
+The [MedComHospitalNotificationMessage](https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message.html) profile constrains the [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) to further use the MedComHospitalNotificationMessageHeader and to require exactly one patient resource in the message. Furthermore, it constrains the Provenance.activity to contain only activities from the MedComHospitalNotificationMessageActivities ValueSet.
 
 All referenced resources within the message shall be contained in the entry list in MedComHospitalNotificationMessage.
 
 ##### MedComHospitalNotificationMessageHeader
 
-The [MedComHospitalNotificationMessageHeader](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html) profile constrains the [MedComMessagingMessageHeader](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus of the message to be a MedComHospitalNotificationEncounter. 
+The [MedComHospitalNotificationMessageHeader](https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-messageHeader.html) profile constrains the [MedComMessagingMessageHeader](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus of the message to be a MedComHospitalNotificationEncounter. 
 
 ##### MedComHospitalNotificationEncounter
 
-The [MedComHospitalNotificationEncounter](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html) profile contains the main clinical content of the message. It constrains the [MedComCoreEncounter](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html) further to require a episodeOfCare-identifier and restricts the status and class to ValueSet of relevant values. The start time of the encounter and a reference to the service provider organization are also mandatory. Most other values are disallowed due to the legislation.
+The [MedComHospitalNotificationEncounter](https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html) profile contains the main clinical content of the message. It constrains the [MedComCoreEncounter](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html) further to require a episodeOfCare-identifier and restricts the status and class to ValueSet of relevant values. The start time of the encounter and a reference to the service provider organization are also mandatory. Most other values are disallowed due to the legislation.
 
 ##### MedComMessagingProvenance
 
@@ -51,7 +51,7 @@ HospitalNotification messages are generated and sent based on real-time registra
 
 The HospitalNotification message contains several timestamps. These timestamps are present in the profiles MedComHospitalNotificationEncounter, MedComHospitalNotificationMessage and MedComMessagingProvenance and have different purposes: 
 
-* Encounter-timestamps represent the time of an event. For receiving systems, this is the timestamps that must be displayed for the end user in the HospitalNotification as ‘date and time of start/end for the event’. [The usage of these timestamps is more thoroughly described here.](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html)
+* Encounter-timestamps represent the time of an event. For receiving systems, this is the timestamps that must be displayed for the end user in the HospitalNotification as ‘date and time of start/end for the event’. [The usage of these timestamps is more thoroughly described here.](https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-encounter.html)
 * Bundle.timestamp represents the time bundle is generated.
 * Provenance.occuredDateTime[x] represents the time the HospitalNotification is sent, in a human-readable time
 * Provenance.recorded represents the time the HospitalNotification is sent, in a machine-readable time
@@ -65,7 +65,7 @@ All profiles shall have a global unique id by using an UUID. [Read more about th
 
 The simplified examples contain the required content of a HospitalNotification message. Throughout this section different activity codes and statuses are used. [To get an overview of all the codes and statuses, please go to GitHub pages for HospitalNotification](https://medcomdk.github.io/dk-medcom-hospitalnotification/#14-hospitalnotification-codes).
 
-In the sections below is a limited number HospitalNotifications simplified examples. [More examples of a HospitalNotification message can be found here](http://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
+In the sections below is a limited number HospitalNotifications simplified examples. [More examples of a HospitalNotification message can be found here](https://medcomfhir.dk/ig/hospitalnotification/StructureDefinition-medcom-hospitalNotification-message-examples.html). For examples of a profile, take a look under the tab 'Examples' on the site for the given profile.
 
 > Please notice, that in the following examples is the resources listed as an array. This is just an example of an order, resources may be listed in any order. 
 

@@ -15,9 +15,9 @@
 # 1 Introduction
 The health professional guidelines for using the standard Hospital Notification (DAN: Advis om sygehusophold) are described here. This includes the purpose, back-ground, legal basis for exchange as well as the content and functionality of Hospital Notification. The target group is IT system vendors and those responsible for im-plementation in regions and municipalities. The 'Hospital Notification' replaces the previous MedCom standards, Notification of Admission  <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS20 </a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>, and Notification of Discharge <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/EDI/Dokumentation/" target="_blank">DIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a>. 
 
-Please note that for the technical implementation, a number of use cases have been prepared, where functionalitites and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases" target="_blank">Click here to read use cases. </a>
+Please note that for the technical implementation, a number of <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases" target="_blank">use cases</a> have been prepared, where functionalitites and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.
 
-Also note that the total content is described in the technical specifications. [Click here to read the technical specifications](assets/documents/Intro-Technical-Spec-ENG.md).<br>
+Also note that the total content is described in the [technical specifications](assets/documents/Intro-Technical-Spec-ENG.md).<br>
 
   >Note: In case of any discrepancies between the two documents, the Danish document is the document in force.  
 
@@ -32,18 +32,21 @@ Hospital Notification is a central and business-critical message which - automat
 
 # 3 Background
 In line with the fact that more and more patients are not admitted, but is treated acute ambulant at the hospital, a need has arisen for notification of citizens not admitted. 
-The development of 'Hospital Notification’ was initiated in 2018 under the auspices of <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank"> MedCom's home care-hospital group </a> (DAN: hjemmepleje-sygehusgruppen) and <a href ="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">municipal hospital supplier group </a> (DAN: Kommune-sygehusleverandørgruppen), which have defined requirements for content and clinical guidelines for application. 
+The development of 'Hospital Notification’ was initiated in 2018 under the auspices of MedCom's <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Hjemmepleje-sygehusgruppe" target="_blank">home care-hospital group</a> (DAN: hjemmepleje-sygehusgruppen) and <a href ="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Kommune-Sygehusleverand%C3%B8rgruppen" target="_blank">municipal hospital supplier group </a> (DAN: Kommune-sygehusleverandørgruppen), which have defined requirements for content and clinical guidelines for application. 
 <b>Note regarding LPR3 </b>: Registration of hospital stays in the EPR system is linked to the reporting to the National Patient Registry, LPR. By transition to LPR3 (2019), the concepts 'admitted' and 'outpatient' are removed in the reporting to LPR and replaced by physical attendance. In practice, all regions continue to register the hospital stay as outpatient and admission respectively. It is agreed among the parties behind the development of the Hospital Notification that the scope of the hospital stays, which will be supported by a notification, is:
 
 <em>"All current hospital stays with physical attendance by the patient and all planned hospital stays with physical attendance by the patient for the purpose of admission."</em>
 
 
 # 4 Legal framework
-Hospital Notification are exchanged on the basis of the Danish Health Act and Danish Legal Protection Act §12c:
+HospitalNotifications are exchanged on the basis of the Danish Health Act and Section 12 c of the Legal Protection and Administration in Social Matters Act (Consolidated Act No. 354 of 2 April 2025): 
 
-<em>For use in the planning of care services etc pursuant to § 79 a, chapter 16 and §§ 107 and 108 in the social services and health care act as well as for follow-ups of cases pursuant to §§ 8-10 in the act on sickness benefits, the municipal council and hospital can exchange information about citizens admission and discharge from hospitals within the municipality and about the citizen&#39;s acute hospital stay, where the citizen stays at the hospital for assessment and treatment without being admitted. The exchange can take place automatic and without the consent of the citizen.</em> (Danish Legal Act 12c LBK 265 25/02/2022)
+<em>For the purpose of planning care-related tasks, etc., pursuant to Section 79 a, Chapter 16 and Sections 107 and 108 of the Social Services Act, Section 90(1)-(3) of the Child Act, and the Health Act, as well as for the purpose of follow-up on cases pursuant to Sections 8-10 of the Sickness Benefits Act, municipal councils and hospitals may exchange information concerning the admission to and discharge from hospitals of citizens residing in the municipality, and concerning citizens’ acute hospital stays where the citizen is present at the hospital for assessment and treatment without being formally admitted. The exchange may take place automatically and without the citizen’s consent.</em> (Danish Legal Act 12c LBK354 af 02/04/2025)
 
-The service act §79 a includes *preventive home visits*, chapter 16 includes §§ 83-99, which covers *personal help, care and nursing as well as care wills,* and §§ 107 and 108 covers *temporary and long-term sheltered residence.*
+Pursuant to the Act amending the Social Services Act, the Act on Legal Protection and Administration in Social Matters, the Social Supervision Act, and various other acts (Act No. 1703 of 20 April 2024), Section 2(20), the reference to ‘Section 79 a,’ is deleted, and after ‘the Child Act’ the following is inserted: ‘Chapter 4 of the Elderly Care Act’.
+
+Chapter 16 contains Sections 83-99, which cover personal assistance, care and nursing services, as well as care wills. Sections 107 and 108 concern temporary and long-term residential care facilities. Chapter 4 of the Elderly Care Act concerns integrated care services and general service offerings, etc.
+
 
 # 5 Contents and functionality
 Hospital Notification is sent automatically and in real-time from the hospital's EPR system to the patient's municipality of residence. As the hospital is not able to determine in advance which citizens currently receive services from the primary sector, a Hospital Notification is generated for all citizens with a personal identification number (CPR) and home address in Denmark when registered in the hospital's EPR system. The receiving system ensures that the Hospital Notification stay is only downloaded and shown for citizens receiving services within the valid legal framework.
@@ -81,7 +84,7 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 <thead>
   <tr>
     <th class="tg-lc33" rowspan="2">Event</th>
-    <th class="tg-lc33" rowspan="2">Code*</th>
+    <th class="tg-lc33" rowspan="2">Code [^1]</th>
     <th class="tg-lc33" rowspan="2">Status for stay<br>(type of Hospital Notification)</th>
     <th class="tg-lc33" rowspan="2">Request for admission report(XDIS16)</th>
     <th class="tg-lc33" rowspan="2">Benefit</th>
@@ -191,12 +194,12 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 </tbody>
 </table></div>
 
-*represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
+> [^1] represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 
 
 # 6 Business rules for application
-The following business rules have been agreed for the application of ‘Hospital Notification’. Please note that for the technical implementation, a number of use cases have been prepared, where functionalities and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.<a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Click here too read the use cases. </a><br>
+The following business rules have been agreed for the application of ‘Hospital Notification’. Please note that for the technical implementation, a number of <a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">use cases</a><br> have been prepared, where functionalities and business rules for use have been translated into a number of detailed use cases for sender and receiver systems.
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -218,19 +221,19 @@ The following business rules have been agreed for the application of ‘Hospital
 <tbody>
   <tr>
     <td class="tg-0lax">1</td>
-    <td class="tg-0lax"><span style="font-weight:bold">Hospital Notifications are generated based on real-time registration in the EPR/PAS system.</span> <br>If EPR uses future   registrations of planned contacts, ‘Hospital Notifications’ should only be   triggered when the time occurs, i.e. at the patient's physical attendance.</td>
+    <td class="tg-0lax"><span style="font-weight:bold">Hospital Notifications are generated based on real-time registration in the EPR/PAS system.</span> <br>If EPR uses future   registrations of planned contacts, ‘Hospital Notifications’ should only be triggered when the time occurs, i.e. at the patient's physical attendance.</td>
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
-    <td class="tg-0lax"><span style="font-weight:bold">‘End hospital stay’ (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)</span>.<br>Notification of this type cannot be used in case of   transfers[1]. </td>
+    <td class="tg-0lax"><span style="font-weight:bold">‘End hospital stay’ (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)</span>.<br>Notification of this type cannot be used in case of transfers [^2]. </td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
-    <td class="tg-0lax"><span style="font-weight:bold">If an acute ambulant stay is changed to the patient being admitted, a new 'Start hospital stay – admitted' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the acute ambulant stay changes to the patient being admitted.   Notification ‘End hospital stay’ is sent when the patient is subsequently   discharged (sent home/to the primary sector) </td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an acute ambulant stay is changed to the patient being admitted, a new 'Start hospital stay – admitted' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the acute ambulant stay changes to the patient being admitted.   Notification ‘End hospital stay’ is sent when the patient is subsequently discharged (sent home/to the primary sector) </td>
   </tr>
   <tr>
     <td class="tg-0lax">4</td>
-    <td class="tg-0lax"><span style="font-weight:bold">If an admission changes to acute ambulant care, a new 'Start hospital stay – acute ambulant' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the   admission changes to acute ambulant care. Notification 'End hospital stay' is sent when the patient is subsequently discharged (sent home/to the primary   sector). This occurrence is seen as rare.</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an admission changes to acute ambulant care, a new 'Start hospital stay – acute ambulant' notification is sent. </span><br>No ‘End hospital stay' notification should be sent when the admission changes to acute ambulant care. Notification 'End hospital stay' is sent when the patient is subsequently discharged (sent home/to the primary sector). This occurrence is seen as rare.</td>
   </tr>
   <tr>
     <td class="tg-0lax">5</td>
@@ -238,15 +241,15 @@ The following business rules have been agreed for the application of ‘Hospital
   </tr>
   <tr>
     <td class="tg-0lax">6</td>
-    <td class="tg-0lax"><span style="font-weight:bold">If the patient is registered as on leave in   the EPR, a notification is sent when the patient starts ('Start leave') and   finishes ('End leave') his/hers leave (at home).</span><br>Leave notifications are   only sent when the patient is registered as being on leave at home. Leave in   case of a double admission[2] must not trigger a leave notification. Leave   notifications should not activate care services in the municipality unless   otherwise agreed.</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If the patient is registered as on leave in   the EPR, a notification is sent when the patient starts ('Start leave') and   finishes ('End leave') his/hers leave (at home).</span><br>Leave notifications are only sent when the patient is registered as being on leave at home. Leave in case of a double admission [^3] must not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.</td>
   </tr>
   <tr>
     <td class="tg-0lax">7</td>
-    <td class="tg-0lax"><span style="font-weight:bold">If an incorrect registration has happened, which has caused an incorrect ‘Hospital Notification’, a correction or cancellation must be sent on the   following principles:</span><br>a. If a ‘Hospital Notification’ has been sent because of a wrongly entered  personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent. <br>b.If a ‘Hospital Notification’ with the wrongly stated hospital department or time of stay is  sent, a correction is sent, i.e. a new correct notification that replaces   previous notifications. Cancellation is not sent prior to the correction.   </td>
+    <td class="tg-0lax"><span style="font-weight:bold">If an incorrect registration has happened, which has caused an incorrect ‘Hospital Notification’, a correction or cancellation must be sent on the   following principles:</span><br>a. If a ‘Hospital Notification’ has been sent because of a wrongly entered  personal identification number (CPR) or wrong choice of hospital stay, a cancellation is sent. <br>b.If a ‘Hospital Notification’ with the wrongly stated hospital department or time of stay is sent, a correction is sent, i.e. a new correct notification that replaces previous notifications. Cancellation is not sent prior to the correction.   </td>
   </tr>
   <tr>
     <td class="tg-0lax">8</td>
-    <td class="tg-0lax"><span style="font-weight:bold">No specific transfer notification is used. </span><br>It is required that a new ‘Hospital Notification’ is sent from the hospital that the patient is transferred to, whether it is in the same or another region). No ‘Hospital   Notification’ is sent from the hospital that the patient is transferred  from[3].  </td>
+    <td class="tg-0lax"><span style="font-weight:bold">No specific transfer notification is used. </span><br>It is required that a new ‘Hospital Notification’ is sent from the hospital that the patient is transferred to, whether it is in the same or another region). No ‘Hospital Notification’ is sent from the hospital that the patient is transferred from [^4].  </td>
   </tr>
   <tr>
     <td class="tg-0lax">9</td>
@@ -255,9 +258,9 @@ The following business rules have been agreed for the application of ‘Hospital
 </tbody>
 </table></div>
   
-  > 1 If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-  > 2 Admission in psychiatric and somatic departments at the same time.
-  > 3 If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
+  > [^2] If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
+  > [^3] Admission in psychiatric and somatic departments at the same time.
+  > [^4] If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
 ## 7 Example
 <a href="Fig1">Figure 1</a> shows an example of what a HospitalNotification could look like. 

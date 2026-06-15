@@ -38,13 +38,15 @@ Arbejdet med Advis om sygehusophold blev igangsat i 2018 i regi af MedComs <a hr
 
 
 ## 4 Lovgrundlag
-Adviser om sygehusophold udveksles med baggrund i Sundhedsloven og Retssikkerhedslovens §12c:
+Advis om sygehusophold udveksles med baggrund i Sundhedsloven og Retssikkerhedslovens § 12 c (LBK nr. 354 af 02/04/2025):
 
-<em>”Til brug for tilrettelæggelsen af omsorgsopgaver m.v. efter § 79 a, kapitel 16 og §§ 107 og 108 i lov om social service og sundhedsloven samt til brug for opfølgning af sager efter §§ 8-10 i lov om sygedagpenge kan kommunalbestyrelser og sygehuse udveksle oplysninger om indlæggelse på og udskrivning fra sygehuse af borgere i kommunen og om borgerens akutte sygehusophold, hvor borgeren opholder sig på sygehuset til vurdering og behandling uden at være indlagt. Udvekslingen kan ske automatisk og uden borgerens samtykke.” </em> (Fra Retssikkerhedsloven 12c LBK nr. 265 af 25/02/2022)
+<em>”Til brug for tilrettelæggelsen af omsorgsopgaver m.v. efter § 79 a, kapitel 16 og §§ 107 og 108 i lov om social service, § 90, nr. 1-3, i barnets lov og sundhedsloven samt til brug for opfølgning af sager efter §§ 8-10 i lov om sygedagpenge kan kommunalbestyrelser og sygehuse udveksle oplysninger om indlæggelse på og udskrivning fra sygehuse af borgere i kommunen og om borgernes akutte sygehusophold, hvor borgeren opholder sig på sygehuset til vurdering og behandling uden at være indlagt. Udvekslingen kan ske automatisk og uden borgerens samtykke.” </em> (Fra Retssikkerhedsloven 12c LBK nr. 354 af 02/04/2025)
 
-Servicelovens §79 a omfatter *forebyggende hjemmebesøg*, kapitel 16 indeholder §§ 83-99, som omfatter *personlig hjælp, omsorg og pleje samt plejetestamenter,* og §§ 107 og 108 omfatter *midlertidige og længerevarende botilbud*. 
+Jf. Lov om ændring af lov om social service, lov om retssikkerhed og administration på det sociale område, lov om socialtilsyn og forskellige andre love (LOV nr. 1703 af 20/4/2024) § 2 stk. 20 udgår »§ 79 a,«, og efter »barnets lov« indsættes: », kapitel 4 i ældreloven«.
 
-## 5 Indhold og functionalitet
+Kapitel 16 indeholder §§ 83-99, som omfatter personlig hjælp, omsorg og pleje samt plejetestamenter, §§ 107 og 108 omfatter midlertidige og længerevarende botilbud. Kapitel 4 i ældreloven omfatter helhedspleje og almene tilbud m.v. 
+
+## 5 Indhold og funktionalitet
 Advis om sygehusophold afsendes automatisk og tidstro fra sygehusets EPJ-system til patientens bopælskommune. Da sygehuset ikke på forhånd kan afgøre hvilke borgere, der aktuelt modtager ydelser fra kommunen, dannes Advis om sygehusophold på alle borgere med cpr. nr. og fast bopælsadresse i Danmark ved registrering i sygehusets EPJ-system. Modtagersystemet skal sikre, at Advis om sygehusophold kun indlæses og synliggøres på borgere, som modtager ydelser indenfor det gældende lovgrundlag. 
 ’Advis om sygehusophold’ vil – for modtageren i kommunen - optræde med følgende indhold [se afsnit 7 for eksempel](#7-eksempel))
 *	Patientens cpr.nr 
@@ -77,7 +79,7 @@ Der anmodes om indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases
 <thead>
   <tr>
     <th class="tg-7k98" rowspan="2">Hændelse </th>
-    <th class="tg-7k98" rowspan="2">Kode* </th>
+    <th class="tg-7k98" rowspan="2">Kode [^1]</th>
     <th class="tg-7k98">Status for sygehusophold </th>
     <th class="tg-7k98" rowspan="2">Anmodning om indlæggelsesrapport (XDIS16)</th>
     <th class="tg-7k98" rowspan="2">Gevinst</th>
@@ -184,7 +186,7 @@ Der anmodes om indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases
 </tbody>
 </table></div>
 
-> repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
+> [^1] repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 ## 6 Forretningsregler for anvendelse
 Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse præsenteres i <a href="Tabel2"> tabel 2</a>. Bemærk, at der til brug for den tekniske implementering, er der udarbejdet en række use cases, hvor funktionaliteter og forretningsregler for anvendelse er omsat til en række detaljerede use cases for hhv. afsender- og modtagersystemer.<br><a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Klik her for at læse use cases. </a><br>
@@ -215,11 +217,11 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">2</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </span><br>Advis om ’Slut sygehusophold’ må ikke anvendes ved   overflytninger[1]. </td>
+    <td class="tg-tysj"><span style="font-weight:bold">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </span><br>Advis om ’Slut sygehusophold’ må ikke anvendes ved overflytninger [^2]. </td>
   </tr>
   <tr>
     <td class="tg-tysj">3</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’Start sygehusophold - indlagt ’-advis.</span><br>Der skal ikke sendes advis om ’Slut sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor). </td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis en akut ambulant kontakt ændres til indlagt, sendes et nyt ’Start sygehusophold - indlagt ’-advis.</span><br>Der skal ikke sendes advis om ’Slut sygehusophold’, når den akut ambulante kontakt ændres til indlagt. Advis om ’Slut sygehusophold’ sendes først, når patienten derefter afsluttes (til hjem/primær sektor).</td>
   </tr>
   <tr>
     <td class="tg-tysj">4</td>
@@ -231,7 +233,7 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">6</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet).</span><br>Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser[2] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom.</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet).</span><br>Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser [^3] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom.</td>
   </tr>
   <tr>
     <td class="tg-tysj">7</td>
@@ -239,7 +241,7 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">8</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Der anvendes ikke specifikke overflytningsadviser.</span> <br>Der er krav om, at der sendes nyt   advis med ’Start sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra [3].</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Der anvendes ikke specifikke overflytningsadviser.</span> <br>Der er krav om, at der sendes nyt   advis med ’Start sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra [^4].</td>
   </tr>
   <tr>
     <td class="tg-tysj">9</td>
@@ -248,9 +250,9 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
 </tbody>
 </table></div>
 
- > 2 Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
- > 3 Samtidig indlæggelse på psykiatrisk og somatisk afdeling. 
- > 4 Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
+ > [^2] Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse. <br>
+ > [^3] Samtidig indlæggelse på psykiatrisk og somatisk afdeling. <br>
+ > [^4] Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
 
 
 ## 7 Eksempel 

@@ -40,7 +40,7 @@ Arbejdet med Advis om sygehusophold blev igangsat i 2018 i regi af MedComs <a hr
 ## 4 Lovgrundlag
 Advis om sygehusophold udveksles med baggrund i Sundhedsloven og Retssikkerhedslovens § 12 c (LBK nr. 354 af 02/04/2025):
 
-<em>”Til brug for tilrettelæggelsen af omsorgsopgaver m.v. efter § 79 a, kapitel 16 og §§ 107 og 108 i lov om social service, § 90, nr. 1-3, i barnets lov og sundhedsloven samt til brug for opfølgning af sager efter §§ 8-10 i lov om sygedagpenge kan kommunalbestyrelser og sygehuse udveksle oplysninger om indlæggelse på og udskrivning fra sygehuse af borgere i kommunen og om borgernes akutte sygehusophold, hvor borgeren opholder sig på syge-huset til vurdering og behandling uden at være indlagt. Udvekslingen kan ske automatisk og uden borgerens samtykke.” </em> (Fra Retssikkerhedsloven 12c LBK nr. 354 af 02/04/2025)
+<em>”Til brug for tilrettelæggelsen af omsorgsopgaver m.v. efter § 79 a, kapitel 16 og §§ 107 og 108 i lov om social service, § 90, nr. 1-3, i barnets lov og sundhedsloven samt til brug for opfølgning af sager efter §§ 8-10 i lov om sygedagpenge kan kommunalbestyrelser og sygehuse udveksle oplysninger om indlæggelse på og udskrivning fra sygehuse af borgere i kommunen og om borgernes akutte sygehusophold, hvor borgeren opholder sig på sygehuset til vurdering og behandling uden at være indlagt. Udvekslingen kan ske automatisk og uden borgerens samtykke.” </em> (Fra Retssikkerhedsloven 12c LBK nr. 354 af 02/04/2025)
 
 Jf. Lov om ændring af lov om social service, lov om retssikkerhed og administration på det sociale område, lov om socialtilsyn og forskellige andre love (LOV nr. 1703 af 20/4/2024) § 2 stk. 20 udgår »§ 79 a,«, og efter »barnets lov« indsættes: », kapitel 4 i ældreloven«.
 

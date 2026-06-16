@@ -79,7 +79,7 @@ Der anmodes om indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases
 <thead>
   <tr>
     <th class="tg-7k98" rowspan="2">Hændelse </th>
-    <th class="tg-7k98" rowspan="2">Kode[^1]</th>
+    <th class="tg-7k98" rowspan="2">Kode [^1]</th>
     <th class="tg-7k98">Status for sygehusophold </th>
     <th class="tg-7k98" rowspan="2">Anmodning om indlæggelsesrapport (XDIS16)</th>
     <th class="tg-7k98" rowspan="2">Gevinst</th>
@@ -186,7 +186,7 @@ Der anmodes om indlæggelsesrapport (<a href="https://svn.medcom.dk/svn/releases
 </tbody>
 </table></div>
 
-[^1]: repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
+> [^1] repræsenterer [advis-koder beskrevet i oversigten](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 ## 6 Forretningsregler for anvendelse
 Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse præsenteres i <a href="Tabel2"> tabel 2</a>. Bemærk, at der til brug for den tekniske implementering, er der udarbejdet en række use cases, hvor funktionaliteter og forretningsregler for anvendelse er omsat til en række detaljerede use cases for hhv. afsender- og modtagersystemer.<br><a href="https://medcomdk.github.io/dk-medcom-hospitalnotification/#12-use-cases">Klik her for at læse use cases. </a><br>
@@ -217,7 +217,7 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">2</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </span><br>Advis om ’Slut sygehusophold’ må ikke anvendes ved overflytninger[^2]. </td>
+    <td class="tg-tysj"><span style="font-weight:bold">Slut sygehusophold (indlagt og akut ambulant) anvendes kun, når patienten afsluttes (til hjemmet/primær sektor). </span><br>Advis om ’Slut sygehusophold’ må ikke anvendes ved overflytninger [^2]. </td>
   </tr>
   <tr>
     <td class="tg-tysj">3</td>
@@ -233,7 +233,7 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">6</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet).</span><br>Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser[^3] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom.</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Hvis patienten registreres på orlov i EPJ, sendes advis, når patienten starter (’Start orlov’) og slutter (’Slut orlov’) sin orlov (til hjemmet).</span><br>Orlovsadviser sendes udelukkende, når patienten registreres på orlov til hjemmet. Orlov ved dobbeltindlæggelser [^3] skal således ikke udløse orlovsadviser. Orlovsadviser skal ikke aktivere ydelser i kommunen uden anden aftale herom.</td>
   </tr>
   <tr>
     <td class="tg-tysj">7</td>
@@ -241,18 +241,18 @@ Der er aftalt forretningsregler for anvendelse af Advis om sygehusophold.Disse p
   </tr>
   <tr>
     <td class="tg-tysj">8</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Der anvendes ikke specifikke overflytningsadviser.</span> <br>Der er krav om, at der sendes nyt   advis med ’Start sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra[^4].</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Der anvendes ikke specifikke overflytningsadviser.</span> <br>Der er krav om, at der sendes nyt   advis med ’Start sygehusophold’, fra det sygehus, patienten er flyttet til, hvad enten det er i samme region eller i en anden region. Der sendes ikke advis fra det sygehus, patienten overflyttes fra [^4].</td>
   </tr>
   <tr>
     <td class="tg-tysj">9</td>
-    <td class="tg-tysj"><span style="font-weight:bold">Udskrivning til hospice</span>.<br>Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’Start sygehusophold - indlagt’-advis ved patientens ankomst.</td>
+    <td class="tg-tysj"><span style="font-weight:bold">Udskrivning til hospice</span>.<br>Flowet håndteres som overflytning til andet sygehus i samme eller anden region. Hospice afsender ’Start sygehusophold -   indlagt’-advis ved patientens ankomst.</td>
   </tr>
 </tbody>
 </table></div>
 
- [^2]: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse. <br>
- [^3]: Samtidig indlæggelse på psykiatrisk og somatisk afdeling. <br>
- [^4]: Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
+ > [^2] Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse. <br>
+ > [^3] Samtidig indlæggelse på psykiatrisk og somatisk afdeling. <br>
+ > [^4] Hvis patienten selv varetager/er ansvarlig for transporten fra sygehus A til sygehus B, er det tilladt at sende advis af typen ’Slut sygehusophold’. Den planlagte overflytning bør fremgå/være kommunikeret til modtageren i plejeforløbsplanen og/eller i en korrespondancemeddelelse.
 
 
 ## 7 Eksempel 

@@ -84,7 +84,7 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 <thead>
   <tr>
     <th class="tg-lc33" rowspan="2">Event</th>
-    <th class="tg-lc33" rowspan="2">Code [^1]</th>
+    <th class="tg-lc33" rowspan="2">Code<sup><a href="#fn1" id="ref1">1</a></sup></th>
     <th class="tg-lc33" rowspan="2">Status for stay<br>(type of Hospital Notification)</th>
     <th class="tg-lc33" rowspan="2">Request for admission report(XDIS16)</th>
     <th class="tg-lc33" rowspan="2">Benefit</th>
@@ -194,7 +194,7 @@ Admission report (<a href="https://svn.medcom.dk/svn/releases/Standarder/Nationa
 </tbody>
 </table></div>
 
-> [^1] represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
+<sup id="fn1">1<a href="#ref1"></a></sup>: represents [danish codes names described in the overview of HospitalNotification codes](https://medcomdk.github.io/dk-medcom-hospitalnotification/assets/documents/Overview-HospitalNotification-codes-FHIR.html)
 
 
 
@@ -225,7 +225,7 @@ The following business rules have been agreed for the application of ‘Hospital
   </tr>
   <tr>
     <td class="tg-0lax">2</td>
-    <td class="tg-0lax"><span style="font-weight:bold">‘End hospital stay’ (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)</span>.<br>Notification of this type cannot be used in case of transfers [^2]. </td>
+    <td class="tg-0lax"><span style="font-weight:bold">‘End hospital stay’ (admission and acute ambulant care) is only used when the patient is discharged (and sent home/to the primary sector)</span>.<br>Notification of this type cannot be used in case of transfers<sup><a href="#fn2" id="ref2">2</a></sup>. </td>
   </tr>
   <tr>
     <td class="tg-0lax">3</td>
@@ -241,7 +241,7 @@ The following business rules have been agreed for the application of ‘Hospital
   </tr>
   <tr>
     <td class="tg-0lax">6</td>
-    <td class="tg-0lax"><span style="font-weight:bold">If the patient is registered as on leave in   the EPR, a notification is sent when the patient starts ('Start leave') and   finishes ('End leave') his/hers leave (at home).</span><br>Leave notifications are only sent when the patient is registered as being on leave at home. Leave in case of a double admission [^3] must not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.</td>
+    <td class="tg-0lax"><span style="font-weight:bold">If the patient is registered as on leave in   the EPR, a notification is sent when the patient starts ('Start leave') and   finishes ('End leave') his/hers leave (at home).</span><br>Leave notifications are only sent when the patient is registered as being on leave at home. Leave in case of a double admission<sup><a href="#fn3" id="ref3">3</a></sup> must not trigger a leave notification. Leave notifications should not activate care services in the municipality unless otherwise agreed.</td>
   </tr>
   <tr>
     <td class="tg-0lax">7</td>
@@ -249,7 +249,7 @@ The following business rules have been agreed for the application of ‘Hospital
   </tr>
   <tr>
     <td class="tg-0lax">8</td>
-    <td class="tg-0lax"><span style="font-weight:bold">No specific transfer notification is used. </span><br>It is required that a new ‘Hospital Notification’ is sent from the hospital that the patient is transferred to, whether it is in the same or another region). No ‘Hospital Notification’ is sent from the hospital that the patient is transferred from [^4].  </td>
+    <td class="tg-0lax"><span style="font-weight:bold">No specific transfer notification is used. </span><br>It is required that a new ‘Hospital Notification’ is sent from the hospital that the patient is transferred to, whether it is in the same or another region). No ‘Hospital Notification’ is sent from the hospital that the patient is transferred from<sup><a href="#fn4" id="ref4">4</a></sup>.  </td>
   </tr>
   <tr>
     <td class="tg-0lax">9</td>
@@ -258,9 +258,9 @@ The following business rules have been agreed for the application of ‘Hospital
 </tbody>
 </table></div>
   
-  > [^2] If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
-  > [^3] Admission in psychiatric and somatic departments at the same time.
-  > [^4] If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
+<sup id="fn2">2<a href="#ref2"></a></sup>: If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message. <br>
+<sup id="fn3">3<a href="#ref3"></a></sup>: Admission in psychiatric and somatic departments at the same time. <br>
+<sup id="fn4">4<a href="#ref4"></a></sup>: If the patient is responsible for transport from hospital A to hospital B him-/herself, ‘End hospital stay’ can be used. The planned transfer should be communicated to the receiver in the care process plan or in a correspondence message.
 
 ## 7 Example
 <a href="Fig1">Figure 1</a> shows an example of what a HospitalNotification could look like. 

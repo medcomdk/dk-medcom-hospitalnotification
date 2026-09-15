@@ -89,13 +89,13 @@ Usage: #example
 * activity.coding.code = #cancel-admit-inpatient
 * agent.who = Reference(HospitalNotification-Ex-AN-STIN-N-SenderOrganization)
 * entity.role = #removal
-* entity.what = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* entity.what = Reference(MessageHeader/d3d25c61-8d92-4789-90f9-e0b8c8301809)
 
 Instance: HospitalNotification-Ex-AN-STIN-N-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "7b712f28-1cb2-45fc-a06a-490c125816f6"
-* target = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* target = Reference(MessageHeader/d3d25c61-8d92-4789-90f9-e0b8c8301809)
 * occurredDateTime = 2026-03-01T13:00:02+01:00
 * recorded = 2026-03-01T13:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"

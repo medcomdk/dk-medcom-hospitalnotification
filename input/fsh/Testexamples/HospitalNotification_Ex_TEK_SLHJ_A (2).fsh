@@ -92,26 +92,26 @@ Usage: #example
 * activity.coding.code = #discharge-inpatient-home
 * agent.who = Reference(HospitalNotification-Ex-TEK-SLHJ-A-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/a9b73218-820c-4db4-9fb7-59e498399006)
+* entity.what = Reference(HospitalNotification-Ex-TEK-STIN-B-MessageHeader)
 
 Instance: HospitalNotification-Ex-TEK-SLHJ-A-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "0c9cd711-bd2d-4365-a7b0-913b5a276cc7"
-* target = Reference(MessageHeader/a9b73218-820c-4db4-9fb7-59e498399006)
+* target = Reference(HospitalNotification-Ex-TEK-STIN-B-MessageHeader)
 * occurredDateTime = 2026-03-01T15:00:00+01:00
 * recorded = 2026-03-01T15:00:00+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
 * activity.coding.code = #admit-inpatient
 * agent.who = Reference(HospitalNotification-Ex-TEK-SLHJ-A-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* entity.what = Reference(MessageHeader/e0c738da-480c-4f64-97f8-d4479a47b9f5)
 
 Instance: HospitalNotification-Ex-TEK-SLHJ-A-Provenance-History-2
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "5a097d61-d1e2-4884-b781-cd05f17c18dd"
-* target = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* target = Reference(MessageHeader/e0c738da-480c-4f64-97f8-d4479a47b9f5)
 * occurredDateTime = 2026-02-28T14:00:06+01:00
 * recorded = 2026-02-28T14:00:06+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"

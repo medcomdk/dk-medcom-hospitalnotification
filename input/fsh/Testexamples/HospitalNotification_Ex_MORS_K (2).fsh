@@ -84,7 +84,7 @@ Instance: HospitalNotification-Ex-MORS-K-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "952e4c44-a716-4726-978d-2857ba84ee4e"
-* target = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* target = Reference(MessageHeader/6644d2a0-2d3e-432a-9b00-20f69ac4fedf)
 * occurredDateTime = 2026-03-01T10:00:06+01:00
 * recorded = 2026-03-01T10:00:06+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
@@ -102,4 +102,4 @@ Usage: #example
 * activity.coding.code = #admit-emergency
 * agent.who = Reference(HospitalNotification-Ex-MORS-K-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* entity.what = Reference(MessageHeader/6644d2a0-2d3e-432a-9b00-20f69ac4fedf)

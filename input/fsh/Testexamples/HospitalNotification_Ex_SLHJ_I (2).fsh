@@ -86,20 +86,20 @@ Instance: HospitalNotification-Ex-SLHJ-I-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "5b3eeae5-665f-412d-92af-6fb5bc4e2f0c"
-* target = Reference(MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006)
+* target = Reference(HospitalNotification-Ex-STOR-I-MessageHeader)
 * occurredDateTime = 2026-03-03T14:00:02+01:00
 * recorded = 2026-03-03T14:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
 * activity.coding.code = #start-leave-inpatient
 * agent.who = Reference(HospitalNotification-Ex-SLHJ-I-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* entity.what = Reference(MessageHeader/536e6afe-1911-4fbb-b1e4-f8b8cbd943f9)
 
 Instance: HospitalNotification-Ex-SLHJ-I-Provenance-History-2
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "b8e3fe4d-4eed-4326-b3e3-b0703aa71a5f"
-* target = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* target = Reference(MessageHeader/536e6afe-1911-4fbb-b1e4-f8b8cbd943f9)
 * occurredDateTime = 2026-03-01T12:00:02+01:00
 * recorded = 2026-03-01T12:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
@@ -117,4 +117,4 @@ Usage: #example
 * activity.coding.code = #discharge-inpatient-home
 * agent.who = Reference(HospitalNotification-Ex-SLHJ-I-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006)
+* entity.what = Reference(HospitalNotification-Ex-STOR-I-MessageHeader)

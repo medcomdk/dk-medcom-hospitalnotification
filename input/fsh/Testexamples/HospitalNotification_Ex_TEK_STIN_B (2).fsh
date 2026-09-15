@@ -89,13 +89,13 @@ Usage: #example
 * activity.coding.code = #admit-inpatient
 * agent.who = Reference(HospitalNotification-Ex-TEK-STIN-B-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* entity.what = Reference(MessageHeader/e0c738da-480c-4f64-97f8-d4479a47b9f5)
 
 Instance: HospitalNotification-Ex-TEK-STIN-B-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "6d4ab23d-9c68-476d-b8d1-ee03ea345241"
-* target = Reference(MessageHeader/i50fc5fe-2d11-4ef3-acac-2e2e5c399006)
+* target = Reference(MessageHeader/e0c738da-480c-4f64-97f8-d4479a47b9f5)
 * occurredDateTime = 2026-02-28T14:00:06+01:00
 * recorded = 2026-02-28T14:00:06+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"

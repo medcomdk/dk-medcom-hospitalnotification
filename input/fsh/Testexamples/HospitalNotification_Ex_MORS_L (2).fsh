@@ -87,7 +87,7 @@ Instance: HospitalNotification-Ex-MORS-L-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "69a95e14-b1e1-4be3-9578-842fc191a322"
-* target = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* target = Reference(MessageHeader/aa6445b9-9e57-49af-9c94-1f17e57f4664)
 * occurredDateTime = 2026-03-01T12:00:02+01:00
 * recorded = 2026-03-01T12:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
@@ -98,14 +98,14 @@ Instance: HospitalNotification-Ex-MORS-L-Provenance-History-2
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "8b40b9d6-cd5c-4ad7-8679-754aa33d0232"
-* target = Reference(MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006)
+* target = Reference(HospitalNotification-Ex-STOR-L-MessageHeader)
 * occurredDateTime = 2026-03-03T14:00:12+01:00
 * recorded = 2026-03-03T14:00:12+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
 * activity.coding.code = #start-leave-inpatient
 * agent.who = Reference(HospitalNotification-Ex-MORS-L-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* entity.what = Reference(MessageHeader/aa6445b9-9e57-49af-9c94-1f17e57f4664)
 
 Instance: HospitalNotification-Ex-MORS-L-Provenance
 InstanceOf: MedComMessagingProvenance
@@ -118,4 +118,4 @@ Usage: #example
 * activity.coding.code = #start-leave-inpatient
 * agent.who = Reference(HospitalNotification-Ex-MORS-L-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006)
+* entity.what = Reference(HospitalNotification-Ex-STOR-L-MessageHeader)

@@ -83,7 +83,7 @@ Instance: HospitalNotification-Ex-SLHJ-H-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "5c5b4124-e0fc-411f-a4e9-081dff378fe5"
-* target = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* target = Reference(MessageHeader/929ec77e-42c3-44e5-9960-95fdf54eeb75)
 * occurredDateTime = 2026-03-01T12:00:02+01:00
 * recorded = 2026-03-01T12:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
@@ -101,4 +101,4 @@ Usage: #example
 * activity.coding.code = #discharge-inpatient-home
 * agent.who = Reference(HospitalNotification-Ex-SLHJ-H-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* entity.what = Reference(MessageHeader/929ec77e-42c3-44e5-9960-95fdf54eeb75)

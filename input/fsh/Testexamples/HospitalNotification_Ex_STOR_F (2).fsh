@@ -83,7 +83,7 @@ Instance: HospitalNotification-Ex-STOR-F-Provenance-History-1
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "cb710de9-7587-448f-a558-cc79258b6723"
-* target = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* target = Reference(MessageHeader/568dd4b1-720a-444f-a2c5-9090fd5701fd)
 * occurredDateTime = 2026-03-01T12:00:02+01:00
 * recorded = 2026-03-01T12:00:02+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
@@ -101,4 +101,4 @@ Usage: #example
 * activity.coding.code = #start-leave-inpatient
 * agent.who = Reference(HospitalNotification-Ex-STOR-F-SenderOrganization)
 * entity.role = #revision
-* entity.what = Reference(MessageHeader/b9b4818e-02de-4cc4-b418-d20cbc399006)
+* entity.what = Reference(MessageHeader/568dd4b1-720a-444f-a2c5-9090fd5701fd)

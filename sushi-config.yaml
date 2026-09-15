@@ -3,8 +3,8 @@ canonical: http://medcomfhir.dk/ig/hospitalnotification
 name: MedComHospitalNotification
 title: "DK MedCom HospitalNotification"
 description: The DK MedCom HospitalNotification IG
-status: active
-version: "3.0.2"
+status: draft
+version: "3.0.x"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Release

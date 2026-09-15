@@ -97,7 +97,7 @@ Instance: HospitalNotification-Ex-SLOR-G-Provenance-History-2
 InstanceOf: MedComMessagingProvenance
 Usage: #example
 * id = "78ef5d47-1c07-472a-a680-ee7852566835"
-* target = Reference(MessageHeader/e563a2b2-bf92-4b13-bbd2-0a021a399006)
+* target = Reference(MessageHeader/fe400034-8a4b-4998-94f4-aef6840c647d)
 * occurredDateTime = 2026-03-03T14:00:12+01:00
 * recorded = 2026-03-03T14:00:12+01:00
 * activity.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"

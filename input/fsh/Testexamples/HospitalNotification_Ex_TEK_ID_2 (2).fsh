@@ -53,10 +53,10 @@ Usage: #example
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #IMP
 * subject = Reference(HospitalNotification-Ex-TEK-ID-2-Patient)
-* episodeOfCare[0].identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* episodeOfCare[0].identifier.value = "843080b6-f918-4789-a096-86d52bf50039"
 * episodeOfCare[lpr3identifier].identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret"
 * episodeOfCare[lpr3identifier].identifier.value = "urn:uuid:05ca2eee-b457-56b7-94bd-c121faf78b1a"
+* episodeOfCare[1].identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* episodeOfCare[1].identifier.value = "843080b6-f918-4789-a096-86d52bf50039"
 * period.start = 2026-03-01T12:00:00+01:00
 * serviceProvider = Reference(HospitalNotification-Ex-TEK-ID-2-SenderOrganization)
 

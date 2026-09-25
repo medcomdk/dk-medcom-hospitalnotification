@@ -49,7 +49,7 @@ Instance: HospitalNotification-Ex-MORS-J-Encounter
 InstanceOf: MedComHospitalNotificationEncounter
 Usage: #example
 * id = "c9761285-0e10-4c56-a1e4-2bfcb93195b3"
-* status = #in-progress
+* status = #finished
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #IMP
 * subject = Reference(HospitalNotification-Ex-MORS-J-Patient)

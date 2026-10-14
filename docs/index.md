@@ -9,13 +9,14 @@
   + [1.3 Technical specification](#13-technical-specification)
   + [1.4 HospitalNotification Codes](#14-hospitalnotification-codes)
   + [1.5 Mapping from XDIS17 and XDIS20 to MedCom HospitalNotification](#mapping) 
-*  [2 Test and certification](#2-test-and-certification)
+* [2 Test and certification](#2-test-and-certification)
+* [3 Receiving HospitalNotifications in Multiple Care Systems](#3-receiving-hospitalnotifications-in-multiple-care-systems)
 
 
   > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 <p>&nbsp;</p>	
 
-This page presents MedCom's HospitalNotification standard (Danish: Advis om sygehusophold). The standard will in time replace the existing standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the patient's care and health actors in the primary sector about the start, periods of leave and end time of the patient's stay in a hospital. The notification allows pausing current health and care services during the patient's hospitalisation and to start the services when the hospitalisation ends. 
+This page presents MedCom's HospitalNotification standard (Danish: Advis om sygehusophold). The standard has replaced the former standards called <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS17/Dokumentation/" target="_blank">XDIS17</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Det%20gode%20kommuneadvis/XDIS20/Dokumentation/" target="_blank">XDIS20</a>.The purpose of the standard is to notify the patient's care and health actors in the primary sector about the start, periods of leave and end time of the patient's stay in a hospital. The notification allows pausing current health and care services during the patient's hospitalisation and to start the services when the hospitalisation ends. 
 Furthermore, the notification of hospital stay can trigger the automatic sending of an admission report <a href="https://svn.medcom.dk/svn/releases/Standarder/National%20Sygehus-Kommunesamarbejde/1.0.3/XDIS16/Dokumentation/"> (XDIS16)</a> from the recipient's system, which gives the hospital staff an overview of the patient's current services, functional level, and healthcare problems.
 
 
@@ -96,16 +97,23 @@ Certification of a system implies both an approved test protocol and run-through
 
 **Sending a HospitalNotification message**
 * [Test protocol in English (docx)](HospitalNotification_Testprotocol_Send.docx) 
-* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples, and the intended use hereof</a>
+* <a href="https://test.itb.medcom.dk/">Validation of HospitalNotification messages is available in the ITB under FHIR Validation.</a>
 
 <p>&nbsp;</p>
 
 **Receiving a HospitalNotification message**
 * [Test protocol in English (docx)](HospitalNotification_Testprotocol_Receive.docx) 
-* <a href="http://medcomfhir.dk/ig/hospitalnotificationtestscripts/testexamples.html">IG including test scripts, test examples, and the intended use hereof</a>
+* <a href="https://test.itb.medcom.dk/">Validation of HospitalNotification messages is available in the ITB under FHIR Validation.</a>
+* Test examples can be provided upon request to MedCom.
 
 <p>&nbsp;</p>
 
+## 3 Receiving HospitalNotifications in Multiple Care Systems
 
-<!-- ## 3 Release Notes
-[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md) -->
+HospitalNotifications are sent to one location number (GLN number) of the municipality in which the citizen resides. The GLN number is used by the Health Agent (Sundhedsagenten). 
+
+This enables HospitalNotifications to be sent to one GLN number, but received/distributed to multiple care systems within the municipality via the Common Municipal Message Distributor (Fælleskommunal Beskedfordeler). This functionality has, among other things, been requested by municipalities that use a separate care system within the social services sector.
+
+For guidance on how municipalities can ensure distribution of HospitalNotifications to multiple systems, please visit <a href="https://digitaliseringskataloget.dk/integration/sf0810">KOMBIT’s Digitalisation Catalogue</a>. Here you will also find <a href="https://digitaliseringskataloget.dk/sites/default/files/integration-files/030220260912/Drejebog%20Forvaltning%20af%20Sundhedsagent.pdf">KOMBIT’s guide for managing the Health Agent</a>.
+
+All receiving systems must have been tested and certified to receive HospitalNotifications. 

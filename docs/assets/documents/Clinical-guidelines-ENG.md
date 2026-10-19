@@ -39,11 +39,9 @@ The development of 'Hospital Notification’ was initiated in 2018 under the aus
 
 
 # 4 Legal framework
-HospitalNotifications are exchanged on the basis of the Danish Health Act and Section 12 c of the Legal Protection and Administration in Social Matters Act (Consolidated Act No. 354 of 2 April 2025): 
+HospitalNotifications are exchanged on the basis of the Danish Health Act and Section 12 c of the Legal Protection and Administration in Social Matters Act (Consolidated Act No. 680 of 3 August 2026): 
 
-<em>For the purpose of planning care-related tasks, etc., pursuant to Section 79 a, Chapter 16 and Sections 107 and 108 of the Social Services Act, Section 90(1)-(3) of the Child Act, and the Health Act, as well as for the purpose of follow-up on cases pursuant to Sections 8-10 of the Sickness Benefits Act, municipal councils and hospitals may exchange information concerning the admission to and discharge from hospitals of citizens residing in the municipality, and concerning citizens’ acute hospital stays where the citizen is present at the hospital for assessment and treatment without being formally admitted. The exchange may take place automatically and without the citizen’s consent.</em> (Danish Legal Act 12c LBK354 af 02/04/2025)
-
-Pursuant to the Act amending the Social Services Act, the Act on Legal Protection and Administration in Social Matters, the Social Supervision Act, and various other acts (Act No. 1703 of 20 April 2024), Section 2(20), the reference to ‘Section 79 a,’ is deleted, and after ‘the Child Act’ the following is inserted: ‘Chapter 4 of the Elderly Care Act’.
+“For the purpose of organizing care services and related activities pursuant to Chapter 16 and sections 107 and 108 of the Danish Social Services Act, section 90(1)–(3) of the Danish Children’s Act, Chapter 4 of the Danish Senior Citizens Act and the Danish Health Act, as well as for the purpose of following up on cases pursuant to sections 8–10 of the Danish Sickness Benefits Act, municipal councils and hospitals may exchange information concerning the admission to and discharge from hospitals of residents of the municipality, as well as information concerning residents’ acute hospital stays where the resident remains at the hospital for assessment and treatment without being admitted. Such information may be exchanged automatically and without the resident’s consent.” (Danish Legal Act 12c, Consolidated Act No. 680 of 3 August 2026).
 
 Chapter 16 contains Sections 83-99, which cover personal assistance, care and nursing services, as well as care wills. Sections 107 and 108 concern temporary and long-term residential care facilities. Chapter 4 of the Elderly Care Act concerns integrated care services and general service offerings, etc.
 
